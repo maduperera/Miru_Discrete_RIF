@@ -1,0 +1,628 @@
+{
+ "repo": "id-abseil",
+ "commit": "e92c357f19dfd9c2390d388aaa98e72adb2abac0",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "57 ambiguous-symbol lookups drawn by gen_queries_multi.py (seed 0xa11ce) from tree-sitter definitions; >=8 chars, >=2 words, 2..30 dirs, tests excluded.",
+ "queries": [
+  {
+   "id": "IDABSE0",
+   "query": "flags internal",
+   "identifier": "flags_internal",
+   "definedIn": [
+    "absl/flags/internal/commandlineflag.cc",
+    "absl/flags/internal/flag.cc",
+    "absl/flags/internal/private_handle_accessor.cc",
+    "absl/flags/internal/program_name.cc",
+    "absl/flags/internal/usage.cc",
+    "absl/flags/marshalling.cc",
+    "absl/flags/parse.cc",
+    "absl/flags/reflection.cc",
+    "absl/flags/usage.cc",
+    "absl/flags/usage_config.cc"
+   ]
+  },
+  {
+   "id": "IDABSE1",
+   "query": "push back",
+   "identifier": "push_back",
+   "definedIn": [
+    "absl/container/chunked_queue_benchmark.cc",
+    "absl/strings/internal/str_format/float_conversion.cc",
+    "absl/synchronization/internal/graphcycles.cc"
+   ]
+  },
+  {
+   "id": "IDABSE2",
+   "query": "validate input value",
+   "identifier": "ValidateInputValue",
+   "definedIn": [
+    "absl/flags/internal/flag.cc",
+    "absl/flags/internal/private_handle_accessor.cc",
+    "absl/flags/reflection.cc"
+   ]
+  },
+  {
+   "id": "IDABSE3",
+   "query": "remove suffix",
+   "identifier": "RemoveSuffix",
+   "definedIn": [
+    "absl/strings/cord.cc",
+    "absl/strings/internal/cord_rep_btree.cc"
+   ]
+  },
+  {
+   "id": "IDABSE4",
+   "query": "pop back",
+   "identifier": "pop_back",
+   "definedIn": [
+    "absl/strings/internal/str_format/float_conversion.cc",
+    "absl/synchronization/internal/graphcycles.cc"
+   ]
+  },
+  {
+   "id": "IDABSE5",
+   "query": "get stack",
+   "identifier": "GetStack",
+   "definedIn": [
+    "absl/strings/internal/cordz_info.cc",
+    "absl/synchronization/mutex.cc"
+   ]
+  },
+  {
+   "id": "IDABSE6",
+   "query": "bm direct",
+   "identifier": "BM_Direct",
+   "definedIn": [
+    "absl/base/no_destructor_benchmark.cc",
+    "absl/random/benchmarks.cc"
+   ]
+  },
+  {
+   "id": "IDABSE7",
+   "query": "bm time from civil libc",
+   "identifier": "BM_Time_FromCivil_Libc",
+   "definedIn": [
+    "absl/time/internal/cctz/src/cctz_benchmark.cc",
+    "absl/time/time_benchmark.cc"
+   ]
+  },
+  {
+   "id": "IDABSE8",
+   "query": "absl unparse flag",
+   "identifier": "AbslUnparseFlag",
+   "definedIn": [
+    "absl/flags/flag_benchmark.cc",
+    "absl/flags/marshalling.cc",
+    "absl/time/civil_time.cc",
+    "absl/time/duration.cc",
+    "absl/time/format.cc"
+   ]
+  },
+  {
+   "id": "IDABSE9",
+   "query": "random internal",
+   "identifier": "random_internal",
+   "definedIn": [
+    "absl/random/discrete_distribution.cc",
+    "absl/random/gaussian_distribution.cc",
+    "absl/random/internal/chi_square.cc",
+    "absl/random/internal/distribution_test_util.cc",
+    "absl/random/internal/entropy_pool.cc",
+    "absl/random/internal/gaussian_distribution_gentables.cc",
+    "absl/random/internal/randen.cc",
+    "absl/random/internal/randen_detect.cc",
+    "absl/random/internal/randen_hwaes.cc",
+    "absl/random/internal/randen_round_keys.cc",
+    "absl/random/internal/randen_slow.cc",
+    "absl/random/internal/seed_material.cc"
+   ]
+  },
+  {
+   "id": "IDABSE10",
+   "query": "analyze btree",
+   "identifier": "AnalyzeBtree",
+   "definedIn": [
+    "absl/strings/cord_analysis.cc",
+    "absl/strings/internal/cordz_info.cc"
+   ]
+  },
+  {
+   "id": "IDABSE11",
+   "query": "push front",
+   "identifier": "push_front",
+   "definedIn": [
+    "absl/container/chunked_queue_benchmark.cc",
+    "absl/strings/internal/str_format/float_conversion.cc"
+   ]
+  },
+  {
+   "id": "IDABSE12",
+   "query": "save state",
+   "identifier": "SaveState",
+   "definedIn": [
+    "absl/flags/internal/flag.cc",
+    "absl/flags/internal/private_handle_accessor.cc",
+    "absl/flags/reflection.cc"
+   ]
+  },
+  {
+   "id": "IDABSE13",
+   "query": "is specified on command line",
+   "identifier": "IsSpecifiedOnCommandLine",
+   "definedIn": [
+    "absl/flags/internal/flag.cc",
+    "absl/flags/internal/private_handle_accessor.cc",
+    "absl/flags/reflection.cc"
+   ]
+  },
+  {
+   "id": "IDABSE14",
+   "query": "absl exclusive lock function",
+   "identifier": "ABSL_EXCLUSIVE_LOCK_FUNCTION",
+   "definedIn": [
+    "absl/flags/reflection.cc",
+    "absl/strings/internal/cordz_info.cc"
+   ]
+  },
+  {
+   "id": "IDABSE15",
+   "query": "absl exclusive locks required",
+   "identifier": "ABSL_EXCLUSIVE_LOCKS_REQUIRED",
+   "definedIn": [
+    "absl/log/internal/vlog_config.cc",
+    "absl/random/internal/entropy_pool.cc",
+    "absl/synchronization/mutex.cc"
+   ]
+  },
+  {
+   "id": "IDABSE16",
+   "query": "bm try lock",
+   "identifier": "BM_TryLock",
+   "definedIn": [
+    "absl/base/internal/spinlock_benchmark.cc",
+    "absl/synchronization/mutex_benchmark.cc"
+   ]
+  },
+  {
+   "id": "IDABSE17",
+   "query": "value tag",
+   "identifier": "ValueTag",
+   "definedIn": [
+    "absl/log/internal/log_message.cc",
+    "absl/log/log_entry.cc"
+   ]
+  },
+  {
+   "id": "IDABSE18",
+   "query": "default value",
+   "identifier": "DefaultValue",
+   "definedIn": [
+    "absl/flags/internal/flag.cc",
+    "absl/flags/reflection.cc"
+   ]
+  },
+  {
+   "id": "IDABSE19",
+   "query": "make test string",
+   "identifier": "MakeTestString",
+   "definedIn": [
+    "absl/strings/internal/damerau_levenshtein_distance_benchmark.cc",
+    "absl/strings/str_split_benchmark.cc"
+   ]
+  },
+  {
+   "id": "IDABSE20",
+   "query": "bm difference days",
+   "identifier": "BM_Difference_Days",
+   "definedIn": [
+    "absl/time/civil_time_benchmark.cc",
+    "absl/time/internal/cctz/src/cctz_benchmark.cc"
+   ]
+  },
+  {
+   "id": "IDABSE21",
+   "query": "absl unlock function",
+   "identifier": "ABSL_UNLOCK_FUNCTION",
+   "definedIn": [
+    "absl/base/internal/low_level_alloc.cc",
+    "absl/flags/reflection.cc",
+    "absl/strings/internal/cordz_info.cc"
+   ]
+  },
+  {
+   "id": "IDABSE22",
+   "query": "decode wait cycles",
+   "identifier": "DecodeWaitCycles",
+   "definedIn": [
+    "absl/base/internal/spinlock.cc",
+    "absl/base/spinlock_test_common.cc"
+   ]
+  },
+  {
+   "id": "IDABSE23",
+   "query": "absl parse flag",
+   "identifier": "AbslParseFlag",
+   "definedIn": [
+    "absl/flags/flag_benchmark.cc",
+    "absl/flags/marshalling.cc",
+    "absl/time/civil_time.cc",
+    "absl/time/duration.cc",
+    "absl/time/format.cc"
+   ]
+  },
+  {
+   "id": "IDABSE24",
+   "query": "checked add",
+   "identifier": "CheckedAdd",
+   "definedIn": [
+    "absl/base/internal/low_level_alloc.cc",
+    "absl/strings/substitute.cc"
+   ]
+  },
+  {
+   "id": "IDABSE25",
+   "query": "bm format parse time",
+   "identifier": "BM_Format_ParseTime",
+   "definedIn": [
+    "absl/time/format_benchmark.cc",
+    "absl/time/internal/cctz/src/cctz_benchmark.cc"
+   ]
+  },
+  {
+   "id": "IDABSE26",
+   "query": "check default value parsing roundtrip",
+   "identifier": "CheckDefaultValueParsingRoundtrip",
+   "definedIn": [
+    "absl/flags/internal/flag.cc",
+    "absl/flags/internal/private_handle_accessor.cc",
+    "absl/flags/reflection.cc"
+   ]
+  },
+  {
+   "id": "IDABSE27",
+   "query": "absl shared locks required",
+   "identifier": "ABSL_SHARED_LOCKS_REQUIRED",
+   "definedIn": [
+    "absl/log/internal/log_sink_set.cc",
+    "absl/random/internal/entropy_pool.cc"
+   ]
+  },
+  {
+   "id": "IDABSE28",
+   "query": "bm format format time",
+   "identifier": "BM_Format_FormatTime",
+   "definedIn": [
+    "absl/time/format_benchmark.cc",
+    "absl/time/internal/cctz/src/cctz_benchmark.cc"
+   ]
+  },
+  {
+   "id": "IDABSE29",
+   "query": "parse digit",
+   "identifier": "ParseDigit",
+   "definedIn": [
+    "absl/debugging/internal/demangle.cc",
+    "absl/time/internal/cctz/src/time_zone_fixed.cc"
+   ]
+  },
+  {
+   "id": "IDABSE30",
+   "query": "ends with",
+   "identifier": "EndsWith",
+   "definedIn": [
+    "absl/debugging/internal/demangle.cc",
+    "absl/strings/cord.cc"
+   ]
+  },
+  {
+   "id": "IDABSE31",
+   "query": "bm step days",
+   "identifier": "BM_Step_Days",
+   "definedIn": [
+    "absl/time/civil_time_benchmark.cc",
+    "absl/time/internal/cctz/src/cctz_benchmark.cc"
+   ]
+  },
+  {
+   "id": "IDABSE32",
+   "query": "log internal",
+   "identifier": "log_internal",
+   "definedIn": [
+    "absl/log/die_if_null.cc",
+    "absl/log/flags.cc",
+    "absl/log/internal/check_op.cc",
+    "absl/log/internal/conditions.cc",
+    "absl/log/internal/fnmatch.cc",
+    "absl/log/internal/globals.cc",
+    "absl/log/internal/log_format.cc",
+    "absl/log/internal/log_message.cc",
+    "absl/log/internal/log_sink_set.cc",
+    "absl/log/internal/nullguard.cc",
+    "absl/log/internal/proto.cc",
+    "absl/log/internal/structured_proto.cc",
+    "absl/log/internal/vlog_config.cc",
+    "absl/log/internal/vlog_config_benchmark.cc"
+   ]
+  },
+  {
+   "id": "IDABSE33",
+   "query": "absl cacheline aligned",
+   "identifier": "ABSL_CACHELINE_ALIGNED",
+   "definedIn": [
+    "absl/synchronization/mutex.cc",
+    "absl/time/clock.cc"
+   ]
+  },
+  {
+   "id": "IDABSE34",
+   "query": "string view",
+   "identifier": "string_view",
+   "definedIn": [
+    "absl/flags/parse.cc",
+    "absl/log/internal/log_message.cc",
+    "absl/strings/cord.cc"
+   ]
+  },
+  {
+   "id": "IDABSE35",
+   "query": "current value",
+   "identifier": "CurrentValue",
+   "definedIn": [
+    "absl/flags/internal/flag.cc",
+    "absl/flags/reflection.cc"
+   ]
+  },
+  {
+   "id": "IDABSE36",
+   "query": "base internal",
+   "identifier": "base_internal",
+   "definedIn": [
+    "absl/base/casts.cc",
+    "absl/base/internal/cpu_detect.cc",
+    "absl/base/internal/cycleclock.cc",
+    "absl/base/internal/low_level_alloc.cc",
+    "absl/base/internal/poison.cc",
+    "absl/base/internal/scoped_set_env.cc",
+    "absl/base/internal/spinlock.cc",
+    "absl/base/internal/spinlock_wait.cc",
+    "absl/base/internal/strerror.cc",
+    "absl/base/internal/sysinfo.cc",
+    "absl/base/internal/thread_identity.cc",
+    "absl/base/internal/tracing.cc",
+    "absl/base/internal/unscaledcycleclock.cc",
+    "absl/base/spinlock_test_common.cc"
+   ]
+  },
+  {
+   "id": "IDABSE37",
+   "query": "length delimited",
+   "identifier": "LengthDelimited",
+   "definedIn": [
+    "absl/log/internal/structured_proto.cc",
+    "absl/profiling/internal/profile_builder.cc"
+   ]
+  },
+  {
+   "id": "IDABSE38",
+   "query": "bm time from civil day0 libc",
+   "identifier": "BM_Time_FromCivilDay0_Libc",
+   "definedIn": [
+    "absl/time/internal/cctz/src/cctz_benchmark.cc",
+    "absl/time/time_benchmark.cc"
+   ]
+  },
+  {
+   "id": "IDABSE39",
+   "query": "bm erase if",
+   "identifier": "BM_EraseIf",
+   "definedIn": [
+    "absl/container/btree_benchmark.cc",
+    "absl/container/internal/raw_hash_set_benchmark.cc"
+   ]
+  },
+  {
+   "id": "IDABSE40",
+   "query": "get stack trace",
+   "identifier": "GetStackTrace",
+   "definedIn": [
+    "absl/debugging/stacktrace.cc",
+    "absl/synchronization/internal/graphcycles.cc"
+   ]
+  },
+  {
+   "id": "IDABSE41",
+   "query": "to string",
+   "identifier": "ToString",
+   "definedIn": [
+    "absl/numeric/int128.cc",
+    "absl/status/internal/status_internal.cc",
+    "absl/status/status_builder.cc"
+   ]
+  },
+  {
+   "id": "IDABSE42",
+   "query": "encode wait cycles",
+   "identifier": "EncodeWaitCycles",
+   "definedIn": [
+    "absl/base/internal/spinlock.cc",
+    "absl/base/spinlock_test_common.cc"
+   ]
+  },
+  {
+   "id": "IDABSE43",
+   "query": "prev transition",
+   "identifier": "PrevTransition",
+   "definedIn": [
+    "absl/time/internal/cctz/src/time_zone_info.cc",
+    "absl/time/internal/cctz/src/time_zone_libc.cc",
+    "absl/time/time.cc"
+   ]
+  },
+  {
+   "id": "IDABSE44",
+   "query": "container internal",
+   "identifier": "container_internal",
+   "definedIn": [
+    "absl/container/btree_benchmark.cc",
+    "absl/container/internal/hash_generator_testing.cc",
+    "absl/container/internal/hashtablez_sampler.cc",
+    "absl/container/internal/hashtablez_sampler_force_weak_definition.cc",
+    "absl/container/internal/raw_hash_set.cc",
+    "absl/container/internal/raw_hash_set_benchmark.cc"
+   ]
+  },
+  {
+   "id": "IDABSE45",
+   "query": "cord internal",
+   "identifier": "cord_internal",
+   "definedIn": [
+    "absl/strings/cord_analysis.cc",
+    "absl/strings/internal/cord_internal.cc",
+    "absl/strings/internal/cord_rep_btree.cc",
+    "absl/strings/internal/cord_rep_btree_navigator.cc",
+    "absl/strings/internal/cord_rep_btree_reader.cc",
+    "absl/strings/internal/cord_rep_consume.cc",
+    "absl/strings/internal/cord_rep_crc.cc",
+    "absl/strings/internal/cordz_functions.cc",
+    "absl/strings/internal/cordz_handle.cc",
+    "absl/strings/internal/cordz_info.cc",
+    "absl/strings/internal/cordz_sample_token.cc"
+   ]
+  },
+  {
+   "id": "IDABSE46",
+   "query": "debugging internal",
+   "identifier": "debugging_internal",
+   "definedIn": [
+    "absl/debugging/internal/address_is_readable.cc",
+    "absl/debugging/internal/decode_rust_punycode.cc",
+    "absl/debugging/internal/demangle.cc",
+    "absl/debugging/internal/demangle_rust.cc",
+    "absl/debugging/internal/elf_mem_image.cc",
+    "absl/debugging/internal/examine_stack.cc",
+    "absl/debugging/internal/stack_consumption.cc",
+    "absl/debugging/internal/utf8_for_code_point.cc",
+    "absl/debugging/internal/vdso_support.cc",
+    "absl/debugging/symbolize.cc",
+    "absl/profiling/internal/profile_builder.cc"
+   ]
+  },
+  {
+   "id": "IDABSE47",
+   "query": "parse from",
+   "identifier": "ParseFrom",
+   "definedIn": [
+    "absl/flags/commandlineflag.cc",
+    "absl/flags/internal/flag.cc",
+    "absl/flags/internal/private_handle_accessor.cc",
+    "absl/flags/reflection.cc"
+   ]
+  },
+  {
+   "id": "IDABSE48",
+   "query": "absl hash value",
+   "identifier": "AbslHashValue",
+   "definedIn": [
+    "absl/container/btree_benchmark.cc",
+    "absl/container/internal/raw_hash_set_benchmark.cc",
+    "absl/hash/hash_benchmark.cc"
+   ]
+  },
+  {
+   "id": "IDABSE49",
+   "query": "strings internal",
+   "identifier": "strings_internal",
+   "definedIn": [
+    "absl/strings/internal/charconv_bigint.cc",
+    "absl/strings/internal/damerau_levenshtein_distance.cc",
+    "absl/strings/internal/escaping.cc",
+    "absl/strings/internal/memutil.cc",
+    "absl/strings/internal/ostringstream.cc",
+    "absl/strings/internal/pow10_helper.cc",
+    "absl/strings/internal/stringify_sink.cc",
+    "absl/strings/internal/utf8.cc",
+    "absl/strings/str_replace.cc"
+   ]
+  },
+  {
+   "id": "IDABSE50",
+   "query": "status internal",
+   "identifier": "status_internal",
+   "definedIn": [
+    "absl/status/internal/status_internal.cc",
+    "absl/status/internal/status_matchers.cc",
+    "absl/status/status_payload_printer.cc"
+   ]
+  },
+  {
+   "id": "IDABSE51",
+   "query": "event tag",
+   "identifier": "EventTag",
+   "definedIn": [
+    "absl/log/internal/log_message.cc",
+    "absl/log/log_entry.cc"
+   ]
+  },
+  {
+   "id": "IDABSE52",
+   "query": "read sysctl by name",
+   "identifier": "ReadSysctlByName",
+   "definedIn": [
+    "absl/base/internal/cpu_detect.cc",
+    "absl/random/internal/randen_detect.cc"
+   ]
+  },
+  {
+   "id": "IDABSE53",
+   "query": "next transition",
+   "identifier": "NextTransition",
+   "definedIn": [
+    "absl/time/internal/cctz/src/time_zone_info.cc",
+    "absl/time/internal/cctz/src/time_zone_libc.cc",
+    "absl/time/time.cc"
+   ]
+  },
+  {
+   "id": "IDABSE54",
+   "query": "time internal",
+   "identifier": "time_internal",
+   "definedIn": [
+    "absl/time/clock.cc",
+    "absl/time/internal/cctz/src/civil_time_detail.cc",
+    "absl/time/internal/cctz/src/time_zone_fixed.cc",
+    "absl/time/internal/cctz/src/time_zone_format.cc",
+    "absl/time/internal/cctz/src/time_zone_if.cc",
+    "absl/time/internal/cctz/src/time_zone_impl.cc",
+    "absl/time/internal/cctz/src/time_zone_info.cc",
+    "absl/time/internal/cctz/src/time_zone_libc.cc",
+    "absl/time/internal/cctz/src/time_zone_lookup.cc",
+    "absl/time/internal/cctz/src/time_zone_name_win.cc",
+    "absl/time/internal/cctz/src/zone_info_source.cc"
+   ]
+  },
+  {
+   "id": "IDABSE55",
+   "query": "type name",
+   "identifier": "TypeName",
+   "definedIn": [
+    "absl/flags/commandlineflag.cc",
+    "absl/flags/internal/flag.cc",
+    "absl/flags/internal/private_handle_accessor.cc"
+   ]
+  },
+  {
+   "id": "IDABSE56",
+   "query": "absl internal c symbol",
+   "identifier": "ABSL_INTERNAL_C_SYMBOL",
+   "definedIn": [
+    "absl/base/internal/tracing.cc",
+    "absl/container/internal/hashtablez_sampler_force_weak_definition.cc",
+    "absl/flags/usage_config.cc",
+    "absl/log/internal/log_message.cc",
+    "absl/synchronization/internal/per_thread_sem.cc",
+    "absl/synchronization/mutex.cc",
+    "absl/time/clock.cc"
+   ]
+  }
+ ]
+}

@@ -23,8 +23,17 @@ ASTPair = Tuple[str, str]
 class KalpanaReranker:
     """Structural reranker over Miru's top-K candidate chunks."""
 
-    def __init__(self, seed: int = 42) -> None:
-        self.vocab = NeuroVocab(seed=seed)
+    def __init__(self, seed: int = 42, embedder: str = "minilm") -> None:
+        """embedder: 'minilm' (local all-MiniLM-L6-v2, default) or 'ds1' (Takara DS1 over the API;
+        needs TAKARA_API_KEY in the environment or .env)."""
+        if embedder == "ds1":
+            from kalpana_rif.ds1_model import Ds1Model
+            self.vocab = NeuroVocab(seed=seed, model=Ds1Model())
+        elif embedder == "minilm":
+            self.vocab = NeuroVocab(seed=seed)
+        else:
+            raise ValueError(f"unknown embedder {embedder!r} (expected 'minilm' or 'ds1')")
+        self.embedder = embedder
 
     def index_chunk(self, pairs: List[ASTPair]) -> np.ndarray:
         """Build the structural state tensor for one code chunk."""

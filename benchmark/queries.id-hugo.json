@@ -1,0 +1,1932 @@
+{
+ "repo": "id-hugo",
+ "commit": "7343fc9c37877fbe81856fe99b08ac1ebbf72d12",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "200 ambiguous-symbol lookups drawn by gen_queries_multi.py (seed 0xa11ce) from tree-sitter definitions; >=8 chars, >=2 words, 2..30 dirs, tests excluded.",
+ "queries": [
+  {
+   "id": "IDHUGO0",
+   "query": "context key",
+   "identifier": "contextKey",
+   "definedIn": [
+    "common/hugo/hugo.go",
+    "hugofs/component_fs.go",
+    "hugolib/page__content.go",
+    "resources/resource_factories/create/create.go",
+    "tpl/template.go"
+   ]
+  },
+  {
+   "id": "IDHUGO1",
+   "query": "load modules",
+   "identifier": "loadModules",
+   "definedIn": [
+    "config/allconfig/load.go",
+    "modules/collect.go"
+   ]
+  },
+  {
+   "id": "IDHUGO2",
+   "query": "set frames",
+   "identifier": "SetFrames",
+   "definedIn": [
+    "internal/warpc/webp.go",
+    "resources/images/codec.go"
+   ]
+  },
+  {
+   "id": "IDHUGO3",
+   "query": "rel ref from",
+   "identifier": "RelRefFrom",
+   "definedIn": [
+    "hugolib/page__ref.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO4",
+   "query": "has prefix",
+   "identifier": "hasPrefix",
+   "definedIn": [
+    "hugofs/rootmapping_fs.go",
+    "parser/pageparser/pagelexer.go"
+   ]
+  },
+  {
+   "id": "IDHUGO5",
+   "query": "logical name",
+   "identifier": "LogicalName",
+   "definedIn": [
+    "resources/page/page_nop.go",
+    "source/fileInfo.go"
+   ]
+  },
+  {
+   "id": "IDHUGO6",
+   "query": "for eeach identity by name",
+   "identifier": "ForEeachIdentityByName",
+   "definedIn": [
+    "hugolib/site.go",
+    "resources/page/hugoinfo.go",
+    "resources/page/site.go",
+    "resources/transform.go"
+   ]
+  },
+  {
+   "id": "IDHUGO7",
+   "query": "get terms",
+   "identifier": "GetTerms",
+   "definedIn": [
+    "hugolib/page.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO8",
+   "query": "execute template",
+   "identifier": "ExecuteTemplate",
+   "definedIn": [
+    "tpl/internal/go_templates/htmltemplate/template.go",
+    "tpl/internal/go_templates/texttemplate/exec.go"
+   ]
+  },
+  {
+   "id": "IDHUGO9",
+   "query": "google analytics",
+   "identifier": "GoogleAnalytics",
+   "definedIn": [
+    "config/privacy/privacyConfig.go",
+    "config/services/servicesConfig.go"
+   ]
+  },
+  {
+   "id": "IDHUGO10",
+   "query": "first lower",
+   "identifier": "FirstLower",
+   "definedIn": [
+    "helpers/general.go",
+    "tpl/strings/strings.go"
+   ]
+  },
+  {
+   "id": "IDHUGO11",
+   "query": "main sections",
+   "identifier": "MainSections",
+   "definedIn": [
+    "hugolib/site.go",
+    "resources/page/site.go"
+   ]
+  },
+  {
+   "id": "IDHUGO12",
+   "query": "render context",
+   "identifier": "RenderContext",
+   "definedIn": [
+    "markup/converter/converter.go",
+    "markup/goldmark/internal/render/context.go"
+   ]
+  },
+  {
+   "id": "IDHUGO13",
+   "query": "merge by language",
+   "identifier": "MergeByLanguage",
+   "definedIn": [
+    "resources/page/pages_language_merge.go",
+    "resources/resource/resources.go"
+   ]
+  },
+  {
+   "id": "IDHUGO14",
+   "query": "build drafts",
+   "identifier": "BuildDrafts",
+   "definedIn": [
+    "config/allconfig/configlanguage.go",
+    "hugolib/site.go",
+    "resources/page/site.go"
+   ]
+  },
+  {
+   "id": "IDHUGO15",
+   "query": "base file name",
+   "identifier": "BaseFileName",
+   "definedIn": [
+    "resources/page/page_nop.go",
+    "source/fileInfo.go"
+   ]
+  },
+  {
+   "id": "IDHUGO16",
+   "query": "html escaper",
+   "identifier": "HTMLEscaper",
+   "definedIn": [
+    "tpl/internal/go_templates/htmltemplate/escape.go",
+    "tpl/internal/go_templates/texttemplate/funcs.go"
+   ]
+  },
+  {
+   "id": "IDHUGO17",
+   "query": "batcher client",
+   "identifier": "BatcherClient",
+   "definedIn": [
+    "internal/js/api.go",
+    "internal/js/esbuild/batch.go"
+   ]
+  },
+  {
+   "id": "IDHUGO18",
+   "query": "is multihost",
+   "identifier": "IsMultihost",
+   "definedIn": [
+    "config/allconfig/configlanguage.go",
+    "resources/page/hugoinfo.go"
+   ]
+  },
+  {
+   "id": "IDHUGO19",
+   "query": "next in section",
+   "identifier": "NextInSection",
+   "definedIn": [
+    "hugolib/page__position.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO20",
+   "query": "for each index",
+   "identifier": "ForEachIndex",
+   "definedIn": [
+    "hugolib/roles/roles.go",
+    "hugolib/sitesmatrix/vectorstores.go",
+    "hugolib/versions/versions.go",
+    "langs/config.go"
+   ]
+  },
+  {
+   "id": "IDHUGO21",
+   "query": "configured dimensions",
+   "identifier": "ConfiguredDimensions",
+   "definedIn": [
+    "config/allconfig/configlanguage.go",
+    "hugolib/sitesmatrix/vectorstores.go"
+   ]
+  },
+  {
+   "id": "IDHUGO22",
+   "query": "is default code block renderer",
+   "identifier": "IsDefaultCodeBlockRenderer",
+   "definedIn": [
+    "hugolib/site.go",
+    "markup/highlight/highlight.go"
+   ]
+  },
+  {
+   "id": "IDHUGO23",
+   "query": "decode options",
+   "identifier": "DecodeOptions",
+   "definedIn": [
+    "resources/resource_transformers/babel/babel.go",
+    "resources/resource_transformers/tocss/scss/client.go"
+   ]
+  },
+  {
+   "id": "IDHUGO24",
+   "query": "image cache",
+   "identifier": "ImageCache",
+   "definedIn": [
+    "cache/filecache/filecache_config.go",
+    "resources/image_cache.go"
+   ]
+  },
+  {
+   "id": "IDHUGO25",
+   "query": "get frame durations",
+   "identifier": "GetFrameDurations",
+   "definedIn": [
+    "internal/warpc/webp.go",
+    "resources/images/codec.go"
+   ]
+  },
+  {
+   "id": "IDHUGO26",
+   "query": "render string",
+   "identifier": "RenderString",
+   "definedIn": [
+    "hugolib/page__content.go",
+    "hugolib/page__per_output.go",
+    "resources/page/page_lazy_contentprovider.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO27",
+   "query": "file info",
+   "identifier": "FileInfo",
+   "definedIn": [
+    "resources/page/page_nop.go",
+    "source/fileInfo.go"
+   ]
+  },
+  {
+   "id": "IDHUGO28",
+   "query": "language prefix",
+   "identifier": "LanguagePrefix",
+   "definedIn": [
+    "config/allconfig/configlanguage.go",
+    "hugolib/site.go",
+    "resources/page/page_nop.go",
+    "resources/page/site.go"
+   ]
+  },
+  {
+   "id": "IDHUGO29",
+   "query": "get loop count",
+   "identifier": "GetLoopCount",
+   "definedIn": [
+    "internal/warpc/webp.go",
+    "resources/images/codec.go"
+   ]
+  },
+  {
+   "id": "IDHUGO30",
+   "query": "output formats",
+   "identifier": "OutputFormats",
+   "definedIn": [
+    "hugolib/page__paths.go",
+    "resources/page/page_nop.go",
+    "resources/page/page_outputformat.go"
+   ]
+  },
+  {
+   "id": "IDHUGO31",
+   "query": "get string",
+   "identifier": "GetString",
+   "definedIn": [
+    "cache/filecache/filecache.go",
+    "config/defaultConfigProvider.go"
+   ]
+  },
+  {
+   "id": "IDHUGO32",
+   "query": "animated image",
+   "identifier": "AnimatedImage",
+   "definedIn": [
+    "common/himage/image.go",
+    "internal/warpc/webp.go"
+   ]
+  },
+  {
+   "id": "IDHUGO33",
+   "query": "bundle type",
+   "identifier": "BundleType",
+   "definedIn": [
+    "hugolib/page__meta.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO34",
+   "query": "target path",
+   "identifier": "TargetPath",
+   "definedIn": [
+    "resources/internal/resourcepaths.go",
+    "resources/resource.go"
+   ]
+  },
+  {
+   "id": "IDHUGO35",
+   "query": "expiry date",
+   "identifier": "ExpiryDate",
+   "definedIn": [
+    "hugolib/page__meta.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO36",
+   "query": "err with file context",
+   "identifier": "errWithFileContext",
+   "definedIn": [
+    "hugolib/hugo_sites.go",
+    "langs/i18n/translationProvider.go"
+   ]
+  },
+  {
+   "id": "IDHUGO37",
+   "query": "path escape",
+   "identifier": "PathEscape",
+   "definedIn": [
+    "common/paths/path.go",
+    "tpl/urls/urls.go"
+   ]
+  },
+  {
+   "id": "IDHUGO38",
+   "query": "is super set",
+   "identifier": "IsSuperSet",
+   "definedIn": [
+    "common/hmaps/orderedintset.go",
+    "hugolib/sitesmatrix/vectorstores.go"
+   ]
+  },
+  {
+   "id": "IDHUGO39",
+   "query": "keys sorted",
+   "identifier": "KeysSorted",
+   "definedIn": [
+    "common/hmaps/orderedintset.go",
+    "hugolib/sitesmatrix/vectorstores.go"
+   ]
+  },
+  {
+   "id": "IDHUGO40",
+   "query": "compile config",
+   "identifier": "CompileConfig",
+   "definedIn": [
+    "config/allconfig/allconfig.go",
+    "config/commonConfig.go"
+   ]
+  },
+  {
+   "id": "IDHUGO41",
+   "query": "parse and render content",
+   "identifier": "ParseAndRenderContent",
+   "definedIn": [
+    "hugolib/page__per_output.go",
+    "resources/page/page_lazy_contentprovider.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO42",
+   "query": "is descendant",
+   "identifier": "IsDescendant",
+   "definedIn": [
+    "hugolib/page__tree.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO43",
+   "query": "all translations",
+   "identifier": "AllTranslations",
+   "definedIn": [
+    "hugolib/page.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO44",
+   "query": "new cache",
+   "identifier": "NewCache",
+   "definedIn": [
+    "cache/filecache/filecache.go",
+    "common/hmaps/cache.go"
+   ]
+  },
+  {
+   "id": "IDHUGO45",
+   "query": "render content",
+   "identifier": "RenderContent",
+   "definedIn": [
+    "hugolib/page__per_output.go",
+    "resources/page/page_lazy_contentprovider.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO46",
+   "query": "code owners",
+   "identifier": "CodeOwners",
+   "definedIn": [
+    "hugolib/page.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO47",
+   "query": "js escape string",
+   "identifier": "JSEscapeString",
+   "definedIn": [
+    "tpl/internal/go_templates/htmltemplate/escape.go",
+    "tpl/internal/go_templates/texttemplate/funcs.go"
+   ]
+  },
+  {
+   "id": "IDHUGO48",
+   "query": "new provider",
+   "identifier": "NewProvider",
+   "definedIn": [
+    "markup/converter/converter.go",
+    "metrics/metrics.go"
+   ]
+  },
+  {
+   "id": "IDHUGO49",
+   "query": "get or create",
+   "identifier": "GetOrCreate",
+   "definedIn": [
+    "cache/dynacache/dynacache.go",
+    "cache/filecache/filecache.go",
+    "common/hmaps/cache.go",
+    "resources/resource_cache.go"
+   ]
+  },
+  {
+   "id": "IDHUGO50",
+   "query": "format percent",
+   "identifier": "FormatPercent",
+   "definedIn": [
+    "langs/language.go",
+    "tpl/lang/lang.go"
+   ]
+  },
+  {
+   "id": "IDHUGO51",
+   "query": "parse content",
+   "identifier": "ParseContent",
+   "definedIn": [
+    "hugolib/page__per_output.go",
+    "resources/page/page_lazy_contentprovider.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO52",
+   "query": "for each vector",
+   "identifier": "ForEachVector",
+   "definedIn": [
+    "hugolib/content_map_page_contentnode.go",
+    "hugolib/sitesmatrix/dimensions.go",
+    "hugolib/sitesmatrix/vectorstores.go"
+   ]
+  },
+  {
+   "id": "IDHUGO53",
+   "query": "content base name",
+   "identifier": "ContentBaseName",
+   "definedIn": [
+    "resources/page/page_nop.go",
+    "source/fileInfo.go"
+   ]
+  },
+  {
+   "id": "IDHUGO54",
+   "query": "resource type",
+   "identifier": "ResourceType",
+   "definedIn": [
+    "resources/page/page_nop.go",
+    "resources/postpub/postpub.go",
+    "resources/resource.go",
+    "resources/resource/resourcetypes.go",
+    "resources/transform.go"
+   ]
+  },
+  {
+   "id": "IDHUGO55",
+   "query": "html renderer",
+   "identifier": "htmlRenderer",
+   "definedIn": [
+    "markup/goldmark/blockquotes/blockquotes.go",
+    "markup/goldmark/codeblocks/render.go",
+    "markup/goldmark/passthrough/passthrough.go",
+    "markup/goldmark/tables/tables.go"
+   ]
+  },
+  {
+   "id": "IDHUGO56",
+   "query": "related keywords",
+   "identifier": "RelatedKeywords",
+   "definedIn": [
+    "hugolib/page.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO57",
+   "query": "set option",
+   "identifier": "SetOption",
+   "definedIn": [
+    "markup/goldmark/hugocontext/hugocontext.go",
+    "markup/goldmark/render_hooks.go"
+   ]
+  },
+  {
+   "id": "IDHUGO58",
+   "query": "hash string",
+   "identifier": "HashString",
+   "definedIn": [
+    "common/hashing/hashing.go",
+    "tpl/testinginternal/testinginternal.go"
+   ]
+  },
+  {
+   "id": "IDHUGO59",
+   "query": "execute with context",
+   "identifier": "ExecuteWithContext",
+   "definedIn": [
+    "tpl/internal/go_templates/texttemplate/hugo_template.go",
+    "tpl/tplimpl/templatestore.go"
+   ]
+  },
+  {
+   "id": "IDHUGO60",
+   "query": "unique id",
+   "identifier": "UniqueID",
+   "definedIn": [
+    "resources/page/page_nop.go",
+    "source/fileInfo.go"
+   ]
+  },
+  {
+   "id": "IDHUGO61",
+   "query": "format currency",
+   "identifier": "FormatCurrency",
+   "definedIn": [
+    "langs/language.go",
+    "tpl/lang/lang.go"
+   ]
+  },
+  {
+   "id": "IDHUGO62",
+   "query": "match site vector coarse exclude language",
+   "identifier": "MatchSiteVectorCoarseExcludeLanguage",
+   "definedIn": [
+    "hugofs/fileinfo.go",
+    "resources/page/pagemeta/page_frontmatter.go"
+   ]
+  },
+  {
+   "id": "IDHUGO63",
+   "query": "marshal json",
+   "identifier": "MarshalJSON",
+   "definedIn": [
+    "cache/filecache/filecache_config.go",
+    "cache/httpcache/httpcache.go",
+    "commands/config.go",
+    "config/namespace.go",
+    "config/security/whitelist.go",
+    "hugolib/page.go",
+    "internal/js/esbuild/batch.go",
+    "media/mediaType.go",
+    "output/outputFormat.go",
+    "parser/lowercase_camel_json.go",
+    "resources/images/meta/meta.go",
+    "tpl/internal/templatefuncsRegistry.go"
+   ]
+  },
+  {
+   "id": "IDHUGO64",
+   "query": "ignore file",
+   "identifier": "IgnoreFile",
+   "definedIn": [
+    "config/allconfig/configlanguage.go",
+    "source/sourceSpec.go"
+   ]
+  },
+  {
+   "id": "IDHUGO65",
+   "query": "server port",
+   "identifier": "ServerPort",
+   "definedIn": [
+    "hugolib/site.go",
+    "resources/page/site.go"
+   ]
+  },
+  {
+   "id": "IDHUGO66",
+   "query": "first section",
+   "identifier": "FirstSection",
+   "definedIn": [
+    "hugolib/page__tree.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO67",
+   "query": "resolve index",
+   "identifier": "ResolveIndex",
+   "definedIn": [
+    "hugolib/roles/roles.go",
+    "hugolib/sitesmatrix/vectorstores.go",
+    "hugolib/versions/versions.go",
+    "langs/config.go"
+   ]
+  },
+  {
+   "id": "IDHUGO68",
+   "query": "is probably dependency",
+   "identifier": "IsProbablyDependency",
+   "definedIn": [
+    "identity/predicate_identity.go",
+    "tpl/tplimpl/templatestore.go"
+   ]
+  },
+  {
+   "id": "IDHUGO69",
+   "query": "is default",
+   "identifier": "IsDefault",
+   "definedIn": [
+    "hugolib/roles/roles.go",
+    "hugolib/site.go",
+    "hugolib/versions/versions.go",
+    "langs/language.go",
+    "resources/page/site.go"
+   ]
+  },
+  {
+   "id": "IDHUGO70",
+   "query": "walk func",
+   "identifier": "WalkFunc",
+   "definedIn": [
+    "hugofs/walk.go",
+    "hugolib/doctree/nodeshifttree.go"
+   ]
+  },
+  {
+   "id": "IDHUGO71",
+   "query": "for eeach in dimension",
+   "identifier": "ForEeachInDimension",
+   "definedIn": [
+    "hugolib/content_map_page_contentnodeshifter.go",
+    "hugolib/doctree/nodeshifttree.go"
+   ]
+  },
+  {
+   "id": "IDHUGO72",
+   "query": "module queries cache",
+   "identifier": "ModuleQueriesCache",
+   "definedIn": [
+    "cache/filecache/filecache_config.go",
+    "modules/client.go"
+   ]
+  },
+  {
+   "id": "IDHUGO73",
+   "query": "sanitize anchor name",
+   "identifier": "SanitizeAnchorName",
+   "definedIn": [
+    "helpers/content.go",
+    "markup/goldmark/convert.go"
+   ]
+  },
+  {
+   "id": "IDHUGO74",
+   "query": "read from",
+   "identifier": "ReadFrom",
+   "definedIn": [
+    "common/hashing/hashing.go",
+    "hugolib/integrationtest_builder.go"
+   ]
+  },
+  {
+   "id": "IDHUGO75",
+   "query": "link title",
+   "identifier": "LinkTitle",
+   "definedIn": [
+    "hugolib/page__meta.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO76",
+   "query": "fuzzy word count",
+   "identifier": "FuzzyWordCount",
+   "definedIn": [
+    "hugolib/page__content.go",
+    "hugolib/page__per_output.go",
+    "resources/page/page.go",
+    "resources/page/page_lazy_contentprovider.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO77",
+   "query": "check ready",
+   "identifier": "CheckReady",
+   "definedIn": [
+    "hugolib/site.go",
+    "resources/page/site.go"
+   ]
+  },
+  {
+   "id": "IDHUGO78",
+   "query": "translation key",
+   "identifier": "TranslationKey",
+   "definedIn": [
+    "hugolib/page.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO79",
+   "query": "error context",
+   "identifier": "ErrorContext",
+   "definedIn": [
+    "common/herrors/error_locator.go",
+    "common/herrors/file_error.go",
+    "tpl/internal/go_templates/texttemplate/parse/parse.go"
+   ]
+  },
+  {
+   "id": "IDHUGO80",
+   "query": "file info",
+   "identifier": "fileInfo",
+   "definedIn": [
+    "hugofs/fileinfo.go",
+    "hugolib/fileInfo.go",
+    "resources/resource.go"
+   ]
+  },
+  {
+   "id": "IDHUGO81",
+   "query": "vector sample",
+   "identifier": "VectorSample",
+   "definedIn": [
+    "hugolib/content_map_page_contentnode.go",
+    "hugolib/sitesmatrix/dimensions.go",
+    "hugolib/sitesmatrix/vectorstores.go"
+   ]
+  },
+  {
+   "id": "IDHUGO82",
+   "query": "new command",
+   "identifier": "newCommand",
+   "definedIn": [
+    "commands/new.go",
+    "tpl/internal/go_templates/texttemplate/parse/node.go"
+   ]
+  },
+  {
+   "id": "IDHUGO83",
+   "query": "get param",
+   "identifier": "getParam",
+   "definedIn": [
+    "hugolib/page__meta.go",
+    "resources/resource/resource_helpers.go"
+   ]
+  },
+  {
+   "id": "IDHUGO84",
+   "query": "raw content",
+   "identifier": "RawContent",
+   "definedIn": [
+    "hugolib/page.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO85",
+   "query": "is multilingual",
+   "identifier": "IsMultilingual",
+   "definedIn": [
+    "config/allconfig/configlanguage.go",
+    "resources/page/hugoinfo.go"
+   ]
+  },
+  {
+   "id": "IDHUGO86",
+   "query": "content without summary",
+   "identifier": "ContentWithoutSummary",
+   "definedIn": [
+    "hugolib/page__content.go",
+    "hugolib/page__per_output.go",
+    "resources/page/page_lazy_contentprovider.go",
+    "resources/page/page_markup.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO87",
+   "query": "get param",
+   "identifier": "GetParam",
+   "definedIn": [
+    "resources/page/page_nop.go",
+    "resources/resource/resource_helpers.go"
+   ]
+  },
+  {
+   "id": "IDHUGO88",
+   "query": "prepare arg",
+   "identifier": "prepareArg",
+   "definedIn": [
+    "tpl/collections/index.go",
+    "tpl/internal/go_templates/texttemplate/funcs.go"
+   ]
+  },
+  {
+   "id": "IDHUGO89",
+   "query": "key value",
+   "identifier": "KeyValue",
+   "definedIn": [
+    "common/types/types.go",
+    "tpl/internal/go_templates/fmtsort/sort.go"
+   ]
+  },
+  {
+   "id": "IDHUGO90",
+   "query": "read file fs",
+   "identifier": "readFileFS",
+   "definedIn": [
+    "tpl/internal/go_templates/htmltemplate/template.go",
+    "tpl/internal/go_templates/texttemplate/helper.go"
+   ]
+  },
+  {
+   "id": "IDHUGO91",
+   "query": "format number",
+   "identifier": "FormatNumber",
+   "definedIn": [
+    "langs/language.go",
+    "tpl/lang/lang.go"
+   ]
+  },
+  {
+   "id": "IDHUGO92",
+   "query": "js escaper",
+   "identifier": "JSEscaper",
+   "definedIn": [
+    "tpl/internal/go_templates/htmltemplate/escape.go",
+    "tpl/internal/go_templates/texttemplate/funcs.go"
+   ]
+  },
+  {
+   "id": "IDHUGO93",
+   "query": "is menu current",
+   "identifier": "IsMenuCurrent",
+   "definedIn": [
+    "hugolib/page__menus.go",
+    "navigation/pagemenus.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO94",
+   "query": "clean key",
+   "identifier": "cleanKey",
+   "definedIn": [
+    "hugolib/doctree/support.go",
+    "resources/resource_cache.go"
+   ]
+  },
+  {
+   "id": "IDHUGO95",
+   "query": "alternative output formats",
+   "identifier": "AlternativeOutputFormats",
+   "definedIn": [
+    "hugolib/page.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO96",
+   "query": "page menus",
+   "identifier": "pageMenus",
+   "definedIn": [
+    "hugolib/page__menus.go",
+    "navigation/pagemenus.go"
+   ]
+  },
+  {
+   "id": "IDHUGO97",
+   "query": "html escape",
+   "identifier": "HTMLEscape",
+   "definedIn": [
+    "tpl/internal/go_templates/htmltemplate/escape.go",
+    "tpl/internal/go_templates/texttemplate/funcs.go",
+    "tpl/transform/transform.go"
+   ]
+  },
+  {
+   "id": "IDHUGO98",
+   "query": "render codeblock",
+   "identifier": "RenderCodeblock",
+   "definedIn": [
+    "hugolib/site.go",
+    "markup/highlight/highlight.go"
+   ]
+  },
+  {
+   "id": "IDHUGO99",
+   "query": "printable value",
+   "identifier": "PrintableValue",
+   "definedIn": [
+    "common/types/hstring/stringtypes.go",
+    "resources/page/page_markup.go"
+   ]
+  },
+  {
+   "id": "IDHUGO100",
+   "query": "target pather",
+   "identifier": "targetPather",
+   "definedIn": [
+    "hugolib/page__per_output.go",
+    "resources/resource.go"
+   ]
+  },
+  {
+   "id": "IDHUGO101",
+   "query": "sections entries",
+   "identifier": "SectionsEntries",
+   "definedIn": [
+    "hugolib/page__tree.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO102",
+   "query": "document context",
+   "identifier": "DocumentContext",
+   "definedIn": [
+    "markup/converter/converter.go",
+    "markup/goldmark/internal/render/context.go"
+   ]
+  },
+  {
+   "id": "IDHUGO103",
+   "query": "path parser",
+   "identifier": "PathParser",
+   "definedIn": [
+    "common/paths/pathparser.go",
+    "config/allconfig/configlanguage.go"
+   ]
+  },
+  {
+   "id": "IDHUGO104",
+   "query": "set width height",
+   "identifier": "SetWidthHeight",
+   "definedIn": [
+    "internal/warpc/webp.go",
+    "resources/images/codec.go"
+   ]
+  },
+  {
+   "id": "IDHUGO105",
+   "query": "decode meta",
+   "identifier": "DecodeMeta",
+   "definedIn": [
+    "resources/images/image.go",
+    "resources/images/meta/meta.go"
+   ]
+  },
+  {
+   "id": "IDHUGO106",
+   "query": "translation base name",
+   "identifier": "TranslationBaseName",
+   "definedIn": [
+    "resources/page/page_nop.go",
+    "source/fileInfo.go"
+   ]
+  },
+  {
+   "id": "IDHUGO107",
+   "query": "config compiled",
+   "identifier": "ConfigCompiled",
+   "definedIn": [
+    "cache/httpcache/httpcache.go",
+    "config/allconfig/allconfig.go"
+   ]
+  },
+  {
+   "id": "IDHUGO108",
+   "query": "init config",
+   "identifier": "InitConfig",
+   "definedIn": [
+    "hugolib/segments/segments.go",
+    "resources/images/image.go",
+    "resources/page/page_matcher.go",
+    "resources/page/permalinks.go"
+   ]
+  },
+  {
+   "id": "IDHUGO109",
+   "query": "index match",
+   "identifier": "IndexMatch",
+   "definedIn": [
+    "hugolib/roles/roles.go",
+    "hugolib/sitesmatrix/vectorstores.go",
+    "hugolib/versions/versions.go",
+    "langs/config.go"
+   ]
+  },
+  {
+   "id": "IDHUGO110",
+   "query": "publish date",
+   "identifier": "PublishDate",
+   "definedIn": [
+    "hugolib/page__meta.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO111",
+   "query": "to string e",
+   "identifier": "ToStringE",
+   "definedIn": [
+    "common/hreflect/convert.go",
+    "common/types/convert.go"
+   ]
+  },
+  {
+   "id": "IDHUGO112",
+   "query": "can be nil",
+   "identifier": "canBeNil",
+   "definedIn": [
+    "tpl/collections/index.go",
+    "tpl/internal/go_templates/texttemplate/exec.go"
+   ]
+  },
+  {
+   "id": "IDHUGO113",
+   "query": "resolve markup",
+   "identifier": "ResolveMarkup",
+   "definedIn": [
+    "helpers/content.go",
+    "markup/markup.go"
+   ]
+  },
+  {
+   "id": "IDHUGO114",
+   "query": "has menu current",
+   "identifier": "HasMenuCurrent",
+   "definedIn": [
+    "hugolib/page__menus.go",
+    "navigation/pagemenus.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO115",
+   "query": "set params",
+   "identifier": "SetParams",
+   "definedIn": [
+    "common/hmaps/params.go",
+    "langs/language.go"
+   ]
+  },
+  {
+   "id": "IDHUGO116",
+   "query": "execute as template",
+   "identifier": "ExecuteAsTemplate",
+   "definedIn": [
+    "resources/resource_transformers/templates/execute_as_template.go",
+    "tpl/resources/resources.go"
+   ]
+  },
+  {
+   "id": "IDHUGO117",
+   "query": "plain words",
+   "identifier": "PlainWords",
+   "definedIn": [
+    "hugolib/page__content.go",
+    "hugolib/page__per_output.go",
+    "resources/page/page.go",
+    "resources/page/page_lazy_contentprovider.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO118",
+   "query": "is alpha numeric",
+   "identifier": "isAlphaNumeric",
+   "definedIn": [
+    "markup/goldmark/autoid.go",
+    "parser/pageparser/pagelexer.go",
+    "tpl/internal/go_templates/texttemplate/parse/lex.go"
+   ]
+  },
+  {
+   "id": "IDHUGO119",
+   "query": "url escape",
+   "identifier": "URLEscape",
+   "definedIn": [
+    "common/paths/url.go",
+    "helpers/url.go"
+   ]
+  },
+  {
+   "id": "IDHUGO120",
+   "query": "pages language merger",
+   "identifier": "pagesLanguageMerger",
+   "definedIn": [
+    "resources/page/pages_language_merge.go",
+    "tpl/lang/lang.go"
+   ]
+  },
+  {
+   "id": "IDHUGO121",
+   "query": "from string",
+   "identifier": "FromString",
+   "definedIn": [
+    "media/mediaType.go",
+    "resources/page/siteidentities/identities.go",
+    "resources/resource_factories/create/create.go",
+    "tpl/resources/resources.go"
+   ]
+  },
+  {
+   "id": "IDHUGO122",
+   "query": "build info",
+   "identifier": "BuildInfo",
+   "definedIn": [
+    "common/hugo/hugo.go",
+    "hugolib/pagesfromdata/pagesfromgotmpl.go"
+   ]
+  },
+  {
+   "id": "IDHUGO123",
+   "query": "page provider",
+   "identifier": "PageProvider",
+   "definedIn": [
+    "markup/converter/hooks/hooks.go",
+    "resources/page/page.go"
+   ]
+  },
+  {
+   "id": "IDHUGO124",
+   "query": "path info",
+   "identifier": "PathInfo",
+   "definedIn": [
+    "hugolib/content_map.go",
+    "hugolib/content_map_page_contentnode.go",
+    "hugolib/page__meta.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO125",
+   "query": "get dependency manager for scopes all",
+   "identifier": "GetDependencyManagerForScopesAll",
+   "definedIn": [
+    "hugolib/page.go",
+    "hugolib/pagesfromdata/pagesfromgotmpl.go",
+    "identity/identity.go"
+   ]
+  },
+  {
+   "id": "IDHUGO126",
+   "query": "get identity",
+   "identifier": "GetIdentity",
+   "definedIn": [
+    "hugolib/content_map.go",
+    "hugolib/content_map_page_contentnode.go",
+    "hugolib/page.go",
+    "hugolib/page__meta.go",
+    "identity/identity.go",
+    "internal/js/esbuild/batch.go",
+    "resources/transform.go",
+    "tpl/tplimpl/templatestore.go"
+   ]
+  },
+  {
+   "id": "IDHUGO127",
+   "query": "parse files",
+   "identifier": "parseFiles",
+   "definedIn": [
+    "tpl/internal/go_templates/htmltemplate/template.go",
+    "tpl/internal/go_templates/texttemplate/helper.go"
+   ]
+  },
+  {
+   "id": "IDHUGO128",
+   "query": "cache dir misc",
+   "identifier": "CacheDirMisc",
+   "definedIn": [
+    "cache/filecache/filecache_config.go",
+    "config/allconfig/configlanguage.go"
+   ]
+  },
+  {
+   "id": "IDHUGO129",
+   "query": "word count",
+   "identifier": "WordCount",
+   "definedIn": [
+    "hugolib/page__content.go",
+    "hugolib/page__per_output.go",
+    "resources/page/page.go",
+    "resources/page/page_lazy_contentprovider.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO130",
+   "query": "build config",
+   "identifier": "BuildConfig",
+   "definedIn": [
+    "config/commonConfig.go",
+    "resources/page/pagemeta/pagemeta.go"
+   ]
+  },
+  {
+   "id": "IDHUGO131",
+   "query": "sections path",
+   "identifier": "SectionsPath",
+   "definedIn": [
+    "hugolib/page__tree.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO132",
+   "query": "build state",
+   "identifier": "BuildState",
+   "definedIn": [
+    "deps/deps.go",
+    "hugolib/pagesfromdata/pagesfromgotmpl.go"
+   ]
+  },
+  {
+   "id": "IDHUGO133",
+   "query": "reading time",
+   "identifier": "ReadingTime",
+   "definedIn": [
+    "hugolib/page__content.go",
+    "hugolib/page__per_output.go",
+    "resources/page/page.go",
+    "resources/page/page_lazy_contentprovider.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO134",
+   "query": "closer func",
+   "identifier": "CloserFunc",
+   "definedIn": [
+    "common/hugio/readers.go",
+    "common/types/closer.go"
+   ]
+  },
+  {
+   "id": "IDHUGO135",
+   "query": "parse source",
+   "identifier": "parseSource",
+   "definedIn": [
+    "codegen/methods.go",
+    "hugolib/page__content.go"
+   ]
+  },
+  {
+   "id": "IDHUGO136",
+   "query": "post process",
+   "identifier": "PostProcess",
+   "definedIn": [
+    "resources/post_publish.go",
+    "tpl/resources/resources.go"
+   ]
+  },
+  {
+   "id": "IDHUGO137",
+   "query": "get frames",
+   "identifier": "GetFrames",
+   "definedIn": [
+    "internal/warpc/webp.go",
+    "resources/images/codec.go"
+   ]
+  },
+  {
+   "id": "IDHUGO138",
+   "query": "content types",
+   "identifier": "ContentTypes",
+   "definedIn": [
+    "config/allconfig/configlanguage.go",
+    "media/config.go"
+   ]
+  },
+  {
+   "id": "IDHUGO139",
+   "query": "has shortcode",
+   "identifier": "HasShortcode",
+   "definedIn": [
+    "hugolib/page.go",
+    "parser/pageparser/pageparser.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO140",
+   "query": "defined templates",
+   "identifier": "DefinedTemplates",
+   "definedIn": [
+    "tpl/internal/go_templates/htmltemplate/template.go",
+    "tpl/internal/go_templates/texttemplate/exec.go"
+   ]
+  },
+  {
+   "id": "IDHUGO141",
+   "query": "to time unix",
+   "identifier": "toTimeUnix",
+   "definedIn": [
+    "tpl/collections/where.go",
+    "tpl/compare/compare.go"
+   ]
+  },
+  {
+   "id": "IDHUGO142",
+   "query": "is branch",
+   "identifier": "IsBranch",
+   "definedIn": [
+    "hugolib/page__meta.go",
+    "resources/kinds/kinds.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO143",
+   "query": "register funcs",
+   "identifier": "RegisterFuncs",
+   "definedIn": [
+    "markup/goldmark/blockquotes/blockquotes.go",
+    "markup/goldmark/codeblocks/render.go",
+    "markup/goldmark/hugocontext/hugocontext.go",
+    "markup/goldmark/passthrough/passthrough.go",
+    "markup/goldmark/render_hooks.go",
+    "markup/goldmark/tables/tables.go",
+    "markup/goldmark/toc.go"
+   ]
+  },
+  {
+   "id": "IDHUGO144",
+   "query": "regular pages",
+   "identifier": "RegularPages",
+   "definedIn": [
+    "hugolib/hugo_sites.go",
+    "hugolib/page.go",
+    "hugolib/site.go",
+    "resources/page/page_nop.go",
+    "resources/page/site.go"
+   ]
+  },
+  {
+   "id": "IDHUGO145",
+   "query": "probably eq",
+   "identifier": "ProbablyEq",
+   "definedIn": [
+    "compare/compare.go",
+    "identity/identity.go",
+    "resources/page/pagegroup.go",
+    "resources/page/pages.go"
+   ]
+  },
+  {
+   "id": "IDHUGO146",
+   "query": "reset logs",
+   "identifier": "resetLogs",
+   "definedIn": [
+    "commands/commandeer.go",
+    "hugolib/hugo_sites.go"
+   ]
+  },
+  {
+   "id": "IDHUGO147",
+   "query": "is section",
+   "identifier": "IsSection",
+   "definedIn": [
+    "hugolib/page__meta.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO148",
+   "query": "regular pages recursive",
+   "identifier": "RegularPagesRecursive",
+   "definedIn": [
+    "hugolib/page.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO149",
+   "query": "url query escaper",
+   "identifier": "URLQueryEscaper",
+   "definedIn": [
+    "tpl/internal/go_templates/htmltemplate/escape.go",
+    "tpl/internal/go_templates/texttemplate/funcs.go"
+   ]
+  },
+  {
+   "id": "IDHUGO150",
+   "query": "resolve name",
+   "identifier": "ResolveName",
+   "definedIn": [
+    "hugolib/roles/roles.go",
+    "hugolib/sitesmatrix/vectorstores.go",
+    "hugolib/versions/versions.go",
+    "langs/config.go"
+   ]
+  },
+  {
+   "id": "IDHUGO151",
+   "query": "len vectors",
+   "identifier": "LenVectors",
+   "definedIn": [
+    "hugolib/content_map_page_contentnode.go",
+    "hugolib/sitesmatrix/dimensions.go",
+    "hugolib/sitesmatrix/vectorstores.go"
+   ]
+  },
+  {
+   "id": "IDHUGO152",
+   "query": "output format",
+   "identifier": "OutputFormat",
+   "definedIn": [
+    "common/paths/pathparser.go",
+    "resources/page/page_outputformat.go"
+   ]
+  },
+  {
+   "id": "IDHUGO153",
+   "query": "path base",
+   "identifier": "pathBase",
+   "definedIn": [
+    "hugolib/page__paths.go",
+    "modules/collect.go"
+   ]
+  },
+  {
+   "id": "IDHUGO154",
+   "query": "new default",
+   "identifier": "NewDefault",
+   "definedIn": [
+    "common/loggers/logger.go",
+    "hugofs/fs.go"
+   ]
+  },
+  {
+   "id": "IDHUGO155",
+   "query": "merge by language interface",
+   "identifier": "MergeByLanguageInterface",
+   "definedIn": [
+    "resources/page/pages_language_merge.go",
+    "resources/resource/resources.go"
+   ]
+  },
+  {
+   "id": "IDHUGO156",
+   "query": "is content",
+   "identifier": "IsContent",
+   "definedIn": [
+    "common/paths/pathparser.go",
+    "hugolib/filesystems/basefs.go"
+   ]
+  },
+  {
+   "id": "IDHUGO157",
+   "query": "stale version",
+   "identifier": "StaleVersion",
+   "definedIn": [
+    "hugolib/pagesfromdata/pagesfromgotmpl.go",
+    "resources/resource.go",
+    "resources/resource/resourcetypes.go",
+    "resources/transform.go"
+   ]
+  },
+  {
+   "id": "IDHUGO158",
+   "query": "add parse tree",
+   "identifier": "AddParseTree",
+   "definedIn": [
+    "tpl/internal/go_templates/htmltemplate/template.go",
+    "tpl/internal/go_templates/texttemplate/template.go"
+   ]
+  },
+  {
+   "id": "IDHUGO159",
+   "query": "abs pathify",
+   "identifier": "AbsPathify",
+   "definedIn": [
+    "common/paths/path.go",
+    "hugolib/paths/paths.go"
+   ]
+  },
+  {
+   "id": "IDHUGO160",
+   "query": "html escape string",
+   "identifier": "HTMLEscapeString",
+   "definedIn": [
+    "tpl/internal/go_templates/htmltemplate/escape.go",
+    "tpl/internal/go_templates/texttemplate/funcs.go"
+   ]
+  },
+  {
+   "id": "IDHUGO161",
+   "query": "eval args",
+   "identifier": "evalArgs",
+   "definedIn": [
+    "tpl/internal/go_templates/htmltemplate/escape.go",
+    "tpl/internal/go_templates/texttemplate/funcs.go"
+   ]
+  },
+  {
+   "id": "IDHUGO162",
+   "query": "parse glob",
+   "identifier": "parseGlob",
+   "definedIn": [
+    "tpl/internal/go_templates/htmltemplate/template.go",
+    "tpl/internal/go_templates/texttemplate/helper.go"
+   ]
+  },
+  {
+   "id": "IDHUGO163",
+   "query": "to file error",
+   "identifier": "toFileError",
+   "definedIn": [
+    "parser/metadecoders/decoder.go",
+    "resources/resource_transformers/cssjs/inline_imports.go"
+   ]
+  },
+  {
+   "id": "IDHUGO164",
+   "query": "table of contents",
+   "identifier": "TableOfContents",
+   "definedIn": [
+    "hugolib/page__per_output.go",
+    "hugolib/shortcode_page.go",
+    "markup/asciidocext/internal/converter.go",
+    "markup/goldmark/convert.go",
+    "resources/page/page_lazy_contentprovider.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO165",
+   "query": "for eeach identity",
+   "identifier": "ForEeachIdentity",
+   "definedIn": [
+    "hugolib/page.go",
+    "identity/identity.go"
+   ]
+  },
+  {
+   "id": "IDHUGO166",
+   "query": "read file os",
+   "identifier": "readFileOS",
+   "definedIn": [
+    "tpl/internal/go_templates/htmltemplate/template.go",
+    "tpl/internal/go_templates/texttemplate/helper.go"
+   ]
+  },
+  {
+   "id": "IDHUGO167",
+   "query": "headings filtered",
+   "identifier": "HeadingsFiltered",
+   "definedIn": [
+    "hugolib/page.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO168",
+   "query": "frame count",
+   "identifier": "FrameCount",
+   "definedIn": [
+    "resources/images/image.go",
+    "resources/transform.go"
+   ]
+  },
+  {
+   "id": "IDHUGO169",
+   "query": "is probably dependent",
+   "identifier": "IsProbablyDependent",
+   "definedIn": [
+    "identity/predicate_identity.go",
+    "tpl/tplimpl/templatestore.go"
+   ]
+  },
+  {
+   "id": "IDHUGO170",
+   "query": "to string",
+   "identifier": "ToString",
+   "definedIn": [
+    "common/hreflect/convert.go",
+    "common/hstrings/strings.go",
+    "common/types/convert.go",
+    "parser/pageparser/item.go",
+    "tpl/cast/cast.go"
+   ]
+  },
+  {
+   "id": "IDHUGO171",
+   "query": "read seek closer",
+   "identifier": "ReadSeekCloser",
+   "definedIn": [
+    "common/hugio/readers.go",
+    "resources/resource.go",
+    "resources/transform.go"
+   ]
+  },
+  {
+   "id": "IDHUGO172",
+   "query": "render shortcodes",
+   "identifier": "RenderShortcodes",
+   "definedIn": [
+    "hugolib/page__content.go",
+    "hugolib/page__per_output.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO173",
+   "query": "first upper",
+   "identifier": "FirstUpper",
+   "definedIn": [
+    "helpers/general.go",
+    "tpl/strings/strings.go"
+   ]
+  },
+  {
+   "id": "IDHUGO174",
+   "query": "get identity group",
+   "identifier": "GetIdentityGroup",
+   "definedIn": [
+    "resources/resource.go",
+    "resources/transform.go",
+    "tpl/openapi/openapi3/openapi3.go"
+   ]
+  },
+  {
+   "id": "IDHUGO175",
+   "query": "new html renderer",
+   "identifier": "newHTMLRenderer",
+   "definedIn": [
+    "markup/goldmark/blockquotes/blockquotes.go",
+    "markup/goldmark/codeblocks/render.go",
+    "markup/goldmark/passthrough/passthrough.go",
+    "markup/goldmark/tables/tables.go"
+   ]
+  },
+  {
+   "id": "IDHUGO176",
+   "query": "all pages",
+   "identifier": "AllPages",
+   "definedIn": [
+    "hugolib/site.go",
+    "resources/page/site.go"
+   ]
+  },
+  {
+   "id": "IDHUGO177",
+   "query": "in section",
+   "identifier": "InSection",
+   "definedIn": [
+    "hugolib/page__tree.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO178",
+   "query": "new cached resource getter",
+   "identifier": "NewCachedResourceGetter",
+   "definedIn": [
+    "resources/resource/resources.go",
+    "tpl/testinginternal/testinginternal.go"
+   ]
+  },
+  {
+   "id": "IDHUGO179",
+   "query": "is translated",
+   "identifier": "IsTranslated",
+   "definedIn": [
+    "hugolib/page.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO180",
+   "query": "get match",
+   "identifier": "GetMatch",
+   "definedIn": [
+    "resources/resource/resources.go",
+    "resources/resource_factories/create/create.go",
+    "tpl/resources/resources.go"
+   ]
+  },
+  {
+   "id": "IDHUGO181",
+   "query": "working dir",
+   "identifier": "WorkingDir",
+   "definedIn": [
+    "config/allconfig/configlanguage.go",
+    "resources/page/hugoinfo.go"
+   ]
+  },
+  {
+   "id": "IDHUGO182",
+   "query": "decode config",
+   "identifier": "decodeConfig",
+   "definedIn": [
+    "config/allconfig/alldecoders.go",
+    "modules/config.go",
+    "resources/images/codec.go"
+   ]
+  },
+  {
+   "id": "IDHUGO183",
+   "query": "media type",
+   "identifier": "MediaType",
+   "definedIn": [
+    "resources/artifact.go",
+    "resources/images/image.go",
+    "resources/page/page_nop.go",
+    "resources/page/page_outputformat.go",
+    "resources/postpub/postpub.go",
+    "resources/resource.go",
+    "resources/resource/resourcetypes.go",
+    "resources/transform.go"
+   ]
+  },
+  {
+   "id": "IDHUGO184",
+   "query": "index default",
+   "identifier": "IndexDefault",
+   "definedIn": [
+    "hugolib/roles/roles.go",
+    "hugolib/sitesmatrix/vectorstores.go",
+    "hugolib/versions/versions.go",
+    "langs/config.go",
+    "langs/language.go"
+   ]
+  },
+  {
+   "id": "IDHUGO185",
+   "query": "language code",
+   "identifier": "LanguageCode",
+   "definedIn": [
+    "hugolib/site.go",
+    "langs/language.go",
+    "resources/page/site.go"
+   ]
+  },
+  {
+   "id": "IDHUGO186",
+   "query": "rel permalink",
+   "identifier": "RelPermalink",
+   "definedIn": [
+    "resources/artifact.go",
+    "resources/page/page_nop.go",
+    "resources/page/page_outputformat.go",
+    "resources/page/page_paths.go",
+    "resources/postpub/postpub.go",
+    "resources/resource.go",
+    "resources/transform.go"
+   ]
+  },
+  {
+   "id": "IDHUGO187",
+   "query": "has suffix",
+   "identifier": "HasSuffix",
+   "definedIn": [
+    "media/mediaType.go",
+    "tpl/strings/strings.go"
+   ]
+  },
+  {
+   "id": "IDHUGO188",
+   "query": "decode build config",
+   "identifier": "DecodeBuildConfig",
+   "definedIn": [
+    "config/commonConfig.go",
+    "resources/page/pagemeta/pagemeta.go"
+   ]
+  },
+  {
+   "id": "IDHUGO189",
+   "query": "double percent",
+   "identifier": "doublePercent",
+   "definedIn": [
+    "common/terminal/colors.go",
+    "tpl/internal/go_templates/texttemplate/exec.go"
+   ]
+  },
+  {
+   "id": "IDHUGO190",
+   "query": "import resolver",
+   "identifier": "importResolver",
+   "definedIn": [
+    "resources/resource_transformers/cssjs/inline_imports.go",
+    "resources/resource_transformers/tocss/dartsass/transform.go"
+   ]
+  },
+  {
+   "id": "IDHUGO191",
+   "query": "get by suffix",
+   "identifier": "GetBySuffix",
+   "definedIn": [
+    "media/mediaType.go",
+    "output/outputFormat.go"
+   ]
+  },
+  {
+   "id": "IDHUGO192",
+   "query": "parse files",
+   "identifier": "ParseFiles",
+   "definedIn": [
+    "tpl/internal/go_templates/htmltemplate/template.go",
+    "tpl/internal/go_templates/texttemplate/helper.go"
+   ]
+  },
+  {
+   "id": "IDHUGO193",
+   "query": "parse glob",
+   "identifier": "ParseGlob",
+   "definedIn": [
+    "tpl/internal/go_templates/htmltemplate/template.go",
+    "tpl/internal/go_templates/texttemplate/helper.go"
+   ]
+  },
+  {
+   "id": "IDHUGO194",
+   "query": "prev in section",
+   "identifier": "PrevInSection",
+   "definedIn": [
+    "hugolib/page__position.go",
+    "resources/page/page_nop.go"
+   ]
+  },
+  {
+   "id": "IDHUGO195",
+   "query": "is ascii space",
+   "identifier": "isASCIISpace",
+   "definedIn": [
+    "parser/pageparser/pagelexer.go",
+    "tpl/template.go"
+   ]
+  },
+  {
+   "id": "IDHUGO196",
+   "query": "for eeach in all dimensions",
+   "identifier": "ForEeachInAllDimensions",
+   "definedIn": [
+    "hugolib/content_map_page_contentnode.go",
+    "hugolib/content_map_page_contentnodeshifter.go",
+    "hugolib/doctree/nodeshifttree.go"
+   ]
+  },
+  {
+   "id": "IDHUGO197",
+   "query": "write string",
+   "identifier": "WriteString",
+   "definedIn": [
+    "common/hugio/writers.go",
+    "hugofs/noop_fs.go",
+    "markup/highlight/highlight.go"
+   ]
+  },
+  {
+   "id": "IDHUGO198",
+   "query": "base config",
+   "identifier": "BaseConfig",
+   "definedIn": [
+    "config/allconfig/configlanguage.go",
+    "config/commonConfig.go"
+   ]
+  },
+  {
+   "id": "IDHUGO199",
+   "query": "source info",
+   "identifier": "sourceInfo",
+   "definedIn": [
+    "hugolib/page__content.go",
+    "hugolib/pagesfromdata/pagesfromgotmpl.go"
+   ]
+  }
+ ]
+}

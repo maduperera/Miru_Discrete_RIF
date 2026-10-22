@@ -87,13 +87,15 @@ class NeuroVocab:
         Mean resolution order:
             precomputed_mean > reference_words > default REFERENCE_WORDS
         """
-        if model is None:
+        default_model = model is None
+        if default_model:
             # Imported lazily so the rest of the project stays numpy-only.
             from sentence_transformers import SentenceTransformer
             model = SentenceTransformer(model_name, device="cpu")
         self.model = model
         self.dim = self.model.get_sentence_embedding_dimension()
-        assert self.dim == MINILM_DIM, f"expected 384-D model, got {self.dim}"
+        if default_model:  # a caller-supplied encoder (e.g. DS1, 256-D) may use any dimension
+            assert self.dim == MINILM_DIM, f"expected 384-D model, got {self.dim}"
         self.seed = seed
         self._roles = {r: self._make_role(r) for r in ROLES}
         self._tokens: dict[str, np.ndarray] = {}
@@ -138,6 +140,16 @@ class NeuroVocab:
             emb = self.model.encode(token, convert_to_numpy=True).astype(np.float64)
             self._tokens[token] = normalize(emb - self.mean_vector)
         return self._tokens[token]
+
+    def prefetch(self, tokens) -> int:
+        """Embed all not-yet-cached `tokens` in one batched call (for network-backed encoders
+        such as DS1, where one request per token would be slow). Returns how many were new."""
+        new = [t for t in dict.fromkeys(tokens) if t not in self._tokens]
+        if new:
+            embs = self.model.encode(new, convert_to_numpy=True).astype(np.float64)
+            for t, e in zip(new, embs):
+                self._tokens[t] = normalize(e - self.mean_vector)
+        return len(new)
 
     def __getitem__(self, key: str) -> np.ndarray:
         """vocab['ROLE_FUNC'] -> role vector, vocab['fetch'] -> token vector."""

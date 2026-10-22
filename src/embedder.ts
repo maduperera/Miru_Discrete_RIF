@@ -31,20 +31,25 @@ export function createDs1Embedder(opts?: { baseUrl?: string; model?: string; api
   const baseUrl = (opts?.baseUrl ?? process.env.MIRU_OPENAI_BASE_URL ?? "https://infer.takara.ai/v1").replace(/\/$/, "");
   const model = opts?.model ?? process.env.MIRU_OPENAI_EMBEDDING_MODEL ?? "ds1-miru-int8";
   const apiKey = opts?.apiKey ?? process.env.TAKARA_API_KEY;
+  const dim = Number(process.env.MIRU_EMBEDDING_DIMENSIONS ?? 256);
   if (!apiKey) throw new Error("TAKARA_API_KEY is required for the DS1 embedder");
   const call = async (input: string | string[], query: boolean): Promise<Float32Array[]> => {
+    // Same request shape as Miru's own client (embeddings/openai.ts): `dimensions` is sent, X-Q marks a query.
     const res = await fetch(`${baseUrl}/embeddings`, {
       method: "POST",
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json", ...(query ? { "X-Q": "1" } : {}) },
-      body: JSON.stringify({ model, input }),
+      body: JSON.stringify({ model, input, dimensions: dim }),
     });
     if (!res.ok) throw new Error(`DS1 embedding error ${res.status}: ${(await res.text()).slice(0, 300)}`);
-    const payload = (await res.json()) as { data: { embedding: number[] | { values: number[]; scale: number; zero_point: number } }[] };
-    return payload.data.map(({ embedding: e }) =>
-      Array.isArray(e) ? new Float32Array(e) : Float32Array.from(e.values, (v) => (v - e.zero_point) * e.scale),
+    const payload = (await res.json()) as {
+      data: { index?: number; embedding: number[] | { values: number[]; scale?: number; zero_point?: number } }[];
+    };
+    const items = [...payload.data].sort((a, b) => (a.index ?? 0) - (b.index ?? 0));
+    return items.map(({ embedding: e }) =>
+      Array.isArray(e) ? new Float32Array(e) : Float32Array.from(e.values, (v) => (v - (e.zero_point ?? 0)) * (e.scale ?? 1)),
     );
   };
-  return { name: model, dim: 256, embedQuery: async (t) => (await call(t, true))[0], embedBatch: (ts) => call(ts, false) };
+  return { name: model, dim, embedQuery: async (t) => (await call(t, true))[0], embedBatch: (ts) => call(ts, false) };
 }
 
 export function embedderChoice(): "ds1" | "minilm" {

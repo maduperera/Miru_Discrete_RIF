@@ -1,0 +1,2067 @@
+{
+ "repo": "id-laravel",
+ "commit": "5c0486f5a5b89e259d271dae729c8529a3ced989",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "200 ambiguous-symbol lookups drawn by gen_queries_multi.py (seed 0xa11ce) from tree-sitter definitions; >=8 chars, >=2 words, 2..30 dirs, tests excluded.",
+ "queries": [
+  {
+   "id": "IDLARA0",
+   "query": "write stream",
+   "identifier": "writeStream",
+   "definedIn": [
+    "src/Illuminate/Contracts/Filesystem/Filesystem.php",
+    "src/Illuminate/Filesystem/FilesystemAdapter.php",
+    "src/Illuminate/Filesystem/ReadThroughFilesystemAdapter.php"
+   ]
+  },
+  {
+   "id": "IDLARA1",
+   "query": "unless empty",
+   "identifier": "unlessEmpty",
+   "definedIn": [
+    "src/Illuminate/Collections/Enumerable.php",
+    "src/Illuminate/Collections/Traits/EnumeratesValues.php"
+   ]
+  },
+  {
+   "id": "IDLARA2",
+   "query": "set handler",
+   "identifier": "setHandler",
+   "definedIn": [
+    "src/Illuminate/Http/Client/PendingRequest.php",
+    "src/Illuminate/Session/Store.php",
+    "src/Illuminate/Support/Testing/Fakes/ExceptionHandlerFake.php"
+   ]
+  },
+  {
+   "id": "IDLARA3",
+   "query": "load routes",
+   "identifier": "loadRoutes",
+   "definedIn": [
+    "src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php",
+    "src/Illuminate/Routing/Router.php"
+   ]
+  },
+  {
+   "id": "IDLARA4",
+   "query": "dont report",
+   "identifier": "dontReport",
+   "definedIn": [
+    "src/Illuminate/Foundation/Configuration/Exceptions.php",
+    "src/Illuminate/Foundation/Exceptions/Handler.php"
+   ]
+  },
+  {
+   "id": "IDLARA5",
+   "query": "get database",
+   "identifier": "getDatabase",
+   "definedIn": [
+    "src/Illuminate/Database/Console/Seeds/SeedCommand.php",
+    "src/Illuminate/Queue/DatabaseQueue.php",
+    "src/Illuminate/Support/ConfigurationUrlParser.php"
+   ]
+  },
+  {
+   "id": "IDLARA6",
+   "query": "create many",
+   "identifier": "createMany",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/Factories/Factory.php",
+    "src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php",
+    "src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php"
+   ]
+  },
+  {
+   "id": "IDLARA7",
+   "query": "get dictionary",
+   "identifier": "getDictionary",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/Collection.php",
+    "src/Illuminate/Database/Eloquent/Relations/MorphTo.php"
+   ]
+  },
+  {
+   "id": "IDLARA8",
+   "query": "decrement each",
+   "identifier": "decrementEach",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/Builder.php",
+    "src/Illuminate/Database/Eloquent/Model.php",
+    "src/Illuminate/Database/Query/Builder.php"
+   ]
+  },
+  {
+   "id": "IDLARA9",
+   "query": "maintenance mode",
+   "identifier": "maintenanceMode",
+   "definedIn": [
+    "src/Illuminate/Contracts/Foundation/Application.php",
+    "src/Illuminate/Foundation/Application.php"
+   ]
+  },
+  {
+   "id": "IDLARA10",
+   "query": "set session",
+   "identifier": "setSession",
+   "definedIn": [
+    "src/Illuminate/Http/RedirectResponse.php",
+    "src/Illuminate/Routing/Redirector.php"
+   ]
+  },
+  {
+   "id": "IDLARA11",
+   "query": "mime type",
+   "identifier": "mimeType",
+   "definedIn": [
+    "src/Illuminate/Filesystem/Filesystem.php",
+    "src/Illuminate/Filesystem/FilesystemAdapter.php",
+    "src/Illuminate/Filesystem/ReadThroughFilesystemAdapter.php",
+    "src/Illuminate/Http/Testing/File.php",
+    "src/Illuminate/Image/Image.php"
+   ]
+  },
+  {
+   "id": "IDLARA12",
+   "query": "response factory",
+   "identifier": "ResponseFactory",
+   "definedIn": [
+    "src/Illuminate/Contracts/Routing/ResponseFactory.php",
+    "src/Illuminate/Routing/ResponseFactory.php"
+   ]
+  },
+  {
+   "id": "IDLARA13",
+   "query": "monitor command",
+   "identifier": "MonitorCommand",
+   "definedIn": [
+    "src/Illuminate/Database/Console/MonitorCommand.php",
+    "src/Illuminate/Queue/Console/MonitorCommand.php"
+   ]
+  },
+  {
+   "id": "IDLARA14",
+   "query": "get extensions",
+   "identifier": "getExtensions",
+   "definedIn": [
+    "src/Illuminate/View/Compilers/BladeCompiler.php",
+    "src/Illuminate/View/Factory.php",
+    "src/Illuminate/View/FileViewFinder.php"
+   ]
+  },
+  {
+   "id": "IDLARA15",
+   "query": "node package manager",
+   "identifier": "NodePackageManager",
+   "definedIn": [
+    "src/Illuminate/Support/Contracts/NodePackageManager.php",
+    "src/Illuminate/Support/NodePackageManager.php"
+   ]
+  },
+  {
+   "id": "IDLARA16",
+   "query": "get validator instance",
+   "identifier": "getValidatorInstance",
+   "definedIn": [
+    "src/Illuminate/Foundation/Http/FormRequest.php",
+    "src/Illuminate/Validation/ValidatesWhenResolvedTrait.php"
+   ]
+  },
+  {
+   "id": "IDLARA17",
+   "query": "passes authorization",
+   "identifier": "passesAuthorization",
+   "definedIn": [
+    "src/Illuminate/Foundation/Http/FormRequest.php",
+    "src/Illuminate/Validation/ValidatesWhenResolvedTrait.php"
+   ]
+  },
+  {
+   "id": "IDLARA18",
+   "query": "dispatch now",
+   "identifier": "dispatchNow",
+   "definedIn": [
+    "src/Illuminate/Bus/Dispatcher.php",
+    "src/Illuminate/Console/Scheduling/Schedule.php",
+    "src/Illuminate/Contracts/Bus/Dispatcher.php",
+    "src/Illuminate/Support/Testing/Fakes/BusFake.php"
+   ]
+  },
+  {
+   "id": "IDLARA19",
+   "query": "assert sent count",
+   "identifier": "assertSentCount",
+   "definedIn": [
+    "src/Illuminate/Http/Client/Factory.php",
+    "src/Illuminate/Support/Testing/Fakes/MailFake.php"
+   ]
+  },
+  {
+   "id": "IDLARA20",
+   "query": "get schema grammar",
+   "identifier": "getSchemaGrammar",
+   "definedIn": [
+    "src/Illuminate/Database/Connection.php",
+    "src/Illuminate/Database/Migrations/Migrator.php"
+   ]
+  },
+  {
+   "id": "IDLARA21",
+   "query": "compile props",
+   "identifier": "compileProps",
+   "definedIn": [
+    "src/Illuminate/View/Compilers/Concerns/CompilesComponents.php",
+    "src/Illuminate/View/DynamicComponent.php"
+   ]
+  },
+  {
+   "id": "IDLARA22",
+   "query": "get pheanstalk",
+   "identifier": "getPheanstalk",
+   "definedIn": [
+    "src/Illuminate/Queue/BeanstalkdQueue.php",
+    "src/Illuminate/Queue/Jobs/BeanstalkdJob.php"
+   ]
+  },
+  {
+   "id": "IDLARA23",
+   "query": "from storage",
+   "identifier": "fromStorage",
+   "definedIn": [
+    "src/Illuminate/Image/ImageManager.php",
+    "src/Illuminate/Mail/Attachment.php"
+   ]
+  },
+  {
+   "id": "IDLARA24",
+   "query": "should render json when",
+   "identifier": "shouldRenderJsonWhen",
+   "definedIn": [
+    "src/Illuminate/Foundation/Configuration/Exceptions.php",
+    "src/Illuminate/Foundation/Exceptions/Handler.php"
+   ]
+  },
+  {
+   "id": "IDLARA25",
+   "query": "database path",
+   "identifier": "databasePath",
+   "definedIn": [
+    "src/Illuminate/Contracts/Foundation/Application.php",
+    "src/Illuminate/Foundation/Application.php"
+   ]
+  },
+  {
+   "id": "IDLARA26",
+   "query": "is started",
+   "identifier": "isStarted",
+   "definedIn": [
+    "src/Illuminate/Contracts/Session/Session.php",
+    "src/Illuminate/Session/Store.php",
+    "src/Illuminate/Session/SymfonySessionDecorator.php"
+   ]
+  },
+  {
+   "id": "IDLARA27",
+   "query": "get cached routes path",
+   "identifier": "getCachedRoutesPath",
+   "definedIn": [
+    "src/Illuminate/Contracts/Foundation/CachesRoutes.php",
+    "src/Illuminate/Foundation/Application.php"
+   ]
+  },
+  {
+   "id": "IDLARA28",
+   "query": "pipe into",
+   "identifier": "pipeInto",
+   "definedIn": [
+    "src/Illuminate/Collections/Enumerable.php",
+    "src/Illuminate/Collections/Traits/EnumeratesValues.php"
+   ]
+  },
+  {
+   "id": "IDLARA29",
+   "query": "get container",
+   "identifier": "getContainer",
+   "definedIn": [
+    "src/Illuminate/Pipeline/Hub.php",
+    "src/Illuminate/Pipeline/Pipeline.php",
+    "src/Illuminate/Queue/Jobs/Job.php",
+    "src/Illuminate/Queue/Queue.php",
+    "src/Illuminate/Support/Manager.php",
+    "src/Illuminate/Support/Traits/CapsuleManagerTrait.php",
+    "src/Illuminate/Validation/Factory.php",
+    "src/Illuminate/View/Factory.php"
+   ]
+  },
+  {
+   "id": "IDLARA30",
+   "query": "length aware paginator",
+   "identifier": "LengthAwarePaginator",
+   "definedIn": [
+    "src/Illuminate/Contracts/Pagination/LengthAwarePaginator.php",
+    "src/Illuminate/Pagination/LengthAwarePaginator.php"
+   ]
+  },
+  {
+   "id": "IDLARA31",
+   "query": "add contextual binding",
+   "identifier": "addContextualBinding",
+   "definedIn": [
+    "src/Illuminate/Container/Container.php",
+    "src/Illuminate/Contracts/Container/Container.php"
+   ]
+  },
+  {
+   "id": "IDLARA32",
+   "query": "where exists",
+   "identifier": "whereExists",
+   "definedIn": [
+    "src/Illuminate/Database/Query/Builder.php",
+    "src/Illuminate/Database/Query/Grammars/Grammar.php"
+   ]
+  },
+  {
+   "id": "IDLARA33",
+   "query": "creation time of oldest pending job",
+   "identifier": "creationTimeOfOldestPendingJob",
+   "definedIn": [
+    "src/Illuminate/Contracts/Queue/Queue.php",
+    "src/Illuminate/Foundation/Cloud/Queue.php",
+    "src/Illuminate/Queue/BeanstalkdQueue.php",
+    "src/Illuminate/Queue/DatabaseQueue.php",
+    "src/Illuminate/Queue/FailoverQueue.php",
+    "src/Illuminate/Queue/NullQueue.php",
+    "src/Illuminate/Queue/RedisQueue.php",
+    "src/Illuminate/Queue/SqsQueue.php",
+    "src/Illuminate/Queue/SyncQueue.php",
+    "src/Illuminate/Support/Testing/Fakes/QueueFake.php"
+   ]
+  },
+  {
+   "id": "IDLARA34",
+   "query": "should broadcast now",
+   "identifier": "shouldBroadcastNow",
+   "definedIn": [
+    "src/Illuminate/Broadcasting/AnonymousEvent.php",
+    "src/Illuminate/Database/Eloquent/BroadcastableModelEventOccurred.php"
+   ]
+  },
+  {
+   "id": "IDLARA35",
+   "query": "reduce spread",
+   "identifier": "reduceSpread",
+   "definedIn": [
+    "src/Illuminate/Collections/Enumerable.php",
+    "src/Illuminate/Collections/Traits/EnumeratesValues.php"
+   ]
+  },
+  {
+   "id": "IDLARA36",
+   "query": "has failures",
+   "identifier": "hasFailures",
+   "definedIn": [
+    "src/Illuminate/Bus/Batch.php",
+    "src/Illuminate/Http/Client/Batch.php"
+   ]
+  },
+  {
+   "id": "IDLARA37",
+   "query": "is not empty",
+   "identifier": "isNotEmpty",
+   "definedIn": [
+    "src/Illuminate/Collections/Enumerable.php",
+    "src/Illuminate/Collections/Traits/EnumeratesValues.php",
+    "src/Illuminate/Contracts/Pagination/CursorPaginator.php",
+    "src/Illuminate/Contracts/Pagination/Paginator.php",
+    "src/Illuminate/Contracts/Support/MessageBag.php",
+    "src/Illuminate/Pagination/AbstractCursorPaginator.php",
+    "src/Illuminate/Pagination/AbstractPaginator.php",
+    "src/Illuminate/Support/Fluent.php",
+    "src/Illuminate/Support/HtmlString.php",
+    "src/Illuminate/Support/MessageBag.php",
+    "src/Illuminate/Support/Stringable.php",
+    "src/Illuminate/Support/Uri.php",
+    "src/Illuminate/View/ComponentAttributeBag.php",
+    "src/Illuminate/View/ComponentSlot.php"
+   ]
+  },
+  {
+   "id": "IDLARA38",
+   "query": "apply after query callbacks",
+   "identifier": "applyAfterQueryCallbacks",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/Builder.php",
+    "src/Illuminate/Database/Query/Builder.php"
+   ]
+  },
+  {
+   "id": "IDLARA39",
+   "query": "previous page url",
+   "identifier": "previousPageUrl",
+   "definedIn": [
+    "src/Illuminate/Contracts/Pagination/CursorPaginator.php",
+    "src/Illuminate/Contracts/Pagination/Paginator.php",
+    "src/Illuminate/Pagination/AbstractCursorPaginator.php",
+    "src/Illuminate/Pagination/AbstractPaginator.php"
+   ]
+  },
+  {
+   "id": "IDLARA40",
+   "query": "get store",
+   "identifier": "getStore",
+   "definedIn": [
+    "src/Illuminate/Cache/Repository.php",
+    "src/Illuminate/Contracts/Cache/Repository.php",
+    "src/Illuminate/Foundation/CacheBasedMaintenanceMode.php"
+   ]
+  },
+  {
+   "id": "IDLARA41",
+   "query": "database transactions manager",
+   "identifier": "DatabaseTransactionsManager",
+   "definedIn": [
+    "src/Illuminate/Database/DatabaseTransactionsManager.php",
+    "src/Illuminate/Foundation/Testing/DatabaseTransactionsManager.php"
+   ]
+  },
+  {
+   "id": "IDLARA42",
+   "query": "next cursor",
+   "identifier": "nextCursor",
+   "definedIn": [
+    "src/Illuminate/Contracts/Pagination/CursorPaginator.php",
+    "src/Illuminate/Pagination/AbstractCursorPaginator.php"
+   ]
+  },
+  {
+   "id": "IDLARA43",
+   "query": "where json length",
+   "identifier": "whereJsonLength",
+   "definedIn": [
+    "src/Illuminate/Database/Query/Builder.php",
+    "src/Illuminate/Database/Query/Grammars/Grammar.php"
+   ]
+  },
+  {
+   "id": "IDLARA44",
+   "query": "set output handler",
+   "identifier": "setOutputHandler",
+   "definedIn": [
+    "src/Illuminate/Queue/Console/ListenCommand.php",
+    "src/Illuminate/Queue/Listener.php"
+   ]
+  },
+  {
+   "id": "IDLARA45",
+   "query": "all reserved jobs",
+   "identifier": "allReservedJobs",
+   "definedIn": [
+    "src/Illuminate/Queue/BeanstalkdQueue.php",
+    "src/Illuminate/Queue/DatabaseQueue.php",
+    "src/Illuminate/Queue/FailoverQueue.php",
+    "src/Illuminate/Queue/NullQueue.php",
+    "src/Illuminate/Queue/RedisQueue.php",
+    "src/Illuminate/Queue/SqsQueue.php",
+    "src/Illuminate/Queue/SyncQueue.php",
+    "src/Illuminate/Support/Testing/Fakes/QueueFake.php"
+   ]
+  },
+  {
+   "id": "IDLARA46",
+   "query": "has valid signature",
+   "identifier": "hasValidSignature",
+   "definedIn": [
+    "src/Illuminate/Filesystem/ReceiveFile.php",
+    "src/Illuminate/Filesystem/ServeFile.php",
+    "src/Illuminate/Routing/UrlGenerator.php"
+   ]
+  },
+  {
+   "id": "IDLARA47",
+   "query": "ordered chunk by id",
+   "identifier": "orderedChunkById",
+   "definedIn": [
+    "src/Illuminate/Database/Concerns/BuildsQueries.php",
+    "src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php"
+   ]
+  },
+  {
+   "id": "IDLARA48",
+   "query": "get command",
+   "identifier": "getCommand",
+   "definedIn": [
+    "src/Illuminate/Database/Console/DbCommand.php",
+    "src/Illuminate/Queue/CallQueuedHandler.php"
+   ]
+  },
+  {
+   "id": "IDLARA49",
+   "query": "exit code",
+   "identifier": "exitCode",
+   "definedIn": [
+    "src/Illuminate/Contracts/Process/ProcessResult.php",
+    "src/Illuminate/Process/FakeProcessDescription.php",
+    "src/Illuminate/Process/FakeProcessResult.php",
+    "src/Illuminate/Process/ProcessResult.php"
+   ]
+  },
+  {
+   "id": "IDLARA50",
+   "query": "quote string",
+   "identifier": "quoteString",
+   "definedIn": [
+    "src/Illuminate/Database/Grammar.php",
+    "src/Illuminate/Database/Schema/Grammars/SqlServerGrammar.php"
+   ]
+  },
+  {
+   "id": "IDLARA51",
+   "query": "validate credentials",
+   "identifier": "validateCredentials",
+   "definedIn": [
+    "src/Illuminate/Auth/DatabaseUserProvider.php",
+    "src/Illuminate/Auth/EloquentUserProvider.php",
+    "src/Illuminate/Contracts/Auth/UserProvider.php"
+   ]
+  },
+  {
+   "id": "IDLARA52",
+   "query": "display for cli",
+   "identifier": "displayForCli",
+   "definedIn": [
+    "src/Illuminate/Console/Scheduling/ScheduleListCommand.php",
+    "src/Illuminate/Database/Console/ShowCommand.php",
+    "src/Illuminate/Database/Console/TableCommand.php",
+    "src/Illuminate/Foundation/Console/EventListCommand.php"
+   ]
+  },
+  {
+   "id": "IDLARA53",
+   "query": "attach from storage",
+   "identifier": "attachFromStorage",
+   "definedIn": [
+    "src/Illuminate/Mail/Mailable.php",
+    "src/Illuminate/Notifications/Messages/MailMessage.php"
+   ]
+  },
+  {
+   "id": "IDLARA54",
+   "query": "store publicly as",
+   "identifier": "storePubliclyAs",
+   "definedIn": [
+    "src/Illuminate/Http/UploadedFile.php",
+    "src/Illuminate/Image/Image.php"
+   ]
+  },
+  {
+   "id": "IDLARA55",
+   "query": "attach data",
+   "identifier": "attachData",
+   "definedIn": [
+    "src/Illuminate/Mail/Mailable.php",
+    "src/Illuminate/Mail/Message.php",
+    "src/Illuminate/Notifications/Messages/MailMessage.php"
+   ]
+  },
+  {
+   "id": "IDLARA56",
+   "query": "set instance",
+   "identifier": "setInstance",
+   "definedIn": [
+    "src/Illuminate/Container/Container.php",
+    "src/Illuminate/Foundation/AliasLoader.php"
+   ]
+  },
+  {
+   "id": "IDLARA57",
+   "query": "display json",
+   "identifier": "displayJson",
+   "definedIn": [
+    "src/Illuminate/Console/Scheduling/ScheduleListCommand.php",
+    "src/Illuminate/Database/Console/ShowCommand.php",
+    "src/Illuminate/Database/Console/ShowModelCommand.php",
+    "src/Illuminate/Database/Console/TableCommand.php",
+    "src/Illuminate/Foundation/Console/AboutCommand.php",
+    "src/Illuminate/Foundation/Console/EventListCommand.php"
+   ]
+  },
+  {
+   "id": "IDLARA58",
+   "query": "get message",
+   "identifier": "getMessage",
+   "definedIn": [
+    "src/Illuminate/Validation/Concerns/FormatsMessages.php",
+    "src/Illuminate/View/Engines/CompilerEngine.php"
+   ]
+  },
+  {
+   "id": "IDLARA59",
+   "query": "create or first",
+   "identifier": "createOrFirst",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/Builder.php",
+    "src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php",
+    "src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php",
+    "src/Illuminate/Database/Eloquent/Relations/HasOneOrManyThrough.php"
+   ]
+  },
+  {
+   "id": "IDLARA60",
+   "query": "reduce into",
+   "identifier": "reduceInto",
+   "definedIn": [
+    "src/Illuminate/Collections/Enumerable.php",
+    "src/Illuminate/Collections/Traits/EnumeratesValues.php"
+   ]
+  },
+  {
+   "id": "IDLARA61",
+   "query": "ends with",
+   "identifier": "endsWith",
+   "definedIn": [
+    "src/Illuminate/Support/Str.php",
+    "src/Illuminate/Support/Stringable.php",
+    "src/Illuminate/Validation/Rules/StringRule.php"
+   ]
+  },
+  {
+   "id": "IDLARA62",
+   "query": "max tries",
+   "identifier": "maxTries",
+   "definedIn": [
+    "src/Illuminate/Contracts/Queue/Job.php",
+    "src/Illuminate/Queue/Jobs/Job.php"
+   ]
+  },
+  {
+   "id": "IDLARA63",
+   "query": "make visible",
+   "identifier": "makeVisible",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/Collection.php",
+    "src/Illuminate/Database/Eloquent/Concerns/HidesAttributes.php"
+   ]
+  },
+  {
+   "id": "IDLARA64",
+   "query": "get output",
+   "identifier": "getOutput",
+   "definedIn": [
+    "src/Illuminate/Console/Concerns/InteractsWithIO.php",
+    "src/Illuminate/Console/OutputStyle.php"
+   ]
+  },
+  {
+   "id": "IDLARA65",
+   "query": "where json contains key",
+   "identifier": "whereJsonContainsKey",
+   "definedIn": [
+    "src/Illuminate/Database/Query/Builder.php",
+    "src/Illuminate/Database/Query/Grammars/Grammar.php"
+   ]
+  },
+  {
+   "id": "IDLARA66",
+   "query": "default key name",
+   "identifier": "defaultKeyName",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/Builder.php",
+    "src/Illuminate/Database/Query/Builder.php"
+   ]
+  },
+  {
+   "id": "IDLARA67",
+   "query": "where in strict",
+   "identifier": "whereInStrict",
+   "definedIn": [
+    "src/Illuminate/Collections/Enumerable.php",
+    "src/Illuminate/Collections/Traits/EnumeratesValues.php"
+   ]
+  },
+  {
+   "id": "IDLARA68",
+   "query": "handle carry",
+   "identifier": "handleCarry",
+   "definedIn": [
+    "src/Illuminate/Pipeline/Pipeline.php",
+    "src/Illuminate/Routing/Pipeline.php"
+   ]
+  },
+  {
+   "id": "IDLARA69",
+   "query": "get route key",
+   "identifier": "getRouteKey",
+   "definedIn": [
+    "src/Illuminate/Contracts/Routing/UrlRoutable.php",
+    "src/Illuminate/Database/Eloquent/Model.php",
+    "src/Illuminate/Http/Resources/DelegatesToResource.php"
+   ]
+  },
+  {
+   "id": "IDLARA70",
+   "query": "create session driver",
+   "identifier": "createSessionDriver",
+   "definedIn": [
+    "src/Illuminate/Auth/AuthManager.php",
+    "src/Illuminate/Cache/CacheManager.php"
+   ]
+  },
+  {
+   "id": "IDLARA71",
+   "query": "dump with source",
+   "identifier": "dumpWithSource",
+   "definedIn": [
+    "src/Illuminate/Foundation/Console/CliDumper.php",
+    "src/Illuminate/Foundation/Http/HtmlDumper.php"
+   ]
+  },
+  {
+   "id": "IDLARA72",
+   "query": "new query",
+   "identifier": "newQuery",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/HasBuilder.php",
+    "src/Illuminate/Database/Eloquent/Model.php",
+    "src/Illuminate/Database/Query/Builder.php",
+    "src/Illuminate/Database/Query/JoinClause.php"
+   ]
+  },
+  {
+   "id": "IDLARA73",
+   "query": "where not between",
+   "identifier": "whereNotBetween",
+   "definedIn": [
+    "src/Illuminate/Collections/Enumerable.php",
+    "src/Illuminate/Collections/Traits/EnumeratesValues.php",
+    "src/Illuminate/Database/Query/Builder.php"
+   ]
+  },
+  {
+   "id": "IDLARA74",
+   "query": "retrieve by id",
+   "identifier": "retrieveById",
+   "definedIn": [
+    "src/Illuminate/Auth/DatabaseUserProvider.php",
+    "src/Illuminate/Auth/EloquentUserProvider.php",
+    "src/Illuminate/Contracts/Auth/UserProvider.php"
+   ]
+  },
+  {
+   "id": "IDLARA75",
+   "query": "latest output",
+   "identifier": "latestOutput",
+   "definedIn": [
+    "src/Illuminate/Contracts/Process/InvokedProcess.php",
+    "src/Illuminate/Process/FakeInvokedProcess.php",
+    "src/Illuminate/Process/InvokedProcess.php"
+   ]
+  },
+  {
+   "id": "IDLARA76",
+   "query": "first or create",
+   "identifier": "firstOrCreate",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/Builder.php",
+    "src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php",
+    "src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php",
+    "src/Illuminate/Database/Eloquent/Relations/HasOneOrManyThrough.php"
+   ]
+  },
+  {
+   "id": "IDLARA77",
+   "query": "after resolving",
+   "identifier": "afterResolving",
+   "definedIn": [
+    "src/Illuminate/Container/Container.php",
+    "src/Illuminate/Contracts/Container/Container.php"
+   ]
+  },
+  {
+   "id": "IDLARA78",
+   "query": "already exists",
+   "identifier": "alreadyExists",
+   "definedIn": [
+    "src/Illuminate/Console/GeneratorCommand.php",
+    "src/Illuminate/Foundation/Console/EventMakeCommand.php",
+    "src/Illuminate/Foundation/Console/ExceptionMakeCommand.php",
+    "src/Illuminate/Foundation/Console/ListenerMakeCommand.php"
+   ]
+  },
+  {
+   "id": "IDLARA79",
+   "query": "see in error output",
+   "identifier": "seeInErrorOutput",
+   "definedIn": [
+    "src/Illuminate/Contracts/Process/ProcessResult.php",
+    "src/Illuminate/Process/FakeProcessResult.php",
+    "src/Illuminate/Process/ProcessResult.php"
+   ]
+  },
+  {
+   "id": "IDLARA80",
+   "query": "create application",
+   "identifier": "createApplication",
+   "definedIn": [
+    "src/Illuminate/Foundation/Testing/TestCase.php",
+    "src/Illuminate/Testing/Concerns/RunsInParallel.php"
+   ]
+  },
+  {
+   "id": "IDLARA81",
+   "query": "get payload",
+   "identifier": "getPayload",
+   "definedIn": [
+    "src/Illuminate/Auth/Passwords/DatabaseTokenRepository.php",
+    "src/Illuminate/Cache/FileStore.php",
+    "src/Illuminate/Cache/StorageStore.php",
+    "src/Illuminate/Mail/Transport/CloudflareTransport.php"
+   ]
+  },
+  {
+   "id": "IDLARA82",
+   "query": "map with keys",
+   "identifier": "mapWithKeys",
+   "definedIn": [
+    "src/Illuminate/Collections/Arr.php",
+    "src/Illuminate/Collections/Collection.php",
+    "src/Illuminate/Collections/Enumerable.php",
+    "src/Illuminate/Collections/LazyCollection.php",
+    "src/Illuminate/Database/Eloquent/Collection.php"
+   ]
+  },
+  {
+   "id": "IDLARA83",
+   "query": "maria db grammar",
+   "identifier": "MariaDbGrammar",
+   "definedIn": [
+    "src/Illuminate/Database/Query/Grammars/MariaDbGrammar.php",
+    "src/Illuminate/Database/Schema/Grammars/MariaDbGrammar.php"
+   ]
+  },
+  {
+   "id": "IDLARA84",
+   "query": "resolve queue",
+   "identifier": "resolveQueue",
+   "definedIn": [
+    "src/Illuminate/Events/Dispatcher.php",
+    "src/Illuminate/Queue/Queue.php"
+   ]
+  },
+  {
+   "id": "IDLARA85",
+   "query": "update remember token",
+   "identifier": "updateRememberToken",
+   "definedIn": [
+    "src/Illuminate/Auth/DatabaseUserProvider.php",
+    "src/Illuminate/Auth/EloquentUserProvider.php",
+    "src/Illuminate/Contracts/Auth/UserProvider.php"
+   ]
+  },
+  {
+   "id": "IDLARA86",
+   "query": "to string",
+   "identifier": "toString",
+   "definedIn": [
+    "src/Illuminate/Image/Image.php",
+    "src/Illuminate/JsonSchema/Types/Type.php",
+    "src/Illuminate/Support/Stringable.php",
+    "src/Illuminate/Support/Uri.php",
+    "src/Illuminate/Testing/Constraints/ArraySubset.php",
+    "src/Illuminate/Testing/Constraints/CountInDatabase.php",
+    "src/Illuminate/Testing/Constraints/HasInDatabase.php",
+    "src/Illuminate/Testing/Constraints/NotSoftDeletedInDatabase.php",
+    "src/Illuminate/Testing/Constraints/SeeInHtml.php",
+    "src/Illuminate/Testing/Constraints/SeeInOrder.php",
+    "src/Illuminate/Testing/Constraints/SoftDeletedInDatabase.php",
+    "src/Illuminate/Translation/PotentiallyTranslatedString.php"
+   ]
+  },
+  {
+   "id": "IDLARA87",
+   "query": "compile columns",
+   "identifier": "compileColumns",
+   "definedIn": [
+    "src/Illuminate/Database/Query/Grammars/Grammar.php",
+    "src/Illuminate/Database/Query/Grammars/PostgresGrammar.php",
+    "src/Illuminate/Database/Query/Grammars/SqlServerGrammar.php",
+    "src/Illuminate/Database/Schema/Grammars/Grammar.php",
+    "src/Illuminate/Database/Schema/Grammars/MySqlGrammar.php",
+    "src/Illuminate/Database/Schema/Grammars/PostgresGrammar.php",
+    "src/Illuminate/Database/Schema/Grammars/SQLiteGrammar.php",
+    "src/Illuminate/Database/Schema/Grammars/SqlServerGrammar.php"
+   ]
+  },
+  {
+   "id": "IDLARA88",
+   "query": "with attributes",
+   "identifier": "withAttributes",
+   "definedIn": [
+    "src/Illuminate/Console/Scheduling/ManagesAttributes.php",
+    "src/Illuminate/Database/Eloquent/Builder.php",
+    "src/Illuminate/Http/Client/PendingRequest.php",
+    "src/Illuminate/View/Component.php",
+    "src/Illuminate/View/ComponentSlot.php"
+   ]
+  },
+  {
+   "id": "IDLARA89",
+   "query": "get views",
+   "identifier": "getViews",
+   "definedIn": [
+    "src/Illuminate/Database/Schema/Builder.php",
+    "src/Illuminate/Database/Schema/SQLiteBuilder.php",
+    "src/Illuminate/View/FileViewFinder.php"
+   ]
+  },
+  {
+   "id": "IDLARA90",
+   "query": "broadcast channel route",
+   "identifier": "broadcastChannelRoute",
+   "definedIn": [
+    "src/Illuminate/Contracts/Broadcasting/HasBroadcastChannel.php",
+    "src/Illuminate/Database/Eloquent/Model.php"
+   ]
+  },
+  {
+   "id": "IDLARA91",
+   "query": "singleton if",
+   "identifier": "singletonIf",
+   "definedIn": [
+    "src/Illuminate/Container/Container.php",
+    "src/Illuminate/Contracts/Container/Container.php"
+   ]
+  },
+  {
+   "id": "IDLARA92",
+   "query": "get config",
+   "identifier": "getConfig",
+   "definedIn": [
+    "src/Illuminate/Auth/AuthManager.php",
+    "src/Illuminate/Auth/Passwords/PasswordBrokerManager.php",
+    "src/Illuminate/Broadcasting/BroadcastManager.php",
+    "src/Illuminate/Cache/CacheManager.php",
+    "src/Illuminate/Database/Connection.php",
+    "src/Illuminate/Filesystem/FilesystemAdapter.php",
+    "src/Illuminate/Filesystem/FilesystemManager.php",
+    "src/Illuminate/Mail/MailManager.php",
+    "src/Illuminate/Queue/Queue.php",
+    "src/Illuminate/Queue/QueueManager.php"
+   ]
+  },
+  {
+   "id": "IDLARA93",
+   "query": "get default driver",
+   "identifier": "getDefaultDriver",
+   "definedIn": [
+    "src/Illuminate/Auth/AuthManager.php",
+    "src/Illuminate/Auth/Passwords/PasswordBrokerManager.php",
+    "src/Illuminate/Broadcasting/BroadcastManager.php",
+    "src/Illuminate/Cache/CacheManager.php",
+    "src/Illuminate/Filesystem/FilesystemManager.php",
+    "src/Illuminate/Filesystem/FilesystemServiceProvider.php",
+    "src/Illuminate/Foundation/MaintenanceModeManager.php",
+    "src/Illuminate/Hashing/HashManager.php",
+    "src/Illuminate/Image/ImageManager.php",
+    "src/Illuminate/Log/LogManager.php",
+    "src/Illuminate/Mail/MailManager.php",
+    "src/Illuminate/Notifications/ChannelManager.php",
+    "src/Illuminate/Queue/QueueManager.php",
+    "src/Illuminate/Session/SessionManager.php",
+    "src/Illuminate/Support/Manager.php"
+   ]
+  },
+  {
+   "id": "IDLARA94",
+   "query": "ip address",
+   "identifier": "ipAddress",
+   "definedIn": [
+    "src/Illuminate/Database/Schema/Blueprint.php",
+    "src/Illuminate/Session/DatabaseSessionHandler.php"
+   ]
+  },
+  {
+   "id": "IDLARA95",
+   "query": "without wrapping",
+   "identifier": "withoutWrapping",
+   "definedIn": [
+    "src/Illuminate/Http/Resources/Json/JsonResource.php",
+    "src/Illuminate/Http/Resources/JsonApi/JsonApiResource.php"
+   ]
+  },
+  {
+   "id": "IDLARA96",
+   "query": "exception context",
+   "identifier": "exceptionContext",
+   "definedIn": [
+    "src/Illuminate/Foundation/Cloud/ExceptionReporter.php",
+    "src/Illuminate/Foundation/Exceptions/Handler.php"
+   ]
+  },
+  {
+   "id": "IDLARA97",
+   "query": "increment each",
+   "identifier": "incrementEach",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/Builder.php",
+    "src/Illuminate/Database/Eloquent/Model.php",
+    "src/Illuminate/Database/Query/Builder.php"
+   ]
+  },
+  {
+   "id": "IDLARA98",
+   "query": "password broker",
+   "identifier": "PasswordBroker",
+   "definedIn": [
+    "src/Illuminate/Auth/Passwords/PasswordBroker.php",
+    "src/Illuminate/Contracts/Auth/PasswordBroker.php"
+   ]
+  },
+  {
+   "id": "IDLARA99",
+   "query": "resolve request from container",
+   "identifier": "resolveRequestFromContainer",
+   "definedIn": [
+    "src/Illuminate/Http/Resources/Json/JsonResource.php",
+    "src/Illuminate/Http/Resources/JsonApi/AnonymousResourceCollection.php",
+    "src/Illuminate/Http/Resources/JsonApi/JsonApiResource.php"
+   ]
+  },
+  {
+   "id": "IDLARA100",
+   "query": "dont report when",
+   "identifier": "dontReportWhen",
+   "definedIn": [
+    "src/Illuminate/Foundation/Configuration/Exceptions.php",
+    "src/Illuminate/Foundation/Exceptions/Handler.php"
+   ]
+  },
+  {
+   "id": "IDLARA101",
+   "query": "get cast type",
+   "identifier": "getCastType",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/Concerns/HasAttributes.php",
+    "src/Illuminate/Database/Eloquent/ModelInspector.php"
+   ]
+  },
+  {
+   "id": "IDLARA102",
+   "query": "increment total jobs",
+   "identifier": "incrementTotalJobs",
+   "definedIn": [
+    "src/Illuminate/Bus/BatchRepository.php",
+    "src/Illuminate/Bus/DatabaseBatchRepository.php",
+    "src/Illuminate/Bus/DynamoBatchRepository.php",
+    "src/Illuminate/Support/Testing/Fakes/BatchRepositoryFake.php"
+   ]
+  },
+  {
+   "id": "IDLARA103",
+   "query": "from array",
+   "identifier": "fromArray",
+   "definedIn": [
+    "src/Illuminate/JsonSchema/JsonSchema.php",
+    "src/Illuminate/Testing/Fluent/AssertableJson.php"
+   ]
+  },
+  {
+   "id": "IDLARA104",
+   "query": "has queued",
+   "identifier": "hasQueued",
+   "definedIn": [
+    "src/Illuminate/Cookie/CookieJar.php",
+    "src/Illuminate/Support/Testing/Fakes/MailFake.php"
+   ]
+  },
+  {
+   "id": "IDLARA105",
+   "query": "delayed size",
+   "identifier": "delayedSize",
+   "definedIn": [
+    "src/Illuminate/Contracts/Queue/Queue.php",
+    "src/Illuminate/Foundation/Cloud/Queue.php",
+    "src/Illuminate/Queue/BeanstalkdQueue.php",
+    "src/Illuminate/Queue/DatabaseQueue.php",
+    "src/Illuminate/Queue/FailoverQueue.php",
+    "src/Illuminate/Queue/NullQueue.php",
+    "src/Illuminate/Queue/RedisQueue.php",
+    "src/Illuminate/Queue/SqsQueue.php",
+    "src/Illuminate/Queue/SyncQueue.php",
+    "src/Illuminate/Support/Testing/Fakes/QueueFake.php"
+   ]
+  },
+  {
+   "id": "IDLARA106",
+   "query": "get created at column",
+   "identifier": "getCreatedAtColumn",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/Concerns/HasTimestamps.php",
+    "src/Illuminate/Database/Eloquent/Relations/Concerns/AsPivot.php"
+   ]
+  },
+  {
+   "id": "IDLARA107",
+   "query": "register manager",
+   "identifier": "registerManager",
+   "definedIn": [
+    "src/Illuminate/Filesystem/FilesystemServiceProvider.php",
+    "src/Illuminate/Queue/QueueServiceProvider.php"
+   ]
+  },
+  {
+   "id": "IDLARA108",
+   "query": "has metadata",
+   "identifier": "hasMetadata",
+   "definedIn": [
+    "src/Illuminate/Mail/Mailable.php",
+    "src/Illuminate/Mail/Mailables/Envelope.php"
+   ]
+  },
+  {
+   "id": "IDLARA109",
+   "query": "send password reset notification",
+   "identifier": "sendPasswordResetNotification",
+   "definedIn": [
+    "src/Illuminate/Auth/Passwords/CanResetPassword.php",
+    "src/Illuminate/Contracts/Auth/CanResetPassword.php"
+   ]
+  },
+  {
+   "id": "IDLARA110",
+   "query": "get routes",
+   "identifier": "getRoutes",
+   "definedIn": [
+    "src/Illuminate/Foundation/Console/RouteListCommand.php",
+    "src/Illuminate/Routing/CompiledRouteCollection.php",
+    "src/Illuminate/Routing/RouteCollection.php",
+    "src/Illuminate/Routing/RouteCollectionInterface.php",
+    "src/Illuminate/Routing/Router.php"
+   ]
+  },
+  {
+   "id": "IDLARA111",
+   "query": "get deleted at column",
+   "identifier": "getDeletedAtColumn",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/SoftDeletes.php",
+    "src/Illuminate/Database/Eloquent/SoftDeletingScope.php",
+    "src/Illuminate/Foundation/Testing/Concerns/InteractsWithDatabase.php"
+   ]
+  },
+  {
+   "id": "IDLARA112",
+   "query": "decrement pending jobs",
+   "identifier": "decrementPendingJobs",
+   "definedIn": [
+    "src/Illuminate/Bus/Batch.php",
+    "src/Illuminate/Bus/BatchRepository.php",
+    "src/Illuminate/Bus/DatabaseBatchRepository.php",
+    "src/Illuminate/Bus/DynamoBatchRepository.php",
+    "src/Illuminate/Support/Testing/Fakes/BatchFake.php",
+    "src/Illuminate/Support/Testing/Fakes/BatchRepositoryFake.php"
+   ]
+  },
+  {
+   "id": "IDLARA113",
+   "query": "where value between",
+   "identifier": "whereValueBetween",
+   "definedIn": [
+    "src/Illuminate/Database/Query/Builder.php",
+    "src/Illuminate/Database/Query/Grammars/Grammar.php"
+   ]
+  },
+  {
+   "id": "IDLARA114",
+   "query": "get format",
+   "identifier": "getFormat",
+   "definedIn": [
+    "src/Illuminate/Contracts/Support/MessageBag.php",
+    "src/Illuminate/Support/MessageBag.php"
+   ]
+  },
+  {
+   "id": "IDLARA115",
+   "query": "with headers",
+   "identifier": "withHeaders",
+   "definedIn": [
+    "src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php",
+    "src/Illuminate/Http/Client/PendingRequest.php",
+    "src/Illuminate/Http/Middleware/TrustProxies.php",
+    "src/Illuminate/Http/ResponseTrait.php"
+   ]
+  },
+  {
+   "id": "IDLARA116",
+   "query": "attach from storage disk",
+   "identifier": "attachFromStorageDisk",
+   "definedIn": [
+    "src/Illuminate/Mail/Mailable.php",
+    "src/Illuminate/Notifications/Messages/MailMessage.php"
+   ]
+  },
+  {
+   "id": "IDLARA117",
+   "query": "decrypt string",
+   "identifier": "decryptString",
+   "definedIn": [
+    "src/Illuminate/Contracts/Encryption/StringEncrypter.php",
+    "src/Illuminate/Encryption/Encrypter.php"
+   ]
+  },
+  {
+   "id": "IDLARA118",
+   "query": "failed authorization",
+   "identifier": "failedAuthorization",
+   "definedIn": [
+    "src/Illuminate/Foundation/Http/FormRequest.php",
+    "src/Illuminate/Validation/ValidatesWhenResolvedTrait.php"
+   ]
+  },
+  {
+   "id": "IDLARA119",
+   "query": "new instance",
+   "identifier": "newInstance",
+   "definedIn": [
+    "src/Illuminate/Collections/Collection.php",
+    "src/Illuminate/Collections/LazyCollection.php",
+    "src/Illuminate/Database/Eloquent/Factories/Factory.php",
+    "src/Illuminate/Database/Eloquent/Model.php"
+   ]
+  },
+  {
+   "id": "IDLARA120",
+   "query": "parse model",
+   "identifier": "parseModel",
+   "definedIn": [
+    "src/Illuminate/Foundation/Console/ObserverMakeCommand.php",
+    "src/Illuminate/Routing/Console/ControllerMakeCommand.php"
+   ]
+  },
+  {
+   "id": "IDLARA121",
+   "query": "with query string",
+   "identifier": "withQueryString",
+   "definedIn": [
+    "src/Illuminate/Contracts/Pagination/CursorPaginator.php",
+    "src/Illuminate/Contracts/Pagination/Paginator.php",
+    "src/Illuminate/Pagination/AbstractCursorPaginator.php",
+    "src/Illuminate/Pagination/AbstractPaginator.php"
+   ]
+  },
+  {
+   "id": "IDLARA122",
+   "query": "with query",
+   "identifier": "withQuery",
+   "definedIn": [
+    "src/Illuminate/Auth/EloquentUserProvider.php",
+    "src/Illuminate/Http/Resources/Json/ResourceCollection.php",
+    "src/Illuminate/Support/Uri.php"
+   ]
+  },
+  {
+   "id": "IDLARA123",
+   "query": "use preload tag attributes",
+   "identifier": "usePreloadTagAttributes",
+   "definedIn": [
+    "src/Illuminate/Foundation/Testing/Concerns/InteractsWithContainer.php",
+    "src/Illuminate/Foundation/Vite.php"
+   ]
+  },
+  {
+   "id": "IDLARA124",
+   "query": "display name",
+   "identifier": "displayName",
+   "definedIn": [
+    "src/Illuminate/Broadcasting/BroadcastEvent.php",
+    "src/Illuminate/Events/CallQueuedListener.php",
+    "src/Illuminate/Foundation/Console/QueuedCommand.php",
+    "src/Illuminate/Mail/SendQueuedMailable.php",
+    "src/Illuminate/Notifications/SendQueuedNotifications.php",
+    "src/Illuminate/Queue/CallQueuedClosure.php"
+   ]
+  },
+  {
+   "id": "IDLARA125",
+   "query": "broadcast as",
+   "identifier": "broadcastAs",
+   "definedIn": [
+    "src/Illuminate/Broadcasting/AnonymousEvent.php",
+    "src/Illuminate/Database/Eloquent/BroadcastableModelEventOccurred.php",
+    "src/Illuminate/Notifications/Events/BroadcastNotificationCreated.php"
+   ]
+  },
+  {
+   "id": "IDLARA126",
+   "query": "lazy by id desc",
+   "identifier": "lazyByIdDesc",
+   "definedIn": [
+    "src/Illuminate/Database/Concerns/BuildsQueries.php",
+    "src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php",
+    "src/Illuminate/Database/Eloquent/Relations/HasOneOrManyThrough.php"
+   ]
+  },
+  {
+   "id": "IDLARA127",
+   "query": "create driver",
+   "identifier": "createDriver",
+   "definedIn": [
+    "src/Illuminate/Image/ImageManager.php",
+    "src/Illuminate/Notifications/ChannelManager.php",
+    "src/Illuminate/Support/Manager.php"
+   ]
+  },
+  {
+   "id": "IDLARA128",
+   "query": "resolve command",
+   "identifier": "resolveCommand",
+   "definedIn": [
+    "src/Illuminate/Console/Command.php",
+    "src/Illuminate/Console/Concerns/CallsCommands.php"
+   ]
+  },
+  {
+   "id": "IDLARA129",
+   "query": "get arguments",
+   "identifier": "getArguments",
+   "definedIn": [
+    "src/Illuminate/Console/Concerns/HasParameters.php",
+    "src/Illuminate/Console/GeneratorCommand.php"
+   ]
+  },
+  {
+   "id": "IDLARA130",
+   "query": "on connection",
+   "identifier": "onConnection",
+   "definedIn": [
+    "src/Illuminate/Bus/PendingBatch.php",
+    "src/Illuminate/Bus/Queueable.php",
+    "src/Illuminate/Events/QueuedClosure.php",
+    "src/Illuminate/Foundation/Bus/PendingChain.php",
+    "src/Illuminate/Foundation/Bus/PendingDispatch.php"
+   ]
+  },
+  {
+   "id": "IDLARA131",
+   "query": "each spread",
+   "identifier": "eachSpread",
+   "definedIn": [
+    "src/Illuminate/Collections/Enumerable.php",
+    "src/Illuminate/Collections/Traits/EnumeratesValues.php"
+   ]
+  },
+  {
+   "id": "IDLARA132",
+   "query": "set default driver",
+   "identifier": "setDefaultDriver",
+   "definedIn": [
+    "src/Illuminate/Auth/AuthManager.php",
+    "src/Illuminate/Auth/Passwords/PasswordBrokerManager.php",
+    "src/Illuminate/Broadcasting/BroadcastManager.php",
+    "src/Illuminate/Cache/CacheManager.php",
+    "src/Illuminate/Log/LogManager.php",
+    "src/Illuminate/Mail/MailManager.php",
+    "src/Illuminate/Queue/QueueManager.php",
+    "src/Illuminate/Session/SessionManager.php"
+   ]
+  },
+  {
+   "id": "IDLARA133",
+   "query": "get bindings",
+   "identifier": "getBindings",
+   "definedIn": [
+    "src/Illuminate/Container/Container.php",
+    "src/Illuminate/Database/Query/Builder.php",
+    "src/Illuminate/Database/QueryException.php"
+   ]
+  },
+  {
+   "id": "IDLARA134",
+   "query": "preferred locale",
+   "identifier": "preferredLocale",
+   "definedIn": [
+    "src/Illuminate/Contracts/Translation/HasLocalePreference.php",
+    "src/Illuminate/Notifications/NotificationSender.php"
+   ]
+  },
+  {
+   "id": "IDLARA135",
+   "query": "start session",
+   "identifier": "startSession",
+   "definedIn": [
+    "src/Illuminate/Foundation/Testing/Concerns/InteractsWithSession.php",
+    "src/Illuminate/Session/Middleware/StartSession.php"
+   ]
+  },
+  {
+   "id": "IDLARA136",
+   "query": "get relation name",
+   "identifier": "getRelationName",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/Relations/BelongsTo.php",
+    "src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php",
+    "src/Illuminate/Database/Eloquent/Relations/Concerns/CanBeOneOfMany.php"
+   ]
+  },
+  {
+   "id": "IDLARA137",
+   "query": "expires at",
+   "identifier": "expiresAt",
+   "definedIn": [
+    "src/Illuminate/Broadcasting/Mercure/CachingTokenProvider.php",
+    "src/Illuminate/Cache/DatabaseLock.php"
+   ]
+  },
+  {
+   "id": "IDLARA138",
+   "query": "duplicates strict",
+   "identifier": "duplicatesStrict",
+   "definedIn": [
+    "src/Illuminate/Collections/Collection.php",
+    "src/Illuminate/Collections/Enumerable.php",
+    "src/Illuminate/Collections/LazyCollection.php",
+    "src/Illuminate/Database/Eloquent/Collection.php"
+   ]
+  },
+  {
+   "id": "IDLARA139",
+   "query": "get options",
+   "identifier": "getOptions",
+   "definedIn": [
+    "src/Illuminate/Console/Concerns/HasParameters.php",
+    "src/Illuminate/Database/Connectors/Connector.php",
+    "src/Illuminate/Database/Console/Migrations/RollbackCommand.php",
+    "src/Illuminate/Foundation/Console/ComponentMakeCommand.php",
+    "src/Illuminate/Foundation/Console/DevListCommand.php",
+    "src/Illuminate/Http/Client/PendingRequest.php",
+    "src/Illuminate/Mail/Transport/SesTransport.php",
+    "src/Illuminate/Mail/Transport/SesV2Transport.php",
+    "src/Illuminate/Pagination/AbstractCursorPaginator.php",
+    "src/Illuminate/Pagination/AbstractPaginator.php",
+    "src/Illuminate/Routing/Console/ControllerMakeCommand.php"
+   ]
+  },
+  {
+   "id": "IDLARA140",
+   "query": "attach many",
+   "identifier": "attachMany",
+   "definedIn": [
+    "src/Illuminate/Mail/Mailable.php",
+    "src/Illuminate/Notifications/Messages/MailMessage.php"
+   ]
+  },
+  {
+   "id": "IDLARA141",
+   "query": "send email verification notification",
+   "identifier": "sendEmailVerificationNotification",
+   "definedIn": [
+    "src/Illuminate/Auth/MustVerifyEmail.php",
+    "src/Illuminate/Contracts/Auth/MustVerifyEmail.php"
+   ]
+  },
+  {
+   "id": "IDLARA142",
+   "query": "get visibility",
+   "identifier": "getVisibility",
+   "definedIn": [
+    "src/Illuminate/Contracts/Filesystem/Filesystem.php",
+    "src/Illuminate/Filesystem/FilesystemAdapter.php"
+   ]
+  },
+  {
+   "id": "IDLARA143",
+   "query": "last page",
+   "identifier": "lastPage",
+   "definedIn": [
+    "src/Illuminate/Contracts/Pagination/LengthAwarePaginator.php",
+    "src/Illuminate/Pagination/LengthAwarePaginator.php",
+    "src/Illuminate/Pagination/UrlWindow.php"
+   ]
+  },
+  {
+   "id": "IDLARA144",
+   "query": "redirect using",
+   "identifier": "redirectUsing",
+   "definedIn": [
+    "src/Illuminate/Auth/AuthenticationException.php",
+    "src/Illuminate/Auth/Middleware/Authenticate.php",
+    "src/Illuminate/Auth/Middleware/RedirectIfAuthenticated.php",
+    "src/Illuminate/Session/Middleware/AuthenticateSession.php"
+   ]
+  },
+  {
+   "id": "IDLARA145",
+   "query": "too many attempts",
+   "identifier": "tooManyAttempts",
+   "definedIn": [
+    "src/Illuminate/Cache/RateLimiter.php",
+    "src/Illuminate/Queue/Middleware/RateLimitedWithRedis.php",
+    "src/Illuminate/Redis/Limiters/DurationLimiter.php",
+    "src/Illuminate/Routing/Middleware/ThrottleRequestsWithRedis.php"
+   ]
+  },
+  {
+   "id": "IDLARA146",
+   "query": "register connectors",
+   "identifier": "registerConnectors",
+   "definedIn": [
+    "src/Illuminate/Queue/Capsule/Manager.php",
+    "src/Illuminate/Queue/QueueServiceProvider.php"
+   ]
+  },
+  {
+   "id": "IDLARA147",
+   "query": "set dispatcher",
+   "identifier": "setDispatcher",
+   "definedIn": [
+    "src/Illuminate/Auth/SessionGuard.php",
+    "src/Illuminate/View/Factory.php"
+   ]
+  },
+  {
+   "id": "IDLARA148",
+   "query": "get email for verification",
+   "identifier": "getEmailForVerification",
+   "definedIn": [
+    "src/Illuminate/Auth/MustVerifyEmail.php",
+    "src/Illuminate/Contracts/Auth/MustVerifyEmail.php"
+   ]
+  },
+  {
+   "id": "IDLARA149",
+   "query": "routes are cached",
+   "identifier": "routesAreCached",
+   "definedIn": [
+    "src/Illuminate/Contracts/Foundation/CachesRoutes.php",
+    "src/Illuminate/Foundation/Application.php",
+    "src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php"
+   ]
+  },
+  {
+   "id": "IDLARA150",
+   "query": "format parameters",
+   "identifier": "formatParameters",
+   "definedIn": [
+    "src/Illuminate/Routing/RouteUrlGenerator.php",
+    "src/Illuminate/Routing/UrlGenerator.php",
+    "src/Illuminate/Validation/Rules/Concerns/FormatsParameters.php"
+   ]
+  },
+  {
+   "id": "IDLARA151",
+   "query": "where not null",
+   "identifier": "whereNotNull",
+   "definedIn": [
+    "src/Illuminate/Collections/Arr.php",
+    "src/Illuminate/Collections/Enumerable.php",
+    "src/Illuminate/Collections/Traits/EnumeratesValues.php",
+    "src/Illuminate/Database/Query/Builder.php",
+    "src/Illuminate/Database/Query/Grammars/Grammar.php",
+    "src/Illuminate/Database/Query/Grammars/MySqlGrammar.php",
+    "src/Illuminate/Testing/Fluent/Concerns/Matching.php",
+    "src/Illuminate/Validation/Rules/DatabaseRule.php"
+   ]
+  },
+  {
+   "id": "IDLARA152",
+   "query": "set remember token",
+   "identifier": "setRememberToken",
+   "definedIn": [
+    "src/Illuminate/Auth/Authenticatable.php",
+    "src/Illuminate/Auth/GenericUser.php",
+    "src/Illuminate/Contracts/Auth/Authenticatable.php"
+   ]
+  },
+  {
+   "id": "IDLARA153",
+   "query": "starts with",
+   "identifier": "startsWith",
+   "definedIn": [
+    "src/Illuminate/Support/Str.php",
+    "src/Illuminate/Support/Stringable.php",
+    "src/Illuminate/Validation/Rules/StringRule.php"
+   ]
+  },
+  {
+   "id": "IDLARA154",
+   "query": "migration event",
+   "identifier": "MigrationEvent",
+   "definedIn": [
+    "src/Illuminate/Contracts/Database/Events/MigrationEvent.php",
+    "src/Illuminate/Database/Events/MigrationEvent.php"
+   ]
+  },
+  {
+   "id": "IDLARA155",
+   "query": "anonymous resource collection",
+   "identifier": "AnonymousResourceCollection",
+   "definedIn": [
+    "src/Illuminate/Http/Resources/Json/AnonymousResourceCollection.php",
+    "src/Illuminate/Http/Resources/JsonApi/AnonymousResourceCollection.php"
+   ]
+  },
+  {
+   "id": "IDLARA156",
+   "query": "dont retry",
+   "identifier": "dontRetry",
+   "definedIn": [
+    "src/Illuminate/Foundation/Configuration/Exceptions.php",
+    "src/Illuminate/Foundation/Exceptions/Handler.php"
+   ]
+  },
+  {
+   "id": "IDLARA157",
+   "query": "json formatter",
+   "identifier": "JsonFormatter",
+   "definedIn": [
+    "src/Illuminate/Foundation/Cloud/JsonFormatter.php",
+    "src/Illuminate/Log/Formatters/JsonFormatter.php"
+   ]
+  },
+  {
+   "id": "IDLARA158",
+   "query": "set request",
+   "identifier": "setRequest",
+   "definedIn": [
+    "src/Illuminate/Auth/RequestGuard.php",
+    "src/Illuminate/Auth/SessionGuard.php",
+    "src/Illuminate/Auth/TokenGuard.php",
+    "src/Illuminate/Http/RedirectResponse.php",
+    "src/Illuminate/Routing/UrlGenerator.php",
+    "src/Illuminate/Session/CookieSessionHandler.php"
+   ]
+  },
+  {
+   "id": "IDLARA159",
+   "query": "setup manager",
+   "identifier": "setupManager",
+   "definedIn": [
+    "src/Illuminate/Database/Capsule/Manager.php",
+    "src/Illuminate/Queue/Capsule/Manager.php"
+   ]
+  },
+  {
+   "id": "IDLARA160",
+   "query": "where not in strict",
+   "identifier": "whereNotInStrict",
+   "definedIn": [
+    "src/Illuminate/Collections/Enumerable.php",
+    "src/Illuminate/Collections/Traits/EnumeratesValues.php"
+   ]
+  },
+  {
+   "id": "IDLARA161",
+   "query": "get limit",
+   "identifier": "getLimit",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/Builder.php",
+    "src/Illuminate/Database/Query/Builder.php"
+   ]
+  },
+  {
+   "id": "IDLARA162",
+   "query": "call static",
+   "identifier": "__callStatic",
+   "definedIn": [
+    "src/Illuminate/Database/Capsule/Manager.php",
+    "src/Illuminate/Database/Eloquent/Builder.php",
+    "src/Illuminate/Database/Eloquent/Model.php",
+    "src/Illuminate/JsonSchema/JsonSchema.php",
+    "src/Illuminate/Macroable/Traits/Macroable.php",
+    "src/Illuminate/Queue/Capsule/Manager.php",
+    "src/Illuminate/Support/Facades/Facade.php",
+    "src/Illuminate/Testing/TestResponseAssert.php"
+   ]
+  },
+  {
+   "id": "IDLARA163",
+   "query": "get auth identifier",
+   "identifier": "getAuthIdentifier",
+   "definedIn": [
+    "src/Illuminate/Auth/Authenticatable.php",
+    "src/Illuminate/Auth/GenericUser.php",
+    "src/Illuminate/Contracts/Auth/Authenticatable.php"
+   ]
+  },
+  {
+   "id": "IDLARA164",
+   "query": "has debug mode enabled",
+   "identifier": "hasDebugModeEnabled",
+   "definedIn": [
+    "src/Illuminate/Contracts/Foundation/Application.php",
+    "src/Illuminate/Foundation/Application.php"
+   ]
+  },
+  {
+   "id": "IDLARA165",
+   "query": "set hidden",
+   "identifier": "setHidden",
+   "definedIn": [
+    "src/Illuminate/Console/Command.php",
+    "src/Illuminate/Database/Eloquent/Collection.php",
+    "src/Illuminate/Database/Eloquent/Concerns/HidesAttributes.php"
+   ]
+  },
+  {
+   "id": "IDLARA166",
+   "query": "when empty",
+   "identifier": "whenEmpty",
+   "definedIn": [
+    "src/Illuminate/Collections/Enumerable.php",
+    "src/Illuminate/Collections/Traits/EnumeratesValues.php",
+    "src/Illuminate/Http/Client/ResponseSequence.php",
+    "src/Illuminate/Process/FakeProcessSequence.php",
+    "src/Illuminate/Support/Stringable.php"
+   ]
+  },
+  {
+   "id": "IDLARA167",
+   "query": "my sql grammar",
+   "identifier": "MySqlGrammar",
+   "definedIn": [
+    "src/Illuminate/Database/Query/Grammars/MySqlGrammar.php",
+    "src/Illuminate/Database/Schema/Grammars/MySqlGrammar.php"
+   ]
+  },
+  {
+   "id": "IDLARA168",
+   "query": "configuration url parser",
+   "identifier": "ConfigurationUrlParser",
+   "definedIn": [
+    "src/Illuminate/Database/ConfigurationUrlParser.php",
+    "src/Illuminate/Support/ConfigurationUrlParser.php"
+   ]
+  },
+  {
+   "id": "IDLARA169",
+   "query": "get one of many sub query",
+   "identifier": "getOneOfManySubQuery",
+   "definedIn": [
+    "src/Illuminate/Contracts/Database/Eloquent/SupportsPartialRelations.php",
+    "src/Illuminate/Database/Eloquent/Relations/Concerns/CanBeOneOfMany.php"
+   ]
+  },
+  {
+   "id": "IDLARA170",
+   "query": "roll back",
+   "identifier": "rollBack",
+   "definedIn": [
+    "src/Illuminate/Bus/BatchRepository.php",
+    "src/Illuminate/Bus/DatabaseBatchRepository.php",
+    "src/Illuminate/Bus/DynamoBatchRepository.php",
+    "src/Illuminate/Database/Concerns/ManagesTransactions.php",
+    "src/Illuminate/Database/ConnectionInterface.php",
+    "src/Illuminate/Support/Testing/Fakes/BatchRepositoryFake.php"
+   ]
+  },
+  {
+   "id": "IDLARA171",
+   "query": "redirect to action",
+   "identifier": "redirectToAction",
+   "definedIn": [
+    "src/Illuminate/Contracts/Routing/ResponseFactory.php",
+    "src/Illuminate/Routing/ResponseFactory.php"
+   ]
+  },
+  {
+   "id": "IDLARA172",
+   "query": "file size",
+   "identifier": "fileSize",
+   "definedIn": [
+    "src/Illuminate/Filesystem/ReadThroughFilesystemAdapter.php",
+    "src/Illuminate/Support/Number.php"
+   ]
+  },
+  {
+   "id": "IDLARA173",
+   "query": "add callback",
+   "identifier": "addCallback",
+   "definedIn": [
+    "src/Illuminate/Database/DatabaseTransactionRecord.php",
+    "src/Illuminate/Database/DatabaseTransactionsManager.php",
+    "src/Illuminate/Foundation/Testing/DatabaseTransactionsManager.php"
+   ]
+  },
+  {
+   "id": "IDLARA174",
+   "query": "stream json",
+   "identifier": "streamJson",
+   "definedIn": [
+    "src/Illuminate/Contracts/Routing/ResponseFactory.php",
+    "src/Illuminate/Routing/ResponseFactory.php"
+   ]
+  },
+  {
+   "id": "IDLARA175",
+   "query": "only trashed",
+   "identifier": "onlyTrashed",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/Relations/MorphTo.php",
+    "src/Illuminate/Validation/Rules/DatabaseRule.php"
+   ]
+  },
+  {
+   "id": "IDLARA176",
+   "query": "where instance of",
+   "identifier": "whereInstanceOf",
+   "definedIn": [
+    "src/Illuminate/Collections/Enumerable.php",
+    "src/Illuminate/Collections/Traits/EnumeratesValues.php"
+   ]
+  },
+  {
+   "id": "IDLARA177",
+   "query": "set event dispatcher",
+   "identifier": "setEventDispatcher",
+   "definedIn": [
+    "src/Illuminate/Cache/CacheManager.php",
+    "src/Illuminate/Cache/Repository.php",
+    "src/Illuminate/Database/Capsule/Manager.php",
+    "src/Illuminate/Database/Connection.php",
+    "src/Illuminate/Database/Eloquent/Concerns/HasEvents.php",
+    "src/Illuminate/Log/Logger.php",
+    "src/Illuminate/Redis/Connections/Connection.php"
+   ]
+  },
+  {
+   "id": "IDLARA178",
+   "query": "where null safe equals",
+   "identifier": "whereNullSafeEquals",
+   "definedIn": [
+    "src/Illuminate/Database/Query/Builder.php",
+    "src/Illuminate/Database/Query/Grammars/Grammar.php",
+    "src/Illuminate/Database/Query/Grammars/MySqlGrammar.php",
+    "src/Illuminate/Database/Query/Grammars/SQLiteGrammar.php",
+    "src/Illuminate/Database/Query/Grammars/SqlServerGrammar.php"
+   ]
+  },
+  {
+   "id": "IDLARA179",
+   "query": "make process",
+   "identifier": "makeProcess",
+   "definedIn": [
+    "src/Illuminate/Database/Schema/SchemaState.php",
+    "src/Illuminate/Queue/Listener.php"
+   ]
+  },
+  {
+   "id": "IDLARA180",
+   "query": "mac address",
+   "identifier": "macAddress",
+   "definedIn": [
+    "src/Illuminate/Database/Schema/Blueprint.php",
+    "src/Illuminate/Validation/Rule.php"
+   ]
+  },
+  {
+   "id": "IDLARA181",
+   "query": "json schema",
+   "identifier": "JsonSchema",
+   "definedIn": [
+    "src/Illuminate/Contracts/JsonSchema/JsonSchema.php",
+    "src/Illuminate/JsonSchema/JsonSchema.php"
+   ]
+  },
+  {
+   "id": "IDLARA182",
+   "query": "add connection",
+   "identifier": "addConnection",
+   "definedIn": [
+    "src/Illuminate/Database/Capsule/Manager.php",
+    "src/Illuminate/Database/ConnectionResolver.php",
+    "src/Illuminate/Queue/Capsule/Manager.php"
+   ]
+  },
+  {
+   "id": "IDLARA183",
+   "query": "has more pages",
+   "identifier": "hasMorePages",
+   "definedIn": [
+    "src/Illuminate/Contracts/Pagination/CursorPaginator.php",
+    "src/Illuminate/Contracts/Pagination/Paginator.php",
+    "src/Illuminate/Pagination/CursorPaginator.php",
+    "src/Illuminate/Pagination/LengthAwarePaginator.php",
+    "src/Illuminate/Pagination/Paginator.php"
+   ]
+  },
+  {
+   "id": "IDLARA184",
+   "query": "is expired",
+   "identifier": "isExpired",
+   "definedIn": [
+    "src/Illuminate/Cache/DynamoDbStore.php",
+    "src/Illuminate/Cache/SessionStore.php",
+    "src/Illuminate/View/Compilers/Compiler.php",
+    "src/Illuminate/View/Compilers/CompilerInterface.php"
+   ]
+  },
+  {
+   "id": "IDLARA185",
+   "query": "total size",
+   "identifier": "totalSize",
+   "definedIn": [
+    "src/Illuminate/Foundation/Cloud/Queue.php",
+    "src/Illuminate/Queue/BeanstalkdQueue.php",
+    "src/Illuminate/Queue/DatabaseQueue.php",
+    "src/Illuminate/Queue/FailoverQueue.php",
+    "src/Illuminate/Queue/NullQueue.php",
+    "src/Illuminate/Queue/RedisQueue.php",
+    "src/Illuminate/Queue/SqsQueue.php",
+    "src/Illuminate/Queue/SyncQueue.php",
+    "src/Illuminate/Support/Testing/Fakes/QueueFake.php"
+   ]
+  },
+  {
+   "id": "IDLARA186",
+   "query": "current page",
+   "identifier": "currentPage",
+   "definedIn": [
+    "src/Illuminate/Contracts/Pagination/Paginator.php",
+    "src/Illuminate/Pagination/AbstractPaginator.php",
+    "src/Illuminate/Pagination/UrlWindow.php"
+   ]
+  },
+  {
+   "id": "IDLARA187",
+   "query": "dont flash",
+   "identifier": "dontFlash",
+   "definedIn": [
+    "src/Illuminate/Foundation/Configuration/Exceptions.php",
+    "src/Illuminate/Foundation/Exceptions/Handler.php"
+   ]
+  },
+  {
+   "id": "IDLARA188",
+   "query": "error output",
+   "identifier": "errorOutput",
+   "definedIn": [
+    "src/Illuminate/Contracts/Process/InvokedProcess.php",
+    "src/Illuminate/Contracts/Process/ProcessResult.php",
+    "src/Illuminate/Process/FakeInvokedProcess.php",
+    "src/Illuminate/Process/FakeProcessDescription.php",
+    "src/Illuminate/Process/FakeProcessResult.php",
+    "src/Illuminate/Process/InvokedProcess.php",
+    "src/Illuminate/Process/ProcessResult.php"
+   ]
+  },
+  {
+   "id": "IDLARA189",
+   "query": "get incrementing",
+   "identifier": "getIncrementing",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/Concerns/HasUniqueStringIds.php",
+    "src/Illuminate/Database/Eloquent/Model.php"
+   ]
+  },
+  {
+   "id": "IDLARA190",
+   "query": "offset unset",
+   "identifier": "offsetUnset",
+   "definedIn": [
+    "src/Illuminate/Cache/Repository.php",
+    "src/Illuminate/Collections/Collection.php",
+    "src/Illuminate/Config/Repository.php",
+    "src/Illuminate/Container/Container.php",
+    "src/Illuminate/Database/Eloquent/Model.php",
+    "src/Illuminate/Database/Eloquent/ModelInfo.php",
+    "src/Illuminate/Http/Client/Request.php",
+    "src/Illuminate/Http/Client/Response.php",
+    "src/Illuminate/Http/Request.php",
+    "src/Illuminate/Http/Resources/DelegatesToResource.php",
+    "src/Illuminate/Pagination/AbstractCursorPaginator.php",
+    "src/Illuminate/Pagination/AbstractPaginator.php",
+    "src/Illuminate/Process/ProcessPoolResults.php",
+    "src/Illuminate/Support/Defer/DeferredCallbackCollection.php",
+    "src/Illuminate/Support/Fluent.php",
+    "src/Illuminate/Support/Optional.php",
+    "src/Illuminate/Support/Stringable.php",
+    "src/Illuminate/Support/ValidatedInput.php",
+    "src/Illuminate/Testing/AssertableJsonString.php",
+    "src/Illuminate/Testing/TestResponse.php",
+    "src/Illuminate/View/ComponentAttributeBag.php",
+    "src/Illuminate/View/View.php"
+   ]
+  },
+  {
+   "id": "IDLARA191",
+   "query": "listen for signals",
+   "identifier": "listenForSignals",
+   "definedIn": [
+    "src/Illuminate/Console/Scheduling/ScheduleWorkCommand.php",
+    "src/Illuminate/Queue/Worker.php"
+   ]
+  },
+  {
+   "id": "IDLARA192",
+   "query": "with credentials",
+   "identifier": "withCredentials",
+   "definedIn": [
+    "src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php",
+    "src/Illuminate/Queue/Connectors/SqsConnector.php"
+   ]
+  },
+  {
+   "id": "IDLARA193",
+   "query": "without fragment",
+   "identifier": "withoutFragment",
+   "definedIn": [
+    "src/Illuminate/Http/RedirectResponse.php",
+    "src/Illuminate/Support/Uri.php"
+   ]
+  },
+  {
+   "id": "IDLARA194",
+   "query": "delete directory",
+   "identifier": "deleteDirectory",
+   "definedIn": [
+    "src/Illuminate/Contracts/Filesystem/Filesystem.php",
+    "src/Illuminate/Filesystem/Filesystem.php",
+    "src/Illuminate/Filesystem/FilesystemAdapter.php",
+    "src/Illuminate/Filesystem/ReadThroughFilesystemAdapter.php"
+   ]
+  },
+  {
+   "id": "IDLARA195",
+   "query": "sql server grammar",
+   "identifier": "SqlServerGrammar",
+   "definedIn": [
+    "src/Illuminate/Database/Query/Grammars/SqlServerGrammar.php",
+    "src/Illuminate/Database/Schema/Grammars/SqlServerGrammar.php"
+   ]
+  },
+  {
+   "id": "IDLARA196",
+   "query": "set queue",
+   "identifier": "setQueue",
+   "definedIn": [
+    "src/Illuminate/Foundation/Cloud/FailedJobProvider.php",
+    "src/Illuminate/Mail/Mailer.php"
+   ]
+  },
+  {
+   "id": "IDLARA197",
+   "query": "resolve path",
+   "identifier": "resolvePath",
+   "definedIn": [
+    "src/Illuminate/Database/Migrations/Migrator.php",
+    "src/Illuminate/View/FileViewFinder.php"
+   ]
+  },
+  {
+   "id": "IDLARA198",
+   "query": "with token",
+   "identifier": "withToken",
+   "definedIn": [
+    "src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php",
+    "src/Illuminate/Http/Client/PendingRequest.php"
+   ]
+  },
+  {
+   "id": "IDLARA199",
+   "query": "get offset",
+   "identifier": "getOffset",
+   "definedIn": [
+    "src/Illuminate/Database/Eloquent/Builder.php",
+    "src/Illuminate/Database/Query/Builder.php"
+   ]
+  }
+ ]
+}

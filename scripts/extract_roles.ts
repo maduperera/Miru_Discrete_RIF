@@ -169,13 +169,53 @@ function elixirCall(n: Node, defsFunc: string[], defsClass: string[], args: stri
   return true;
 }
 
+// Haskell: bindings have no `name` field. A value binding is `function` (first named child = `variable`, then
+// `patterns`/`match`) directly under declarations/instance_declarations/class_declarations; the same node type
+// also encodes type arrows inside signatures and local `where` bindings, which we do not treat as definitions.
+const HS_DECL_PARENTS = new Set(["declarations", "instance_declarations", "class_declarations"]);
+const HS_TYPE_DECLS = new Set(["data_type", "newtype", "type_synomym", "type_synonym", "class"]);
+
+function haskellNode(n: Node, defsFunc: string[], defsClass: string[], args: string[], calls: string[]): boolean {
+  if (n.type === "function") {
+    if (!n.parent || !HS_DECL_PARENTS.has(n.parent.type)) return true;
+    const nm = n.namedChild(0);
+    if (nm?.type === "variable") defsFunc.push(nm.text);
+    const ps = n.namedChildren.find((c) => c?.type === "patterns");
+    for (const p of ps?.namedChildren ?? []) if (p?.type === "variable") args.push(p.text);
+    return true;
+  }
+  if (n.type === "signature") {                       // class method declarations carry no `function` body
+    if (n.parent?.type === "class_declarations") {
+      const nm = n.namedChild(0);
+      if (nm?.type === "variable") defsFunc.push(nm.text);
+    }
+    return true;
+  }
+  if (HS_TYPE_DECLS.has(n.type)) {
+    const nm = n.namedChildren.find((c) => c?.type === "name");
+    if (nm) defsClass.push(nm.text);
+    return false;                                     // keep descending: class bodies hold method signatures
+  }
+  if (n.type === "apply") {                           // f a b is apply(apply(f, a), b): walk to the head
+    let f: Node | null = n.namedChild(0);
+    while (f && f.type === "apply") f = f.namedChild(0);
+    if (f?.type === "variable") calls.push(f.text);
+    else if (f?.type === "qualified_variable") calls.push(f.text.split(".").pop()!);
+    return false;                                     // keep descending into arguments
+  }
+  return false;
+}
+
 export function extract(root: Node, language = ""): Extracted {
   const defsFunc: string[] = [], defsClass: string[] = [], args: string[] = [], vars: string[] = [], calls: string[] = [];
   const stack: Node[] = [root];
   const ex = language === "elixir";
+  const hs = language === "haskell";
   while (stack.length) {   // pre-order, document order (stack reversed below)
     const n = stack.pop()!;
     if (ex && n.type === "call" && elixirCall(n, defsFunc, defsClass, args, calls)) {
+      // handled
+    } else if (hs && haskellNode(n, defsFunc, defsClass, args, calls)) {
       // handled
     } else if (ex && n.type === "binary_operator") {
       const op = n.childForFieldName("operator"), left = n.childForFieldName("left");

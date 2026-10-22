@@ -1,0 +1,886 @@
+{
+ "candidates": ".bench/kalpana/candidates.ds1-miru-int8.queries.ab-axum.k5.ts.json",
+ "queries": 3,
+ "poolRecallAtK": 0.0,
+ "rrfC": 60,
+ "alphas": [
+  0.1,
+  0.2,
+  0.3,
+  0.4,
+  0.5,
+  0.6,
+  0.7
+ ],
+ "bestAlphaInSample": 0.1,
+ "argmaxDef3": 0.1,
+ "argmaxMRR": 0.1,
+ "cv": {
+  "folds": 5,
+  "seed": 6182160,
+  "alphas": [
+   0.1,
+   0.1,
+   0.1,
+   0.1,
+   0.1
+  ]
+ },
+ "arms": {
+  "baseline": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "kalpana": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "rrf": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.1": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.2": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.3": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.4": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.5": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.6": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.7": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "cv": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  }
+ },
+ "latencyMs": {
+  "miru": {
+   "p50": 8.283017000000001,
+   "p95": 9.559093000000004
+  },
+  "queryTensorCold": {
+   "p50": 355.771235,
+   "p95": 357.52721399999984
+  },
+  "queryTensorWarm": {
+   "p50": 0.17759599999989106,
+   "p95": 0.19314199999986847
+  },
+  "poolScoring": {
+   "p50": 0.045689000000237456,
+   "p95": 0.08117800000007058
+  },
+  "overheadCold": {
+   "p50": 355.809367,
+   "p95": 357.6083919999999
+  },
+  "overheadWarm": {
+   "p50": 0.22328500000012852,
+   "p95": 0.27431999999993906
+  },
+  "offlineBuildS": 0.39595023400000007,
+  "modelLoadS": 0.6435395289999999,
+  "miruQueryEmbedding": {
+   "p50": 255.89175899999987,
+   "p95": 370.23658900000004,
+   "n": 3
+  },
+  "embedder": "ds1"
+ },
+ "perQuery": [
+  {
+   "id": "AB_AXUM0",
+   "query": "HTTP router route matching axum",
+   "identifier": "",
+   "poolRecall": false,
+   "parsed": 0.4,
+   "baseline": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/CHANGELOG.md:2041",
+     "axum/src/routing/method_filter.rs:69",
+     "axum/src/docs/routing/method_not_allowed_fallback.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/src/extract/matched_path.rs:409",
+     "axum/CHANGELOG.md:2041",
+     "axum/src/docs/routing/method_not_allowed_fallback.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/CHANGELOG.md:2041",
+     "axum/src/extract/matched_path.rs:409",
+     "axum/src/docs/routing/method_not_allowed_fallback.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/CHANGELOG.md:2041",
+     "axum/src/routing/method_filter.rs:69",
+     "axum/src/docs/routing/method_not_allowed_fallback.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/CHANGELOG.md:2041",
+     "axum/src/routing/method_filter.rs:69",
+     "axum/src/extract/matched_path.rs:409"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/CHANGELOG.md:2041",
+     "axum/src/routing/method_filter.rs:69",
+     "axum/src/extract/matched_path.rs:409"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/CHANGELOG.md:2041",
+     "axum/src/extract/matched_path.rs:409",
+     "axum/src/routing/method_filter.rs:69"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/CHANGELOG.md:2041",
+     "axum/src/extract/matched_path.rs:409",
+     "axum/src/docs/routing/method_not_allowed_fallback.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/CHANGELOG.md:2041",
+     "axum/src/extract/matched_path.rs:409",
+     "axum/src/docs/routing/method_not_allowed_fallback.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/src/extract/matched_path.rs:409",
+     "axum/CHANGELOG.md:2041",
+     "axum/src/docs/routing/method_not_allowed_fallback.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "AB_AXUM1",
+   "query": "extract request body handler",
+   "identifier": "",
+   "poolRecall": false,
+   "parsed": 0.2,
+   "baseline": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/src/docs/extract.md:412",
+     "axum/src/handler/mod.rs:42",
+     "axum-extra/src/handler/mod.rs:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum-core/src/extract/request_parts.rs:154",
+     "axum/src/docs/extract.md:412",
+     "axum/src/handler/mod.rs:42"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/src/docs/extract.md:412",
+     "axum/src/handler/mod.rs:42",
+     "axum-core/src/extract/request_parts.rs:154"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/src/docs/extract.md:412",
+     "axum/src/handler/mod.rs:42",
+     "axum-extra/src/handler/mod.rs:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/src/docs/extract.md:412",
+     "axum/src/handler/mod.rs:42",
+     "axum-extra/src/handler/mod.rs:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/src/docs/extract.md:412",
+     "axum/src/handler/mod.rs:42",
+     "axum-extra/src/handler/mod.rs:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/src/docs/extract.md:412",
+     "axum/src/handler/mod.rs:42",
+     "axum-extra/src/handler/mod.rs:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/src/docs/extract.md:412",
+     "axum-core/src/extract/request_parts.rs:154",
+     "axum/src/handler/mod.rs:42"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum-core/src/extract/request_parts.rs:154",
+     "axum/src/docs/extract.md:412",
+     "axum/src/handler/mod.rs:42"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum-core/src/extract/request_parts.rs:154",
+     "axum/src/docs/extract.md:412",
+     "axum/src/handler/mod.rs:42"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "AB_AXUM2",
+   "query": "middleware layer tower",
+   "identifier": "",
+   "poolRecall": false,
+   "parsed": 0.2,
+   "baseline": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/src/docs/middleware.md:1",
+     "axum-extra/src/middleware.rs:1",
+     "axum/src/docs/routing/layer.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum-extra/src/middleware.rs:1",
+     "axum/src/docs/middleware.md:1",
+     "axum/src/docs/routing/layer.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/src/docs/middleware.md:1",
+     "axum-extra/src/middleware.rs:1",
+     "axum/src/docs/routing/layer.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/src/docs/middleware.md:1",
+     "axum-extra/src/middleware.rs:1",
+     "axum/src/docs/routing/layer.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/src/docs/middleware.md:1",
+     "axum-extra/src/middleware.rs:1",
+     "axum/src/docs/routing/layer.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum/src/docs/middleware.md:1",
+     "axum-extra/src/middleware.rs:1",
+     "axum/src/docs/routing/layer.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum-extra/src/middleware.rs:1",
+     "axum/src/docs/middleware.md:1",
+     "axum/src/docs/routing/layer.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum-extra/src/middleware.rs:1",
+     "axum/src/docs/middleware.md:1",
+     "axum/src/docs/routing/layer.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum-extra/src/middleware.rs:1",
+     "axum/src/docs/middleware.md:1",
+     "axum/src/docs/routing/layer.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "axum-extra/src/middleware.rs:1",
+     "axum/src/docs/middleware.md:1",
+     "axum/src/docs/routing/layer.md:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  }
+ ]
+}

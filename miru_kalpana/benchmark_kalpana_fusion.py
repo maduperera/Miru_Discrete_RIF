@@ -277,6 +277,13 @@ def load_candidates(k: int, path: Optional[str]) -> Tuple[dict, Path]:
     return json.loads(p.read_text()), p
 
 
+def _embed_latency(cpath: Path) -> List[float]:
+    """Sequential single-query DS1 embedding latencies (ms) written by benchmark/dump_candidates.ts."""
+    name = re.sub(r"\.k\d+(\.ts)?\.json$", "", cpath.name).replace("candidates.", "embedlat.", 1) + ".json"
+    f = cpath.parent / name
+    return json.loads(f.read_text()) if f.exists() else []
+
+
 def build_tensor_cache(rr: KalpanaReranker, data: dict, path: Path, rebuild: bool,
                        extractor: str = "regex") -> Tuple[Dict[str, int], np.ndarray, np.ndarray, dict]:
     """OFFLINE: tensorize every unique pool chunk once and serialize (simulated index time)."""
@@ -295,8 +302,11 @@ def build_tensor_cache(rr: KalpanaReranker, data: dict, path: Path, rebuild: boo
     valid = np.zeros(len(keys), dtype=bool)
     print(f"Offline: tensorizing {len(keys)} unique pool chunks…", flush=True)
     t0 = time.perf_counter()
-    for i, k in enumerate(keys):
-        pairs = treesitter_pairs(uniq[k]) if extractor == "treesitter" else go_pairs(uniq[k]["content"])
+    all_pairs = [treesitter_pairs(uniq[k]) if extractor == "treesitter" else go_pairs(uniq[k]["content"]) for k in keys]
+    if rr.embedder != "minilm":  # network-backed encoder: embed every distinct token in batches, not one call each
+        n_new = rr.vocab.prefetch(tok for pairs in all_pairs for _, tok in pairs)
+        print(f"  prefetched {n_new} new token vectors ({rr.embedder})", flush=True)
+    for i, pairs in enumerate(all_pairs):
         if pairs:
             mat[i] = rr.index_chunk(pairs)
             valid[i] = True
@@ -321,6 +331,8 @@ def main() -> None:
     ap.add_argument("--queries", default="benchmark/queries.topk.json", help="query spec (must cover the pools)")
     ap.add_argument("--extractor", choices=["regex", "treesitter"], default="regex",
                     help="chunk role source: Go regex, or 'roles' from scripts/extract_roles.ts")
+    ap.add_argument("--embedder", choices=["minilm", "ds1"], default="minilm",
+                    help="token encoder for the Kalpana codebook (default minilm; ds1 needs TAKARA_API_KEY)")
     args = ap.parse_args()
 
     spec = json.loads((ROOT / args.queries).read_text())
@@ -329,10 +341,13 @@ def main() -> None:
     tag = cpath.stem.replace("candidates.", "")
     if args.extractor == "treesitter" and not tag.endswith(".ts"):
         tag += ".ts"  # never share a cache/results file with the regex extractor
+    # Pools from one embedder scored with a codebook from the other (ablation): keep its files apart.
+    if (args.embedder == "ds1") != tag.startswith("ds1"):
+        tag = tag.replace(".ts", "") + f".cb-{args.embedder}" + (".ts" if args.extractor == "treesitter" else "")
 
-    print("Loading Kalpana-RIF (MiniLM codebook)…", flush=True)
+    print(f"Loading Kalpana-RIF ({'DS1' if args.embedder == 'ds1' else 'MiniLM'} codebook)…", flush=True)
     t0 = time.perf_counter()
-    rr = KalpanaReranker()
+    rr = KalpanaReranker(embedder=args.embedder)
     load_s = time.perf_counter() - t0
 
     # ---- OFFLINE: pre-computed pool tensors (index time) -------------------
@@ -353,8 +368,12 @@ def main() -> None:
         rows_idx = np.array([kidx[chunk_key(c)] for c in cands])
 
         # Cold = phrase NOT in the token cache. Query phrases usually equal split identifier names
-        # that the offline pass already embedded, so evict them to measure a genuine MiniLM encode.
-        rr.vocab._tokens.pop(q["query"].strip().lower(), None)
+        # that the offline pass already embedded, so evict them to measure a genuine encode
+        # (for DS1 that is a real network round trip; the on-disk cache is evicted too).
+        phrase = q["query"].strip().lower()
+        rr.vocab._tokens.pop(phrase, None)
+        if hasattr(rr.vocab.model, "evict"):
+            rr.vocab.model.evict(phrase)
         t_a = time.perf_counter()
         q_t = rr.index_chunk(query_pairs(q["query"]))  # cold: query phrase not yet embedded
         t_b = time.perf_counter()
@@ -467,7 +486,11 @@ def main() -> None:
     print(" " + "-" * (W - 1))
     print(f" {'':<44}{'p50':>9}{'p95':>9}")
     print(f"   {'Miru search (Top-' + str(K) + ')':<42}{pct(miru_ms, 50):>9.3f}{pct(miru_ms, 95):>9.3f}")
-    print(f"   {'Kalpana query tensor, cold (MiniLM encode)':<42}{pct(lat_qcold, 50):>9.3f}{pct(lat_qcold, 95):>9.3f}")
+    emb_lat = _embed_latency(cpath)
+    if emb_lat:
+        print(f"   {'Miru query embedding (DS1 API, n=' + str(len(emb_lat)) + ')':<42}{pct(emb_lat, 50):>9.3f}{pct(emb_lat, 95):>9.3f}")
+    enc_name = "DS1 API call" if args.embedder == "ds1" else "MiniLM encode"
+    print(f"   {'Kalpana query tensor, cold (' + enc_name + ')':<42}{pct(lat_qcold, 50):>9.3f}{pct(lat_qcold, 95):>9.3f}")
     print(f"   {'Kalpana query tensor, warm (token cached)':<42}{pct(lat_qwarm, 50):>9.3f}{pct(lat_qwarm, 95):>9.3f}")
     print(f"   {'Kalpana pool scoring (mat-vec + sort)':<42}{pct(lat_score, 50):>9.3f}{pct(lat_score, 95):>9.3f}")
     cold = [a + b for a, b in zip(lat_qcold, lat_score)]
@@ -509,6 +532,8 @@ def main() -> None:
             "overheadCold": {"p50": pct(cold, 50), "p95": pct(cold, 95)},
             "overheadWarm": {"p50": pct(warm, 50), "p95": pct(warm, 95)},
             "offlineBuildS": cache_info["buildS"], "modelLoadS": load_s,
+            "miruQueryEmbedding": ({"p50": pct(emb_lat, 50), "p95": pct(emb_lat, 95), "n": len(emb_lat)} if emb_lat else None),
+            "embedder": args.embedder,
         },
         "perQuery": per_query,
     }, indent=1))

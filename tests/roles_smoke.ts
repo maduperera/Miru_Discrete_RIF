@@ -12,6 +12,7 @@ const S: Record<string, [string, string, string]> = {
   rust: ["a.rs", "route_request", "struct Router;\nfn route_request(path: &str, method: Method) -> Response {\n    let handler = lookup(path);\n    handler.call(method)\n}"],
   php: ["a.php", "getUserName", "public function getUserName($userId, $default)\n{\n    $user = $this->repo->find($userId);\n    return format_name($user);\n}"],
   elixir: ["a.ex", "match_route", "defmodule Phoenix.Router do\n  def match_route(conn, path) do\n    route = lookup(path)\n    Plug.Conn.assign(conn, :route, route)\n  end\n  defp helper(x), do: x\nend"],
+  haskell: ["a.hs", "writeThing", "module Foo where\ndata Thing = Thing { thingName :: Text }\nclass Renderable a where\n  renderThing :: a -> Text\nwriteThing :: Thing -> Int -> Text\nwriteThing t n = go (renderThing t) n\n  where go x y = lookupName x\n"],
 };
 let fail = 0;
 for (const [lang, [file, want, src]] of Object.entries(S)) {

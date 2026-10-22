@@ -1,0 +1,9166 @@
+{
+ "candidates": ".bench/kalpana/candidates.ds1-miru-int8.queries.id-redis.k5.ts.json",
+ "queries": 43,
+ "poolRecallAtK": 0.9069767441860465,
+ "rrfC": 60,
+ "alphas": [
+  0.1,
+  0.2,
+  0.3,
+  0.4,
+  0.5,
+  0.6,
+  0.7
+ ],
+ "bestAlphaInSample": 0.7,
+ "argmaxDef3": 0.7,
+ "argmaxMRR": 0.7,
+ "cv": {
+  "folds": 5,
+  "seed": 6182160,
+  "alphas": [
+   0.7,
+   0.7,
+   0.2,
+   0.6,
+   0.7
+  ]
+ },
+ "arms": {
+  "baseline": {
+   "hit1": 0.6976744186046512,
+   "hit3": 0.9069767441860465,
+   "def3": 0.5813953488372093,
+   "p3": 0.5348837209302325,
+   "mrr": 0.7868217054263565,
+   "mrr_def": 0.5201550387596899,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "kalpana": {
+   "hit1": 0.813953488372093,
+   "hit3": 0.8604651162790697,
+   "def3": 0.6976744186046512,
+   "p3": 0.5968992248062015,
+   "mrr": 0.8476744186046512,
+   "mrr_def": 0.6627906976744186,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 2,
+   "hit3_p": 0.5,
+   "def3_wins": 5,
+   "def3_losses": 0,
+   "def3_p": 0.0625
+  },
+  "rrf": {
+   "hit1": 0.7674418604651163,
+   "hit3": 0.9069767441860465,
+   "def3": 0.6976744186046512,
+   "p3": 0.6046511627906976,
+   "mrr": 0.8333333333333334,
+   "mrr_def": 0.5968992248062015,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 5,
+   "def3_losses": 0,
+   "def3_p": 0.0625
+  },
+  "lin0.1": {
+   "hit1": 0.6976744186046512,
+   "hit3": 0.9069767441860465,
+   "def3": 0.627906976744186,
+   "p3": 0.5658914728682171,
+   "mrr": 0.7868217054263565,
+   "mrr_def": 0.5251937984496124,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 2,
+   "def3_losses": 0,
+   "def3_p": 0.5
+  },
+  "lin0.2": {
+   "hit1": 0.7441860465116279,
+   "hit3": 0.9069767441860465,
+   "def3": 0.6511627906976745,
+   "p3": 0.5813953488372092,
+   "mrr": 0.810077519379845,
+   "mrr_def": 0.5503875968992248,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 3,
+   "def3_losses": 0,
+   "def3_p": 0.25
+  },
+  "lin0.3": {
+   "hit1": 0.7441860465116279,
+   "hit3": 0.9069767441860465,
+   "def3": 0.6511627906976745,
+   "p3": 0.5736434108527132,
+   "mrr": 0.8178294573643411,
+   "mrr_def": 0.5736434108527132,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 3,
+   "def3_losses": 0,
+   "def3_p": 0.25
+  },
+  "lin0.4": {
+   "hit1": 0.7674418604651163,
+   "hit3": 0.9069767441860465,
+   "def3": 0.6976744186046512,
+   "p3": 0.5891472868217054,
+   "mrr": 0.8217054263565892,
+   "mrr_def": 0.5891472868217055,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 5,
+   "def3_losses": 0,
+   "def3_p": 0.0625
+  },
+  "lin0.5": {
+   "hit1": 0.7906976744186046,
+   "hit3": 0.9069767441860465,
+   "def3": 0.6976744186046512,
+   "p3": 0.5968992248062015,
+   "mrr": 0.8333333333333334,
+   "mrr_def": 0.6162790697674418,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 5,
+   "def3_losses": 0,
+   "def3_p": 0.0625
+  },
+  "lin0.6": {
+   "hit1": 0.813953488372093,
+   "hit3": 0.8604651162790697,
+   "def3": 0.6976744186046512,
+   "p3": 0.5813953488372092,
+   "mrr": 0.8437984496124031,
+   "mrr_def": 0.6627906976744186,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 2,
+   "hit3_p": 0.5,
+   "def3_wins": 5,
+   "def3_losses": 0,
+   "def3_p": 0.0625
+  },
+  "lin0.7": {
+   "hit1": 0.813953488372093,
+   "hit3": 0.8604651162790697,
+   "def3": 0.6976744186046512,
+   "p3": 0.5968992248062015,
+   "mrr": 0.8476744186046512,
+   "mrr_def": 0.6627906976744186,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 2,
+   "hit3_p": 0.5,
+   "def3_wins": 5,
+   "def3_losses": 0,
+   "def3_p": 0.0625
+  },
+  "cv": {
+   "hit1": 0.7209302325581395,
+   "hit3": 0.8604651162790697,
+   "def3": 0.6511627906976745,
+   "p3": 0.5658914728682171,
+   "mrr": 0.7856589147286822,
+   "mrr_def": 0.5968992248062015,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 2,
+   "hit3_p": 0.5,
+   "def3_wins": 3,
+   "def3_losses": 0,
+   "def3_p": 0.25
+  }
+ },
+ "latencyMs": {
+  "miru": {
+   "p50": 19.812361999999666,
+   "p95": 23.577251999999817
+  },
+  "queryTensorCold": {
+   "p50": 362.776075,
+   "p95": 454.35461399999963
+  },
+  "queryTensorWarm": {
+   "p50": 0.19386800000020799,
+   "p95": 0.5310820000019589
+  },
+  "poolScoring": {
+   "p50": 0.047245999999390165,
+   "p95": 0.07269700000023249
+  },
+  "overheadCold": {
+   "p50": 362.8339639999998,
+   "p95": 454.39353599999953
+  },
+  "overheadWarm": {
+   "p50": 0.24111399999959815,
+   "p95": 0.6454540000007114
+  },
+  "offlineBuildS": 0.7636519239999999,
+  "modelLoadS": 0.694088004,
+  "miruQueryEmbedding": {
+   "p50": 128.94229199999995,
+   "p95": 176.43232500000067,
+   "n": 43
+  },
+  "embedder": "ds1"
+ },
+ "perQuery": [
+  {
+   "id": "IDREDI0",
+   "query": "sockaddr un",
+   "identifier": "sockaddr_un",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "deps/hiredis/net.c:693",
+     "deps/hiredis/sockcompat.c:171"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "src/cluster_legacy.c:2022",
+     "deps/hiredis/test.c:1004"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "src/cluster_legacy.c:2022",
+     "deps/hiredis/net.c:693"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "deps/hiredis/net.c:693",
+     "deps/hiredis/sockcompat.c:171"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "deps/hiredis/net.c:693",
+     "deps/hiredis/sockcompat.c:171"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "deps/hiredis/net.c:693",
+     "src/cluster_legacy.c:2022"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "src/cluster_legacy.c:2022",
+     "deps/hiredis/net.c:693"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "src/cluster_legacy.c:2022",
+     "deps/hiredis/sockcompat.c:171"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "src/cluster_legacy.c:2022",
+     "deps/hiredis/sockcompat.c:171"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "src/cluster_legacy.c:2022",
+     "deps/hiredis/sockcompat.c:171"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI1",
+   "query": "redis ae write event",
+   "identifier": "redisAeWriteEvent",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:31",
+     "src/redis-benchmark.c:579"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:31",
+     "src/sentinel.c:292",
+     "src/socket.c:195"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:31",
+     "src/redis-benchmark.c:579"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:31",
+     "src/redis-benchmark.c:579"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:31",
+     "src/redis-benchmark.c:579"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:31",
+     "src/redis-benchmark.c:579"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:31",
+     "src/redis-benchmark.c:579"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:31",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:579"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:31",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:579"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:31",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:579"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI2",
+   "query": "lua y parser",
+   "identifier": "luaY_parser",
+   "poolRecall": false,
+   "parsed": 0.4,
+   "baseline": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/script_lua.c:380",
+     "deps/lua/src/lua.h:171",
+     "src/resp_parser.c:10"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/script_lua.c:380",
+     "src/script_lua.c:328",
+     "deps/lua/src/lua.h:171"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/script_lua.c:380",
+     "deps/lua/src/lua.h:171",
+     "src/script_lua.c:328"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/script_lua.c:380",
+     "deps/lua/src/lua.h:171",
+     "src/resp_parser.c:10"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/script_lua.c:380",
+     "deps/lua/src/lua.h:171",
+     "src/script_lua.c:328"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/script_lua.c:380",
+     "deps/lua/src/lua.h:171",
+     "src/script_lua.c:328"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/script_lua.c:380",
+     "deps/lua/src/lua.h:171",
+     "src/script_lua.c:328"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/script_lua.c:380",
+     "deps/lua/src/lua.h:171",
+     "src/script_lua.c:328"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/script_lua.c:380",
+     "src/script_lua.c:328",
+     "deps/lua/src/lua.h:171"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/script_lua.c:380",
+     "src/script_lua.c:328",
+     "deps/lua/src/lua.h:171"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI3",
+   "query": "dict expand",
+   "identifier": "dictExpand",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1649",
+     "deps/hiredis/dict.c:300",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:300",
+     "src/dict.c:1649",
+     "src/dict.c:1634"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1649",
+     "deps/hiredis/dict.c:300",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1649",
+     "deps/hiredis/dict.c:300",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1649",
+     "deps/hiredis/dict.c:300",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1649",
+     "deps/hiredis/dict.c:300",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1649",
+     "deps/hiredis/dict.c:300",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:300",
+     "src/dict.c:1649",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:300",
+     "src/dict.c:1649",
+     "src/dict.c:1634"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:300",
+     "src/dict.c:1649",
+     "src/dict.c:1634"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDREDI4",
+   "query": "dict release",
+   "identifier": "dictRelease",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:741",
+     "deps/hiredis/dict.c:194",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:194",
+     "src/dict.c:741",
+     "src/dict.c:212"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:741",
+     "deps/hiredis/dict.c:194",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:741",
+     "deps/hiredis/dict.c:194",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:741",
+     "deps/hiredis/dict.c:194",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:741",
+     "deps/hiredis/dict.c:194",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:741",
+     "deps/hiredis/dict.c:194",
+     "src/dict.c:212"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:741",
+     "deps/hiredis/dict.c:194",
+     "src/dict.c:212"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:741",
+     "deps/hiredis/dict.c:194",
+     "src/dict.c:212"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:741",
+     "deps/hiredis/dict.c:194",
+     "src/dict.c:212"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDREDI5",
+   "query": "dict create",
+   "identifier": "dictCreate",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2311",
+     "deps/hiredis/dict.c:84",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:84",
+     "src/dict.h:235",
+     "src/t_hash.c:3778"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:84",
+     "src/dict.h:235",
+     "src/dict.c:2311"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2311",
+     "deps/hiredis/dict.c:84",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:84",
+     "src/dict.c:2311",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:84",
+     "src/dict.c:2311",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:84",
+     "src/dict.c:2311",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:84",
+     "src/dict.c:2311",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:84",
+     "src/dict.h:235",
+     "src/dict.c:2311"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:84",
+     "src/dict.h:235",
+     "src/dict.c:2311"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDREDI6",
+   "query": "redis command",
+   "identifier": "redisCommand",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/redismodule.h:481",
+     "src/redis-cli.c:753",
+     "src/server.h:3940"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/server.h:3940",
+     "src/module.c:518",
+     "src/server.c:6256"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/server.h:3940",
+     "src/redismodule.h:481",
+     "src/redis-cli.c:753"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/redismodule.h:481",
+     "src/redis-cli.c:753",
+     "src/server.h:3940"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/redismodule.h:481",
+     "src/redis-cli.c:753",
+     "src/server.h:3940"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/redismodule.h:481",
+     "src/server.h:3940",
+     "src/redis-cli.c:753"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/server.h:3940",
+     "src/redismodule.h:481",
+     "src/redis-cli.c:753"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/server.h:3940",
+     "src/redismodule.h:481",
+     "src/module.c:518"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/server.h:3940",
+     "src/module.c:518",
+     "src/redismodule.h:481"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/server.h:3940",
+     "src/module.c:518",
+     "src/redismodule.h:481"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI7",
+   "query": "dict delete",
+   "identifier": "dictDelete",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2090",
+     "src/dict.h:235",
+     "src/blocked.c:584"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2123",
+     "src/dict.h:235",
+     "src/dict.c:2090"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2090",
+     "src/dict.h:235",
+     "src/dict.c:2123"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2090",
+     "src/dict.h:235",
+     "src/dict.c:2123"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2090",
+     "src/dict.h:235",
+     "src/dict.c:2123"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2090",
+     "src/dict.h:235",
+     "src/dict.c:2123"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2090",
+     "src/dict.h:235",
+     "src/dict.c:2123"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2090",
+     "src/dict.h:235",
+     "src/dict.c:2123"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2090",
+     "src/dict.h:235",
+     "src/dict.c:2123"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2090",
+     "src/dict.h:235",
+     "src/dict.c:2123"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDREDI8",
+   "query": "sockaddr in",
+   "identifier": "sockaddr_in",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "src/cluster_legacy.c:2022",
+     "deps/hiredis/sockcompat.c:171"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "src/cluster_legacy.c:2022",
+     "deps/hiredis/test.c:1004"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "src/cluster_legacy.c:2022",
+     "deps/hiredis/sockcompat.c:171"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "src/cluster_legacy.c:2022",
+     "deps/hiredis/sockcompat.c:171"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "src/cluster_legacy.c:2022",
+     "deps/hiredis/sockcompat.c:171"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "src/cluster_legacy.c:2022",
+     "deps/hiredis/sockcompat.c:171"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "src/cluster_legacy.c:2022",
+     "deps/hiredis/sockcompat.c:171"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "src/cluster_legacy.c:2022",
+     "deps/hiredis/sockcompat.c:171"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "src/cluster_legacy.c:2022",
+     "deps/hiredis/sockcompat.c:171"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/anet.c:640",
+     "src/cluster_legacy.c:2022",
+     "deps/hiredis/sockcompat.c:171"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI9",
+   "query": "redis ae add read",
+   "identifier": "redisAeAddRead",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.h:116",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/redis-benchmark.c:802"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/redis-benchmark.c:802"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "deps/hiredis/read.h:116",
+     "src/sentinel.c:292"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.h:116",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.h:116",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.h:116",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.h:116",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "deps/hiredis/read.h:116",
+     "src/sentinel.c:292"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "deps/hiredis/read.h:116"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "deps/hiredis/read.h:116"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI10",
+   "query": "dict expand if needed",
+   "identifier": "_dictExpandIfNeeded",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1649",
+     "src/dict.h:235",
+     "deps/hiredis/dict.c:300"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:300",
+     "src/dict.c:1649",
+     "src/dict.c:1634"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1649",
+     "deps/hiredis/dict.c:300",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1649",
+     "deps/hiredis/dict.c:300",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1649",
+     "deps/hiredis/dict.c:300",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1649",
+     "deps/hiredis/dict.c:300",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1649",
+     "deps/hiredis/dict.c:300",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:300",
+     "src/dict.c:1649",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:300",
+     "src/dict.c:1649",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:300",
+     "src/dict.c:1649",
+     "src/dict.c:1634"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDREDI11",
+   "query": "dict clear",
+   "identifier": "_dictClear",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:705",
+     "deps/hiredis/dict.c:194",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:194",
+     "src/dict.c:705",
+     "src/functions.c:123"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:705",
+     "deps/hiredis/dict.c:194",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:705",
+     "deps/hiredis/dict.c:194",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:705",
+     "deps/hiredis/dict.c:194",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:194",
+     "src/dict.c:705",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:194",
+     "src/dict.c:705",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:194",
+     "src/dict.c:705",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:194",
+     "src/dict.c:705",
+     "src/functions.c:123"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.c:194",
+     "src/dict.c:705",
+     "src/functions.c:123"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI12",
+   "query": "redis ae events",
+   "identifier": "redisAeEvents",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:31",
+     "src/ae_epoll.c:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:31",
+     "src/sentinel.c:292",
+     "src/ae_epoll.c:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:31",
+     "src/ae_epoll.c:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:31",
+     "src/ae_epoll.c:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:31",
+     "src/ae_epoll.c:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:31",
+     "src/ae_epoll.c:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:31",
+     "src/ae_epoll.c:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:31",
+     "src/sentinel.c:292",
+     "src/ae_epoll.c:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:31",
+     "src/sentinel.c:292",
+     "src/ae_epoll.c:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:31",
+     "src/sentinel.c:292",
+     "src/ae_epoll.c:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI13",
+   "query": "redis ae attach",
+   "identifier": "redisAeAttach",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/redis-cli.c:9562",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "deps/hiredis/adapters/redismoduleapi.h:113"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-cli.c:9562"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/redis-cli.c:9562",
+     "src/sentinel.c:292"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-cli.c:9562"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-cli.c:9562"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/redismoduleapi.h:113"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/redismoduleapi.h:113"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI14",
+   "query": "roaring64 iterator s",
+   "identifier": "roaring64_iterator_s",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/src/roaring64.c:2769",
+     "deps/croaring/include/roaring/roaring64.h:772",
+     "deps/croaring/src/roaring64.c:1183"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/src/roaring64.c:2769",
+     "deps/croaring/include/roaring/roaring64.h:25",
+     "deps/croaring/include/roaring/roaring.h:1150"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/src/roaring64.c:2769",
+     "deps/croaring/include/roaring/roaring64.h:25",
+     "deps/croaring/include/roaring/roaring64.h:772"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/src/roaring64.c:2769",
+     "deps/croaring/include/roaring/roaring64.h:772",
+     "deps/croaring/include/roaring/roaring64.h:25"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/src/roaring64.c:2769",
+     "deps/croaring/include/roaring/roaring64.h:772",
+     "deps/croaring/include/roaring/roaring64.h:25"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/src/roaring64.c:2769",
+     "deps/croaring/include/roaring/roaring64.h:772",
+     "deps/croaring/include/roaring/roaring64.h:25"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/src/roaring64.c:2769",
+     "deps/croaring/include/roaring/roaring64.h:772",
+     "deps/croaring/include/roaring/roaring64.h:25"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/src/roaring64.c:2769",
+     "deps/croaring/include/roaring/roaring64.h:25",
+     "deps/croaring/include/roaring/roaring64.h:772"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/src/roaring64.c:2769",
+     "deps/croaring/include/roaring/roaring64.h:25",
+     "deps/croaring/include/roaring/roaring.h:1150"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/src/roaring64.c:2769",
+     "deps/croaring/include/roaring/roaring64.h:25",
+     "deps/croaring/include/roaring/roaring.h:1150"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI15",
+   "query": "dict iterator",
+   "identifier": "dictIterator",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.h:272",
+     "deps/hiredis/dict.c:255"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.2,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "deps/hiredis/dict.c:255",
+     "src/kvstore.c:709"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "deps/hiredis/dict.c:255",
+     "src/dict.h:272"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.h:272",
+     "deps/hiredis/dict.c:255"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.h:272",
+     "deps/hiredis/dict.c:255"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.h:272",
+     "deps/hiredis/dict.c:255"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "deps/hiredis/dict.c:255",
+     "src/dict.h:272"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "deps/hiredis/dict.c:255",
+     "src/dict.h:272"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.2,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "deps/hiredis/dict.c:255",
+     "src/kvstore.c:709"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.2,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "deps/hiredis/dict.c:255",
+     "src/kvstore.c:709"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI16",
+   "query": "container s",
+   "identifier": "container_s",
+   "poolRecall": false,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/include/roaring/containers/container_defs.h:21",
+     "deps/croaring/include/roaring/containers/run.h:37",
+     "deps/croaring/src/containers/convert.c:55"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/include/roaring/containers/containers.h:36",
+     "deps/croaring/include/roaring/containers/run.h:37",
+     "deps/croaring/include/roaring/containers/bitset.h:37"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/include/roaring/containers/run.h:37",
+     "deps/croaring/include/roaring/containers/container_defs.h:21",
+     "deps/croaring/include/roaring/containers/containers.h:36"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/include/roaring/containers/container_defs.h:21",
+     "deps/croaring/include/roaring/containers/run.h:37",
+     "deps/croaring/src/containers/convert.c:55"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/include/roaring/containers/container_defs.h:21",
+     "deps/croaring/include/roaring/containers/run.h:37",
+     "deps/croaring/include/roaring/containers/bitset.h:37"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/include/roaring/containers/container_defs.h:21",
+     "deps/croaring/include/roaring/containers/run.h:37",
+     "deps/croaring/include/roaring/containers/bitset.h:37"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/include/roaring/containers/run.h:37",
+     "deps/croaring/include/roaring/containers/container_defs.h:21",
+     "deps/croaring/include/roaring/containers/bitset.h:37"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/include/roaring/containers/run.h:37",
+     "deps/croaring/include/roaring/containers/bitset.h:37",
+     "deps/croaring/include/roaring/containers/container_defs.h:21"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/include/roaring/containers/run.h:37",
+     "deps/croaring/include/roaring/containers/bitset.h:37",
+     "deps/croaring/include/roaring/containers/containers.h:36"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/croaring/include/roaring/containers/run.h:37",
+     "deps/croaring/include/roaring/containers/containers.h:36",
+     "deps/croaring/include/roaring/containers/bitset.h:37"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI17",
+   "query": "redis ae cleanup",
+   "identifier": "redisAeCleanup",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/redis-cli.c:9562",
+     "src/sentinel.c:292"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-cli.c:9562"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-cli.c:9562"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-cli.c:9562"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI18",
+   "query": "read bytes",
+   "identifier": "readBytes",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.c:77",
+     "src/rio.h:115",
+     "deps/croaring/src/roaring64.c:2247"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.c:77",
+     "src/rio.h:115",
+     "deps/croaring/src/roaring64.c:2247"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.c:77",
+     "src/rio.h:115",
+     "deps/croaring/src/roaring64.c:2247"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.c:77",
+     "src/rio.h:115",
+     "deps/croaring/src/roaring64.c:2247"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.c:77",
+     "src/rio.h:115",
+     "deps/croaring/src/roaring64.c:2247"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.c:77",
+     "src/rio.h:115",
+     "deps/croaring/src/roaring64.c:2247"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.c:77",
+     "src/rio.h:115",
+     "deps/croaring/src/roaring64.c:2247"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.c:77",
+     "src/rio.h:115",
+     "deps/croaring/src/roaring64.c:2247"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.c:77",
+     "src/rio.h:115",
+     "deps/croaring/src/roaring64.c:2247"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.c:77",
+     "src/rio.h:115",
+     "deps/croaring/src/roaring64.c:2247"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI19",
+   "query": "dict init",
+   "identifier": "_dictInit",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1112",
+     "src/dict.h:272",
+     "deps/hiredis/dict.c:36"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1112",
+     "deps/hiredis/dict.c:36",
+     "src/kvstore.c:709"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1112",
+     "deps/hiredis/dict.c:36",
+     "src/dict.h:272"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1112",
+     "src/dict.h:272",
+     "deps/hiredis/dict.c:36"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1112",
+     "src/dict.h:272",
+     "deps/hiredis/dict.c:36"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1112",
+     "deps/hiredis/dict.c:36",
+     "src/dict.h:272"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1112",
+     "deps/hiredis/dict.c:36",
+     "src/dict.h:272"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1112",
+     "deps/hiredis/dict.c:36",
+     "src/dict.h:272"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1112",
+     "deps/hiredis/dict.c:36",
+     "src/kvstore.c:709"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1112",
+     "deps/hiredis/dict.c:36",
+     "src/kvstore.c:709"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI20",
+   "query": "dict entry",
+   "identifier": "dictEntry",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:66",
+     "src/dict.h:301",
+     "deps/hiredis/dict.c:255"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.h:36",
+     "deps/hiredis/dict.c:255",
+     "src/dict.c:618"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.h:36",
+     "deps/hiredis/dict.c:255",
+     "src/dict.c:66"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:66",
+     "src/dict.h:301",
+     "deps/hiredis/dict.c:255"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:66",
+     "src/dict.h:301",
+     "deps/hiredis/dict.h:36"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.h:36",
+     "src/dict.c:66",
+     "deps/hiredis/dict.c:255"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.h:36",
+     "deps/hiredis/dict.c:255",
+     "src/dict.c:66"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.h:36",
+     "deps/hiredis/dict.c:255",
+     "src/dict.c:66"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.h:36",
+     "deps/hiredis/dict.c:255",
+     "src/dict.h:301"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/dict.h:36",
+     "deps/hiredis/dict.c:255",
+     "src/dict.h:301"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDREDI21",
+   "query": "create string object",
+   "identifier": "createStringObject",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:341",
+     "src/object.h:162",
+     "src/server.c:2363"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:341",
+     "src/object.c:431",
+     "src/object.h:126"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:341",
+     "src/object.h:162",
+     "src/object.c:431"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:341",
+     "src/object.h:162",
+     "src/server.c:2363"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:341",
+     "src/object.h:162",
+     "src/object.c:431"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:341",
+     "src/object.h:162",
+     "src/object.c:431"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:341",
+     "src/object.h:162",
+     "src/object.c:431"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:341",
+     "src/object.h:162",
+     "src/object.c:431"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:341",
+     "src/object.c:431",
+     "src/object.h:162"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:341",
+     "src/object.c:431",
+     "src/object.h:162"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI22",
+   "query": "dict type",
+   "identifier": "dictType",
+   "poolRecall": true,
+   "parsed": 0.6,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:212",
+     "deps/hiredis/dict.h:90",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:212",
+     "src/dict.c:741",
+     "deps/hiredis/dict.c:84"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:212",
+     "deps/hiredis/dict.h:90",
+     "src/dict.c:741"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:212",
+     "deps/hiredis/dict.h:90",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:212",
+     "deps/hiredis/dict.h:90",
+     "deps/hiredis/dict.c:84"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:212",
+     "deps/hiredis/dict.h:90",
+     "deps/hiredis/dict.c:84"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:212",
+     "deps/hiredis/dict.c:84",
+     "deps/hiredis/dict.h:90"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:212",
+     "deps/hiredis/dict.c:84",
+     "deps/hiredis/dict.h:90"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:212",
+     "deps/hiredis/dict.c:84",
+     "src/dict.c:741"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:212",
+     "deps/hiredis/dict.c:84",
+     "src/dict.c:741"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI23",
+   "query": "dict reset",
+   "identifier": "_dictReset",
+   "poolRecall": true,
+   "parsed": 0.6,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.h:235",
+     "src/commands/reset.json:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/latency.c:100",
+     "src/cluster_legacy.c:1084"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.h:235",
+     "src/latency.c:100"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.h:235",
+     "src/commands/reset.json:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.h:235",
+     "src/commands/reset.json:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.h:235",
+     "src/commands/reset.json:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.h:235",
+     "src/commands/reset.json:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.h:235",
+     "src/commands/reset.json:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.h:235",
+     "src/latency.c:100"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/latency.c:100",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI24",
+   "query": "dict gen hash function",
+   "identifier": "dictGenHashFunction",
+   "poolRecall": true,
+   "parsed": 0.6,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.h:272",
+     "deps/hiredis/dict.c:36",
+     "src/dict.c:92"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:92",
+     "src/server.c:384",
+     "deps/hiredis/dict.c:36"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:92",
+     "src/dict.h:272",
+     "deps/hiredis/dict.c:36"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.h:272",
+     "deps/hiredis/dict.c:36",
+     "src/dict.c:92"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:92",
+     "deps/hiredis/dict.c:36",
+     "src/dict.h:272"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:92",
+     "deps/hiredis/dict.c:36",
+     "src/dict.h:272"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:92",
+     "deps/hiredis/dict.c:36",
+     "src/dict.h:272"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:92",
+     "deps/hiredis/dict.c:36",
+     "src/dict.h:272"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:92",
+     "deps/hiredis/dict.c:36",
+     "src/server.c:384"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:92",
+     "deps/hiredis/dict.c:36",
+     "src/server.c:384"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI25",
+   "query": "event base",
+   "identifier": "event_base",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.2,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/src/base.c:387",
+     "deps/jemalloc/include/jemalloc/internal/base.h:99",
+     "deps/hiredis/test.c:2146"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/libevent.h:138",
+     "deps/hiredis/test.c:2146",
+     "deps/jemalloc/src/base.c:387"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/src/base.c:387",
+     "deps/hiredis/test.c:2146",
+     "deps/hiredis/adapters/libevent.h:138"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/src/base.c:387",
+     "deps/jemalloc/include/jemalloc/internal/base.h:99",
+     "deps/hiredis/test.c:2146"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/src/base.c:387",
+     "deps/jemalloc/include/jemalloc/internal/base.h:99",
+     "deps/hiredis/test.c:2146"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/src/base.c:387",
+     "deps/jemalloc/include/jemalloc/internal/base.h:99",
+     "deps/hiredis/test.c:2146"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/src/base.c:387",
+     "deps/jemalloc/include/jemalloc/internal/base.h:99",
+     "deps/hiredis/adapters/libevent.h:138"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/src/base.c:387",
+     "deps/jemalloc/include/jemalloc/internal/base.h:99",
+     "deps/hiredis/adapters/libevent.h:138"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/libevent.h:138",
+     "deps/jemalloc/src/base.c:387",
+     "deps/jemalloc/include/jemalloc/internal/base.h:99"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/libevent.h:138",
+     "deps/jemalloc/src/base.c:387",
+     "deps/hiredis/test.c:2146"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDREDI26",
+   "query": "redis ae del write",
+   "identifier": "redisAeDelWrite",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "deps/hiredis/adapters/qt.h:37"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/redis-benchmark.c:325"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI27",
+   "query": "tsd init head s",
+   "identifier": "tsd_init_head_s",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/src/tsd.c:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd.h:412",
+     "deps/jemalloc/include/jemalloc/internal/tsd_generic.h:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/include/jemalloc/internal/tsd_generic.h:1",
+     "deps/jemalloc/src/tsd.c:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd.h:412"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/src/tsd.c:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd_generic.h:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd.h:412"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/src/tsd.c:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd.h:412",
+     "deps/jemalloc/include/jemalloc/internal/tsd_generic.h:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/src/tsd.c:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd_generic.h:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd.h:412"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/src/tsd.c:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd_generic.h:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd.h:412"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/src/tsd.c:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd_generic.h:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd.h:412"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/src/tsd.c:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd_generic.h:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd.h:412"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/src/tsd.c:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd_generic.h:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd.h:412"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/jemalloc/src/tsd.c:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd_generic.h:1",
+     "deps/jemalloc/include/jemalloc/internal/tsd.h:412"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI28",
+   "query": "redis module on load",
+   "identifier": "RedisModule_OnLoad",
+   "poolRecall": false,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/module.c:13621",
+     "src/redismodule.h:1080",
+     "src/module.c:14753"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/redismodule.h:1080",
+     "src/module.c:13621",
+     "src/module.c:14753"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/module.c:13621",
+     "src/redismodule.h:1080",
+     "src/module.c:14753"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/module.c:13621",
+     "src/redismodule.h:1080",
+     "src/module.c:14753"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/module.c:13621",
+     "src/redismodule.h:1080",
+     "src/module.c:14753"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/module.c:13621",
+     "src/redismodule.h:1080",
+     "src/module.c:14753"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/module.c:13621",
+     "src/redismodule.h:1080",
+     "src/module.c:14753"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/module.c:13621",
+     "src/redismodule.h:1080",
+     "src/module.c:14753"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/module.c:13621",
+     "src/redismodule.h:1080",
+     "src/module.c:14753"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/module.c:13621",
+     "src/redismodule.h:1080",
+     "src/module.c:14753"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI29",
+   "query": "dict init iterator",
+   "identifier": "dictInitIterator",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.h:272",
+     "deps/hiredis/dict.c:255"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1112",
+     "src/dict.c:1160",
+     "deps/hiredis/dict.c:255"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.c:1112",
+     "deps/hiredis/dict.c:255"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.h:272",
+     "deps/hiredis/dict.c:255"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.h:272",
+     "deps/hiredis/dict.c:255"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "deps/hiredis/dict.c:255",
+     "src/dict.h:272"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "deps/hiredis/dict.c:255",
+     "src/dict.c:1112"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.c:1112",
+     "deps/hiredis/dict.c:255"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.c:1112",
+     "deps/hiredis/dict.c:255"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1160",
+     "src/dict.c:1112",
+     "deps/hiredis/dict.c:255"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDREDI30",
+   "query": "hdr histogram",
+   "identifier": "hdr_histogram",
+   "poolRecall": true,
+   "parsed": 0.6,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.c:692",
+     "deps/hdr_histogram/hdr_histogram.h:74",
+     "deps/hdr_histogram/README.md:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:74",
+     "deps/hdr_histogram/hdr_histogram.h:242",
+     "deps/hdr_histogram/hdr_histogram.c:692"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:74",
+     "deps/hdr_histogram/hdr_histogram.c:692",
+     "deps/hdr_histogram/hdr_histogram.h:242"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:74",
+     "deps/hdr_histogram/hdr_histogram.c:692",
+     "deps/hdr_histogram/hdr_histogram.h:242"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:74",
+     "deps/hdr_histogram/hdr_histogram.c:692",
+     "deps/hdr_histogram/hdr_histogram.h:242"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:74",
+     "deps/hdr_histogram/hdr_histogram.c:692",
+     "deps/hdr_histogram/hdr_histogram.h:242"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:74",
+     "deps/hdr_histogram/hdr_histogram.c:692",
+     "deps/hdr_histogram/hdr_histogram.h:242"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:74",
+     "deps/hdr_histogram/hdr_histogram.c:692",
+     "deps/hdr_histogram/hdr_histogram.h:242"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:74",
+     "deps/hdr_histogram/hdr_histogram.c:692",
+     "deps/hdr_histogram/hdr_histogram.h:242"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:74",
+     "deps/hdr_histogram/hdr_histogram.c:692",
+     "deps/hdr_histogram/hdr_histogram.h:242"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDREDI31",
+   "query": "lua u dump",
+   "identifier": "luaU_dump",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/commands/dump.json:1",
+     "deps/lua/src/lua.h:270",
+     "deps/lua/src/ldump.c:80"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.h:270",
+     "deps/lua/src/ldump.c:80",
+     "deps/lua/src/luac.c:119"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.h:270",
+     "deps/lua/src/ldump.c:80",
+     "src/commands/dump.json:1"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.h:270",
+     "src/commands/dump.json:1",
+     "deps/lua/src/ldump.c:80"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.h:270",
+     "src/commands/dump.json:1",
+     "deps/lua/src/ldump.c:80"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.h:270",
+     "src/commands/dump.json:1",
+     "deps/lua/src/ldump.c:80"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.h:270",
+     "src/commands/dump.json:1",
+     "deps/lua/src/ldump.c:80"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.h:270",
+     "src/commands/dump.json:1",
+     "deps/lua/src/ldump.c:80"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.h:270",
+     "deps/lua/src/ldump.c:80",
+     "src/commands/dump.json:1"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.h:270",
+     "deps/lua/src/ldump.c:80",
+     "src/commands/dump.json:1"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI32",
+   "query": "redis ae add write",
+   "identifier": "redisAeAddWrite",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:579"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/ae_kqueue.c:102"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:579"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:579"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:579"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:579"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292",
+     "src/redis-benchmark.c:579"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/redis-benchmark.c:579"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/ae_kqueue.c:102"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/ae_kqueue.c:102"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI33",
+   "query": "dict next",
+   "identifier": "dictNext",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1046",
+     "deps/hiredis/dict.c:255",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1046",
+     "deps/hiredis/dict.c:255",
+     "deps/hiredis/dict.c:194"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1046",
+     "deps/hiredis/dict.c:255",
+     "deps/hiredis/dict.c:194"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1046",
+     "deps/hiredis/dict.c:255",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1046",
+     "deps/hiredis/dict.c:255",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1046",
+     "deps/hiredis/dict.c:255",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1046",
+     "deps/hiredis/dict.c:255",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1046",
+     "deps/hiredis/dict.c:255",
+     "deps/hiredis/dict.c:194"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1046",
+     "deps/hiredis/dict.c:255",
+     "deps/hiredis/dict.c:194"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:1046",
+     "deps/hiredis/dict.c:255",
+     "deps/hiredis/dict.c:194"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDREDI34",
+   "query": "create array object",
+   "identifier": "createArrayObject",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:527",
+     "src/object.h:162",
+     "deps/croaring/src/containers/array.c:226"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:527",
+     "deps/croaring/include/roaring/containers/array.h:34",
+     "src/object.h:162"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:527",
+     "src/object.h:162",
+     "deps/croaring/include/roaring/containers/array.h:34"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:527",
+     "src/object.h:162",
+     "deps/croaring/src/containers/array.c:226"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:527",
+     "src/object.h:162",
+     "deps/croaring/include/roaring/containers/array.h:34"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:527",
+     "src/object.h:162",
+     "deps/croaring/include/roaring/containers/array.h:34"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:527",
+     "src/object.h:162",
+     "deps/croaring/include/roaring/containers/array.h:34"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:527",
+     "src/object.h:162",
+     "deps/croaring/include/roaring/containers/array.h:34"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:527",
+     "src/object.h:162",
+     "deps/croaring/include/roaring/containers/array.h:34"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/object.c:527",
+     "deps/croaring/include/roaring/containers/array.h:34",
+     "src/object.h:162"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI35",
+   "query": "dict find",
+   "identifier": "dictFind",
+   "poolRecall": true,
+   "parsed": 0.6,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2311",
+     "src/dict.h:235",
+     "src/dict.c:922"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/kvstore.c:821",
+     "src/dict.c:922",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.h:235",
+     "src/dict.c:922",
+     "src/dict.c:2311"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2311",
+     "src/dict.h:235",
+     "src/dict.c:922"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2311",
+     "src/dict.h:235",
+     "src/dict.c:922"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2311",
+     "src/dict.h:235",
+     "src/dict.c:922"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:2311",
+     "src/dict.h:235",
+     "src/kvstore.c:821"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.h:235",
+     "src/dict.c:2311",
+     "src/kvstore.c:821"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/kvstore.c:821",
+     "src/dict.h:235",
+     "src/dict.c:922"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/kvstore.c:821",
+     "src/dict.c:922",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI36",
+   "query": "dict replace",
+   "identifier": "dictReplace",
+   "poolRecall": true,
+   "parsed": 0.6,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:582",
+     "src/dict.h:235",
+     "deps/hiredis/dict.c:141"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:582",
+     "deps/hiredis/dict.c:141",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:582",
+     "src/dict.h:235",
+     "deps/hiredis/dict.c:141"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:582",
+     "src/dict.h:235",
+     "deps/hiredis/dict.c:141"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:582",
+     "deps/hiredis/dict.c:141",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:582",
+     "deps/hiredis/dict.c:141",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:582",
+     "deps/hiredis/dict.c:141",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:582",
+     "deps/hiredis/dict.c:141",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:582",
+     "deps/hiredis/dict.c:141",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/dict.c:582",
+     "deps/hiredis/dict.c:141",
+     "src/dict.h:235"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI37",
+   "query": "epoll event",
+   "identifier": "epoll_event",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/ae_epoll.c:54",
+     "deps/hiredis/test.c:1004",
+     "deps/jemalloc/src/thread_event.c:291"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/ae_epoll.c:54",
+     "src/ae_epoll.c:89",
+     "src/ae.c:47"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/ae_epoll.c:54",
+     "deps/hiredis/test.c:1004",
+     "src/ae_epoll.c:89"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/ae_epoll.c:54",
+     "deps/hiredis/test.c:1004",
+     "deps/jemalloc/src/thread_event.c:291"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/ae_epoll.c:54",
+     "deps/hiredis/test.c:1004",
+     "src/ae_epoll.c:89"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/ae_epoll.c:54",
+     "deps/hiredis/test.c:1004",
+     "src/ae_epoll.c:89"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/ae_epoll.c:54",
+     "deps/hiredis/test.c:1004",
+     "src/ae_epoll.c:89"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/ae_epoll.c:54",
+     "src/ae_epoll.c:89",
+     "deps/hiredis/test.c:1004"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/ae_epoll.c:54",
+     "src/ae_epoll.c:89",
+     "deps/hiredis/test.c:1004"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/ae_epoll.c:54",
+     "src/ae_epoll.c:89",
+     "deps/hiredis/test.c:1004"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDREDI38",
+   "query": "hdr iter percentiles",
+   "identifier": "hdr_iter_percentiles",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.c:1468",
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "src/redis-benchmark.c:887"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "deps/hdr_histogram/hdr_histogram.h:284",
+     "src/redis-benchmark.c:887"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "deps/hdr_histogram/hdr_histogram.c:1468",
+     "src/redis-benchmark.c:887"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.c:1468",
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "src/redis-benchmark.c:887"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.c:1468",
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "src/redis-benchmark.c:887"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "deps/hdr_histogram/hdr_histogram.c:1468",
+     "src/redis-benchmark.c:887"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "deps/hdr_histogram/hdr_histogram.c:1468",
+     "src/redis-benchmark.c:887"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "deps/hdr_histogram/hdr_histogram.c:1468",
+     "src/redis-benchmark.c:887"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "deps/hdr_histogram/hdr_histogram.c:1468",
+     "src/redis-benchmark.c:887"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "src/redis-benchmark.c:887",
+     "deps/hdr_histogram/hdr_histogram.c:1468"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDREDI39",
+   "query": "redis ae read event",
+   "identifier": "redisAeReadEvent",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.h:116",
+     "deps/hiredis/adapters/ae.h:31",
+     "src/sentinel.c:292"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:31",
+     "src/sentinel.c:292",
+     "src/socket.c:231"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:31",
+     "deps/hiredis/read.h:116",
+     "src/sentinel.c:292"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.h:116",
+     "deps/hiredis/adapters/ae.h:31",
+     "src/sentinel.c:292"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:31",
+     "deps/hiredis/read.h:116",
+     "src/sentinel.c:292"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:31",
+     "deps/hiredis/read.h:116",
+     "src/sentinel.c:292"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:31",
+     "src/sentinel.c:292",
+     "deps/hiredis/read.h:116"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:31",
+     "src/sentinel.c:292",
+     "deps/hiredis/read.h:116"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:31",
+     "src/sentinel.c:292",
+     "deps/hiredis/read.h:116"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:31",
+     "src/sentinel.c:292",
+     "deps/hiredis/read.h:116"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI40",
+   "query": "redis ae del read",
+   "identifier": "redisAeDelRead",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.h:116",
+     "deps/hiredis/read.c:383",
+     "deps/hiredis/adapters/ae.h:86"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/redis-cli.c:9562"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.h:116",
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.h:116",
+     "deps/hiredis/read.c:383",
+     "deps/hiredis/adapters/ae.h:86"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.h:116",
+     "deps/hiredis/read.c:383",
+     "deps/hiredis/adapters/ae.h:86"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.h:116",
+     "deps/hiredis/adapters/ae.h:86",
+     "deps/hiredis/read.c:383"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/read.h:116",
+     "deps/hiredis/adapters/ae.h:86",
+     "src/sentinel.c:292"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hiredis/adapters/ae.h:86",
+     "deps/hiredis/read.h:116",
+     "src/sentinel.c:292"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "deps/hiredis/read.h:116"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/sentinel.c:292",
+     "deps/hiredis/adapters/ae.h:86",
+     "deps/hiredis/read.h:116"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDREDI41",
+   "query": "hdr iter",
+   "identifier": "hdr_iter",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.c:1560",
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "deps/hdr_histogram/hdr_histogram.c:1244"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "deps/hdr_histogram/hdr_histogram.h:461",
+     "deps/hdr_histogram/hdr_histogram.c:1560"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "deps/hdr_histogram/hdr_histogram.c:1560",
+     "deps/hdr_histogram/hdr_histogram.h:461"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.c:1560",
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "deps/hdr_histogram/hdr_histogram.c:1244"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.c:1560",
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "deps/hdr_histogram/hdr_histogram.h:461"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.c:1560",
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "deps/hdr_histogram/hdr_histogram.h:461"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.c:1560",
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "deps/hdr_histogram/hdr_histogram.h:461"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.c:1560",
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "deps/hdr_histogram/hdr_histogram.h:461"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.c:1560",
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "deps/hdr_histogram/hdr_histogram.h:461"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/hdr_histogram/hdr_histogram.c:1560",
+     "deps/hdr_histogram/hdr_histogram.h:409",
+     "deps/hdr_histogram/hdr_histogram.h:461"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDREDI42",
+   "query": "lua x init",
+   "identifier": "luaX_init",
+   "poolRecall": false,
+   "parsed": 0.4,
+   "baseline": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.c:294",
+     "deps/lua/src/luaconf.h:8",
+     "deps/lua/doc/lua.html:8"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.h:270",
+     "deps/lua/src/lua.c:294",
+     "deps/lua/src/luaconf.h:8"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.c:294",
+     "deps/lua/src/lua.h:270",
+     "deps/lua/src/luaconf.h:8"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.c:294",
+     "deps/lua/src/lua.h:270",
+     "deps/lua/src/luaconf.h:8"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.c:294",
+     "deps/lua/src/lua.h:270",
+     "deps/lua/src/luaconf.h:8"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.c:294",
+     "deps/lua/src/lua.h:270",
+     "deps/lua/src/luaconf.h:8"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.c:294",
+     "deps/lua/src/lua.h:270",
+     "deps/lua/src/luaconf.h:8"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.h:270",
+     "deps/lua/src/lua.c:294",
+     "deps/lua/src/luaconf.h:8"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.h:270",
+     "deps/lua/src/lua.c:294",
+     "deps/lua/src/luaconf.h:8"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "deps/lua/src/lua.h:270",
+     "deps/lua/src/lua.c:294",
+     "deps/lua/src/luaconf.h:8"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  }
+ ]
+}

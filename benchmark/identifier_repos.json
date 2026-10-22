@@ -1,0 +1,25 @@
+{
+  "description": "Identifier-style ('where is X defined') held-out evaluation set for Kalpana on Miru. Kept separate from the natural-language CodeSearchNet queries. Query rules and seed are fixed up front and not tuned on results.",
+  "seed": "0xA11CE",
+  "queriesPerRepo": 200,
+  "rules": "function/method/class/type identifier, >=8 chars, >=2 words, defined in >=2 files across 2..30 directories, tests/vendor/docs excluded (miru_kalpana/gen_queries_multi.py); tree-sitter definitions from Miru's own grammars",
+  "repos": [
+    { "name": "redis",       "lang": "c",          "url": "https://github.com/redis/redis" },
+    { "name": "abseil",      "lang": "cpp",        "url": "https://github.com/abseil/abseil-cpp" },
+    { "name": "newtonsoft",  "lang": "csharp",     "url": "https://github.com/JamesNK/Newtonsoft.Json" },
+    { "name": "play",        "lang": "scala",      "url": "https://github.com/playframework/playframework" },
+    { "name": "pandoc",      "lang": "haskell",    "url": "https://github.com/jgm/pandoc" },
+    { "name": "flame",       "lang": "dart",       "url": "https://github.com/flame-engine/flame", "skip": "vendored tree-sitter-dart.wasm cannot be loaded by web-tree-sitter 0.26.13 (getDylinkMetadata fails: legacy dylink section), so neither roles nor definitions can be extracted" },
+    { "name": "dune",        "lang": "ocaml",      "url": "https://github.com/ocaml/dune", "skip": "Miru does not index .ml: no entry in @takara-ai/miru-code src/index/files.ts EXTENSION_TO_LANGUAGE although the OCaml grammar is vendored" },
+    { "name": "openzeppelin","lang": "solidity",   "url": "https://github.com/OpenZeppelin/openzeppelin-contracts", "skip": "Miru does not index .sol: no entry in EXTENSION_TO_LANGUAGE although the Solidity grammar is vendored (pilot: 0 of 2470 chunks were Solidity, pool recall 0%)" },
+    { "name": "laravel",     "lang": "php",        "url": "https://github.com/laravel/framework" },
+    { "name": "hugo",        "lang": "go",         "url": "https://github.com/gohugoio/hugo" },
+    { "name": "ecto",        "lang": "elixir",     "url": "https://github.com/elixir-ecto/ecto" },
+    { "name": "webpack",     "lang": "javascript", "url": "https://github.com/webpack/webpack" },
+    { "name": "guava",       "lang": "java",       "local": "guava",        "note": "already cloned for earlier work; no earlier scored results" },
+    { "name": "rails",       "lang": "ruby",       "local": "rails",        "note": "already cloned for earlier work; no earlier scored results" },
+    { "name": "tokio",       "lang": "rust",       "local": "tokio",        "note": "already cloned for earlier work; no earlier scored results" },
+    { "name": "vite",        "lang": "typescript", "local": "vite",         "note": "already cloned for earlier work; no earlier scored results" },
+    { "name": "scikit-learn","lang": "python",     "local": "scikit-learn", "seen": true, "note": "used during development with MiniLM; not held-out" }
+  ]
+}

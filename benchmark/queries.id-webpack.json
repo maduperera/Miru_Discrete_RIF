@@ -1,0 +1,2180 @@
+{
+ "repo": "id-webpack",
+ "commit": "6cccc2dd511dfe07fe6c6abf7aa972f9b7d60de6",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "200 ambiguous-symbol lookups drawn by gen_queries_multi.py (seed 0xa11ce) from tree-sitter definitions; >=8 chars, >=2 words, 2..30 dirs, tests excluded.",
+ "queries": [
+  {
+   "id": "IDWEBP0",
+   "query": "register legacy request",
+   "identifier": "registerLegacyRequest",
+   "definedIn": [
+    "lib/serialization/ObjectMiddleware.js",
+    "lib/util/serialization.js"
+   ]
+  },
+  {
+   "id": "IDWEBP1",
+   "query": "source module",
+   "identifier": "sourceModule",
+   "definedIn": [
+    "lib/css/CssGenerator.js",
+    "lib/html/HtmlGenerator.js",
+    "lib/javascript/JavascriptGenerator.js"
+   ]
+  },
+  {
+   "id": "IDWEBP2",
+   "query": "get root module",
+   "identifier": "getRootModule",
+   "definedIn": [
+    "lib/module/Module.js",
+    "lib/optimize/ConcatenatedModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP3",
+   "query": "get compilation hooks",
+   "identifier": "getCompilationHooks",
+   "definedIn": [
+    "lib/module/NormalModule.js",
+    "lib/prefetch/ResourceHintRuntimeModule.js",
+    "lib/web/JsonpTemplatePlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP4",
+   "query": "restore from unsafe cache",
+   "identifier": "restoreFromUnsafeCache",
+   "definedIn": [
+    "lib/externals/ExternalModule.js",
+    "lib/module/NormalModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP5",
+   "query": "split chunks plugin",
+   "identifier": "SplitChunksPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/optimize/SplitChunksPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP6",
+   "query": "fetch compile async wasm plugin",
+   "identifier": "FetchCompileAsyncWasmPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/web/FetchCompileAsyncWasmPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP7",
+   "query": "merge duplicate chunks plugin",
+   "identifier": "MergeDuplicateChunksPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/optimize/MergeDuplicateChunksPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP8",
+   "query": "enable chunk loading plugin",
+   "identifier": "EnableChunkLoadingPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/javascript/EnableChunkLoadingPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP9",
+   "query": "min chunk size plugin",
+   "identifier": "MinChunkSizePlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/optimize/MinChunkSizePlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP10",
+   "query": "entry plugin",
+   "identifier": "EntryPlugin",
+   "definedIn": [
+    "lib/entry/EntryPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP11",
+   "query": "sync module ids plugin",
+   "identifier": "SyncModuleIdsPlugin",
+   "definedIn": [
+    "lib/ids/SyncModuleIdsPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP12",
+   "query": "get context",
+   "identifier": "getContext",
+   "definedIn": [
+    "lib/dependencies/context/ContextDependency.js",
+    "lib/dependencies/core/ModuleDependency.js",
+    "lib/graph/Dependency.js",
+    "lib/util/AsyncQueue.js"
+   ]
+  },
+  {
+   "id": "IDWEBP13",
+   "query": "webpack options apply",
+   "identifier": "WebpackOptionsApply",
+   "definedIn": [
+    "lib/config/WebpackOptionsApply.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP14",
+   "query": "chunk module id range plugin",
+   "identifier": "ChunkModuleIdRangePlugin",
+   "definedIn": [
+    "lib/ids/ChunkModuleIdRangePlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP15",
+   "query": "banner plugin",
+   "identifier": "BannerPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/output/BannerPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP16",
+   "query": "module dependency",
+   "identifier": "ModuleDependency",
+   "definedIn": [
+    "lib/dependencies/core/ModuleDependency.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP17",
+   "query": "bun target plugin",
+   "identifier": "BunTargetPlugin",
+   "definedIn": [
+    "lib/bun/BunTargetPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP18",
+   "query": "platform plugin",
+   "identifier": "PlatformPlugin",
+   "definedIn": [
+    "lib/config/PlatformPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP19",
+   "query": "add chunk",
+   "identifier": "addChunk",
+   "definedIn": [
+    "lib/Compilation.js",
+    "lib/module/Module.js"
+   ]
+  },
+  {
+   "id": "IDWEBP20",
+   "query": "eval source map dev tool plugin",
+   "identifier": "EvalSourceMapDevToolPlugin",
+   "definedIn": [
+    "lib/devtool/EvalSourceMapDevToolPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP21",
+   "query": "css loading runtime module",
+   "identifier": "CssLoadingRuntimeModule",
+   "definedIn": [
+    "lib/css/CssLoadingRuntimeModule.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP22",
+   "query": "null factory",
+   "identifier": "NullFactory",
+   "definedIn": [
+    "lib/index.js",
+    "lib/module/NullFactory.js"
+   ]
+  },
+  {
+   "id": "IDWEBP23",
+   "query": "dll reference plugin",
+   "identifier": "DllReferencePlugin",
+   "definedIn": [
+    "lib/dll/DllReferencePlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP24",
+   "query": "natural module ids plugin",
+   "identifier": "NaturalModuleIdsPlugin",
+   "definedIn": [
+    "lib/ids/NaturalModuleIdsPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP25",
+   "query": "jsonp template plugin",
+   "identifier": "JsonpTemplatePlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/web/JsonpTemplatePlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP26",
+   "query": "get errors",
+   "identifier": "getErrors",
+   "definedIn": [
+    "lib/Compilation.js",
+    "lib/dependencies/esm/ESMExportImportedSpecifierDependency.js",
+    "lib/dependencies/esm/ESMImportSideEffectDependency.js",
+    "lib/dependencies/esm/ESMImportSpecifierDependency.js",
+    "lib/dependencies/wasm/WebAssemblyImportDependency.js",
+    "lib/graph/Dependency.js",
+    "lib/module/Module.js"
+   ]
+  },
+  {
+   "id": "IDWEBP27",
+   "query": "entry option plugin",
+   "identifier": "EntryOptionPlugin",
+   "definedIn": [
+    "lib/entry/EntryOptionPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP28",
+   "query": "share plugin",
+   "identifier": "SharePlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/sharing/SharePlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP29",
+   "query": "load script runtime module",
+   "identifier": "LoadScriptRuntimeModule",
+   "definedIn": [
+    "lib/index.js",
+    "lib/runtime/LoadScriptRuntimeModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP30",
+   "query": "add module",
+   "identifier": "addModule",
+   "definedIn": [
+    "lib/Compilation.js",
+    "lib/graph/Chunk.js"
+   ]
+  },
+  {
+   "id": "IDWEBP31",
+   "query": "memory cache plugin",
+   "identifier": "MemoryCachePlugin",
+   "definedIn": [
+    "lib/cache/MemoryCachePlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP32",
+   "query": "async web assembly modules plugin",
+   "identifier": "AsyncWebAssemblyModulesPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/wasm/AsyncWebAssemblyModulesPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP33",
+   "query": "concatenation scope",
+   "identifier": "ConcatenationScope",
+   "definedIn": [
+    "lib/index.js",
+    "lib/optimize/ConcatenationScope.js"
+   ]
+  },
+  {
+   "id": "IDWEBP34",
+   "query": "enable wasm loading plugin",
+   "identifier": "EnableWasmLoadingPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/wasm/EnableWasmLoadingPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP35",
+   "query": "is entry module",
+   "identifier": "isEntryModule",
+   "definedIn": [
+    "lib/graph/ChunkGraph.js",
+    "lib/module/Module.js"
+   ]
+  },
+  {
+   "id": "IDWEBP36",
+   "query": "can concatenate",
+   "identifier": "canConcatenate",
+   "definedIn": [
+    "lib/dependencies/commonjs/CommonJsExportRequireDependency.js",
+    "lib/dependencies/commonjs/CommonJsFullRequireDependency.js",
+    "lib/dependencies/commonjs/CommonJsRequireDependency.js",
+    "lib/dependencies/commonjs/CommonJsSelfReferenceDependency.js",
+    "lib/dependencies/css/CssImportDependency.js",
+    "lib/dependencies/esm/ESMImportDependency.js",
+    "lib/graph/Dependency.js"
+   ]
+  },
+  {
+   "id": "IDWEBP37",
+   "query": "provide shared plugin",
+   "identifier": "ProvideSharedPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/sharing/ProvideSharedPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP38",
+   "query": "runtime module",
+   "identifier": "RuntimeModule",
+   "definedIn": [
+    "lib/index.js",
+    "lib/runtime/RuntimeModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP39",
+   "query": "context replacement plugin",
+   "identifier": "ContextReplacementPlugin",
+   "definedIn": [
+    "lib/context/ContextReplacementPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP40",
+   "query": "add warning",
+   "identifier": "addWarning",
+   "definedIn": [
+    "lib/module/Module.js",
+    "lib/optimize/ModuleConcatenationPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP41",
+   "query": "occurrence chunk ids plugin",
+   "identifier": "OccurrenceChunkIdsPlugin",
+   "definedIn": [
+    "lib/ids/OccurrenceChunkIdsPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP42",
+   "query": "asset modules plugin",
+   "identifier": "AssetModulesPlugin",
+   "definedIn": [
+    "lib/asset/AssetModulesPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP43",
+   "query": "create identifier",
+   "identifier": "_createIdentifier",
+   "definedIn": [
+    "lib/context/ContextModule.js",
+    "lib/optimize/ConcatenatedModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP44",
+   "query": "get content",
+   "identifier": "getContent",
+   "definedIn": [
+    "lib/async-modules/AwaitDependenciesInitFragment.js",
+    "lib/dependencies/amd/AMDRequireArrayDependency.js",
+    "lib/dependencies/esm/ESMExportInitFragment.js",
+    "lib/externals/ExternalModule.js",
+    "lib/node/ExternalModuleInitFragment.js",
+    "lib/template/ConditionalInitFragment.js",
+    "lib/template/InitFragment.js"
+   ]
+  },
+  {
+   "id": "IDWEBP45",
+   "query": "context exclusion plugin",
+   "identifier": "ContextExclusionPlugin",
+   "definedIn": [
+    "lib/context/ContextExclusionPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP46",
+   "query": "real content hash plugin",
+   "identifier": "RealContentHashPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/optimize/RealContentHashPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP47",
+   "query": "add cache dependencies",
+   "identifier": "addCacheDependencies",
+   "definedIn": [
+    "lib/context/ContextModule.js",
+    "lib/module/Module.js",
+    "lib/module/NormalModule.js",
+    "lib/optimize/ConcatenatedModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP48",
+   "query": "loader target plugin",
+   "identifier": "LoaderTargetPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/loaders/LoaderTargetPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP49",
+   "query": "html modules plugin",
+   "identifier": "HtmlModulesPlugin",
+   "definedIn": [
+    "lib/html/HtmlModulesPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP50",
+   "query": "as string",
+   "identifier": "asString",
+   "definedIn": [
+    "lib/javascript/BasicEvaluatedExpression.js",
+    "lib/template/Template.js"
+   ]
+  },
+  {
+   "id": "IDWEBP51",
+   "query": "external module",
+   "identifier": "ExternalModule",
+   "definedIn": [
+    "lib/externals/ExternalModule.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP52",
+   "query": "css modules plugin",
+   "identifier": "CssModulesPlugin",
+   "definedIn": [
+    "lib/css/CssModulesPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP53",
+   "query": "name for condition",
+   "identifier": "nameForCondition",
+   "definedIn": [
+    "lib/container/RemoteModule.js",
+    "lib/module/Module.js",
+    "lib/module/NormalModule.js",
+    "lib/optimize/ConcatenatedModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP54",
+   "query": "get concatenation bailout reason",
+   "identifier": "getConcatenationBailoutReason",
+   "definedIn": [
+    "lib/asset/AssetBytesGenerator.js",
+    "lib/asset/AssetGenerator.js",
+    "lib/asset/AssetSourceGenerator.js",
+    "lib/css/CssGenerator.js",
+    "lib/externals/ExternalModule.js",
+    "lib/html/HtmlGenerator.js",
+    "lib/javascript/JavascriptGenerator.js",
+    "lib/json/JsonGenerator.js",
+    "lib/module/Generator.js",
+    "lib/module/Module.js",
+    "lib/module/NormalModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP55",
+   "query": "get end content",
+   "identifier": "getEndContent",
+   "definedIn": [
+    "lib/dependencies/esm/ESMExportInitFragment.js",
+    "lib/template/ConditionalInitFragment.js",
+    "lib/template/InitFragment.js"
+   ]
+  },
+  {
+   "id": "IDWEBP56",
+   "query": "module graph",
+   "identifier": "ModuleGraph",
+   "definedIn": [
+    "lib/graph/ModuleGraph.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP57",
+   "query": "enable library plugin",
+   "identifier": "EnableLibraryPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/library/EnableLibraryPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP58",
+   "query": "get source modules",
+   "identifier": "getSourceModules",
+   "definedIn": [
+    "lib/module/Module.js",
+    "lib/optimize/ConcatenatedModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP59",
+   "query": "hot module replacement plugin",
+   "identifier": "HotModuleReplacementPlugin",
+   "definedIn": [
+    "lib/hmr/HotModuleReplacementPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP60",
+   "query": "web worker template plugin",
+   "identifier": "WebWorkerTemplatePlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/webworker/WebWorkerTemplatePlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP61",
+   "query": "virtual url plugin",
+   "identifier": "VirtualUrlPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/schemes/VirtualUrlPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP62",
+   "query": "named module ids plugin",
+   "identifier": "NamedModuleIdsPlugin",
+   "definedIn": [
+    "lib/ids/NamedModuleIdsPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP63",
+   "query": "get chunk filename template",
+   "identifier": "getChunkFilenameTemplate",
+   "definedIn": [
+    "lib/css/CssModulesPlugin.js",
+    "lib/html/HtmlModulesPlugin.js",
+    "lib/javascript/JavascriptModulesPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP64",
+   "query": "environment plugin",
+   "identifier": "EnvironmentPlugin",
+   "definedIn": [
+    "lib/define/EnvironmentPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP65",
+   "query": "generate error",
+   "identifier": "generateError",
+   "definedIn": [
+    "lib/asset/AssetBytesGenerator.js",
+    "lib/asset/AssetGenerator.js",
+    "lib/asset/AssetSourceGenerator.js",
+    "lib/css/CssGenerator.js",
+    "lib/html/HtmlGenerator.js",
+    "lib/javascript/JavascriptGenerator.js",
+    "lib/json/JsonGenerator.js",
+    "lib/module/Generator.js",
+    "lib/wasm-sync/WebAssemblyGenerator.js",
+    "lib/wasm-sync/WebAssemblyJavascriptGenerator.js",
+    "lib/wasm/AsyncWebAssemblyGenerator.js",
+    "lib/wasm/AsyncWebAssemblyJavascriptGenerator.js"
+   ]
+  },
+  {
+   "id": "IDWEBP66",
+   "query": "profiling plugin",
+   "identifier": "ProfilingPlugin",
+   "definedIn": [
+    "lib/debug/ProfilingPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP67",
+   "query": "null dependency",
+   "identifier": "NullDependency",
+   "definedIn": [
+    "lib/dependencies/core/NullDependency.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP68",
+   "query": "get star reexports",
+   "identifier": "getStarReexports",
+   "definedIn": [
+    "lib/dependencies/commonjs/CommonJsExportRequireDependency.js",
+    "lib/dependencies/esm/ESMExportImportedSpecifierDependency.js"
+   ]
+  },
+  {
+   "id": "IDWEBP69",
+   "query": "get chunk filename runtime module",
+   "identifier": "GetChunkFilenameRuntimeModule",
+   "definedIn": [
+    "lib/index.js",
+    "lib/runtime/GetChunkFilenameRuntimeModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP70",
+   "query": "create hash update",
+   "identifier": "_createHashUpdate",
+   "definedIn": [
+    "lib/dependencies/core/CachedConstDependency.js",
+    "lib/node/ExternalModuleDependency.js"
+   ]
+  },
+  {
+   "id": "IDWEBP71",
+   "query": "get condition",
+   "identifier": "getCondition",
+   "definedIn": [
+    "lib/dependencies/commonjs/CommonJsExportRequireDependency.js",
+    "lib/dependencies/commonjs/CommonJsFullRequireDependency.js",
+    "lib/dependencies/commonjs/CommonJsRequireDependency.js",
+    "lib/dependencies/esm/ESMEvaluatedImportSpecifierDependency.js",
+    "lib/dependencies/esm/ESMExportImportedSpecifierDependency.js",
+    "lib/dependencies/esm/ESMImportBareSideEffectDependency.js",
+    "lib/dependencies/esm/ESMImportSideEffectDependency.js",
+    "lib/dependencies/esm/ESMImportSpecifierDependency.js",
+    "lib/dependencies/import/ImportDependency.js",
+    "lib/dependencies/url/URLDependency.js",
+    "lib/graph/Dependency.js",
+    "lib/loaders/LoaderDependency.js",
+    "lib/loaders/LoaderImportDependency.js"
+   ]
+  },
+  {
+   "id": "IDWEBP72",
+   "query": "source map dev tool plugin",
+   "identifier": "SourceMapDevToolPlugin",
+   "definedIn": [
+    "lib/devtool/SourceMapDevToolPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP73",
+   "query": "init fragment",
+   "identifier": "InitFragment",
+   "definedIn": [
+    "lib/index.js",
+    "lib/template/InitFragment.js"
+   ]
+  },
+  {
+   "id": "IDWEBP74",
+   "query": "container plugin",
+   "identifier": "ContainerPlugin",
+   "definedIn": [
+    "lib/container/ContainerPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP75",
+   "query": "get side effects connection state",
+   "identifier": "getSideEffectsConnectionState",
+   "definedIn": [
+    "lib/externals/ExternalModule.js",
+    "lib/module/Module.js",
+    "lib/module/NormalModule.js",
+    "lib/module/RawModule.js",
+    "lib/optimize/ConcatenatedModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP76",
+   "query": "esm import dependency",
+   "identifier": "ESMImportDependency",
+   "definedIn": [
+    "lib/dependencies/esm/ESMImportDependency.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP77",
+   "query": "lazy name",
+   "identifier": "lazyName",
+   "definedIn": [
+    "lib/dependencies/esm/ESMExportExpressionDependency.js",
+    "lib/dependencies/esm/ESMExportImportedSpecifierDependency.js",
+    "lib/dependencies/esm/ESMExportSpecifierDependency.js",
+    "lib/graph/Dependency.js"
+   ]
+  },
+  {
+   "id": "IDWEBP78",
+   "query": "forward id",
+   "identifier": "forwardId",
+   "definedIn": [
+    "lib/dependencies/esm/ESMExportImportedSpecifierDependency.js",
+    "lib/dependencies/esm/ESMImportSideEffectDependency.js",
+    "lib/dependencies/esm/ESMImportSpecifierDependency.js",
+    "lib/graph/Dependency.js"
+   ]
+  },
+  {
+   "id": "IDWEBP79",
+   "query": "register loader",
+   "identifier": "registerLoader",
+   "definedIn": [
+    "lib/serialization/ObjectMiddleware.js",
+    "lib/util/serialization.js"
+   ]
+  },
+  {
+   "id": "IDWEBP80",
+   "query": "module chunk loading runtime module",
+   "identifier": "ModuleChunkLoadingRuntimeModule",
+   "definedIn": [
+    "lib/esm/ModuleChunkLoadingRuntimeModule.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP81",
+   "query": "get source basic types",
+   "identifier": "getSourceBasicTypes",
+   "definedIn": [
+    "lib/container/RemoteModule.js",
+    "lib/module/Module.js",
+    "lib/runtime/RuntimeModule.js",
+    "lib/sharing/ConsumeSharedModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP82",
+   "query": "request shortener",
+   "identifier": "RequestShortener",
+   "definedIn": [
+    "lib/index.js",
+    "lib/util/RequestShortener.js"
+   ]
+  },
+  {
+   "id": "IDWEBP83",
+   "query": "node environment plugin",
+   "identifier": "NodeEnvironmentPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/node/NodeEnvironmentPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP84",
+   "query": "invalidate build",
+   "identifier": "invalidateBuild",
+   "definedIn": [
+    "lib/context/ContextModule.js",
+    "lib/module/Module.js",
+    "lib/module/NormalModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP85",
+   "query": "node target plugin",
+   "identifier": "NodeTargetPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/node/NodeTargetPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP86",
+   "query": "source block",
+   "identifier": "sourceBlock",
+   "definedIn": [
+    "lib/html/HtmlGenerator.js",
+    "lib/javascript/JavascriptGenerator.js"
+   ]
+  },
+  {
+   "id": "IDWEBP87",
+   "query": "get source types",
+   "identifier": "getSourceTypes",
+   "definedIn": [
+    "lib/asset/RawDataUrlModule.js",
+    "lib/container/ContainerEntryModule.js",
+    "lib/container/FallbackModule.js",
+    "lib/container/RemoteModule.js",
+    "lib/context/ContextModule.js",
+    "lib/dll/DelegatedModule.js",
+    "lib/dll/DllModule.js",
+    "lib/externals/ExternalModule.js",
+    "lib/hmr/LazyCompilationPlugin.js",
+    "lib/module/Module.js",
+    "lib/module/NormalModule.js",
+    "lib/module/RawModule.js",
+    "lib/optimize/ConcatenatedModule.js",
+    "lib/runtime/RuntimeModule.js",
+    "lib/sharing/ConsumeSharedModule.js",
+    "lib/sharing/ProvideSharedModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP88",
+   "query": "occurrence module ids plugin",
+   "identifier": "OccurrenceModuleIdsPlugin",
+   "definedIn": [
+    "lib/ids/OccurrenceModuleIdsPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP89",
+   "query": "consume shared plugin",
+   "identifier": "ConsumeSharedPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/sharing/ConsumeSharedPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP90",
+   "query": "chunk graph",
+   "identifier": "ChunkGraph",
+   "definedIn": [
+    "lib/graph/ChunkGraph.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP91",
+   "query": "type script plugin",
+   "identifier": "TypeScriptPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/typescript/TypeScriptPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP92",
+   "query": "side effects flag plugin",
+   "identifier": "SideEffectsFlagPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/optimize/SideEffectsFlagPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP93",
+   "query": "chunk init fragments",
+   "identifier": "chunkInitFragments",
+   "definedIn": [
+    "lib/css/CssGenerator.js",
+    "lib/html/HtmlGenerator.js",
+    "lib/javascript/JavascriptGenerator.js"
+   ]
+  },
+  {
+   "id": "IDWEBP94",
+   "query": "clean plugin",
+   "identifier": "CleanPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/output/CleanPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP95",
+   "query": "named chunk ids plugin",
+   "identifier": "NamedChunkIdsPlugin",
+   "definedIn": [
+    "lib/ids/NamedChunkIdsPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP96",
+   "query": "asset url",
+   "identifier": "assetUrl",
+   "definedIn": [
+    "lib/dependencies/css/CssUrlDependency.js",
+    "lib/dependencies/html/HtmlSourceDependency.js"
+   ]
+  },
+  {
+   "id": "IDWEBP97",
+   "query": "electron target plugin",
+   "identifier": "ElectronTargetPlugin",
+   "definedIn": [
+    "lib/electron/ElectronTargetPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP98",
+   "query": "check enabled",
+   "identifier": "checkEnabled",
+   "definedIn": [
+    "lib/javascript/EnableChunkLoadingPlugin.js",
+    "lib/library/EnableLibraryPlugin.js",
+    "lib/wasm/EnableWasmLoadingPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP99",
+   "query": "get exports",
+   "identifier": "getExports",
+   "definedIn": [
+    "lib/dependencies/commonjs/CommonJsExportRequireDependency.js",
+    "lib/dependencies/commonjs/CommonJsExportsDependency.js",
+    "lib/dependencies/commonjs/CommonJsObjectExportDependency.js",
+    "lib/dependencies/core/StaticExportsDependency.js",
+    "lib/dependencies/css/CssIcssExportDependency.js",
+    "lib/dependencies/esm/ESMExportExpressionDependency.js",
+    "lib/dependencies/esm/ESMExportImportedSpecifierDependency.js",
+    "lib/dependencies/esm/ESMExportSpecifierDependency.js",
+    "lib/graph/Dependency.js",
+    "lib/json/JsonExportsDependency.js"
+   ]
+  },
+  {
+   "id": "IDWEBP100",
+   "query": "normal module replacement plugin",
+   "identifier": "NormalModuleReplacementPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/resolve/NormalModuleReplacementPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP101",
+   "query": "render chunk",
+   "identifier": "renderChunk",
+   "definedIn": [
+    "lib/css/CssModulesPlugin.js",
+    "lib/javascript/JavascriptModulesPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP102",
+   "query": "deno target plugin",
+   "identifier": "DenoTargetPlugin",
+   "definedIn": [
+    "lib/deno/DenoTargetPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP103",
+   "query": "could affect referencing module",
+   "identifier": "couldAffectReferencingModule",
+   "definedIn": [
+    "lib/dependencies/commonjs/CommonJsExportRequireDependency.js",
+    "lib/dependencies/context/ContextDependency.js",
+    "lib/dependencies/core/ModuleDependency.js",
+    "lib/dependencies/core/NullDependency.js",
+    "lib/dependencies/esm/ESMExportImportedSpecifierDependency.js",
+    "lib/dependencies/wasm/WebAssemblyExportImportedDependency.js",
+    "lib/graph/Dependency.js"
+   ]
+  },
+  {
+   "id": "IDWEBP104",
+   "query": "chunk condition",
+   "identifier": "chunkCondition",
+   "definedIn": [
+    "lib/container/FallbackModule.js",
+    "lib/externals/ExternalModule.js",
+    "lib/module/Module.js"
+   ]
+  },
+  {
+   "id": "IDWEBP105",
+   "query": "read token",
+   "identifier": "readToken",
+   "definedIn": [
+    "lib/css/syntax-parser.js",
+    "lib/javascript/syntax-parser.js"
+   ]
+  },
+  {
+   "id": "IDWEBP106",
+   "query": "async dependencies block",
+   "identifier": "AsyncDependenciesBlock",
+   "definedIn": [
+    "lib/graph/AsyncDependenciesBlock.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP107",
+   "query": "get warnings",
+   "identifier": "getWarnings",
+   "definedIn": [
+    "lib/Compilation.js",
+    "lib/dependencies/context/ContextDependency.js",
+    "lib/dependencies/css/CssIcssExportDependency.js",
+    "lib/dependencies/css/CssIcssImportDependency.js",
+    "lib/dependencies/esm/ESMExportImportedSpecifierDependency.js",
+    "lib/dependencies/esm/ESMImportSideEffectDependency.js",
+    "lib/dependencies/esm/ESMImportSpecifierDependency.js",
+    "lib/graph/Dependency.js",
+    "lib/module/Module.js"
+   ]
+  },
+  {
+   "id": "IDWEBP108",
+   "query": "ssr manifest plugin",
+   "identifier": "SSRManifestPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/output/SSRManifestPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP109",
+   "query": "code generation",
+   "identifier": "codeGeneration",
+   "definedIn": [
+    "lib/Compilation.js",
+    "lib/asset/RawDataUrlModule.js",
+    "lib/container/ContainerEntryModule.js",
+    "lib/container/FallbackModule.js",
+    "lib/container/RemoteModule.js",
+    "lib/context/ContextModule.js",
+    "lib/dll/DelegatedModule.js",
+    "lib/dll/DllModule.js",
+    "lib/externals/ExternalModule.js",
+    "lib/hmr/LazyCompilationPlugin.js",
+    "lib/module/Module.js",
+    "lib/module/NormalModule.js",
+    "lib/module/RawModule.js",
+    "lib/optimize/ConcatenatedModule.js",
+    "lib/runtime/RuntimeModule.js",
+    "lib/sharing/ConsumeSharedModule.js",
+    "lib/sharing/ProvideSharedModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP110",
+   "query": "dynamic entry plugin",
+   "identifier": "DynamicEntryPlugin",
+   "definedIn": [
+    "lib/entry/DynamicEntryPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP111",
+   "query": "prefetch plugin",
+   "identifier": "PrefetchPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/prefetch/PrefetchPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP112",
+   "query": "runtime chunk plugin",
+   "identifier": "RuntimeChunkPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/optimize/RuntimeChunkPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP113",
+   "query": "dll plugin",
+   "identifier": "DllPlugin",
+   "definedIn": [
+    "lib/dll/DllPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP114",
+   "query": "hot update chunk",
+   "identifier": "HotUpdateChunk",
+   "definedIn": [
+    "lib/graph/HotUpdateChunk.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP115",
+   "query": "copy plugin",
+   "identifier": "CopyPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/output/CopyPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP116",
+   "query": "add async entrypoint",
+   "identifier": "addAsyncEntrypoint",
+   "definedIn": [
+    "lib/Compilation.js",
+    "lib/graph/ChunkGroup.js"
+   ]
+  },
+  {
+   "id": "IDWEBP117",
+   "query": "node source plugin",
+   "identifier": "NodeSourcePlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/node/NodeSourcePlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP118",
+   "query": "render module",
+   "identifier": "renderModule",
+   "definedIn": [
+    "lib/css/CssModulesPlugin.js",
+    "lib/javascript/JavascriptModulesPlugin.js",
+    "lib/wasm/AsyncWebAssemblyModulesPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP119",
+   "query": "get types depend on incoming connections",
+   "identifier": "getTypesDependOnIncomingConnections",
+   "definedIn": [
+    "lib/asset/AssetBytesGenerator.js",
+    "lib/asset/AssetGenerator.js",
+    "lib/asset/AssetSourceGenerator.js",
+    "lib/css/CssGenerator.js",
+    "lib/html/HtmlGenerator.js",
+    "lib/module/Generator.js"
+   ]
+  },
+  {
+   "id": "IDWEBP120",
+   "query": "get asset path with info",
+   "identifier": "getAssetPathWithInfo",
+   "definedIn": [
+    "lib/Compilation.js",
+    "lib/asset/AssetGenerator.js"
+   ]
+  },
+  {
+   "id": "IDWEBP121",
+   "query": "module export",
+   "identifier": "ModuleExport",
+   "definedIn": [
+    "lib/wasm-sync/WebAssemblyGenerator.js",
+    "lib/wasm-sync/WebAssemblyParser.js",
+    "lib/wasm/AsyncWebAssemblyParser.js"
+   ]
+  },
+  {
+   "id": "IDWEBP122",
+   "query": "skip children",
+   "identifier": "skipChildren",
+   "definedIn": [
+    "lib/css/syntax-parser.js",
+    "lib/html/syntax-parser.js"
+   ]
+  },
+  {
+   "id": "IDWEBP123",
+   "query": "generate base uri",
+   "identifier": "_generateBaseUri",
+   "definedIn": [
+    "lib/esm/ModuleChunkLoadingRuntimeModule.js",
+    "lib/node/ReadFileChunkLoadingRuntimeModule.js",
+    "lib/node/RequireChunkLoadingRuntimeModule.js",
+    "lib/web/JsonpChunkLoadingRuntimeModule.js",
+    "lib/webworker/ImportScriptsChunkLoadingRuntimeModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP124",
+   "query": "can be wrapped in concatenation",
+   "identifier": "canBeWrappedInConcatenation",
+   "definedIn": [
+    "lib/css/CssModule.js",
+    "lib/externals/ExternalModule.js",
+    "lib/module/Module.js"
+   ]
+  },
+  {
+   "id": "IDWEBP125",
+   "query": "clear dependencies and blocks",
+   "identifier": "clearDependenciesAndBlocks",
+   "definedIn": [
+    "lib/graph/DependenciesBlock.js",
+    "lib/module/Module.js"
+   ]
+  },
+  {
+   "id": "IDWEBP126",
+   "query": "field count",
+   "identifier": "fieldCount",
+   "definedIn": [
+    "lib/css/syntax-parser.js",
+    "lib/html/syntax-parser.js",
+    "lib/javascript/syntax-parser.js"
+   ]
+  },
+  {
+   "id": "IDWEBP127",
+   "query": "ignore plugin",
+   "identifier": "IgnorePlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/resolve/IgnorePlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP128",
+   "query": "chunk prefetch preload plugin",
+   "identifier": "ChunkPrefetchPreloadPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/prefetch/ChunkPrefetchPreloadPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP129",
+   "query": "no emit on errors plugin",
+   "identifier": "NoEmitOnErrorsPlugin",
+   "definedIn": [
+    "lib/diagnostics/NoEmitOnErrorsPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP130",
+   "query": "get source",
+   "identifier": "getSource",
+   "definedIn": [
+    "lib/context/ContextModule.js",
+    "lib/module/CodeGenerationResults.js"
+   ]
+  },
+  {
+   "id": "IDWEBP131",
+   "query": "jsonp chunk loading runtime module",
+   "identifier": "JsonpChunkLoadingRuntimeModule",
+   "definedIn": [
+    "lib/index.js",
+    "lib/web/JsonpChunkLoadingRuntimeModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP132",
+   "query": "library template plugin",
+   "identifier": "LibraryTemplatePlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/library/LibraryTemplatePlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP133",
+   "query": "webpack options defaulter",
+   "identifier": "WebpackOptionsDefaulter",
+   "definedIn": [
+    "lib/config/WebpackOptionsDefaulter.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP134",
+   "query": "create ignored module",
+   "identifier": "createIgnoredModule",
+   "definedIn": [
+    "lib/dependencies/core/ModuleDependency.js",
+    "lib/dependencies/css/CssUrlDependency.js",
+    "lib/dependencies/html/HtmlSourceDependency.js",
+    "lib/dependencies/url/URLDependency.js",
+    "lib/graph/Dependency.js"
+   ]
+  },
+  {
+   "id": "IDWEBP135",
+   "query": "remove chunk",
+   "identifier": "removeChunk",
+   "definedIn": [
+    "lib/graph/ChunkGroup.js",
+    "lib/module/Module.js"
+   ]
+  },
+  {
+   "id": "IDWEBP136",
+   "query": "get modules",
+   "identifier": "getModules",
+   "definedIn": [
+    "lib/graph/Chunk.js",
+    "lib/optimize/ModuleConcatenationPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP137",
+   "query": "to string",
+   "identifier": "toString",
+   "definedIn": [
+    "lib/cache/getLazyHashedEtag.js",
+    "lib/cache/mergeEtags.js",
+    "lib/css/syntax-parser.js",
+    "lib/module/Module.js",
+    "lib/schemes/HttpUriPlugin.js",
+    "lib/stats/MultiStats.js",
+    "lib/stats/Stats.js",
+    "lib/util/StringXor.js"
+   ]
+  },
+  {
+   "id": "IDWEBP138",
+   "query": "check constraints",
+   "identifier": "checkConstraints",
+   "definedIn": [
+    "lib/Compilation.js",
+    "lib/graph/ChunkGroup.js"
+   ]
+  },
+  {
+   "id": "IDWEBP139",
+   "query": "container reference plugin",
+   "identifier": "ContainerReferencePlugin",
+   "definedIn": [
+    "lib/container/ContainerReferencePlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP140",
+   "query": "lazy role",
+   "identifier": "lazyRole",
+   "definedIn": [
+    "lib/dependencies/esm/ESMExportExpressionDependency.js",
+    "lib/dependencies/esm/ESMExportImportedSideEffectDependency.js",
+    "lib/dependencies/esm/ESMExportImportedSpecifierDependency.js",
+    "lib/dependencies/esm/ESMExportSpecifierDependency.js",
+    "lib/dependencies/esm/ESMImportDependency.js",
+    "lib/graph/Dependency.js"
+   ]
+  },
+  {
+   "id": "IDWEBP141",
+   "query": "lib manifest plugin",
+   "identifier": "LibManifestPlugin",
+   "definedIn": [
+    "lib/dll/LibManifestPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP142",
+   "query": "delegated plugin",
+   "identifier": "DelegatedPlugin",
+   "definedIn": [
+    "lib/dll/DelegatedPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP143",
+   "query": "dotenv plugin",
+   "identifier": "DotenvPlugin",
+   "definedIn": [
+    "lib/define/DotenvPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP144",
+   "query": "hash with length",
+   "identifier": "hashWithLength",
+   "definedIn": [
+    "lib/wasm-sync/WasmChunkLoadingRuntimeModule.js",
+    "lib/wasm/AsyncWasmCompileRuntimeModule.js",
+    "lib/wasm/AsyncWasmLoadingRuntimeModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP145",
+   "query": "automatic prefetch plugin",
+   "identifier": "AutomaticPrefetchPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/prefetch/AutomaticPrefetchPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP146",
+   "query": "read file compile async wasm plugin",
+   "identifier": "ReadFileCompileAsyncWasmPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/node/ReadFileCompileAsyncWasmPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP147",
+   "query": "is wrapped",
+   "identifier": "isWrapped",
+   "definedIn": [
+    "lib/javascript/BasicEvaluatedExpression.js",
+    "lib/optimize/ConcatenationScope.js"
+   ]
+  },
+  {
+   "id": "IDWEBP148",
+   "query": "source dependency",
+   "identifier": "sourceDependency",
+   "definedIn": [
+    "lib/css/CssGenerator.js",
+    "lib/html/HtmlGenerator.js",
+    "lib/javascript/JavascriptGenerator.js"
+   ]
+  },
+  {
+   "id": "IDWEBP149",
+   "query": "module federation plugin",
+   "identifier": "ModuleFederationPlugin",
+   "definedIn": [
+    "lib/container/ModuleFederationPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP150",
+   "query": "replace call",
+   "identifier": "replaceCall",
+   "definedIn": [
+    "lib/dependencies/context/ContextDependencyTemplateAsRequireCall.js",
+    "lib/dependencies/import/ImportContextDependency.js"
+   ]
+  },
+  {
+   "id": "IDWEBP151",
+   "query": "hashed module ids plugin",
+   "identifier": "HashedModuleIdsPlugin",
+   "definedIn": [
+    "lib/ids/HashedModuleIdsPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP152",
+   "query": "get resource identifier",
+   "identifier": "getResourceIdentifier",
+   "definedIn": [
+    "lib/container/ContainerEntryDependency.js",
+    "lib/container/ContainerExposedDependency.js",
+    "lib/container/FallbackDependency.js",
+    "lib/dependencies/commonjs/CommonJsSelfReferenceDependency.js",
+    "lib/dependencies/commonjs/ModuleDecoratorDependency.js",
+    "lib/dependencies/context/ContextDependency.js",
+    "lib/dependencies/context/ContextElementDependency.js",
+    "lib/dependencies/context/ImportMetaGlobDependency.js",
+    "lib/dependencies/core/ModuleDependency.js",
+    "lib/dependencies/css/CssImportDependency.js",
+    "lib/dependencies/esm/ESMImportDependency.js",
+    "lib/dependencies/import/ImportContextDependency.js",
+    "lib/dependencies/import/ImportDependency.js",
+    "lib/graph/Dependency.js",
+    "lib/hmr/LazyCompilationPlugin.js",
+    "lib/sharing/ProvideSharedDependency.js"
+   ]
+  },
+  {
+   "id": "IDWEBP153",
+   "query": "get types",
+   "identifier": "getTypes",
+   "definedIn": [
+    "lib/asset/AssetBytesGenerator.js",
+    "lib/asset/AssetGenerator.js",
+    "lib/asset/AssetSourceGenerator.js",
+    "lib/asset/WebManifestGenerator.js",
+    "lib/css/CssGenerator.js",
+    "lib/html/HtmlGenerator.js",
+    "lib/javascript/JavascriptGenerator.js",
+    "lib/json/JsonGenerator.js",
+    "lib/module/Generator.js",
+    "lib/wasm-sync/WebAssemblyGenerator.js",
+    "lib/wasm-sync/WebAssemblyJavascriptGenerator.js",
+    "lib/wasm/AsyncWebAssemblyGenerator.js",
+    "lib/wasm/AsyncWebAssemblyJavascriptGenerator.js"
+   ]
+  },
+  {
+   "id": "IDWEBP154",
+   "query": "field named",
+   "identifier": "fieldNamed",
+   "definedIn": [
+    "lib/css/syntax-parser.js",
+    "lib/html/syntax-parser.js"
+   ]
+  },
+  {
+   "id": "IDWEBP155",
+   "query": "define plugin",
+   "identifier": "DefinePlugin",
+   "definedIn": [
+    "lib/define/DefinePlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP156",
+   "query": "dependency template",
+   "identifier": "DependencyTemplate",
+   "definedIn": [
+    "lib/index.js",
+    "lib/template/DependencyTemplate.js"
+   ]
+  },
+  {
+   "id": "IDWEBP157",
+   "query": "get installed chunk handlers",
+   "identifier": "getInstalledChunkHandlers",
+   "definedIn": [
+    "lib/container/RemoteRuntimeModule.js",
+    "lib/css/CssInjectStyleRuntimeModule.js",
+    "lib/css/CssLoadingRuntimeModule.js",
+    "lib/css/CssServerStylesRuntimeModule.js",
+    "lib/dependencies/amd/AMDRuntimeModules.js",
+    "lib/dependencies/commonjs/CommonJsPlugin.js",
+    "lib/dependencies/system/SystemRuntimeModule.js",
+    "lib/esm/ExportWebpackRequireRuntimeModule.js",
+    "lib/esm/ModuleChunkLoadingRuntimeModule.js",
+    "lib/hmr/HotModuleReplacementRuntimeModule.js",
+    "lib/node/ReadFileChunkLoadingRuntimeModule.js",
+    "lib/node/RequireChunkLoadingRuntimeModule.js",
+    "lib/prefetch/ChunkPrefetchFunctionRuntimeModule.js",
+    "lib/prefetch/ChunkPrefetchStartupRuntimeModule.js",
+    "lib/prefetch/ChunkPrefetchTriggerRuntimeModule.js",
+    "lib/prefetch/ChunkPreloadTriggerRuntimeModule.js",
+    "lib/prefetch/ResourceHintRuntimeModule.js",
+    "lib/prefetch/StartupAssetHintRuntimeModule.js",
+    "lib/runtime/AutoPublicPathRuntimeModule.js",
+    "lib/runtime/BaseUriRuntimeModule.js",
+    "lib/runtime/ChunkNameRuntimeModule.js",
+    "lib/runtime/EnsureChunkRuntimeModule.js",
+    "lib/runtime/GetChunkFilenameRuntimeModule.js",
+    "lib/runtime/GetFullHashRuntimeModule.js",
+    "lib/runtime/GetMainFilenameRuntimeModule.js",
+    "lib/runtime/GetWorkletBootstrapRuntimeModule.js",
+    "lib/runtime/GlobalRuntimeModule.js",
+    "lib/runtime/HasOwnPropertyRuntimeModule.js",
+    "lib/runtime/HelperRuntimeModule.js",
+    "lib/runtime/NonceRuntimeModule.js",
+    "lib/runtime/OnChunksLoadedRuntimeModule.js",
+    "lib/runtime/PublicPathRuntimeModule.js",
+    "lib/runtime/RuntimeIdRuntimeModule.js",
+    "lib/runtime/RuntimeModule.js",
+    "lib/runtime/StartupChunkDependenciesRuntimeModule.js",
+    "lib/runtime/StartupEntrypointRuntimeModule.js",
+    "lib/runtime/SystemContextRuntimeModule.js",
+    "lib/runtime/ToBinaryRuntimeModule.js",
+    "lib/sharing/ConsumeSharedRuntimeModule.js",
+    "lib/sharing/ShareRuntimeModule.js",
+    "lib/wasm-sync/WasmChunkLoadingRuntimeModule.js",
+    "lib/wasm/AsyncWasmCompileRuntimeModule.js",
+    "lib/wasm/AsyncWasmLoadingRuntimeModule.js",
+    "lib/web/JsonpChunkLoadingRuntimeModule.js",
+    "lib/webworker/ImportScriptsChunkLoadingRuntimeModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP158",
+   "query": "node template plugin",
+   "identifier": "NodeTemplatePlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/node/NodeTemplatePlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP159",
+   "query": "update hash",
+   "identifier": "updateHash",
+   "definedIn": [
+    "lib/asset/AssetGenerator.js",
+    "lib/asset/AssetSourceGenerator.js",
+    "lib/asset/RawDataUrlModule.js",
+    "lib/css/CssGenerator.js",
+    "lib/dependencies/commonjs/CommonJsExportsDependency.js",
+    "lib/dependencies/commonjs/CommonJsSelfReferenceDependency.js",
+    "lib/dependencies/commonjs/ModuleDecoratorDependency.js",
+    "lib/dependencies/core/CachedConstDependency.js",
+    "lib/dependencies/core/ConstDependency.js",
+    "lib/dependencies/core/RuntimeRequirementsDependency.js",
+    "lib/dependencies/css/CssIcssExportDependency.js",
+    "lib/dependencies/css/CssIcssSymbolDependency.js",
+    "lib/dependencies/css/CssUrlDependency.js",
+    "lib/dependencies/esm/ESMExportExpressionDependency.js",
+    "lib/dependencies/esm/ESMExportImportedSpecifierDependency.js",
+    "lib/dependencies/esm/ESMExportSpecifierDependency.js",
+    "lib/dependencies/esm/ESMImportDependency.js",
+    "lib/dependencies/esm/ESMImportSpecifierDependency.js",
+    "lib/dependencies/esm/ESMLiveExportDependency.js",
+    "lib/dependencies/html/HtmlInlineHtmlDependency.js",
+    "lib/dependencies/html/HtmlInlineStyleDependency.js",
+    "lib/dependencies/html/HtmlSourceDependency.js",
+    "lib/dependencies/import-meta/BuildTimeConstDependency.js",
+    "lib/dependencies/import-meta/ImportMetaMainDependency.js",
+    "lib/dependencies/url/URLDependency.js",
+    "lib/dependencies/worker/WorkerDependency.js",
+    "lib/dependencies/worker/WorkletDependency.js",
+    "lib/dll/DelegatedModule.js",
+    "lib/dll/DllModule.js",
+    "lib/externals/ExternalModule.js",
+    "lib/graph/AsyncDependenciesBlock.js",
+    "lib/graph/Chunk.js",
+    "lib/graph/DependenciesBlock.js",
+    "lib/graph/Dependency.js",
+    "lib/graph/ExportsInfo.js",
+    "lib/hmr/LazyCompilationPlugin.js",
+    "lib/html/HtmlGenerator.js",
+    "lib/json/JsonData.js",
+    "lib/json/JsonExportsDependency.js",
+    "lib/json/JsonGenerator.js",
+    "lib/module/Generator.js",
+    "lib/module/Module.js",
+    "lib/module/NormalModule.js",
+    "lib/module/RawModule.js",
+    "lib/optimize/ConcatenatedModule.js",
+    "lib/optimize/InlineExports.js",
+    "lib/optimize/PureExpressionDependency.js",
+    "lib/provide/ProvidedDependency.js",
+    "lib/runtime/RuntimeModule.js",
+    "lib/sharing/ConsumeSharedModule.js",
+    "lib/template/DependencyTemplates.js",
+    "lib/util/StringXor.js",
+    "lib/wasm-sync/WebAssemblyGenerator.js"
+   ]
+  },
+  {
+   "id": "IDWEBP160",
+   "query": "javascript modules plugin",
+   "identifier": "JavascriptModulesPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/javascript/JavascriptModulesPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP161",
+   "query": "cleanup for cache",
+   "identifier": "cleanupForCache",
+   "definedIn": [
+    "lib/context/ContextModule.js",
+    "lib/dll/DelegatedModule.js",
+    "lib/dll/DllModule.js",
+    "lib/module/Module.js",
+    "lib/module/NormalModule.js",
+    "lib/module/NormalModuleFactory.js"
+   ]
+  },
+  {
+   "id": "IDWEBP162",
+   "query": "normal module",
+   "identifier": "NormalModule",
+   "definedIn": [
+    "lib/index.js",
+    "lib/module/NormalModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP163",
+   "query": "http uri plugin",
+   "identifier": "HttpUriPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/schemes/HttpUriPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP164",
+   "query": "const dependency",
+   "identifier": "ConstDependency",
+   "definedIn": [
+    "lib/dependencies/core/ConstDependency.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP165",
+   "query": "get cache version",
+   "identifier": "getCacheVersion",
+   "definedIn": [
+    "lib/define/DefinePlugin.js",
+    "lib/schemes/VirtualUrlPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP166",
+   "query": "get number of id occurrences",
+   "identifier": "getNumberOfIdOccurrences",
+   "definedIn": [
+    "lib/dependencies/esm/ESMImportSpecifierDependency.js",
+    "lib/graph/Dependency.js"
+   ]
+  },
+  {
+   "id": "IDWEBP167",
+   "query": "register not serializable",
+   "identifier": "registerNotSerializable",
+   "definedIn": [
+    "lib/serialization/ObjectMiddleware.js",
+    "lib/util/serialization.js"
+   ]
+  },
+  {
+   "id": "IDWEBP168",
+   "query": "aggressive merging plugin",
+   "identifier": "AggressiveMergingPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/optimize/AggressiveMergingPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP169",
+   "query": "abstract library plugin",
+   "identifier": "AbstractLibraryPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/library/AbstractLibraryPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP170",
+   "query": "module import",
+   "identifier": "ModuleImport",
+   "definedIn": [
+    "lib/wasm-sync/WebAssemblyGenerator.js",
+    "lib/wasm-sync/WebAssemblyParser.js",
+    "lib/wasm/AsyncWebAssemblyParser.js"
+   ]
+  },
+  {
+   "id": "IDWEBP171",
+   "query": "is enabled",
+   "identifier": "isEnabled",
+   "definedIn": [
+    "lib/cache/CacheFacade.js",
+    "lib/optimize/InnerGraph.js"
+   ]
+  },
+  {
+   "id": "IDWEBP172",
+   "query": "fetch compile wasm plugin",
+   "identifier": "FetchCompileWasmPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/web/FetchCompileWasmPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP173",
+   "query": "json modules plugin",
+   "identifier": "JsonModulesPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/json/JsonModulesPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP174",
+   "query": "add child",
+   "identifier": "addChild",
+   "definedIn": [
+    "lib/fs/FileSystemInfo.js",
+    "lib/graph/ChunkGroup.js"
+   ]
+  },
+  {
+   "id": "IDWEBP175",
+   "query": "module graph connection",
+   "identifier": "ModuleGraphConnection",
+   "definedIn": [
+    "lib/graph/ModuleGraphConnection.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP176",
+   "query": "set enabled",
+   "identifier": "setEnabled",
+   "definedIn": [
+    "lib/javascript/EnableChunkLoadingPlugin.js",
+    "lib/library/EnableLibraryPlugin.js",
+    "lib/wasm/EnableWasmLoadingPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP177",
+   "query": "deterministic module ids plugin",
+   "identifier": "DeterministicModuleIdsPlugin",
+   "definedIn": [
+    "lib/ids/DeterministicModuleIdsPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP178",
+   "query": "deterministic chunk ids plugin",
+   "identifier": "DeterministicChunkIdsPlugin",
+   "definedIn": [
+    "lib/ids/DeterministicChunkIdsPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP179",
+   "query": "add options",
+   "identifier": "addOptions",
+   "definedIn": [
+    "lib/graph/ChunkGroup.js",
+    "lib/javascript/BasicEvaluatedExpression.js"
+   ]
+  },
+  {
+   "id": "IDWEBP180",
+   "query": "progress plugin",
+   "identifier": "ProgressPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/logging/ProgressPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP181",
+   "query": "should isolate",
+   "identifier": "shouldIsolate",
+   "definedIn": [
+    "lib/css/CssServerStylesRuntimeModule.js",
+    "lib/dependencies/amd/AMDRuntimeModules.js",
+    "lib/dependencies/commonjs/CommonJsPlugin.js",
+    "lib/dependencies/system/SystemRuntimeModule.js",
+    "lib/esm/ExportWebpackRequireRuntimeModule.js",
+    "lib/prefetch/ChunkPrefetchFunctionRuntimeModule.js",
+    "lib/runtime/AsyncModuleGeneratorRuntimeModule.js",
+    "lib/runtime/BaseUriRuntimeModule.js",
+    "lib/runtime/ChunkNameRuntimeModule.js",
+    "lib/runtime/CompatGetDefaultExportRuntimeModule.js",
+    "lib/runtime/CompatRuntimeModule.js",
+    "lib/runtime/ConcatenationWrapRuntimeModule.js",
+    "lib/runtime/ConstructRequireRuntimeModule.js",
+    "lib/runtime/CreateScriptRuntimeModule.js",
+    "lib/runtime/CreateScriptUrlRuntimeModule.js",
+    "lib/runtime/DefinePropertyGettersRuntimeModule.js",
+    "lib/runtime/EnsureChunkRuntimeModule.js",
+    "lib/runtime/GetChunkFilenameRuntimeModule.js",
+    "lib/runtime/GetFullHashRuntimeModule.js",
+    "lib/runtime/GetMainFilenameRuntimeModule.js",
+    "lib/runtime/GetWorkletBootstrapRuntimeModule.js",
+    "lib/runtime/GlobalRuntimeModule.js",
+    "lib/runtime/HasOwnPropertyRuntimeModule.js",
+    "lib/runtime/MakeDeferredNamespaceObjectRuntime.js",
+    "lib/runtime/MakeNamespaceObjectRuntimeModule.js",
+    "lib/runtime/NonceRuntimeModule.js",
+    "lib/runtime/PublicPathRuntimeModule.js",
+    "lib/runtime/RelativeUrlRuntimeModule.js",
+    "lib/runtime/RuntimeIdRuntimeModule.js",
+    "lib/runtime/RuntimeModule.js",
+    "lib/runtime/SetAnonymousDefaultNameRuntimeModule.js",
+    "lib/runtime/StartupEntrypointRuntimeModule.js",
+    "lib/runtime/SystemContextRuntimeModule.js",
+    "lib/runtime/WorkerRuntimeModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP182",
+   "query": "eval dev tool module plugin",
+   "identifier": "EvalDevToolModulePlugin",
+   "definedIn": [
+    "lib/devtool/EvalDevToolModulePlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP183",
+   "query": "webpack error",
+   "identifier": "WebpackError",
+   "definedIn": [
+    "lib/errors/WebpackError.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP184",
+   "query": "manifest plugin",
+   "identifier": "ManifestPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/output/ManifestPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP185",
+   "query": "watch ignore plugin",
+   "identifier": "WatchIgnorePlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/watch/WatchIgnorePlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP186",
+   "query": "javascript parser",
+   "identifier": "JavascriptParser",
+   "definedIn": [
+    "lib/index.js",
+    "lib/javascript/JavascriptParser.js"
+   ]
+  },
+  {
+   "id": "IDWEBP187",
+   "query": "get module evaluation side effects state",
+   "identifier": "getModuleEvaluationSideEffectsState",
+   "definedIn": [
+    "lib/dependencies/core/ConstDependency.js",
+    "lib/dependencies/esm/ESMExportExpressionDependency.js",
+    "lib/dependencies/esm/ESMExportImportedSpecifierDependency.js",
+    "lib/dependencies/esm/ESMExportSpecifierDependency.js",
+    "lib/dependencies/esm/ESMImportSideEffectDependency.js",
+    "lib/dependencies/esm/ESMImportSpecifierDependency.js",
+    "lib/graph/Dependency.js",
+    "lib/optimize/PureExpressionDependency.js"
+   ]
+  },
+  {
+   "id": "IDWEBP188",
+   "query": "loader options plugin",
+   "identifier": "LoaderOptionsPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/loaders/LoaderOptionsPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP189",
+   "query": "module factory",
+   "identifier": "ModuleFactory",
+   "definedIn": [
+    "lib/index.js",
+    "lib/module/ModuleFactory.js"
+   ]
+  },
+  {
+   "id": "IDWEBP190",
+   "query": "add dependency",
+   "identifier": "addDependency",
+   "definedIn": [
+    "lib/graph/DependenciesBlock.js",
+    "lib/module/NormalModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP191",
+   "query": "externals plugin",
+   "identifier": "ExternalsPlugin",
+   "definedIn": [
+    "lib/externals/ExternalsPlugin.js",
+    "lib/index.js"
+   ]
+  },
+  {
+   "id": "IDWEBP192",
+   "query": "update cache module",
+   "identifier": "updateCacheModule",
+   "definedIn": [
+    "lib/context/ContextModule.js",
+    "lib/css/CssModule.js",
+    "lib/dll/DelegatedModule.js",
+    "lib/dll/DllModule.js",
+    "lib/hmr/LazyCompilationPlugin.js",
+    "lib/module/Module.js",
+    "lib/module/NormalModule.js",
+    "lib/optimize/ConcatenatedModule.js",
+    "lib/wasm/AsyncWasmModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP193",
+   "query": "readable identifier",
+   "identifier": "readableIdentifier",
+   "definedIn": [
+    "lib/asset/RawDataUrlModule.js",
+    "lib/container/ContainerEntryModule.js",
+    "lib/container/FallbackModule.js",
+    "lib/container/RemoteModule.js",
+    "lib/context/ContextModule.js",
+    "lib/css/CssModule.js",
+    "lib/dll/DelegatedModule.js",
+    "lib/dll/DllModule.js",
+    "lib/externals/ExternalModule.js",
+    "lib/hmr/LazyCompilationPlugin.js",
+    "lib/module/Module.js",
+    "lib/module/NormalModule.js",
+    "lib/module/RawModule.js",
+    "lib/optimize/ConcatenatedModule.js",
+    "lib/runtime/RuntimeModule.js",
+    "lib/sharing/ConsumeSharedModule.js",
+    "lib/sharing/ProvideSharedModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP194",
+   "query": "module concatenation plugin",
+   "identifier": "ModuleConcatenationPlugin",
+   "definedIn": [
+    "lib/index.js",
+    "lib/optimize/ModuleConcatenationPlugin.js"
+   ]
+  },
+  {
+   "id": "IDWEBP195",
+   "query": "get referenced exports",
+   "identifier": "getReferencedExports",
+   "definedIn": [
+    "lib/dependencies/commonjs/CommonJsExportRequireDependency.js",
+    "lib/dependencies/commonjs/CommonJsFullRequireDependency.js",
+    "lib/dependencies/commonjs/CommonJsRequireContextDependency.js",
+    "lib/dependencies/commonjs/CommonJsRequireDependency.js",
+    "lib/dependencies/commonjs/CommonJsSelfReferenceDependency.js",
+    "lib/dependencies/commonjs/ModuleDecoratorDependency.js",
+    "lib/dependencies/commonjs/RequireIncludeDependency.js",
+    "lib/dependencies/commonjs/RequireResolveDependency.js",
+    "lib/dependencies/context/ContextElementDependency.js",
+    "lib/dependencies/css/CssIcssExportDependency.js",
+    "lib/dependencies/css/CssIcssImportDependency.js",
+    "lib/dependencies/esm/ESMExportImportedSpecifierDependency.js",
+    "lib/dependencies/esm/ESMImportDependency.js",
+    "lib/dependencies/esm/ESMImportSpecifierDependency.js",
+    "lib/dependencies/import/ImportDependency.js",
+    "lib/dependencies/wasm/WebAssemblyExportImportedDependency.js",
+    "lib/dependencies/wasm/WebAssemblyImportDependency.js",
+    "lib/dependencies/worker/WorkerDependency.js",
+    "lib/dependencies/worker/WorkletDependency.js",
+    "lib/graph/Dependency.js",
+    "lib/javascript/WebpackIsIncludedDependency.js",
+    "lib/provide/ProvidedDependency.js"
+   ]
+  },
+  {
+   "id": "IDWEBP196",
+   "query": "need build",
+   "identifier": "needBuild",
+   "definedIn": [
+    "lib/asset/RawDataUrlModule.js",
+    "lib/container/ContainerEntryModule.js",
+    "lib/container/FallbackModule.js",
+    "lib/container/RemoteModule.js",
+    "lib/context/ContextModule.js",
+    "lib/dll/DelegatedModule.js",
+    "lib/dll/DllModule.js",
+    "lib/externals/ExternalModule.js",
+    "lib/hmr/LazyCompilationPlugin.js",
+    "lib/module/Module.js",
+    "lib/module/NormalModule.js",
+    "lib/module/RawModule.js",
+    "lib/runtime/RuntimeModule.js",
+    "lib/sharing/ConsumeSharedModule.js",
+    "lib/sharing/ProvideSharedModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP197",
+   "query": "get module",
+   "identifier": "getModule",
+   "definedIn": [
+    "lib/Compilation.js",
+    "lib/graph/ModuleGraph.js"
+   ]
+  },
+  {
+   "id": "IDWEBP198",
+   "query": "get exports type",
+   "identifier": "getExportsType",
+   "definedIn": [
+    "lib/container/RemoteModule.js",
+    "lib/module/Module.js",
+    "lib/sharing/ConsumeSharedModule.js"
+   ]
+  },
+  {
+   "id": "IDWEBP199",
+   "query": "lib ident",
+   "identifier": "libIdent",
+   "definedIn": [
+    "lib/container/ContainerEntryModule.js",
+    "lib/container/FallbackModule.js",
+    "lib/container/RemoteModule.js",
+    "lib/context/ContextModule.js",
+    "lib/dll/DelegatedModule.js",
+    "lib/externals/ExternalModule.js",
+    "lib/hmr/LazyCompilationPlugin.js",
+    "lib/module/Module.js",
+    "lib/module/NormalModule.js",
+    "lib/optimize/ConcatenatedModule.js",
+    "lib/sharing/ConsumeSharedModule.js",
+    "lib/sharing/ProvideSharedModule.js"
+   ]
+  }
+ ]
+}

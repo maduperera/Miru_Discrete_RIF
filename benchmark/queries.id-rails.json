@@ -1,0 +1,2415 @@
+{
+ "repo": "id-rails",
+ "commit": "659211619aad2ef2df4c6b1691c9ec7a197fd37a",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "200 ambiguous-symbol lookups drawn by gen_queries_multi.py (seed 0xa11ce) from tree-sitter definitions; >=8 chars, >=2 words, 2..30 dirs, tests excluded.",
+ "queries": [
+  {
+   "id": "IDRAIL0",
+   "query": "secret key base",
+   "identifier": "secret_key_base",
+   "definedIn": [
+    "actionpack/lib/action_dispatch/middleware/cookies.rb",
+    "railties/lib/rails/application.rb",
+    "railties/lib/rails/application/configuration.rb",
+    "railties/lib/rails/generators/rails/credentials/credentials_generator.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL1",
+   "query": "supports path?",
+   "identifier": "supports_path?",
+   "definedIn": [
+    "actionmailer/lib/action_mailer/base.rb",
+    "actionpack/lib/abstract_controller/base.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL2",
+   "query": "rack response",
+   "identifier": "rack_response",
+   "definedIn": [
+    "actioncable/lib/action_cable/server/socket/client_socket.rb",
+    "actioncable/lib/action_cable/server/socket/web_socket.rb",
+    "actionpack/lib/action_dispatch/http/response.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL3",
+   "query": "next sequence value",
+   "identifier": "next_sequence_value",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_statements.rb",
+    "activerecord/lib/active_record/model_schema.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL4",
+   "query": "supports ddl transactions?",
+   "identifier": "supports_ddl_transactions?",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/postgresql_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/sqlite3_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL5",
+   "query": "execute batch",
+   "identifier": "execute_batch",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/database_statements.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL6",
+   "query": "arel columns",
+   "identifier": "arel_columns",
+   "definedIn": [
+    "activerecord/lib/active_record/key.rb",
+    "activerecord/lib/active_record/relation/query_methods.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL7",
+   "query": "clean frame",
+   "identifier": "clean_frame",
+   "definedIn": [
+    "activesupport/lib/active_support/backtrace_cleaner.rb",
+    "railties/lib/rails/backtrace_cleaner.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL8",
+   "query": "active connections?",
+   "identifier": "active_connections?",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_handler.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL9",
+   "query": "clear cache",
+   "identifier": "clear_cache",
+   "definedIn": [
+    "actionview/lib/action_view/template/resolver.rb",
+    "activerecord/lib/active_record/query_logs.rb",
+    "activesupport/lib/active_support/notifications/fanout.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL10",
+   "query": "add route",
+   "identifier": "add_route",
+   "definedIn": [
+    "actionmailbox/lib/action_mailbox/router.rb",
+    "actionpack/lib/action_dispatch/journey/routes.rb",
+    "actionpack/lib/action_dispatch/routing/mapper.rb",
+    "actionpack/lib/action_dispatch/routing/route_set.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL11",
+   "query": "visit cat",
+   "identifier": "visit_CAT",
+   "definedIn": [
+    "actionpack/lib/action_dispatch/journey/path/pattern.rb",
+    "actionpack/lib/action_dispatch/journey/visitors.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL12",
+   "query": "expected signature",
+   "identifier": "expected_signature",
+   "definedIn": [
+    "actionmailbox/app/controllers/action_mailbox/ingresses/mailgun/inbound_emails_controller.rb",
+    "actionmailbox/app/controllers/action_mailbox/ingresses/mandrill/inbound_emails_controller.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL13",
+   "query": "path for",
+   "identifier": "path_for",
+   "definedIn": [
+    "actionpack/lib/action_dispatch/http/url.rb",
+    "actionpack/lib/action_dispatch/routing/route_set.rb",
+    "activestorage/lib/active_storage/service/disk_service.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL14",
+   "query": "translate location",
+   "identifier": "translate_location",
+   "definedIn": [
+    "actionview/lib/action_view/template.rb",
+    "actionview/lib/action_view/template/handlers/erb.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL15",
+   "query": "fetch values",
+   "identifier": "fetch_values",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/strong_parameters.rb",
+    "activesupport/lib/active_support/hash_with_indifferent_access.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL16",
+   "query": "event reporter",
+   "identifier": "EventReporter",
+   "definedIn": [
+    "activesupport/lib/active_support/event_reporter.rb",
+    "activesupport/lib/active_support/event_reporter/log_subscriber.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL17",
+   "query": "continuous integration",
+   "identifier": "ContinuousIntegration",
+   "definedIn": [
+    "activesupport/lib/active_support/continuous_integration.rb",
+    "activesupport/lib/active_support/continuous_integration/group.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL18",
+   "query": "column name matcher",
+   "identifier": "column_name_matcher",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/quoting.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/quoting.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/quoting.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/quoting.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL19",
+   "query": "cookie store",
+   "identifier": "CookieStore",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/request_forgery_protection.rb",
+    "actionpack/lib/action_dispatch/middleware/session/cookie_store.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL20",
+   "query": "default scope",
+   "identifier": "default_scope",
+   "definedIn": [
+    "actionpack/lib/action_dispatch/routing/route_set.rb",
+    "activerecord/lib/active_record/scoping/default.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL21",
+   "query": "get builder class",
+   "identifier": "get_builder_class",
+   "definedIn": [
+    "railties/lib/rails/generators/rails/app/app_generator.rb",
+    "railties/lib/rails/generators/rails/plugin/plugin_generator.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL22",
+   "query": "alias type",
+   "identifier": "alias_type",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb",
+    "activerecord/lib/active_record/type/hash_lookup_type_map.rb",
+    "activerecord/lib/active_record/type/type_map.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL23",
+   "query": "range error",
+   "identifier": "RangeError",
+   "definedIn": [
+    "activemodel/lib/active_model/errors.rb",
+    "activerecord/lib/active_record/errors.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL24",
+   "query": "deep symbolize keys",
+   "identifier": "deep_symbolize_keys",
+   "definedIn": [
+    "activesupport/lib/active_support/core_ext/hash/keys.rb",
+    "activesupport/lib/active_support/encrypted_configuration.rb",
+    "activesupport/lib/active_support/hash_with_indifferent_access.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL25",
+   "query": "read attribute",
+   "identifier": "_read_attribute",
+   "definedIn": [
+    "activemodel/lib/active_model/attribute_methods.rb",
+    "activerecord/lib/active_record/attribute_methods/read.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL26",
+   "query": "cookie jar",
+   "identifier": "cookie_jar",
+   "definedIn": [
+    "actionpack/lib/action_dispatch/middleware/cookies.rb",
+    "actionpack/lib/action_dispatch/middleware/session/cookie_store.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL27",
+   "query": "build table options",
+   "identifier": "build_table_options",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract_mysql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_statements.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL28",
+   "query": "plus with duration",
+   "identifier": "plus_with_duration",
+   "definedIn": [
+    "activesupport/lib/active_support/core_ext/date/calculations.rb",
+    "activesupport/lib/active_support/core_ext/time/calculations.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL29",
+   "query": "add index options",
+   "identifier": "add_index_options",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/mysql_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/postgresql_proxy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL30",
+   "query": "end of hour",
+   "identifier": "end_of_hour",
+   "definedIn": [
+    "activesupport/lib/active_support/core_ext/date_time/calculations.rb",
+    "activesupport/lib/active_support/core_ext/time/calculations.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL31",
+   "query": "change column comment",
+   "identifier": "change_column_comment",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract_mysql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/mysql_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/postgresql_proxy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL32",
+   "query": "supports restart db transaction?",
+   "identifier": "supports_restart_db_transaction?",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract_mysql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/mysql_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/postgresql_proxy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL33",
+   "query": "has default?",
+   "identifier": "has_default?",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/column.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/column.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/column.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL34",
+   "query": "check validity!",
+   "identifier": "check_validity!",
+   "definedIn": [
+    "activemodel/lib/active_model/validations/clusivity.rb",
+    "activemodel/lib/active_model/validations/comparison.rb",
+    "activemodel/lib/active_model/validations/format.rb",
+    "activemodel/lib/active_model/validations/length.rb",
+    "activemodel/lib/active_model/validations/numericality.rb",
+    "activemodel/lib/active_model/validator.rb",
+    "activerecord/lib/active_record/reflection.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL35",
+   "query": "authentication generator",
+   "identifier": "AuthenticationGenerator",
+   "definedIn": [
+    "railties/lib/rails/generators/erb/authentication/authentication_generator.rb",
+    "railties/lib/rails/generators/rails/authentication/authentication_generator.rb",
+    "railties/lib/rails/generators/test_unit/authentication/authentication_generator.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL36",
+   "query": "invalid parameter key",
+   "identifier": "InvalidParameterKey",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/strong_parameters.rb",
+    "activerecord/lib/active_record/attribute_assignment.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL37",
+   "query": "remove check constraint",
+   "identifier": "remove_check_constraint",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/sqlite3_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/schema_statements.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL38",
+   "query": "add column",
+   "identifier": "add_column",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/compatibility_behavior.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/postgresql_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/sqlite3_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb",
+    "activerecord/lib/active_record/migration/compatibility.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL39",
+   "query": "send file",
+   "identifier": "send_file",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/data_streaming.rb",
+    "actionpack/lib/action_controller/metal/instrumentation.rb",
+    "actionpack/lib/action_controller/structured_event_subscriber.rb",
+    "actionpack/lib/action_dispatch/http/response.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL40",
+   "query": "pin connection!",
+   "identifier": "pin_connection!",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/proxy_connection_pool.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL41",
+   "query": "initialize copy",
+   "identifier": "initialize_copy",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/strong_parameters.rb",
+    "actionpack/lib/action_dispatch/http/content_security_policy.rb",
+    "actionpack/lib/action_dispatch/http/mime_type.rb",
+    "actionpack/lib/action_dispatch/http/permissions_policy.rb",
+    "actionpack/lib/action_dispatch/middleware/flash.rb",
+    "actionpack/lib/action_dispatch/middleware/stack.rb",
+    "actionview/lib/action_view/buffers.rb",
+    "actionview/lib/action_view/path_set.rb",
+    "activemodel/lib/active_model/type/registry.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb",
+    "activerecord/lib/active_record/reflection.rb",
+    "activerecord/lib/active_record/relation.rb",
+    "activerecord/lib/active_record/result.rb",
+    "activerecord/lib/active_record/type/adapter_specific_registry.rb",
+    "activerecord/lib/arel/nodes/binary.rb",
+    "activerecord/lib/arel/nodes/case.rb",
+    "activerecord/lib/arel/nodes/comment.rb",
+    "activerecord/lib/arel/nodes/delete_statement.rb",
+    "activerecord/lib/arel/nodes/fragments.rb",
+    "activerecord/lib/arel/nodes/insert_statement.rb",
+    "activerecord/lib/arel/nodes/select_core.rb",
+    "activerecord/lib/arel/nodes/select_statement.rb",
+    "activerecord/lib/arel/nodes/update_statement.rb",
+    "activerecord/lib/arel/nodes/window.rb",
+    "activerecord/lib/arel/select_manager.rb",
+    "activerecord/lib/arel/tree_manager.rb",
+    "activesupport/lib/active_support/backtrace_cleaner.rb",
+    "activesupport/lib/active_support/broadcast_logger.rb",
+    "activesupport/lib/active_support/callbacks.rb",
+    "activesupport/lib/active_support/core_ext/string/output_safety.rb",
+    "activesupport/lib/active_support/logger_thread_safe_level.rb",
+    "activesupport/lib/active_support/weak_set.rb",
+    "railties/lib/rails/configuration.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL42",
+   "query": "disable extension",
+   "identifier": "disable_extension",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/compatibility_behavior.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/postgresql_proxy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL43",
+   "query": "enable index",
+   "identifier": "enable_index",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract_mysql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/mysql_proxy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL44",
+   "query": "postgre sql",
+   "identifier": "PostgreSQL",
+   "definedIn": [
+    "actioncable/lib/action_cable/subscription_adapter/postgresql.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/column.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/compatibility_behavior.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/explain_pretty_printer.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/array.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/bit.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/bit_varying.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/bytea.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/cidr.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/date.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/date_time.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/decimal.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/enum.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/hstore.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/inet.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/interval.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/jsonb.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/legacy_point.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/macaddr.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/money.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/oid.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/point.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/range.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/specialized_string.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/timestamp.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/timestamp_with_time_zone.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/uuid.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/vector.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/well_known.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/well_known_generator.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/well_known_values.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/xml.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/quoting.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/referential_integrity.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_creation.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_dumper.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/type_metadata.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/utils.rb",
+    "activerecord/lib/arel/visitors/postgresql.rb",
+    "railties/lib/rails/generators/database.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL45",
+   "query": "human name",
+   "identifier": "human_name",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/column.rb",
+    "railties/lib/rails/generators/generated_attribute.rb",
+    "railties/lib/rails/generators/named_base.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL46",
+   "query": "deep transform values!",
+   "identifier": "deep_transform_values!",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/strong_parameters.rb",
+    "activesupport/lib/active_support/core_ext/hash/deep_transform_values.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL47",
+   "query": "active support",
+   "identifier": "ActiveSupport",
+   "definedIn": [
+    "activesupport/lib/active_support.rb",
+    "activesupport/lib/active_support/actionable_error.rb",
+    "activesupport/lib/active_support/array_inquirer.rb",
+    "activesupport/lib/active_support/backtrace_cleaner.rb",
+    "activesupport/lib/active_support/benchmark.rb",
+    "activesupport/lib/active_support/benchmarkable.rb",
+    "activesupport/lib/active_support/broadcast_logger.rb",
+    "activesupport/lib/active_support/cache.rb",
+    "activesupport/lib/active_support/cache/coder.rb",
+    "activesupport/lib/active_support/cache/deprecated_redis_cache_store.rb",
+    "activesupport/lib/active_support/cache/entry.rb",
+    "activesupport/lib/active_support/cache/file_store.rb",
+    "activesupport/lib/active_support/cache/mem_cache_store.rb",
+    "activesupport/lib/active_support/cache/memory_store.rb",
+    "activesupport/lib/active_support/cache/null_store.rb",
+    "activesupport/lib/active_support/cache/redis_cache_store.rb",
+    "activesupport/lib/active_support/cache/serializer_with_fallback.rb",
+    "activesupport/lib/active_support/cache/strategy/local_cache.rb",
+    "activesupport/lib/active_support/cache/strategy/local_cache_middleware.rb",
+    "activesupport/lib/active_support/callbacks.rb",
+    "activesupport/lib/active_support/class_attribute.rb",
+    "activesupport/lib/active_support/code_generator.rb",
+    "activesupport/lib/active_support/colorize_logging.rb",
+    "activesupport/lib/active_support/combined_configuration.rb",
+    "activesupport/lib/active_support/concern.rb",
+    "activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb",
+    "activesupport/lib/active_support/concurrency/null_lock.rb",
+    "activesupport/lib/active_support/concurrency/share_lock.rb",
+    "activesupport/lib/active_support/concurrency/thread_monitor.rb",
+    "activesupport/lib/active_support/configurable.rb",
+    "activesupport/lib/active_support/configuration_file.rb",
+    "activesupport/lib/active_support/continuous_integration.rb",
+    "activesupport/lib/active_support/continuous_integration/group.rb",
+    "activesupport/lib/active_support/core_ext/big_decimal/conversions.rb",
+    "activesupport/lib/active_support/core_ext/enumerable.rb",
+    "activesupport/lib/active_support/core_ext/erb/util.rb",
+    "activesupport/lib/active_support/core_ext/hash/conversions.rb",
+    "activesupport/lib/active_support/core_ext/numeric/conversions.rb",
+    "activesupport/lib/active_support/core_ext/object/json.rb",
+    "activesupport/lib/active_support/core_ext/object/try.rb",
+    "activesupport/lib/active_support/core_ext/range/compare_range.rb",
+    "activesupport/lib/active_support/core_ext/range/conversions.rb",
+    "activesupport/lib/active_support/core_ext/string/output_safety.rb",
+    "activesupport/lib/active_support/current_attributes.rb",
+    "activesupport/lib/active_support/date_formats.rb",
+    "activesupport/lib/active_support/deep_mergeable.rb",
+    "activesupport/lib/active_support/delegation.rb",
+    "activesupport/lib/active_support/dependencies.rb",
+    "activesupport/lib/active_support/dependencies/autoload.rb",
+    "activesupport/lib/active_support/dependencies/interlock.rb",
+    "activesupport/lib/active_support/deprecation.rb",
+    "activesupport/lib/active_support/deprecation/behaviors.rb",
+    "activesupport/lib/active_support/deprecation/constant_accessor.rb",
+    "activesupport/lib/active_support/deprecation/deprecators.rb",
+    "activesupport/lib/active_support/deprecation/disallowed.rb",
+    "activesupport/lib/active_support/deprecation/method_wrappers.rb",
+    "activesupport/lib/active_support/deprecation/proxy_wrappers.rb",
+    "activesupport/lib/active_support/deprecation/reporting.rb",
+    "activesupport/lib/active_support/deprecator.rb",
+    "activesupport/lib/active_support/descendants_tracker.rb",
+    "activesupport/lib/active_support/digest.rb",
+    "activesupport/lib/active_support/dot_env_configuration.rb",
+    "activesupport/lib/active_support/duration.rb",
+    "activesupport/lib/active_support/duration/iso8601_parser.rb",
+    "activesupport/lib/active_support/duration/iso8601_serializer.rb",
+    "activesupport/lib/active_support/editor.rb",
+    "activesupport/lib/active_support/encrypted_configuration.rb",
+    "activesupport/lib/active_support/encrypted_file.rb",
+    "activesupport/lib/active_support/env_configuration.rb",
+    "activesupport/lib/active_support/environment_inquirer.rb",
+    "activesupport/lib/active_support/error_reporter.rb",
+    "activesupport/lib/active_support/event_reporter.rb",
+    "activesupport/lib/active_support/event_reporter/log_subscriber.rb",
+    "activesupport/lib/active_support/evented_file_update_checker.rb",
+    "activesupport/lib/active_support/execution_context.rb",
+    "activesupport/lib/active_support/execution_wrapper.rb",
+    "activesupport/lib/active_support/executor.rb",
+    "activesupport/lib/active_support/file_update_checker.rb",
+    "activesupport/lib/active_support/fork_tracker.rb",
+    "activesupport/lib/active_support/gem_version.rb",
+    "activesupport/lib/active_support/gzip.rb",
+    "activesupport/lib/active_support/hash_with_indifferent_access.rb",
+    "activesupport/lib/active_support/html_safe_translation.rb",
+    "activesupport/lib/active_support/inflections.rb",
+    "activesupport/lib/active_support/inflector/inflections.rb",
+    "activesupport/lib/active_support/inflector/methods.rb",
+    "activesupport/lib/active_support/inflector/transliterate.rb",
+    "activesupport/lib/active_support/inspect_backport.rb",
+    "activesupport/lib/active_support/isolated_execution_state.rb",
+    "activesupport/lib/active_support/json/decoding.rb",
+    "activesupport/lib/active_support/json/encoding.rb",
+    "activesupport/lib/active_support/key_generator.rb",
+    "activesupport/lib/active_support/lazy_load_hooks.rb",
+    "activesupport/lib/active_support/log_subscriber.rb",
+    "activesupport/lib/active_support/logger.rb",
+    "activesupport/lib/active_support/logger_silence.rb",
+    "activesupport/lib/active_support/logger_thread_safe_level.rb",
+    "activesupport/lib/active_support/message_encryptor.rb",
+    "activesupport/lib/active_support/message_encryptors.rb",
+    "activesupport/lib/active_support/message_pack.rb",
+    "activesupport/lib/active_support/message_pack/cache_serializer.rb",
+    "activesupport/lib/active_support/message_pack/extensions.rb",
+    "activesupport/lib/active_support/message_pack/serializer.rb",
+    "activesupport/lib/active_support/message_verifier.rb",
+    "activesupport/lib/active_support/message_verifiers.rb",
+    "activesupport/lib/active_support/messages/codec.rb",
+    "activesupport/lib/active_support/messages/metadata.rb",
+    "activesupport/lib/active_support/messages/rotation_configuration.rb",
+    "activesupport/lib/active_support/messages/rotation_coordinator.rb",
+    "activesupport/lib/active_support/messages/rotator.rb",
+    "activesupport/lib/active_support/messages/serializer_with_fallback.rb",
+    "activesupport/lib/active_support/multibyte.rb",
+    "activesupport/lib/active_support/multibyte/unicode.rb",
+    "activesupport/lib/active_support/notifications.rb",
+    "activesupport/lib/active_support/notifications/fanout.rb",
+    "activesupport/lib/active_support/notifications/instrumenter.rb",
+    "activesupport/lib/active_support/number_helper.rb",
+    "activesupport/lib/active_support/number_helper/number_converter.rb",
+    "activesupport/lib/active_support/number_helper/number_to_currency_converter.rb",
+    "activesupport/lib/active_support/number_helper/number_to_delimited_converter.rb",
+    "activesupport/lib/active_support/number_helper/number_to_human_converter.rb",
+    "activesupport/lib/active_support/number_helper/number_to_human_size_converter.rb",
+    "activesupport/lib/active_support/number_helper/number_to_percentage_converter.rb",
+    "activesupport/lib/active_support/number_helper/number_to_phone_converter.rb",
+    "activesupport/lib/active_support/number_helper/number_to_rounded_converter.rb",
+    "activesupport/lib/active_support/number_helper/rounding_helper.rb",
+    "activesupport/lib/active_support/option_merger.rb",
+    "activesupport/lib/active_support/ordered_hash.rb",
+    "activesupport/lib/active_support/ordered_options.rb",
+    "activesupport/lib/active_support/parameter_filter.rb",
+    "activesupport/lib/active_support/proxy_logger.rb",
+    "activesupport/lib/active_support/ractors.rb",
+    "activesupport/lib/active_support/ractors/logger.rb",
+    "activesupport/lib/active_support/ractors/logger/device_proxy.rb",
+    "activesupport/lib/active_support/ractors/logger/writer.rb",
+    "activesupport/lib/active_support/railtie.rb",
+    "activesupport/lib/active_support/reloader.rb",
+    "activesupport/lib/active_support/rescuable.rb",
+    "activesupport/lib/active_support/secure_compare_rotator.rb",
+    "activesupport/lib/active_support/security_utils.rb",
+    "activesupport/lib/active_support/string_inquirer.rb",
+    "activesupport/lib/active_support/structured_event_subscriber.rb",
+    "activesupport/lib/active_support/subscriber.rb",
+    "activesupport/lib/active_support/syntax_error_proxy.rb",
+    "activesupport/lib/active_support/tagged_logging.rb",
+    "activesupport/lib/active_support/time.rb",
+    "activesupport/lib/active_support/time_formats.rb",
+    "activesupport/lib/active_support/time_with_zone.rb",
+    "activesupport/lib/active_support/values/time_zone.rb",
+    "activesupport/lib/active_support/version.rb",
+    "activesupport/lib/active_support/weak_key_map.rb",
+    "activesupport/lib/active_support/weak_set.rb",
+    "activesupport/lib/active_support/xml_mini.rb",
+    "activesupport/lib/active_support/xml_mini/jdom.rb",
+    "activesupport/lib/active_support/xml_mini/libxml.rb",
+    "activesupport/lib/active_support/xml_mini/libxmlsax.rb",
+    "activesupport/lib/active_support/xml_mini/nokogiri.rb",
+    "activesupport/lib/active_support/xml_mini/nokogirisax.rb",
+    "activesupport/lib/active_support/xml_mini/rexml.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL48",
+   "query": "flush idle connections!",
+   "identifier": "flush_idle_connections!",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_handler.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL49",
+   "query": "remove index",
+   "identifier": "remove_index",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract_mysql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/mysql_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/postgresql_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/sqlite3_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb",
+    "activerecord/lib/active_record/migration/compatibility.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL50",
+   "query": "number to phone",
+   "identifier": "number_to_phone",
+   "definedIn": [
+    "actionview/lib/action_view/helpers/number_helper.rb",
+    "activesupport/lib/active_support/number_helper.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL51",
+   "query": "numericality validator",
+   "identifier": "NumericalityValidator",
+   "definedIn": [
+    "activemodel/lib/active_model/validations/numericality.rb",
+    "activerecord/lib/active_record/validations/numericality.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL52",
+   "query": "drop virtual table",
+   "identifier": "drop_virtual_table",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/sqlite3_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL53",
+   "query": "generate alias attribute methods",
+   "identifier": "generate_alias_attribute_methods",
+   "definedIn": [
+    "activemodel/lib/active_model/attribute_methods.rb",
+    "activerecord/lib/active_record/attribute_methods.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL54",
+   "query": "supports bulk alter?",
+   "identifier": "supports_bulk_alter?",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract_mysql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/mysql_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/postgresql_proxy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL55",
+   "query": "change table comment sql",
+   "identifier": "change_table_comment_sql",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/postgresql_proxy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL56",
+   "query": "backtrace locations",
+   "identifier": "backtrace_locations",
+   "definedIn": [
+    "actionview/lib/action_view/template/error.rb",
+    "activesupport/lib/active_support/syntax_error_proxy.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL57",
+   "query": "in time zone",
+   "identifier": "in_time_zone",
+   "definedIn": [
+    "activesupport/lib/active_support/core_ext/date_and_time/zones.rb",
+    "activesupport/lib/active_support/core_ext/string/zones.rb",
+    "activesupport/lib/active_support/time_with_zone.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL58",
+   "query": "read schema metadata",
+   "identifier": "read_schema_metadata",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_dumper.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/schema_dumper.rb",
+    "activerecord/lib/active_record/schema_dumper.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL59",
+   "query": "analyze option",
+   "identifier": "analyze_option",
+   "definedIn": [
+    "activestorage/app/models/active_storage/attachment.rb",
+    "activestorage/lib/active_storage/attached/changes/create_one.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL60",
+   "query": "redirect controller",
+   "identifier": "RedirectController",
+   "definedIn": [
+    "activestorage/app/controllers/active_storage/blobs/redirect_controller.rb",
+    "activestorage/app/controllers/active_storage/representations/redirect_controller.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL61",
+   "query": "printing commands",
+   "identifier": "printing_commands",
+   "definedIn": [
+    "railties/lib/rails/command.rb",
+    "railties/lib/rails/command/base.rb",
+    "railties/lib/rails/commands/rake/rake_command.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL62",
+   "query": "record not found",
+   "identifier": "RecordNotFound",
+   "definedIn": [
+    "activejob/lib/active_job/arguments.rb",
+    "activerecord/lib/active_record/errors.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL63",
+   "query": "normalize key",
+   "identifier": "normalize_key",
+   "definedIn": [
+    "activesupport/lib/active_support/cache.rb",
+    "activesupport/lib/active_support/cache/file_store.rb",
+    "activesupport/lib/active_support/cache/mem_cache_store.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL64",
+   "query": "annotated source code",
+   "identifier": "annotated_source_code",
+   "definedIn": [
+    "actionpack/lib/action_dispatch/middleware/exception_wrapper.rb",
+    "actionview/lib/action_view/template/error.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL65",
+   "query": "compare with coercion",
+   "identifier": "compare_with_coercion",
+   "definedIn": [
+    "activesupport/lib/active_support/core_ext/date/calculations.rb",
+    "activesupport/lib/active_support/core_ext/time/calculations.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL66",
+   "query": "adapter name",
+   "identifier": "adapter_name",
+   "definedIn": [
+    "activejob/lib/active_job/queue_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/abstract_proxy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL67",
+   "query": "initialize clone",
+   "identifier": "initialize_clone",
+   "definedIn": [
+    "activemodel/lib/active_model/attribute_set.rb",
+    "activerecord/lib/active_record/inheritance.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL68",
+   "query": "attribute types",
+   "identifier": "attribute_types",
+   "definedIn": [
+    "activemodel/lib/active_model/attribute_registration.rb",
+    "activerecord/lib/active_record/attributes.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL69",
+   "query": "visit symbol",
+   "identifier": "visit_SYMBOL",
+   "definedIn": [
+    "actionpack/lib/action_dispatch/journey/path/pattern.rb",
+    "actionpack/lib/action_dispatch/journey/visitors.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL70",
+   "query": "fetch indexes",
+   "identifier": "fetch_indexes",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/schema_statements.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL71",
+   "query": "expression column name?",
+   "identifier": "expression_column_name?",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_statements.rb",
+    "activerecord/lib/active_record/migration/compatibility.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL72",
+   "query": "content security policy nonce",
+   "identifier": "content_security_policy_nonce",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/content_security_policy.rb",
+    "actionpack/lib/action_dispatch/http/content_security_policy.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL73",
+   "query": "unquoted false",
+   "identifier": "unquoted_false",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/quoting.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/quoting.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/mysql_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/sqlite3_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/quoting.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL74",
+   "query": "affected rows",
+   "identifier": "affected_rows",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql2/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/query_intent.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/abstract_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/trilogy/database_statements.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL75",
+   "query": "undefine attribute methods",
+   "identifier": "undefine_attribute_methods",
+   "definedIn": [
+    "activemodel/lib/active_model/attribute_methods.rb",
+    "activerecord/lib/active_record/attribute_methods.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL76",
+   "query": "defined for?",
+   "identifier": "defined_for?",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_definitions.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL77",
+   "query": "database exists?",
+   "identifier": "database_exists?",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/sqlite3_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL78",
+   "query": "add check constraint",
+   "identifier": "add_check_constraint",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/sqlite3_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/schema_statements.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL79",
+   "query": "async executor",
+   "identifier": "async_executor",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/proxy_connection_pool.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL80",
+   "query": "signed id",
+   "identifier": "signed_id",
+   "definedIn": [
+    "activerecord/lib/active_record/signed_id.rb",
+    "activestorage/app/models/active_storage/blob.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL81",
+   "query": "find signed",
+   "identifier": "find_signed",
+   "definedIn": [
+    "activerecord/lib/active_record/signed_id.rb",
+    "activestorage/app/models/active_storage/blob.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL82",
+   "query": "url for direct upload",
+   "identifier": "url_for_direct_upload",
+   "definedIn": [
+    "activestorage/lib/active_storage/service.rb",
+    "activestorage/lib/active_storage/service/disk_service.rb",
+    "activestorage/lib/active_storage/service/gcs_service.rb",
+    "activestorage/lib/active_storage/service/s3_service.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL83",
+   "query": "rollback savepoint transaction",
+   "identifier": "rollback_savepoint_transaction",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/abstract_proxy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL84",
+   "query": "marshal load",
+   "identifier": "marshal_load",
+   "definedIn": [
+    "actionview/lib/action_view/template.rb",
+    "activemodel/lib/active_model/attribute/user_provided_default.rb",
+    "activemodel/lib/active_model/attribute_set/builder.rb",
+    "activerecord/lib/active_record/associations/association.rb",
+    "activerecord/lib/active_record/connection_adapters/schema_cache.rb",
+    "activerecord/lib/active_record/marshalling.rb",
+    "activesupport/lib/active_support/cache/entry.rb",
+    "activesupport/lib/active_support/cache/serializer_with_fallback.rb",
+    "activesupport/lib/active_support/time_with_zone.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL85",
+   "query": "escape path",
+   "identifier": "escape_path",
+   "definedIn": [
+    "actionpack/lib/action_dispatch/journey/router/utils.rb",
+    "actionpack/lib/action_dispatch/routing/redirection.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL86",
+   "query": "belongs to?",
+   "identifier": "belongs_to?",
+   "definedIn": [
+    "activerecord/lib/active_record/reflection.rb",
+    "railties/lib/rails/initializable.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL87",
+   "query": "reset query cache!",
+   "identifier": "reset_query_cache!",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/proxy_connection_pool.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL88",
+   "query": "to prepare",
+   "identifier": "to_prepare",
+   "definedIn": [
+    "activesupport/lib/active_support/reloader.rb",
+    "railties/lib/rails/railtie/configuration.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL89",
+   "query": "middleware stack",
+   "identifier": "MiddlewareStack",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal.rb",
+    "actionpack/lib/action_dispatch/middleware/stack.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL90",
+   "query": "permissions policy",
+   "identifier": "PermissionsPolicy",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/permissions_policy.rb",
+    "actionpack/lib/action_dispatch/http/permissions_policy.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL91",
+   "query": "migrations paths",
+   "identifier": "migrations_paths",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/proxy_connection_pool.rb",
+    "activerecord/lib/active_record/database_configurations/database_config.rb",
+    "activerecord/lib/active_record/database_configurations/hash_config.rb",
+    "activerecord/lib/active_record/tasks/database_tasks.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL92",
+   "query": "supports partial index?",
+   "identifier": "supports_partial_index?",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/postgresql_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/sqlite3_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL93",
+   "query": "touch row",
+   "identifier": "_touch_row",
+   "definedIn": [
+    "activerecord/lib/active_record/attribute_methods/dirty.rb",
+    "activerecord/lib/active_record/locking/optimistic.rb",
+    "activerecord/lib/active_record/persistence.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL94",
+   "query": "context class",
+   "identifier": "context_class",
+   "definedIn": [
+    "activerecord/lib/active_record/fixtures.rb",
+    "railties/lib/rails/initializable.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL95",
+   "query": "respond to?",
+   "identifier": "respond_to?",
+   "definedIn": [
+    "actionmailer/lib/action_mailer/base.rb",
+    "actionpack/lib/action_dispatch/http/response.rb",
+    "actionview/lib/action_view/helpers/controller_helper.rb",
+    "activemodel/lib/active_model/attribute_methods.rb",
+    "activerecord/lib/active_record/attribute_methods.rb",
+    "railties/lib/rails/railtie/configurable.rb",
+    "railties/lib/rails/railtie/configuration.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL96",
+   "query": "extract schema qualified name",
+   "identifier": "extract_schema_qualified_name",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/utils.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL97",
+   "query": "connection adapters",
+   "identifier": "ConnectionAdapters",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_handler.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_pool/queue.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_pool/reaper.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/database_limits.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/quoting.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/savepoints.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_creation.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_dumper.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/transaction.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract_mysql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/column.rb",
+    "activerecord/lib/active_record/connection_adapters/deduplicable.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/column.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/compatibility_behavior.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/explain_pretty_printer.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/quoting.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_creation.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_dumper.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/type_metadata.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql2/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql2_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/pool_config.rb",
+    "activerecord/lib/active_record/connection_adapters/pool_manager.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/column.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/compatibility_behavior.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/explain_pretty_printer.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/array.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/bit.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/bit_varying.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/bytea.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/cidr.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/date.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/date_time.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/decimal.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/enum.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/hstore.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/inet.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/interval.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/jsonb.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/legacy_point.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/macaddr.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/money.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/oid.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/point.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/range.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/specialized_string.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/timestamp.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/timestamp_with_time_zone.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/type_map_initializer.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/uuid.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/vector.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/well_known.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/well_known_generator.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/well_known_values.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/xml.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/quoting.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/referential_integrity.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_creation.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_dumper.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/type_metadata.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/utils.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/query_intent.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/abstract_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/abstract_proxy_adapter/query_request.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/abstract_proxy_adapter/query_response.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/abstract_proxy_adapter/schema_creation_proxy.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/mysql_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/postgresql_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/proxy.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/proxy_connection_pool.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/sqlite3_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/retry_budget.rb",
+    "activerecord/lib/active_record/connection_adapters/schema_cache.rb",
+    "activerecord/lib/active_record/connection_adapters/schema_cache_serializer.rb",
+    "activerecord/lib/active_record/connection_adapters/sql_type_metadata.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/column.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/explain_pretty_printer.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/quoting.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/schema_creation.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/schema_dumper.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/statement_pool.rb",
+    "activerecord/lib/active_record/connection_adapters/trilogy/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/trilogy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL98",
+   "query": "load records",
+   "identifier": "load_records",
+   "definedIn": [
+    "activerecord/lib/active_record/associations/preloader/association.rb",
+    "activerecord/lib/active_record/relation.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL99",
+   "query": "supports disabling indexes?",
+   "identifier": "supports_disabling_indexes?",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract_mysql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/mysql_proxy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL100",
+   "query": "supports validate constraints?",
+   "identifier": "supports_validate_constraints?",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/postgresql_proxy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL101",
+   "query": "raise on duplicate column",
+   "identifier": "raise_on_duplicate_column",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_definitions.rb",
+    "activerecord/lib/active_record/migration/compatibility.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL102",
+   "query": "read multi",
+   "identifier": "read_multi",
+   "definedIn": [
+    "activesupport/lib/active_support/cache.rb",
+    "activesupport/lib/active_support/cache/deprecated_redis_cache_store.rb",
+    "activesupport/lib/active_support/cache/redis_cache_store.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL103",
+   "query": "query constraints",
+   "identifier": "query_constraints",
+   "definedIn": [
+    "activerecord/lib/active_record/model_schema/schema_context.rb",
+    "activerecord/lib/active_record/persistence.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL104",
+   "query": "safe constantize",
+   "identifier": "safe_constantize",
+   "definedIn": [
+    "activesupport/lib/active_support/core_ext/string/inflections.rb",
+    "activesupport/lib/active_support/inflector/methods.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL105",
+   "query": "protected ivars",
+   "identifier": "_protected_ivars",
+   "definedIn": [
+    "actionmailer/lib/action_mailer/base.rb",
+    "actionpack/lib/abstract_controller/rendering.rb",
+    "actionpack/lib/action_controller/base.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL106",
+   "query": "validate each",
+   "identifier": "validate_each",
+   "definedIn": [
+    "activemodel/lib/active_model/validations/absence.rb",
+    "activemodel/lib/active_model/validations/acceptance.rb",
+    "activemodel/lib/active_model/validations/comparison.rb",
+    "activemodel/lib/active_model/validations/confirmation.rb",
+    "activemodel/lib/active_model/validations/exclusion.rb",
+    "activemodel/lib/active_model/validations/format.rb",
+    "activemodel/lib/active_model/validations/inclusion.rb",
+    "activemodel/lib/active_model/validations/length.rb",
+    "activemodel/lib/active_model/validations/numericality.rb",
+    "activemodel/lib/active_model/validations/presence.rb",
+    "activemodel/lib/active_model/validations/with.rb",
+    "activemodel/lib/active_model/validator.rb",
+    "activerecord/lib/active_record/encryption/extended_deterministic_uniqueness_validator.rb",
+    "activerecord/lib/active_record/validations/absence.rb",
+    "activerecord/lib/active_record/validations/associated.rb",
+    "activerecord/lib/active_record/validations/length.rb",
+    "activerecord/lib/active_record/validations/numericality.rb",
+    "activerecord/lib/active_record/validations/presence.rb",
+    "activerecord/lib/active_record/validations/uniqueness.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL107",
+   "query": "default timezone",
+   "identifier": "default_timezone",
+   "definedIn": [
+    "activemodel/lib/active_model/type/helpers/timezone.rb",
+    "activerecord/lib/active_record.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/type/internal/timezone.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL108",
+   "query": "tag helper",
+   "identifier": "TagHelper",
+   "definedIn": [
+    "actiontext/app/helpers/action_text/tag_helper.rb",
+    "actionview/lib/action_view/helpers/tag_helper.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL109",
+   "query": "preventing writes?",
+   "identifier": "preventing_writes?",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/core.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL110",
+   "query": "changed in place?",
+   "identifier": "changed_in_place?",
+   "definedIn": [
+    "activemodel/lib/active_model/attribute.rb",
+    "activemodel/lib/active_model/attribute_mutation_tracker.rb",
+    "activemodel/lib/active_model/type/binary.rb",
+    "activemodel/lib/active_model/type/helpers/mutable.rb",
+    "activemodel/lib/active_model/type/string.rb",
+    "activemodel/lib/active_model/type/value.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/array.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/hstore.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/macaddr.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/uuid.rb",
+    "activerecord/lib/active_record/encryption/encrypted_attribute_type.rb",
+    "activerecord/lib/active_record/type/json.rb",
+    "activerecord/lib/active_record/type/serialized.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL111",
+   "query": "cleanup view runtime",
+   "identifier": "cleanup_view_runtime",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/instrumentation.rb",
+    "activerecord/lib/active_record/railties/controller_runtime.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL112",
+   "query": "eagerly generate alias attribute methods",
+   "identifier": "eagerly_generate_alias_attribute_methods",
+   "definedIn": [
+    "activemodel/lib/active_model/attribute_methods.rb",
+    "activerecord/lib/active_record/attribute_methods.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL113",
+   "query": "render in",
+   "identifier": "render_in",
+   "definedIn": [
+    "actiontext/lib/action_text/editor.rb",
+    "actiontext/lib/action_text/editor/trix_editor.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL114",
+   "query": "with type",
+   "identifier": "with_type",
+   "definedIn": [
+    "activemodel/lib/active_model/attribute.rb",
+    "activemodel/lib/active_model/attribute/user_provided_default.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL115",
+   "query": "backtrace cleaner",
+   "identifier": "backtrace_cleaner",
+   "definedIn": [
+    "activerecord/lib/active_record/associations/deprecation.rb",
+    "railties/lib/rails.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL116",
+   "query": "each connection pool",
+   "identifier": "each_connection_pool",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_handler.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL117",
+   "query": "run callbacks",
+   "identifier": "run_callbacks",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/abstract_proxy_adapter.rb",
+    "activesupport/lib/active_support/callbacks.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL118",
+   "query": "sanitize as sql comment",
+   "identifier": "sanitize_as_sql_comment",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/quoting.rb",
+    "activerecord/lib/arel/visitors/to_sql.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL119",
+   "query": "database selector",
+   "identifier": "DatabaseSelector",
+   "definedIn": [
+    "activerecord/lib/active_record/middleware/database_selector.rb",
+    "activerecord/lib/active_record/middleware/database_selector/resolver.rb",
+    "activerecord/lib/active_record/middleware/database_selector/resolver/session.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL120",
+   "query": "load schema!",
+   "identifier": "load_schema!",
+   "definedIn": [
+    "activerecord/lib/active_record/counter_cache.rb",
+    "activerecord/lib/active_record/encryption/encryptable_record.rb",
+    "activerecord/lib/active_record/inheritance.rb",
+    "activerecord/lib/active_record/migration.rb",
+    "activerecord/lib/active_record/model_schema.rb",
+    "activerecord/lib/active_record/model_schema/schema_context.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL121",
+   "query": "as canonical",
+   "identifier": "as_canonical",
+   "definedIn": [
+    "actiontext/lib/action_text/editor.rb",
+    "actiontext/lib/action_text/editor/trix_editor.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL122",
+   "query": "seconds since midnight",
+   "identifier": "seconds_since_midnight",
+   "definedIn": [
+    "activesupport/lib/active_support/core_ext/date_time/calculations.rb",
+    "activesupport/lib/active_support/core_ext/time/calculations.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL123",
+   "query": "change column null",
+   "identifier": "change_column_null",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract_mysql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/mysql_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/postgresql_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/sqlite3_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb",
+    "activerecord/lib/active_record/migration/compatibility.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL124",
+   "query": "schema reflection",
+   "identifier": "schema_reflection",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb",
+    "activerecord/lib/active_record/connection_adapters/pool_config.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/proxy_connection_pool.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL125",
+   "query": "eager load!",
+   "identifier": "eager_load!",
+   "definedIn": [
+    "actionmailer/lib/action_mailer.rb",
+    "actionpack/lib/abstract_controller.rb",
+    "actionpack/lib/abstract_controller/base.rb",
+    "actionpack/lib/action_controller/metal.rb",
+    "actionpack/lib/action_dispatch.rb",
+    "actionpack/lib/action_dispatch/http/mime_type.rb",
+    "actionpack/lib/action_dispatch/journey/formatter.rb",
+    "actionpack/lib/action_dispatch/journey/path/pattern.rb",
+    "actionpack/lib/action_dispatch/journey/route.rb",
+    "actionpack/lib/action_dispatch/journey/router.rb",
+    "actionpack/lib/action_dispatch/routing/route_set.rb",
+    "actionview/lib/action_view.rb",
+    "actionview/lib/action_view/dependency_tracker.rb",
+    "actionview/lib/action_view/helpers.rb",
+    "actionview/lib/action_view/rendering.rb",
+    "actionview/lib/action_view/view_paths.rb",
+    "activemodel/lib/active_model.rb",
+    "activerecord/lib/active_record.rb",
+    "activerecord/lib/active_record/associations.rb",
+    "activerecord/lib/active_record/encryption.rb",
+    "activerecord/lib/active_record/relation/query_methods.rb",
+    "activesupport/lib/active_support.rb",
+    "activesupport/lib/active_support/dependencies/autoload.rb",
+    "railties/lib/rails/application.rb",
+    "railties/lib/rails/engine.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL126",
+   "query": "build retry budget",
+   "identifier": "build_retry_budget",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/abstract_proxy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL127",
+   "query": "download chunk",
+   "identifier": "download_chunk",
+   "definedIn": [
+    "activestorage/app/models/active_storage/blob.rb",
+    "activestorage/lib/active_storage/service.rb",
+    "activestorage/lib/active_storage/service/disk_service.rb",
+    "activestorage/lib/active_storage/service/gcs_service.rb",
+    "activestorage/lib/active_storage/service/s3_service.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL128",
+   "query": "after rollback",
+   "identifier": "after_rollback",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/transaction.rb",
+    "activerecord/lib/active_record/transaction.rb",
+    "activerecord/lib/active_record/transactions.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL129",
+   "query": "read multi entries",
+   "identifier": "read_multi_entries",
+   "definedIn": [
+    "activesupport/lib/active_support/cache.rb",
+    "activesupport/lib/active_support/cache/deprecated_redis_cache_store.rb",
+    "activesupport/lib/active_support/cache/mem_cache_store.rb",
+    "activesupport/lib/active_support/cache/redis_cache_store.rb",
+    "activesupport/lib/active_support/cache/strategy/local_cache.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL130",
+   "query": "raise validation error",
+   "identifier": "raise_validation_error",
+   "definedIn": [
+    "activemodel/lib/active_model/validations.rb",
+    "activerecord/lib/active_record/validations.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL131",
+   "query": "checksum implementation",
+   "identifier": "checksum_implementation",
+   "definedIn": [
+    "activestorage/lib/active_storage/service.rb",
+    "activestorage/lib/active_storage/service/s3_service.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL132",
+   "query": "response body",
+   "identifier": "response_body",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal.rb",
+    "actionpack/lib/action_controller/metal/live.rb",
+    "actionpack/lib/action_dispatch/middleware/host_authorization.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL133",
+   "query": "install executor hooks",
+   "identifier": "install_executor_hooks",
+   "definedIn": [
+    "activerecord/lib/active_record/asynchronous_queries_tracker.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb",
+    "activerecord/lib/active_record/query_cache.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL134",
+   "query": "disable referential integrity",
+   "identifier": "disable_referential_integrity",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract_mysql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/referential_integrity.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/mysql_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/sqlite3_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL135",
+   "query": "mirror later",
+   "identifier": "mirror_later",
+   "definedIn": [
+    "activestorage/app/models/active_storage/blob.rb",
+    "activestorage/lib/active_storage/service/mirror_service.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL136",
+   "query": "deep dup",
+   "identifier": "deep_dup",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/strong_parameters.rb",
+    "activemodel/lib/active_model/attribute_set.rb",
+    "activemodel/lib/active_model/attribute_set/builder.rb",
+    "activesupport/lib/active_support/core_ext/object/deep_dup.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL137",
+   "query": "clear all connections!",
+   "identifier": "clear_all_connections!",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_handler.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL138",
+   "query": "add routes",
+   "identifier": "add_routes",
+   "definedIn": [
+    "actionmailbox/lib/action_mailbox/router.rb",
+    "railties/lib/rails/generators/rails/controller/controller_generator.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL139",
+   "query": "schedule query",
+   "identifier": "schedule_query",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/proxy_connection_pool.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL140",
+   "query": "valid table definition options",
+   "identifier": "valid_table_definition_options",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/sqlite3_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/schema_statements.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL141",
+   "query": "column spec for primary key",
+   "identifier": "column_spec_for_primary_key",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_dumper.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_dumper.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL142",
+   "query": "virtual stored?",
+   "identifier": "virtual_stored?",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/postgresql/column.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/column.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL143",
+   "query": "reflection proxy",
+   "identifier": "ReflectionProxy",
+   "definedIn": [
+    "activerecord/lib/active_record/associations/association_scope.rb",
+    "activerecord/lib/active_record/fixture_set/table_row.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL144",
+   "query": "add table options!",
+   "identifier": "add_table_options!",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_creation.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_creation.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL145",
+   "query": "sub template message",
+   "identifier": "sub_template_message",
+   "definedIn": [
+    "actionpack/lib/action_dispatch/middleware/exception_wrapper.rb",
+    "actionview/lib/action_view/template/error.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL146",
+   "query": "supports comments in create?",
+   "identifier": "supports_comments_in_create?",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract_mysql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/mysql_proxy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL147",
+   "query": "base root",
+   "identifier": "base_root",
+   "definedIn": [
+    "activerecord/lib/rails/generators/active_record.rb",
+    "railties/lib/rails/generators/base.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL148",
+   "query": "filter routes",
+   "identifier": "filter_routes",
+   "definedIn": [
+    "actionpack/lib/action_dispatch/journey/router.rb",
+    "actionpack/lib/action_dispatch/routing/inspector.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL149",
+   "query": "generate url helpers",
+   "identifier": "generate_url_helpers",
+   "definedIn": [
+    "actionpack/lib/action_dispatch/routing/route_set.rb",
+    "railties/lib/rails/engine/lazy_route_set.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL150",
+   "query": "raw connection",
+   "identifier": "raw_connection",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/abstract_proxy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL151",
+   "query": "with connection",
+   "identifier": "with_connection",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/proxy_connection_pool.rb",
+    "activerecord/lib/active_record/connection_adapters/schema_cache.rb",
+    "activerecord/lib/active_record/connection_handling.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL152",
+   "query": "visit alter table",
+   "identifier": "visit_AlterTable",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_creation.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_creation.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL153",
+   "query": "table exists?",
+   "identifier": "table_exists?",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_statements.rb",
+    "activerecord/lib/active_record/internal_metadata.rb",
+    "activerecord/lib/active_record/model_schema.rb",
+    "activerecord/lib/active_record/schema_migration.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL154",
+   "query": "app name",
+   "identifier": "app_name",
+   "definedIn": [
+    "actionpack/lib/action_dispatch/routing/mapper.rb",
+    "railties/lib/rails/generators/app_name.rb",
+    "railties/lib/rails/generators/rails/devcontainer/devcontainer_generator.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL155",
+   "query": "system testing",
+   "identifier": "SystemTesting",
+   "definedIn": [
+    "actionpack/lib/action_dispatch/system_testing/browser.rb",
+    "actionpack/lib/action_dispatch/system_testing/driver.rb",
+    "actionpack/lib/action_dispatch/system_testing/server.rb",
+    "actionpack/lib/action_dispatch/system_testing/test_helpers/screenshot_helper.rb",
+    "actionpack/lib/action_dispatch/system_testing/test_helpers/setup_and_teardown.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL156",
+   "query": "exec insert",
+   "identifier": "exec_insert",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL157",
+   "query": "absolute path",
+   "identifier": "absolute_path",
+   "definedIn": [
+    "actionpack/lib/action_dispatch/system_testing/test_helpers/screenshot_helper.rb",
+    "activesupport/lib/active_support/syntax_error_proxy.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL158",
+   "query": "key length",
+   "identifier": "key_length",
+   "definedIn": [
+    "activerecord/lib/active_record/encryption/cipher.rb",
+    "activerecord/lib/active_record/encryption/cipher/aes256_gcm.rb",
+    "activerecord/lib/active_record/encryption/key_generator.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL159",
+   "query": "read serialized entry",
+   "identifier": "read_serialized_entry",
+   "definedIn": [
+    "activesupport/lib/active_support/cache/deprecated_redis_cache_store.rb",
+    "activesupport/lib/active_support/cache/file_store.rb",
+    "activesupport/lib/active_support/cache/mem_cache_store.rb",
+    "activesupport/lib/active_support/cache/null_store.rb",
+    "activesupport/lib/active_support/cache/redis_cache_store.rb",
+    "activesupport/lib/active_support/cache/strategy/local_cache.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL160",
+   "query": "built templates",
+   "identifier": "built_templates",
+   "definedIn": [
+    "actionview/lib/action_view/template/resolver.rb",
+    "actionview/lib/action_view/unbound_template.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL161",
+   "query": "from hash",
+   "identifier": "from_hash",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/params_wrapper.rb",
+    "actionpack/lib/action_dispatch/http/headers.rb",
+    "actionpack/lib/action_dispatch/http/param_builder.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL162",
+   "query": "attribute method?",
+   "identifier": "attribute_method?",
+   "definedIn": [
+    "activemodel/lib/active_model/attribute_methods.rb",
+    "activemodel/lib/active_model/attributes.rb",
+    "activemodel/lib/active_model/validations.rb",
+    "activerecord/lib/active_record/attribute_methods.rb",
+    "activerecord/lib/active_record/attribute_methods/primary_key.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL163",
+   "query": "seconds until end of day",
+   "identifier": "seconds_until_end_of_day",
+   "definedIn": [
+    "activesupport/lib/active_support/core_ext/date_time/calculations.rb",
+    "activesupport/lib/active_support/core_ext/time/calculations.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL164",
+   "query": "read attribute for serialization",
+   "identifier": "read_attribute_for_serialization",
+   "definedIn": [
+    "actiontext/lib/action_text/attachable.rb",
+    "activemodel/lib/active_model/serialization.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL165",
+   "query": "namespaced name",
+   "identifier": "namespaced_name",
+   "definedIn": [
+    "railties/lib/rails/command/base.rb",
+    "railties/lib/rails/generators/rails/plugin/plugin_generator.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL166",
+   "query": "cast value",
+   "identifier": "cast_value",
+   "definedIn": [
+    "activemodel/lib/active_model/type/boolean.rb",
+    "activemodel/lib/active_model/type/date.rb",
+    "activemodel/lib/active_model/type/date_time.rb",
+    "activemodel/lib/active_model/type/decimal.rb",
+    "activemodel/lib/active_model/type/float.rb",
+    "activemodel/lib/active_model/type/immutable_string.rb",
+    "activemodel/lib/active_model/type/integer.rb",
+    "activemodel/lib/active_model/type/string.rb",
+    "activemodel/lib/active_model/type/time.rb",
+    "activemodel/lib/active_model/type/value.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/bit.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/cidr.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/date.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/date_time.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/enum.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/interval.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/money.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/range.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/timestamp_with_time_zone.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/oid/uuid.rb",
+    "activerecord/lib/active_record/type/time.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL167",
+   "query": "hidden field",
+   "identifier": "hidden_field",
+   "definedIn": [
+    "actionview/lib/action_view/helpers/form_helper.rb",
+    "actionview/lib/action_view/helpers/tags/collection_helpers.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL168",
+   "query": "strict loading?",
+   "identifier": "strict_loading?",
+   "definedIn": [
+    "activerecord/lib/active_record/associations/join_dependency/join_association.rb",
+    "activerecord/lib/active_record/core.rb",
+    "activerecord/lib/active_record/reflection.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL169",
+   "query": "create test files",
+   "identifier": "create_test_files",
+   "definedIn": [
+    "actioncable/lib/rails/generators/test_unit/channel_generator.rb",
+    "actionmailbox/lib/rails/generators/test_unit/mailbox_generator.rb",
+    "actiontext/lib/rails/generators/test_unit/install_generator.rb",
+    "railties/lib/rails/generators/rails/app/app_generator.rb",
+    "railties/lib/rails/generators/rails/plugin/plugin_generator.rb",
+    "railties/lib/rails/generators/test_unit/controller/controller_generator.rb",
+    "railties/lib/rails/generators/test_unit/integration/integration_generator.rb",
+    "railties/lib/rails/generators/test_unit/mailer/mailer_generator.rb",
+    "railties/lib/rails/generators/test_unit/scaffold/scaffold_generator.rb",
+    "railties/lib/rails/generators/test_unit/system/system_generator.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL170",
+   "query": "bare table name",
+   "identifier": "bare_table_name",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_statements.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL171",
+   "query": "attachable markdown representation",
+   "identifier": "attachable_markdown_representation",
+   "definedIn": [
+    "actiontext/lib/action_text/attachables/content_attachment.rb",
+    "actiontext/lib/action_text/attachables/missing_attachable.rb",
+    "actiontext/lib/action_text/attachables/remote_image.rb",
+    "actiontext/lib/action_text/engine.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL172",
+   "query": "validates absence of",
+   "identifier": "validates_absence_of",
+   "definedIn": [
+    "activemodel/lib/active_model/validations/absence.rb",
+    "activerecord/lib/active_record/validations/absence.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL173",
+   "query": "content security policy",
+   "identifier": "content_security_policy",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/content_security_policy.rb",
+    "actionpack/lib/action_dispatch/http/content_security_policy.rb",
+    "railties/lib/rails/application/configuration.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL174",
+   "query": "routing error",
+   "identifier": "RoutingError",
+   "definedIn": [
+    "actionmailbox/lib/action_mailbox/router.rb",
+    "actionpack/lib/action_controller/metal/exceptions.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL175",
+   "query": "minus with duration",
+   "identifier": "minus_with_duration",
+   "definedIn": [
+    "activesupport/lib/active_support/core_ext/date/calculations.rb",
+    "activesupport/lib/active_support/core_ext/time/calculations.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL176",
+   "query": "default value",
+   "identifier": "default_value",
+   "definedIn": [
+    "activemodel/lib/active_model/type.rb",
+    "activerecord/lib/active_record/type.rb",
+    "activesupport/lib/active_support/number_helper/number_converter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL177",
+   "query": "error message",
+   "identifier": "error_message",
+   "definedIn": [
+    "actionview/lib/action_view/helpers/active_model_helper.rb",
+    "tools/rail_inspector/lib/rail_inspector/configuring.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL178",
+   "query": "init with",
+   "identifier": "init_with",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/strong_parameters.rb",
+    "activemodel/lib/active_model/attribute.rb",
+    "activerecord/lib/active_record/coders/column_serializer.rb",
+    "activerecord/lib/active_record/coders/yaml_column.rb",
+    "activerecord/lib/active_record/connection_adapters/column.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/column.rb",
+    "activerecord/lib/active_record/connection_adapters/schema_cache.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/column.rb",
+    "activerecord/lib/active_record/core.rb",
+    "activerecord/lib/active_record/locking/optimistic.rb",
+    "activesupport/lib/active_support/duration.rb",
+    "activesupport/lib/active_support/time_with_zone.rb",
+    "activesupport/lib/active_support/values/time_zone.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL179",
+   "query": "supports index using?",
+   "identifier": "supports_index_using?",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_creation.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/schema_creation.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL180",
+   "query": "print list",
+   "identifier": "print_list",
+   "definedIn": [
+    "railties/lib/rails/command/behavior.rb",
+    "railties/lib/rails/generators.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL181",
+   "query": "insert after",
+   "identifier": "insert_after",
+   "definedIn": [
+    "actionpack/lib/action_dispatch/middleware/stack.rb",
+    "railties/lib/rails/configuration.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL182",
+   "query": "new column definition",
+   "identifier": "new_column_definition",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/compatibility_behavior.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/sqlite3/schema_definitions.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL183",
+   "query": "collect warnings",
+   "identifier": "collect_warnings",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract_mysql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/abstract_proxy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL184",
+   "query": "method added",
+   "identifier": "method_added",
+   "definedIn": [
+    "actioncable/lib/action_cable/channel/base.rb",
+    "actionpack/lib/abstract_controller/base.rb",
+    "activesupport/lib/active_support/current_attributes.rb",
+    "activesupport/lib/active_support/subscriber.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL185",
+   "query": "build record",
+   "identifier": "build_record",
+   "definedIn": [
+    "activerecord/lib/active_record/associations/association.rb",
+    "activerecord/lib/active_record/associations/has_many_through_association.rb",
+    "activerecord/lib/active_record/associations/through_association.rb",
+    "activerecord/lib/active_record/message_pack.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL186",
+   "query": "user input in time zone",
+   "identifier": "user_input_in_time_zone",
+   "definedIn": [
+    "activemodel/lib/active_model/type/helpers/time_value.rb",
+    "activemodel/lib/active_model/type/time.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL187",
+   "query": "schema migration",
+   "identifier": "schema_migration",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/connection_pool.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/proxy_connection_pool.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL188",
+   "query": "stringify keys",
+   "identifier": "stringify_keys",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/strong_parameters.rb",
+    "activesupport/lib/active_support/core_ext/hash/keys.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL189",
+   "query": "content security policy",
+   "identifier": "ContentSecurityPolicy",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/content_security_policy.rb",
+    "actionpack/lib/action_dispatch/http/content_security_policy.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL190",
+   "query": "absence validator",
+   "identifier": "AbsenceValidator",
+   "definedIn": [
+    "activemodel/lib/active_model/validations/absence.rb",
+    "activerecord/lib/active_record/validations/absence.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL191",
+   "query": "permissions policy",
+   "identifier": "permissions_policy",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/permissions_policy.rb",
+    "actionpack/lib/action_dispatch/http/permissions_policy.rb",
+    "railties/lib/rails/application/configuration.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL192",
+   "query": "as editable",
+   "identifier": "as_editable",
+   "definedIn": [
+    "actiontext/lib/action_text/editor.rb",
+    "actiontext/lib/action_text/editor/trix_editor.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL193",
+   "query": "attribute methods",
+   "identifier": "AttributeMethods",
+   "definedIn": [
+    "activemodel/lib/active_model/attribute_methods.rb",
+    "activerecord/lib/active_record.rb",
+    "activerecord/lib/active_record/attribute_methods.rb",
+    "activerecord/lib/active_record/attribute_methods/before_type_cast.rb",
+    "activerecord/lib/active_record/attribute_methods/composite_primary_key.rb",
+    "activerecord/lib/active_record/attribute_methods/dirty.rb",
+    "activerecord/lib/active_record/attribute_methods/primary_key.rb",
+    "activerecord/lib/active_record/attribute_methods/query.rb",
+    "activerecord/lib/active_record/attribute_methods/read.rb",
+    "activerecord/lib/active_record/attribute_methods/serialization.rb",
+    "activerecord/lib/active_record/attribute_methods/time_zone_conversion.rb",
+    "activerecord/lib/active_record/attribute_methods/write.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL194",
+   "query": "rename index",
+   "identifier": "rename_index",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_definitions.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract_mysql_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/postgresql/schema_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/mysql_proxy_adapter.rb",
+    "activerecord/lib/active_record/connection_adapters/ractor_connection_handler/postgresql_proxy_adapter.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL195",
+   "query": "schema precision",
+   "identifier": "schema_precision",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/schema_dumper.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql/schema_dumper.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL196",
+   "query": "select all",
+   "identifier": "select_all",
+   "definedIn": [
+    "activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb",
+    "activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb",
+    "activerecord/lib/active_record/connection_adapters/mysql2/database_statements.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL197",
+   "query": "usage path",
+   "identifier": "usage_path",
+   "definedIn": [
+    "railties/lib/rails/command/base.rb",
+    "railties/lib/rails/generators/base.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL198",
+   "query": "compact blank",
+   "identifier": "compact_blank",
+   "definedIn": [
+    "actionpack/lib/action_controller/metal/strong_parameters.rb",
+    "activesupport/lib/active_support/core_ext/enumerable.rb"
+   ]
+  },
+  {
+   "id": "IDRAIL199",
+   "query": "image magick",
+   "identifier": "ImageMagick",
+   "definedIn": [
+    "activestorage/lib/active_storage/analyzer/image_analyzer/image_magick.rb",
+    "activestorage/lib/active_storage/transformers/image_magick.rb"
+   ]
+  }
+ ]
+}

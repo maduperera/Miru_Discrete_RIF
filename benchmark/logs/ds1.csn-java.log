@@ -1,0 +1,74 @@
+Embedding 500 queries with ds1-miru-int8 (DS1 API)… done
+wrote 500 candidate pools (topK=3) -> /Users/madusha/Documents/Kalpana-Series/Miru_Dicsrete_RIF/.bench/kalpana/candidates.ds1-miru-int8.queries.csn-java.k3.json
+roles for 1500 candidates (100.0% with >=1 role) by language {"java":1500} -> .bench/kalpana/candidates.ds1-miru-int8.queries.csn-java.k3.ts.json
+wrote 500 candidate pools (topK=5) -> /Users/madusha/Documents/Kalpana-Series/Miru_Dicsrete_RIF/.bench/kalpana/candidates.ds1-miru-int8.queries.csn-java.k5.json
+roles for 2500 candidates (100.0% with >=1 role) by language {"java":2500} -> .bench/kalpana/candidates.ds1-miru-int8.queries.csn-java.k5.ts.json
+Loading Kalpana-RIF (DS1 codebook)…
+Offline: tensorizing 453 unique pool chunks…
+  prefetched 503 new token vectors (ds1)
+
+============================================================================================
+ Miru + Kalpana-RIF fusion benchmark v2   (bun 1.4.3, 501 chunks)
+ 500 queries | Miru pool K=5 | pool Recall@K = 82.6% (identical for all arms)
+ Distractor = generic pattern AND not in the query's ground-truth file list
+============================================================================================
+ Metric                               Baseline    Kalpana        RRF Lin a=0.6*   Lin CV5†
+ -------------------------------------------------------------------------------------------
+ Top-1  (defining file at rank 1)      54.0%      35.6% ▼    55.0% ▲    49.2% ▼    49.2% ▼
+ Hit@3  (defining file in top 3)       75.8%      73.2% ▼    76.8% ▲    78.6% ▲    78.6% ▲
+ Def@3  (defining chunk in top 3)      75.6%      73.2% ▼    76.6% ▲    78.6% ▲    78.6% ▲
+ Precision@3                           25.3%      24.4% ▼    25.6% ▲    26.2% ▲    26.2% ▲
+ MRR@K  (file)                         0.652      0.544 ▼    0.661 ▲    0.631 ▼    0.631 ▼
+ MRR@K  (defining chunk)               0.650      0.543 ▼    0.661 ▲    0.631 ▼    0.631 ▼
+ Distractor share of top 3              0.0%       0.0%       0.0%       0.0%       0.0%  
+ Distractor at rank 1                   0.0%       0.0%       0.0%       0.0%       0.0%  
+ Rank-1 distractor suppressed n=0       0.0%       0.0%       0.0%       0.0%       0.0%  
+ -------------------------------------------------------------------------------------------
+ * alpha chosen on all 500 queries (in-sample, optimistic).
+ † alpha chosen on train folds, scored on held-out folds; per-fold alpha = [0.6, 0.6, 0.6, 0.6, 0.6]
+
+ Alpha sweep   final = (1-a)*minmax(miru_score) + a*minmax(kalpana_cos)
+ -------------------------------------------------------------------------------------------
+  alpha    Top-1    Hit@3    Def@3     MRR  MRRdef   Hit@3 W/L       p   Def@3 W/L       p
+    0.1    54.6%    76.0%    75.8%   0.657   0.655     1/0      1.0000     1/0      1.0000
+    0.2    54.6%    76.6%    76.4%   0.660   0.658     5/1      0.2188     5/1      0.2188
+    0.3    55.6%    78.2%    78.0%   0.668   0.666    13/1      0.0018    13/1      0.0018
+    0.4    54.8%    78.2%    78.0%   0.664   0.662    18/6      0.0227    18/6      0.0227
+    0.5    53.0%    78.2%    78.0%   0.653   0.653    25/13     0.0730    25/13     0.0730
+    0.6    49.2%    78.6%    78.6%   0.631   0.631    28/14     0.0436    28/13     0.0275 *
+    0.7    44.8%    77.2%    77.2%   0.604   0.603    27/20     0.3817    27/19     0.3020
+ -------------------------------------------------------------------------------------------
+ argmax Def@3 -> a=0.6   argmax MRR -> a=0.3   selected (Def@3, tie MRR) -> a=0.6
+   Lin a=0.6 (in-sample)      Hit@3 W/L 28/14 p=0.0436   Def@3 W/L 28/13 p=0.0275
+   Lin CV5 (held-out)         Hit@3 W/L 28/14 p=0.0436   Def@3 W/L 28/13 p=0.0275
+   RRF                        Hit@3 W/L 19/14 p=0.4869   Def@3 W/L 19/14 p=0.4869
+
+ Latency / query (ms) — pool tensors pre-computed offline
+ -------------------------------------------------------------------------------------------
+                                                   p50      p95
+   Miru search (Top-5)                           6.544    9.626
+   Miru query embedding (DS1 API, n=100)       128.495  180.095
+   Kalpana query tensor, cold (DS1 API call)   354.947  461.065
+   Kalpana query tensor, warm (token cached)     0.190    0.418
+   Kalpana pool scoring (mat-vec + sort)         0.046    0.080
+   Overhead above Miru, cold query             354.986  461.117   >= 1 ms at p95
+   Overhead above Miru, warm query               0.236    0.511   < 1 ms at p95
+ Offline tensor build: 453 chunks in 0.9s (built); model load 0.3s (one-time)
+ Chunks with ≥1 extracted pair: 100.0%
+============================================================================================
+
+ Results -> benchmark/results.kalpana.ds1-miru-int8.queries.csn-java.k5.ts.json
+================================================================================================
+ csn-java (tree-sitter)   (500 queries)   ceiling: defining chunk anywhere in top-5 = 82.4%
+------------------------------------------------------------------------------------------------
+ Top-3 drawn from                        File@3  Chunk@3   vs native K=3: Chunk W/L       p  File W/L      p
+ Miru native topK=3                       75.2%    75.0%                          —
+ Miru topK=5 first 3 (no rerank)          75.8%    75.6%                    5/2      0.4531     5/2    0.453
+ Kalpana RRF                              76.8%    76.6%                   23/15     0.2559    23/15   0.256
+ Kalpana held-out alpha                   78.6%    78.6%                   32/14     0.0114    32/15   0.019
+------------------------------------------------------------------------------------------------
+ Do-no-harm vs the same top-5 pool un-reranked (correct defining chunk removed from top 3 = loss):
+   Kalpana RRF                          Chunk W/L  19/14  p=4.87e-01   File W/L  19/14  p=4.87e-01   14 chunk loss(es)
+   Kalpana held-out alpha               Chunk W/L  28/13  p=2.75e-02   File W/L  28/14  p=4.36e-02   13 chunk loss(es)
+================================================================================================
+ Held-out alphas per fold: [0.6, 0.6, 0.6, 0.6, 0.6]

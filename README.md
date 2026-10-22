@@ -197,6 +197,84 @@ sh scripts/run_miru_suite.sh                    # prep CodeSearchNet + curated r
 # logs: benchmark/logs/{csn,ab}-*.log
 ```
 
+### Takara DS1 embedder, and an identifier-style held-out set
+
+The local MiniLM stand-in was replaced by Takara's own `ds1-miru-int8` (256-D, int8 on the wire) through the OpenAI-compatible endpoint Miru itself calls. DS1 is used in **two places at once**: Miru's retrieval (index and query vectors) and Kalpana's token codebook (`KalpanaReranker(embedder="ds1")`). Isolating the two (DS1 pools scored with the MiniLM codebook) is possible with `--embedder minilm` but has **not been run**. The API key is read from `TAKARA_API_KEY` (environment or the gitignored `.env`; see [.env.example](.env.example)) and is never written to the repo. MiniLM remains the default and the fallback.
+
+**Miru's own suites, re-run with DS1** (same queries, same protocol and same tree-sitter extractor as above; Kalpana = linear fusion, α by 5-fold CV, scored on held-out folds; win/loss vs Miru native topK=3):
+
+| CodeSearchNet | Miru native Chunk@3 | + Kalpana | Win / Loss | p | vs same top-5 pool |
+|---|---:|---:|---:|---:|---:|
+| Ruby | 67.4% | 70.2% | 20 / 6 | 0.009 | 16 / 4 |
+| PHP | 68.8% | 71.2% | 15 / 3 | 0.008 | 15 / 4 |
+| Java | 75.0% | 78.6% | 32 / 14 | 0.011 | 28 / 13 |
+| Go | 86.4% | 87.8% | 10 / 3 | 0.092 | 9 / 2 |
+| JavaScript | 51.4% | 54.4% | 16 / 1 | < 0.001 | 13 / 1 |
+| Python | 91.0% | 91.0% | 0 / 0 | 1.00 | 0 / 0 |
+| **Pooled (3,000)** | 73.3% | 75.5% | **93 / 27** | **< 0.001** | 81 / 24 |
+
+For comparison, MiniLM pooled: native 74.6%, + Kalpana 75.3%, 64 / 43 (p = 0.053). **DS1 is not the stronger retriever here** (native Chunk@3 is lower on Ruby, PHP, Go and JavaScript), but Kalpana's gain is larger and cleaner on it. The curated A/B suite is unchanged (miru-code and phoenix 100% File@3, axum and serde 0%).
+
+**Identifier-style queries** ("where is *X* defined", the setting Kalpana targets), kept **separate** from the natural-language CodeSearchNet queries. Up to 200 queries per repo, drawn with a fixed seed (`0xA11CE`) and the rule in [benchmark/identifier_repos.json](benchmark/identifier_repos.json) (identifier ≥ 8 chars, ≥ 2 words, defined in ≥ 2 files over 2–30 directories, tests and vendored code excluded). Repos are pinned in [benchmark/identifier_repos.lock.json](benchmark/identifier_repos.lock.json). Rules and seed were fixed before any result was seen. Full tables, including the top-5 ceiling and latency, are in [benchmark/summary.identifier.md](benchmark/summary.identifier.md).
+
+| Language (repo) | n | Native Chunk@3 | + Kalpana | Win / Loss | p |
+|---|---:|---:|---:|---:|---:|
+| C (redis) | 43 | 58.1% | 65.1% | 3 / 0 | 0.25 |
+| C++ (abseil) | 57 | 31.6% | 42.1% | 6 / 0 | 0.031 |
+| C# (Newtonsoft.Json) | 200 | 52.5% | 56.5% | 12 / 4 | 0.077 |
+| Scala (Play) | 200 | 59.5% | 67.5% | 18 / 2 | < 0.001 |
+| Haskell (pandoc) | 78 | 64.1% | 76.9% | 10 / 0 | 0.002 |
+| PHP (laravel) | 200 | 64.0% | 74.0% | 22 / 2 | < 0.001 |
+| Go (hugo) | 200 | 43.5% | 53.0% | 19 / 0 | < 0.001 |
+| Elixir (ecto) | 28 | 71.4% | 78.6% | 3 / 1 | 0.63 |
+| JavaScript (webpack) | 200 | 22.0% | 28.0% | 13 / 1 | 0.002 |
+| Java (guava) | 200 | 43.5% | 50.5% | 15 / 1 | 0.001 |
+| Ruby (rails) | 200 | 66.5% | 73.0% | 16 / 3 | 0.004 |
+| Rust (tokio) | 200 | 58.5% | 71.0% | 26 / 1 | < 0.001 |
+| TypeScript (vite) | 47 | 34.0% | 44.7% | 5 / 0 | 0.062 |
+| **Pooled, held-out (1,853)** | | 51.2% | 59.5% | **168 / 15** | **< 0.001** |
+| Python (scikit-learn) † | 91 | 58.2% | 71.4% | 12 / 0 | < 0.001 |
+
+† used during development with MiniLM, so it is **not held-out** and is excluded from the pooled row. Against the same top-5 pool un-reranked, the pooled held-out result is 181 wins / 12 losses. Every language moves the same way; none regresses.
+
+**Latency per query including the embedding call** (DS1 over the network, p50 / p95, sequential single-query timings, identical across repos to within noise):
+
+| Stage | p50 | p95 |
+|---|---:|---:|
+| Miru query embedding (DS1 API) | 121–131 ms | 146–233 ms |
+| Miru search (topK=5, vector supplied) | 5–46 ms (repo size) | 7–71 ms |
+| Kalpana query tensor, **cold** (its own DS1 call) | 353–370 ms | 415–487 ms |
+| Kalpana query tensor, warm (phrase cached) | 0.2 ms | 0.3–0.9 ms |
+| Kalpana pool scoring (mat-vec + sort) | 0.05 ms | 0.1 ms |
+
+The earlier "0.1–0.2 ms" figure only holds when the query phrase is already cached. A cold Kalpana query currently makes a second DS1 call for text Miru has just embedded. Reusing Miru's query vector would remove it, but that is **not implemented or measured**.
+
+**Not evaluated, and why**
+
+* **Solidity, OCaml:** Miru's indexer has no `.sol` / `.ml` entry in `EXTENSION_TO_LANGUAGE` (`src/index/files.ts`), so those files are never indexed even though the grammars ship (Solidity pilot: 0 of 2,470 chunks were Solidity, pool recall 0%).
+* **Dart:** the vendored `tree-sitter-dart.wasm` cannot be loaded by `web-tree-sitter` 0.26.13 (`getDylinkMetadata` fails), so roles and definitions cannot be extracted.
+* **Haskell** needed a language-specific branch in the extractor (like Elixir): bindings have no `name` field. Before the fix the extractor found 24 definitions in 366 pandoc files; after, 3,945. All other languages' roles are unchanged.
+
+**Caveats for the identifier-style numbers**
+
+* **Labels and features share a parser, so the identifier-style gains were re-checked with an independent labeller** ([miru_kalpana/relabel_independent.py](miru_kalpana/relabel_independent.py), results in [benchmark/summary.independent.md](benchmark/summary.independent.md)). The ground truth ("this chunk defines *X*") and Kalpana's `ROLE_FUNC` / `ROLE_CLASS` features both come from the same tree-sitter extraction. universal-ctags could not be installed on this macOS version, so the check uses Pygments lexers (C, C++, C#, Scala, Haskell, PHP, Java, Ruby, Rust) and hand-written regexes (Go, Elixir, JavaScript, TypeScript). A returned chunk counts as correct if its text lexically defines the identifier, in any file. **The gain survives but is smaller:** pooled held-out, native 57.4% → Kalpana 63.6% (**145 wins / 30 losses**, p < 0.001), against 51.2% → 59.5% (168 / 15) with tree-sitter labels. Per repo (independent labels), significant at p < 0.05: Scala, PHP, Go, Java, Ruby, Rust; positive but not significant: C, C++, C#, Haskell, Elixir, JavaScript, TypeScript. Limits of this check: it is a lexical test, not a second parser; Pygments does not tag Haskell data types, so Haskell is undercounted; the regex labeller for JS/TS is looser than the tree-sitter one; and a PHP bug in the labeller (untagged mid-file chunks lexed as HTML) was found and fixed after seeing the first run. CodeSearchNet labels never depended on the extractor.
+* **Small sets:** C (43), C++ (57), Elixir (28), TypeScript (47) and Haskell (78) are underpowered. The distinct-name rule leaves few eligible identifiers in those repos.
+* **Native Chunk@3 is low (22–71%) by construction:** every query is an ambiguous symbol defined in several files. The top-5 ceiling is reported next to each result.
+* One repo per language, so language-level conclusions are per-repo.
+
+```bash
+# DS1 key: copy .env.example to .env and fill in TAKARA_API_KEY (never committed)
+python3 -m venv .venv && .venv/bin/pip install numpy       # DS1 runs need numpy only (MiniLM runs also need sentence-transformers + torch)
+PY=.venv/bin/python sh scripts/run_ds1_suite.sh            # CodeSearchNet x6 + curated A/B, DS1 -> benchmark/logs/ds1.*.log
+PY=.venv/bin/python sh scripts/run_identifier_suite.sh     # fetch pinned repos, generate queries, index, rerank, paired tests
+.venv/bin/python miru_kalpana/summarize_results.py                 # -> benchmark/summary.md (DS1 vs MiniLM, CodeSearchNet + A/B)
+.venv/bin/python miru_kalpana/summarize_results.py --suite id      # -> benchmark/summary.identifier.md
+.venv/bin/pip install pygments && .venv/bin/python miru_kalpana/relabel_independent.py   # -> benchmark/summary.independent.md
+EMBEDDER=ds1 sh scripts/run_lang.sh <repo>                 # single repo, DS1 (default without EMBEDDER: MiniLM)
+```
+
+Per-query results are in `benchmark/results.kalpana.ds1-miru-int8.queries.*.json`.
+
 ### How we got here (development history, frozen 150 queries)
 
 | Step | Pool | Result |

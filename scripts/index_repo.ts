@@ -9,6 +9,7 @@ import { spawn } from "node:child_process";
 import { mkdirSync, rmSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import "../src/dotenv.ts"; // TAKARA_API_KEY etc. from the gitignored .env (process env wins)
 import { createEmbedder, embedderChoice } from "../src/embedder.ts";
 import { startEmbeddingServer } from "../src/local-embedding-server.ts";
 
@@ -18,7 +19,8 @@ const int8 = process.argv.includes("--int8");
 if (!repo) throw new Error("usage: index_repo.ts <repo-dir-name under eval-repos/> [--int8]");
 
 const repoPath = path.join(root, "eval-repos", repo);
-const outDir = path.join(root, ".miru", repo + (int8 ? "-int8" : ""), "index");
+// DS1 indexes live beside (never over) the MiniLM ones: .miru/<repo>-ds1/index
+const outDir = path.join(root, ".miru", repo + (embedderChoice() === "ds1" ? "-ds1" : "") + (int8 ? "-int8" : ""), "index");
 rmSync(outDir, { recursive: true, force: true });
 mkdirSync(path.dirname(outDir), { recursive: true });
 
@@ -43,7 +45,12 @@ const child = spawn(bun, [path.join(root, "scripts", "miru_index_runner.ts"), re
           MIRU_EMBEDDING_BATCH_SIZE: "16",
           MIRU_CONCURRENCY: "2",
         }
-      : {}),
+      : {
+          // DS1: Miru embeds straight against the API (key/base URL/model come from .env). Requests of 128
+          // chunks were probed OK; stay below any server-side cap and don't hammer the endpoint.
+          MIRU_EMBEDDING_BATCH_SIZE: process.env.MIRU_EMBEDDING_BATCH_SIZE ?? "128",
+          MIRU_CONCURRENCY: process.env.MIRU_CONCURRENCY ?? "4",
+        }),
     MIRU_CACHE_HOME: path.join(root, ".miru", "_cache"),
     MIRU_CREDENTIALS_DIR: path.join(root, ".miru", "_creds"),
     MIRU_NO_UPDATE_CHECK: "1",

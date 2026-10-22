@@ -1,0 +1,6061 @@
+{
+ "candidates": ".bench/kalpana/candidates.ds1-miru-int8.queries.id-ecto.k5.ts.json",
+ "queries": 28,
+ "poolRecallAtK": 0.9642857142857143,
+ "rrfC": 60,
+ "alphas": [
+  0.1,
+  0.2,
+  0.3,
+  0.4,
+  0.5,
+  0.6,
+  0.7
+ ],
+ "bestAlphaInSample": 0.7,
+ "argmaxDef3": 0.7,
+ "argmaxMRR": 0.7,
+ "cv": {
+  "folds": 5,
+  "seed": 6182160,
+  "alphas": [
+   0.7,
+   0.7,
+   0.7,
+   0.7,
+   0.5
+  ]
+ },
+ "arms": {
+  "baseline": {
+   "hit1": 0.5,
+   "hit3": 0.8928571428571429,
+   "def3": 0.75,
+   "p3": 0.5357142857142857,
+   "mrr": 0.6964285714285714,
+   "mrr_def": 0.5279761904761905,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "kalpana": {
+   "hit1": 0.75,
+   "hit3": 0.8928571428571429,
+   "def3": 0.8214285714285714,
+   "p3": 0.5,
+   "mrr": 0.8273809523809523,
+   "mrr_def": 0.7619047619047619,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 1,
+   "hit3_losses": 1,
+   "hit3_p": 1.0,
+   "def3_wins": 2,
+   "def3_losses": 0,
+   "def3_p": 0.5
+  },
+  "rrf": {
+   "hit1": 0.5357142857142857,
+   "hit3": 0.8928571428571429,
+   "def3": 0.7857142857142857,
+   "p3": 0.5357142857142857,
+   "mrr": 0.718452380952381,
+   "mrr_def": 0.6041666666666666,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 1,
+   "hit3_losses": 1,
+   "hit3_p": 1.0,
+   "def3_wins": 2,
+   "def3_losses": 1,
+   "def3_p": 1.0
+  },
+  "lin0.1": {
+   "hit1": 0.5,
+   "hit3": 0.8928571428571429,
+   "def3": 0.75,
+   "p3": 0.5476190476190476,
+   "mrr": 0.6964285714285714,
+   "mrr_def": 0.5279761904761905,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.2": {
+   "hit1": 0.5,
+   "hit3": 0.9285714285714286,
+   "def3": 0.7857142857142857,
+   "p3": 0.5476190476190476,
+   "mrr": 0.6994047619047619,
+   "mrr_def": 0.5386904761904762,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 1,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 1,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.3": {
+   "hit1": 0.5357142857142857,
+   "hit3": 0.9285714285714286,
+   "def3": 0.7857142857142857,
+   "p3": 0.5476190476190476,
+   "mrr": 0.7232142857142857,
+   "mrr_def": 0.5625,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 1,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 1,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.4": {
+   "hit1": 0.5357142857142857,
+   "hit3": 0.8928571428571429,
+   "def3": 0.7857142857142857,
+   "p3": 0.5357142857142857,
+   "mrr": 0.7202380952380952,
+   "mrr_def": 0.5625,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 1,
+   "hit3_losses": 1,
+   "hit3_p": 1.0,
+   "def3_wins": 2,
+   "def3_losses": 1,
+   "def3_p": 1.0
+  },
+  "lin0.5": {
+   "hit1": 0.6071428571428571,
+   "hit3": 0.9285714285714286,
+   "def3": 0.7857142857142857,
+   "p3": 0.5476190476190476,
+   "mrr": 0.7648809523809523,
+   "mrr_def": 0.6339285714285714,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 2,
+   "hit3_losses": 1,
+   "hit3_p": 1.0,
+   "def3_wins": 2,
+   "def3_losses": 1,
+   "def3_p": 1.0
+  },
+  "lin0.6": {
+   "hit1": 0.6071428571428571,
+   "hit3": 0.8928571428571429,
+   "def3": 0.7857142857142857,
+   "p3": 0.5119047619047619,
+   "mrr": 0.7619047619047619,
+   "mrr_def": 0.6517857142857143,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 1,
+   "hit3_losses": 1,
+   "hit3_p": 1.0,
+   "def3_wins": 2,
+   "def3_losses": 1,
+   "def3_p": 1.0
+  },
+  "lin0.7": {
+   "hit1": 0.6428571428571429,
+   "hit3": 0.9285714285714286,
+   "def3": 0.8214285714285714,
+   "p3": 0.5238095238095238,
+   "mrr": 0.7827380952380952,
+   "mrr_def": 0.7083333333333334,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 1,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 2,
+   "def3_losses": 0,
+   "def3_p": 0.5
+  },
+  "cv": {
+   "hit1": 0.6071428571428571,
+   "hit3": 0.8928571428571429,
+   "def3": 0.7857142857142857,
+   "p3": 0.5238095238095238,
+   "mrr": 0.7619047619047619,
+   "mrr_def": 0.6875,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 1,
+   "hit3_losses": 1,
+   "hit3_p": 1.0,
+   "def3_wins": 2,
+   "def3_losses": 1,
+   "def3_p": 1.0
+  }
+ },
+ "latencyMs": {
+  "miru": {
+   "p50": 5.312858000000006,
+   "p95": 6.838600999999983
+  },
+  "queryTensorCold": {
+   "p50": 368.0141880000001,
+   "p95": 416.36671500000057
+  },
+  "queryTensorWarm": {
+   "p50": 0.18993399999978067,
+   "p95": 1.6490590000000083
+  },
+  "poolScoring": {
+   "p50": 0.04623999999964212,
+   "p95": 0.10714699999958555
+  },
+  "overheadCold": {
+   "p50": 368.059218,
+   "p95": 416.41289899999913
+  },
+  "overheadWarm": {
+   "p50": 0.2357139999986657,
+   "p95": 1.7314299999995342
+  },
+  "offlineBuildS": 0.778094962,
+  "modelLoadS": 1.299070347,
+  "miruQueryEmbedding": {
+   "p50": 130.19772699999976,
+   "p95": 209.72594000000004,
+   "n": 28
+  },
+  "embedder": "ds1"
+ },
+ "perQuery": [
+  {
+   "id": "IDECTO0",
+   "query": "primary key!",
+   "identifier": "primary_key!",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto.ex:399",
+     "lib/ecto/association.ex:711",
+     "lib/ecto/repo/assoc.ex:35"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/association.ex:711",
+     "integration_test/support/schemas.exs:292",
+     "lib/ecto.ex:399"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/association.ex:711",
+     "lib/ecto.ex:399",
+     "integration_test/support/schemas.exs:292"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto.ex:399",
+     "lib/ecto/association.ex:711",
+     "lib/ecto/repo/assoc.ex:35"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto.ex:399",
+     "lib/ecto/association.ex:711",
+     "lib/ecto/repo/assoc.ex:35"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto.ex:399",
+     "lib/ecto/association.ex:711",
+     "integration_test/support/schemas.exs:292"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto.ex:399",
+     "lib/ecto/association.ex:711",
+     "integration_test/support/schemas.exs:292"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/association.ex:711",
+     "lib/ecto.ex:399",
+     "integration_test/support/schemas.exs:292"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/association.ex:711",
+     "lib/ecto.ex:399",
+     "integration_test/support/schemas.exs:292"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/association.ex:711",
+     "lib/ecto.ex:399",
+     "integration_test/support/schemas.exs:292"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO1",
+   "query": "start link",
+   "identifier": "start_link",
+   "poolRecall": true,
+   "parsed": 0.6,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:900",
+     "lib/ecto/application.ex:1",
+     "lib/ecto/repo/supervisor.ex:7"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/application.ex:1",
+     "lib/ecto/repo/supervisor.ex:7",
+     "guides/introduction/Getting Started.md:80"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/application.ex:1",
+     "lib/ecto/repo/supervisor.ex:7",
+     "lib/ecto/repo.ex:900"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:900",
+     "lib/ecto/application.ex:1",
+     "lib/ecto/repo/supervisor.ex:7"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:900",
+     "lib/ecto/application.ex:1",
+     "lib/ecto/repo/supervisor.ex:7"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:900",
+     "lib/ecto/application.ex:1",
+     "lib/ecto/repo/supervisor.ex:7"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:900",
+     "lib/ecto/application.ex:1",
+     "lib/ecto/repo/supervisor.ex:7"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/application.ex:1",
+     "lib/ecto/repo/supervisor.ex:7",
+     "lib/ecto/repo.ex:900"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/application.ex:1",
+     "lib/ecto/repo/supervisor.ex:7",
+     "lib/ecto/repo.ex:900"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/application.ex:1",
+     "lib/ecto/repo/supervisor.ex:7",
+     "lib/ecto/repo.ex:900"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDECTO2",
+   "query": "join qual",
+   "identifier": "join_qual",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/join.ex:349",
+     "lib/ecto/query/builder/join.ex:404",
+     "lib/ecto/query/inspect.ex:157"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/join.ex:404",
+     "lib/ecto/query/builder/join.ex:349",
+     "lib/ecto/query/planner.ex:1198"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/join.ex:349",
+     "lib/ecto/query/builder/join.ex:404",
+     "lib/ecto/query/inspect.ex:157"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/join.ex:349",
+     "lib/ecto/query/builder/join.ex:404",
+     "lib/ecto/query/inspect.ex:157"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/join.ex:349",
+     "lib/ecto/query/builder/join.ex:404",
+     "lib/ecto/query/inspect.ex:157"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/join.ex:349",
+     "lib/ecto/query/builder/join.ex:404",
+     "lib/ecto/query/inspect.ex:157"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/join.ex:349",
+     "lib/ecto/query/builder/join.ex:404",
+     "lib/ecto/query/inspect.ex:157"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/join.ex:349",
+     "lib/ecto/query/builder/join.ex:404",
+     "lib/ecto/query/inspect.ex:157"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/join.ex:349",
+     "lib/ecto/query/builder/join.ex:404",
+     "lib/ecto/query/inspect.ex:157"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/join.ex:349",
+     "lib/ecto/query/builder/join.ex:404",
+     "lib/ecto/query/inspect.ex:157"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDECTO3",
+   "query": "insert or update",
+   "identifier": "insert_or_update",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo.ex:1648",
+     "lib/ecto/repo/schema.ex:735"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/schema.ex:735",
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/multi.ex:644"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo/schema.ex:735",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo.ex:1648",
+     "lib/ecto/repo/schema.ex:735"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo/schema.ex:735",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo/schema.ex:735",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo/schema.ex:735",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo/schema.ex:735",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo/schema.ex:735",
+     "lib/ecto/multi.ex:644"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo/schema.ex:735",
+     "lib/ecto/multi.ex:644"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDECTO4",
+   "query": "escape params",
+   "identifier": "escape_params",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder/select.ex:76",
+     "lib/ecto/query/builder/order_by.ex:63"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/windows.ex:53",
+     "lib/ecto/query/builder/order_by.ex:63",
+     "lib/ecto/query/builder/dynamic.ex:3"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.2,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder/order_by.ex:63",
+     "lib/ecto/query/builder/windows.ex:53"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder/select.ex:76",
+     "lib/ecto/query/builder/order_by.ex:63"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder/select.ex:76",
+     "lib/ecto/query/builder/order_by.ex:63"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder/order_by.ex:63",
+     "lib/ecto/query/builder/select.ex:76"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder/order_by.ex:63",
+     "lib/ecto/query/builder/select.ex:76"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/order_by.ex:63",
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder.ex:113"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/order_by.ex:63",
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder/windows.ex:53"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/order_by.ex:63",
+     "lib/ecto/query/builder/windows.ex:53",
+     "lib/ecto/query/builder/dynamic.ex:3"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO5",
+   "query": "autogenerate id",
+   "identifier": "autogenerate_id",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/schema.ex:2681",
+     "lib/ecto/embedded.ex:251",
+     "test/ecto/repo/autogenerate_test.exs:127"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "test/ecto/repo/autogenerate_test.exs:127",
+     "lib/ecto/embedded.ex:251",
+     "lib/ecto/schema.ex:2681"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/schema.ex:2681",
+     "test/ecto/repo/autogenerate_test.exs:127",
+     "lib/ecto/embedded.ex:251"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/schema.ex:2681",
+     "lib/ecto/embedded.ex:251",
+     "test/ecto/repo/autogenerate_test.exs:127"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/schema.ex:2681",
+     "lib/ecto/embedded.ex:251",
+     "test/ecto/repo/autogenerate_test.exs:127"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/schema.ex:2681",
+     "lib/ecto/embedded.ex:251",
+     "test/ecto/repo/autogenerate_test.exs:127"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/schema.ex:2681",
+     "lib/ecto/embedded.ex:251",
+     "test/ecto/repo/autogenerate_test.exs:127"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:251",
+     "lib/ecto/schema.ex:2681",
+     "test/ecto/repo/autogenerate_test.exs:127"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:251",
+     "test/ecto/repo/autogenerate_test.exs:127",
+     "lib/ecto/schema.ex:2681"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:251",
+     "test/ecto/repo/autogenerate_test.exs:127",
+     "lib/ecto/schema.ex:2681"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO6",
+   "query": "delete all",
+   "identifier": "delete_all",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.2,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:688",
+     "integration_test/support/schemas.exs:33",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/association.ex:967",
+     "integration_test/support/schemas.exs:33",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "integration_test/support/schemas.exs:33",
+     "lib/ecto/multi.ex:688",
+     "lib/ecto/association.ex:967"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.2,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:688",
+     "integration_test/support/schemas.exs:33",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:688",
+     "integration_test/support/schemas.exs:33",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:688",
+     "integration_test/support/schemas.exs:33",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:688",
+     "integration_test/support/schemas.exs:33",
+     "lib/ecto/association.ex:967"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:688",
+     "lib/ecto/association.ex:967",
+     "integration_test/support/schemas.exs:33"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/association.ex:967",
+     "lib/ecto/multi.ex:688",
+     "integration_test/support/schemas.exs:33"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/association.ex:967",
+     "lib/ecto/multi.ex:688",
+     "integration_test/support/schemas.exs:33"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO7",
+   "query": "assert struct!",
+   "identifier": "assert_struct!",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto.ex:673",
+     "lib/ecto/repo/preloader.ex:507",
+     "lib/ecto/changeset/relation.ex:184"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/preloader.ex:507",
+     "lib/ecto.ex:673",
+     "lib/ecto/repo/queryable.ex:587"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto.ex:673",
+     "lib/ecto/repo/preloader.ex:507",
+     "lib/ecto/changeset/relation.ex:184"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto.ex:673",
+     "lib/ecto/repo/preloader.ex:507",
+     "lib/ecto/changeset/relation.ex:184"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto.ex:673",
+     "lib/ecto/repo/preloader.ex:507",
+     "lib/ecto/changeset/relation.ex:184"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/preloader.ex:507",
+     "lib/ecto.ex:673",
+     "lib/ecto/changeset/relation.ex:184"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/preloader.ex:507",
+     "lib/ecto.ex:673",
+     "lib/ecto/changeset/relation.ex:184"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/preloader.ex:507",
+     "lib/ecto.ex:673",
+     "lib/ecto/changeset/relation.ex:184"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/preloader.ex:507",
+     "lib/ecto.ex:673",
+     "lib/ecto/changeset/relation.ex:184"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/preloader.ex:507",
+     "lib/ecto.ex:673",
+     "lib/ecto/changeset/relation.ex:184"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO8",
+   "query": "not nil!",
+   "identifier": "not_nil!",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:171",
+     "lib/ecto/query/builder.ex:1339",
+     "lib/ecto/query/planner.ex:2339"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:171",
+     "lib/ecto/query/builder.ex:1339",
+     "lib/ecto/changeset/relation.ex:59"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:171",
+     "lib/ecto/query/builder.ex:1339",
+     "lib/ecto/query/planner.ex:2339"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:171",
+     "lib/ecto/query/builder.ex:1339",
+     "lib/ecto/query/planner.ex:2339"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:171",
+     "lib/ecto/query/builder.ex:1339",
+     "lib/ecto/query/planner.ex:2339"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:171",
+     "lib/ecto/query/builder.ex:1339",
+     "lib/ecto/query/planner.ex:2339"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:171",
+     "lib/ecto/query/builder.ex:1339",
+     "lib/ecto/query/planner.ex:2339"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:171",
+     "lib/ecto/query/builder.ex:1339",
+     "lib/ecto/query/planner.ex:2339"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:171",
+     "lib/ecto/query/builder.ex:1339",
+     "lib/ecto/query/planner.ex:2339"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:171",
+     "lib/ecto/query/builder.ex:1339",
+     "lib/ecto/query/planner.ex:2339"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO9",
+   "query": "to field",
+   "identifier": "to_field",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:1489",
+     "lib/ecto/changeset.ex:2866",
+     "lib/ecto/repo/schema.ex:689"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:171",
+     "lib/ecto/changeset.ex:2866",
+     "lib/ecto/schema.ex:643"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset.ex:2866",
+     "lib/ecto/query/builder/filter.ex:171",
+     "lib/ecto/query/planner.ex:1489"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:1489",
+     "lib/ecto/changeset.ex:2866",
+     "lib/ecto/repo/schema.ex:689"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:1489",
+     "lib/ecto/changeset.ex:2866",
+     "lib/ecto/query/builder/filter.ex:171"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset.ex:2866",
+     "lib/ecto/query/planner.ex:1489",
+     "lib/ecto/query/builder/filter.ex:171"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset.ex:2866",
+     "lib/ecto/query/planner.ex:1489",
+     "lib/ecto/query/builder/filter.ex:171"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset.ex:2866",
+     "lib/ecto/query/builder/filter.ex:171",
+     "lib/ecto/query/planner.ex:1489"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset.ex:2866",
+     "lib/ecto/query/builder/filter.ex:171",
+     "lib/ecto/query/planner.ex:1489"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset.ex:2866",
+     "lib/ecto/query/builder/filter.ex:171",
+     "lib/ecto/query/planner.ex:1489"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO10",
+   "query": "update all",
+   "identifier": "update_all",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:1562",
+     "lib/ecto/multi.ex:644",
+     "integration_test/cases/type.exs:234"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "test/ecto/multi_test.exs:535",
+     "integration_test/cases/type.exs:234",
+     "lib/ecto/multi.ex:644"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:644",
+     "integration_test/cases/type.exs:234",
+     "lib/ecto/repo.ex:1562"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:1562",
+     "lib/ecto/multi.ex:644",
+     "integration_test/cases/type.exs:234"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:1562",
+     "lib/ecto/multi.ex:644",
+     "integration_test/cases/type.exs:234"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:644",
+     "lib/ecto/repo.ex:1562",
+     "integration_test/cases/type.exs:234"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:644",
+     "lib/ecto/repo.ex:1562",
+     "integration_test/cases/type.exs:234"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:644",
+     "lib/ecto/repo.ex:1562",
+     "test/ecto/multi_test.exs:535"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:644",
+     "test/ecto/multi_test.exs:535",
+     "integration_test/cases/type.exs:234"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "test/ecto/multi_test.exs:535",
+     "lib/ecto/multi.ex:644",
+     "integration_test/cases/type.exs:234"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO11",
+   "query": "escape select aliases",
+   "identifier": "escape_select_aliases",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/select.ex:317",
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder.ex:1589"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/planner.ex:398",
+     "lib/ecto/query/builder/select.ex:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder/select.ex:317",
+     "lib/ecto/query/planner.ex:398"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/select.ex:317",
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder.ex:1589"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/select.ex:317",
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder.ex:1589"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/select.ex:317",
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder/select.ex:1"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/select.ex:317",
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder/select.ex:1"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder/select.ex:317",
+     "lib/ecto/query/builder/select.ex:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder/select.ex:317",
+     "lib/ecto/query/builder/select.ex:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/dynamic.ex:3",
+     "lib/ecto/query/builder/select.ex:317",
+     "lib/ecto/query/builder/select.ex:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO12",
+   "query": "all running",
+   "identifier": "all_running",
+   "poolRecall": true,
+   "parsed": 0.4,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:221",
+     "guides/howtos/Multi tenancy with query prefixes.md:70",
+     "CHANGELOG.md:560"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:221",
+     "lib/ecto/multi.ex:558",
+     "guides/howtos/Multi tenancy with query prefixes.md:70"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:221",
+     "guides/howtos/Multi tenancy with query prefixes.md:70",
+     "lib/ecto/multi.ex:558"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:221",
+     "guides/howtos/Multi tenancy with query prefixes.md:70",
+     "CHANGELOG.md:560"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:221",
+     "guides/howtos/Multi tenancy with query prefixes.md:70",
+     "CHANGELOG.md:560"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:221",
+     "guides/howtos/Multi tenancy with query prefixes.md:70",
+     "CHANGELOG.md:560"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:221",
+     "guides/howtos/Multi tenancy with query prefixes.md:70",
+     "CHANGELOG.md:560"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:221",
+     "guides/howtos/Multi tenancy with query prefixes.md:70",
+     "CHANGELOG.md:560"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:221",
+     "guides/howtos/Multi tenancy with query prefixes.md:70",
+     "lib/ecto/multi.ex:558"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:221",
+     "lib/ecto/multi.ex:558",
+     "guides/howtos/Multi tenancy with query prefixes.md:70"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO13",
+   "query": "action to auto",
+   "identifier": "action_to_auto",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:251",
+     "lib/ecto/repo/schema.ex:1336",
+     "lib/ecto/changeset.ex:2318"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:251",
+     "lib/ecto/repo/schema.ex:1336",
+     "lib/ecto/changeset.ex:2318"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:251",
+     "lib/ecto/repo/schema.ex:1336",
+     "lib/ecto/changeset.ex:2318"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:251",
+     "lib/ecto/repo/schema.ex:1336",
+     "lib/ecto/changeset.ex:2318"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:251",
+     "lib/ecto/repo/schema.ex:1336",
+     "lib/ecto/changeset.ex:2318"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:251",
+     "lib/ecto/repo/schema.ex:1336",
+     "lib/ecto/changeset.ex:2318"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:251",
+     "lib/ecto/repo/schema.ex:1336",
+     "lib/ecto/changeset.ex:2318"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:251",
+     "lib/ecto/repo/schema.ex:1336",
+     "lib/ecto/changeset.ex:2318"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:251",
+     "lib/ecto/repo/schema.ex:1336",
+     "lib/ecto/changeset.ex:2318"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:251",
+     "lib/ecto/repo/schema.ex:1336",
+     "lib/ecto/changeset.ex:2318"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO14",
+   "query": "run prepare",
+   "identifier": "run_prepare",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/schema.ex:507",
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/repo.ex:730"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/repo.ex:730",
+     "lib/ecto/multi.ex:558"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/repo/schema.ex:507",
+     "lib/ecto/repo.ex:730"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/schema.ex:507",
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/repo.ex:730"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/schema.ex:507",
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/repo.ex:730"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/repo/schema.ex:507",
+     "lib/ecto/repo.ex:730"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/repo/schema.ex:507",
+     "lib/ecto/repo.ex:730"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/repo/schema.ex:507",
+     "lib/ecto/repo.ex:730"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/repo.ex:730",
+     "lib/ecto/repo/schema.ex:507"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/repo.ex:730",
+     "lib/ecto/repo/schema.ex:507"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDECTO15",
+   "query": "in transaction?",
+   "identifier": "in_transaction?",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/adapter/transaction.ex:1",
+     "lib/ecto/repo/transaction.ex:25",
+     "lib/ecto/repo.ex:2573"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo.ex:362",
+     "lib/ecto/repo/transaction.ex:25",
+     "lib/ecto/repo/transaction.ex:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/transaction.ex:25",
+     "lib/ecto/adapter/transaction.ex:1",
+     "lib/ecto/repo.ex:362"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/adapter/transaction.ex:1",
+     "lib/ecto/repo/transaction.ex:25",
+     "lib/ecto/repo/transaction.ex:1"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/adapter/transaction.ex:1",
+     "lib/ecto/repo/transaction.ex:25",
+     "lib/ecto/repo/transaction.ex:1"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/transaction.ex:25",
+     "lib/ecto/adapter/transaction.ex:1",
+     "lib/ecto/repo/transaction.ex:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/transaction.ex:25",
+     "lib/ecto/adapter/transaction.ex:1",
+     "lib/ecto/repo/transaction.ex:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/transaction.ex:25",
+     "lib/ecto/adapter/transaction.ex:1",
+     "lib/ecto/repo/transaction.ex:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/transaction.ex:25",
+     "lib/ecto/adapter/transaction.ex:1",
+     "lib/ecto/repo.ex:362"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/transaction.ex:25",
+     "lib/ecto/adapter/transaction.ex:1",
+     "lib/ecto/repo.ex:362"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDECTO16",
+   "query": "prepare query",
+   "identifier": "prepare_query",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query.ex:1022",
+     "lib/ecto/repo/queryable.ex:542",
+     "lib/ecto/repo.ex:678"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:162",
+     "lib/ecto/repo/queryable.ex:542",
+     "lib/ecto/repo.ex:678"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/queryable.ex:542",
+     "lib/ecto/query.ex:1022",
+     "lib/ecto/query/planner.ex:162"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query.ex:1022",
+     "lib/ecto/repo/queryable.ex:542",
+     "lib/ecto/repo.ex:678"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query.ex:1022",
+     "lib/ecto/repo/queryable.ex:542",
+     "lib/ecto/repo.ex:678"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query.ex:1022",
+     "lib/ecto/repo/queryable.ex:542",
+     "lib/ecto/repo.ex:678"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query.ex:1022",
+     "lib/ecto/repo/queryable.ex:542",
+     "lib/ecto/query/planner.ex:162"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query.ex:1022",
+     "lib/ecto/query/planner.ex:162",
+     "lib/ecto/repo/queryable.ex:542"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.25,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:162",
+     "lib/ecto/repo/queryable.ex:542",
+     "lib/ecto/query.ex:1022"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:162",
+     "lib/ecto/repo/queryable.ex:542",
+     "lib/ecto/repo.ex:678"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDECTO17",
+   "query": "check action!",
+   "identifier": "check_action!",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset/relation.ex:184",
+     "lib/ecto/association.ex:662",
+     "lib/ecto/changeset.ex:3782"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset/relation.ex:508",
+     "lib/ecto/association.ex:662",
+     "lib/ecto/changeset/relation.ex:184"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset/relation.ex:184",
+     "lib/ecto/association.ex:662",
+     "lib/ecto/changeset/relation.ex:508"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset/relation.ex:184",
+     "lib/ecto/association.ex:662",
+     "lib/ecto/changeset.ex:3782"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset/relation.ex:184",
+     "lib/ecto/association.ex:662",
+     "lib/ecto/changeset.ex:3782"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset/relation.ex:184",
+     "lib/ecto/association.ex:662",
+     "lib/ecto/changeset/relation.ex:508"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset/relation.ex:184",
+     "lib/ecto/association.ex:662",
+     "lib/ecto/changeset/relation.ex:508"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset/relation.ex:184",
+     "lib/ecto/association.ex:662",
+     "lib/ecto/changeset/relation.ex:508"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset/relation.ex:184",
+     "lib/ecto/changeset/relation.ex:508",
+     "lib/ecto/association.ex:662"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset/relation.ex:508",
+     "lib/ecto/changeset/relation.ex:184",
+     "lib/ecto/association.ex:662"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDECTO18",
+   "query": "apply changes",
+   "identifier": "apply_changes",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset.ex:2280",
+     "lib/ecto/changeset/relation.ex:59",
+     "lib/ecto/changeset.ex:2318"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset.ex:2280",
+     "lib/ecto/embedded.ex:206",
+     "lib/ecto/changeset/relation.ex:59"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset.ex:2280",
+     "lib/ecto/changeset/relation.ex:59",
+     "lib/ecto/embedded.ex:206"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset.ex:2280",
+     "lib/ecto/changeset/relation.ex:59",
+     "lib/ecto/changeset.ex:2318"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 1.0,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset.ex:2280",
+     "lib/ecto/changeset/relation.ex:59",
+     "lib/ecto/changeset.ex:2318"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset.ex:2280",
+     "lib/ecto/changeset/relation.ex:59",
+     "lib/ecto/embedded.ex:206"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset.ex:2280",
+     "lib/ecto/changeset/relation.ex:59",
+     "lib/ecto/embedded.ex:206"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset.ex:2280",
+     "lib/ecto/changeset/relation.ex:59",
+     "lib/ecto/embedded.ex:206"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset.ex:2280",
+     "lib/ecto/changeset/relation.ex:59",
+     "lib/ecto/embedded.ex:206"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/changeset.ex:2280",
+     "lib/ecto/changeset/relation.ex:59",
+     "lib/ecto/embedded.ex:206"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO19",
+   "query": "filter and reraise",
+   "identifier": "filter_and_reraise",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:97",
+     "lib/ecto/query/planner.ex:2808",
+     "lib/ecto/query/builder/filter.ex:1"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:2808",
+     "lib/ecto/repo/preloader.ex:811",
+     "lib/ecto/query/builder/filter.ex:97"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:2808",
+     "lib/ecto/query/builder/filter.ex:97",
+     "lib/ecto/repo/preloader.ex:811"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:97",
+     "lib/ecto/query/planner.ex:2808",
+     "lib/ecto/repo/preloader.ex:811"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:97",
+     "lib/ecto/query/planner.ex:2808",
+     "lib/ecto/repo/preloader.ex:811"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:97",
+     "lib/ecto/query/planner.ex:2808",
+     "lib/ecto/repo/preloader.ex:811"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:97",
+     "lib/ecto/query/planner.ex:2808",
+     "lib/ecto/repo/preloader.ex:811"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:97",
+     "lib/ecto/query/planner.ex:2808",
+     "lib/ecto/repo/preloader.ex:811"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:97",
+     "lib/ecto/query/planner.ex:2808",
+     "lib/ecto/repo/preloader.ex:811"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/filter.ex:97",
+     "lib/ecto/query/planner.ex:2808",
+     "lib/ecto/repo/preloader.ex:811"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDECTO20",
+   "query": "embedded load",
+   "identifier": "embedded_load",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:44",
+     "lib/ecto.ex:728",
+     "lib/ecto/type.ex:625"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto.ex:728",
+     "lib/ecto/embedded.ex:44",
+     "lib/ecto/uuid.ex:203"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:44",
+     "lib/ecto.ex:728",
+     "lib/ecto/uuid.ex:203"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:44",
+     "lib/ecto.ex:728",
+     "lib/ecto/type.ex:625"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:44",
+     "lib/ecto.ex:728",
+     "lib/ecto/uuid.ex:203"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:44",
+     "lib/ecto.ex:728",
+     "lib/ecto/uuid.ex:203"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:44",
+     "lib/ecto.ex:728",
+     "lib/ecto/uuid.ex:203"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:44",
+     "lib/ecto.ex:728",
+     "lib/ecto/uuid.ex:203"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:44",
+     "lib/ecto.ex:728",
+     "lib/ecto/uuid.ex:203"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto.ex:728",
+     "lib/ecto/embedded.ex:44",
+     "lib/ecto/uuid.ex:203"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO21",
+   "query": "escape field!",
+   "identifier": "escape_field!",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/group_by.ex:1",
+     "lib/ecto/query/builder/order_by.ex:63",
+     "lib/ecto/query/builder/update.ex:56"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/update.ex:56",
+     "lib/ecto/query/builder/group_by.ex:1",
+     "lib/ecto/query/builder/order_by.ex:63"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/group_by.ex:1",
+     "lib/ecto/query/builder/update.ex:56",
+     "lib/ecto/query/builder/order_by.ex:63"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/group_by.ex:1",
+     "lib/ecto/query/builder/order_by.ex:63",
+     "lib/ecto/query/builder/update.ex:56"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/group_by.ex:1",
+     "lib/ecto/query/builder/order_by.ex:63",
+     "lib/ecto/query/builder/update.ex:56"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/group_by.ex:1",
+     "lib/ecto/query/builder/update.ex:56",
+     "lib/ecto/query/builder/order_by.ex:63"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/group_by.ex:1",
+     "lib/ecto/query/builder/update.ex:56",
+     "lib/ecto/query/builder/order_by.ex:63"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/update.ex:56",
+     "lib/ecto/query/builder/group_by.ex:1",
+     "lib/ecto/query/builder/order_by.ex:63"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/update.ex:56",
+     "lib/ecto/query/builder/group_by.ex:1",
+     "lib/ecto/query/builder/order_by.ex:63"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/builder/update.ex:56",
+     "lib/ecto/query/builder/group_by.ex:1",
+     "lib/ecto/query/builder/order_by.ex:63"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO22",
+   "query": "embed as",
+   "identifier": "embed_as",
+   "poolRecall": true,
+   "parsed": 0.6,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/type.ex:392",
+     "guides/howtos/Embedded Schemas.md:26"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/type.ex:392",
+     "lib/ecto/changeset.ex:1780",
+     "lib/ecto/embedded.ex:140"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/type.ex:392",
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/changeset.ex:1780"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/type.ex:392",
+     "lib/ecto/changeset.ex:1780"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/type.ex:392",
+     "lib/ecto/changeset.ex:1780"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/type.ex:392",
+     "lib/ecto/changeset.ex:1780"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/type.ex:392",
+     "lib/ecto/changeset.ex:1780"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/type.ex:392",
+     "lib/ecto/changeset.ex:1780"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/type.ex:392",
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/changeset.ex:1780"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/type.ex:392",
+     "lib/ecto/embedded.ex:140",
+     "lib/ecto/changeset.ex:1780"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO23",
+   "query": "insert or update!",
+   "identifier": "insert_or_update!",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo.ex:1648",
+     "lib/ecto/repo/schema.ex:735"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/repo/schema.ex:735",
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/multi.ex:644"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo/schema.ex:735",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.3333333333333333,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo.ex:1648",
+     "lib/ecto/repo/schema.ex:735"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo/schema.ex:735",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo/schema.ex:735",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo/schema.ex:735",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo/schema.ex:735",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo/schema.ex:735",
+     "lib/ecto/multi.ex:644"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:360",
+     "lib/ecto/repo/schema.ex:735",
+     "lib/ecto/multi.ex:644"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO24",
+   "query": "insert all",
+   "identifier": "insert_all",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "integration_test/cases/repo.exs:843",
+     "lib/ecto/repo/schema.ex:1",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/multi.ex:644",
+     "lib/ecto/repo/schema.ex:1",
+     "integration_test/cases/repo.exs:843"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "integration_test/cases/repo.exs:843",
+     "lib/ecto/repo/schema.ex:1",
+     "lib/ecto/multi.ex:644"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "integration_test/cases/repo.exs:843",
+     "lib/ecto/repo/schema.ex:1",
+     "lib/ecto/repo.ex:1648"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "integration_test/cases/repo.exs:843",
+     "lib/ecto/repo/schema.ex:1",
+     "integration_test/cases/repo.exs:1020"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "integration_test/cases/repo.exs:843",
+     "lib/ecto/repo/schema.ex:1",
+     "lib/ecto/multi.ex:644"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "integration_test/cases/repo.exs:843",
+     "lib/ecto/repo/schema.ex:1",
+     "lib/ecto/multi.ex:644"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "integration_test/cases/repo.exs:843",
+     "lib/ecto/repo/schema.ex:1",
+     "lib/ecto/multi.ex:644"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "integration_test/cases/repo.exs:843",
+     "lib/ecto/repo/schema.ex:1",
+     "lib/ecto/multi.ex:644"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "integration_test/cases/repo.exs:843",
+     "lib/ecto/repo/schema.ex:1",
+     "lib/ecto/multi.ex:644"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDECTO25",
+   "query": "assert schema!",
+   "identifier": "assert_schema!",
+   "poolRecall": false,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "test/ecto/schema_test.exs:120",
+     "test/ecto/repo_test.exs:1778",
+     "test/ecto/repo/many_to_many_test.exs:171"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "test/ecto/repo_test.exs:1778",
+     "test/ecto/schema_test.exs:120",
+     "test/ecto/schema_test.exs:80"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "test/ecto/schema_test.exs:120",
+     "test/ecto/repo_test.exs:1778",
+     "test/ecto/repo/many_to_many_test.exs:171"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "test/ecto/schema_test.exs:120",
+     "test/ecto/repo_test.exs:1778",
+     "test/ecto/repo/many_to_many_test.exs:171"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "test/ecto/schema_test.exs:120",
+     "test/ecto/repo_test.exs:1778",
+     "test/ecto/repo/many_to_many_test.exs:171"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "test/ecto/schema_test.exs:120",
+     "test/ecto/repo_test.exs:1778",
+     "test/ecto/schema_test.exs:80"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "test/ecto/schema_test.exs:120",
+     "test/ecto/repo_test.exs:1778",
+     "test/ecto/schema_test.exs:80"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "test/ecto/repo_test.exs:1778",
+     "test/ecto/schema_test.exs:120",
+     "test/ecto/schema_test.exs:80"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "test/ecto/repo_test.exs:1778",
+     "test/ecto/schema_test.exs:120",
+     "test/ecto/schema_test.exs:80"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "test/ecto/repo_test.exs:1778",
+     "test/ecto/schema_test.exs:120",
+     "test/ecto/schema_test.exs:80"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "IDECTO26",
+   "query": "bump subquery params",
+   "identifier": "bump_subquery_params",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:50",
+     "lib/ecto/query/builder.ex:1526",
+     "lib/ecto/query/builder/select.ex:511"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:50",
+     "lib/ecto/query/builder.ex:1526",
+     "lib/ecto/query/builder/select.ex:511"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:50",
+     "lib/ecto/query/builder.ex:1526",
+     "lib/ecto/query/builder/select.ex:511"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:50",
+     "lib/ecto/query/builder.ex:1526",
+     "lib/ecto/query/builder/select.ex:511"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:50",
+     "lib/ecto/query/builder.ex:1526",
+     "lib/ecto/query/builder/select.ex:511"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:50",
+     "lib/ecto/query/builder.ex:1526",
+     "lib/ecto/query/builder/select.ex:511"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:50",
+     "lib/ecto/query/builder.ex:1526",
+     "lib/ecto/query/builder/select.ex:511"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:50",
+     "lib/ecto/query/builder.ex:1526",
+     "lib/ecto/query/builder/select.ex:511"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:50",
+     "lib/ecto/query/builder.ex:1526",
+     "lib/ecto/query/builder/select.ex:511"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/query/planner.ex:50",
+     "lib/ecto/query/builder.ex:1526",
+     "lib/ecto/query/builder/select.ex:511"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   }
+  },
+  {
+   "id": "IDECTO27",
+   "query": "embedded dump",
+   "identifier": "embedded_dump",
+   "poolRecall": true,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:90",
+     "lib/ecto.ex:728",
+     "lib/ecto/embedded.ex:44"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/type.ex:392",
+     "lib/ecto.ex:728",
+     "lib/ecto/embedded.ex:90"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:90",
+     "lib/ecto.ex:728",
+     "lib/ecto/type.ex:392"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:90",
+     "lib/ecto.ex:728",
+     "lib/ecto/embedded.ex:44"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:90",
+     "lib/ecto.ex:728",
+     "lib/ecto/type.ex:392"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:90",
+     "lib/ecto.ex:728",
+     "lib/ecto/type.ex:392"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:90",
+     "lib/ecto.ex:728",
+     "lib/ecto/type.ex:392"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:90",
+     "lib/ecto.ex:728",
+     "lib/ecto/type.ex:392"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 0.5,
+    "rr_def": 0.5,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto/embedded.ex:90",
+     "lib/ecto.ex:728",
+     "lib/ecto/type.ex:392"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     true
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": true,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 1.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/ecto.ex:728",
+     "lib/ecto/embedded.ex:90",
+     "lib/ecto/type.ex:392"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   }
+  }
+ ]
+}

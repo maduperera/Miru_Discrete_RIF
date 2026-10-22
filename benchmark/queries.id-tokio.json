@@ -1,0 +1,2432 @@
+{
+ "repo": "id-tokio",
+ "commit": "ce685ee6916549ed7e52dbfd5430858bbdc734d3",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "200 ambiguous-symbol lookups drawn by gen_queries_multi.py (seed 0xa11ce) from tree-sitter definitions; >=8 chars, >=2 words, 2..30 dirs, tests excluded.",
+ "queries": [
+  {
+   "id": "IDTOKI0",
+   "query": "strong count",
+   "identifier": "strong_count",
+   "definedIn": [
+    "tokio/src/sync/broadcast.rs",
+    "tokio/src/sync/mpsc/bounded.rs",
+    "tokio/src/sync/mpsc/chan.rs",
+    "tokio/src/sync/mpsc/unbounded.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI1",
+   "query": "is finished",
+   "identifier": "is_finished",
+   "definedIn": [
+    "tokio-util/src/task/abort_on_drop.rs",
+    "tokio/src/runtime/task/abort.rs",
+    "tokio/src/runtime/task/join.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI2",
+   "query": "num threads",
+   "identifier": "num_threads",
+   "definedIn": [
+    "tokio-util/src/task/spawn_pinned.rs",
+    "tokio/src/runtime/blocking/pool.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI3",
+   "query": "from std",
+   "identifier": "from_std",
+   "definedIn": [
+    "tokio/src/fs/file.rs",
+    "tokio/src/net/tcp/listener.rs",
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs",
+    "tokio/src/net/unix/listener.rs",
+    "tokio/src/net/unix/stream.rs",
+    "tokio/src/process/mod.rs",
+    "tokio/src/time/instant.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI4",
+   "query": "owned id",
+   "identifier": "owned_id",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/current_thread/mod.rs",
+    "tokio/src/runtime/scheduler/multi_thread/handle.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI5",
+   "query": "into inner",
+   "identifier": "into_inner",
+   "definedIn": [
+    "tokio-stream/src/stream_close.rs",
+    "tokio-stream/src/stream_ext/filter.rs",
+    "tokio-stream/src/stream_ext/filter_map.rs",
+    "tokio-stream/src/stream_ext/map.rs",
+    "tokio-stream/src/stream_ext/map_while.rs",
+    "tokio-stream/src/stream_ext/skip.rs",
+    "tokio-stream/src/stream_ext/skip_while.rs",
+    "tokio-stream/src/stream_ext/take.rs",
+    "tokio-stream/src/stream_ext/take_while.rs",
+    "tokio-stream/src/stream_ext/then.rs",
+    "tokio-stream/src/stream_ext/throttle.rs",
+    "tokio-stream/src/wrappers/interval.rs",
+    "tokio-stream/src/wrappers/lines.rs",
+    "tokio-stream/src/wrappers/mpsc_bounded.rs",
+    "tokio-stream/src/wrappers/mpsc_unbounded.rs",
+    "tokio-stream/src/wrappers/read_dir.rs",
+    "tokio-stream/src/wrappers/signal_unix.rs",
+    "tokio-stream/src/wrappers/signal_windows.rs",
+    "tokio-stream/src/wrappers/split.rs",
+    "tokio-stream/src/wrappers/task.rs",
+    "tokio-stream/src/wrappers/tcp_listener.rs",
+    "tokio-stream/src/wrappers/unix_listener.rs",
+    "tokio-test/src/task.rs",
+    "tokio-util/src/codec/framed.rs",
+    "tokio-util/src/codec/framed_read.rs",
+    "tokio-util/src/codec/framed_write.rs",
+    "tokio-util/src/compat.rs",
+    "tokio-util/src/context.rs",
+    "tokio-util/src/io/copy_to_bytes.rs",
+    "tokio-util/src/io/inspect.rs",
+    "tokio-util/src/io/sink_writer.rs",
+    "tokio-util/src/io/stream_reader.rs",
+    "tokio-util/src/io/sync_bridge.rs",
+    "tokio-util/src/sync/mpsc.rs",
+    "tokio-util/src/sync/poll_semaphore.rs",
+    "tokio-util/src/time/delay_queue.rs",
+    "tokio-util/src/udp/frame.rs",
+    "tokio/src/io/async_fd.rs",
+    "tokio/src/io/bsd/poll_aio.rs",
+    "tokio/src/io/join.rs",
+    "tokio/src/io/poll_evented.rs",
+    "tokio/src/io/util/buf_reader.rs",
+    "tokio/src/io/util/buf_stream.rs",
+    "tokio/src/io/util/buf_writer.rs",
+    "tokio/src/io/util/chain.rs",
+    "tokio/src/io/util/lines.rs",
+    "tokio/src/io/util/take.rs",
+    "tokio/src/sync/mpsc/error.rs",
+    "tokio/src/sync/mutex.rs",
+    "tokio/src/sync/once_cell.rs",
+    "tokio/src/sync/rwlock.rs",
+    "tokio/src/sync/set_once.rs",
+    "tokio/src/time/timeout.rs",
+    "tokio/src/util/sync_wrapper.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI6",
+   "query": "take entries",
+   "identifier": "take_entries",
+   "definedIn": [
+    "tokio/src/runtime/time/wheel/mod.rs",
+    "tokio/src/runtime/time_alt/wheel/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI7",
+   "query": "poll next",
+   "identifier": "poll_next",
+   "definedIn": [
+    "tokio-stream/src/empty.rs",
+    "tokio-stream/src/iter.rs",
+    "tokio-stream/src/once.rs",
+    "tokio-stream/src/pending.rs",
+    "tokio-stream/src/stream_close.rs",
+    "tokio-stream/src/stream_ext/chain.rs",
+    "tokio-stream/src/stream_ext/chunks_timeout.rs",
+    "tokio-stream/src/stream_ext/filter.rs",
+    "tokio-stream/src/stream_ext/filter_map.rs",
+    "tokio-stream/src/stream_ext/fuse.rs",
+    "tokio-stream/src/stream_ext/map.rs",
+    "tokio-stream/src/stream_ext/map_while.rs",
+    "tokio-stream/src/stream_ext/merge.rs",
+    "tokio-stream/src/stream_ext/peekable.rs",
+    "tokio-stream/src/stream_ext/skip.rs",
+    "tokio-stream/src/stream_ext/skip_while.rs",
+    "tokio-stream/src/stream_ext/take.rs",
+    "tokio-stream/src/stream_ext/take_while.rs",
+    "tokio-stream/src/stream_ext/then.rs",
+    "tokio-stream/src/stream_ext/throttle.rs",
+    "tokio-stream/src/stream_ext/timeout.rs",
+    "tokio-stream/src/stream_ext/timeout_repeating.rs",
+    "tokio-stream/src/stream_map.rs",
+    "tokio-stream/src/wrappers/broadcast.rs",
+    "tokio-stream/src/wrappers/interval.rs",
+    "tokio-stream/src/wrappers/lines.rs",
+    "tokio-stream/src/wrappers/mpsc_bounded.rs",
+    "tokio-stream/src/wrappers/mpsc_unbounded.rs",
+    "tokio-stream/src/wrappers/read_dir.rs",
+    "tokio-stream/src/wrappers/signal_unix.rs",
+    "tokio-stream/src/wrappers/signal_windows.rs",
+    "tokio-stream/src/wrappers/split.rs",
+    "tokio-stream/src/wrappers/task.rs",
+    "tokio-stream/src/wrappers/tcp_listener.rs",
+    "tokio-stream/src/wrappers/unix_listener.rs",
+    "tokio-stream/src/wrappers/watch.rs",
+    "tokio-test/src/stream_mock.rs",
+    "tokio-test/src/task.rs",
+    "tokio-util/src/codec/framed.rs",
+    "tokio-util/src/codec/framed_impl.rs",
+    "tokio-util/src/codec/framed_read.rs",
+    "tokio-util/src/codec/framed_write.rs",
+    "tokio-util/src/either.rs",
+    "tokio-util/src/io/copy_to_bytes.rs",
+    "tokio-util/src/io/reader_stream.rs",
+    "tokio-util/src/io/sink_writer.rs",
+    "tokio-util/src/sync/poll_semaphore.rs",
+    "tokio-util/src/time/delay_queue.rs",
+    "tokio-util/src/udp/frame.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI8",
+   "query": "spawn on",
+   "identifier": "spawn_on",
+   "definedIn": [
+    "tokio-util/src/task/join_map.rs",
+    "tokio-util/src/task/join_queue.rs",
+    "tokio-util/src/task/task_tracker.rs",
+    "tokio/src/task/builder.rs",
+    "tokio/src/task/join_set.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI9",
+   "query": "next expiration below the top level",
+   "identifier": "next_expiration_below_the_top_level",
+   "definedIn": [
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI10",
+   "query": "open options",
+   "identifier": "OpenOptions",
+   "definedIn": [
+    "tokio/src/fs/open_options.rs",
+    "tokio/src/net/unix/pipe.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI11",
+   "query": "try send to",
+   "identifier": "try_send_to",
+   "definedIn": [
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI12",
+   "query": "fast rand",
+   "identifier": "FastRand",
+   "definedIn": [
+    "tokio-stream/src/stream_map.rs",
+    "tokio/src/util/rand.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI13",
+   "query": "get shard id",
+   "identifier": "get_shard_id",
+   "definedIn": [
+    "tokio/src/runtime/task/mod.rs",
+    "tokio/src/util/sharded_list.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI14",
+   "query": "insert error",
+   "identifier": "InsertError",
+   "definedIn": [
+    "tokio-util/src/time/wheel/mod.rs",
+    "tokio/src/time/error.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI15",
+   "query": "is terminated",
+   "identifier": "is_terminated",
+   "definedIn": [
+    "tokio-stream/src/empty.rs",
+    "tokio-stream/src/once.rs",
+    "tokio-stream/src/stream_close.rs",
+    "tokio-stream/src/stream_ext/chain.rs",
+    "tokio-stream/src/stream_ext/chunks_timeout.rs",
+    "tokio-stream/src/stream_ext/filter.rs",
+    "tokio-stream/src/stream_ext/filter_map.rs",
+    "tokio-stream/src/stream_ext/fuse.rs",
+    "tokio-stream/src/stream_ext/map.rs",
+    "tokio-stream/src/stream_ext/map_while.rs",
+    "tokio-stream/src/stream_ext/merge.rs",
+    "tokio-stream/src/stream_ext/peekable.rs",
+    "tokio-stream/src/stream_ext/skip.rs",
+    "tokio-stream/src/stream_ext/skip_while.rs",
+    "tokio-stream/src/stream_ext/take.rs",
+    "tokio-stream/src/stream_ext/take_while.rs",
+    "tokio-stream/src/stream_ext/then.rs",
+    "tokio-stream/src/stream_ext/throttle.rs",
+    "tokio-stream/src/stream_ext/timeout.rs",
+    "tokio-stream/src/stream_ext/timeout_repeating.rs",
+    "tokio-stream/src/wrappers/interval.rs",
+    "tokio-stream/src/wrappers/mpsc_bounded.rs",
+    "tokio-stream/src/wrappers/mpsc_unbounded.rs",
+    "tokio-stream/src/wrappers/task.rs",
+    "tokio-util/src/io/reader_stream.rs",
+    "tokio/src/sync/oneshot.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI16",
+   "query": "next occupied slot of the slot holding now when it is the only one",
+   "identifier": "next_occupied_slot_of_the_slot_holding_now_when_it_is_the_only_one",
+   "definedIn": [
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI17",
+   "query": "bucket range",
+   "identifier": "bucket_range",
+   "definedIn": [
+    "tokio/src/runtime/metrics/histogram.rs",
+    "tokio/src/runtime/metrics/histogram/h2_histogram.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI18",
+   "query": "signal kind",
+   "identifier": "SignalKind",
+   "definedIn": [
+    "tokio/src/signal/unix.rs",
+    "tokio/src/signal/windows/sys.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI19",
+   "query": "write vectored",
+   "identifier": "write_vectored",
+   "definedIn": [
+    "tokio-util/src/io/sync_bridge.rs",
+    "tokio/src/io/util/write_vectored.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI20",
+   "query": "as raw fd",
+   "identifier": "as_raw_fd",
+   "definedIn": [
+    "tokio-util/src/compat.rs",
+    "tokio/src/fs/file.rs",
+    "tokio/src/io/async_fd.rs",
+    "tokio/src/io/stderr.rs",
+    "tokio/src/io/stdin.rs",
+    "tokio/src/io/stdout.rs",
+    "tokio/src/io/uring/utils.rs",
+    "tokio/src/net/tcp/listener.rs",
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs",
+    "tokio/src/net/unix/listener.rs",
+    "tokio/src/net/unix/pipe.rs",
+    "tokio/src/net/unix/socket.rs",
+    "tokio/src/net/unix/stream.rs",
+    "tokio/src/process/unix/mod.rs",
+    "tokio/src/process/unix/pidfd_reaper.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI21",
+   "query": "into split",
+   "identifier": "into_split",
+   "definedIn": [
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/unix/stream.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI22",
+   "query": "drop task",
+   "identifier": "drop_task",
+   "definedIn": [
+    "tokio-util/src/task/task_tracker.rs",
+    "tokio/src/sync/oneshot.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI23",
+   "query": "poll peek",
+   "identifier": "poll_peek",
+   "definedIn": [
+    "tokio-stream/src/stream_ext/peekable.rs",
+    "tokio/src/net/tcp/split.rs",
+    "tokio/src/net/tcp/split_owned.rs",
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/udp.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI24",
+   "query": "block in place",
+   "identifier": "block_in_place",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/block_in_place.rs",
+    "tokio/src/runtime/scheduler/multi_thread/worker.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI25",
+   "query": "memchr all",
+   "identifier": "memchr_all",
+   "definedIn": [
+    "tokio-util/src/util/memchr.rs",
+    "tokio/src/util/memchr.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI26",
+   "query": "fetch update",
+   "identifier": "fetch_update",
+   "definedIn": [
+    "tokio/src/loom/std/atomic_usize.rs",
+    "tokio/src/runtime/task/state.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI27",
+   "query": "shutdown timeout",
+   "identifier": "shutdown_timeout",
+   "definedIn": [
+    "tokio/src/runtime/local_runtime/runtime.rs",
+    "tokio/src/runtime/runtime.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI28",
+   "query": "next occupied slot picks the nearest slot forward",
+   "identifier": "next_occupied_slot_picks_the_nearest_slot_forward",
+   "definedIn": [
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI29",
+   "query": "from parts",
+   "identifier": "from_parts",
+   "definedIn": [
+    "tokio-util/src/codec/framed.rs",
+    "tokio/src/runtime/local_runtime/runtime.rs",
+    "tokio/src/runtime/runtime.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI30",
+   "query": "drop guard",
+   "identifier": "DropGuard",
+   "definedIn": [
+    "tokio-util/src/sync/cancellation_token/guard.rs",
+    "tokio/src/util/wake_list.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI31",
+   "query": "read half",
+   "identifier": "ReadHalf",
+   "definedIn": [
+    "tokio/src/net/tcp/split.rs",
+    "tokio/src/net/unix/split.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI32",
+   "query": "pop front",
+   "identifier": "pop_front",
+   "definedIn": [
+    "tokio/src/runtime/time_alt/registration_queue.rs",
+    "tokio/src/util/linked_list.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI33",
+   "query": "bind device",
+   "identifier": "bind_device",
+   "definedIn": [
+    "tokio/src/net/tcp/socket.rs",
+    "tokio/src/net/udp.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI34",
+   "query": "same channel",
+   "identifier": "same_channel",
+   "definedIn": [
+    "tokio/src/sync/broadcast.rs",
+    "tokio/src/sync/mpsc/bounded.rs",
+    "tokio/src/sync/mpsc/chan.rs",
+    "tokio/src/sync/mpsc/unbounded.rs",
+    "tokio/src/sync/watch.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI35",
+   "query": "try lock",
+   "identifier": "try_lock",
+   "definedIn": [
+    "tokio/src/loom/mocked.rs",
+    "tokio/src/loom/std/mutex.rs",
+    "tokio/src/loom/std/parking_lot.rs",
+    "tokio/src/sync/mutex.rs",
+    "tokio/src/util/try_lock.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI36",
+   "query": "notify one",
+   "identifier": "notify_one",
+   "definedIn": [
+    "tokio/src/loom/std/parking_lot.rs",
+    "tokio/src/sync/notify.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI37",
+   "query": "join next with id",
+   "identifier": "join_next_with_id",
+   "definedIn": [
+    "tokio-util/src/task/join_queue.rs",
+    "tokio/src/task/join_set.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI38",
+   "query": "max capacity",
+   "identifier": "max_capacity",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/multi_thread/queue.rs",
+    "tokio/src/sync/mpsc/bounded.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI39",
+   "query": "rw lock write guard",
+   "identifier": "RwLockWriteGuard",
+   "definedIn": [
+    "tokio/src/loom/std/parking_lot.rs",
+    "tokio/src/sync/rwlock/write_guard.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI40",
+   "query": "next remote task",
+   "identifier": "next_remote_task",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/current_thread/mod.rs",
+    "tokio/src/runtime/scheduler/multi_thread/worker.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI41",
+   "query": "is leader",
+   "identifier": "is_leader",
+   "definedIn": [
+    "tokio/src/loom/std/barrier.rs",
+    "tokio/src/sync/barrier.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI42",
+   "query": "child stdin",
+   "identifier": "ChildStdin",
+   "definedIn": [
+    "tokio/src/process/mod.rs",
+    "tokio/src/process/unix/mod.rs",
+    "tokio/src/process/windows.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI43",
+   "query": "next expiration wraps a slot at or behind now",
+   "identifier": "next_expiration_wraps_a_slot_at_or_behind_now",
+   "definedIn": [
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI44",
+   "query": "push back",
+   "identifier": "push_back",
+   "definedIn": [
+    "tokio-util/src/task/join_queue.rs",
+    "tokio/src/runtime/scheduler/multi_thread/queue.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI45",
+   "query": "poll join next with id",
+   "identifier": "poll_join_next_with_id",
+   "definedIn": [
+    "tokio-util/src/task/join_queue.rs",
+    "tokio/src/task/join_set.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI46",
+   "query": "rw lock read guard",
+   "identifier": "RwLockReadGuard",
+   "definedIn": [
+    "tokio/src/loom/std/parking_lot.rs",
+    "tokio/src/sync/rwlock/read_guard.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI47",
+   "query": "level with",
+   "identifier": "level_with",
+   "definedIn": [
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI48",
+   "query": "next occupied slot of a single slot",
+   "identifier": "next_occupied_slot_of_a_single_slot",
+   "definedIn": [
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI49",
+   "query": "set elapsed",
+   "identifier": "set_elapsed",
+   "definedIn": [
+    "tokio-util/src/time/wheel/mod.rs",
+    "tokio/src/runtime/time/wheel/mod.rs",
+    "tokio/src/runtime/time_alt/wheel/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI50",
+   "query": "from iter",
+   "identifier": "from_iter",
+   "definedIn": [
+    "tokio-stream/src/stream_map.rs",
+    "tokio-util/src/task/join_queue.rs",
+    "tokio/src/task/join_set.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI51",
+   "query": "create new",
+   "identifier": "create_new",
+   "definedIn": [
+    "tokio/src/fs/file.rs",
+    "tokio/src/fs/open_options.rs",
+    "tokio/src/fs/open_options/uring_open_options.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI52",
+   "query": "next task",
+   "identifier": "next_task",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/current_thread/mod.rs",
+    "tokio/src/runtime/scheduler/multi_thread/worker.rs",
+    "tokio/src/task/local.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI53",
+   "query": "poll write priv",
+   "identifier": "poll_write_priv",
+   "definedIn": [
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/unix/stream.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI54",
+   "query": "build child",
+   "identifier": "build_child",
+   "definedIn": [
+    "tokio/src/process/mod.rs",
+    "tokio/src/process/unix/mod.rs",
+    "tokio/src/process/windows.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI55",
+   "query": "try recv error",
+   "identifier": "TryRecvError",
+   "definedIn": [
+    "tokio/src/sync/broadcast.rs",
+    "tokio/src/sync/mpsc/error.rs",
+    "tokio/src/sync/oneshot.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI56",
+   "query": "poll ready",
+   "identifier": "poll_ready",
+   "definedIn": [
+    "tokio-util/src/codec/framed.rs",
+    "tokio-util/src/codec/framed_impl.rs",
+    "tokio-util/src/codec/framed_read.rs",
+    "tokio-util/src/codec/framed_write.rs",
+    "tokio-util/src/either.rs",
+    "tokio-util/src/io/copy_to_bytes.rs",
+    "tokio-util/src/io/stream_reader.rs",
+    "tokio-util/src/sync/mpsc.rs",
+    "tokio-util/src/udp/frame.rs",
+    "tokio/src/io/bsd/poll_aio.rs",
+    "tokio/src/runtime/io/registration.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI57",
+   "query": "try send",
+   "identifier": "try_send",
+   "definedIn": [
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs",
+    "tokio/src/sync/mpsc/bounded.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI58",
+   "query": "poll flush",
+   "identifier": "poll_flush",
+   "definedIn": [
+    "tokio-test/src/io.rs",
+    "tokio-util/src/codec/framed.rs",
+    "tokio-util/src/codec/framed_impl.rs",
+    "tokio-util/src/codec/framed_read.rs",
+    "tokio-util/src/codec/framed_write.rs",
+    "tokio-util/src/compat.rs",
+    "tokio-util/src/either.rs",
+    "tokio-util/src/io/copy_to_bytes.rs",
+    "tokio-util/src/io/inspect.rs",
+    "tokio-util/src/io/simplex.rs",
+    "tokio-util/src/io/sink_writer.rs",
+    "tokio-util/src/io/stream_reader.rs",
+    "tokio-util/src/sync/mpsc.rs",
+    "tokio-util/src/udp/frame.rs",
+    "tokio/src/fs/file.rs",
+    "tokio/src/io/async_write.rs",
+    "tokio/src/io/blocking.rs",
+    "tokio/src/io/join.rs",
+    "tokio/src/io/split.rs",
+    "tokio/src/io/stderr.rs",
+    "tokio/src/io/stdio_common.rs",
+    "tokio/src/io/stdout.rs",
+    "tokio/src/io/util/buf_reader.rs",
+    "tokio/src/io/util/buf_stream.rs",
+    "tokio/src/io/util/buf_writer.rs",
+    "tokio/src/io/util/empty.rs",
+    "tokio/src/io/util/mem.rs",
+    "tokio/src/io/util/sink.rs",
+    "tokio/src/net/tcp/split.rs",
+    "tokio/src/net/tcp/split_owned.rs",
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/unix/pipe.rs",
+    "tokio/src/net/unix/split.rs",
+    "tokio/src/net/unix/split_owned.rs",
+    "tokio/src/net/unix/stream.rs",
+    "tokio/src/net/windows/named_pipe.rs",
+    "tokio/src/process/mod.rs",
+    "tokio/src/process/unix/mod.rs",
+    "tokio/src/process/windows.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI59",
+   "query": "slot range",
+   "identifier": "slot_range",
+   "definedIn": [
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI60",
+   "query": "inner mut",
+   "identifier": "inner_mut",
+   "definedIn": [
+    "tokio/src/io/read_buf.rs",
+    "tokio/src/process/unix/pidfd_reaper.rs",
+    "tokio/src/process/unix/reap.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI61",
+   "query": "bind addr",
+   "identifier": "bind_addr",
+   "definedIn": [
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/listener.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI62",
+   "query": "tclass v6",
+   "identifier": "tclass_v6",
+   "definedIn": [
+    "tokio/src/net/tcp/socket.rs",
+    "tokio/src/net/udp.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI63",
+   "query": "const new",
+   "identifier": "const_new",
+   "definedIn": [
+    "tokio/src/loom/std/mutex.rs",
+    "tokio/src/loom/std/parking_lot.rs",
+    "tokio/src/sync/batch_semaphore.rs",
+    "tokio/src/sync/mutex.rs",
+    "tokio/src/sync/notify.rs",
+    "tokio/src/sync/once_cell.rs",
+    "tokio/src/sync/rwlock.rs",
+    "tokio/src/sync/semaphore.rs",
+    "tokio/src/sync/set_once.rs",
+    "tokio/src/util/linked_list.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI64",
+   "query": "next expiration",
+   "identifier": "next_expiration",
+   "definedIn": [
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio-util/src/time/wheel/mod.rs",
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time/wheel/mod.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI65",
+   "query": "new with interest",
+   "identifier": "new_with_interest",
+   "definedIn": [
+    "tokio/src/io/bsd/poll_aio.rs",
+    "tokio/src/io/poll_evented.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI66",
+   "query": "into raw",
+   "identifier": "into_raw",
+   "definedIn": [
+    "tokio/src/runtime/park.rs",
+    "tokio/src/runtime/task/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI67",
+   "query": "shrink to fit",
+   "identifier": "shrink_to_fit",
+   "definedIn": [
+    "tokio-util/src/task/join_map.rs",
+    "tokio-util/src/time/delay_queue.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI68",
+   "query": "block on inner",
+   "identifier": "block_on_inner",
+   "definedIn": [
+    "tokio/src/runtime/handle.rs",
+    "tokio/src/runtime/local_runtime/runtime.rs",
+    "tokio/src/runtime/runtime.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI69",
+   "query": "set nonblocking",
+   "identifier": "set_nonblocking",
+   "definedIn": [
+    "tokio/src/net/unix/pipe.rs",
+    "tokio/src/process/unix/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI70",
+   "query": "is write vectored",
+   "identifier": "is_write_vectored",
+   "definedIn": [
+    "tokio-util/src/either.rs",
+    "tokio-util/src/io/inspect.rs",
+    "tokio-util/src/io/simplex.rs",
+    "tokio-util/src/io/sync_bridge.rs",
+    "tokio/src/fs/file.rs",
+    "tokio/src/io/async_write.rs",
+    "tokio/src/io/join.rs",
+    "tokio/src/io/split.rs",
+    "tokio/src/io/util/buf_reader.rs",
+    "tokio/src/io/util/buf_stream.rs",
+    "tokio/src/io/util/buf_writer.rs",
+    "tokio/src/io/util/empty.rs",
+    "tokio/src/io/util/mem.rs",
+    "tokio/src/io/util/sink.rs",
+    "tokio/src/net/tcp/split.rs",
+    "tokio/src/net/tcp/split_owned.rs",
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/unix/pipe.rs",
+    "tokio/src/net/unix/split.rs",
+    "tokio/src/net/unix/split_owned.rs",
+    "tokio/src/net/unix/stream.rs",
+    "tokio/src/process/mod.rs",
+    "tokio/src/process/unix/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI71",
+   "query": "is empty",
+   "identifier": "is_empty",
+   "definedIn": [
+    "tokio-stream/src/stream_map.rs",
+    "tokio-util/src/task/join_map.rs",
+    "tokio-util/src/task/join_queue.rs",
+    "tokio-util/src/task/task_tracker.rs",
+    "tokio-util/src/time/delay_queue.rs",
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio-util/src/time/wheel/stack.rs",
+    "tokio/src/io/blocking.rs",
+    "tokio/src/io/ready.rs",
+    "tokio/src/io/util/vec_with_initialized.rs",
+    "tokio/src/runtime/scheduler/defer.rs",
+    "tokio/src/runtime/scheduler/inject/rt_multi_thread.rs",
+    "tokio/src/runtime/scheduler/inject/shared.rs",
+    "tokio/src/runtime/scheduler/multi_thread/queue.rs",
+    "tokio/src/runtime/task/list.rs",
+    "tokio/src/runtime/time_alt/wake_queue.rs",
+    "tokio/src/sync/broadcast.rs",
+    "tokio/src/sync/mpsc/bounded.rs",
+    "tokio/src/sync/mpsc/chan.rs",
+    "tokio/src/sync/mpsc/list.rs",
+    "tokio/src/sync/mpsc/unbounded.rs",
+    "tokio/src/sync/oneshot.rs",
+    "tokio/src/task/join_set.rs",
+    "tokio/src/util/idle_notified_set.rs",
+    "tokio/src/util/linked_list.rs",
+    "tokio/src/util/sharded_list.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI72",
+   "query": "test next expiration after level 5 twice",
+   "identifier": "test_next_expiration_after_level_5_twice",
+   "definedIn": [
+    "tokio/src/runtime/time/wheel/mod.rs",
+    "tokio/src/runtime/time_alt/wheel/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI73",
+   "query": "complete after cancel",
+   "identifier": "complete_after_cancel",
+   "definedIn": [
+    "tokio/src/io/uring/open.rs",
+    "tokio/src/io/uring/read.rs",
+    "tokio/src/io/uring/rename.rs",
+    "tokio/src/io/uring/statx.rs",
+    "tokio/src/io/uring/write.rs",
+    "tokio/src/runtime/driver/op.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI74",
+   "query": "next expiration time",
+   "identifier": "next_expiration_time",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/util/time_alt.rs",
+    "tokio/src/runtime/time/wheel/mod.rs",
+    "tokio/src/runtime/time_alt/wheel/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI75",
+   "query": "shutdown std",
+   "identifier": "shutdown_std",
+   "definedIn": [
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/unix/stream.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI76",
+   "query": "read line",
+   "identifier": "read_line",
+   "definedIn": [
+    "tokio-util/src/io/sync_bridge.rs",
+    "tokio/src/io/util/read_line.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI77",
+   "query": "peek earliest",
+   "identifier": "peek_earliest",
+   "definedIn": [
+    "tokio-util/src/time/delay_queue.rs",
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio-util/src/time/wheel/stack.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI78",
+   "query": "memchr inner",
+   "identifier": "memchr_inner",
+   "definedIn": [
+    "tokio-util/src/util/memchr.rs",
+    "tokio/src/util/memchr.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI79",
+   "query": "ctrl logoff",
+   "identifier": "ctrl_logoff",
+   "definedIn": [
+    "tokio/src/signal/windows.rs",
+    "tokio/src/signal/windows/stub.rs",
+    "tokio/src/signal/windows/sys.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI80",
+   "query": "read buffer",
+   "identifier": "read_buffer",
+   "definedIn": [
+    "tokio-util/src/codec/framed.rs",
+    "tokio-util/src/codec/framed_read.rs",
+    "tokio-util/src/udp/frame.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI81",
+   "query": "reusable box future",
+   "identifier": "ReusableBoxFuture",
+   "definedIn": [
+    "tokio-util/src/sync/reusable_box.rs",
+    "tokio/src/signal/reusable_box.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI82",
+   "query": "take error",
+   "identifier": "take_error",
+   "definedIn": [
+    "tokio/src/net/tcp/socket.rs",
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs",
+    "tokio/src/net/unix/listener.rs",
+    "tokio/src/net/unix/stream.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI83",
+   "query": "poll acquire",
+   "identifier": "poll_acquire",
+   "definedIn": [
+    "tokio-util/src/sync/poll_semaphore.rs",
+    "tokio/src/sync/batch_semaphore.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI84",
+   "query": "assert owner",
+   "identifier": "assert_owner",
+   "definedIn": [
+    "tokio/src/runtime/task/list.rs",
+    "tokio/src/task/local.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI85",
+   "query": "try read vectored",
+   "identifier": "try_read_vectored",
+   "definedIn": [
+    "tokio/src/net/tcp/split.rs",
+    "tokio/src/net/tcp/split_owned.rs",
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/unix/pipe.rs",
+    "tokio/src/net/unix/split.rs",
+    "tokio/src/net/unix/split_owned.rs",
+    "tokio/src/net/unix/stream.rs",
+    "tokio/src/net/windows/named_pipe.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI86",
+   "query": "set next",
+   "identifier": "set_next",
+   "definedIn": [
+    "tokio/src/runtime/task/core.rs",
+    "tokio/src/util/linked_list.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI87",
+   "query": "wake all",
+   "identifier": "wake_all",
+   "definedIn": [
+    "tokio/src/runtime/time_alt/wake_queue.rs",
+    "tokio/src/util/wake_list.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI88",
+   "query": "park internal",
+   "identifier": "park_internal",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/current_thread/mod.rs",
+    "tokio/src/runtime/scheduler/multi_thread/worker.rs",
+    "tokio/src/runtime/time/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI89",
+   "query": "poll shutdown",
+   "identifier": "poll_shutdown",
+   "definedIn": [
+    "tokio-test/src/io.rs",
+    "tokio-util/src/compat.rs",
+    "tokio-util/src/either.rs",
+    "tokio-util/src/io/inspect.rs",
+    "tokio-util/src/io/simplex.rs",
+    "tokio-util/src/io/sink_writer.rs",
+    "tokio/src/fs/file.rs",
+    "tokio/src/io/async_write.rs",
+    "tokio/src/io/blocking.rs",
+    "tokio/src/io/join.rs",
+    "tokio/src/io/split.rs",
+    "tokio/src/io/stderr.rs",
+    "tokio/src/io/stdio_common.rs",
+    "tokio/src/io/stdout.rs",
+    "tokio/src/io/util/buf_reader.rs",
+    "tokio/src/io/util/buf_stream.rs",
+    "tokio/src/io/util/buf_writer.rs",
+    "tokio/src/io/util/empty.rs",
+    "tokio/src/io/util/mem.rs",
+    "tokio/src/io/util/sink.rs",
+    "tokio/src/net/tcp/split.rs",
+    "tokio/src/net/tcp/split_owned.rs",
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/unix/pipe.rs",
+    "tokio/src/net/unix/split.rs",
+    "tokio/src/net/unix/split_owned.rs",
+    "tokio/src/net/unix/stream.rs",
+    "tokio/src/net/windows/named_pipe.rs",
+    "tokio/src/process/mod.rs",
+    "tokio/src/process/unix/mod.rs",
+    "tokio/src/process/windows.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI90",
+   "query": "spawn blocking",
+   "identifier": "spawn_blocking",
+   "definedIn": [
+    "tokio-util/src/task/join_map.rs",
+    "tokio-util/src/task/join_queue.rs",
+    "tokio-util/src/task/task_tracker.rs",
+    "tokio/src/fs/mocks.rs",
+    "tokio/src/runtime/blocking/pool.rs",
+    "tokio/src/runtime/handle.rs",
+    "tokio/src/runtime/local_runtime/runtime.rs",
+    "tokio/src/runtime/runtime.rs",
+    "tokio/src/task/builder.rs",
+    "tokio/src/task/join_set.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI91",
+   "query": "poll recv ready",
+   "identifier": "poll_recv_ready",
+   "definedIn": [
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI92",
+   "query": "try recv",
+   "identifier": "try_recv",
+   "definedIn": [
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs",
+    "tokio/src/sync/broadcast.rs",
+    "tokio/src/sync/mpsc/bounded.rs",
+    "tokio/src/sync/mpsc/chan.rs",
+    "tokio/src/sync/mpsc/unbounded.rs",
+    "tokio/src/sync/oneshot.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI93",
+   "query": "read buf",
+   "identifier": "read_buf",
+   "definedIn": [
+    "tokio-util/src/io/read_buf.rs",
+    "tokio/src/io/util/read_buf.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI94",
+   "query": "is unpin",
+   "identifier": "is_unpin",
+   "definedIn": [
+    "tokio/src/lib.rs",
+    "tokio/src/sync/batch_semaphore.rs",
+    "tokio/src/sync/broadcast.rs",
+    "tokio/src/sync/notify.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI95",
+   "query": "write half",
+   "identifier": "WriteHalf",
+   "definedIn": [
+    "tokio/src/net/tcp/split.rs",
+    "tokio/src/net/unix/split.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI96",
+   "query": "poll read priv",
+   "identifier": "poll_read_priv",
+   "definedIn": [
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/unix/stream.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI97",
+   "query": "from mio",
+   "identifier": "from_mio",
+   "definedIn": [
+    "tokio/src/io/ready.rs",
+    "tokio/src/net/unix/datagram/socket.rs",
+    "tokio/src/net/unix/pipe.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI98",
+   "query": "from raw",
+   "identifier": "from_raw",
+   "definedIn": [
+    "tokio-test/src/task.rs",
+    "tokio/src/runtime/io/registration_set.rs",
+    "tokio/src/runtime/io/scheduled_io.rs",
+    "tokio/src/runtime/park.rs",
+    "tokio/src/runtime/task/harness.rs",
+    "tokio/src/runtime/task/mod.rs",
+    "tokio/src/runtime/task/raw.rs",
+    "tokio/src/runtime/time/entry.rs",
+    "tokio/src/runtime/time_alt/entry.rs",
+    "tokio/src/signal/unix.rs",
+    "tokio/src/sync/batch_semaphore.rs",
+    "tokio/src/sync/broadcast.rs",
+    "tokio/src/sync/notify.rs",
+    "tokio/src/util/atomic_cell.rs",
+    "tokio/src/util/idle_notified_set.rs",
+    "tokio/src/util/linked_list.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI99",
+   "query": "make future",
+   "identifier": "make_future",
+   "definedIn": [
+    "tokio-stream/src/wrappers/broadcast.rs",
+    "tokio-stream/src/wrappers/watch.rs",
+    "tokio/src/signal/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI100",
+   "query": "close and shutdown all",
+   "identifier": "close_and_shutdown_all",
+   "definedIn": [
+    "tokio/src/runtime/task/list.rs",
+    "tokio/src/task/local.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI101",
+   "query": "contains key",
+   "identifier": "contains_key",
+   "definedIn": [
+    "tokio-stream/src/stream_map.rs",
+    "tokio-util/src/task/join_map.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI102",
+   "query": "local addr",
+   "identifier": "local_addr",
+   "definedIn": [
+    "tokio-util/src/net/mod.rs",
+    "tokio-util/src/net/unix/mod.rs",
+    "tokio/src/net/tcp/listener.rs",
+    "tokio/src/net/tcp/socket.rs",
+    "tokio/src/net/tcp/split.rs",
+    "tokio/src/net/tcp/split_owned.rs",
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs",
+    "tokio/src/net/unix/listener.rs",
+    "tokio/src/net/unix/split.rs",
+    "tokio/src/net/unix/split_owned.rs",
+    "tokio/src/net/unix/stream.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI103",
+   "query": "mutex guard",
+   "identifier": "MutexGuard",
+   "definedIn": [
+    "tokio/src/loom/std/parking_lot.rs",
+    "tokio/src/sync/mutex.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI104",
+   "query": "park timeout",
+   "identifier": "park_timeout",
+   "definedIn": [
+    "tokio/src/runtime/driver.rs",
+    "tokio/src/runtime/io/driver.rs",
+    "tokio/src/runtime/park.rs",
+    "tokio/src/runtime/process.rs",
+    "tokio/src/runtime/scheduler/multi_thread/park.rs",
+    "tokio/src/runtime/signal/mod.rs",
+    "tokio/src/runtime/time/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI105",
+   "query": "poll recv",
+   "identifier": "poll_recv",
+   "definedIn": [
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs",
+    "tokio/src/process/unix/reap.rs",
+    "tokio/src/signal/mod.rs",
+    "tokio/src/signal/unix.rs",
+    "tokio/src/signal/windows.rs",
+    "tokio/src/sync/mpsc/bounded.rs",
+    "tokio/src/sync/mpsc/unbounded.rs",
+    "tokio/src/sync/oneshot.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI106",
+   "query": "fill buf",
+   "identifier": "fill_buf",
+   "definedIn": [
+    "tokio-util/src/io/sync_bridge.rs",
+    "tokio/src/io/util/fill_buf.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI107",
+   "query": "poll recv from",
+   "identifier": "poll_recv_from",
+   "definedIn": [
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI108",
+   "query": "drop should not leak memory",
+   "identifier": "drop_should_not_leak_memory",
+   "definedIn": [
+    "tokio/src/runtime/time_alt/registration_queue/tests.rs",
+    "tokio/src/runtime/time_alt/wake_queue/tests.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI109",
+   "query": "level range",
+   "identifier": "level_range",
+   "definedIn": [
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI110",
+   "query": "sender weak count",
+   "identifier": "sender_weak_count",
+   "definedIn": [
+    "tokio/src/sync/broadcast.rs",
+    "tokio/src/sync/mpsc/bounded.rs",
+    "tokio/src/sync/mpsc/chan.rs",
+    "tokio/src/sync/mpsc/unbounded.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI111",
+   "query": "test next expiration to level 5 and after level 5",
+   "identifier": "test_next_expiration_to_level_5_and_after_level_5",
+   "definedIn": [
+    "tokio/src/runtime/time/wheel/mod.rs",
+    "tokio/src/runtime/time_alt/wheel/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI112",
+   "query": "num cpus",
+   "identifier": "num_cpus",
+   "definedIn": [
+    "tokio/src/loom/mocked.rs",
+    "tokio/src/loom/std/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI113",
+   "query": "level for",
+   "identifier": "level_for",
+   "definedIn": [
+    "tokio-util/src/time/wheel/mod.rs",
+    "tokio/src/runtime/time/wheel/mod.rs",
+    "tokio/src/runtime/time_alt/wheel/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI114",
+   "query": "poll close",
+   "identifier": "poll_close",
+   "definedIn": [
+    "tokio-util/src/codec/framed.rs",
+    "tokio-util/src/codec/framed_impl.rs",
+    "tokio-util/src/codec/framed_read.rs",
+    "tokio-util/src/codec/framed_write.rs",
+    "tokio-util/src/compat.rs",
+    "tokio-util/src/either.rs",
+    "tokio-util/src/io/copy_to_bytes.rs",
+    "tokio-util/src/io/stream_reader.rs",
+    "tokio-util/src/sync/mpsc.rs",
+    "tokio-util/src/udp/frame.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI115",
+   "query": "try recv from",
+   "identifier": "try_recv_from",
+   "definedIn": [
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI116",
+   "query": "from raw fd",
+   "identifier": "from_raw_fd",
+   "definedIn": [
+    "tokio/src/fs/file.rs",
+    "tokio/src/net/unix/socket.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI117",
+   "query": "block on",
+   "identifier": "block_on",
+   "definedIn": [
+    "tokio-test/src/lib.rs",
+    "tokio/src/runtime/context/blocking.rs",
+    "tokio/src/runtime/handle.rs",
+    "tokio/src/runtime/local_runtime/runtime.rs",
+    "tokio/src/runtime/park.rs",
+    "tokio/src/runtime/runtime.rs",
+    "tokio/src/runtime/scheduler/current_thread/mod.rs",
+    "tokio/src/runtime/scheduler/multi_thread/mod.rs",
+    "tokio/src/task/local.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI118",
+   "query": "symlink metadata",
+   "identifier": "symlink_metadata",
+   "definedIn": [
+    "tokio/src/fs/symlink_metadata.rs",
+    "tokio/src/io/uring/statx.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI119",
+   "query": "has value",
+   "identifier": "has_value",
+   "definedIn": [
+    "tokio/src/sync/mpsc/block.rs",
+    "tokio/src/sync/oneshot.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI120",
+   "query": "try join next",
+   "identifier": "try_join_next",
+   "definedIn": [
+    "tokio-util/src/task/join_map.rs",
+    "tokio-util/src/task/join_queue.rs",
+    "tokio/src/task/join_set.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI121",
+   "query": "slot for",
+   "identifier": "slot_for",
+   "definedIn": [
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI122",
+   "query": "peer addr",
+   "identifier": "peer_addr",
+   "definedIn": [
+    "tokio/src/net/tcp/split.rs",
+    "tokio/src/net/tcp/split_owned.rs",
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs",
+    "tokio/src/net/unix/split.rs",
+    "tokio/src/net/unix/split_owned.rs",
+    "tokio/src/net/unix/stream.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI123",
+   "query": "spawn local",
+   "identifier": "spawn_local",
+   "definedIn": [
+    "tokio-util/src/task/join_map.rs",
+    "tokio-util/src/task/join_queue.rs",
+    "tokio-util/src/task/task_tracker.rs",
+    "tokio/src/runtime/local_runtime/runtime.rs",
+    "tokio/src/runtime/scheduler/current_thread/mod.rs",
+    "tokio/src/task/builder.rs",
+    "tokio/src/task/join_set.rs",
+    "tokio/src/task/local.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI124",
+   "query": "next expiration reports the start of the slot",
+   "identifier": "next_expiration_reports_the_start_of_the_slot",
+   "definedIn": [
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI125",
+   "query": "next occupied slot of the last slot",
+   "identifier": "next_occupied_slot_of_the_last_slot",
+   "definedIn": [
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI126",
+   "query": "poll write buf",
+   "identifier": "poll_write_buf",
+   "definedIn": [
+    "tokio-util/src/util/poll_buf.rs",
+    "tokio/src/io/util/copy.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI127",
+   "query": "start seek",
+   "identifier": "start_seek",
+   "definedIn": [
+    "tokio-util/src/compat.rs",
+    "tokio-util/src/either.rs",
+    "tokio/src/fs/file.rs",
+    "tokio/src/io/async_seek.rs",
+    "tokio/src/io/util/buf_reader.rs",
+    "tokio/src/io/util/buf_stream.rs",
+    "tokio/src/io/util/buf_writer.rs",
+    "tokio/src/io/util/empty.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI128",
+   "query": "poll write",
+   "identifier": "poll_write",
+   "definedIn": [
+    "tokio-test/src/io.rs",
+    "tokio-util/src/compat.rs",
+    "tokio-util/src/either.rs",
+    "tokio-util/src/io/inspect.rs",
+    "tokio-util/src/io/simplex.rs",
+    "tokio-util/src/io/sink_writer.rs",
+    "tokio/src/fs/file.rs",
+    "tokio/src/io/async_write.rs",
+    "tokio/src/io/blocking.rs",
+    "tokio/src/io/join.rs",
+    "tokio/src/io/split.rs",
+    "tokio/src/io/stderr.rs",
+    "tokio/src/io/stdio_common.rs",
+    "tokio/src/io/stdout.rs",
+    "tokio/src/io/util/buf_reader.rs",
+    "tokio/src/io/util/buf_stream.rs",
+    "tokio/src/io/util/buf_writer.rs",
+    "tokio/src/io/util/empty.rs",
+    "tokio/src/io/util/mem.rs",
+    "tokio/src/io/util/sink.rs",
+    "tokio/src/net/tcp/split.rs",
+    "tokio/src/net/tcp/split_owned.rs",
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/unix/pipe.rs",
+    "tokio/src/net/unix/split.rs",
+    "tokio/src/net/unix/split_owned.rs",
+    "tokio/src/net/unix/stream.rs",
+    "tokio/src/net/windows/named_pipe.rs",
+    "tokio/src/process/mod.rs",
+    "tokio/src/process/unix/mod.rs",
+    "tokio/src/process/windows.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI129",
+   "query": "read until",
+   "identifier": "read_until",
+   "definedIn": [
+    "tokio-util/src/io/sync_bridge.rs",
+    "tokio/src/io/util/read_until.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI130",
+   "query": "weak sender",
+   "identifier": "WeakSender",
+   "definedIn": [
+    "tokio/src/sync/broadcast.rs",
+    "tokio/src/sync/mpsc/bounded.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI131",
+   "query": "read to string",
+   "identifier": "read_to_string",
+   "definedIn": [
+    "tokio-util/src/io/sync_bridge.rs",
+    "tokio/src/fs/read_to_string.rs",
+    "tokio/src/io/util/read_to_string.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI132",
+   "query": "async io",
+   "identifier": "async_io",
+   "definedIn": [
+    "tokio/src/io/async_fd.rs",
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs",
+    "tokio/src/net/unix/stream.rs",
+    "tokio/src/net/windows/named_pipe.rs",
+    "tokio/src/runtime/io/registration.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI133",
+   "query": "drop waker",
+   "identifier": "drop_waker",
+   "definedIn": [
+    "tokio-test/src/task.rs",
+    "tokio/src/runtime/park.rs",
+    "tokio/src/runtime/task/waker.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI134",
+   "query": "next occupied slot",
+   "identifier": "next_occupied_slot",
+   "definedIn": [
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI135",
+   "query": "notify all",
+   "identifier": "notify_all",
+   "definedIn": [
+    "tokio/src/loom/std/parking_lot.rs",
+    "tokio/src/runtime/scheduler/multi_thread/worker.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI136",
+   "query": "test next expiration after level 5",
+   "identifier": "test_next_expiration_after_level_5",
+   "definedIn": [
+    "tokio/src/runtime/time/wheel/mod.rs",
+    "tokio/src/runtime/time_alt/wheel/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI137",
+   "query": "into waker",
+   "identifier": "into_waker",
+   "definedIn": [
+    "tokio/src/runtime/park.rs",
+    "tokio/src/sync/task/atomic_waker.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI138",
+   "query": "initialized mut",
+   "identifier": "initialized_mut",
+   "definedIn": [
+    "tokio/src/io/read_buf.rs",
+    "tokio/src/sync/once_cell.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI139",
+   "query": "as raw handle",
+   "identifier": "as_raw_handle",
+   "definedIn": [
+    "tokio-util/src/compat.rs",
+    "tokio/src/net/windows/named_pipe.rs",
+    "tokio/src/process/windows.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI140",
+   "query": "try from",
+   "identifier": "try_from",
+   "definedIn": [
+    "tokio/src/net/tcp/listener.rs",
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs",
+    "tokio/src/net/unix/listener.rs",
+    "tokio/src/net/unix/stream.rs",
+    "tokio/src/process/unix/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI141",
+   "query": "owned write half",
+   "identifier": "OwnedWriteHalf",
+   "definedIn": [
+    "tokio/src/net/tcp/split_owned.rs",
+    "tokio/src/net/unix/split_owned.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI142",
+   "query": "set tos v4",
+   "identifier": "set_tos_v4",
+   "definedIn": [
+    "tokio/src/net/tcp/socket.rs",
+    "tokio/src/net/udp.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI143",
+   "query": "poll send to",
+   "identifier": "poll_send_to",
+   "definedIn": [
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI144",
+   "query": "test slot for",
+   "identifier": "test_slot_for",
+   "definedIn": [
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI145",
+   "query": "with inner",
+   "identifier": "with_inner",
+   "definedIn": [
+    "tokio/src/runtime/task/list.rs",
+    "tokio/src/util/rc_cell.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI146",
+   "query": "join next",
+   "identifier": "join_next",
+   "definedIn": [
+    "tokio-util/src/task/join_map.rs",
+    "tokio-util/src/task/join_queue.rs",
+    "tokio/src/task/join_set.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI147",
+   "query": "thread rng n",
+   "identifier": "thread_rng_n",
+   "definedIn": [
+    "tokio-stream/src/stream_map.rs",
+    "tokio/src/runtime/context.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI148",
+   "query": "owned read half",
+   "identifier": "OwnedReadHalf",
+   "definedIn": [
+    "tokio/src/net/tcp/split_owned.rs",
+    "tokio/src/net/unix/split_owned.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI149",
+   "query": "park yield",
+   "identifier": "park_yield",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/current_thread/mod.rs",
+    "tokio/src/runtime/scheduler/multi_thread/worker.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI150",
+   "query": "remove entry",
+   "identifier": "remove_entry",
+   "definedIn": [
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI151",
+   "query": "ctrl close",
+   "identifier": "ctrl_close",
+   "definedIn": [
+    "tokio/src/signal/windows.rs",
+    "tokio/src/signal/windows/stub.rs",
+    "tokio/src/signal/windows/sys.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI152",
+   "query": "poll send",
+   "identifier": "poll_send",
+   "definedIn": [
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI153",
+   "query": "poll fill buf",
+   "identifier": "poll_fill_buf",
+   "definedIn": [
+    "tokio-util/src/compat.rs",
+    "tokio-util/src/either.rs",
+    "tokio-util/src/io/stream_reader.rs",
+    "tokio/src/io/async_buf_read.rs",
+    "tokio/src/io/join.rs",
+    "tokio/src/io/util/buf_reader.rs",
+    "tokio/src/io/util/buf_stream.rs",
+    "tokio/src/io/util/buf_writer.rs",
+    "tokio/src/io/util/chain.rs",
+    "tokio/src/io/util/copy.rs",
+    "tokio/src/io/util/empty.rs",
+    "tokio/src/io/util/take.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI154",
+   "query": "spawn named",
+   "identifier": "spawn_named",
+   "definedIn": [
+    "tokio/src/runtime/handle.rs",
+    "tokio/src/task/local.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI155",
+   "query": "memchr test",
+   "identifier": "memchr_test",
+   "definedIn": [
+    "tokio-util/src/util/memchr.rs",
+    "tokio/src/util/memchr.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI156",
+   "query": "write all",
+   "identifier": "write_all",
+   "definedIn": [
+    "tokio-util/src/io/sync_bridge.rs",
+    "tokio/src/io/util/write_all.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI157",
+   "query": "available permits",
+   "identifier": "available_permits",
+   "definedIn": [
+    "tokio-util/src/sync/poll_semaphore.rs",
+    "tokio/src/sync/batch_semaphore.rs",
+    "tokio/src/sync/semaphore.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI158",
+   "query": "value to bucket",
+   "identifier": "value_to_bucket",
+   "definedIn": [
+    "tokio/src/runtime/metrics/histogram.rs",
+    "tokio/src/runtime/metrics/histogram/h2_histogram.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI159",
+   "query": "add permits",
+   "identifier": "add_permits",
+   "definedIn": [
+    "tokio-util/src/sync/poll_semaphore.rs",
+    "tokio/src/sync/mpsc/chan.rs",
+    "tokio/src/sync/semaphore.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI160",
+   "query": "poll write vectored",
+   "identifier": "poll_write_vectored",
+   "definedIn": [
+    "tokio-util/src/compat.rs",
+    "tokio-util/src/either.rs",
+    "tokio-util/src/io/inspect.rs",
+    "tokio-util/src/io/simplex.rs",
+    "tokio/src/fs/file.rs",
+    "tokio/src/io/async_write.rs",
+    "tokio/src/io/join.rs",
+    "tokio/src/io/split.rs",
+    "tokio/src/io/util/buf_reader.rs",
+    "tokio/src/io/util/buf_stream.rs",
+    "tokio/src/io/util/buf_writer.rs",
+    "tokio/src/io/util/empty.rs",
+    "tokio/src/io/util/mem.rs",
+    "tokio/src/io/util/sink.rs",
+    "tokio/src/net/tcp/split.rs",
+    "tokio/src/net/tcp/split_owned.rs",
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/unix/pipe.rs",
+    "tokio/src/net/unix/split.rs",
+    "tokio/src/net/unix/split_owned.rs",
+    "tokio/src/net/unix/stream.rs",
+    "tokio/src/net/windows/named_pipe.rs",
+    "tokio/src/process/mod.rs",
+    "tokio/src/process/unix/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI161",
+   "query": "as usize",
+   "identifier": "as_usize",
+   "definedIn": [
+    "tokio/src/io/ready.rs",
+    "tokio/src/sync/oneshot.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI162",
+   "query": "spawned at",
+   "identifier": "spawned_at",
+   "definedIn": [
+    "tokio/src/runtime/task/mod.rs",
+    "tokio/src/runtime/task_hooks.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI163",
+   "query": "max value",
+   "identifier": "max_value",
+   "definedIn": [
+    "tokio/src/runtime/metrics/histogram/h2_histogram.rs",
+    "tokio/src/util/bit.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI164",
+   "query": "size hint",
+   "identifier": "size_hint",
+   "definedIn": [
+    "tokio-stream/src/empty.rs",
+    "tokio-stream/src/iter.rs",
+    "tokio-stream/src/once.rs",
+    "tokio-stream/src/pending.rs",
+    "tokio-stream/src/stream_close.rs",
+    "tokio-stream/src/stream_ext/chain.rs",
+    "tokio-stream/src/stream_ext/chunks_timeout.rs",
+    "tokio-stream/src/stream_ext/filter.rs",
+    "tokio-stream/src/stream_ext/filter_map.rs",
+    "tokio-stream/src/stream_ext/fuse.rs",
+    "tokio-stream/src/stream_ext/map.rs",
+    "tokio-stream/src/stream_ext/map_while.rs",
+    "tokio-stream/src/stream_ext/merge.rs",
+    "tokio-stream/src/stream_ext/peekable.rs",
+    "tokio-stream/src/stream_ext/skip.rs",
+    "tokio-stream/src/stream_ext/skip_while.rs",
+    "tokio-stream/src/stream_ext/take.rs",
+    "tokio-stream/src/stream_ext/take_while.rs",
+    "tokio-stream/src/stream_ext/then.rs",
+    "tokio-stream/src/stream_ext/throttle.rs",
+    "tokio-stream/src/stream_ext/timeout.rs",
+    "tokio-stream/src/stream_ext/timeout_repeating.rs",
+    "tokio-stream/src/stream_map.rs",
+    "tokio-stream/src/wrappers/interval.rs",
+    "tokio-stream/src/wrappers/mpsc_bounded.rs",
+    "tokio-stream/src/wrappers/mpsc_unbounded.rs",
+    "tokio-stream/src/wrappers/task.rs",
+    "tokio-test/src/task.rs",
+    "tokio-util/src/task/join_map.rs",
+    "tokio/src/runtime/scheduler/inject/pop.rs",
+    "tokio/src/sync/mpsc/bounded.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI165",
+   "query": "yield now",
+   "identifier": "yield_now",
+   "definedIn": [
+    "tokio/src/loom/std/mod.rs",
+    "tokio/src/runtime/scheduler/multi_thread/handle.rs",
+    "tokio/src/runtime/task/mod.rs",
+    "tokio/src/task/yield_now.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI166",
+   "query": "barrier state",
+   "identifier": "BarrierState",
+   "definedIn": [
+    "tokio/src/loom/std/barrier.rs",
+    "tokio/src/sync/barrier.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI167",
+   "query": "poll complete",
+   "identifier": "poll_complete",
+   "definedIn": [
+    "tokio-util/src/compat.rs",
+    "tokio-util/src/either.rs",
+    "tokio/src/fs/file.rs",
+    "tokio/src/io/async_seek.rs",
+    "tokio/src/io/util/buf_reader.rs",
+    "tokio/src/io/util/buf_stream.rs",
+    "tokio/src/io/util/buf_writer.rs",
+    "tokio/src/io/util/empty.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI168",
+   "query": "weak count",
+   "identifier": "weak_count",
+   "definedIn": [
+    "tokio/src/sync/broadcast.rs",
+    "tokio/src/sync/mpsc/bounded.rs",
+    "tokio/src/sync/mpsc/chan.rs",
+    "tokio/src/sync/mpsc/unbounded.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI169",
+   "query": "waker ref",
+   "identifier": "WakerRef",
+   "definedIn": [
+    "tokio/src/runtime/task/waker.rs",
+    "tokio/src/sync/task/atomic_waker.rs",
+    "tokio/src/util/wake.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI170",
+   "query": "child stderr",
+   "identifier": "ChildStderr",
+   "definedIn": [
+    "tokio/src/process/mod.rs",
+    "tokio/src/process/unix/mod.rs",
+    "tokio/src/process/windows.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI171",
+   "query": "is elapsed",
+   "identifier": "is_elapsed",
+   "definedIn": [
+    "tokio/src/runtime/time/entry.rs",
+    "tokio/src/runtime/time_alt/timer.rs",
+    "tokio/src/time/sleep.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI172",
+   "query": "poll read",
+   "identifier": "poll_read",
+   "definedIn": [
+    "tokio-test/src/io.rs",
+    "tokio-util/src/compat.rs",
+    "tokio-util/src/either.rs",
+    "tokio-util/src/io/inspect.rs",
+    "tokio-util/src/io/simplex.rs",
+    "tokio-util/src/io/sink_writer.rs",
+    "tokio-util/src/io/stream_reader.rs",
+    "tokio/src/fs/file.rs",
+    "tokio/src/io/async_read.rs",
+    "tokio/src/io/blocking.rs",
+    "tokio/src/io/join.rs",
+    "tokio/src/io/split.rs",
+    "tokio/src/io/stdin.rs",
+    "tokio/src/io/util/buf_reader.rs",
+    "tokio/src/io/util/buf_stream.rs",
+    "tokio/src/io/util/buf_writer.rs",
+    "tokio/src/io/util/chain.rs",
+    "tokio/src/io/util/empty.rs",
+    "tokio/src/io/util/mem.rs",
+    "tokio/src/io/util/repeat.rs",
+    "tokio/src/io/util/take.rs",
+    "tokio/src/net/tcp/split.rs",
+    "tokio/src/net/tcp/split_owned.rs",
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/unix/pipe.rs",
+    "tokio/src/net/unix/split.rs",
+    "tokio/src/net/unix/split_owned.rs",
+    "tokio/src/net/unix/stream.rs",
+    "tokio/src/net/windows/named_pipe.rs",
+    "tokio/src/process/mod.rs",
+    "tokio/src/process/unix/mod.rs",
+    "tokio/src/process/windows.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI173",
+   "query": "num workers",
+   "identifier": "num_workers",
+   "definedIn": [
+    "tokio/src/runtime/metrics/runtime.rs",
+    "tokio/src/runtime/scheduler/multi_thread/handle/metrics.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI174",
+   "query": "recv from",
+   "identifier": "recv_from",
+   "definedIn": [
+    "tokio/src/net/udp.rs",
+    "tokio/src/net/unix/datagram/socket.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI175",
+   "query": "try join next with id",
+   "identifier": "try_join_next_with_id",
+   "definedIn": [
+    "tokio-util/src/task/join_queue.rs",
+    "tokio/src/task/join_set.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI176",
+   "query": "event info",
+   "identifier": "EventInfo",
+   "definedIn": [
+    "tokio/src/signal/registry.rs",
+    "tokio/src/signal/windows/sys.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI177",
+   "query": "num skip",
+   "identifier": "num_skip",
+   "definedIn": [
+    "tokio-util/src/codec/length_delimited.rs",
+    "tokio/src/macros/join.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI178",
+   "query": "complete with error",
+   "identifier": "complete_with_error",
+   "definedIn": [
+    "tokio/src/io/uring/open.rs",
+    "tokio/src/io/uring/read.rs",
+    "tokio/src/io/uring/rename.rs",
+    "tokio/src/io/uring/statx.rs",
+    "tokio/src/io/uring/write.rs",
+    "tokio/src/runtime/driver/op.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI179",
+   "query": "run task",
+   "identifier": "run_task",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/current_thread/mod.rs",
+    "tokio/src/runtime/scheduler/multi_thread/worker.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI180",
+   "query": "next expiration at the top level",
+   "identifier": "next_expiration_at_the_top_level",
+   "definedIn": [
+    "tokio-util/src/time/wheel/level.rs",
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI181",
+   "query": "child stdout",
+   "identifier": "ChildStdout",
+   "definedIn": [
+    "tokio/src/process/mod.rs",
+    "tokio/src/process/unix/mod.rs",
+    "tokio/src/process/windows.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI182",
+   "query": "barrier wait result",
+   "identifier": "BarrierWaitResult",
+   "definedIn": [
+    "tokio/src/loom/std/barrier.rs",
+    "tokio/src/sync/barrier.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI183",
+   "query": "sender strong count",
+   "identifier": "sender_strong_count",
+   "definedIn": [
+    "tokio/src/sync/broadcast.rs",
+    "tokio/src/sync/mpsc/bounded.rs",
+    "tokio/src/sync/mpsc/chan.rs",
+    "tokio/src/sync/mpsc/unbounded.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI184",
+   "query": "with capacity",
+   "identifier": "with_capacity",
+   "definedIn": [
+    "tokio-stream/src/stream_map.rs",
+    "tokio-util/src/codec/framed.rs",
+    "tokio-util/src/codec/framed_read.rs",
+    "tokio-util/src/codec/framed_write.rs",
+    "tokio-util/src/io/reader_stream.rs",
+    "tokio-util/src/io/simplex.rs",
+    "tokio-util/src/task/join_map.rs",
+    "tokio-util/src/task/join_queue.rs",
+    "tokio-util/src/time/delay_queue.rs",
+    "tokio/src/io/blocking.rs",
+    "tokio/src/io/util/buf_reader.rs",
+    "tokio/src/io/util/buf_stream.rs",
+    "tokio/src/io/util/buf_writer.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI185",
+   "query": "spawn local on",
+   "identifier": "spawn_local_on",
+   "definedIn": [
+    "tokio-util/src/task/join_map.rs",
+    "tokio-util/src/task/task_tracker.rs",
+    "tokio/src/task/builder.rs",
+    "tokio/src/task/join_set.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI186",
+   "query": "abort all",
+   "identifier": "abort_all",
+   "definedIn": [
+    "tokio-util/src/task/join_map.rs",
+    "tokio-util/src/task/join_queue.rs",
+    "tokio/src/task/join_set.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI187",
+   "query": "is cancelled",
+   "identifier": "is_cancelled",
+   "definedIn": [
+    "tokio-util/src/sync/cancellation_token.rs",
+    "tokio-util/src/sync/cancellation_token/tree_node.rs",
+    "tokio/src/runtime/task/error.rs",
+    "tokio/src/runtime/task/state.rs",
+    "tokio/src/runtime/time_alt/entry.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI188",
+   "query": "is complete",
+   "identifier": "is_complete",
+   "definedIn": [
+    "tokio/src/runtime/task/state.rs",
+    "tokio/src/sync/oneshot.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI189",
+   "query": "end processing scheduled tasks",
+   "identifier": "end_processing_scheduled_tasks",
+   "definedIn": [
+    "tokio/src/runtime/metrics/batch.rs",
+    "tokio/src/runtime/scheduler/multi_thread/stats.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI190",
+   "query": "push front",
+   "identifier": "push_front",
+   "definedIn": [
+    "tokio/src/runtime/time_alt/cancellation_queue.rs",
+    "tokio/src/runtime/time_alt/registration_queue.rs",
+    "tokio/src/runtime/time_alt/wake_queue.rs",
+    "tokio/src/util/linked_list.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI191",
+   "query": "take slot",
+   "identifier": "take_slot",
+   "definedIn": [
+    "tokio/src/runtime/time/wheel/level.rs",
+    "tokio/src/runtime/time_alt/wheel/level.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI192",
+   "query": "skip drop",
+   "identifier": "skip_drop",
+   "definedIn": [
+    "tokio/src/sync/mutex.rs",
+    "tokio/src/sync/rwlock/owned_read_guard.rs",
+    "tokio/src/sync/rwlock/owned_write_guard.rs",
+    "tokio/src/sync/rwlock/owned_write_guard_mapped.rs",
+    "tokio/src/sync/rwlock/read_guard.rs",
+    "tokio/src/sync/rwlock/write_guard.rs",
+    "tokio/src/sync/rwlock/write_guard_mapped.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI193",
+   "query": "ctrl shutdown",
+   "identifier": "ctrl_shutdown",
+   "definedIn": [
+    "tokio/src/signal/windows.rs",
+    "tokio/src/signal/windows/stub.rs",
+    "tokio/src/signal/windows/sys.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI194",
+   "query": "poll write ready",
+   "identifier": "poll_write_ready",
+   "definedIn": [
+    "tokio/src/io/async_fd.rs",
+    "tokio/src/net/tcp/stream.rs",
+    "tokio/src/net/unix/pipe.rs",
+    "tokio/src/net/unix/stream.rs",
+    "tokio/src/net/windows/named_pipe.rs",
+    "tokio/src/runtime/io/registration.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI195",
+   "query": "read to end",
+   "identifier": "read_to_end",
+   "definedIn": [
+    "tokio-util/src/io/sync_bridge.rs",
+    "tokio/src/io/util/read_to_end.rs",
+    "tokio/src/process/mod.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI196",
+   "query": "worker metrics",
+   "identifier": "worker_metrics",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/current_thread/mod.rs",
+    "tokio/src/runtime/scheduler/multi_thread/handle/metrics.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI197",
+   "query": "set tclass v6",
+   "identifier": "set_tclass_v6",
+   "definedIn": [
+    "tokio/src/net/tcp/socket.rs",
+    "tokio/src/net/udp.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI198",
+   "query": "ctrl break",
+   "identifier": "ctrl_break",
+   "definedIn": [
+    "tokio/src/signal/windows.rs",
+    "tokio/src/signal/windows/stub.rs",
+    "tokio/src/signal/windows/sys.rs"
+   ]
+  },
+  {
+   "id": "IDTOKI199",
+   "query": "deref mut",
+   "identifier": "deref_mut",
+   "definedIn": [
+    "tokio-test/src/task.rs",
+    "tokio/src/io/bsd/poll_aio.rs",
+    "tokio/src/loom/std/atomic_usize.rs",
+    "tokio/src/loom/std/parking_lot.rs",
+    "tokio/src/sync/mutex.rs",
+    "tokio/src/sync/rwlock/owned_write_guard.rs",
+    "tokio/src/sync/rwlock/owned_write_guard_mapped.rs",
+    "tokio/src/sync/rwlock/write_guard.rs",
+    "tokio/src/sync/rwlock/write_guard_mapped.rs",
+    "tokio/src/util/cacheline.rs",
+    "tokio/src/util/try_lock.rs"
+   ]
+  }
+ ]
+}

@@ -29,7 +29,9 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--pool", default="k5")
 ap.add_argument("--set", default="", help="query-set tag, e.g. all500 (empty = frozen 150)")
 ap.add_argument("--repo", default="", help="language repo (tree-sitter pools), e.g. scikit-learn")
+ap.add_argument("--tag", default=TAG, help="embedder tag of the pools/results, e.g. ds1-miru-int8 (default minilm-l6-256)")
 args = ap.parse_args()
+TAG = args.tag
 
 if args.repo:
     st = f".queries.{args.repo}"

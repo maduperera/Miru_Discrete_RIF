@@ -1,0 +1,2160 @@
+{
+ "repo": "id-newtonsoft",
+ "commit": "52fa3aef1f2cadcd3a3f874251eddc98d3efbbaa",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "200 ambiguous-symbol lookups drawn by gen_queries_multi.py (seed 0xa11ce) from tree-sitter definitions; >=8 chars, >=2 words, 2..30 dirs, tests excluded.",
+ "queries": [
+  {
+   "id": "IDNEWT0",
+   "query": "state async",
+   "identifier": "StateAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenWriterAsyncTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT1",
+   "query": "get depth",
+   "identifier": "GetDepth",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Issues/Issue2504.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/JsonSerializerTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT2",
+   "query": "merge json",
+   "identifier": "MergeJson",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/DemoTests.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Linq/MergeJson.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT3",
+   "query": "double try parse",
+   "identifier": "DoubleTryParse",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Utilities/ConvertUtilsTests.cs",
+    "Src/Newtonsoft.Json/Utilities/ConvertUtils.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT4",
+   "query": "on deserialized",
+   "identifier": "OnDeserialized",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/DeserializeExtensionData.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/DirectoryAccount.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonSerializerInternalReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT5",
+   "query": "extended complex",
+   "identifier": "ExtendedComplex",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonValidatingReaderTests.cs",
+    "Src/Newtonsoft.Json.Tests/Schema/JsonSchemaModelBuilderTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT6",
+   "query": "task controller",
+   "identifier": "TaskController",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/DeserializeWithDependencyInjection.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/DependencyInjectionTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT7",
+   "query": "to string json converter",
+   "identifier": "ToStringJsonConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Linq/ToStringJsonConverter.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/LinqToJsonTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT8",
+   "query": "before self",
+   "identifier": "BeforeSelf",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenTests.cs",
+    "Src/Newtonsoft.Json/Linq/JToken.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT9",
+   "query": "as j enumerable",
+   "identifier": "AsJEnumerable",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/LinqToJsonTest.cs",
+    "Src/Newtonsoft.Json/Linq/Extensions.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT10",
+   "query": "on serialized method",
+   "identifier": "OnSerializedMethod",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/SerializationCallbackAttributes.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/SerializationTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/SerializationEventAttributeTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestDictionary.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestList.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestObject.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestObjectWithConstructor.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT11",
+   "query": "auto complete on close false",
+   "identifier": "AutoCompleteOnClose_False",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonWriterTests.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT12",
+   "query": "read string",
+   "identifier": "ReadString",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/MiscTests.cs",
+    "Src/Newtonsoft.Json/Bson/BsonReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT13",
+   "query": "value formatting",
+   "identifier": "ValueFormatting",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterTest.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenWriterTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT14",
+   "query": "from object",
+   "identifier": "FromObject",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Linq/FromObject.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/LinqToJsonTest.cs",
+    "Src/Newtonsoft.Json/Linq/JArray.cs",
+    "Src/Newtonsoft.Json/Linq/JObject.cs",
+    "Src/Newtonsoft.Json/Linq/JToken.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT15",
+   "query": "create properties",
+   "identifier": "CreateProperties",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/CustomContractResolver.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/SerializationTests.cs",
+    "Src/Newtonsoft.Json.Tests/Schema/JsonSchemaGeneratorTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/ConstructorHandlingTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/ContractResolverTests.cs",
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT16",
+   "query": "read from",
+   "identifier": "ReadFrom",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenTests.cs",
+    "Src/Newtonsoft.Json/Linq/JToken.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT17",
+   "query": "deserialize anonymous type",
+   "identifier": "DeserializeAnonymousType",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/DeserializeAnonymousType.cs",
+    "Src/Newtonsoft.Json/JsonConvert.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT18",
+   "query": "read as date time offset async",
+   "identifier": "ReadAsDateTimeOffsetAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/ReadAsyncTests.cs",
+    "Src/Newtonsoft.Json/JsonReader.Async.cs",
+    "Src/Newtonsoft.Json/JsonTextReader.Async.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT19",
+   "query": "j token writer",
+   "identifier": "JTokenWriter",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/CamelCasePropertyNamesContractResolverTests.cs",
+    "Src/Newtonsoft.Json/Linq/JTokenWriter.Async.cs",
+    "Src/Newtonsoft.Json/Linq/JTokenWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT20",
+   "query": "enumerable class",
+   "identifier": "EnumerableClass",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/JsonSerializerCollectionsTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/EnumerableClass.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT21",
+   "query": "serialize to bson",
+   "identifier": "SerializeToBson",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Converters/RegexConverterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Bson/SerializeToBson.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT22",
+   "query": "json serialization exception",
+   "identifier": "JsonSerializationException",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/ExceptionTests.cs",
+    "Src/Newtonsoft.Json/JsonSerializationException.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT23",
+   "query": "write async",
+   "identifier": "WriteAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1569.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue2694.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json/Utilities/AsyncUtils.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT24",
+   "query": "main class",
+   "identifier": "MainClass",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/ReferenceLoopHandlingTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/MainClass.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT25",
+   "query": "add schema",
+   "identifier": "AddSchema",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Schema/JsonSchemaNodeTests.cs",
+    "Src/Newtonsoft.Json/Schema/JsonSchemaModelBuilder.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT26",
+   "query": "build state array",
+   "identifier": "BuildStateArray",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterTest.cs",
+    "Src/Newtonsoft.Json/JsonWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT27",
+   "query": "embed j value string in new j object",
+   "identifier": "EmbedJValueStringInNewJObject",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/JObjectTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/JsonSerializerTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT28",
+   "query": "resolve contact",
+   "identifier": "ResolveContact",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/DeserializeWithDependencyInjection.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/DependencyInjectionTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT29",
+   "query": "serialize list",
+   "identifier": "SerializeList",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/DateOnlyTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/ImmutableCollectionsTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/TimeOnlyTests.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonSerializerInternalWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT30",
+   "query": "create comment",
+   "identifier": "CreateComment",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/JValueTests.cs",
+    "Src/Newtonsoft.Json/Converters/XmlNodeConverter.cs",
+    "Src/Newtonsoft.Json/Linq/JValue.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT31",
+   "query": "write comment async",
+   "identifier": "WriteCommentAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json/JsonTextWriter.Async.cs",
+    "Src/Newtonsoft.Json/JsonWriter.Async.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT32",
+   "query": "read integer with error",
+   "identifier": "ReadIntegerWithError",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/ExceptionHandlingTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/JsonSerializerTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT33",
+   "query": "add parent",
+   "identifier": "AddParent",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Bson/BsonWriter.cs",
+    "Src/Newtonsoft.Json/Linq/JTokenWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT34",
+   "query": "try convert",
+   "identifier": "TryConvert",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/DynamicTests.cs",
+    "Src/Newtonsoft.Json/Linq/JValue.cs",
+    "Src/Newtonsoft.Json/Utilities/ConvertUtils.cs",
+    "Src/Newtonsoft.Json/Utilities/DynamicProxy.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT35",
+   "query": "create array contract",
+   "identifier": "CreateArrayContract",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/MemoryTests.cs",
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT36",
+   "query": "get properties",
+   "identifier": "GetProperties",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/JObjectTests.cs",
+    "Src/Newtonsoft.Json/Linq/JObject.cs",
+    "Src/Newtonsoft.Json/Utilities/ReflectionUtils.cs",
+    "Src/Newtonsoft.Json/Utilities/TypeExtensions.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT37",
+   "query": "json property with handling values",
+   "identifier": "JsonPropertyWithHandlingValues",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Schema/JsonSchemaGeneratorTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/JsonPropertyWithHandlingValues.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT38",
+   "query": "required members class",
+   "identifier": "RequiredMembersClass",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/JsonSerializerTest.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/RequiredMembersClass.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT39",
+   "query": "deserialize internal",
+   "identifier": "DeserializeInternal",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonSerializer.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonSerializerProxy.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT40",
+   "query": "custom contract resolver",
+   "identifier": "CustomContractResolver",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/CustomContractResolver.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1576.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT41",
+   "query": "json writer exception",
+   "identifier": "JsonWriterException",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/ExceptionTests.cs",
+    "Src/Newtonsoft.Json/JsonWriterException.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT42",
+   "query": "read as double",
+   "identifier": "ReadAsDouble",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/ModernNumericTests.cs",
+    "Src/Newtonsoft.Json/JsonReader.cs",
+    "Src/Newtonsoft.Json/JsonTextReader.cs",
+    "Src/Newtonsoft.Json/JsonValidatingReader.cs",
+    "Src/Newtonsoft.Json/Serialization/TraceJsonReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT43",
+   "query": "write raw async",
+   "identifier": "WriteRawAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json/JsonTextWriter.Async.cs",
+    "Src/Newtonsoft.Json/JsonWriter.Async.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT44",
+   "query": "bind to type",
+   "identifier": "BindToType",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonReaderTests.cs",
+    "Src/Newtonsoft.Json.Tests/Converters/UnionConverterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/SerializeSerializationBinder.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/TypeNameHandlingTests.cs",
+    "Src/Newtonsoft.Json/Serialization/DefaultSerializationBinder.cs",
+    "Src/Newtonsoft.Json/Serialization/ISerializationBinder.cs",
+    "Src/Newtonsoft.Json/Serialization/SerializationBinderAdapter.cs",
+    "Src/Newtonsoft.Json/SerializationBinder.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT45",
+   "query": "read as bytes async",
+   "identifier": "ReadAsBytesAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/ReadAsyncTests.cs",
+    "Src/Newtonsoft.Json/JsonReader.Async.cs",
+    "Src/Newtonsoft.Json/JsonTextReader.Async.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT46",
+   "query": "bind to name",
+   "identifier": "BindToName",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonReaderTests.cs",
+    "Src/Newtonsoft.Json.Tests/Converters/UnionConverterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/SerializeSerializationBinder.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/TypeNameHandlingTests.cs",
+    "Src/Newtonsoft.Json/Serialization/DefaultSerializationBinder.cs",
+    "Src/Newtonsoft.Json/Serialization/ISerializationBinder.cs",
+    "Src/Newtonsoft.Json/Serialization/SerializationBinderAdapter.cs",
+    "Src/Newtonsoft.Json/SerializationBinder.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT47",
+   "query": "populate internal",
+   "identifier": "PopulateInternal",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonSerializer.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonSerializerProxy.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT48",
+   "query": "value equals",
+   "identifier": "ValueEquals",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Issues/Issue3080.cs",
+    "Src/Newtonsoft.Json/Utilities/MiscellaneousUtils.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT49",
+   "query": "enum container",
+   "identifier": "EnumContainer",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Converters/StringEnumConverterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/ModernNumericTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT50",
+   "query": "create and dispose",
+   "identifier": "CreateAndDispose",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterTest.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/JsonTextReaderTests/UnmanagedResourceFakingJsonReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT51",
+   "query": "log event",
+   "identifier": "LogEvent",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/SerializationErrorHandlingTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/LogEvent.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT52",
+   "query": "create union",
+   "identifier": "CreateUnion",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Converters/DiscriminatedUnionConverterTests.cs",
+    "Src/Newtonsoft.Json/Converters/DiscriminatedUnionConverter.cs",
+    "Src/Newtonsoft.Json/Converters/UnionConverter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT53",
+   "query": "serialize xml node",
+   "identifier": "SerializeXmlNode",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Converters/XmlNodeConverterTest.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/ConvertingJsonAndXmlTests.cs",
+    "Src/Newtonsoft.Json/JsonConvert.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT54",
+   "query": "int32 try parse",
+   "identifier": "Int32TryParse",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Utilities/ConvertUtilsTests.cs",
+    "Src/Newtonsoft.Json/Utilities/ConvertUtils.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT55",
+   "query": "index of item",
+   "identifier": "IndexOfItem",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/JObjectAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JObjectTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenWriterTest.cs",
+    "Src/Newtonsoft.Json/Linq/JArray.cs",
+    "Src/Newtonsoft.Json/Linq/JConstructor.cs",
+    "Src/Newtonsoft.Json/Linq/JContainer.cs",
+    "Src/Newtonsoft.Json/Linq/JObject.cs",
+    "Src/Newtonsoft.Json/Linq/JProperty.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT56",
+   "query": "float parse handling",
+   "identifier": "FloatParseHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/FloatTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JValueTests.cs",
+    "Src/Newtonsoft.Json/FloatParseHandling.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT57",
+   "query": "shortie exception",
+   "identifier": "ShortieException",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/LinqToJsonTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/Shortie.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT58",
+   "query": "try delete member",
+   "identifier": "TryDeleteMember",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/DynamicTests.cs",
+    "Src/Newtonsoft.Json/Utilities/DynamicProxy.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT59",
+   "query": "create member value provider",
+   "identifier": "CreateMemberValueProvider",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestObjects/ReflectionContractResolver.cs",
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT60",
+   "query": "trace writer",
+   "identifier": "TraceWriter",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/TraceWriter.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1461.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/TraceWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT61",
+   "query": "get hash code",
+   "identifier": "GetHashCode",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1461.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue3080.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/PreserveReferencesHandlingTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/ReferenceLoopHandlingTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/TypeNameHandlingTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/Movie.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/Product.cs",
+    "Src/Newtonsoft.Json/Linq/JEnumerable.cs",
+    "Src/Newtonsoft.Json/Linq/JTokenEqualityComparer.cs",
+    "Src/Newtonsoft.Json/Linq/JValue.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonSerializerInternalBase.cs",
+    "Src/Newtonsoft.Json/Serialization/NamingStrategy.cs",
+    "Src/Newtonsoft.Json/Utilities/LinqBridge.cs",
+    "Src/Newtonsoft.Json/Utilities/StructMultiKey.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT62",
+   "query": "get converter",
+   "identifier": "GetConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Issues/Issue3080.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/TypeConverterJsonConverter.cs",
+    "Src/Newtonsoft.Json/Linq/JObject.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonSerializerInternalReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT63",
+   "query": "write comment",
+   "identifier": "WriteComment",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonWriterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Json/CustomJsonWriter.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenWriterTest.cs",
+    "Src/Newtonsoft.Json/Bson/BsonWriter.cs",
+    "Src/Newtonsoft.Json/JsonTextWriter.cs",
+    "Src/Newtonsoft.Json/JsonWriter.cs",
+    "Src/Newtonsoft.Json/Linq/JTokenWriter.cs",
+    "Src/Newtonsoft.Json/Serialization/TraceJsonWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT64",
+   "query": "create text",
+   "identifier": "CreateText",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/LinqToJsonTests.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Linq/WriteToJsonFile.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/SerializeWithJsonSerializerToFile.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT65",
+   "query": "remove parent",
+   "identifier": "RemoveParent",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Bson/BsonWriter.cs",
+    "Src/Newtonsoft.Json/Linq/JTokenWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT66",
+   "query": "j token reader",
+   "identifier": "JTokenReader",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/JObjectTests.cs",
+    "Src/Newtonsoft.Json/Linq/JTokenReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT67",
+   "query": "try get value",
+   "identifier": "TryGetValue",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Converters/UnionConverterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue2450.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JObjectTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/ExtensionDataTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/JsonSerializerCollectionsTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/ModelStateDictionary.cs",
+    "Src/Newtonsoft.Json/Linq/JObject.cs",
+    "Src/Newtonsoft.Json/Linq/JPropertyKeyedCollection.cs",
+    "Src/Newtonsoft.Json/Utilities/DictionaryWrapper.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT68",
+   "query": "write end array",
+   "identifier": "WriteEndArray",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Json/CustomJsonWriter.cs",
+    "Src/Newtonsoft.Json/JsonWriter.cs",
+    "Src/Newtonsoft.Json/Serialization/TraceJsonWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT69",
+   "query": "on name changing",
+   "identifier": "OnNameChanging",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/FileSystemEntityModel.Designer.cs",
+    "Src/Newtonsoft.Json.Tests/LinqToSql/LinqToSqlClasses.designer.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT70",
+   "query": "handle error",
+   "identifier": "HandleError",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestObjects/PersonError.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonSerializerInternalReader.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonSerializerInternalWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT71",
+   "query": "date time zone handling",
+   "identifier": "DateTimeZoneHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonWriterTests.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterTest.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenWriterTest.cs",
+    "Src/Newtonsoft.Json/DateTimeZoneHandling.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT72",
+   "query": "read element",
+   "identifier": "ReadElement",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Bson/BsonReader.cs",
+    "Src/Newtonsoft.Json/Converters/XmlNodeConverter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT73",
+   "query": "serialize null",
+   "identifier": "SerializeNull",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Converters/DataSetConverterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Converters/DataTableConverterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/JsonSerializerTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT74",
+   "query": "async methods already cancelled",
+   "identifier": "AsyncMethodsAlreadyCancelled",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/ReadAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterAsyncTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT75",
+   "query": "set length",
+   "identifier": "SetLength",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1569.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue2694.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/JsonTextReaderTests/SlowStream.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT76",
+   "query": "base type",
+   "identifier": "BaseType",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestObjects/BaseType.cs",
+    "Src/Newtonsoft.Json/Utilities/TypeExtensions.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT77",
+   "query": "open text",
+   "identifier": "OpenText",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/LinqToJsonTests.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Linq/ReadJson.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/DeserializeWithJsonSerializerFromFile.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT78",
+   "query": "search result",
+   "identifier": "SearchResult",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/SerializationTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SearchResult.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT79",
+   "query": "close output async",
+   "identifier": "CloseOutputAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterAsyncTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT80",
+   "query": "float parse handling async",
+   "identifier": "FloatParseHandlingAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/FloatAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JValueAsyncTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT81",
+   "query": "write raw",
+   "identifier": "WriteRaw",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonWriterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenWriterTest.cs",
+    "Src/Newtonsoft.Json/Bson/BsonWriter.cs",
+    "Src/Newtonsoft.Json/JsonTextWriter.cs",
+    "Src/Newtonsoft.Json/JsonWriter.cs",
+    "Src/Newtonsoft.Json/Linq/JTokenWriter.cs",
+    "Src/Newtonsoft.Json/Serialization/TraceJsonWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT82",
+   "query": "to u int64",
+   "identifier": "ToUInt64",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestObjects/ConvertibleId.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/ConvertibleInt.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/Ratio.cs",
+    "Src/Newtonsoft.Json/Linq/JValue.cs",
+    "Src/Newtonsoft.Json/Serialization/FormatterConverter.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonFormatterConverter.cs",
+    "Src/Newtonsoft.Json/Utilities/EnumUtils.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT83",
+   "query": "write end",
+   "identifier": "WriteEnd",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterTest.cs",
+    "Src/Newtonsoft.Json/Bson/BsonWriter.cs",
+    "Src/Newtonsoft.Json/JsonTextWriter.cs",
+    "Src/Newtonsoft.Json/JsonWriter.cs",
+    "Src/Newtonsoft.Json/Linq/JTokenWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT84",
+   "query": "on deserialized method",
+   "identifier": "OnDeserializedMethod",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/SerializationCallbackAttributes.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/SerializationTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/JsonSerializerCollectionsTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/SerializationEventAttributeTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/PreserveReferencesCallbackTestObject.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestDictionary.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestList.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestObject.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestObjectWithConstructor.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT85",
+   "query": "write end object async",
+   "identifier": "WriteEndObjectAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json/JsonTextWriter.Async.cs",
+    "Src/Newtonsoft.Json/JsonWriter.Async.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT86",
+   "query": "read as decimal async",
+   "identifier": "ReadAsDecimalAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/ReadAsyncTests.cs",
+    "Src/Newtonsoft.Json/JsonReader.Async.cs",
+    "Src/Newtonsoft.Json/JsonTextReader.Async.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT87",
+   "query": "write raw value async",
+   "identifier": "WriteRawValueAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json/JsonTextWriter.Async.cs",
+    "Src/Newtonsoft.Json/JsonWriter.Async.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT88",
+   "query": "write property name",
+   "identifier": "WritePropertyName",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Json/CustomJsonWriter.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterTest.cs",
+    "Src/Newtonsoft.Json/Bson/BsonWriter.cs",
+    "Src/Newtonsoft.Json/JsonTextWriter.cs",
+    "Src/Newtonsoft.Json/JsonWriter.cs",
+    "Src/Newtonsoft.Json/Linq/JTokenWriter.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonProperty.cs",
+    "Src/Newtonsoft.Json/Serialization/TraceJsonWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT89",
+   "query": "read reference",
+   "identifier": "ReadReference",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonReaderTests.cs",
+    "Src/Newtonsoft.Json/Bson/BsonReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT90",
+   "query": "child class",
+   "identifier": "ChildClass",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/ReferenceLoopHandlingTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/ChildClass.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT91",
+   "query": "set token",
+   "identifier": "SetToken",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonReader.cs",
+    "Src/Newtonsoft.Json/Linq/JTokenReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT92",
+   "query": "get field",
+   "identifier": "GetField",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestFixtureBase.cs",
+    "Src/Newtonsoft.Json/Utilities/TypeExtensions.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT93",
+   "query": "buffer test with error",
+   "identifier": "BufferTest_WithError",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/MiscTests.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT94",
+   "query": "read as boolean async",
+   "identifier": "ReadAsBooleanAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/ReadAsyncTests.cs",
+    "Src/Newtonsoft.Json/JsonReader.Async.cs",
+    "Src/Newtonsoft.Json/JsonTextReader.Async.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT95",
+   "query": "deserialize object",
+   "identifier": "DeserializeObject",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Converters/CustomCreationConverterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/DeserializeObject.cs",
+    "Src/Newtonsoft.Json.Tests/JsonConvertTest.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/DateTimeZoneHandlingTests.cs",
+    "Src/Newtonsoft.Json/JsonConvert.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT96",
+   "query": "directory account",
+   "identifier": "DirectoryAccount",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/DeserializeExtensionData.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/DirectoryAccount.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT97",
+   "query": "get property name",
+   "identifier": "GetPropertyName",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Converters/XmlNodeConverter.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonSerializerInternalWriter.cs",
+    "Src/Newtonsoft.Json/Serialization/NamingStrategy.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT98",
+   "query": "read bytes async",
+   "identifier": "ReadBytesAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonReaderAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenReaderAsyncTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT99",
+   "query": "create reader",
+   "identifier": "CreateReader",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Linq/CreateReader.cs",
+    "Src/Newtonsoft.Json/Linq/JToken.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT100",
+   "query": "create writer",
+   "identifier": "CreateWriter",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Linq/CreateWriter.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenTests.cs",
+    "Src/Newtonsoft.Json/Linq/JContainer.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT101",
+   "query": "get property",
+   "identifier": "GetProperty",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestFixtureBase.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonPropertyCollection.cs",
+    "Src/Newtonsoft.Json/Utilities/TypeExtensions.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT102",
+   "query": "read json",
+   "identifier": "ReadJson",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Converters/DataTableConverterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Converters/DiscriminatedUnionConverterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Converters/GenericJsonConverterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Converters/JavaScriptDateTimeConverterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Converters/UnionConverterTests.cs",
+    "Src/Newtonsoft.Json.Tests/DemoTests.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/PerformanceTests.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Linq/ReadJson.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/CustomJsonConverter.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/CustomJsonConverterGeneric.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/JsonConverterAttributeClass.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1307.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1461.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1545.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1576.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1619.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1620.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue2504.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue3080.cs",
+    "Src/Newtonsoft.Json.Tests/JsonConvertTest.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JObjectTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JValueTests.cs",
+    "Src/Newtonsoft.Json.Tests/LinqToSql/DepartmentConverter.cs",
+    "Src/Newtonsoft.Json.Tests/LinqToSql/GuidByteArrayConverter.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/JsonSerializerCollectionsTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/MemoryTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/ModernNumericTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/PreserveReferencesHandlingTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/SerializationErrorHandlingTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/AttachmentReadConverter.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/ConverterPrecedenceClassConverter.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/EncodingReadConverter.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/ErroringJsonConverter.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/IntToFloatConverter.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/ItemConverterTestConverter.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/ListOfIds.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/MailAddressReadConverter.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/MetroColorConverter.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/MetroStringConverter.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/NameContainerConverter.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/PosConverter.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/PosDoubleConverter.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/TypeConverterJsonConverter.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/WidgetIdJsonConverter.cs",
+    "Src/Newtonsoft.Json/Converters/BinaryConverter.cs",
+    "Src/Newtonsoft.Json/Converters/BsonObjectIdConverter.cs",
+    "Src/Newtonsoft.Json/Converters/CustomCreationConverter.cs",
+    "Src/Newtonsoft.Json/Converters/DataSetConverter.cs",
+    "Src/Newtonsoft.Json/Converters/DataTableConverter.cs",
+    "Src/Newtonsoft.Json/Converters/DiscriminatedUnionConverter.cs",
+    "Src/Newtonsoft.Json/Converters/EntityKeyMemberConverter.cs",
+    "Src/Newtonsoft.Json/Converters/ExpandoObjectConverter.cs",
+    "Src/Newtonsoft.Json/Converters/IsoDateTimeConverter.cs",
+    "Src/Newtonsoft.Json/Converters/JavaScriptDateTimeConverter.cs",
+    "Src/Newtonsoft.Json/Converters/KeyValuePairConverter.cs",
+    "Src/Newtonsoft.Json/Converters/RegexConverter.cs",
+    "Src/Newtonsoft.Json/Converters/StringEnumConverter.cs",
+    "Src/Newtonsoft.Json/Converters/UnionConverter.cs",
+    "Src/Newtonsoft.Json/Converters/UnixDateTimeConverter.cs",
+    "Src/Newtonsoft.Json/Converters/VersionConverter.cs",
+    "Src/Newtonsoft.Json/Converters/XmlNodeConverter.cs",
+    "Src/Newtonsoft.Json/JsonConverter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT103",
+   "query": "resolve reference",
+   "identifier": "ResolveReference",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestObjects/IdReferenceResolver.cs",
+    "Src/Newtonsoft.Json/Serialization/DefaultReferenceResolver.cs",
+    "Src/Newtonsoft.Json/Serialization/IReferenceResolver.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT104",
+   "query": "add reference",
+   "identifier": "AddReference",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestObjects/IdReferenceResolver.cs",
+    "Src/Newtonsoft.Json/Serialization/DefaultReferenceResolver.cs",
+    "Src/Newtonsoft.Json/Serialization/IReferenceResolver.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonSerializerInternalReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT105",
+   "query": "on deserializing method",
+   "identifier": "OnDeserializingMethod",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/SerializationCallbackAttributes.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/SerializationTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/SerializationEventAttributeTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestDictionary.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestList.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestObject.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestObjectWithConstructor.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT106",
+   "query": "remove all",
+   "identifier": "RemoveAll",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenTests.cs",
+    "Src/Newtonsoft.Json/Linq/JContainer.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT107",
+   "query": "deserialize from bson",
+   "identifier": "DeserializeFromBson",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Converters/RegexConverterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Bson/DeserializeFromBson.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT108",
+   "query": "to boolean",
+   "identifier": "ToBoolean",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestObjects/ConvertibleId.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/ConvertibleInt.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/Ratio.cs",
+    "Src/Newtonsoft.Json/Linq/JValue.cs",
+    "Src/Newtonsoft.Json/Serialization/FormatterConverter.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonFormatterConverter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT109",
+   "query": "deep equals",
+   "identifier": "DeepEquals",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Linq/DeepEquals.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JValueTests.cs",
+    "Src/Newtonsoft.Json/Linq/JArray.cs",
+    "Src/Newtonsoft.Json/Linq/JConstructor.cs",
+    "Src/Newtonsoft.Json/Linq/JObject.cs",
+    "Src/Newtonsoft.Json/Linq/JProperty.cs",
+    "Src/Newtonsoft.Json/Linq/JToken.cs",
+    "Src/Newtonsoft.Json/Linq/JValue.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT110",
+   "query": "get posts",
+   "identifier": "GetPosts",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/LinqToJsonTests.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Linq/CreateJsonDeclaratively.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/LinqToJsonTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT111",
+   "query": "to string",
+   "identifier": "ToString",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Linq/ToString.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1461.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue3080.cs",
+    "Src/Newtonsoft.Json.Tests/Schema/JsonSchemaSpecTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/PreserveReferencesHandlingTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/TraceWriterTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/ConsoleWriter.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/ConvertibleId.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/ConvertibleInt.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/DataContractPrivateMembers.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/DictionaryKey.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/DictionaryKeyCast.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/Events/Event.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/Movie.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/Ratio.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/TraceWriter.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/Vector.cs",
+    "Src/Newtonsoft.Json/JsonConvert.cs",
+    "Src/Newtonsoft.Json/Linq/JToken.cs",
+    "Src/Newtonsoft.Json/Linq/JValue.cs",
+    "Src/Newtonsoft.Json/Schema/JsonSchema.cs",
+    "Src/Newtonsoft.Json/Serialization/FormatterConverter.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonFormatterConverter.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonProperty.cs",
+    "Src/Newtonsoft.Json/Serialization/MemoryTraceWriter.cs",
+    "Src/Newtonsoft.Json/Utilities/LinqBridge.cs",
+    "Src/Newtonsoft.Json/Utilities/MiscellaneousUtils.cs",
+    "Src/Newtonsoft.Json/Utilities/StringBuffer.cs",
+    "Src/Newtonsoft.Json/Utilities/StringReference.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT112",
+   "query": "write json dates",
+   "identifier": "WriteJsonDates",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/SerializationTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/JsonSerializerTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT113",
+   "query": "read as decimal int",
+   "identifier": "ReadAsDecimalInt",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/ReadTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenReaderTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT114",
+   "query": "deserialize xml node",
+   "identifier": "DeserializeXmlNode",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Converters/XmlNodeConverterTest.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/ConvertingJsonAndXmlTests.cs",
+    "Src/Newtonsoft.Json/JsonConvert.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT115",
+   "query": "write escaped java script string",
+   "identifier": "WriteEscapedJavaScriptString",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Benchmarks/LowLevelBenchmarks.cs",
+    "Src/Newtonsoft.Json/Utilities/JavaScriptUtils.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT116",
+   "query": "get object data",
+   "identifier": "GetObjectData",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1682.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue2735.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/ReferenceLoopHandlingTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/TypeNameHandlingTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/ISerializableTestObject.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/ISerializableWithoutAttributeTestObject.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/PreserveReferencesCallbackTestObject.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/Ratio.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/StructISerializable.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT117",
+   "query": "performance tests",
+   "identifier": "PerformanceTests",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/PerformanceTests.cs",
+    "Src/Newtonsoft.Json.Tests/Schema/PerformanceTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT118",
+   "query": "yahoo finance",
+   "identifier": "YahooFinance",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/MiscTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenReaderTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT119",
+   "query": "dispose supresses finalization",
+   "identifier": "DisposeSupressesFinalization",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/MiscTests.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT120",
+   "query": "create contract",
+   "identifier": "CreateContract",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/PerformanceTests.cs",
+    "Src/Newtonsoft.Json.Tests/Schema/JsonSchemaGeneratorTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/ContractResolverTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/DynamicConcreteTests.cs",
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT121",
+   "query": "get dynamic member names",
+   "identifier": "GetDynamicMemberNames",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/DynamicTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/DynamicTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/ReferenceLoopHandlingTests.cs",
+    "Src/Newtonsoft.Json/Linq/JObject.cs",
+    "Src/Newtonsoft.Json/Utilities/DynamicProxy.cs",
+    "Src/Newtonsoft.Json/Utilities/DynamicProxyMetaObject.cs",
+    "Src/Newtonsoft.Json/Utilities/DynamicUtils.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT122",
+   "query": "eat whitespace",
+   "identifier": "EatWhitespace",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonTextReader.cs",
+    "Src/Newtonsoft.Json/Linq/JsonPath/JPath.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT123",
+   "query": "get value",
+   "identifier": "GetValue",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/ComponentModel/JPropertyDescriptorTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JObjectTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SetOnlyPropertyClass2.cs",
+    "Src/Newtonsoft.Json/Linq/JObject.cs",
+    "Src/Newtonsoft.Json/Linq/JPropertyDescriptor.cs",
+    "Src/Newtonsoft.Json/Serialization/DynamicValueProvider.cs",
+    "Src/Newtonsoft.Json/Serialization/ExpressionValueProvider.cs",
+    "Src/Newtonsoft.Json/Serialization/IValueProvider.cs",
+    "Src/Newtonsoft.Json/Serialization/ReflectionValueProvider.cs",
+    "Src/Newtonsoft.Json/Utilities/ReflectionObject.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT124",
+   "query": "uri guid time span test class values test",
+   "identifier": "UriGuidTimeSpanTestClassValuesTest",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonReaderTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/LinqToJsonTest.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/JsonSerializerTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT125",
+   "query": "read code w scope",
+   "identifier": "ReadCodeWScope",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonReaderTests.cs",
+    "Src/Newtonsoft.Json/Bson/BsonReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT126",
+   "query": "version converter",
+   "identifier": "VersionConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/CustomJsonConverterGeneric.cs",
+    "Src/Newtonsoft.Json/Converters/VersionConverter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT127",
+   "query": "is referenced",
+   "identifier": "IsReferenced",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestObjects/IdReferenceResolver.cs",
+    "Src/Newtonsoft.Json/Serialization/DefaultReferenceResolver.cs",
+    "Src/Newtonsoft.Json/Serialization/IReferenceResolver.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT128",
+   "query": "json reader exception",
+   "identifier": "JsonReaderException",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/ExceptionTests.cs",
+    "Src/Newtonsoft.Json/JsonReaderException.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT129",
+   "query": "resolve property name",
+   "identifier": "ResolvePropertyName",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Converters/DataSetConverterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/ContractResolverTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/DictionaryKeyContractResolver.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/MetroPropertyNameResolver.cs",
+    "Src/Newtonsoft.Json/Serialization/CamelCaseNamingStrategy.cs",
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs",
+    "Src/Newtonsoft.Json/Serialization/DefaultNamingStrategy.cs",
+    "Src/Newtonsoft.Json/Serialization/KebabCaseNamingStrategy.cs",
+    "Src/Newtonsoft.Json/Serialization/NamingStrategy.cs",
+    "Src/Newtonsoft.Json/Serialization/SnakeCaseNamingStrategy.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT130",
+   "query": "to u int16",
+   "identifier": "ToUInt16",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestObjects/ConvertibleId.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/ConvertibleInt.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/Ratio.cs",
+    "Src/Newtonsoft.Json/Linq/JValue.cs",
+    "Src/Newtonsoft.Json/Serialization/FormatterConverter.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonFormatterConverter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT131",
+   "query": "resolve dictionary key",
+   "identifier": "ResolveDictionaryKey",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestObjects/DictionaryKeyContractResolver.cs",
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT132",
+   "query": "test object",
+   "identifier": "TestObject",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1461.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1752.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1757.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue2504.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/TestObject.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT133",
+   "query": "buffer test async",
+   "identifier": "BufferTestAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/MiscAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterAsyncTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT134",
+   "query": "static test class",
+   "identifier": "StaticTestClass",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestObjects/StaticTestClass.cs",
+    "Src/Newtonsoft.Json.Tests/Utilities/ExpressionReflectionDelegateFactoryTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT135",
+   "query": "compare to",
+   "identifier": "CompareTo",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Issues/Issue3080.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/VersionOld.cs",
+    "Src/Newtonsoft.Json/Linq/JValue.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT136",
+   "query": "n log trace writer",
+   "identifier": "NLogTraceWriter",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/CustomTraceWriter.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/TraceWriterTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT137",
+   "query": "descendants and self",
+   "identifier": "DescendantsAndSelf",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenTests.cs",
+    "Src/Newtonsoft.Json/Linq/Extensions.cs",
+    "Src/Newtonsoft.Json/Linq/JContainer.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT138",
+   "query": "json converter",
+   "identifier": "JsonConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/DemoTests.cs",
+    "Src/Newtonsoft.Json/JsonConverter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT139",
+   "query": "create unexpected character exception",
+   "identifier": "CreateUnexpectedCharacterException",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonTextReader.cs",
+    "Src/Newtonsoft.Json/Linq/JsonPath/JPath.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT140",
+   "query": "person error",
+   "identifier": "PersonError",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/SerializationTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/PersonError.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT141",
+   "query": "deserialize dictionary",
+   "identifier": "DeserializeDictionary",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/DeserializeDictionary.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/ImmutableCollectionsTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT142",
+   "query": "json schema tests",
+   "identifier": "JsonSchemaTests",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/JsonSchemaTests.cs",
+    "Src/Newtonsoft.Json.Tests/Schema/JsonSchemaTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT143",
+   "query": "read as boolean",
+   "identifier": "ReadAsBoolean",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/ReadTests.cs",
+    "Src/Newtonsoft.Json/JsonReader.cs",
+    "Src/Newtonsoft.Json/JsonTextReader.cs",
+    "Src/Newtonsoft.Json/JsonValidatingReader.cs",
+    "Src/Newtonsoft.Json/Serialization/TraceJsonReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT144",
+   "query": "get attributes",
+   "identifier": "GetAttributes",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JObject.cs",
+    "Src/Newtonsoft.Json/Serialization/IAttributeProvider.cs",
+    "Src/Newtonsoft.Json/Serialization/ReflectionAttributeProvider.cs",
+    "Src/Newtonsoft.Json/Utilities/ReflectionUtils.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT145",
+   "query": "read as date time offset bad string",
+   "identifier": "ReadAsDateTimeOffsetBadString",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/ReadTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenReaderTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT146",
+   "query": "try set member",
+   "identifier": "TrySetMember",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/DynamicTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/DynamicTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/ReferenceLoopHandlingTests.cs",
+    "Src/Newtonsoft.Json/Linq/JObject.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonDynamicContract.cs",
+    "Src/Newtonsoft.Json/Utilities/DynamicProxy.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT147",
+   "query": "to u int32",
+   "identifier": "ToUInt32",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestObjects/ConvertibleId.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/ConvertibleInt.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/Ratio.cs",
+    "Src/Newtonsoft.Json/Linq/JValue.cs",
+    "Src/Newtonsoft.Json/Serialization/FormatterConverter.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonFormatterConverter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT148",
+   "query": "read as decimal",
+   "identifier": "ReadAsDecimal",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Benchmarks/JsonTextReaderBenchmarks.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Json/CustomJsonReader.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/ReadTests.cs",
+    "Src/Newtonsoft.Json.Tests/JsonValidatingReaderTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/JsonTextReaderTests/UnmanagedResourceFakingJsonReader.cs",
+    "Src/Newtonsoft.Json/JsonReader.cs",
+    "Src/Newtonsoft.Json/JsonTextReader.cs",
+    "Src/Newtonsoft.Json/JsonValidatingReader.cs",
+    "Src/Newtonsoft.Json/Serialization/TraceJsonReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT149",
+   "query": "resolve contract",
+   "identifier": "ResolveContract",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestObjects/IgnoredPropertiesContractResolver.cs",
+    "Src/Newtonsoft.Json/Serialization/CamelCasePropertyNamesContractResolver.cs",
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs",
+    "Src/Newtonsoft.Json/Serialization/IContractResolver.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT150",
+   "query": "google search api",
+   "identifier": "GoogleSearchAPI",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/LinqToJsonTest.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/JsonSerializerTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT151",
+   "query": "write end async",
+   "identifier": "WriteEndAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json/JsonTextWriter.Async.cs",
+    "Src/Newtonsoft.Json/JsonWriter.Async.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT152",
+   "query": "read async",
+   "identifier": "ReadAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1569.cs",
+    "Src/Newtonsoft.Json.Tests/Issues/Issue2694.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/ReadAsyncTests.cs",
+    "Src/Newtonsoft.Json/JsonReader.Async.cs",
+    "Src/Newtonsoft.Json/JsonTextReader.Async.cs",
+    "Src/Newtonsoft.Json/Utilities/AsyncUtils.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT153",
+   "query": "log manager",
+   "identifier": "LogManager",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/TraceWriterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/DependencyInjectionTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT154",
+   "query": "dynamic contract resolver",
+   "identifier": "DynamicContractResolver",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/CustomContractResolver.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/SerializationTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/ContractResolverTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT155",
+   "query": "write end object",
+   "identifier": "WriteEndObject",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Json/CustomJsonWriter.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterTest.cs",
+    "Src/Newtonsoft.Json/JsonWriter.cs",
+    "Src/Newtonsoft.Json/Serialization/TraceJsonWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT156",
+   "query": "write all text",
+   "identifier": "WriteAllText",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/LinqToJsonTests.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Linq/WriteToJsonFile.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/SerializeWithJsonSerializerToFile.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT157",
+   "query": "reset value",
+   "identifier": "ResetValue",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/ComponentModel/JPropertyDescriptorTests.cs",
+    "Src/Newtonsoft.Json/Linq/JPropertyDescriptor.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT158",
+   "query": "serialize expando object",
+   "identifier": "SerializeExpandoObject",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Converters/ExpandoObjectConverterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/JsonSerializerTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT159",
+   "query": "abstract dictionary test class",
+   "identifier": "AbstractDictionaryTestClass",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/ContractResolverTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/AbstractDictionaryTestClass.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT160",
+   "query": "create string",
+   "identifier": "CreateString",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/JValueTests.cs",
+    "Src/Newtonsoft.Json/Linq/JValue.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT161",
+   "query": "add annotation",
+   "identifier": "AddAnnotation",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/AnnotationsTests.cs",
+    "Src/Newtonsoft.Json/Linq/JToken.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT162",
+   "query": "write start object",
+   "identifier": "WriteStartObject",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Json/CustomJsonWriter.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterTest.cs",
+    "Src/Newtonsoft.Json/Bson/BsonWriter.cs",
+    "Src/Newtonsoft.Json/JsonTextWriter.cs",
+    "Src/Newtonsoft.Json/JsonWriter.cs",
+    "Src/Newtonsoft.Json/Linq/JTokenWriter.cs",
+    "Src/Newtonsoft.Json/Serialization/TraceJsonWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT163",
+   "query": "on serializing method",
+   "identifier": "OnSerializingMethod",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/SerializationCallbackAttributes.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/SerializationTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/SerializationEventAttributeTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestDictionary.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestList.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestObject.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestObjectWithConstructor.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT164",
+   "query": "write end constructor",
+   "identifier": "WriteEndConstructor",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Json/CustomJsonWriter.cs",
+    "Src/Newtonsoft.Json/JsonWriter.cs",
+    "Src/Newtonsoft.Json/Serialization/TraceJsonWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT165",
+   "query": "add first",
+   "identifier": "AddFirst",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/TypeNameHandlingTests.cs",
+    "Src/Newtonsoft.Json/Linq/JContainer.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT166",
+   "query": "serialize internal",
+   "identifier": "SerializeInternal",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonSerializer.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonSerializerProxy.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT167",
+   "query": "has line info",
+   "identifier": "HasLineInfo",
+   "definedIn": [
+    "Src/Newtonsoft.Json/IJsonLineInfo.cs",
+    "Src/Newtonsoft.Json/JsonTextReader.cs",
+    "Src/Newtonsoft.Json/JsonValidatingReader.cs",
+    "Src/Newtonsoft.Json/Linq/JToken.cs",
+    "Src/Newtonsoft.Json/Linq/JTokenReader.cs",
+    "Src/Newtonsoft.Json/Serialization/TraceJsonReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT168",
+   "query": "read as date time",
+   "identifier": "ReadAsDateTime",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Json/CustomJsonReader.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/JsonTextReaderTests/UnmanagedResourceFakingJsonReader.cs",
+    "Src/Newtonsoft.Json/JsonReader.cs",
+    "Src/Newtonsoft.Json/JsonTextReader.cs",
+    "Src/Newtonsoft.Json/JsonValidatingReader.cs",
+    "Src/Newtonsoft.Json/Serialization/TraceJsonReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT169",
+   "query": "json validating reader",
+   "identifier": "JsonValidatingReader",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/JsonSchemaTests.cs",
+    "Src/Newtonsoft.Json/JsonValidatingReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT170",
+   "query": "force json array",
+   "identifier": "ForceJsonArray",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Converters/XmlNodeConverterTest.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/ConvertingJsonAndXmlTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT171",
+   "query": "should serialize manager",
+   "identifier": "ShouldSerializeManager",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/ConditionalPropertiesTests.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/SerializeConditionalProperty.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/ShouldSerializeTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT172",
+   "query": "write indent",
+   "identifier": "WriteIndent",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Json/CustomJsonWriter.cs",
+    "Src/Newtonsoft.Json/JsonTextWriter.cs",
+    "Src/Newtonsoft.Json/JsonWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT173",
+   "query": "union case",
+   "identifier": "UnionCase",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Converters/DiscriminatedUnionConverterTests.cs",
+    "Src/Newtonsoft.Json/Converters/DiscriminatedUnionConverter.cs",
+    "Src/Newtonsoft.Json/Converters/UnionConverter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT174",
+   "query": "value formatting async",
+   "identifier": "ValueFormattingAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenWriterAsyncTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT175",
+   "query": "abstract list test class",
+   "identifier": "AbstractListTestClass",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/ContractResolverTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/AbstractListTestClass.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT176",
+   "query": "read double",
+   "identifier": "ReadDouble",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonReaderTests.cs",
+    "Src/Newtonsoft.Json/Bson/BsonReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT177",
+   "query": "dynamic tests",
+   "identifier": "DynamicTests",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Linq/DynamicTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/DynamicTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT178",
+   "query": "json constructor attribute",
+   "identifier": "JsonConstructorAttribute",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/JsonConstructorAttribute.cs",
+    "Src/Newtonsoft.Json/JsonConstructorAttribute.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT179",
+   "query": "property item converter",
+   "identifier": "PropertyItemConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/JsonSerializerTest.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/PropertyItemConverter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT180",
+   "query": "buffer test with error async",
+   "identifier": "BufferTest_WithErrorAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/MiscAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterAsyncTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT181",
+   "query": "json schema exception",
+   "identifier": "JsonSchemaException",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/ExceptionTests.cs",
+    "Src/Newtonsoft.Json/Schema/JsonSchemaException.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT182",
+   "query": "write null",
+   "identifier": "WriteNull",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Json/CustomJsonWriter.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterTest.cs",
+    "Src/Newtonsoft.Json/Bson/BsonWriter.cs",
+    "Src/Newtonsoft.Json/JsonTextWriter.cs",
+    "Src/Newtonsoft.Json/JsonWriter.cs",
+    "Src/Newtonsoft.Json/Linq/JTokenWriter.cs",
+    "Src/Newtonsoft.Json/Serialization/TraceJsonWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT183",
+   "query": "serialize deserialize regex",
+   "identifier": "SerializeDeserializeRegex",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonWriterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/JsonSerializerTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT184",
+   "query": "trace writer tests",
+   "identifier": "TraceWriterTests",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/TraceWriterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/TraceWriterTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT185",
+   "query": "write property name async",
+   "identifier": "WritePropertyNameAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json/JsonTextWriter.Async.cs",
+    "Src/Newtonsoft.Json/JsonWriter.Async.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT186",
+   "query": "employee reference",
+   "identifier": "EmployeeReference",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/SerializationTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/EmployeeReference.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT187",
+   "query": "read as int32 bad string async",
+   "identifier": "ReadAsInt32BadStringAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonReaderAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenReaderAsyncTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT188",
+   "query": "serialization event test object",
+   "identifier": "SerializationEventTestObject",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/SerializationCallbackAttributes.cs",
+    "Src/Newtonsoft.Json.Tests/Documentation/SerializationTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/SerializationEventTestObject.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT189",
+   "query": "write end on property",
+   "identifier": "WriteEndOnProperty",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonWriterTests.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterTest.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT190",
+   "query": "read as date time offset",
+   "identifier": "ReadAsDateTimeOffset",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Json/CustomJsonReader.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/ReadTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/JsonTextReaderTests/UnmanagedResourceFakingJsonReader.cs",
+    "Src/Newtonsoft.Json/JsonReader.cs",
+    "Src/Newtonsoft.Json/JsonTextReader.cs",
+    "Src/Newtonsoft.Json/JsonValidatingReader.cs",
+    "Src/Newtonsoft.Json/Serialization/TraceJsonReader.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT191",
+   "query": "regex test class",
+   "identifier": "RegexTestClass",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonReaderTests.cs",
+    "Src/Newtonsoft.Json.Tests/Bson/BsonWriterTests.cs",
+    "Src/Newtonsoft.Json.Tests/Converters/RegexConverterTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT192",
+   "query": "write raw value",
+   "identifier": "WriteRawValue",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonWriterTests.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterTest.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenWriterTest.cs",
+    "Src/Newtonsoft.Json/Bson/BsonWriter.cs",
+    "Src/Newtonsoft.Json/JsonWriter.cs",
+    "Src/Newtonsoft.Json/Serialization/TraceJsonWriter.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT193",
+   "query": "read as decimal int async",
+   "identifier": "ReadAsDecimalIntAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextReaderTests/ReadAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenReaderAsyncTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT194",
+   "query": "date time zone handling async",
+   "identifier": "DateTimeZoneHandlingAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Bson/BsonWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json.Tests/Linq/JTokenWriterAsyncTests.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT195",
+   "query": "get key for item",
+   "identifier": "GetKeyForItem",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestObjects/VersionKeyedCollection.cs",
+    "Src/Newtonsoft.Json/Linq/JPropertyKeyedCollection.cs",
+    "Src/Newtonsoft.Json/Schema/JsonSchemaNodeCollection.cs",
+    "Src/Newtonsoft.Json/Serialization/JsonPropertyCollection.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT196",
+   "query": "abstract test class",
+   "identifier": "AbstractTestClass",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/ContractResolverTests.cs",
+    "Src/Newtonsoft.Json.Tests/TestObjects/AbstractTestClass.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT197",
+   "query": "write null async",
+   "identifier": "WriteNullAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/JsonTextWriterAsyncTests.cs",
+    "Src/Newtonsoft.Json/JsonTextWriter.Async.cs",
+    "Src/Newtonsoft.Json/JsonWriter.Async.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT198",
+   "query": "try binary operation",
+   "identifier": "TryBinaryOperation",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JValue.cs",
+    "Src/Newtonsoft.Json/Utilities/DynamicProxy.cs"
+   ]
+  },
+  {
+   "id": "IDNEWT199",
+   "query": "customer invoice",
+   "identifier": "CustomerInvoice",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Documentation/Samples/Serializer/SerializeExtensionData.cs",
+    "Src/Newtonsoft.Json.Tests/Serialization/ExtensionDataTests.cs"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,271 @@
+{
+ "repo": "id-ecto",
+ "commit": "c0c99f51ef1dc71c265162c92623858027122a77",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "28 ambiguous-symbol lookups drawn by gen_queries_multi.py (seed 0xa11ce) from tree-sitter definitions; >=8 chars, >=2 words, 2..30 dirs, tests excluded.",
+ "queries": [
+  {
+   "id": "IDECTO0",
+   "query": "primary key!",
+   "identifier": "primary_key!",
+   "definedIn": [
+    "lib/ecto.ex",
+    "lib/ecto/association.ex"
+   ]
+  },
+  {
+   "id": "IDECTO1",
+   "query": "start link",
+   "identifier": "start_link",
+   "definedIn": [
+    "lib/ecto/repo.ex",
+    "lib/ecto/repo/registry.ex",
+    "lib/ecto/repo/supervisor.ex"
+   ]
+  },
+  {
+   "id": "IDECTO2",
+   "query": "join qual",
+   "identifier": "join_qual",
+   "definedIn": [
+    "lib/ecto/query.ex",
+    "lib/ecto/query/inspect.ex"
+   ]
+  },
+  {
+   "id": "IDECTO3",
+   "query": "insert or update",
+   "identifier": "insert_or_update",
+   "definedIn": [
+    "lib/ecto/multi.ex",
+    "lib/ecto/repo.ex",
+    "lib/ecto/repo/schema.ex"
+   ]
+  },
+  {
+   "id": "IDECTO4",
+   "query": "escape params",
+   "identifier": "escape_params",
+   "definedIn": [
+    "lib/ecto/query/builder.ex",
+    "lib/ecto/query/builder/join.ex"
+   ]
+  },
+  {
+   "id": "IDECTO5",
+   "query": "autogenerate id",
+   "identifier": "autogenerate_id",
+   "definedIn": [
+    "lib/ecto/embedded.ex",
+    "lib/ecto/repo/schema.ex"
+   ]
+  },
+  {
+   "id": "IDECTO6",
+   "query": "delete all",
+   "identifier": "delete_all",
+   "definedIn": [
+    "lib/ecto/association.ex",
+    "lib/ecto/multi.ex",
+    "lib/ecto/repo.ex",
+    "lib/ecto/repo/queryable.ex"
+   ]
+  },
+  {
+   "id": "IDECTO7",
+   "query": "assert struct!",
+   "identifier": "assert_struct!",
+   "definedIn": [
+    "lib/ecto.ex",
+    "lib/ecto/repo/preloader.ex"
+   ]
+  },
+  {
+   "id": "IDECTO8",
+   "query": "not nil!",
+   "identifier": "not_nil!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex",
+    "lib/ecto/query/builder/filter.ex"
+   ]
+  },
+  {
+   "id": "IDECTO9",
+   "query": "to field",
+   "identifier": "to_field",
+   "definedIn": [
+    "lib/ecto/association.ex",
+    "lib/ecto/query/builder/filter.ex",
+    "lib/ecto/query/builder/group_by.ex",
+    "lib/ecto/query/builder/order_by.ex"
+   ]
+  },
+  {
+   "id": "IDECTO10",
+   "query": "update all",
+   "identifier": "update_all",
+   "definedIn": [
+    "lib/ecto/multi.ex",
+    "lib/ecto/repo.ex",
+    "lib/ecto/repo/queryable.ex"
+   ]
+  },
+  {
+   "id": "IDECTO11",
+   "query": "escape select aliases",
+   "identifier": "escape_select_aliases",
+   "definedIn": [
+    "lib/ecto/query/builder.ex",
+    "lib/ecto/query/builder/dynamic.ex"
+   ]
+  },
+  {
+   "id": "IDECTO12",
+   "query": "all running",
+   "identifier": "all_running",
+   "definedIn": [
+    "lib/ecto/repo.ex",
+    "lib/ecto/repo/registry.ex"
+   ]
+  },
+  {
+   "id": "IDECTO13",
+   "query": "action to auto",
+   "identifier": "action_to_auto",
+   "definedIn": [
+    "lib/ecto/embedded.ex",
+    "lib/ecto/repo/schema.ex"
+   ]
+  },
+  {
+   "id": "IDECTO14",
+   "query": "run prepare",
+   "identifier": "run_prepare",
+   "definedIn": [
+    "lib/ecto/embedded.ex",
+    "lib/ecto/repo/schema.ex"
+   ]
+  },
+  {
+   "id": "IDECTO15",
+   "query": "in transaction?",
+   "identifier": "in_transaction?",
+   "definedIn": [
+    "lib/ecto/repo.ex",
+    "lib/ecto/repo/transaction.ex"
+   ]
+  },
+  {
+   "id": "IDECTO16",
+   "query": "prepare query",
+   "identifier": "prepare_query",
+   "definedIn": [
+    "lib/ecto/adapter/queryable.ex",
+    "lib/ecto/repo.ex"
+   ]
+  },
+  {
+   "id": "IDECTO17",
+   "query": "check action!",
+   "identifier": "check_action!",
+   "definedIn": [
+    "lib/ecto/association.ex",
+    "lib/ecto/changeset/relation.ex"
+   ]
+  },
+  {
+   "id": "IDECTO18",
+   "query": "apply changes",
+   "identifier": "apply_changes",
+   "definedIn": [
+    "lib/ecto/changeset.ex",
+    "lib/ecto/changeset/relation.ex"
+   ]
+  },
+  {
+   "id": "IDECTO19",
+   "query": "filter and reraise",
+   "identifier": "filter_and_reraise",
+   "definedIn": [
+    "lib/ecto/query/planner.ex",
+    "lib/ecto/repo/preloader.ex"
+   ]
+  },
+  {
+   "id": "IDECTO20",
+   "query": "embedded load",
+   "identifier": "embedded_load",
+   "definedIn": [
+    "lib/ecto.ex",
+    "lib/ecto/type.ex"
+   ]
+  },
+  {
+   "id": "IDECTO21",
+   "query": "escape field!",
+   "identifier": "escape_field!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex",
+    "lib/ecto/query/builder/update.ex"
+   ]
+  },
+  {
+   "id": "IDECTO22",
+   "query": "embed as",
+   "identifier": "embed_as",
+   "definedIn": [
+    "integration_test/support/types.exs",
+    "lib/ecto/embedded.ex",
+    "lib/ecto/enum.ex",
+    "lib/ecto/parameterized_type.ex",
+    "lib/ecto/type.ex"
+   ]
+  },
+  {
+   "id": "IDECTO23",
+   "query": "insert or update!",
+   "identifier": "insert_or_update!",
+   "definedIn": [
+    "lib/ecto/repo.ex",
+    "lib/ecto/repo/schema.ex"
+   ]
+  },
+  {
+   "id": "IDECTO24",
+   "query": "insert all",
+   "identifier": "insert_all",
+   "definedIn": [
+    "lib/ecto/multi.ex",
+    "lib/ecto/repo.ex",
+    "lib/ecto/repo/schema.ex"
+   ]
+  },
+  {
+   "id": "IDECTO25",
+   "query": "assert schema!",
+   "identifier": "assert_schema!",
+   "definedIn": [
+    "lib/ecto/query.ex",
+    "lib/ecto/repo/queryable.ex"
+   ]
+  },
+  {
+   "id": "IDECTO26",
+   "query": "bump subquery params",
+   "identifier": "bump_subquery_params",
+   "definedIn": [
+    "lib/ecto/query/builder/select.ex",
+    "lib/ecto/query/planner.ex"
+   ]
+  },
+  {
+   "id": "IDECTO27",
+   "query": "embedded dump",
+   "identifier": "embedded_dump",
+   "definedIn": [
+    "lib/ecto.ex",
+    "lib/ecto/type.ex"
+   ]
+  }
+ ]
+}

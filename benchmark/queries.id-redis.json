@@ -1,0 +1,430 @@
+{
+ "repo": "id-redis",
+ "commit": "2ac3f66dd59e081799abff78a72da520d70802f5",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "43 ambiguous-symbol lookups drawn by gen_queries_multi.py (seed 0xa11ce) from tree-sitter definitions; >=8 chars, >=2 words, 2..30 dirs, tests excluded.",
+ "queries": [
+  {
+   "id": "IDREDI0",
+   "query": "sockaddr un",
+   "identifier": "sockaddr_un",
+   "definedIn": [
+    "deps/hiredis/net.c",
+    "src/anet.c"
+   ]
+  },
+  {
+   "id": "IDREDI1",
+   "query": "redis ae write event",
+   "identifier": "redisAeWriteEvent",
+   "definedIn": [
+    "deps/hiredis/adapters/ae.h",
+    "src/sentinel.c"
+   ]
+  },
+  {
+   "id": "IDREDI2",
+   "query": "lua y parser",
+   "identifier": "luaY_parser",
+   "definedIn": [
+    "deps/lua/etc/noparser.c",
+    "deps/lua/src/lparser.c"
+   ]
+  },
+  {
+   "id": "IDREDI3",
+   "query": "dict expand",
+   "identifier": "dictExpand",
+   "definedIn": [
+    "deps/hiredis/dict.c",
+    "src/dict.c"
+   ]
+  },
+  {
+   "id": "IDREDI4",
+   "query": "dict release",
+   "identifier": "dictRelease",
+   "definedIn": [
+    "deps/hiredis/dict.c",
+    "src/dict.c"
+   ]
+  },
+  {
+   "id": "IDREDI5",
+   "query": "dict create",
+   "identifier": "dictCreate",
+   "definedIn": [
+    "deps/hiredis/dict.c",
+    "src/dict.c"
+   ]
+  },
+  {
+   "id": "IDREDI6",
+   "query": "redis command",
+   "identifier": "redisCommand",
+   "definedIn": [
+    "deps/hiredis/hiredis.c",
+    "src/acl.c",
+    "src/aof.c",
+    "src/cluster.c",
+    "src/cluster.h",
+    "src/cluster_asm.c",
+    "src/cluster_asm.h",
+    "src/config.c",
+    "src/db.c",
+    "src/debug.c",
+    "src/latency.c",
+    "src/module.c",
+    "src/multi.c",
+    "src/networking.c",
+    "src/script.c",
+    "src/script_lua.c",
+    "src/server.c",
+    "src/server.h"
+   ]
+  },
+  {
+   "id": "IDREDI7",
+   "query": "dict delete",
+   "identifier": "dictDelete",
+   "definedIn": [
+    "deps/hiredis/dict.c",
+    "src/dict.c"
+   ]
+  },
+  {
+   "id": "IDREDI8",
+   "query": "sockaddr in",
+   "identifier": "sockaddr_in",
+   "definedIn": [
+    "deps/hiredis/test.c",
+    "src/anet.c",
+    "src/cluster_legacy.c"
+   ]
+  },
+  {
+   "id": "IDREDI9",
+   "query": "redis ae add read",
+   "identifier": "redisAeAddRead",
+   "definedIn": [
+    "deps/hiredis/adapters/ae.h",
+    "src/sentinel.c"
+   ]
+  },
+  {
+   "id": "IDREDI10",
+   "query": "dict expand if needed",
+   "identifier": "_dictExpandIfNeeded",
+   "definedIn": [
+    "deps/hiredis/dict.c",
+    "src/dict.c"
+   ]
+  },
+  {
+   "id": "IDREDI11",
+   "query": "dict clear",
+   "identifier": "_dictClear",
+   "definedIn": [
+    "deps/hiredis/dict.c",
+    "src/dict.c"
+   ]
+  },
+  {
+   "id": "IDREDI12",
+   "query": "redis ae events",
+   "identifier": "redisAeEvents",
+   "definedIn": [
+    "deps/hiredis/adapters/ae.h",
+    "src/sentinel.c"
+   ]
+  },
+  {
+   "id": "IDREDI13",
+   "query": "redis ae attach",
+   "identifier": "redisAeAttach",
+   "definedIn": [
+    "deps/hiredis/adapters/ae.h",
+    "src/sentinel.c"
+   ]
+  },
+  {
+   "id": "IDREDI14",
+   "query": "roaring64 iterator s",
+   "identifier": "roaring64_iterator_s",
+   "definedIn": [
+    "deps/croaring/include/roaring/roaring64.h",
+    "deps/croaring/src/roaring64.c"
+   ]
+  },
+  {
+   "id": "IDREDI15",
+   "query": "dict iterator",
+   "identifier": "dictIterator",
+   "definedIn": [
+    "deps/hiredis/dict.h",
+    "src/dict.h"
+   ]
+  },
+  {
+   "id": "IDREDI16",
+   "query": "container s",
+   "identifier": "container_s",
+   "definedIn": [
+    "deps/croaring/include/roaring/roaring_types.h",
+    "deps/jemalloc/src/ctl.c"
+   ]
+  },
+  {
+   "id": "IDREDI17",
+   "query": "redis ae cleanup",
+   "identifier": "redisAeCleanup",
+   "definedIn": [
+    "deps/hiredis/adapters/ae.h",
+    "src/sentinel.c"
+   ]
+  },
+  {
+   "id": "IDREDI18",
+   "query": "read bytes",
+   "identifier": "readBytes",
+   "definedIn": [
+    "deps/hiredis/read.c",
+    "src/redis-check-aof.c"
+   ]
+  },
+  {
+   "id": "IDREDI19",
+   "query": "dict init",
+   "identifier": "_dictInit",
+   "definedIn": [
+    "deps/hiredis/dict.c",
+    "src/dict.c"
+   ]
+  },
+  {
+   "id": "IDREDI20",
+   "query": "dict entry",
+   "identifier": "dictEntry",
+   "definedIn": [
+    "deps/hiredis/dict.h",
+    "src/dict.c",
+    "src/dict.h"
+   ]
+  },
+  {
+   "id": "IDREDI21",
+   "query": "create string object",
+   "identifier": "createStringObject",
+   "definedIn": [
+    "deps/hiredis/hiredis.c",
+    "src/object.c"
+   ]
+  },
+  {
+   "id": "IDREDI22",
+   "query": "dict type",
+   "identifier": "dictType",
+   "definedIn": [
+    "deps/hiredis/dict.h",
+    "src/dict.h"
+   ]
+  },
+  {
+   "id": "IDREDI23",
+   "query": "dict reset",
+   "identifier": "_dictReset",
+   "definedIn": [
+    "deps/hiredis/dict.c",
+    "src/dict.c"
+   ]
+  },
+  {
+   "id": "IDREDI24",
+   "query": "dict gen hash function",
+   "identifier": "dictGenHashFunction",
+   "definedIn": [
+    "deps/hiredis/dict.c",
+    "src/dict.c"
+   ]
+  },
+  {
+   "id": "IDREDI25",
+   "query": "event base",
+   "identifier": "event_base",
+   "definedIn": [
+    "deps/hiredis/adapters/libevent.h",
+    "deps/hiredis/test.c"
+   ]
+  },
+  {
+   "id": "IDREDI26",
+   "query": "redis ae del write",
+   "identifier": "redisAeDelWrite",
+   "definedIn": [
+    "deps/hiredis/adapters/ae.h",
+    "src/sentinel.c"
+   ]
+  },
+  {
+   "id": "IDREDI27",
+   "query": "tsd init head s",
+   "identifier": "tsd_init_head_s",
+   "definedIn": [
+    "deps/jemalloc/include/jemalloc/internal/tsd_generic.h",
+    "deps/jemalloc/src/tsd.c"
+   ]
+  },
+  {
+   "id": "IDREDI28",
+   "query": "redis module on load",
+   "identifier": "RedisModule_OnLoad",
+   "definedIn": [
+    "modules/vector-sets/vset.c",
+    "src/modules/helloacl.c",
+    "src/modules/helloblock.c",
+    "src/modules/hellocluster.c",
+    "src/modules/hellodict.c",
+    "src/modules/hellohook.c",
+    "src/modules/hellotimer.c",
+    "src/modules/hellotype.c",
+    "src/modules/helloworld.c",
+    "src/tls.c"
+   ]
+  },
+  {
+   "id": "IDREDI29",
+   "query": "dict init iterator",
+   "identifier": "dictInitIterator",
+   "definedIn": [
+    "deps/hiredis/dict.c",
+    "src/dict.c"
+   ]
+  },
+  {
+   "id": "IDREDI30",
+   "query": "hdr histogram",
+   "identifier": "hdr_histogram",
+   "definedIn": [
+    "deps/hdr_histogram/hdr_histogram.c",
+    "deps/hdr_histogram/hdr_histogram.h",
+    "src/latency.c",
+    "src/redis-benchmark.c",
+    "src/redis-cli.c",
+    "src/server.c",
+    "src/server.h"
+   ]
+  },
+  {
+   "id": "IDREDI31",
+   "query": "lua u dump",
+   "identifier": "luaU_dump",
+   "definedIn": [
+    "deps/lua/etc/noparser.c",
+    "deps/lua/src/ldump.c"
+   ]
+  },
+  {
+   "id": "IDREDI32",
+   "query": "redis ae add write",
+   "identifier": "redisAeAddWrite",
+   "definedIn": [
+    "deps/hiredis/adapters/ae.h",
+    "src/sentinel.c"
+   ]
+  },
+  {
+   "id": "IDREDI33",
+   "query": "dict next",
+   "identifier": "dictNext",
+   "definedIn": [
+    "deps/hiredis/dict.c",
+    "src/dict.c"
+   ]
+  },
+  {
+   "id": "IDREDI34",
+   "query": "create array object",
+   "identifier": "createArrayObject",
+   "definedIn": [
+    "deps/hiredis/hiredis.c",
+    "src/object.c"
+   ]
+  },
+  {
+   "id": "IDREDI35",
+   "query": "dict find",
+   "identifier": "dictFind",
+   "definedIn": [
+    "deps/hiredis/dict.c",
+    "src/dict.c"
+   ]
+  },
+  {
+   "id": "IDREDI36",
+   "query": "dict replace",
+   "identifier": "dictReplace",
+   "definedIn": [
+    "deps/hiredis/dict.c",
+    "src/dict.c"
+   ]
+  },
+  {
+   "id": "IDREDI37",
+   "query": "epoll event",
+   "identifier": "epoll_event",
+   "definedIn": [
+    "deps/hiredis/test.c",
+    "src/ae_epoll.c"
+   ]
+  },
+  {
+   "id": "IDREDI38",
+   "query": "hdr iter percentiles",
+   "identifier": "hdr_iter_percentiles",
+   "definedIn": [
+    "deps/hdr_histogram/hdr_histogram.c",
+    "deps/hdr_histogram/hdr_histogram.h",
+    "src/redis-benchmark.c"
+   ]
+  },
+  {
+   "id": "IDREDI39",
+   "query": "redis ae read event",
+   "identifier": "redisAeReadEvent",
+   "definedIn": [
+    "deps/hiredis/adapters/ae.h",
+    "src/sentinel.c"
+   ]
+  },
+  {
+   "id": "IDREDI40",
+   "query": "redis ae del read",
+   "identifier": "redisAeDelRead",
+   "definedIn": [
+    "deps/hiredis/adapters/ae.h",
+    "src/sentinel.c"
+   ]
+  },
+  {
+   "id": "IDREDI41",
+   "query": "hdr iter",
+   "identifier": "hdr_iter",
+   "definedIn": [
+    "deps/hdr_histogram/hdr_histogram.c",
+    "deps/hdr_histogram/hdr_histogram.h",
+    "src/latency.c",
+    "src/redis-benchmark.c",
+    "src/redis-cli.c"
+   ]
+  },
+  {
+   "id": "IDREDI42",
+   "query": "lua x init",
+   "identifier": "luaX_init",
+   "definedIn": [
+    "deps/lua/etc/noparser.c",
+    "deps/lua/src/llex.c"
+   ]
+  }
+ ]
+}

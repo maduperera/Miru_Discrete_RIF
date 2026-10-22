@@ -1,0 +1,62 @@
+{
+ "redis": {
+  "sha": "2ac3f66dd59e081799abff78a72da520d70802f5",
+  "url": "https://github.com/redis/redis"
+ },
+ "abseil": {
+  "sha": "e92c357f19dfd9c2390d388aaa98e72adb2abac0",
+  "url": "https://github.com/abseil/abseil-cpp"
+ },
+ "newtonsoft": {
+  "sha": "52fa3aef1f2cadcd3a3f874251eddc98d3efbbaa",
+  "url": "https://github.com/JamesNK/Newtonsoft.Json"
+ },
+ "play": {
+  "sha": "8c8390f31159de4c4433fe6d79063d20fc12ae74",
+  "url": "https://github.com/playframework/playframework"
+ },
+ "pandoc": {
+  "sha": "e5a6ab5cfb4247689090b3395cacd0defe902936",
+  "url": "https://github.com/jgm/pandoc"
+ },
+ "flame": {
+  "sha": "69b0968f97e3fdc07b3f19a44ba0df5a01a53d04",
+  "url": "https://github.com/flame-engine/flame"
+ },
+ "laravel": {
+  "sha": "5c0486f5a5b89e259d271dae729c8529a3ced989",
+  "url": "https://github.com/laravel/framework"
+ },
+ "hugo": {
+  "sha": "7343fc9c37877fbe81856fe99b08ac1ebbf72d12",
+  "url": "https://github.com/gohugoio/hugo"
+ },
+ "ecto": {
+  "sha": "c0c99f51ef1dc71c265162c92623858027122a77",
+  "url": "https://github.com/elixir-ecto/ecto"
+ },
+ "webpack": {
+  "sha": "6cccc2dd511dfe07fe6c6abf7aa972f9b7d60de6",
+  "url": "https://github.com/webpack/webpack"
+ },
+ "guava": {
+  "sha": "de57a419b56bcd887f51bb99103d91c65b7c5e86",
+  "url": "https://github.com/google/guava"
+ },
+ "rails": {
+  "sha": "659211619aad2ef2df4c6b1691c9ec7a197fd37a",
+  "url": "https://github.com/rails/rails"
+ },
+ "tokio": {
+  "sha": "ce685ee6916549ed7e52dbfd5430858bbdc734d3",
+  "url": "https://github.com/tokio-rs/tokio"
+ },
+ "vite": {
+  "sha": "2601eed4d764f21809652dbba745d0f38b47146c",
+  "url": "https://github.com/vitejs/vite"
+ },
+ "scikit-learn": {
+  "sha": "106573971c28d82a1b5579aea7a23eecd80355f0",
+  "url": "https://github.com/scikit-learn/scikit-learn"
+ }
+}

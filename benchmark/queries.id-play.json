@@ -1,0 +1,1986 @@
+{
+ "repo": "id-play",
+ "commit": "8c8390f31159de4c4433fe6d79063d20fc12ae74",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "200 ambiguous-symbol lookups drawn by gen_queries_multi.py (seed 0xa11ce) from tree-sitter definitions; >=8 chars, >=2 words, 2..30 dirs, tests excluded.",
+ "queries": [
+  {
+   "id": "IDPLAY0",
+   "query": "should compress",
+   "identifier": "shouldCompress",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/WebSocketHandler.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/gzip/GzipFilter.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY1",
+   "query": "to nio path",
+   "identifier": "toNioPath",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/main/scala-2.12/play/sbt/PluginCompat.scala",
+    "dev-mode/sbt-plugin/src/main/scala-3/play/sbt/PluginCompat.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY2",
+   "query": "on prod server error",
+   "identifier": "onProdServerError",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/HttpErrorHandler.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaErrorHandling.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY3",
+   "query": "logger factory",
+   "identifier": "loggerFactory",
+   "definedIn": [
+    "core/play-logback/src/main/scala/play/api/libs/logback/LogbackLoggerConfigurator.scala",
+    "core/play/src/main/scala/play/api/LoggerConfigurator.scala",
+    "documentation/manual/working/commonGuide/configuration/code/Log4j2LoggerConfigurator.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY4",
+   "query": "take bool",
+   "identifier": "takeBool",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-no-package-declaration-in-routes-file/app/router/Application.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation/app/controllers/Application.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY5",
+   "query": "file name",
+   "identifier": "fileName",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/main/scala-2.12/play/sbt/PluginCompat.scala",
+    "dev-mode/sbt-plugin/src/main/scala-3/play/sbt/PluginCompat.scala",
+    "persistence/play-jdbc-evolutions/src/main/scala/play/api/db/evolutions/Evolutions.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY6",
+   "query": "say hello",
+   "identifier": "SayHello",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/typed/fp/HelloActor.scala",
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/typed/oo/HelloActor.scala",
+    "documentation/manual/working/scalaGuide/main/pekko/code/ScalaPekko.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY7",
+   "query": "bind default",
+   "identifier": "bindDefault",
+   "definedIn": [
+    "cache/play-caffeine-cache/src/main/scala/play/api/cache/caffeine/CaffeineCacheApi.scala",
+    "cache/play-ehcache/src/main/scala/play/api/cache/ehcache/EhCacheApi.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY8",
+   "query": "play docs compat",
+   "identifier": "PlayDocsCompat",
+   "definedIn": [
+    "dev-mode/play-docs-sbt-plugin/src/main/scala-2.12/sbt/internal/PlayDocsPluginCompat.scala",
+    "dev-mode/play-docs-sbt-plugin/src/main/scala-3/sbt/internal/PlayDocsPluginCompat.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY9",
+   "query": "bind hello actor",
+   "identifier": "bindHelloActor",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/typed/fp/multi/AppModule.scala",
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/typed/oo/multi/AppModule.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY10",
+   "query": "query string parameter macros",
+   "identifier": "QueryStringParameterMacros",
+   "definedIn": [
+    "core/play/src/main/scala-2/play/api/routing/sird/macroimpl/QueryStringParameterMacros.scala",
+    "core/play/src/main/scala-3/play/api/routing/sird/macroimpl/QueryStringParameterMacros.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY11",
+   "query": "with query string",
+   "identifier": "withQueryString",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/request/RequestTarget.scala",
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSRequest.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSRequest.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY12",
+   "query": "find by id",
+   "identifier": "findById",
+   "definedIn": [
+    "documentation/manual/working/scalaGuide/advanced/routing/code/scalaguide/binder/models/User.scala",
+    "documentation/manual/working/scalaGuide/main/cache/code/ScalaCache.scala",
+    "documentation/manual/working/scalaGuide/main/cache/code/ScalaEhCache.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaActionsComposition.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaRouting.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY13",
+   "query": "model conversion",
+   "identifier": "modelConversion",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/PlayRequestHandler.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/PekkoHttpServer.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY14",
+   "query": "with auth",
+   "identifier": "withAuth",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSRequest.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSRequest.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY15",
+   "query": "generate token",
+   "identifier": "generateToken",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/libs/crypto/CSRFTokenSigner.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csrf/CSRFActions.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csrf/csrf.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY16",
+   "query": "configured actor",
+   "identifier": "ConfiguredActor",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/typed/fp/ConfiguredActor.scala",
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/typed/oo/ConfiguredActor.scala",
+    "documentation/manual/working/scalaGuide/main/pekko/code/ScalaPekko.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY17",
+   "query": "cache manager provider",
+   "identifier": "CacheManagerProvider",
+   "definedIn": [
+    "cache/play-caffeine-cache/src/main/scala/play/api/cache/caffeine/CaffeineCacheApi.scala",
+    "cache/play-ehcache/src/main/scala/play/api/cache/ehcache/EhCacheApi.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY18",
+   "query": "body as source",
+   "identifier": "bodyAsSource",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSResponse.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSResponse.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY19",
+   "query": "cluster sharding module",
+   "identifier": "ClusterShardingModule",
+   "definedIn": [
+    "cluster/play-cluster-sharding/src/main/scala/play/api/cluster/sharding/typed/ClusterShardingModule.scala",
+    "cluster/play-java-cluster-sharding/src/main/scala/play/cluster/sharding/typed/ClusterShardingModule.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY20",
+   "query": "create parser settings",
+   "identifier": "createParserSettings",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/configuration/code/CustomPekkoHttpServer.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/PekkoHttpServer.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY21",
+   "query": "get or else update",
+   "identifier": "getOrElseUpdate",
+   "definedIn": [
+    "cache/play-cache/src/main/scala/play/api/cache/AsyncCacheApi.scala",
+    "cache/play-cache/src/main/scala/play/api/cache/SyncCacheApi.scala",
+    "cache/play-caffeine-cache/src/main/scala/play/api/cache/caffeine/CaffeineCacheApi.scala",
+    "cache/play-ehcache/src/main/scala/play/api/cache/ehcache/EhCacheApi.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY22",
+   "query": "request impl",
+   "identifier": "RequestImpl",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Request.scala",
+    "core/play/src/main/scala/play/core/j/JavaHelpers.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY23",
+   "query": "module controller",
+   "identifier": "ModuleController",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-no-package-declaration-in-routes-file/app/router/module/ModuleController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation/app/controllers/module/ModuleController.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY24",
+   "query": "create lazy project ref",
+   "identifier": "createLazyProjectRef",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/main/scala-2.12/play/sbt/PluginCompat.scala",
+    "dev-mode/sbt-plugin/src/main/scala-3/play/sbt/PluginCompat.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY25",
+   "query": "named java sync cache api provider",
+   "identifier": "NamedJavaSyncCacheApiProvider",
+   "definedIn": [
+    "cache/play-caffeine-cache/src/main/scala/play/api/cache/caffeine/CaffeineCacheApi.scala",
+    "cache/play-ehcache/src/main/scala/play/api/cache/ehcache/EhCacheApi.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY26",
+   "query": "compose action",
+   "identifier": "composeAction",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Action.scala",
+    "documentation/manual/working/scalaGuide/main/forms/code/ScalaCsrf.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaActionsComposition.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY27",
+   "query": "any val path bindable",
+   "identifier": "anyValPathBindable",
+   "definedIn": [
+    "core/play/src/main/scala-2/play/api/mvc/PathBindableMacros.scala",
+    "core/play/src/main/scala-2/play/api/mvc/macros/BinderMacros.scala",
+    "core/play/src/main/scala-3/play/api/mvc/PathBindableMacros.scala",
+    "core/play/src/main/scala-3/play/api/mvc/macros/BinderMacros.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY28",
+   "query": "new thing",
+   "identifier": "newThing",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/filters/code/CommonRouting.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaRouting.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY29",
+   "query": "query string bindable macros",
+   "identifier": "QueryStringBindableMacros",
+   "definedIn": [
+    "core/play/src/main/scala-2/play/api/mvc/QueryStringBindableMacros.scala",
+    "core/play/src/main/scala-3/play/api/mvc/QueryStringBindableMacros.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY30",
+   "query": "evaluate configurations",
+   "identifier": "evaluateConfigurations",
+   "definedIn": [
+    "dev-mode/play-docs-sbt-plugin/src/main/scala-2.12/sbt/internal/PlayDocsPluginCompat.scala",
+    "dev-mode/play-docs-sbt-plugin/src/main/scala-3/sbt/internal/PlayDocsPluginCompat.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY31",
+   "query": "apply evolutions",
+   "identifier": "applyEvolutions",
+   "definedIn": [
+    "dev-mode/sbt-scripted-tools/src/main/scala/play/sbt/scriptedtools/ScriptedTools.scala",
+    "persistence/play-jdbc-evolutions/src/main/scala/play/api/db/evolutions/Evolutions.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY32",
+   "query": "write file",
+   "identifier": "writeFile",
+   "definedIn": [
+    "documentation/manual/working/scalaGuide/main/upload/code/ScalaFileUpload.scala",
+    "documentation/manual/working/scalaGuide/main/ws/code/ScalaWSSpec.scala",
+    "persistence/play-jdbc-evolutions/src/main/scala/play/api/db/evolutions/Evolutions.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY33",
+   "query": "get token",
+   "identifier": "getToken",
+   "definedIn": [
+    "documentation/manual/working/scalaGuide/main/forms/code/ScalaCsrf.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csrf/csrf.scala",
+    "web/play-filters-helpers/src/main/scala/views/html/helper/CSRF.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY34",
+   "query": "bind configured actor",
+   "identifier": "bindConfiguredActor",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/typed/fp/multi/AppModule.scala",
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/typed/oo/multi/AppModule.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY35",
+   "query": "body parser",
+   "identifier": "BodyParser",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Action.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaBodyParsers.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY36",
+   "query": "file option",
+   "identifier": "FileOption",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/main/scala/play/sbt/run/PlayReload.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/multiproject/project/Helpers.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY37",
+   "query": "pre start",
+   "identifier": "preStart",
+   "definedIn": [
+    "core/play-streams/src/main/scala/play/api/libs/streams/Probes.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/common/WebSocketFlowHandler.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY38",
+   "query": "plugin compat",
+   "identifier": "PluginCompat",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/main/scala-2.12/play/sbt/PluginCompat.scala",
+    "dev-mode/sbt-plugin/src/main/scala-3/play/sbt/PluginCompat.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY39",
+   "query": "skip whitespace",
+   "identifier": "skipWhitespace",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/i18n/Messages.scala",
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/RoutesFileParser.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY40",
+   "query": "with any val param",
+   "identifier": "withAnyValParam",
+   "definedIn": [
+    "core/play/src/main/scala-2/play/api/mvc/macros/BinderMacros.scala",
+    "core/play/src/main/scala-3/play/api/mvc/macros/BinderMacros.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY41",
+   "query": "has header",
+   "identifier": "hasHeader",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Headers.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/pekkohttp/PekkoModelConversion.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY42",
+   "query": "create server settings",
+   "identifier": "createServerSettings",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/configuration/code/CustomPekkoHttpServer.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/PekkoHttpServer.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY43",
+   "query": "do without echo",
+   "identifier": "doWithoutEcho",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/main/scala/play/sbt/PlayInteractionMode.scala",
+    "dev-mode/sbt-plugin/src/main/scala/sbt/PlayRun.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY44",
+   "query": "logger compat",
+   "identifier": "LoggerCompat",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/main/scala-2.12/sbt/LoggerCompat.scala",
+    "dev-mode/sbt-plugin/src/main/scala-3/sbt/LoggerCompat.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY45",
+   "query": "handle result",
+   "identifier": "handleResult",
+   "definedIn": [
+    "cache/play-cache/src/main/scala/play/api/cache/Cached.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/gzip/GzipFilter.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY46",
+   "query": "create logger context",
+   "identifier": "createLoggerContext",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/main/scala-2.12/sbt/LoggerCompat.scala",
+    "dev-mode/sbt-plugin/src/main/scala-3/sbt/LoggerCompat.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY47",
+   "query": "base controller",
+   "identifier": "BaseController",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Controller.scala",
+    "documentation/manual/working/scalaGuide/main/dependencyinjection/code/RuntimeDependencyInjection.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY48",
+   "query": "get classpath files",
+   "identifier": "getClasspathFiles",
+   "definedIn": [
+    "dev-mode/play-docs-sbt-plugin/src/main/scala-2.12/sbt/internal/PlayDocsPluginCompat.scala",
+    "dev-mode/play-docs-sbt-plugin/src/main/scala-3/sbt/internal/PlayDocsPluginCompat.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY49",
+   "query": "proxy server",
+   "identifier": "proxyServer",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSRequest.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSRequest.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY50",
+   "query": "messages api",
+   "identifier": "messagesApi",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/i18n/I18nSupport.scala",
+    "core/play/src/main/scala/play/api/mvc/Controller.scala",
+    "core/play/src/main/scala/play/api/mvc/MessagesRequest.scala",
+    "core/play/src/main/scala/play/core/j/JavaAction.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY51",
+   "query": "java script router generator",
+   "identifier": "JavaScriptRouterGenerator",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-namespace-reverse-router/app/utils/JavaScriptRouterGenerator.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-no-package-declaration-in-routes-file/app/utils/JavaScriptRouterGenerator.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation/app/utils/JavaScriptRouterGenerator.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY52",
+   "query": "csp result processor",
+   "identifier": "cspResultProcessor",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/filters/code/scalaguide/detailed/filters/csp/DynamicCSPAction.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csp/CSPActionBuilder.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY53",
+   "query": "get files",
+   "identifier": "getFiles",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/main/scala-2.12/play/sbt/PluginCompat.scala",
+    "dev-mode/sbt-plugin/src/main/scala-3/play/sbt/PluginCompat.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY54",
+   "query": "attach debug info",
+   "identifier": "attachDebugInfo",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/PlayRequestHandler.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/PekkoHttpServer.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY55",
+   "query": "user controller spec",
+   "identifier": "UserControllerSpec",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/filters/code/scalaguide/detailed/filters/UserControllerSpec.scala",
+    "documentation/manual/working/scalaGuide/main/forms/code/scalaguide/forms/csrf/UserControllerSpec.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY56",
+   "query": "handle web command",
+   "identifier": "handleWebCommand",
+   "definedIn": [
+    "core/play/src/main/scala/play/core/ApplicationProvider.scala",
+    "core/play/src/main/scala/play/core/system/WebCommands.scala",
+    "persistence/play-jdbc-evolutions/src/main/scala/play/api/db/evolutions/ApplicationEvolutions.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY57",
+   "query": "on upstream finish",
+   "identifier": "onUpstreamFinish",
+   "definedIn": [
+    "core/play-streams/src/main/scala/play/api/libs/streams/GzipFlow.scala",
+    "core/play-streams/src/main/scala/play/api/libs/streams/PekkoStreams.scala",
+    "core/play-streams/src/main/scala/play/api/libs/streams/Probes.scala",
+    "core/play/src/main/scala/play/api/mvc/BodyParsers.scala",
+    "core/play/src/main/scala/play/core/formatters/Multipart.scala",
+    "core/play/src/main/scala/play/core/parsers/Multipart.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/common/WebSocketFlowHandler.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csrf/CSRFActions.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY58",
+   "query": "request implicits",
+   "identifier": "RequestImplicits",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Controller.scala",
+    "core/play/src/main/scala/play/api/routing/Router.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY59",
+   "query": "my application loader",
+   "identifier": "MyApplicationLoader",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/components/ComponentsWithClusterSharding.scala",
+    "documentation/manual/working/scalaGuide/main/dependencyinjection/code/CompileTimeDependencyInjection.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY60",
+   "query": "on client error",
+   "identifier": "onClientError",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/HttpErrorHandler.scala",
+    "core/play/src/main/scala/play/core/j/JavaHttpErrorHandlerAdapter.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaErrorHandling.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY61",
+   "query": "with connection",
+   "identifier": "withConnection",
+   "definedIn": [
+    "persistence/play-jdbc-api/src/main/scala/play/api/db/Database.scala",
+    "persistence/play-jdbc/src/main/scala/play/api/db/Databases.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY62",
+   "query": "macro impl",
+   "identifier": "macroImpl",
+   "definedIn": [
+    "core/play/src/main/scala-2/play/api/routing/sird/macroimpl/QueryStringParameterMacros.scala",
+    "core/play/src/main/scala-3/play/api/routing/sird/macroimpl/QueryStringParameterMacros.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY63",
+   "query": "register shutdown tasks",
+   "identifier": "registerShutdownTasks",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/NettyServer.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/PekkoHttpServer.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY64",
+   "query": "check server trusted",
+   "identifier": "checkServerTrusted",
+   "definedIn": [
+    "dev-mode/sbt-scripted-tools/src/main/scala/play/sbt/scriptedtools/ScriptedTools.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/SelfSigned.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/ssl/DefaultSSLEngineProvider.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY65",
+   "query": "play docs plugin compat",
+   "identifier": "PlayDocsPluginCompat",
+   "definedIn": [
+    "dev-mode/play-docs-sbt-plugin/src/main/scala-2.12/sbt/internal/PlayDocsPluginCompat.scala",
+    "dev-mode/play-docs-sbt-plugin/src/main/scala-3/sbt/internal/PlayDocsPluginCompat.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY66",
+   "query": "take bool2",
+   "identifier": "takeBool2",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-no-package-declaration-in-routes-file/app/router/Application.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation/app/controllers/Application.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY67",
+   "query": "url context",
+   "identifier": "UrlContext",
+   "definedIn": [
+    "core/play/src/main/scala-2/play/api/routing/sird/package.scala",
+    "core/play/src/main/scala-3/play/api/routing/sird/package.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY68",
+   "query": "from configuration",
+   "identifier": "fromConfiguration",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/controllers/Assets.scala",
+    "core/play/src/main/scala/play/api/http/HttpConfiguration.scala",
+    "core/play/src/main/scala/play/api/libs/Files.scala",
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSModule.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/ServerProvider.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/cors/CORSConfig.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csp/CSPConfig.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csrf/csrf.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/gzip/GzipFilter.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/headers/SecurityHeadersFilter.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/hosts/AllowedHostsFilter.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/ip/IPFilter.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY69",
+   "query": "free port",
+   "identifier": "freePort",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/continuous-run-lifecycle/project/ContinuousRunLifecycleTest.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/continuous-run/project/ContinuousRunTest.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY70",
+   "query": "close quietly",
+   "identifier": "closeQuietly",
+   "definedIn": [
+    "core/play/src/main/scala/play/utils/PlayIO.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/ssl/FakeKeyStore.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY71",
+   "query": "to finder",
+   "identifier": "toFinder",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/main/scala-2.12/play/sbt/PluginCompat.scala",
+    "dev-mode/sbt-plugin/src/main/scala-3/play/sbt/PluginCompat.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY72",
+   "query": "reload cache values",
+   "identifier": "ReloadCacheValues",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/PlayRequestHandler.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/PekkoHttpServer.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY73",
+   "query": "parse header",
+   "identifier": "parseHeader",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/AcceptEncoding.scala",
+    "core/play/src/main/scala/play/core/parsers/Multipart.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/pekkohttp/PekkoModelConversion.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY74",
+   "query": "create ssl engine",
+   "identifier": "createSSLEngine",
+   "definedIn": [
+    "core/play/src/main/scala/play/server/api/SSLEngineProvider.scala",
+    "documentation/manual/working/commonGuide/production/code/scalaguide/CustomSSLEngineProvider.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/SelfSigned.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/ssl/DefaultSSLEngineProvider.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY75",
+   "query": "create error request header",
+   "identifier": "createErrorRequestHeader",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/NettyModelConversion.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/pekkohttp/PekkoModelConversion.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY76",
+   "query": "to file ref",
+   "identifier": "toFileRef",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/main/scala-2.12/play/sbt/PluginCompat.scala",
+    "dev-mode/sbt-plugin/src/main/scala-3/play/sbt/PluginCompat.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY77",
+   "query": "static part",
+   "identifier": "StaticPart",
+   "definedIn": [
+    "core/play/src/main/scala/play/core/routing/PathPattern.scala",
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/RoutesModels.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY78",
+   "query": "get attribute map",
+   "identifier": "getAttributeMap",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/main/scala-2.12/play/sbt/PluginCompat.scala",
+    "dev-mode/sbt-plugin/src/main/scala-3/play/sbt/PluginCompat.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY79",
+   "query": "x forwarded client certificates",
+   "identifier": "xForwardedClientCertificates",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/RequestHeader.scala",
+    "core/play/src/main/scala/play/api/mvc/WrappedRequest.scala",
+    "core/play/src/main/scala/play/core/j/JavaHelpers.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY80",
+   "query": "is secure",
+   "identifier": "isSecure",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/request/Scheme.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/https/RedirectHttpsFilter.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY81",
+   "query": "file mime types",
+   "identifier": "fileMimeTypes",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/controllers/Assets.scala",
+    "core/play/src/main/scala/play/api/mvc/Controller.scala",
+    "core/play/src/main/scala/play/core/j/JavaAction.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY82",
+   "query": "actor system",
+   "identifier": "actorSystem",
+   "definedIn": [
+    "cache/play-caffeine-cache/src/main/scala/play/api/cache/caffeine/CaffeineCacheApi.scala",
+    "cache/play-ehcache/src/main/scala/play/api/cache/ehcache/EhCacheApi.scala",
+    "cluster/play-cluster-sharding/src/main/scala/play/api/cluster/sharding/typed/ClusterShardingComponents.scala",
+    "core/play/src/main/scala/play/api/Application.scala",
+    "core/play/src/main/scala/play/api/libs/concurrent/Pekko.scala",
+    "core/play/src/main/scala/play/core/ObjectMapperModule.scala",
+    "documentation/manual/working/scalaGuide/main/async/code/ScalaWebSockets.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY83",
+   "query": "home controller",
+   "identifier": "HomeController",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/basic-service-with-routes-file/src/main/scala/controllers/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/basic-service/src/main/scala/controllers/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/continuous-run-lifecycle/app/controllers/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/continuous-run-lifecycle/other/app/controllers/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/continuous-run/app/controllers/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolution-path-config/app/controllers/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/generated-keystore/src/main/scala/controllers/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/http-backend-netty-channel-options/app/controllers/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/http-backend-netty/src/main/scala/controllers/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/http-backend-pekko-http-http2/src/main/scala/controllers/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/http-backend-pekko-http/src/main/scala/controllers/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/jackson-config/play-scala/app/play/controllers/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/maven-layout-twirl-reload/src/main/scala/controllers/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-downing/src/main/scala/controllers/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-happy-path/changes/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-happy-path/src/main/scala/controllers/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/sird-compiler-errors/src/main/scala/controllers/HomeController.scala",
+    "documentation/manual/working/commonGuide/build/code/scalaguide/common/build/controllers/SubProjectsAssetsBuilder.scala",
+    "documentation/manual/working/commonGuide/filters/code/scalaguide/detailed/filters/csp/DynamicCSPAction.scala",
+    "documentation/manual/working/scalaGuide/main/async/code/ScalaAsync.scala",
+    "documentation/manual/working/scalaGuide/main/json/code/ScalaJsonHttpSpec.scala",
+    "documentation/manual/working/scalaGuide/main/upload/code/ScalaFileUpload.scala",
+    "documentation/manual/working/scalaGuide/main/ws/code/ScalaOAuthSpec.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY84",
+   "query": "status of",
+   "identifier": "statusOf",
+   "definedIn": [
+    "documentation/manual/working/javaGuide/main/http/code/javaguide/http/JavaRouting.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaRouting.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY85",
+   "query": "lang cookie name",
+   "identifier": "langCookieName",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/Play.scala",
+    "core/play/src/main/scala/play/api/i18n/Messages.scala",
+    "documentation/manual/working/scalaGuide/advanced/extending/code/ScalaExtendingPlay.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY86",
+   "query": "path part",
+   "identifier": "PathPart",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/routing/sird/PathExtractor.scala",
+    "core/play/src/main/scala/play/core/routing/PathPattern.scala",
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/RoutesModels.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY87",
+   "query": "with prefix",
+   "identifier": "withPrefix",
+   "definedIn": [
+    "core/play-guice/src/main/scala/play/api/inject/guice/GuiceApplicationBuilder.scala",
+    "core/play/src/main/scala/play/api/data/Form.scala",
+    "core/play/src/main/scala/play/api/routing/Router.scala",
+    "core/play/src/main/scala/play/core/hidden/ObjectMappings.scala",
+    "core/play/src/main/scala/play/core/j/JavaRouterAdapter.scala",
+    "documentation/manual/working/scalaGuide/main/application/code/ScalaHttpFilters.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY88",
+   "query": "reload value",
+   "identifier": "reloadValue",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/PlayRequestHandler.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/PekkoHttpServer.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/common/ReloadCache.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY89",
+   "query": "with lang",
+   "identifier": "withLang",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/i18n/I18nSupport.scala",
+    "core/play/src/main/scala/play/api/mvc/Results.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY90",
+   "query": "invoke action",
+   "identifier": "invokeAction",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/PlayRequestHandler.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/PekkoHttpServer.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY91",
+   "query": "with body",
+   "identifier": "withBody",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/RequestHeader.scala",
+    "core/play/src/main/scala/play/api/mvc/WrappedRequest.scala",
+    "core/play/src/main/scala/play/core/j/JavaHelpers.scala",
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSRequest.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSRequest.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY92",
+   "query": "named error",
+   "identifier": "namedError",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/i18n/Messages.scala",
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/RoutesFileParser.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY93",
+   "query": "create request header",
+   "identifier": "createRequestHeader",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/request/RequestFactory.scala",
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/NettyModelConversion.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/pekkohttp/PekkoModelConversion.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY94",
+   "query": "my controller",
+   "identifier": "MyController",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/configuration/code/Configuration.scala",
+    "documentation/manual/working/scalaGuide/main/config/code/ScalaConfig.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaActionsComposition.scala",
+    "documentation/manual/working/scalaGuide/main/i18n/code/scalaguide/i18n/ScalaI18nService.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY95",
+   "query": "bind cache",
+   "identifier": "bindCache",
+   "definedIn": [
+    "cache/play-caffeine-cache/src/main/scala/play/api/cache/caffeine/CaffeineCacheApi.scala",
+    "cache/play-ehcache/src/main/scala/play/api/cache/ehcache/EhCacheApi.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY96",
+   "query": "with transaction",
+   "identifier": "withTransaction",
+   "definedIn": [
+    "persistence/play-jdbc-api/src/main/scala/play/api/db/Database.scala",
+    "persistence/play-jdbc/src/main/scala/play/api/db/Databases.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY97",
+   "query": "default load",
+   "identifier": "defaultLoad",
+   "definedIn": [
+    "dev-mode/play-docs-sbt-plugin/src/main/scala-2.12/sbt/internal/PlayDocsPluginCompat.scala",
+    "dev-mode/play-docs-sbt-plugin/src/main/scala-3/sbt/internal/PlayDocsPluginCompat.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY98",
+   "query": "with transient lang",
+   "identifier": "withTransientLang",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Request.scala",
+    "core/play/src/main/scala/play/api/mvc/RequestHeader.scala",
+    "core/play/src/main/scala/play/core/j/JavaHelpers.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY99",
+   "query": "user controller",
+   "identifier": "UserController",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/filters/code/scalaguide/detailed/filters/UserControllerSpec.scala",
+    "documentation/manual/working/scalaGuide/main/forms/code/scalaguide/forms/csrf/UserControllerSpec.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY100",
+   "query": "default await timeout",
+   "identifier": "defaultAwaitTimeout",
+   "definedIn": [
+    "documentation/manual/working/scalaGuide/main/async/code/ScalaWebSockets.scala",
+    "documentation/manual/working/scalaGuide/main/pekko/code/ScalaPekko.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY101",
+   "query": "cluster sharding provider",
+   "identifier": "ClusterShardingProvider",
+   "definedIn": [
+    "cluster/play-cluster-sharding/src/main/scala/play/api/cluster/sharding/typed/ClusterShardingModule.scala",
+    "cluster/play-java-cluster-sharding/src/main/scala/play/cluster/sharding/typed/ClusterShardingModule.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY102",
+   "query": "invoke block",
+   "identifier": "invokeBlock",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Action.scala",
+    "core/play/src/main/scala/play/api/mvc/MessagesRequest.scala",
+    "core/play/src/main/scala/play/api/mvc/Security.scala",
+    "documentation/manual/working/scalaGuide/main/forms/code/ScalaCsrf.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaActionsComposition.scala",
+    "documentation/manual/working/scalaGuide/main/logging/code/ScalaLoggingSpec.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/cors/CORSActionBuilder.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csp/CSPActionBuilder.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY103",
+   "query": "assert action",
+   "identifier": "assertAction",
+   "definedIn": [
+    "documentation/manual/working/scalaGuide/main/cache/code/ScalaCache.scala",
+    "documentation/manual/working/scalaGuide/main/cache/code/ScalaEhCache.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaActions.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaActionsComposition.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaBodyParsers.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaContentNegotiation.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaResults.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaSessionFlash.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY104",
+   "query": "is defined at",
+   "identifier": "isDefinedAt",
+   "definedIn": [
+    "core/play-guice/src/main/scala/play/api/inject/guice/GuiceApplicationBuilder.scala",
+    "core/play/src/main/scala/play/api/i18n/Messages.scala",
+    "documentation/manual/working/scalaGuide/advanced/extending/code/ScalaExtendingPlay.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/common/NodeIdentifierParser.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY105",
+   "query": "another method",
+   "identifier": "anotherMethod",
+   "definedIn": [
+    "documentation/manual/working/scalaGuide/main/forms/code/ScalaCsrfController.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaActions.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY106",
+   "query": "create with defaults",
+   "identifier": "createWithDefaults",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/HttpConfiguration.scala",
+    "core/play/src/main/scala/play/api/libs/Files.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY107",
+   "query": "on server error",
+   "identifier": "onServerError",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/HttpErrorHandler.scala",
+    "core/play/src/main/scala/play/core/j/JavaHttpErrorHandlerAdapter.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaErrorHandling.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY108",
+   "query": "unbind and validate",
+   "identifier": "unbindAndValidate",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/data/Form.scala",
+    "core/play/src/main/scala/play/core/hidden/ObjectMappings.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY109",
+   "query": "create transport",
+   "identifier": "createTransport",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/NettyModelConversion.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/pekkohttp/PekkoModelConversion.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY110",
+   "query": "with components",
+   "identifier": "withComponents",
+   "definedIn": [
+    "core/play/src/main/scala/play/core/j/JavaAction.scala",
+    "core/play/src/main/scala/play/core/routing/HandlerInvoker.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY111",
+   "query": "with request timeout",
+   "identifier": "withRequestTimeout",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSRequest.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSRequest.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY112",
+   "query": "with request filter",
+   "identifier": "withRequestFilter",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSRequest.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSRequest.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY113",
+   "query": "with header",
+   "identifier": "withHeader",
+   "definedIn": [
+    "core/play/src/main/scala/play/core/j/JavaResults.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csp/CSPConfig.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY114",
+   "query": "http filters",
+   "identifier": "httpFilters",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/Application.scala",
+    "documentation/manual/working/commonGuide/filters/code/scalaguide/detailed/filters/FiltersComponents.scala",
+    "documentation/manual/working/commonGuide/filters/code/scalaguide/detailed/filters/csp/MyComponents.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/Server.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/HttpFiltersComponents.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY115",
+   "query": "with virtual host",
+   "identifier": "withVirtualHost",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSRequest.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSRequest.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY116",
+   "query": "request timeout",
+   "identifier": "requestTimeout",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSRequest.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSRequest.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY117",
+   "query": "on subscribe",
+   "identifier": "onSubscribe",
+   "definedIn": [
+    "core/play-streams/src/main/scala/play/api/libs/streams/Probes.scala",
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/SynchronousMappedStreams.scala",
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/WebSocketHandler.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY118",
+   "query": "web socket handler",
+   "identifier": "WebSocketHandler",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/WebSocketHandler.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/org/apache/pekko/http/play/WebSocketHandler.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY119",
+   "query": "dynamic part",
+   "identifier": "DynamicPart",
+   "definedIn": [
+    "core/play/src/main/scala/play/core/routing/PathPattern.scala",
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/RoutesModels.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY120",
+   "query": "lang cookie partitioned",
+   "identifier": "langCookiePartitioned",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/i18n/Messages.scala",
+    "documentation/manual/working/scalaGuide/advanced/extending/code/ScalaExtendingPlay.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY121",
+   "query": "create server from router",
+   "identifier": "createServerFromRouter",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/NettyServer.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/PekkoHttpServer.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/Server.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY122",
+   "query": "without lang",
+   "identifier": "withoutLang",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/i18n/I18nSupport.scala",
+    "core/play/src/main/scala/play/api/i18n/Messages.scala",
+    "core/play/src/main/scala/play/api/mvc/Results.scala",
+    "documentation/manual/working/scalaGuide/advanced/extending/code/ScalaExtendingPlay.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY123",
+   "query": "lang cookie max age",
+   "identifier": "langCookieMaxAge",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/i18n/Messages.scala",
+    "documentation/manual/working/scalaGuide/advanced/extending/code/ScalaExtendingPlay.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY124",
+   "query": "hex digit",
+   "identifier": "hexDigit",
+   "definedIn": [
+    "core/play/src/main/scala/play/core/utils/HttpHeaderEncoding.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/common/XForwardedClientCertHeaderParser.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY125",
+   "query": "application lifecycle",
+   "identifier": "applicationLifecycle",
+   "definedIn": [
+    "cache/play-ehcache/src/main/scala/play/api/cache/ehcache/EhCacheApi.scala",
+    "core/play/src/main/scala/play/api/Application.scala",
+    "core/play/src/main/scala/play/api/ApplicationLoader.scala",
+    "core/play/src/main/scala/play/api/controllers/Assets.scala",
+    "core/play/src/main/scala/play/api/libs/concurrent/Pekko.scala",
+    "core/play/src/main/scala/play/core/ObjectMapperModule.scala",
+    "documentation/manual/releases/release24/migration24/code24/MyModule.scala",
+    "persistence/play-jdbc/src/main/scala/play/api/db/DBModule.scala",
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSComponents.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY126",
+   "query": "controller components",
+   "identifier": "controllerComponents",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Controller.scala",
+    "core/play/src/main/scala/play/api/mvc/MessagesRequest.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaBodyParsers.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY127",
+   "query": "hello actor",
+   "identifier": "HelloActor",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/typed/fp/HelloActor.scala",
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/typed/oo/HelloActor.scala",
+    "documentation/manual/working/scalaGuide/main/pekko/code/ScalaPekko.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY128",
+   "query": "post stop",
+   "identifier": "postStop",
+   "definedIn": [
+    "core/play-streams/src/main/scala/play/api/libs/streams/Probes.scala",
+    "documentation/manual/working/scalaGuide/main/async/code/ScalaWebSockets.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/common/WebSocketFlowHandler.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY129",
+   "query": "instance of",
+   "identifier": "instanceOf",
+   "definedIn": [
+    "core/play-guice/src/main/scala/play/api/inject/guice/GuiceInjectorBuilder.scala",
+    "core/play/src/main/scala/play/api/inject/Injector.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY130",
+   "query": "query string bindable",
+   "identifier": "queryStringBindable",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-no-package-declaration-in-routes-file/app/models/UserId.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation/app/models/UserId.scala",
+    "documentation/manual/working/scalaGuide/advanced/routing/code/scalaguide/binder/models/AgeRange.scala",
+    "documentation/manual/working/scalaGuide/advanced/routing/code/scalaguide/binder/models/CartItem.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY131",
+   "query": "error handler",
+   "identifier": "ErrorHandler",
+   "definedIn": [
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaErrorHandling.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csrf/csrf.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY132",
+   "query": "node port",
+   "identifier": "nodePort",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/request/RemoteInfo.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/common/ForwardedHeaderHandler.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY133",
+   "query": "instance controller",
+   "identifier": "InstanceController",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-no-package-declaration-in-routes-file/app/router/InstanceController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation/app/controllers/InstanceController.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY134",
+   "query": "ssl context",
+   "identifier": "sslContext",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/production/code/scalaguide/CustomSSLEngineProvider.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/SelfSigned.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY135",
+   "query": "convert request body",
+   "identifier": "convertRequestBody",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/NettyModelConversion.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/pekkohttp/PekkoModelConversion.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY136",
+   "query": "lang cookie same site",
+   "identifier": "langCookieSameSite",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/i18n/Messages.scala",
+    "documentation/manual/working/scalaGuide/advanced/extending/code/ScalaExtendingPlay.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY137",
+   "query": "any val query string bindable",
+   "identifier": "anyValQueryStringBindable",
+   "definedIn": [
+    "core/play/src/main/scala-2/play/api/mvc/QueryStringBindableMacros.scala",
+    "core/play/src/main/scala-2/play/api/mvc/macros/BinderMacros.scala",
+    "core/play/src/main/scala-3/play/api/mvc/QueryStringBindableMacros.scala",
+    "core/play/src/main/scala-3/play/api/mvc/macros/BinderMacros.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY138",
+   "query": "my components",
+   "identifier": "MyComponents",
+   "definedIn": [
+    "documentation/manual/releases/release24/migration24/code24/MyModule.scala",
+    "documentation/manual/working/commonGuide/filters/code/scalaguide/detailed/filters/csp/MyComponents.scala",
+    "documentation/manual/working/scalaGuide/main/application/code/ScalaHttpFilters.scala",
+    "documentation/manual/working/scalaGuide/main/dependencyinjection/code/CompileTimeDependencyInjection.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY139",
+   "query": "on not found",
+   "identifier": "onNotFound",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/HttpErrorHandler.scala",
+    "documentation/manual/working/scalaGuide/advanced/embedding/code/ScalaNettyEmbeddingPlay.scala",
+    "documentation/manual/working/scalaGuide/advanced/embedding/code/ScalaPekkoEmbeddingPlay.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY140",
+   "query": "from application",
+   "identifier": "fromApplication",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/NettyServer.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/PekkoHttpServer.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY141",
+   "query": "check client trusted",
+   "identifier": "checkClientTrusted",
+   "definedIn": [
+    "dev-mode/sbt-scripted-tools/src/main/scala/play/sbt/scriptedtools/ScriptedTools.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/SelfSigned.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/ssl/DefaultSSLEngineProvider.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY142",
+   "query": "named sync cache api provider",
+   "identifier": "NamedSyncCacheApiProvider",
+   "definedIn": [
+    "cache/play-caffeine-cache/src/main/scala/play/api/cache/caffeine/CaffeineCacheApi.scala",
+    "cache/play-ehcache/src/main/scala/play/api/cache/ehcache/EhCacheApi.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY143",
+   "query": "wait for cancel",
+   "identifier": "waitForCancel",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/main/scala/play/sbt/PlayInteractionMode.scala",
+    "dev-mode/sbt-plugin/src/main/scala/sbt/PlayRun.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY144",
+   "query": "of source",
+   "identifier": "ofSource",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/RangeResult.scala",
+    "core/play/src/main/scala/play/core/j/JavaRangeResult.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY145",
+   "query": "query user",
+   "identifier": "queryUser",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-no-package-declaration-in-routes-file/app/router/Application.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation/app/controllers/Application.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY146",
+   "query": "with param",
+   "identifier": "withParam",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-no-package-declaration-in-routes-file/app/router/Application.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation/app/controllers/Application.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY147",
+   "query": "result utils",
+   "identifier": "resultUtils",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/PlayRequestHandler.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/PekkoHttpServer.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY148",
+   "query": "client certificate",
+   "identifier": "clientCertificate",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/RequestHeader.scala",
+    "core/play/src/main/scala/play/api/mvc/WrappedRequest.scala",
+    "core/play/src/main/scala/play/core/j/JavaHelpers.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/common/ClientCertificateHeaderHandler.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY149",
+   "query": "follow redirects",
+   "identifier": "followRedirects",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSRequest.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSRequest.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY150",
+   "query": "get connection",
+   "identifier": "getConnection",
+   "definedIn": [
+    "persistence/play-jdbc-api/src/main/scala/play/api/db/Database.scala",
+    "persistence/play-jdbc/src/main/scala/play/api/db/Databases.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY151",
+   "query": "cache api",
+   "identifier": "cacheApi",
+   "definedIn": [
+    "cache/play-caffeine-cache/src/main/scala/play/api/cache/caffeine/CaffeineCacheApi.scala",
+    "cache/play-ehcache/src/main/scala/play/api/cache/ehcache/EhCacheApi.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY152",
+   "query": "on downstream finish",
+   "identifier": "onDownstreamFinish",
+   "definedIn": [
+    "core/play-streams/src/main/scala/play/api/libs/streams/Probes.scala",
+    "core/play/src/main/scala/play/api/mvc/BodyParsers.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/common/WebSocketFlowHandler.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY153",
+   "query": "get deprecated",
+   "identifier": "getDeprecated",
+   "definedIn": [
+    "core/play-configuration/src/main/scala/play/api/Configuration.scala",
+    "persistence/play-jdbc-evolutions/src/main/scala/play/api/db/evolutions/ApplicationEvolutions.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY154",
+   "query": "lang cookie http only",
+   "identifier": "langCookieHttpOnly",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/Play.scala",
+    "core/play/src/main/scala/play/api/i18n/Messages.scala",
+    "documentation/manual/working/scalaGuide/advanced/extending/code/ScalaExtendingPlay.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY155",
+   "query": "has errors",
+   "identifier": "hasErrors",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/data/Form.scala",
+    "core/play/src/main/scala/views/helper/Helpers.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY156",
+   "query": "on upstream failure",
+   "identifier": "onUpstreamFailure",
+   "definedIn": [
+    "core/play-streams/src/main/scala/play/api/libs/streams/PekkoStreams.scala",
+    "core/play-streams/src/main/scala/play/api/libs/streams/Probes.scala",
+    "core/play/src/main/scala/play/api/mvc/BodyParsers.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/common/WebSocketFlowHandler.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY157",
+   "query": "status text",
+   "identifier": "statusText",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSResponse.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSResponse.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY158",
+   "query": "get accepted issuers",
+   "identifier": "getAcceptedIssuers",
+   "definedIn": [
+    "dev-mode/sbt-scripted-tools/src/main/scala/play/sbt/scriptedtools/ScriptedTools.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/SelfSigned.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/ssl/DefaultSSLEngineProvider.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY159",
+   "query": "with should protect",
+   "identifier": "withShouldProtect",
+   "definedIn": [
+    "web/play-filters-helpers/src/main/scala/play/filters/csp/CSPConfig.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csrf/csrf.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/hosts/AllowedHostsFilter.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY160",
+   "query": "with http headers",
+   "identifier": "withHttpHeaders",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSRequest.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSRequest.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY161",
+   "query": "named java async cache api provider",
+   "identifier": "NamedJavaAsyncCacheApiProvider",
+   "definedIn": [
+    "cache/play-caffeine-cache/src/main/scala/play/api/cache/caffeine/CaffeineCacheApi.scala",
+    "cache/play-ehcache/src/main/scala/play/api/cache/ehcache/EhCacheApi.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY162",
+   "query": "path bindable macros",
+   "identifier": "PathBindableMacros",
+   "definedIn": [
+    "core/play/src/main/scala-2/play/api/mvc/PathBindableMacros.scala",
+    "core/play/src/main/scala-3/play/api/mvc/PathBindableMacros.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY163",
+   "query": "max length",
+   "identifier": "maxLength",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/data/validation/Validation.scala",
+    "core/play/src/main/scala/play/api/mvc/BodyParsers.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY164",
+   "query": "with follow redirects",
+   "identifier": "withFollowRedirects",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSRequest.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSRequest.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY165",
+   "query": "source name",
+   "identifier": "sourceName",
+   "definedIn": [
+    "core/play-configuration/src/main/scala/play/api/Configuration.scala",
+    "core/play/src/main/scala/play/api/http/HttpErrorHandler.scala",
+    "core/play/src/main/scala/play/api/i18n/Messages.scala",
+    "dev-mode/sbt-plugin/src/main/scala/play/sbt/PlayExceptions.scala",
+    "dev-mode/sbt-plugin/src/main/scala/play/sbt/routes/RoutesCompiler.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY166",
+   "query": "app components",
+   "identifier": "AppComponents",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/database/code/CompileTimeDIEvolutions.scala",
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/typed/fp/AppComponents.scala",
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/typed/oo/AppComponents.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY167",
+   "query": "my component",
+   "identifier": "MyComponent",
+   "definedIn": [
+    "documentation/manual/releases/release24/migration24/code24/MyComponent.scala",
+    "documentation/manual/working/scalaGuide/main/dependencyinjection/code/CompileTimeDependencyInjection.scala",
+    "documentation/manual/working/scalaGuide/main/dependencyinjection/code/RuntimeDependencyInjection.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY168",
+   "query": "assets components",
+   "identifier": "AssetsComponents",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/controllers/Assets.scala",
+    "documentation/manual/working/scalaGuide/main/dependencyinjection/code/CompileTimeDependencyInjection.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY169",
+   "query": "content of",
+   "identifier": "contentOf",
+   "definedIn": [
+    "documentation/manual/working/javaGuide/main/http/code/javaguide/http/JavaRouting.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaRouting.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY170",
+   "query": "create logic",
+   "identifier": "createLogic",
+   "definedIn": [
+    "core/play-streams/src/main/scala/play/api/libs/streams/GzipFlow.scala",
+    "core/play-streams/src/main/scala/play/api/libs/streams/PekkoStreams.scala",
+    "core/play-streams/src/main/scala/play/api/libs/streams/Probes.scala",
+    "core/play/src/main/scala/play/api/mvc/RangeResult.scala",
+    "core/play/src/main/scala/play/core/formatters/Multipart.scala",
+    "core/play/src/main/scala/play/core/parsers/Multipart.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/org/apache/pekko/http/play/WebSocketHandler.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/common/WebSocketFlowHandler.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csrf/CSRFActions.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY171",
+   "query": "uri string",
+   "identifier": "uriString",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/request/RequestTarget.scala",
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/NettyModelConversion.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/pekkohttp/PekkoModelConversion.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/Server.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY172",
+   "query": "websocket feedback",
+   "identifier": "websocketFeedback",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/http-backend-netty/src/main/scala/controllers/HomeController.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/http-backend-pekko-http/src/main/scala/controllers/HomeController.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY173",
+   "query": "csp module",
+   "identifier": "CSPModule",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/filters/code/scalaguide/detailed/filters/csp/DynamicCSPAction.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csp/CSPModule.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY174",
+   "query": "http configuration",
+   "identifier": "httpConfiguration",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/i18n/I18nModule.scala",
+    "core/play/src/main/scala/play/core/j/JavaAction.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csrf/csrf.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY175",
+   "query": "unexpected exception",
+   "identifier": "UnexpectedException",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/Exceptions.scala",
+    "dev-mode/sbt-plugin/src/main/scala/play/sbt/PlayExceptions.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY176",
+   "query": "check route modifiers",
+   "identifier": "checkRouteModifiers",
+   "definedIn": [
+    "web/play-filters-helpers/src/main/scala/play/filters/csp/CSPConfig.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csrf/csrf.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/https/RedirectHttpsFilter.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/ip/IPFilter.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY177",
+   "query": "body as bytes",
+   "identifier": "bodyAsBytes",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSResponse.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSResponse.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY178",
+   "query": "create bad result",
+   "identifier": "createBadResult",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/BodyParsers.scala",
+    "core/play/src/main/scala/play/core/parsers/Multipart.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csp/CSPReportActionBuilder.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY179",
+   "query": "logging filter",
+   "identifier": "LoggingFilter",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/filters/code/scalaguide/detailed/filters/FiltersComponents.scala",
+    "documentation/manual/working/scalaGuide/main/application/code/EssentialFilter.scala",
+    "documentation/manual/working/scalaGuide/main/application/code/FiltersRouting.scala",
+    "documentation/manual/working/scalaGuide/main/application/code/ScalaHttpFilters.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY180",
+   "query": "get named cache",
+   "identifier": "getNamedCache",
+   "definedIn": [
+    "cache/play-caffeine-cache/src/main/scala/play/api/cache/caffeine/CaffeineCacheApi.scala",
+    "cache/play-ehcache/src/main/scala/play/api/cache/ehcache/EhCacheApi.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY181",
+   "query": "request header impl",
+   "identifier": "RequestHeaderImpl",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/RequestHeader.scala",
+    "core/play/src/main/scala/play/core/j/JavaHelpers.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY182",
+   "query": "clearing lang",
+   "identifier": "clearingLang",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/i18n/I18nSupport.scala",
+    "core/play/src/main/scala/play/api/mvc/Results.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY183",
+   "query": "virtual host",
+   "identifier": "virtualHost",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSRequest.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSRequest.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY184",
+   "query": "project settings",
+   "identifier": "projectSettings",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/main/scala/play/sbt/Play.scala",
+    "dev-mode/sbt-plugin/src/main/scala/play/sbt/PlayFilters.scala",
+    "dev-mode/sbt-plugin/src/main/scala/play/sbt/PlayLayoutPlugin.scala",
+    "dev-mode/sbt-plugin/src/main/scala/play/sbt/PlayLogback.scala",
+    "dev-mode/sbt-plugin/src/main/scala/play/sbt/routes/RoutesCompiler.scala",
+    "dev-mode/sbt-scripted-tools/src/main/scala/play/sbt/scriptedtools/ScriptedTools.scala",
+    "project/Omnidoc.scala",
+    "project/PekkoSnapshotRepositories.scala",
+    "project/PlayBuildBase.scala",
+    "project/PlayLibraryBase.scala",
+    "project/PlayNoPublishBase.scala",
+    "project/PlayRootProjectBase.scala",
+    "project/PlaySbtBuildBase.scala",
+    "project/PlaySbtPluginBase.scala",
+    "project/Playdoc.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY185",
+   "query": "handler for request",
+   "identifier": "handlerForRequest",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/HttpRequestHandler.scala",
+    "core/play/src/main/scala/play/core/j/JavaHttpRequestHandlerAdapter.scala",
+    "documentation/manual/working/scalaGuide/main/application/code/ScalaHttpRequestHandlers.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY186",
+   "query": "hash code",
+   "identifier": "hashCode",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Headers.scala",
+    "core/play/src/main/scala/play/api/mvc/Results.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/pekkohttp/PekkoModelConversion.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY187",
+   "query": "with proxy server",
+   "identifier": "withProxyServer",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSRequest.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSRequest.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY188",
+   "query": "report failure",
+   "identifier": "reportFailure",
+   "definedIn": [
+    "core/play-streams/src/main/scala/play/api/libs/streams/Execution.scala",
+    "core/play/src/main/scala/play/api/libs/concurrent/CustomExecutionContext.scala",
+    "core/play/src/main/scala/play/core/j/ClassLoaderExecutionContext.scala",
+    "core/play/src/main/scala/play/core/j/HttpExecutionContext.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY189",
+   "query": "on forbidden",
+   "identifier": "onForbidden",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/HttpErrorHandler.scala",
+    "documentation/manual/working/scalaGuide/main/http/code/ScalaErrorHandling.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY190",
+   "query": "convert result",
+   "identifier": "convertResult",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/NettyModelConversion.scala",
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/pekkohttp/PekkoModelConversion.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY191",
+   "query": "virtual file",
+   "identifier": "VirtualFile",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/main/scala/play/sbt/run/PlayReload.scala",
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/multiproject/project/Helpers.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY192",
+   "query": "lang cookie secure",
+   "identifier": "langCookieSecure",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/Play.scala",
+    "core/play/src/main/scala/play/api/i18n/Messages.scala",
+    "documentation/manual/working/scalaGuide/advanced/extending/code/ScalaExtendingPlay.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY193",
+   "query": "add attrs",
+   "identifier": "addAttrs",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Request.scala",
+    "core/play/src/main/scala/play/api/mvc/RequestHeader.scala",
+    "core/play/src/main/scala/play/api/mvc/Results.scala",
+    "core/play/src/main/scala/play/core/j/JavaHelpers.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY194",
+   "query": "of stream",
+   "identifier": "ofStream",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/RangeResult.scala",
+    "core/play/src/main/scala/play/core/j/JavaRangeResult.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY195",
+   "query": "with cookies",
+   "identifier": "withCookies",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Results.scala",
+    "core/play/src/main/scala/play/api/mvc/WebSocket.scala",
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSRequest.scala",
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSRequest.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY196",
+   "query": "named async cache api provider",
+   "identifier": "NamedAsyncCacheApiProvider",
+   "definedIn": [
+    "cache/play-caffeine-cache/src/main/scala/play/api/cache/caffeine/CaffeineCacheApi.scala",
+    "cache/play-ehcache/src/main/scala/play/api/cache/ehcache/EhCacheApi.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY197",
+   "query": "http error handler",
+   "identifier": "httpErrorHandler",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/controllers/Assets.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/cors/CORSModule.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/csrf/csrf.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/hosts/AllowedHostsFilter.scala",
+    "web/play-filters-helpers/src/main/scala/play/filters/ip/IPFilter.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY198",
+   "query": "app module",
+   "identifier": "AppModule",
+   "definedIn": [
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/typed/fp/AppModule.scala",
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/typed/fp/multi/AppModule.scala",
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/typed/oo/AppModule.scala",
+    "documentation/manual/working/commonGuide/pekko/code/scalaguide/pekko/typed/oo/multi/AppModule.scala"
+   ]
+  },
+  {
+   "id": "IDPLAY199",
+   "query": "self signed",
+   "identifier": "SelfSigned",
+   "definedIn": [
+    "transport/server/play-server/src/main/scala/play/core/server/SelfSigned.scala",
+    "transport/server/play-server/src/main/scala/play/core/server/ssl/FakeKeyStore.scala"
+   ]
+  }
+ ]
+}

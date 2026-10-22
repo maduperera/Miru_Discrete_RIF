@@ -1,0 +1,809 @@
+{
+ "repo": "id-pandoc",
+ "commit": "e5a6ab5cfb4247689090b3395cacd0defe902936",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "78 ambiguous-symbol lookups drawn by gen_queries_multi.py (seed 0xa11ce) from tree-sitter definitions; >=8 chars, >=2 words, 2..30 dirs, tests excluded.",
+ "queries": [
+  {
+   "id": "IDPAND0",
+   "query": "with direction",
+   "identifier": "withDirection",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Docx/OpenXML.hs",
+    "src/Text/Pandoc/Writers/OpenDocument.hs"
+   ]
+  },
+  {
+   "id": "IDPAND1",
+   "query": "meta value to val",
+   "identifier": "metaValueToVal",
+   "definedIn": [
+    "src/Text/Pandoc/Citeproc/MetaValue.hs",
+    "src/Text/Pandoc/Writers/Shared.hs"
+   ]
+  },
+  {
+   "id": "IDPAND2",
+   "query": "emphasis between",
+   "identifier": "emphasisBetween",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Muse.hs",
+    "src/Text/Pandoc/Readers/Org/Inlines.hs"
+   ]
+  },
+  {
+   "id": "IDPAND3",
+   "query": "get col width",
+   "identifier": "getColWidth",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/HTML/Table.hs",
+    "src/Text/Pandoc/Readers/XML.hs",
+    "src/Text/Pandoc/Writers/Shared.hs"
+   ]
+  },
+  {
+   "id": "IDPAND4",
+   "query": "body rows",
+   "identifier": "bodyRows",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/HTML/Table.hs",
+    "src/Text/Pandoc/Writers/LaTeX/Table.hs"
+   ]
+  },
+  {
+   "id": "IDPAND5",
+   "query": "with context",
+   "identifier": "withContext",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Org/Parsing.hs",
+    "src/Text/Pandoc/Writers/Texinfo.hs"
+   ]
+  },
+  {
+   "id": "IDPAND6",
+   "query": "delete meta",
+   "identifier": "deleteMeta",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/State.hs",
+    "src/Text/Pandoc/Readers/DocBook.hs",
+    "src/Text/Pandoc/Readers/FB2.hs",
+    "src/Text/Pandoc/Readers/HTML/Types.hs",
+    "src/Text/Pandoc/Readers/JATS.hs",
+    "src/Text/Pandoc/Readers/LaTeX/Parsing.hs",
+    "src/Text/Pandoc/Readers/XML.hs"
+   ]
+  },
+  {
+   "id": "IDPAND7",
+   "query": "normalize path",
+   "identifier": "normalizePath",
+   "definedIn": [
+    "src/Text/Pandoc/App/CommandLineOptions.hs",
+    "src/Text/Pandoc/Readers/DokuWiki.hs"
+   ]
+  },
+  {
+   "id": "IDPAND8",
+   "query": "parse from string",
+   "identifier": "parseFromString",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/General.hs",
+    "src/Text/Pandoc/Readers/Org/Parsing.hs"
+   ]
+  },
+  {
+   "id": "IDPAND9",
+   "query": "name spaces",
+   "identifier": "NameSpaces",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/OOXML/Shared.hs",
+    "src/Text/Pandoc/Writers/OOXML.hs"
+   ]
+  },
+  {
+   "id": "IDPAND10",
+   "query": "list level",
+   "identifier": "ListLevel",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/ODT/StyleReader.hs",
+    "src/Text/Pandoc/Readers/RTF.hs"
+   ]
+  },
+  {
+   "id": "IDPAND11",
+   "query": "get last str pos",
+   "identifier": "getLastStrPos",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Capabilities.hs",
+    "src/Text/Pandoc/Parsing/State.hs",
+    "src/Text/Pandoc/Readers/Muse.hs"
+   ]
+  },
+  {
+   "id": "IDPAND12",
+   "query": "list type",
+   "identifier": "ListType",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Docx/Lists.hs",
+    "src/Text/Pandoc/Readers/Man.hs",
+    "src/Text/Pandoc/Readers/RTF.hs",
+    "src/Text/Pandoc/Readers/TikiWiki.hs"
+   ]
+  },
+  {
+   "id": "IDPAND13",
+   "query": "is str end",
+   "identifier": "isStrEnd",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Creole.hs",
+    "src/Text/Pandoc/Readers/MediaWiki.hs",
+    "src/Text/Pandoc/Readers/Org/Inlines.hs",
+    "src/Text/Pandoc/Readers/Txt2Tags.hs",
+    "src/Text/Pandoc/Readers/Vimwiki.hs"
+   ]
+  },
+  {
+   "id": "IDPAND14",
+   "query": "plain to para",
+   "identifier": "plainToPara",
+   "definedIn": [
+    "src/Text/Pandoc/Shared.hs",
+    "src/Text/Pandoc/Writers/FB2.hs"
+   ]
+  },
+  {
+   "id": "IDPAND15",
+   "query": "writer env",
+   "identifier": "WriterEnv",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Docx/Types.hs",
+    "src/Text/Pandoc/Writers/Markdown/Types.hs",
+    "src/Text/Pandoc/Writers/Muse.hs",
+    "src/Text/Pandoc/Writers/Powerpoint/Output.hs",
+    "src/Text/Pandoc/Writers/Powerpoint/Presentation.hs"
+   ]
+  },
+  {
+   "id": "IDPAND16",
+   "query": "set last str pos",
+   "identifier": "setLastStrPos",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Capabilities.hs",
+    "src/Text/Pandoc/Parsing/State.hs",
+    "src/Text/Pandoc/Readers/HTML/Types.hs",
+    "src/Text/Pandoc/Readers/Muse.hs",
+    "src/Text/Pandoc/Readers/Org/ParserState.hs"
+   ]
+  },
+  {
+   "id": "IDPAND17",
+   "query": "yaml to meta",
+   "identifier": "yamlToMeta",
+   "definedIn": [
+    "src/Text/Pandoc/App/Opt.hs",
+    "src/Text/Pandoc/Readers/Markdown.hs"
+   ]
+  },
+  {
+   "id": "IDPAND18",
+   "query": "reader state",
+   "identifier": "ReaderState",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Docx/Parse.hs",
+    "src/Text/Pandoc/Readers/ODT/ContentReader.hs"
+   ]
+  },
+  {
+   "id": "IDPAND19",
+   "query": "drop latest include file",
+   "identifier": "dropLatestIncludeFile",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Capabilities.hs",
+    "src/Text/Pandoc/Parsing/State.hs",
+    "src/Text/Pandoc/Readers/LaTeX/Parsing.hs",
+    "src/Text/Pandoc/Readers/Org/ParserState.hs"
+   ]
+  },
+  {
+   "id": "IDPAND20",
+   "query": "add log message",
+   "identifier": "addLogMessage",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Capabilities.hs",
+    "src/Text/Pandoc/Parsing/State.hs",
+    "src/Text/Pandoc/Readers/HTML/Types.hs",
+    "src/Text/Pandoc/Readers/LaTeX/Parsing.hs",
+    "src/Text/Pandoc/Readers/Man.hs",
+    "src/Text/Pandoc/Readers/Mdoc.hs",
+    "src/Text/Pandoc/Readers/MediaWiki.hs",
+    "src/Text/Pandoc/Readers/Muse.hs",
+    "src/Text/Pandoc/Readers/Org/ParserState.hs",
+    "src/Text/Pandoc/Readers/Pod.hs",
+    "src/Text/Pandoc/Readers/Typst/Parsing.hs",
+    "src/Text/Pandoc/Writers/Powerpoint/Presentation.hs"
+   ]
+  },
+  {
+   "id": "IDPAND21",
+   "query": "get title",
+   "identifier": "getTitle",
+   "definedIn": [
+    "src/Text/Pandoc/Citeproc/BibTeX.hs",
+    "src/Text/Pandoc/Writers/EPUB.hs"
+   ]
+  },
+  {
+   "id": "IDPAND22",
+   "query": "table row",
+   "identifier": "TableRow",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/RTF.hs",
+    "src/Text/Pandoc/Readers/Roff.hs",
+    "src/Text/Pandoc/Writers/ConTeXt.hs",
+    "src/Text/Pandoc/Writers/HTML.hs",
+    "src/Text/Pandoc/Writers/JATS/Table.hs"
+   ]
+  },
+  {
+   "id": "IDPAND23",
+   "query": "fetch images",
+   "identifier": "fetchImages",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/EPUB.hs",
+    "src/Text/Pandoc/Writers/FB2.hs"
+   ]
+  },
+  {
+   "id": "IDPAND24",
+   "query": "attr to map",
+   "identifier": "attrToMap",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Writer/Classic.hs",
+    "src/Text/Pandoc/Writers/BBCode.hs"
+   ]
+  },
+  {
+   "id": "IDPAND25",
+   "query": "load xml from archive",
+   "identifier": "loadXMLFromArchive",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Pptx/Parse.hs",
+    "src/Text/Pandoc/Readers/Pptx/SmartArt.hs",
+    "src/Text/Pandoc/Readers/Xlsx/Parse.hs"
+   ]
+  },
+  {
+   "id": "IDPAND26",
+   "query": "foot rows",
+   "identifier": "footRows",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/HTML/Table.hs",
+    "src/Text/Pandoc/Writers/LaTeX/Table.hs"
+   ]
+  },
+  {
+   "id": "IDPAND27",
+   "query": "attr to ns pair",
+   "identifier": "attrToNSPair",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/EPUB.hs",
+    "src/Text/Pandoc/Writers/OOXML.hs"
+   ]
+  },
+  {
+   "id": "IDPAND28",
+   "query": "cell type",
+   "identifier": "CellType",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/HTML/Table.hs",
+    "src/Text/Pandoc/Writers/ConTeXt.hs",
+    "src/Text/Pandoc/Writers/HTML.hs",
+    "src/Text/Pandoc/Writers/JATS/Table.hs",
+    "src/Text/Pandoc/Writers/LaTeX/Table.hs"
+   ]
+  },
+  {
+   "id": "IDPAND29",
+   "query": "satisfy tok",
+   "identifier": "satisfyTok",
+   "definedIn": [
+    "src/Text/Pandoc/Citeproc/Locator.hs",
+    "src/Text/Pandoc/Readers/LaTeX/Parsing.hs"
+   ]
+  },
+  {
+   "id": "IDPAND30",
+   "query": "is inline tag",
+   "identifier": "isInlineTag",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/HTML.hs",
+    "src/Text/Pandoc/Writers/XML.hs"
+   ]
+  },
+  {
+   "id": "IDPAND31",
+   "query": "single tok",
+   "identifier": "singleTok",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Mdoc/Lex.hs",
+    "src/Text/Pandoc/Readers/Roff.hs"
+   ]
+  },
+  {
+   "id": "IDPAND32",
+   "query": "p with contents",
+   "identifier": "pWithContents",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Typst.hs",
+    "src/Text/Pandoc/Readers/Typst/Parsing.hs"
+   ]
+  },
+  {
+   "id": "IDPAND33",
+   "query": "get all text",
+   "identifier": "getAllText",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Pptx/SmartArt.hs",
+    "src/Text/Pandoc/Readers/Xlsx/Parse.hs"
+   ]
+  },
+  {
+   "id": "IDPAND34",
+   "query": "escape text",
+   "identifier": "escapeText",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Markdown/Inline.hs",
+    "src/Text/Pandoc/Writers/Muse.hs",
+    "src/Text/Pandoc/Writers/RST.hs"
+   ]
+  },
+  {
+   "id": "IDPAND35",
+   "query": "with quote context",
+   "identifier": "withQuoteContext",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Capabilities.hs",
+    "src/Text/Pandoc/Parsing/State.hs",
+    "src/Text/Pandoc/Readers/HTML/Types.hs",
+    "src/Text/Pandoc/Readers/LaTeX/Parsing.hs",
+    "src/Text/Pandoc/Readers/Org/ParserState.hs"
+   ]
+  },
+  {
+   "id": "IDPAND36",
+   "query": "run lua interpreter",
+   "identifier": "runLuaInterpreter",
+   "definedIn": [
+    "pandoc-cli/lua/PandocCLI/Lua.hs",
+    "pandoc-cli/no-lua/PandocCLI/Lua.hs"
+   ]
+  },
+  {
+   "id": "IDPAND37",
+   "query": "format source line",
+   "identifier": "formatSourceLine",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Man.hs",
+    "src/Text/Pandoc/Writers/Powerpoint/Presentation.hs"
+   ]
+  },
+  {
+   "id": "IDPAND38",
+   "query": "parse table row",
+   "identifier": "parseTableRow",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/LaTeX/Table.hs",
+    "src/Text/Pandoc/Readers/Pptx/Shapes.hs"
+   ]
+  },
+  {
+   "id": "IDPAND39",
+   "query": "bullet type",
+   "identifier": "BulletType",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Pptx/Shapes.hs",
+    "src/Text/Pandoc/Writers/Powerpoint/Presentation.hs"
+   ]
+  },
+  {
+   "id": "IDPAND40",
+   "query": "find children",
+   "identifier": "findChildren",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/ODT/Generic/XMLConverter.hs",
+    "xml-light/Text/Pandoc/XML/Light/Proc.hs"
+   ]
+  },
+  {
+   "id": "IDPAND41",
+   "query": "in brackets",
+   "identifier": "inBrackets",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/LaTeX/Inline.hs",
+    "src/Text/Pandoc/Readers/Markdown.hs"
+   ]
+  },
+  {
+   "id": "IDPAND42",
+   "query": "extract macros",
+   "identifier": "extractMacros",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Capabilities.hs",
+    "src/Text/Pandoc/Readers/LaTeX/Parsing.hs",
+    "src/Text/Pandoc/Readers/Org/ParserState.hs"
+   ]
+  },
+  {
+   "id": "IDPAND43",
+   "query": "fix internal references",
+   "identifier": "fixInternalReferences",
+   "definedIn": [
+    "src/Text/Pandoc/Chunks.hs",
+    "src/Text/Pandoc/Readers/EPUB.hs"
+   ]
+  },
+  {
+   "id": "IDPAND44",
+   "query": "lookup macro",
+   "identifier": "lookupMacro",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/LaTeX/Macro.hs",
+    "src/Text/Pandoc/Readers/Org/ParserState.hs"
+   ]
+  },
+  {
+   "id": "IDPAND45",
+   "query": "add attachment",
+   "identifier": "addAttachment",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Ipynb.hs",
+    "src/Text/Pandoc/Writers/Ipynb.hs"
+   ]
+  },
+  {
+   "id": "IDPAND46",
+   "query": "put common state",
+   "identifier": "putCommonState",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/PandocLua.hs",
+    "src/Text/Pandoc/Class/PandocMonad.hs",
+    "src/Text/Pandoc/Class/PandocPure.hs"
+   ]
+  },
+  {
+   "id": "IDPAND47",
+   "query": "jats state",
+   "identifier": "JATSState",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/JATS.hs",
+    "src/Text/Pandoc/Writers/JATS/Types.hs"
+   ]
+  },
+  {
+   "id": "IDPAND48",
+   "query": "simple table",
+   "identifier": "simpleTable",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Markdown.hs",
+    "src/Text/Pandoc/Readers/RST.hs",
+    "src/Text/Pandoc/Writers/Muse.hs",
+    "src/Text/Pandoc/Writers/RST.hs"
+   ]
+  },
+  {
+   "id": "IDPAND49",
+   "query": "update identifier list",
+   "identifier": "updateIdentifierList",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Capabilities.hs",
+    "src/Text/Pandoc/Parsing/State.hs",
+    "src/Text/Pandoc/Readers/HTML/Types.hs",
+    "src/Text/Pandoc/Readers/LaTeX/Parsing.hs",
+    "src/Text/Pandoc/Readers/Man.hs",
+    "src/Text/Pandoc/Readers/MediaWiki.hs",
+    "src/Text/Pandoc/Readers/Muse.hs",
+    "src/Text/Pandoc/Readers/Org/ParserState.hs",
+    "src/Text/Pandoc/Readers/Pod.hs",
+    "src/Text/Pandoc/Readers/Typst/Parsing.hs"
+   ]
+  },
+  {
+   "id": "IDPAND50",
+   "query": "check defined",
+   "identifier": "checkDefined",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Roff.hs",
+    "src/Text/Pandoc/Readers/Roff/Escape.hs"
+   ]
+  },
+  {
+   "id": "IDPAND51",
+   "query": "parse xml from entry",
+   "identifier": "parseXMLFromEntry",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Docx/Parse.hs",
+    "src/Text/Pandoc/Readers/Xlsx/Parse.hs"
+   ]
+  },
+  {
+   "id": "IDPAND52",
+   "query": "render inline list",
+   "identifier": "renderInlineList",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Writer/Scaffolding.hs",
+    "src/Text/Pandoc/Writers/Muse.hs"
+   ]
+  },
+  {
+   "id": "IDPAND53",
+   "query": "run server",
+   "identifier": "runServer",
+   "definedIn": [
+    "pandoc-cli/no-server/PandocCLI/Server.hs",
+    "pandoc-cli/server/PandocCLI/Server.hs"
+   ]
+  },
+  {
+   "id": "IDPAND54",
+   "query": "is math ml",
+   "identifier": "isMathML",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/JATS.hs",
+    "src/Text/Pandoc/Writers/DocBook.hs"
+   ]
+  },
+  {
+   "id": "IDPAND55",
+   "query": "pandoc attr",
+   "identifier": "PandocAttr",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/XML.hs",
+    "src/Text/Pandoc/Writers/XML.hs"
+   ]
+  },
+  {
+   "id": "IDPAND56",
+   "query": "parse cell",
+   "identifier": "parseCell",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/RST.hs",
+    "src/Text/Pandoc/Readers/Xlsx/Parse.hs"
+   ]
+  },
+  {
+   "id": "IDPAND57",
+   "query": "elem name",
+   "identifier": "elemName",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/OOXML/Shared.hs",
+    "src/Text/Pandoc/Writers/OOXML.hs"
+   ]
+  },
+  {
+   "id": "IDPAND58",
+   "query": "lookup attr",
+   "identifier": "lookupAttr",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/ODT/Generic/XMLConverter.hs",
+    "xml-light/Text/Pandoc/XML/Light/Proc.hs"
+   ]
+  },
+  {
+   "id": "IDPAND59",
+   "query": "list continuation",
+   "identifier": "listContinuation",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Markdown.hs",
+    "src/Text/Pandoc/Readers/Org/Blocks.hs",
+    "src/Text/Pandoc/Readers/RST.hs",
+    "src/Text/Pandoc/Readers/Txt2Tags.hs"
+   ]
+  },
+  {
+   "id": "IDPAND60",
+   "query": "insert media",
+   "identifier": "insertMedia",
+   "definedIn": [
+    "src/Text/Pandoc/Class/PandocMonad.hs",
+    "src/Text/Pandoc/MediaBag.hs"
+   ]
+  },
+  {
+   "id": "IDPAND61",
+   "query": "get log messages",
+   "identifier": "getLogMessages",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Capabilities.hs",
+    "src/Text/Pandoc/Parsing/State.hs",
+    "src/Text/Pandoc/Readers/LaTeX/Parsing.hs",
+    "src/Text/Pandoc/Readers/Man.hs",
+    "src/Text/Pandoc/Readers/Mdoc.hs",
+    "src/Text/Pandoc/Readers/Org/ParserState.hs",
+    "src/Text/Pandoc/Readers/Pod.hs"
+   ]
+  },
+  {
+   "id": "IDPAND62",
+   "query": "writer state",
+   "identifier": "WriterState",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/ANSI.hs",
+    "src/Text/Pandoc/Writers/AsciiDoc.hs",
+    "src/Text/Pandoc/Writers/BBCode.hs",
+    "src/Text/Pandoc/Writers/ConTeXt.hs",
+    "src/Text/Pandoc/Writers/Docx/Types.hs",
+    "src/Text/Pandoc/Writers/DokuWiki.hs",
+    "src/Text/Pandoc/Writers/HTML.hs",
+    "src/Text/Pandoc/Writers/Haddock.hs",
+    "src/Text/Pandoc/Writers/ICML.hs",
+    "src/Text/Pandoc/Writers/LaTeX/Types.hs",
+    "src/Text/Pandoc/Writers/Markdown/Types.hs",
+    "src/Text/Pandoc/Writers/MediaWiki.hs",
+    "src/Text/Pandoc/Writers/Muse.hs",
+    "src/Text/Pandoc/Writers/OpenDocument.hs",
+    "src/Text/Pandoc/Writers/Org.hs",
+    "src/Text/Pandoc/Writers/Powerpoint/Output.hs",
+    "src/Text/Pandoc/Writers/Powerpoint/Presentation.hs",
+    "src/Text/Pandoc/Writers/RST.hs",
+    "src/Text/Pandoc/Writers/Roff.hs",
+    "src/Text/Pandoc/Writers/Texinfo.hs",
+    "src/Text/Pandoc/Writers/Textile.hs",
+    "src/Text/Pandoc/Writers/Typst.hs",
+    "src/Text/Pandoc/Writers/Vimdoc.hs",
+    "src/Text/Pandoc/Writers/XWiki.hs",
+    "src/Text/Pandoc/Writers/ZimWiki.hs"
+   ]
+  },
+  {
+   "id": "IDPAND63",
+   "query": "update macros",
+   "identifier": "updateMacros",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Capabilities.hs",
+    "src/Text/Pandoc/Parsing/State.hs",
+    "src/Text/Pandoc/Readers/HTML/Types.hs",
+    "src/Text/Pandoc/Readers/LaTeX/Parsing.hs",
+    "src/Text/Pandoc/Readers/Org/ParserState.hs"
+   ]
+  },
+  {
+   "id": "IDPAND64",
+   "query": "find child",
+   "identifier": "findChild",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/ODT/Generic/XMLConverter.hs",
+    "xml-light/Text/Pandoc/XML/Light/Proc.hs"
+   ]
+  },
+  {
+   "id": "IDPAND65",
+   "query": "add include file",
+   "identifier": "addIncludeFile",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Capabilities.hs",
+    "src/Text/Pandoc/Parsing/State.hs",
+    "src/Text/Pandoc/Readers/LaTeX/Parsing.hs",
+    "src/Text/Pandoc/Readers/Org/ParserState.hs"
+   ]
+  },
+  {
+   "id": "IDPAND66",
+   "query": "parse json",
+   "identifier": "parseJSON",
+   "definedIn": [
+    "src/Text/Pandoc/App/Opt.hs",
+    "src/Text/Pandoc/Filter.hs",
+    "src/Text/Pandoc/Logging.hs",
+    "src/Text/Pandoc/Options.hs",
+    "src/Text/Pandoc/Translations/Types.hs"
+   ]
+  },
+  {
+   "id": "IDPAND67",
+   "query": "head rows",
+   "identifier": "headRows",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/HTML/Table.hs",
+    "src/Text/Pandoc/Writers/LaTeX/Table.hs"
+   ]
+  },
+  {
+   "id": "IDPAND68",
+   "query": "table part",
+   "identifier": "TablePart",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/ConTeXt.hs",
+    "src/Text/Pandoc/Writers/HTML.hs",
+    "src/Text/Pandoc/Writers/JATS/Table.hs"
+   ]
+  },
+  {
+   "id": "IDPAND69",
+   "query": "is spacey",
+   "identifier": "isSpacey",
+   "definedIn": [
+    "src/Text/Pandoc/Citeproc/Locator.hs",
+    "src/Text/Pandoc/Writers/Typst.hs"
+   ]
+  },
+  {
+   "id": "IDPAND70",
+   "query": "list item",
+   "identifier": "listItem",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Creole.hs",
+    "src/Text/Pandoc/Readers/Man.hs",
+    "src/Text/Pandoc/Readers/Markdown.hs",
+    "src/Text/Pandoc/Readers/MediaWiki.hs",
+    "src/Text/Pandoc/Readers/Org/Blocks.hs",
+    "src/Text/Pandoc/Readers/RST.hs",
+    "src/Text/Pandoc/Readers/Txt2Tags.hs"
+   ]
+  },
+  {
+   "id": "IDPAND71",
+   "query": "esc string",
+   "identifier": "escString",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Roff/Escape.hs",
+    "src/Text/Pandoc/Writers/Man.hs"
+   ]
+  },
+  {
+   "id": "IDPAND72",
+   "query": "get namespace id",
+   "identifier": "getNamespaceID",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/ODT/Generic/Namespaces.hs",
+    "src/Text/Pandoc/Readers/ODT/Namespaces.hs"
+   ]
+  },
+  {
+   "id": "IDPAND73",
+   "query": "get field",
+   "identifier": "getField",
+   "definedIn": [
+    "src/Text/Pandoc/Citeproc/BibTeX.hs",
+    "src/Text/Pandoc/Readers/Typst/Parsing.hs",
+    "src/Text/Pandoc/Writers/Shared.hs"
+   ]
+  },
+  {
+   "id": "IDPAND74",
+   "query": "load relationships",
+   "identifier": "loadRelationships",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Pptx/Parse.hs",
+    "src/Text/Pandoc/Readers/Xlsx/Parse.hs"
+   ]
+  },
+  {
+   "id": "IDPAND75",
+   "query": "maybe to either",
+   "identifier": "maybeToEither",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Pptx/Parse.hs",
+    "src/Text/Pandoc/Readers/Pptx/SmartArt.hs",
+    "src/Text/Pandoc/Readers/Xlsx/Parse.hs"
+   ]
+  },
+  {
+   "id": "IDPAND76",
+   "query": "to task list item",
+   "identifier": "toTaskListItem",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Djot.hs",
+    "src/Text/Pandoc/Writers/Shared.hs"
+   ]
+  },
+  {
+   "id": "IDPAND77",
+   "query": "find attr",
+   "identifier": "findAttr",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/ODT/Generic/XMLConverter.hs",
+    "xml-light/Text/Pandoc/XML/Light/Proc.hs"
+   ]
+  }
+ ]
+}

@@ -42,13 +42,15 @@ def main() -> None:
     ap.add_argument("--repo", required=True)
     ap.add_argument("--n", type=int, default=300)
     ap.add_argument("--seed", type=lambda s: int(s, 0), default=0x5E5512)
+    ap.add_argument("--lang", default="", help="restrict definitions to these tree-sitter languages (comma list)")
     args = ap.parse_args()
 
     repo_dir = ROOT / "eval-repos" / args.repo
     dmap = ROOT / ".bench" / "defs" / f"{args.repo}.json"
     if not dmap.exists():
         dmap.parent.mkdir(parents=True, exist_ok=True)
-        subprocess.run(["npx", "tsx", "scripts/extract_roles.ts", "repo", str(repo_dir), str(dmap)],
+        subprocess.run(["npx", "tsx", "scripts/extract_roles.ts", "repo", str(repo_dir), str(dmap)]
+                       + (["--lang", args.lang] if args.lang else []),
                        cwd=ROOT, check=True)
     defs: dict = json.loads(dmap.read_text())["defs"]
 
