@@ -71,7 +71,7 @@ This example builds chunk tensors on the fly for clarity. In production, build t
 
 * A `miru-kalpana search <repo> "<query>"` command, or an MCP tool for agents.
 * Indexing an arbitrary repository through these scripts (they target `client-go`).
-* Strong multi-language evidence: on docstring-style queries (CodeSearchNet) the gain is small and only borderline significant overall (see [Multi-language results](#multi-language-results-mirus-own-benchmark-suites)).
+* Broader multi-language evidence is now in place but still limited. With the Takara DS1 embedder, Kalpana beats Miru native top-3 on docstring-style queries (CodeSearchNet, 6 languages: 73.3% → 75.5%, 93 wins / 27 losses, p < 0.001; eight more languages with queries built from doc comments: 27.9% → 32.5%, 80 / 10, p < 0.001) and on identifier-style queries (13 repos, 13 languages: 51.2% → 59.5%, 168 / 15, p < 0.001). The effect is a few points of Chunk@3, it is not significant in every language, it is not loss-free, and the gain is not yet separated between DS1 as retriever and DS1 as Kalpana's codebook. With the MiniLM stand-in the CodeSearchNet result was only borderline (p = 0.053). See [Takara DS1 embedder](#takara-ds1-embedder-and-an-identifier-style-held-out-set) for tables, caveats and the languages not covered.
 
 ---
 
@@ -163,7 +163,7 @@ python3 miru_kalpana/benchmark_kalpana_fusion.py --extractor treesitter \
 
 The benchmark suites from the Miru repository (`miru-code/scripts`) were run with the same tree-sitter extractor. Miru stays unmodified and supplies the topK=5 pools. Kalpana fusion uses linear α chosen by 5-fold CV and scored on held-out folds only. The results below compare Kalpana against Miru native topK=3.
 
-**CodeSearchNet** (Miru's protocol: `code-search-net/code_search_net` test split, first 500 usable rows per language, docstring → function, one corpus per language):
+**CodeSearchNet** (Miru's protocol: `code-search-net/code_search_net` test split, first 500 usable rows per language, docstring → function, one corpus per language). The table below is the **original run with the local MiniLM-L6 stand-in**; the same queries re-run with Takara DS1 are in [the DS1 section](#takara-ds1-embedder-and-an-identifier-style-held-out-set) below (pooled 73.3% → 75.5%, 93 / 27, p < 0.001):
 
 | Language | Pool recall@5 | Miru native Chunk@3 | + Kalpana (held-out α) | Chunk W/L | p |
 |---|---:|---:|---:|---:|---:|
@@ -175,8 +175,8 @@ The benchmark suites from the Miru repository (`miru-code/scripts`) were run wit
 | Python | 99.0% | 91.4% | 91.2% | 0 / 1 | 1.00 |
 | **Pooled (3,000 queries)** | | | | **64 / 43** | **0.053** |
 
-* The direction is consistent but the effect is **small**. Only Ruby is significant on its own, and the pooled result is borderline.
-* **The do-no-harm property does not fully transfer.** Against the same top-5 pool, the pooled result is 61 wins / 40 losses (p = 0.046), and every language has some losses. CodeSearchNet queries are natural-language docstrings, whereas Kalpana's query tensor targets identifier-style "where is *X* defined" lookups (the client-go setting above).
+* MiniLM run: the direction is consistent but the effect is **small**. Only Ruby is significant on its own, and the pooled result is borderline. With DS1 the pooled effect is clearer (see below), and Ruby, PHP, Java and JavaScript are significant on their own.
+* **The do-no-harm property does not fully transfer, with either embedder.** Against the same top-5 pool, the MiniLM pooled result is 61 wins / 40 losses (p = 0.046), with losses in every language; the DS1 result is 81 wins / 24 losses, with losses in every language except Python (which is at ceiling). Reranking is a net gain, not a guarantee per query. CodeSearchNet queries are natural-language docstrings, whereas Kalpana's query tensor targets identifier-style "where is *X* defined" lookups (the client-go setting above).
 * Python is at ceiling: CodeSearchNet Python code contains its own docstring, which is the query.
 * The extractor needed two language-specific fixes. Elixir `def`/`defmodule` are plain function calls in its grammar, and untagged PHP snippets need `<?php` prepended.
 
