@@ -1,0 +1,2010 @@
+{
+ "repo": "doc-redis",
+ "source": "id-redis",
+ "commit": "2ac3f66dd59e081799abff78a72da520d70802f5",
+ "lang": "c",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "200 docstring-style queries (first sentence of the doc comment of one definition), drawn by gen_queries_doc.py (seed 0xa11ce); corpus is the pinned repo with all definition doc comments removed (scripts/extract_docqueries.ts --strip). Documented definitions available: 3299 (of 15326 definitions).",
+ "queries": [
+  {
+   "id": "DREDIS0",
+   "query": "Lookup the consumer group in the specified stream and returns its pointer, otherwise if there is no such group, NULL is returned",
+   "identifier": "streamLookupCG",
+   "definedIn": [
+    "src/t_stream.c"
+   ],
+   "line": 3782,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS1",
+   "query": "Read integer encoded as 'encoding' from 'p'",
+   "identifier": "zipLoadInteger",
+   "definedIn": [
+    "src/ziplist.c"
+   ],
+   "line": 578,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS2",
+   "query": "List of pending commands",
+   "identifier": "pendingCommandList",
+   "definedIn": [
+    "src/server.h"
+   ],
+   "line": 1423,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS3",
+   "query": "Enlarge the free space at the end of the sds string so that the caller is sure that after calling this function can overwrite up to addlen bytes after the end of the string, plus one more byte for nul",
+   "identifier": "_sdsMakeRoomFor",
+   "definedIn": [
+    "src/sds.c"
+   ],
+   "line": 278,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS4",
+   "query": "Get embedded sds from node",
+   "identifier": "zslGetNodeElement",
+   "definedIn": [
+    "src/t_zset.c"
+   ],
+   "line": 129,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS5",
+   "query": "We parse argv to add sds \"NAME VALUE\" pairs to the server.module_configs_queue list of configs",
+   "identifier": "parseLoadexArguments",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 13812,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS6",
+   "query": "Test a connection is local or loopback",
+   "identifier": "connIsLocal",
+   "definedIn": [
+    "src/connection.h"
+   ],
+   "line": 322,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS7",
+   "query": "Takes all libraries from lib_ctx_src and add to lib_ctx_dst",
+   "identifier": "libraryJoin",
+   "definedIn": [
+    "src/functions.c"
+   ],
+   "line": 331,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS8",
+   "query": "Generate a csv-alike representation of the specified cluster node",
+   "identifier": "clusterGenNodeDescription",
+   "definedIn": [
+    "src/cluster_legacy.c"
+   ],
+   "line": 5518,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS9",
+   "query": "GEOPOS key ele1 ele2 ... eleN",
+   "identifier": "geoposCommand",
+   "definedIn": [
+    "src/geo.c"
+   ],
+   "line": 941,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS10",
+   "query": "Concatenate the comma separated list of node flags to the given SDS string 'ci'",
+   "identifier": "representClusterNodeFlags",
+   "definedIn": [
+    "src/cluster_legacy.c"
+   ],
+   "line": 5485,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS11",
+   "query": "Background authentication can happen here",
+   "identifier": "HelloACL_ThreadMain",
+   "definedIn": [
+    "src/modules/helloacl.c"
+   ],
+   "line": 126,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS12",
+   "query": "Address object, used to describe an ip:port pair",
+   "identifier": "sentinelAddr",
+   "definedIn": [
+    "src/sentinel.c"
+   ],
+   "line": 37,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS13",
+   "query": "Add a C null term string as bulk reply",
+   "identifier": "addReplyBulkCString",
+   "definedIn": [
+    "src/networking.c"
+   ],
+   "line": 1454,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS14",
+   "query": "Selector definitions should be sent as a single argument, however we will be lenient and try to find selector definitions spread across multiple arguments since it makes for a simpler user experience for ACL SETUSER as well as when loading",
+   "identifier": "ACLMergeSelectorArguments",
+   "definedIn": [
+    "src/acl.c"
+   ],
+   "line": 2085,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS15",
+   "query": "Lower level API that checks if a specified user is able to execute a given command",
+   "identifier": "ACLCheckAllUserCommandPerm",
+   "definedIn": [
+    "src/acl.c"
+   ],
+   "line": 1904,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS16",
+   "query": "Set the value at pos, using the configured encoding",
+   "identifier": "_intsetSet",
+   "definedIn": [
+    "src/intset.c"
+   ],
+   "line": 82,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS17",
+   "query": "This function should be called when we need an unlinked \"fake\" user we can use in order to validate ACL rules or for other similar reasons",
+   "identifier": "ACLCreateUnlinkedUser",
+   "definedIn": [
+    "src/acl.c"
+   ],
+   "line": 454,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS18",
+   "query": "In the context of the rdb_save method of a module data type, loads back the float value saved by RedisModule_SaveFloat()",
+   "identifier": "RM_LoadFloat",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 8047,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS19",
+   "query": "Set the object LRU/LFU depending on server.maxmemory_policy",
+   "identifier": "objectSetLRUOrLFU",
+   "definedIn": [
+    "src/object.c"
+   ],
+   "line": 1728,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS20",
+   "query": "Find config by name and attempt to set it to its default value",
+   "identifier": "performModuleConfigSetDefaultFromName",
+   "definedIn": [
+    "src/config.c"
+   ],
+   "line": 873,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS21",
+   "query": "SETBIT key offset bitvalue",
+   "identifier": "setbitCommand",
+   "definedIn": [
+    "src/bitops.c"
+   ],
+   "line": 1074,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS22",
+   "query": "Free a Call reply and all the nested replies it contains if it's an array",
+   "identifier": "RM_FreeCallReply",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 6584,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS23",
+   "query": "Check if the command is accessing keys in a slot being trimmed",
+   "identifier": "asmGetTrimmingSlotForCommand",
+   "definedIn": [
+    "src/cluster_asm.c"
+   ],
+   "line": 3917,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS24",
+   "query": "Seek the specified element and returns the pointer to the seeked element",
+   "identifier": "lpSeek",
+   "definedIn": [
+    "src/listpack.c"
+   ],
+   "line": 1694,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS25",
+   "query": "print expiration-time of items, ebuckets layout and some statistics",
+   "identifier": "ebPrint",
+   "definedIn": [
+    "src/ebuckets.c"
+   ],
+   "line": 1712,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS26",
+   "query": "This function is used in order to send commands to Redis instances: the commands we send from Sentinel may be renamed, a common case is a master with CONFIG and SLAVEOF commands renamed for security concerns",
+   "identifier": "sentinelInstanceMapCommand",
+   "definedIn": [
+    "src/sentinel.c"
+   ],
+   "line": 1708,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS27",
+   "query": "Create a new cluster node, with the specified flags",
+   "identifier": "createClusterNode",
+   "definedIn": [
+    "src/cluster_legacy.c"
+   ],
+   "line": 1354,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS28",
+   "query": "Attempt to defrag a module data type value",
+   "identifier": "moduleDefragValue",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 15815,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS29",
+   "query": "Remove all the pending messages in the specified list",
+   "identifier": "ldbFlushLog",
+   "definedIn": [
+    "src/eval.c"
+   ],
+   "line": 777,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS30",
+   "query": "Delete a range of entries from the ziplist",
+   "identifier": "ziplistDeleteRange",
+   "definedIn": [
+    "src/ziplist.c"
+   ],
+   "line": 1279,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS31",
+   "query": "SUBSCRIBE channel [channel ...]",
+   "identifier": "subscribeCommand",
+   "definedIn": [
+    "src/pubsub.c"
+   ],
+   "line": 770,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS32",
+   "query": "Invoke the given function with the given keys and args",
+   "identifier": "luaEngineCall",
+   "definedIn": [
+    "src/function_lua.c"
+   ],
+   "line": 147,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS33",
+   "query": "AVX512 optimized dot product for float vectors",
+   "identifier": "vectors_distance_float_avx512",
+   "definedIn": [
+    "modules/vector-sets/hnsw.c"
+   ],
+   "line": 302,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS34",
+   "query": "Create a pipe buffer with given flags for read end and write end",
+   "identifier": "anetPipe",
+   "definedIn": [
+    "src/anet.c"
+   ],
+   "line": 722,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS35",
+   "query": "ARMGET key idx [idx ...]",
+   "identifier": "armgetCommand",
+   "definedIn": [
+    "src/t_array.c"
+   ],
+   "line": 127,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS36",
+   "query": "Reset a node performing a soft or hard reset",
+   "identifier": "clusterReset",
+   "definedIn": [
+    "src/cluster_legacy.c"
+   ],
+   "line": 1084,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS37",
+   "query": "We propagate MAXLEN/MINID ~ as MAXLEN/MINID = otherwise trimming is no longer deterministic on replicas / AOF",
+   "identifier": "streamRewriteTrimArgument",
+   "definedIn": [
+    "src/t_stream.c"
+   ],
+   "line": 2782,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS38",
+   "query": "Perform scheduled operations for all the instances in the dictionary",
+   "identifier": "sentinelHandleDictOfRedisInstances",
+   "definedIn": [
+    "src/sentinel.c"
+   ],
+   "line": 5458,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS39",
+   "query": "Free 'count' SDS strings and the array holding them",
+   "identifier": "rdbFreeSdsArray",
+   "definedIn": [
+    "src/rdb.c"
+   ],
+   "line": 2624,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS40",
+   "query": "Save an unsigned 64 bit value into the RDB file",
+   "identifier": "RM_SaveUnsigned",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 7860,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS41",
+   "query": "This function takes a module and a list of configs stored as sds NAME VALUE pairs",
+   "identifier": "loadModuleConfigs",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 14358,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS42",
+   "query": "BITCONVERT is an internal propagation primitive",
+   "identifier": "bitconvertCommand",
+   "definedIn": [
+    "src/bitops.c"
+   ],
+   "line": 967,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS43",
+   "query": "Wrapper to allow argument-based switching between HEAD/TAIL pop",
+   "identifier": "quicklistPush",
+   "definedIn": [
+    "src/quicklist.c"
+   ],
+   "line": 1755,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS44",
+   "query": "Retrieve the user name of the client connection behind the current context",
+   "identifier": "RM_GetCurrentUserName",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 11007,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS45",
+   "query": "Wrapper to hnsw_search_with_filter() when no filter is needed",
+   "identifier": "hnsw_search",
+   "definedIn": [
+    "modules/vector-sets/hnsw.c"
+   ],
+   "line": 1270,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS46",
+   "query": "Set pause-client end-time and restricted action",
+   "identifier": "pauseClientsByClient",
+   "definedIn": [
+    "src/networking.c"
+   ],
+   "line": 5694,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS47",
+   "query": "Defrag by_id top array (once, at idx 0) and the chunk at 'idx'",
+   "identifier": "hashTemplateDefragByIdChunk",
+   "definedIn": [
+    "src/t_hash.c"
+   ],
+   "line": 534,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS48",
+   "query": "Split 's' with separator in 'sep'",
+   "identifier": "sdssplitlen",
+   "definedIn": [
+    "src/sds.c"
+   ],
+   "line": 908,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS49",
+   "query": "When we close gracefully the AOF file, we have the chance to persist the end replication offset of current INCR AOF",
+   "identifier": "updateCurIncrAofEndOffset",
+   "definedIn": [
+    "src/aof.c"
+   ],
+   "line": 1125,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS50",
+   "query": "Register to be notified, via a callback, when the specified server event happens",
+   "identifier": "RM_SubscribeToServerEvent",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 13201,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS51",
+   "query": "Wrapper for compareStringObjectsWithFlags() using binary comparison",
+   "identifier": "compareStringObjects",
+   "definedIn": [
+    "src/object.c"
+   ],
+   "line": 1090,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS52",
+   "query": "ZREVRANGEBYLEX [LIMIT offset count]",
+   "identifier": "zrevrangebylexCommand",
+   "definedIn": [
+    "src/t_zset.c"
+   ],
+   "line": 3914,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS53",
+   "query": "This is a helper function for performEvictions(), it is used in order to populate the evictionPool with a few entries every time we want to expire a key",
+   "identifier": "evictionPoolPopulate",
+   "definedIn": [
+    "src/evict.c"
+   ],
+   "line": 139,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS54",
+   "query": "High level Set operation",
+   "identifier": "setKey",
+   "definedIn": [
+    "src/db.c"
+   ],
+   "line": 770,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS55",
+   "query": "Commit an insert at the position recorded in link",
+   "identifier": "raxInsertAt",
+   "definedIn": [
+    "src/rax.c"
+   ],
+   "line": 753,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS56",
+   "query": "Binary search in sparse slice",
+   "identifier": "arSparseFindPos",
+   "definedIn": [
+    "src/sparsearray.c"
+   ],
+   "line": 391,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS57",
+   "query": "Rewrite the loadmodule option",
+   "identifier": "rewriteConfigLoadmoduleOption",
+   "definedIn": [
+    "src/config.c"
+   ],
+   "line": 1702,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS58",
+   "query": "Rebuild a bitmap from the RoaringFormatSpec 64-bit portable format",
+   "identifier": "bitroarCreateFromPortable",
+   "definedIn": [
+    "src/bitroar.c"
+   ],
+   "line": 351,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS59",
+   "query": "COMMAND LIST FILTERBY (MODULE |ACLCAT |PATTERN )",
+   "identifier": "commandListWithFilter",
+   "definedIn": [
+    "src/server.c"
+   ],
+   "line": 6120,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS60",
+   "query": "Sign extend the 'bits' wide two's complement integer stored in the low bits of 'value'",
+   "identifier": "signExtendBitfield",
+   "definedIn": [
+    "src/bitops.c"
+   ],
+   "line": 546,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS61",
+   "query": "Append the specified null terminated C string to the sds string 's'",
+   "identifier": "sdscat",
+   "definedIn": [
+    "src/sds.c"
+   ],
+   "line": 549,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS62",
+   "query": "Rewrite the notify-keyspace-events option",
+   "identifier": "rewriteConfigNotifyKeyspaceEventsOption",
+   "definedIn": [
+    "src/config.c"
+   ],
+   "line": 1603,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS63",
+   "query": "Set a key (or key-value) in the specified kvstore",
+   "identifier": "kvstoreDictSetAtLink",
+   "definedIn": [
+    "src/kvstore.c"
+   ],
+   "line": 881,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS64",
+   "query": "Remove failure reports that are too old, where too old means reasonably older than the global node timeout",
+   "identifier": "clusterNodeCleanupFailureReports",
+   "definedIn": [
+    "src/cluster_legacy.c"
+   ],
+   "line": 1433,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS65",
+   "query": "A TMPL_LP values listpack must hold one entry per field plus the leading template-id entry",
+   "identifier": "rdbCheckTmplLpCount",
+   "definedIn": [
+    "src/rdb.c"
+   ],
+   "line": 2807,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS66",
+   "query": "The base case is to use the keys position as given in the command table (firstkey, lastkey, step)",
+   "identifier": "getKeysUsingLegacyRangeSpec",
+   "definedIn": [
+    "src/db.c"
+   ],
+   "line": 3526,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS67",
+   "query": "Unwatch all the keys watched by this client",
+   "identifier": "unwatchAllKeys",
+   "definedIn": [
+    "src/multi.c"
+   ],
+   "line": 339,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS68",
+   "query": "Like the HELLO.LIST.SPLICE above, but uses automatic memory management in order to avoid freeing stuff",
+   "identifier": "HelloListSpliceAuto_RedisCommand",
+   "definedIn": [
+    "src/modules/helloworld.c"
+   ],
+   "line": 159,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS69",
+   "query": "This is just a wrapper for lpInsert() to directly use a 64 bit integer instead of a string",
+   "identifier": "lpInsertInteger",
+   "definedIn": [
+    "src/listpack.c"
+   ],
+   "line": 1376,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS70",
+   "query": "For cross-slot scripting, its caller client's slot must be invalidated, such that its slot-stats aggregation is bypassed",
+   "identifier": "clusterSlotStatsInvalidateSlotIfApplicable",
+   "definedIn": [
+    "src/cluster_slot_stats.c"
+   ],
+   "line": 269,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS71",
+   "query": "Get the node with wk->client in the list of clients watching that key",
+   "identifier": "watchedKeyGetClientNode",
+   "definedIn": [
+    "src/multi.c"
+   ],
+   "line": 299,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS72",
+   "query": "Register a defrag callbacks that will be called when defrag operation starts and ends",
+   "identifier": "RM_RegisterDefragCallbacks",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 15556,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS73",
+   "query": "This function is exactly like RedisModule_DictNext() but after returning the currently selected element in the iterator, it selects the previous element (lexicographically smaller) instead of the next one",
+   "identifier": "RM_DictPrevC",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 11553,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS74",
+   "query": "----------------------------------------------------------------------------- CLUSTER Pub/Sub support",
+   "identifier": "clusterPropagatePublish",
+   "definedIn": [
+    "src/cluster_legacy.c"
+   ],
+   "line": 4094,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS75",
+   "query": "Replace an existing key with a new value (don't emit any events)",
+   "identifier": "dbReplaceValueWithLink",
+   "definedIn": [
+    "src/db.c"
+   ],
+   "line": 751,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS76",
+   "query": "XINFO CONSUMERS XINFO GROUPS XINFO STREAM [FULL [COUNT ]] XINFO HELP",
+   "identifier": "xinfoCommand",
+   "definedIn": [
+    "src/t_stream.c"
+   ],
+   "line": 5880,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS77",
+   "query": "Free all objects queued by IO thread for deferred freeing",
+   "identifier": "freeClientIODeferredObjects",
+   "definedIn": [
+    "src/networking.c"
+   ],
+   "line": 1888,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS78",
+   "query": "Rewrite the latency-tracking-info-percentiles option",
+   "identifier": "rewriteConfigLatencyTrackingInfoPercentilesOutputOption",
+   "definedIn": [
+    "src/config.c"
+   ],
+   "line": 3421,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS79",
+   "query": "Sets the direction of an iterator",
+   "identifier": "listTypeSetIteratorDirection",
+   "definedIn": [
+    "src/t_list.c"
+   ],
+   "line": 247,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS80",
+   "query": "Compression requires an IO worker eligible for this replication direction",
+   "identifier": "canUseReplCompression",
+   "definedIn": [
+    "src/replication.c"
+   ],
+   "line": 82,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS81",
+   "query": "Called when there is a load error in the context of a module",
+   "identifier": "moduleRDBLoadError",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 7781,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS82",
+   "query": "Defrag a TMPL_ARRAY hash: small in one shot, large incrementally (like the hashtable/set/array paths) so a wide template hash can't stall defrag",
+   "identifier": "defragTmplArray",
+   "definedIn": [
+    "src/defrag.c"
+   ],
+   "line": 797,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS83",
+   "query": "This is the generic command implementation for HEXPIRE, HPEXPIRE, HEXPIREAT and HPEXPIREAT",
+   "identifier": "hexpireGenericCommand",
+   "definedIn": [
+    "src/t_hash.c"
+   ],
+   "line": 6582,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS84",
+   "query": "Write the given command to the aof file. dictid - dictionary id the command should be applied to, this is used in order to decide if a select command should also be written to the aof",
+   "identifier": "feedAppendOnlyFile",
+   "definedIn": [
+    "src/aof.c"
+   ],
+   "line": 1670,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS85",
+   "query": "Write the formatted manifest string to 'dirname'",
+   "identifier": "writeAofManifestFileToDir",
+   "definedIn": [
+    "src/aof.c"
+   ],
+   "line": 543,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS86",
+   "query": "Replication cron function, called 1 time per second",
+   "identifier": "replicationCron",
+   "definedIn": [
+    "src/replication.c"
+   ],
+   "line": 5094,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS87",
+   "query": "Set a free method applied to every element on vecRelease",
+   "identifier": "vecSetFreeMethod",
+   "definedIn": [
+    "src/vector.h"
+   ],
+   "line": 78,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS88",
+   "query": "If this node is a replica and there is an active trim or a pending trim job (due to write pause), we cannot process commands from the master for the slots that are waiting to be trimmed",
+   "identifier": "asmUnblockMasterAfterTrim",
+   "definedIn": [
+    "src/cluster_asm.c"
+   ],
+   "line": 3204,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS89",
+   "query": "Randomly select a pair of key and value. total_count is a pre-computed length/2 of the listpack (to avoid calls to lpLength) 'key' and 'val' are used to store the result key value pair. 'val' can be NULL if the value",
+   "identifier": "lpRandomPair",
+   "definedIn": [
+    "src/listpack.c"
+   ],
+   "line": 1896,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS90",
+   "query": "Add new field ordered by expire time",
+   "identifier": "listpackExAddNew",
+   "definedIn": [
+    "src/t_hash.c"
+   ],
+   "line": 1792,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS91",
+   "query": "HELLO.ZSUMRANGE key startscore endscore",
+   "identifier": "HelloZsumRange_RedisCommand",
+   "definedIn": [
+    "src/modules/helloworld.c"
+   ],
+   "line": 355,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS92",
+   "query": "Parse vector from FP32 blob or VALUES format, with optional REDUCE",
+   "identifier": "parseVector",
+   "definedIn": [
+    "modules/vector-sets/vset.c"
+   ],
+   "line": 381,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS93",
+   "query": "Retrieves info about the cluster using argument 'node' as the starting point",
+   "identifier": "clusterManagerLoadInfoFromNode",
+   "definedIn": [
+    "src/redis-cli.c"
+   ],
+   "line": 5944,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS94",
+   "query": "Find the Nth element within the specified score range",
+   "identifier": "zslNthInRange",
+   "definedIn": [
+    "src/t_zset.c"
+   ],
+   "line": 469,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS95",
+   "query": "Allocate memory or panic",
+   "identifier": "zmalloc",
+   "definedIn": [
+    "src/zmalloc.c"
+   ],
+   "line": 284,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS96",
+   "query": "Initialize the slow log",
+   "identifier": "slowlogInit",
+   "definedIn": [
+    "src/slowlog.c"
+   ],
+   "line": 95,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS97",
+   "query": "Set slice pointer in the directory",
+   "identifier": "arSetSlice",
+   "definedIn": [
+    "src/sparsearray.c"
+   ],
+   "line": 762,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS98",
+   "query": "If this function gets called we already read a whole command, arguments are in the client argv/argc fields. processCommand() execute the command or prepare the server for a bulk read from the client",
+   "identifier": "processCommand",
+   "definedIn": [
+    "src/server.c"
+   ],
+   "line": 4691,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS99",
+   "query": "Check if an sds string is a member of the set",
+   "identifier": "setTypeIsMember",
+   "definedIn": [
+    "src/t_set.c"
+   ],
+   "line": 193,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS100",
+   "query": "Delete the key and notify the modules",
+   "identifier": "asmActiveTrimDeleteKey",
+   "definedIn": [
+    "src/cluster_asm.c"
+   ],
+   "line": 3940,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS101",
+   "query": "BITCOUNT key [start end [BIT|BYTE]]",
+   "identifier": "bitcountCommand",
+   "definedIn": [
+    "src/bitops.c"
+   ],
+   "line": 2077,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS102",
+   "query": "Log errors from RDB / AOF serialization callbacks",
+   "identifier": "RM_LogIOError",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 8404,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS103",
+   "query": "Create a new CallReply struct from the reply blob representing an error message",
+   "identifier": "callReplyCreateError",
+   "definedIn": [
+    "src/call_reply.c"
+   ],
+   "line": 530,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS104",
+   "query": "When we detect a Sentinel to switch address (reporting a different IP/port pair in Hello messages), let's update all the matching Sentinels in the context of other masters as well and disconnect the links, so that everybody will be updated",
+   "identifier": "sentinelUpdateSentinelAddressInAllMasters",
+   "definedIn": [
+    "src/sentinel.c"
+   ],
+   "line": 1196,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS105",
+   "query": "During atomic slot migration, keys that are being imported are in an intermediate state",
+   "identifier": "randomEvictionShouldSkipDictIndex",
+   "definedIn": [
+    "src/evict.c"
+   ],
+   "line": 92,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS106",
+   "query": "Update the tree by adding delta to the element at idx (0-based)",
+   "identifier": "fwTreeUpdate",
+   "definedIn": [
+    "src/fwtree.c"
+   ],
+   "line": 59,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS107",
+   "query": "The timer descriptor, stored as value in the radix tree",
+   "identifier": "RedisModuleTimer",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 10467,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS108",
+   "query": "Can a TMPL_LP / TMPL_ARRAY hash be re-encoded as a plain listpack?",
+   "identifier": "hashTypeCanConvertTmplToListpack",
+   "definedIn": [
+    "src/t_hash.c"
+   ],
+   "line": 3142,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS109",
+   "query": "Rebind the connection to another event loop, read/write handlers must not be installed in the current event loop",
+   "identifier": "connRebindEventLoop",
+   "definedIn": [
+    "src/connection.h"
+   ],
+   "line": 362,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS110",
+   "query": "This command implements SCAN, HSCAN and SSCAN commands",
+   "identifier": "scanGenericCommand",
+   "definedIn": [
+    "src/db.c"
+   ],
+   "line": 1840,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS111",
+   "query": "Send an error about the number of arguments given to the command, citing the command name in the error message",
+   "identifier": "RM_WrongArity",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 3135,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS112",
+   "query": "Implements LPUSH/RPUSH/LPUSHX/RPUSHX. 'xx': push if key exists",
+   "identifier": "pushGenericCommand",
+   "definedIn": [
+    "src/t_list.c"
+   ],
+   "line": 484,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS113",
+   "query": "The not copy on write friendly version but easy to use version of setTypeNext() is setTypeNextObject(), returning new SDS strings",
+   "identifier": "setTypeNextObject",
+   "definedIn": [
+    "src/t_set.c"
+   ],
+   "line": 259,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS114",
+   "query": "Given the category name the command returns the corresponding flag, or zero if there is no match",
+   "identifier": "ACLGetCommandCategoryFlagByName",
+   "definedIn": [
+    "src/acl.c"
+   ],
+   "line": 264,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS115",
+   "query": "Load node's cluster configuration by calling \"CLUSTER NODES\" command",
+   "identifier": "clusterManagerNodeLoadInfo",
+   "definedIn": [
+    "src/redis-cli.c"
+   ],
+   "line": 5768,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS116",
+   "query": "Gather output data from the iovcnt buffers specified by the members of the iov array: iov[0], iov[1], ..., iov[iovcnt-1] and write to connection, behaves the same as writev(3)",
+   "identifier": "connWritev",
+   "definedIn": [
+    "src/connection.h"
+   ],
+   "line": 206,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS117",
+   "query": "Remove the current entry from the stream: can be called after the GetID() API or after any GetField() call, however we need to iterate a valid entry while calling this function",
+   "identifier": "streamIteratorRemoveEntry",
+   "definedIn": [
+    "src/t_stream.c"
+   ],
+   "line": 1767,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS118",
+   "query": "Implements the \"print\" command (without arguments) of the Lua debugger",
+   "identifier": "ldbPrintAll",
+   "definedIn": [
+    "src/eval.c"
+   ],
+   "line": 1414,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS119",
+   "query": "Clear all IDMP entries from a stream - free all producers and their entries",
+   "identifier": "streamClearIdmpEntries",
+   "definedIn": [
+    "src/t_stream.c"
+   ],
+   "line": 6851,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS120",
+   "query": "Data structures related to the exported dictionary data structure",
+   "identifier": "RedisModuleDict",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 375,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS121",
+   "query": "Defragments items in list-based bucket",
+   "identifier": "ebDefragList",
+   "definedIn": [
+    "src/ebuckets.c"
+   ],
+   "line": 1740,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS122",
+   "query": "Retrieves the next field of the current stream ID and its corresponding value in a stream iteration",
+   "identifier": "RM_StreamIteratorNextField",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 6420,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS123",
+   "query": "applyBind affects both TCP and TLS (if enabled) together",
+   "identifier": "applyBind",
+   "definedIn": [
+    "src/config.c"
+   ],
+   "line": 2873,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS124",
+   "query": "arDup() helper to duplicate a single slice into the duplicated array",
+   "identifier": "arSliceDup",
+   "definedIn": [
+    "src/sparsearray.c"
+   ],
+   "line": 1158,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS125",
+   "query": "Close the connection and free resources",
+   "identifier": "connSocketClose",
+   "definedIn": [
+    "src/socket.c"
+   ],
+   "line": 117,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS126",
+   "query": "FUNCTION LOAD [REPLACE] REPLACE - optional, replace existing library LIBRARY CODE - library code to pass to the engine",
+   "identifier": "functionLoadCommand",
+   "definedIn": [
+    "src/functions.c"
+   ],
+   "line": 1044,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS127",
+   "query": "End of rdb load: disassemble every few-key template back to a plain hash",
+   "identifier": "rdbLoadTemplateCtxDisassemble",
+   "definedIn": [
+    "src/t_hash.c"
+   ],
+   "line": 3562,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS128",
+   "query": "Load and validate a TMPL_LP listpack blob whose first entry is a template ID",
+   "identifier": "rdbLoadTmplLpBlob",
+   "definedIn": [
+    "src/rdb.c"
+   ],
+   "line": 2772,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS129",
+   "query": "Set the key access frequency. only relevant if the server's maxmemory policy is LFU based",
+   "identifier": "RM_SetLFU",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 15323,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS130",
+   "query": "Avoid the master to detect the slave is timing out while loading the RDB file in initial synchronization",
+   "identifier": "replicationSendNewlineToMaster",
+   "definedIn": [
+    "src/replication.c"
+   ],
+   "line": 2190,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS131",
+   "query": "Emits a command into the AOF during the AOF rewriting process",
+   "identifier": "RM_EmitAOF",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 8265,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS132",
+   "query": "GEODIST key ele1 ele2 [unit]",
+   "identifier": "geodistCommand",
+   "definedIn": [
+    "src/geo.c"
+   ],
+   "line": 974,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS133",
+   "query": "Reset the manual failover state",
+   "identifier": "resetManualFailover",
+   "definedIn": [
+    "src/cluster_legacy.c"
+   ],
+   "line": 4735,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS134",
+   "query": "SUNIONSTORE destination key [key ...]",
+   "identifier": "sunionstoreCommand",
+   "definedIn": [
+    "src/t_set.c"
+   ],
+   "line": 1734,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS135",
+   "query": "Gets the key access frequency or -1 if the server's eviction policy is not LFU based. returns REDISMODULE_OK if when key is valid",
+   "identifier": "RM_GetLFU",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 15334,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS136",
+   "query": "The main function of IO thread, it will run an event loop",
+   "identifier": "IOThreadMain",
+   "definedIn": [
+    "src/iothread.c"
+   ],
+   "line": 998,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS137",
+   "query": "This is called by the Redis internals every time we want to fire an event that can be intercepted by some module",
+   "identifier": "moduleFireServerEvent",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 13305,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS138",
+   "query": "Relocate the wrapper struct, roaring struct, ART node arrays and container pointer array, and refresh o->ptr",
+   "identifier": "bitroarDefragTopLevel",
+   "definedIn": [
+    "src/bitroar.c"
+   ],
+   "line": 752,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS139",
+   "query": "Adds reply for the ORDERBY variant",
+   "identifier": "addReplyOrderBy",
+   "definedIn": [
+    "src/cluster_slot_stats.c"
+   ],
+   "line": 225,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS140",
+   "query": "ZRANDMEMBER key [ [WITHSCORES]]",
+   "identifier": "zrandmemberCommand",
+   "definedIn": [
+    "src/t_zset.c"
+   ],
+   "line": 4720,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS141",
+   "query": "Create a new skiplist",
+   "identifier": "zslCreate",
+   "definedIn": [
+    "src/t_zset.c"
+   ],
+   "line": 208,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS142",
+   "query": "Collect tokens from command arguments recursively",
+   "identifier": "cmdTokenCollect",
+   "definedIn": [
+    "src/debug.c"
+   ],
+   "line": 1401,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS143",
+   "query": "Add a suggestive error reply",
+   "identifier": "addReplySubcommandSyntaxError",
+   "definedIn": [
+    "src/networking.c"
+   ],
+   "line": 1543,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS144",
+   "query": "This implements MEMORY DOCTOR",
+   "identifier": "getMemoryDoctorReport",
+   "definedIn": [
+    "src/object.c"
+   ],
+   "line": 1611,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS145",
+   "query": "Add a new sample into a sequence",
+   "identifier": "sparklineSequenceAddSample",
+   "definedIn": [
+    "src/sparkline.c"
+   ],
+   "line": 51,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS146",
+   "query": "Print info of listpack which is used in debugCommand",
+   "identifier": "lpRepr",
+   "definedIn": [
+    "src/listpack.c"
+   ],
+   "line": 2113,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS147",
+   "query": "Free the configuration rewrite state",
+   "identifier": "rewriteConfigReleaseState",
+   "definedIn": [
+    "src/config.c"
+   ],
+   "line": 1183,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS148",
+   "query": "Unblock a client which is currently Blocked with error",
+   "identifier": "unblockClientOnError",
+   "definedIn": [
+    "src/blocked.c"
+   ],
+   "line": 816,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS149",
+   "query": "Search all registered modules by name, and name is case sensitive",
+   "identifier": "moduleTypeLookupModuleByName",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 7424,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS150",
+   "query": "Set the bit at position 'pos' in a bitmap",
+   "identifier": "bitmapSetBit",
+   "definedIn": [
+    "src/cluster_legacy.c"
+   ],
+   "line": 5112,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS151",
+   "query": "Output all command help, filtering by group or command name",
+   "identifier": "cliOutputHelp",
+   "definedIn": [
+    "src/redis-cli.c"
+   ],
+   "line": 1025,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS152",
+   "query": "Sparse slices are a single allocation: the arSlice struct followed by a payload containing offsets[] and values[]",
+   "identifier": "arSparseSetupPointers",
+   "definedIn": [
+    "src/sparsearray.c"
+   ],
+   "line": 247,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS153",
+   "query": "This struct Should be embedded inside eItem and must be aligned in memory",
+   "identifier": "ExpireMeta",
+   "definedIn": [
+    "src/ebuckets.h"
+   ],
+   "line": 130,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS154",
+   "query": "This callback is bound to POST and \"Host:\" command names",
+   "identifier": "securityWarningCommand",
+   "definedIn": [
+    "src/networking.c"
+   ],
+   "line": 5163,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS155",
+   "query": "This function returns a sanity check if the command may have keys",
+   "identifier": "doesCommandHaveKeys",
+   "definedIn": [
+    "src/db.c"
+   ],
+   "line": 3405,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS156",
+   "query": "Get the last valid (non-tombstone) streamID of 's'",
+   "identifier": "streamLastValidID",
+   "definedIn": [
+    "src/t_stream.c"
+   ],
+   "line": 1863,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS157",
+   "query": "Grow directory to accommodate slice_id (handles both modes, dense and superdir mode)",
+   "identifier": "arDirGrow",
+   "definedIn": [
+    "src/sparsearray.c"
+   ],
+   "line": 659,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS158",
+   "query": "When lua uses jemalloc, pass in luaAlloc as a parameter of lua_newstate",
+   "identifier": "luaAlloc",
+   "definedIn": [
+    "src/script.c"
+   ],
+   "line": 69,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS159",
+   "query": "Wrapper for EVAL / EVALSHA that enables debugging, and makes sure that when EVAL returns, whatever happened, the session is ended",
+   "identifier": "evalGenericCommandWithDebugging",
+   "definedIn": [
+    "src/eval.c"
+   ],
+   "line": 984,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS160",
+   "query": "Generate new string concatenating integer i against string 'prefix'",
+   "identifier": "genstr",
+   "definedIn": [
+    "src/quicklist.c"
+   ],
+   "line": 2121,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS161",
+   "query": "Set the value of a config",
+   "identifier": "RM_ConfigSet",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 15143,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS162",
+   "query": "Update LRM when an object is modified",
+   "identifier": "updateLRM",
+   "definedIn": [
+    "src/db.c"
+   ],
+   "line": 61,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS163",
+   "query": "Run debug assertions based on server.dbg_assert_flags",
+   "identifier": "dbgRunAssertions",
+   "definedIn": [
+    "src/db.c"
+   ],
+   "line": 248,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS164",
+   "query": "Master lookup by name",
+   "identifier": "sentinelGetMasterByName",
+   "definedIn": [
+    "src/sentinel.c"
+   ],
+   "line": 1514,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS165",
+   "query": "This generic command implements both ZADD and ZINCRBY",
+   "identifier": "zaddGenericCommand",
+   "definedIn": [
+    "src/t_zset.c"
+   ],
+   "line": 1962,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS166",
+   "query": "Insert, delete or replace the specified string element 'elestr' of length 'size' or integer element 'eleint' at the specified position 'p', with 'p' being a listpack element pointer obtained with lpFirst(), lpLast(), lpNext(), lpPrev() or lpSeek()",
+   "identifier": "lpInsert",
+   "definedIn": [
+    "src/listpack.c"
+   ],
+   "line": 1032,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS167",
+   "query": "Build a Roaring bitmap from raw bitmap string bytes by constructing one container per 2^16-bit chunk",
+   "identifier": "bitroarFromRaw",
+   "definedIn": [
+    "src/bitroar.c"
+   ],
+   "line": 206,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS168",
+   "query": "Turn the cached master into the current master, using the file descriptor passed as argument as the socket for the new master",
+   "identifier": "replicationResurrectCachedMaster",
+   "definedIn": [
+    "src/replication.c"
+   ],
+   "line": 4767,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS169",
+   "query": "Assuming RedisModule_KeyType() returned REDISMODULE_KEYTYPE_MODULE on the key, returns the module type pointer of the value stored at key",
+   "identifier": "RM_ModuleTypeGetType",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 7752,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS170",
+   "query": "Implements RM_LoadString() and RM_LoadStringBuffer()",
+   "identifier": "moduleLoadString",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 7951,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS171",
+   "query": "Refresh the incremental loading progress info",
+   "identifier": "loadingIncrProgress",
+   "definedIn": [
+    "src/rdb.c"
+   ],
+   "line": 4626,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS172",
+   "query": "Like rdbLoadRio() but takes a filename instead of a rio stream",
+   "identifier": "rdbLoadWithEmptyFunc",
+   "definedIn": [
+    "src/rdb.c"
+   ],
+   "line": 5220,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS173",
+   "query": "COMMAND GETKEYSANDFLAGS cmd arg1 arg2",
+   "identifier": "commandGetKeysAndFlagsCommand",
+   "definedIn": [
+    "src/server.c"
+   ],
+   "line": 6031,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS174",
+   "query": "Use rdbLoadType() to load a TYPE in RDB format, but returns -1 if the type is not specifically a valid Object Type",
+   "identifier": "rdbLoadObjectType",
+   "definedIn": [
+    "src/rdb.c"
+   ],
+   "line": 766,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS175",
+   "query": "Set an array of Redis String Objects as a Lua array (table) stored into a global variable",
+   "identifier": "luaCreateArray",
+   "definedIn": [
+    "src/script_lua.c"
+   ],
+   "line": 1543,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS176",
+   "query": "Create an HLL object",
+   "identifier": "createHLLObject",
+   "definedIn": [
+    "src/hyperloglog.c"
+   ],
+   "line": 1576,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS177",
+   "query": "Check if there are clients blocked in WAIT or WAITAOF that can be unblocked since we received enough ACKs from slaves",
+   "identifier": "processClientsWaitingReplicas",
+   "definedIn": [
+    "src/replication.c"
+   ],
+   "line": 4998,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS178",
+   "query": "Add another eItem to bucket",
+   "identifier": "ebAddToBucket",
+   "definedIn": [
+    "src/ebuckets.c"
+   ],
+   "line": 838,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS179",
+   "query": "Insert a NACK at the tail of the PEL time-ordered list",
+   "identifier": "pelListInsertAtTail",
+   "definedIn": [
+    "src/t_stream.c"
+   ],
+   "line": 6203,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS180",
+   "query": "Create a new eviction pool",
+   "identifier": "evictionPoolAlloc",
+   "definedIn": [
+    "src/evict.c"
+   ],
+   "line": 117,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS181",
+   "query": "Rewrite a simple \"option-name n%\" configuration option",
+   "identifier": "rewriteConfigPercentOption",
+   "definedIn": [
+    "src/config.c"
+   ],
+   "line": 1423,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS182",
+   "query": "Implementation of the recall test with random vectors",
+   "identifier": "test_recall",
+   "definedIn": [
+    "modules/vector-sets/w2v.c"
+   ],
+   "line": 39,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS183",
+   "query": "Helper function to get operator arity from the operator table",
+   "identifier": "exprGetOpArity",
+   "definedIn": [
+    "modules/vector-sets/expr.c"
+   ],
+   "line": 506,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS184",
+   "query": "Check if a stream entry is still referenced by any consumer group",
+   "identifier": "streamEntryIsReferenced",
+   "definedIn": [
+    "src/t_stream.c"
+   ],
+   "line": 3608,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DREDIS185",
+   "query": "A group's sample under a per-group metric",
+   "identifier": "streamCGroupSample",
+   "definedIn": [
+    "src/t_stream.c"
+   ],
+   "line": 1994,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS186",
+   "query": "This function forces the delivery of a \"Hello\" message (see sentinelSendHello() top comment for further information) to all the Redis and Sentinel instances related to the specified 'master'",
+   "identifier": "sentinelForceHelloUpdateForMaster",
+   "definedIn": [
+    "src/sentinel.c"
+   ],
+   "line": 3090,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS187",
+   "query": "Initializes the 16KB lookup tables",
+   "identifier": "crc64_init",
+   "definedIn": [
+    "src/crc64.c"
+   ],
+   "line": 285,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS188",
+   "query": "Search the specified layer starting from the specified entry point to collect 'ef' nodes that are near to 'query'",
+   "identifier": "search_layer_with_filter",
+   "definedIn": [
+    "modules/vector-sets/hnsw.c"
+   ],
+   "line": 1051,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS189",
+   "query": "Create TMPL_LP from field-value pairs",
+   "identifier": "hashTemplateLpCreateFromPairs",
+   "definedIn": [
+    "src/t_hash.c"
+   ],
+   "line": 1101,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS190",
+   "query": "Public entry point for all load paths, so the load-time template registry (rdb_tmpls) is always released here regardless of success or failure",
+   "identifier": "rdbLoadRioWithLoadingCtx",
+   "definedIn": [
+    "src/rdb.c"
+   ],
+   "line": 5182,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS191",
+   "query": "This command implements DEL and UNLINK",
+   "identifier": "delGenericCommand",
+   "definedIn": [
+    "src/db.c"
+   ],
+   "line": 1443,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS192",
+   "query": "Create an array of dictionaries num_dicts_bits is the log2 of the amount of dictionaries needed (e.g. 0 for 1 dict, 3 for 8 dicts, etc.)",
+   "identifier": "kvstoreCreate",
+   "definedIn": [
+    "src/kvstore.c"
+   ],
+   "line": 197,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS193",
+   "query": "Remove all the elements from the list without destroying the list itself",
+   "identifier": "listEmpty",
+   "definedIn": [
+    "src/adlist.c"
+   ],
+   "line": 37,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS194",
+   "query": "Calculate required size and layout for an entry",
+   "identifier": "setEntryWriteInfo",
+   "definedIn": [
+    "src/entry.c"
+   ],
+   "line": 141,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS195",
+   "query": "Reply with a binary safe string, which should not be escaped or filtered taking in input a C buffer pointer, length and a 3 character type/extension",
+   "identifier": "RM_ReplyWithVerbatimStringType",
+   "definedIn": [
+    "src/module.c"
+   ],
+   "line": 3520,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS196",
+   "query": "The redisOp structure defines a Redis Operation, that is an instance of a command with an argument vector, database ID, propagation target (PROPAGATE_), and command pointer",
+   "identifier": "redisOp",
+   "definedIn": [
+    "src/server.h"
+   ],
+   "line": 1910,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS197",
+   "query": "A RESP NULL is sent to indicate that all keys are invalid",
+   "identifier": "trackingInvalidateKeysOnFlush",
+   "definedIn": [
+    "src/tracking.c"
+   ],
+   "line": 477,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS198",
+   "query": "Track loading progress in order to serve client's from time to time and if needed calculate rdb checksum",
+   "identifier": "rdbLoadProgressCallback",
+   "definedIn": [
+    "src/rdb.c"
+   ],
+   "line": 4677,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DREDIS199",
+   "query": "Create the default user, this has special permissions",
+   "identifier": "ACLCreateDefaultUser",
+   "definedIn": [
+    "src/acl.c"
+   ],
+   "line": 1444,
+   "nameWordsInQuery": false
+  }
+ ]
+}

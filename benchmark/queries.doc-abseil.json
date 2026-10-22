@@ -1,0 +1,2010 @@
+{
+ "repo": "doc-abseil",
+ "source": "id-abseil",
+ "commit": "e92c357f19dfd9c2390d388aaa98e72adb2abac0",
+ "lang": "cpp",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "200 docstring-style queries (first sentence of the doc comment of one definition), drawn by gen_queries_doc.py (seed 0xa11ce); corpus is the pinned repo with all definition doc comments removed (scripts/extract_docqueries.ts --strip). Documented definitions available: 951 (of 18117 definitions).",
+ "queries": [
+  {
+   "id": "DABSEIL0",
+   "query": "Helper function for the future StrCat default floating-point format, %.6g This is fast",
+   "identifier": "SixDigits",
+   "definedIn": [
+    "absl/strings/str_cat.h"
+   ],
+   "line": 651,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL1",
+   "query": "Traverse the elements [ pw->next, h] of the circular list whose last element is head",
+   "identifier": "DequeueAllWakeable",
+   "definedIn": [
+    "absl/synchronization/mutex.cc"
+   ],
+   "line": 1121,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL2",
+   "query": "The read result as returned by the Read() function. tree contains the resulting tree which is identical to the result of calling CordRepBtree::SubTree(...) on the tree being navigated. n contains the number of bytes used from the last navigated to",
+   "identifier": "ReadResult",
+   "definedIn": [
+    "absl/strings/internal/cord_rep_btree_navigator.h"
+   ],
+   "line": 65,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL3",
+   "query": "Tests whether the sequence of chunks beginning at haystack starts with the sequence of chunks beginning at needle_begin and extending to needle_end",
+   "identifier": "IsSubcordInCordAt",
+   "definedIn": [
+    "absl/strings/cord.cc"
+   ],
+   "line": 1212,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL4",
+   "query": "Guarantees src is empty at end",
+   "identifier": "MoveFrom",
+   "definedIn": [
+    "absl/synchronization/internal/graphcycles.cc"
+   ],
+   "line": 122,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL5",
+   "query": "Fundamental base case for hash recursion: mixes the given range of bytes into the hash state",
+   "identifier": "combine_contiguous",
+   "definedIn": [
+    "absl/hash/internal/hash.h"
+   ],
+   "line": 1446,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL6",
+   "query": "Specialization that computes hash and generates new seed",
+   "identifier": "ReportSingleElementTableGrowthToInfozAndForceSample",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.cc"
+   ],
+   "line": 1111,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL7",
+   "query": "CrcCordState is a copy-on-write class that holds the chunked CRC32C data that allows CrcCord to perform efficient substring operations",
+   "identifier": "CrcCordState",
+   "definedIn": [
+    "absl/crc/internal/crc_cord_state.h"
+   ],
+   "line": 43,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL8",
+   "query": "Human-readable description of the memory layout",
+   "identifier": "DebugString",
+   "definedIn": [
+    "absl/container/internal/layout.h"
+   ],
+   "line": 655,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL9",
+   "query": "Base class for CRC32AcceleratedX86ARMCombinedMultipleStreams containing the methods and data that don't need the template arguments",
+   "identifier": "CRC32AcceleratedX86ARMCombinedMultipleStreamsBase",
+   "definedIn": [
+    "absl/crc/internal/crc_x86_arm_combined.cc"
+   ],
+   "line": 242,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL10",
+   "query": "Encode item into the best available location",
+   "identifier": "EncodeItem",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.cc"
+   ],
+   "line": 1649,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL11",
+   "query": "Convert a cctz::weekday to a POSIX TZ weekday number (0==Sun, ..., 6=Sat)",
+   "identifier": "ToPosixWeekday",
+   "definedIn": [
+    "absl/time/internal/cctz/src/time_zone_info.cc"
+   ],
+   "line": 100,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL12",
+   "query": "Prints the hash of argv[1]",
+   "identifier": "main",
+   "definedIn": [
+    "absl/hash/internal/print_hash_of.cc"
+   ],
+   "line": 23,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL13",
+   "query": "---------------------------------------------------------------------- CEscape() CHexEscape() Utf8SafeCEscape() Utf8SafeCHexEscape() Escapes 'src' using C-style escape sequences",
+   "identifier": "CEscapeInternal",
+   "definedIn": [
+    "absl/strings/escaping.cc"
+   ],
+   "line": 326,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL14",
+   "query": "Acquire seqlock (seq) and return the value to be written to unlock",
+   "identifier": "SeqAcquire",
+   "definedIn": [
+    "absl/time/clock.cc"
+   ],
+   "line": 130,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL15",
+   "query": "loc doesn't default to absl::SourceLocation::current() here since the callsite is already the default location for LOG statements",
+   "identifier": "AtLocation",
+   "definedIn": [
+    "absl/log/internal/log_message.h"
+   ],
+   "line": 93,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL16",
+   "query": "For worker threads that may not be doing any interesting user work, this tracks the current state of the worker",
+   "identifier": "WaitState",
+   "definedIn": [
+    "absl/base/internal/thread_identity.h"
+   ],
+   "line": 184,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL17",
+   "query": "SpinLockWait() waits until it can perform one of several transitions from \"from\" to \"to\"",
+   "identifier": "SpinLockWaitTransition",
+   "definedIn": [
+    "absl/base/internal/spinlock_wait.h"
+   ],
+   "line": 34,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL18",
+   "query": "Loads 128-bit value. : https://msdn.microsoft.com/zh-cn/library/f4k12ae8(v=vs.90).aspx",
+   "identifier": "_mm_loadu_si128",
+   "definedIn": [
+    "absl/crc/internal/non_temporal_arm_intrinsics.h"
+   ],
+   "line": 47,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL19",
+   "query": "Measures and returns the TSC frequency by taking a pair of measurements approximately sleep_nanoseconds apart",
+   "identifier": "MeasureTscFrequencyWithSleep",
+   "definedIn": [
+    "absl/base/internal/sysinfo.cc"
+   ],
+   "line": 289,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL20",
+   "query": "Allocate aligned memory for a flag value",
+   "identifier": "Alloc",
+   "definedIn": [
+    "absl/flags/internal/flag.h"
+   ],
+   "line": 97,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL21",
+   "query": "Field numbers for perftools.profiles.Profile. https://github.com/google/pprof/blob/master/proto/profile.proto",
+   "identifier": "ProfileProto",
+   "definedIn": [
+    "absl/profiling/internal/profile_builder.h"
+   ],
+   "line": 39,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL22",
+   "query": "Dispatches to the appropriate GrowToNextCapacity function based on the capacity of the table",
+   "identifier": "GrowToNextCapacityDispatch",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.cc"
+   ],
+   "line": 1830,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL23",
+   "query": "Getters/setter for the child at position i in the node",
+   "identifier": "child",
+   "definedIn": [
+    "absl/container/internal/btree.h"
+   ],
+   "line": 757,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL24",
+   "query": "As of LLVM commit go/compilers/fc1afa6edce98a973ce2ce969c589da4f3aee975, CFI functions are inlinable in the ThinLTO backend",
+   "identifier": "DefaultStackUnwinder",
+   "definedIn": [
+    "absl/debugging/stacktrace.cc"
+   ],
+   "line": 169,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL25",
+   "query": "Type erased function to apply Fn to data inside of the slot_ptr->first",
+   "identifier": "TypeErasedDerefAndApplyToSlotFirstFn",
+   "definedIn": [
+    "absl/container/internal/container_memory.h"
+   ],
+   "line": 610,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL26",
+   "query": "Consumes a base-62-number denoting a backref target, pushes the current input position on the data stack, and sets the input position to the beginning of the backref target",
+   "identifier": "BeginBackref",
+   "definedIn": [
+    "absl/debugging/internal/demangle_rust.cc"
+   ],
+   "line": 872,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL27",
+   "query": "Special iterator that can be returned by insert/emplace functions",
+   "identifier": "non_iterable_iterator_at_slot",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.h"
+   ],
+   "line": 4074,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL28",
+   "query": "Divide this in place by a constant divisor",
+   "identifier": "DivMod",
+   "definedIn": [
+    "absl/strings/internal/charconv_bigint.h"
+   ],
+   "line": 332,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL29",
+   "query": "Decodes information about probed elements from all available sources",
+   "identifier": "DecodeAndInsertToTable",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.cc"
+   ],
+   "line": 1630,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL30",
+   "query": "A typed accessor for the object in TypeErasedState storage",
+   "identifier": "ObjectInLocalStorage",
+   "definedIn": [
+    "absl/functional/internal/any_invocable.h"
+   ],
+   "line": 187,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL31",
+   "query": "Swaps common fields making sure to avoid memcpy'ing a full SOO slot if we aren't allowed to do so",
+   "identifier": "swap_common",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.h"
+   ],
+   "line": 3832,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL32",
+   "query": "A function that just returns its argument, dereferenced",
+   "identifier": "Dereference",
+   "definedIn": [
+    "absl/synchronization/mutex.cc"
+   ],
+   "line": 2852,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL33",
+   "query": "Calculates the p-value (probability) of a given chi-square value and degrees of freedom",
+   "identifier": "ChiSquarePValue",
+   "definedIn": [
+    "absl/random/internal/chi_square.cc"
+   ],
+   "line": 155,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL34",
+   "query": "The \"constructor\" for a CRC32C with a standard polynomial",
+   "identifier": "Crc32c",
+   "definedIn": [
+    "absl/crc/internal/crc.cc"
+   ],
+   "line": 437,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL35",
+   "query": "An integer approximation of log2(size/base) Requires size >= base",
+   "identifier": "IntLog2",
+   "definedIn": [
+    "absl/base/internal/low_level_alloc.cc"
+   ],
+   "line": 119,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL36",
+   "query": "Insertion at end, removal from the beginning",
+   "identifier": "BM_Fifo",
+   "definedIn": [
+    "absl/container/btree_benchmark.cc"
+   ],
+   "line": 392,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL37",
+   "query": "Scope blocker: we must always use ADL in our predicates below",
+   "identifier": "Anonymous",
+   "definedIn": [
+    "absl/strings/internal/generic_printer_internal.h"
+   ],
+   "line": 50,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL38",
+   "query": "This benchmark provides the upper bound on performance for BM_AllocSize",
+   "identifier": "BM_AllocSizeHeadroom",
+   "definedIn": [
+    "absl/container/internal/layout_benchmark.cc"
+   ],
+   "line": 192,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL39",
+   "query": "One substitution occurs \"before\" another (takes priority) if either it has the lowest offset, or it has the same offset but a larger size",
+   "identifier": "OccursBefore",
+   "definedIn": [
+    "absl/strings/str_replace.h"
+   ],
+   "line": 152,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL40",
+   "query": "Compares two big integer instances",
+   "identifier": "Compare",
+   "definedIn": [
+    "absl/strings/internal/charconv_bigint.h"
+   ],
+   "line": 362,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL41",
+   "query": "Copies the \"full\" to \"subset\" in the same order, but with \"num_skip\" randomly selected occurrences of \"input_to_skip\" removed",
+   "identifier": "FillSubset",
+   "definedIn": [
+    "absl/random/internal/nanobenchmark.cc"
+   ],
+   "line": 608,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL42",
+   "query": "Deduces usage flags from the input argument in a form --name=value or --name. argument is already split into name and value before we call this function",
+   "identifier": "DeduceUsageFlags",
+   "definedIn": [
+    "absl/flags/internal/usage.cc"
+   ],
+   "line": 485,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL43",
+   "query": "An implementation of std::invoke_r of C++23",
+   "identifier": "InvokeR",
+   "definedIn": [
+    "absl/functional/internal/any_invocable.h"
+   ],
+   "line": 116,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL44",
+   "query": "A mechanism for opting out of checked_compare for use only in btree_test.cc",
+   "identifier": "BtreeTestOnlyCheckedCompareOptOutBase",
+   "definedIn": [
+    "absl/container/internal/btree.h"
+   ],
+   "line": 189,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL45",
+   "query": "Approximation to inverse of the Error Function in double precision",
+   "identifier": "erfinv",
+   "definedIn": [
+    "absl/random/internal/distribution_test_util.cc"
+   ],
+   "line": 115,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL46",
+   "query": "Options that control SetCommandLineOptionWithMode",
+   "identifier": "FlagSettingMode",
+   "definedIn": [
+    "absl/flags/internal/commandlineflag.h"
+   ],
+   "line": 34,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL47",
+   "query": "Arbitrary value with high bits set",
+   "identifier": "HideMask",
+   "definedIn": [
+    "absl/base/internal/hide_ptr.h"
+   ],
+   "line": 28,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL48",
+   "query": "Handles protobuf-encoding a type contained inside StructuredProtoField::Varint",
+   "identifier": "VarintEncoderVisitor",
+   "definedIn": [
+    "absl/log/internal/structured_proto.cc"
+   ],
+   "line": 33,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL49",
+   "query": "Print the unsigned integer as hex using lowercase",
+   "identifier": "PrintAsHexLower",
+   "definedIn": [
+    "absl/strings/internal/str_format/arg.cc"
+   ],
+   "line": 137,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL50",
+   "query": "Accounting mode for analyzing memory usage",
+   "identifier": "Mode",
+   "definedIn": [
+    "absl/strings/cord_analysis.cc"
+   ],
+   "line": 35,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL51",
+   "query": "The following benchmark is meant to track the efficiency of the vector size as a function of stored type via the benchmark label",
+   "identifier": "BM_Sizeof",
+   "definedIn": [
+    "absl/container/inlined_vector_benchmark.cc"
+   ],
+   "line": 245,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL52",
+   "query": "Any input is valid",
+   "identifier": "ValidateInputValue",
+   "definedIn": [
+    "absl/flags/reflection.cc"
+   ],
+   "line": 268,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL53",
+   "query": "Some implementations of do not support __int128 when it is available, so we make our own uniform_int_distribution-like type",
+   "identifier": "UniformIntDistribution128",
+   "definedIn": [
+    "absl/numeric/int128_benchmark.cc"
+   ],
+   "line": 148,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL54",
+   "query": "Atomically check that v == val, and if it is, then sleep until the until woken by Wake()",
+   "identifier": "Wait",
+   "definedIn": [
+    "absl/synchronization/internal/futex.h"
+   ],
+   "line": 100,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL55",
+   "query": "This incomplete type is used for testing hash of pointers of different alignments",
+   "identifier": "Ptr",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set_probe_benchmark.cc"
+   ],
+   "line": 226,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL56",
+   "query": "H1 is just the low bits of the hash",
+   "identifier": "H1",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.h"
+   ],
+   "line": 1062,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL57",
+   "query": "Computes the length of the range of values producible by the URBG, or returns zero if that would encompass the entire range of representable values in URBG::result_type",
+   "identifier": "RangeSize",
+   "definedIn": [
+    "absl/random/internal/fast_uniform_bits.h"
+   ],
+   "line": 40,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL58",
+   "query": "Increments the reference count of rep by one if condition is true, and adds it to the list of reps to be unreffed at destruction",
+   "identifier": "RefIf",
+   "definedIn": [
+    "absl/strings/internal/cord_rep_test_util.h"
+   ],
+   "line": 192,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL59",
+   "query": "Initializes control bytes for growing from capacity 1 to 3. orig_h2 is placed in the position SooSlotIndex(). new_h2 is placed in the position new_offset",
+   "identifier": "InitializeThreeElementsControlBytes",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.cc"
+   ],
+   "line": 743,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL60",
+   "query": "Getter for the offset after the last value in the values array",
+   "identifier": "finish",
+   "definedIn": [
+    "absl/container/internal/btree.h"
+   ],
+   "line": 697,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL61",
+   "query": "LittleEndianByte() creates a little endian representation of 'value', i.e.: a little endian value where the first byte in the host's representation holds 'value, with all other bytes being 0",
+   "identifier": "LittleEndianByte",
+   "definedIn": [
+    "absl/strings/internal/cord_internal.h"
+   ],
+   "line": 465,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL62",
+   "query": "Getters for the number of values stored in this node",
+   "identifier": "count",
+   "definedIn": [
+    "absl/container/internal/btree.h"
+   ],
+   "line": 700,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL63",
+   "query": "Create a new tree out of the specified array",
+   "identifier": "NewTree",
+   "definedIn": [
+    "absl/strings/cord.cc"
+   ],
+   "line": 114,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL64",
+   "query": "Must be defined out-of-line to avoid MSVC error C2482 on some platforms, which is caused by non-constexpr initialization",
+   "identifier": "NextHashTableSeed",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.cc"
+   ],
+   "line": 137,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL65",
+   "query": "Disable the append mode not to print function parameters, etc",
+   "identifier": "DisableAppend",
+   "definedIn": [
+    "absl/debugging/internal/demangle.cc"
+   ],
+   "line": 574,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL66",
+   "query": "Pointers to all arrays for which pointers are known",
+   "identifier": "Pointers",
+   "definedIn": [
+    "absl/container/internal/layout.h"
+   ],
+   "line": 538,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL67",
+   "query": "(Nearly) empty Func for measuring timer overhead/resolution",
+   "identifier": "EmptyFunc",
+   "definedIn": [
+    "absl/random/internal/nanobenchmark.cc"
+   ],
+   "line": 664,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL68",
+   "query": "Asserts that hash and equal functors provided by the user are consistent, meaning that eq(k1, k2) implies hash(k1)==hash(k2)",
+   "identifier": "AssertHashEqConsistent",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.h"
+   ],
+   "line": 4021,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL69",
+   "query": "Applies transform (at the correct type) to the argument and returns the result",
+   "identifier": "ApplyTransform",
+   "definedIn": [
+    "absl/types/internal/any_span.h"
+   ],
+   "line": 128,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL70",
+   "query": "operator<< above is generally recommended",
+   "identifier": "str",
+   "definedIn": [
+    "absl/log/internal/container.h"
+   ],
+   "line": 221,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL71",
+   "query": "If the comparison will happen as pointers, decay char arguments to void when printing them",
+   "identifier": "IsCharStarOrVoidStar",
+   "definedIn": [
+    "absl/log/internal/check_op.h"
+   ],
+   "line": 405,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL72",
+   "query": "Parse , optionally followed by either a function-clone suffix or version suffix",
+   "identifier": "ParseTopLevelMangledName",
+   "definedIn": [
+    "absl/debugging/internal/demangle.cc"
+   ],
+   "line": 2922,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL73",
+   "query": "From Go's doc at https://golang.org/pkg/time/#ParseDuration [ParseDuration] parses a duration string",
+   "identifier": "ParseDuration",
+   "definedIn": [
+    "absl/time/duration.cc"
+   ],
+   "line": 872,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL74",
+   "query": "A stdio-like interface for providing zoneinfo data for a particular zone",
+   "identifier": "ZoneInfoSource",
+   "definedIn": [
+    "absl/time/internal/cctz/include/cctz/zone_info_source.h"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL75",
+   "query": "Iterates over full slots in the old table, finds new positions for them and transfers the slots to the new backing array (new_ctrl, new_slots). common must already have the new capacity and the new seed. new_ctrl and new_slots are passed",
+   "identifier": "FindNewPositionsAndTransferSlots",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.cc"
+   ],
+   "line": 1059,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL76",
+   "query": "An absolute_lookup represents the civil time (cctz::civil_second) within this time_zone at the given absolute time (time_point)",
+   "identifier": "absolute_lookup",
+   "definedIn": [
+    "absl/time/internal/cctz/include/cctz/time_zone.h"
+   ],
+   "line": 87,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL77",
+   "query": "Access to the reflection",
+   "identifier": "Reflect",
+   "definedIn": [
+    "absl/flags/internal/flag.h"
+   ],
+   "line": 841,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL78",
+   "query": "NOLINT on 'long' because this routine mimics kernel api",
+   "identifier": "GetCPUViaSyscall",
+   "definedIn": [
+    "absl/debugging/internal/vdso_support.cc"
+   ],
+   "line": 171,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL79",
+   "query": "All arrays with known sizes",
+   "identifier": "Slices",
+   "definedIn": [
+    "absl/container/internal/layout.h"
+   ],
+   "line": 594,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL80",
+   "query": "Probes an array of control bits using a probe sequence derived from hash, and returns the offset corresponding to the first deleted or empty slot",
+   "identifier": "find_first_non_full",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.cc"
+   ],
+   "line": 198,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL81",
+   "query": "Checked addition to avoid overflow on 32-bit",
+   "identifier": "CheckedAdd",
+   "definedIn": [
+    "absl/strings/substitute.cc"
+   ],
+   "line": 44,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL82",
+   "query": "To decode fields within a submessage field, call DecodeNextField(field.BytesValue())",
+   "identifier": "bytes_value",
+   "definedIn": [
+    "absl/log/internal/proto.h"
+   ],
+   "line": 278,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL83",
+   "query": "The ctype functions have undefined behavior for negative char values, so these helpers ensure the argument is always in the unsigned-char domain",
+   "identifier": "isdigit",
+   "definedIn": [
+    "absl/time/internal/cctz/src/time_zone_format.cc"
+   ],
+   "line": 64,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL84",
+   "query": "Formats types to strings using the << operator",
+   "identifier": "StreamFormatterImpl",
+   "definedIn": [
+    "absl/strings/internal/str_join_internal.h"
+   ],
+   "line": 87,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL85",
+   "query": "Appends the loc to the current location chain inside the status, iff the status is non-ok and contains a non-empty message",
+   "identifier": "AddSourceLocation",
+   "definedIn": [
+    "absl/status/status.h"
+   ],
+   "line": 681,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL86",
+   "query": "A 32-bit to 32-bit integer hash copied from Murmur3",
+   "identifier": "fmix",
+   "definedIn": [
+    "absl/hash/internal/city.cc"
+   ],
+   "line": 65,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL87",
+   "query": "Modifies the GrowthInfo to mark full element as deleted",
+   "identifier": "OverwriteFullAsDeleted",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.h"
+   ],
+   "line": 1526,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL88",
+   "query": "Slow %f formatter for when the shifted value does not fit in a uint128, and exp < 0",
+   "identifier": "FormatFNegativeExpSlow",
+   "definedIn": [
+    "absl/strings/internal/str_format/float_conversion.cc"
+   ],
+   "line": 686,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL89",
+   "query": "Calling the invariant as is causes problems under ThreadSanitizer",
+   "identifier": "local",
+   "definedIn": [
+    "absl/synchronization/mutex.cc"
+   ],
+   "line": 470,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL90",
+   "query": "Replaces contents with those from initializer list il",
+   "identifier": "initializer_list",
+   "definedIn": [
+    "absl/container/chunked_queue.h"
+   ],
+   "line": 284,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL91",
+   "query": "A helper for ParseDuration() that parses a leading number from the given string and stores the result in int_part/frac_part/frac_scale",
+   "identifier": "ConsumeDurationNumber",
+   "definedIn": [
+    "absl/time/duration.cc"
+   ],
+   "line": 779,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL92",
+   "query": "The purpose of the next two benchmarks is to verify that absl::InlinedVector is efficient when moving is more efficient than copying",
+   "identifier": "StringRepresentedInline",
+   "definedIn": [
+    "absl/container/inlined_vector_benchmark.cc"
+   ],
+   "line": 76,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL93",
+   "query": "Struct representing the calculated conversion result of a positive (nonzero) floating point number",
+   "identifier": "CalculatedFloat",
+   "definedIn": [
+    "absl/strings/charconv.cc"
+   ],
+   "line": 310,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL94",
+   "query": "Represents the strategy for spin and yield",
+   "identifier": "DelayMode",
+   "definedIn": [
+    "absl/synchronization/mutex.cc"
+   ],
+   "line": 136,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL95",
+   "query": "Helpers for checking the state of a control byte",
+   "identifier": "IsEmpty",
+   "definedIn": [
+    "absl/container/internal/hashtable_control_bytes.h"
+   ],
+   "line": 221,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL96",
+   "query": "This function is used for handling syntax",
+   "identifier": "ZeroOrMore",
+   "definedIn": [
+    "absl/debugging/internal/demangle.cc"
+   ],
+   "line": 453,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL97",
+   "query": "Calculates 10 (v) + carry and stores the result in v and returns the carry",
+   "identifier": "MultiplyBy10WithCarry",
+   "definedIn": [
+    "absl/strings/internal/str_format/float_conversion.cc"
+   ],
+   "line": 102,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL98",
+   "query": "The following code behaves like AtomicStatsCounter::LossyAdd() for speed since it is fine to lose occasional updates",
+   "identifier": "LossyIncrement",
+   "definedIn": [
+    "absl/log/internal/conditions.cc"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL99",
+   "query": "Used to describe how a thread may be scheduled",
+   "identifier": "SchedulingMode",
+   "definedIn": [
+    "absl/base/internal/scheduling_mode.h"
+   ],
+   "line": 49,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL100",
+   "query": "MultiplyU128ToU256 multiplies two 128-bit values to a 256-bit value",
+   "identifier": "MultiplyU128ToU256",
+   "definedIn": [
+    "absl/random/internal/wide_multiply.h"
+   ],
+   "line": 59,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL101",
+   "query": "TryMoveXBelowY() and TryMoveYAboveX() are called by InsertEdge(x, y) when rank(x) > rank(y)",
+   "identifier": "TryMoveXBelowY",
+   "definedIn": [
+    "absl/synchronization/internal/graphcycles.cc"
+   ],
+   "line": 709,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL102",
+   "query": "Used by CondVar implementation to effectively wake thread w from the condition variable",
+   "identifier": "Fer",
+   "definedIn": [
+    "absl/synchronization/mutex.cc"
+   ],
+   "line": 2514,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL103",
+   "query": "Consumes rep and returns a CordRep with any outer CordRepCrc wrapper removed",
+   "identifier": "RemoveCrcNode",
+   "definedIn": [
+    "absl/strings/internal/cord_rep_crc.h"
+   ],
+   "line": 54,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL104",
+   "query": "Creates an external node for testing",
+   "identifier": "MakeExternal",
+   "definedIn": [
+    "absl/strings/internal/cord_rep_test_util.h"
+   ],
+   "line": 57,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL105",
+   "query": "Action defines the action for unwinding changes done at the btree's leaf level that need to be propagated up to the parent node(s)",
+   "identifier": "Action",
+   "definedIn": [
+    "absl/strings/internal/cord_rep_btree.h"
+   ],
+   "line": 142,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL106",
+   "query": "Encode functions write the ASCII output of input n to out_str",
+   "identifier": "EncodeHundred",
+   "definedIn": [
+    "absl/strings/numbers.cc"
+   ],
+   "line": 181,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL107",
+   "query": "Helper functions for asan and msan",
+   "identifier": "SanitizerPoisonMemoryRegion",
+   "definedIn": [
+    "absl/container/internal/container_memory.h"
+   ],
+   "line": 285,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL108",
+   "query": "Find/make a transition type with these attributes",
+   "identifier": "GetTransitionType",
+   "definedIn": [
+    "absl/time/internal/cctz/src/time_zone_info.cc"
+   ],
+   "line": 276,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL109",
+   "query": "Copies src to dst interpreting as flag value type pointers",
+   "identifier": "Copy",
+   "definedIn": [
+    "absl/flags/internal/flag.h"
+   ],
+   "line": 105,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL110",
+   "query": "Getter for the offset of the first value in the values array",
+   "identifier": "start",
+   "definedIn": [
+    "absl/container/internal/btree.h"
+   ],
+   "line": 690,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL111",
+   "query": "The decomposed parts of a parsed float or double",
+   "identifier": "ParsedFloat",
+   "definedIn": [
+    "absl/strings/internal/charconv_parse.h"
+   ],
+   "line": 31,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL112",
+   "query": "Derive size from set_, as list::size might be O(N)",
+   "identifier": "size",
+   "definedIn": [
+    "absl/container/linked_hash_set.h"
+   ],
+   "line": 299,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL113",
+   "query": "RoundUp (p) returns the lowest address >= p aligned to an N-byte boundary",
+   "identifier": "RoundUp",
+   "definedIn": [
+    "absl/crc/internal/crc_internal.h"
+   ],
+   "line": 145,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL114",
+   "query": "A constructor name-tag used with Impl to request the conversion-constructor",
+   "identifier": "ConversionConstruct",
+   "definedIn": [
+    "absl/functional/internal/any_invocable.h"
+   ],
+   "line": 578,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL115",
+   "query": "Consume conversion spec prefix (not including '%') of [p, end) if valid",
+   "identifier": "ConsumeUnboundConversion",
+   "definedIn": [
+    "absl/strings/internal/str_format/constexpr_parser.h"
+   ],
+   "line": 346,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL116",
+   "query": "Determines whether the optional_ref contains a value",
+   "identifier": "has_value",
+   "definedIn": [
+    "absl/types/optional_ref.h"
+   ],
+   "line": 132,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL117",
+   "query": "Creates capacity from the value that was returned by ToRawData()",
+   "identifier": "FromRawData",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.h"
+   ],
+   "line": 592,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL118",
+   "query": "Assigns an AnyInvocable from an existing AnyInvocable instance",
+   "identifier": "F",
+   "definedIn": [
+    "absl/functional/any_invocable.h"
+   ],
+   "line": 250,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL119",
+   "query": "Support absl::Format(&sink, format, args...)",
+   "identifier": "AbslFormatFlush",
+   "definedIn": [
+    "absl/strings/internal/stringify_sink.h"
+   ],
+   "line": 40,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL120",
+   "query": "Encodes v to buffer as 16 digits padded with leading zeros",
+   "identifier": "EncodePadded16",
+   "definedIn": [
+    "absl/strings/numbers.cc"
+   ],
+   "line": 250,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL121",
+   "query": "NumCPUs() may be called before main() and before malloc is properly initialized, therefore this must not allocate memory",
+   "identifier": "NumCPUs",
+   "definedIn": [
+    "absl/base/internal/sysinfo.cc"
+   ],
+   "line": 371,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL122",
+   "query": "Convert canonical code to a value known to this binary",
+   "identifier": "MapToLocalCode",
+   "definedIn": [
+    "absl/status/internal/status_internal.cc"
+   ],
+   "line": 258,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL123",
+   "query": "Type erased version of raw_hash_set::reserve for tables that have an allocated backing array",
+   "identifier": "ReserveAllocatedTable",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.cc"
+   ],
+   "line": 2264,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL124",
+   "query": "AlphaNumBuffer allows a way to pass a string to StrCat without having to do memory allocation",
+   "identifier": "AlphaNumBuffer",
+   "definedIn": [
+    "absl/strings/str_cat.h"
+   ],
+   "line": 133,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL125",
+   "query": "Model a cache in steady state",
+   "identifier": "BM_CacheInSteadyState",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set_benchmark.cc"
+   ],
+   "line": 260,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL126",
+   "query": "Implementation of SimpleAtoi, generalized to support arbitrary base (used with base different from 10 elsewhere in Abseil implementation)",
+   "identifier": "safe_strtoi_base",
+   "definedIn": [
+    "absl/strings/numbers.h"
+   ],
+   "line": 245,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL127",
+   "query": "Effects: Puts the object into its empty state",
+   "identifier": "Clear",
+   "definedIn": [
+    "absl/functional/internal/any_invocable.h"
+   ],
+   "line": 502,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL128",
+   "query": "Whether this table is in SOO mode or non-SOO mode",
+   "identifier": "is_soo",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.h"
+   ],
+   "line": 2584,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL129",
+   "query": "Verify that default values of typed flags must be convertible to string and back",
+   "identifier": "CheckDefaultValuesParsingRoundtrip",
+   "definedIn": [
+    "absl/flags/parse.cc"
+   ],
+   "line": 334,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL130",
+   "query": "Grows a full SOO table to the next capacity and forces it to be sampled",
+   "identifier": "GrowFullSooTableToNextCapacityForceSampling",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.cc"
+   ],
+   "line": 2281,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL131",
+   "query": "Increments the reference count of rep by one, and adds it to the list of reps to be unreffed at destruction",
+   "identifier": "Ref",
+   "definedIn": [
+    "absl/strings/internal/cord_rep_test_util.h"
+   ],
+   "line": 184,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL132",
+   "query": "Converts the provided rounded size to the corresponding tag",
+   "identifier": "AllocatedSizeToTagUnchecked",
+   "definedIn": [
+    "absl/strings/internal/cord_rep_flat.h"
+   ],
+   "line": 59,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL133",
+   "query": "Polynomial long multiplication mod the polynomial of degree 32",
+   "identifier": "PolyMultiply",
+   "definedIn": [
+    "absl/crc/internal/crc.cc"
+   ],
+   "line": 88,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL134",
+   "query": "Check the previous digit and round up or down to follow the round-to-even policy",
+   "identifier": "RoundToEven",
+   "definedIn": [
+    "absl/strings/internal/str_format/float_conversion.cc"
+   ],
+   "line": 362,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL135",
+   "query": "Internal parameters that determine precision/resolution/measuring time",
+   "identifier": "Params",
+   "definedIn": [
+    "absl/random/internal/nanobenchmark.h"
+   ],
+   "line": 71,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL136",
+   "query": "The format to report the help messages in",
+   "identifier": "HelpFormat",
+   "definedIn": [
+    "absl/flags/internal/usage.h"
+   ],
+   "line": 35,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL137",
+   "query": "Given a CalculatedFloat result of a from_chars conversion, generate the correct output values",
+   "identifier": "EncodeResult",
+   "definedIn": [
+    "absl/strings/charconv.cc"
+   ],
+   "line": 404,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL138",
+   "query": "Answers whether we have a vdso at all",
+   "identifier": "IsPresent",
+   "definedIn": [
+    "absl/debugging/internal/vdso_support.h"
+   ],
+   "line": 80,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL139",
+   "query": "Common function for copying the tails of multiple large regions",
+   "identifier": "LargeTailCopy",
+   "definedIn": [
+    "absl/crc/internal/crc_memcpy_x86_arm_combined.cc"
+   ],
+   "line": 88,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL140",
+   "query": "Transfers item to the first probe group if possible, otherwise encodes it into the best available location",
+   "identifier": "EncodeProbedElement",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.cc"
+   ],
+   "line": 1594,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL141",
+   "query": "Given a 128-bit number expressed as a pair of uint64_t, high half first, return that number multiplied by the given 32-bit value",
+   "identifier": "Mul32",
+   "definedIn": [
+    "absl/strings/numbers.cc"
+   ],
+   "line": 837,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL142",
+   "query": "Use the POSIX-TZ-environment-variable-style string to handle times in years after the last transition stored in the zoneinfo data",
+   "identifier": "ExtendTransitions",
+   "definedIn": [
+    "absl/time/internal/cctz/src/time_zone_info.cc"
+   ],
+   "line": 323,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL143",
+   "query": "Stores the data in a to the address p without polluting the caches",
+   "identifier": "_mm_stream_si128",
+   "definedIn": [
+    "absl/crc/internal/non_temporal_arm_intrinsics.h"
+   ],
+   "line": 56,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL144",
+   "query": "Map between a Time and a Duration since the Unix epoch",
+   "identifier": "FromUnixDuration",
+   "definedIn": [
+    "absl/time/time.h"
+   ],
+   "line": 1657,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL145",
+   "query": "The fullness of the btree",
+   "identifier": "fullness",
+   "definedIn": [
+    "absl/container/internal/btree.h"
+   ],
+   "line": 1662,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL146",
+   "query": "Finds guaranteed to exists empty slot from the given position",
+   "identifier": "FindEmptySlot",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.cc"
+   ],
+   "line": 475,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL147",
+   "query": "A per-thread destructor for reclaiming associated ThreadIdentity objects",
+   "identifier": "ReclaimThreadIdentity",
+   "definedIn": [
+    "absl/synchronization/internal/create_thread_identity.cc"
+   ],
+   "line": 44,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL148",
+   "query": "Wakes at most count waiters that have entered the sleep state on v",
+   "identifier": "Wake",
+   "definedIn": [
+    "absl/synchronization/internal/futex.h"
+   ],
+   "line": 138,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL149",
+   "query": "We use these sentinel capacity values in debug mode to indicate different classes of bugs",
+   "identifier": "InvalidCapacity",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.h"
+   ],
+   "line": 628,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL150",
+   "query": "BufferSizeFor returns a number of bytes guaranteed to be sufficient to store encoded fields as (tag, WireType), regardless of data values",
+   "identifier": "BufferSizeFor",
+   "definedIn": [
+    "absl/log/internal/proto.h"
+   ],
+   "line": 215,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL151",
+   "query": "Sets the global period for this sampler",
+   "identifier": "SetGlobalPeriod",
+   "definedIn": [
+    "absl/profiling/internal/periodic_sampler.h"
+   ],
+   "line": 197,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL152",
+   "query": "Deletes a CordRepFlat instance created previously through a call to New()",
+   "identifier": "Delete",
+   "definedIn": [
+    "absl/strings/internal/cord_rep_flat.h"
+   ],
+   "line": 148,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL153",
+   "query": "ToCivilSecond() ToCivilMinute() ToCivilHour() ToCivilDay() ToCivilMonth() ToCivilYear()",
+   "identifier": "ToCivilSecond",
+   "definedIn": [
+    "absl/time/time.h"
+   ],
+   "line": 1310,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL154",
+   "query": "Converts an absl::Duration to a chrono duration of type T",
+   "identifier": "ToChronoDuration",
+   "definedIn": [
+    "absl/time/time.h"
+   ],
+   "line": 1738,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL155",
+   "query": "From Go's doc at https://golang.org/pkg/time/#Duration.String [FormatDuration] returns a string representing the duration in the form \"72h3m0.5s\"",
+   "identifier": "FormatDuration",
+   "definedIn": [
+    "absl/time/duration.cc"
+   ],
+   "line": 738,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL156",
+   "query": "Slow path for PrepareInsertLarge that is called when the table has deleted slots or need to be resized or rehashed",
+   "identifier": "PrepareInsertLargeSlow",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.cc"
+   ],
+   "line": 2156,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL157",
+   "query": "Getter for the position of this node in its parent",
+   "identifier": "position",
+   "definedIn": [
+    "absl/container/internal/btree.h"
+   ],
+   "line": 687,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL158",
+   "query": "Common implementation of the iteration step of a \"combiner\", as described above",
+   "identifier": "CombineUnorderedCallback",
+   "definedIn": [
+    "absl/hash/internal/hash.h"
+   ],
+   "line": 323,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL159",
+   "query": "Containers should specialize this to provide debug information for that container",
+   "identifier": "HashtableDebugAccess",
+   "definedIn": [
+    "absl/container/internal/hashtable_debug_hooks.h"
+   ],
+   "line": 48,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL160",
+   "query": "RANDen = RANDom generator or beetroots in Swiss High German",
+   "identifier": "RandenSlow",
+   "definedIn": [
+    "absl/random/internal/randen_slow.h"
+   ],
+   "line": 29,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL161",
+   "query": "Adds 'size memory usage to this class, with a cumulative (recursive) reference count of refcount",
+   "identifier": "Add",
+   "definedIn": [
+    "absl/strings/internal/cordz_info.cc"
+   ],
+   "line": 149,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL162",
+   "query": "Overwrites single full slot with a deleted slot",
+   "identifier": "overwrite_full_as_deleted",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.h"
+   ],
+   "line": 959,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL163",
+   "query": "This has to be an operator with a precedence lower than << but higher than ?",
+   "identifier": "T",
+   "definedIn": [
+    "absl/log/internal/voidify.h"
+   ],
+   "line": 38,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL164",
+   "query": "This is a 'struct' instead of 'using' in order to avoid eager evaluation for callers that may be passing incomplete types",
+   "identifier": "AddConstRefIfExpensive",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.h"
+   ],
+   "line": 2447,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL165",
+   "query": "Enum that specifies the number of significant digits to return in a Hex or Dec conversion and fill character to use",
+   "identifier": "PadSpec",
+   "definedIn": [
+    "absl/strings/str_cat.h"
+   ],
+   "line": 145,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL166",
+   "query": "Converts the provided tag to the corresponding allocated size",
+   "identifier": "TagToAllocatedSize",
+   "definedIn": [
+    "absl/strings/internal/cord_rep_flat.h"
+   ],
+   "line": 68,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL167",
+   "query": "All the chars in the specified word of the range [0, upper)",
+   "identifier": "OpenRangeFromZeroForWord",
+   "definedIn": [
+    "absl/strings/charset.h"
+   ],
+   "line": 138,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL168",
+   "query": "Given the capacity of a table, computes the offset (from the start of the backing allocation) at which the slots begin",
+   "identifier": "slot_offset",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.h"
+   ],
+   "line": 1292,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL169",
+   "query": "Approximates the survival function of the normal distribution",
+   "identifier": "normal_survival",
+   "definedIn": [
+    "absl/random/internal/chi_square.cc"
+   ],
+   "line": 90,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL170",
+   "query": "Adds a chain of n new nodes after node",
+   "identifier": "AddChain",
+   "definedIn": [
+    "absl/synchronization/internal/graphcycles_benchmark.cc"
+   ],
+   "line": 52,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL171",
+   "query": "Information about a single vdso symbol",
+   "identifier": "SymbolInfo",
+   "definedIn": [
+    "absl/debugging/internal/elf_mem_image.h"
+   ],
+   "line": 79,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL172",
+   "query": "Extracts the H2 portion of a hash: the 7 most significant bits",
+   "identifier": "H2",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.h"
+   ],
+   "line": 1067,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL173",
+   "query": "Whether a table fits in half a group",
+   "identifier": "is_half_group",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.cc"
+   ],
+   "line": 222,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL174",
+   "query": "Generate a year-relative offset for a PosixTransition",
+   "identifier": "TransOffset",
+   "definedIn": [
+    "absl/time/internal/cctz/src/time_zone_info.cc"
+   ],
+   "line": 208,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL175",
+   "query": "The is a sequence number in base 36, using digits and upper case letters",
+   "identifier": "ParseSeqId",
+   "definedIn": [
+    "absl/debugging/internal/demangle.cc"
+   ],
+   "line": 1065,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL176",
+   "query": "Gets the root node's generation integer, which is the one used by the tree",
+   "identifier": "get_root_generation",
+   "definedIn": [
+    "absl/container/internal/btree.h"
+   ],
+   "line": 728,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL177",
+   "query": "As discussed in https://nigeltao.github.io/blog/2020/eisel-lemire.html the primary goal of the Eisel-Lemire algorithm is speed, for 99+% of the cases, not 100% coverage",
+   "identifier": "EiselLemire",
+   "definedIn": [
+    "absl/strings/charconv.cc"
+   ],
+   "line": 685,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL178",
+   "query": "Construct a copy of flag value in a location pointed by dst based on src - pointer to the flag's value",
+   "identifier": "CopyConstruct",
+   "definedIn": [
+    "absl/flags/internal/flag.h"
+   ],
+   "line": 110,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DABSEIL179",
+   "query": "For historical reasons we want to support use that looks like a function call",
+   "identifier": "Overload",
+   "definedIn": [
+    "absl/functional/overload.h"
+   ],
+   "line": 60,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL180",
+   "query": "Sorts integral values in ascending order (e.g. for Mode)",
+   "identifier": "CountingSort",
+   "definedIn": [
+    "absl/random/internal/nanobenchmark.cc"
+   ],
+   "line": 333,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL181",
+   "query": "Conversions involving time zones",
+   "identifier": "ConvertDateTime",
+   "definedIn": [
+    "absl/time/time.cc"
+   ],
+   "line": 412,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL182",
+   "query": "Increments the reference count",
+   "identifier": "Increment",
+   "definedIn": [
+    "absl/strings/internal/cord_internal.h"
+   ],
+   "line": 132,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL183",
+   "query": "Calls operator() of the given closure (lambda function)",
+   "identifier": "CallClosure",
+   "definedIn": [
+    "absl/random/internal/nanobenchmark.h"
+   ],
+   "line": 150,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL184",
+   "query": "Creates a CordRep from the provided string",
+   "identifier": "CordRepFromString",
+   "definedIn": [
+    "absl/strings/cord.cc"
+   ],
+   "line": 137,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL185",
+   "query": "Update crc with 16 bytes of data from p",
+   "identifier": "Process16BytesCRC",
+   "definedIn": [
+    "absl/crc/internal/crc_x86_arm_combined.cc"
+   ],
+   "line": 406,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL186",
+   "query": "Appends the loc to the current location chain inside the status, iff the status-or is non-ok and contains a non-empty message",
+   "identifier": "AddSourceLocation",
+   "definedIn": [
+    "absl/status/statusor.h"
+   ],
+   "line": 499,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL187",
+   "query": "Whether a table fits entirely into a probing group",
+   "identifier": "is_single_group",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.h"
+   ],
+   "line": 483,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL188",
+   "query": "Input format based on POSIX.1-2008 strtol http://pubs.opengroup.org/onlinepubs/9699919799/functions/strtol.html",
+   "identifier": "safe_int_internal",
+   "definedIn": [
+    "absl/strings/numbers.cc"
+   ],
+   "line": 1558,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL189",
+   "query": "Breaks a time_point down to civil-time components in this time zone",
+   "identifier": "BreakTime",
+   "definedIn": [
+    "absl/time/internal/cctz/src/time_zone_impl.h"
+   ],
+   "line": 53,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL190",
+   "query": "Helper to pass to GraphCycles::UpdateStackTrace",
+   "identifier": "GetStack",
+   "definedIn": [
+    "absl/synchronization/mutex.cc"
+   ],
+   "line": 1397,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL191",
+   "query": "The characteristics of a particular transition",
+   "identifier": "TransitionType",
+   "definedIn": [
+    "absl/time/internal/cctz/src/time_zone_info.h"
+   ],
+   "line": 57,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL192",
+   "query": "Inserts edges from new nodes to an old node that has a chain of state.range(0) descendants",
+   "identifier": "BM_NewNodeToOldNode",
+   "definedIn": [
+    "absl/synchronization/internal/graphcycles_benchmark.cc"
+   ],
+   "line": 64,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL193",
+   "query": "If (result & kSpinLockHeld) == 0, then this was successfully locked",
+   "identifier": "TryLockInternal",
+   "definedIn": [
+    "absl/base/internal/spinlock.h"
+   ],
+   "line": 281,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL194",
+   "query": "Helper to check that the OutputRange has enough space",
+   "identifier": "AssertCopyNSize",
+   "definedIn": [
+    "absl/algorithm/container.h"
+   ],
+   "line": 122,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL195",
+   "query": "Parse the sign and optional hex or oct prefix in text",
+   "identifier": "safe_parse_sign_and_base",
+   "definedIn": [
+    "absl/strings/numbers.cc"
+   ],
+   "line": 1190,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL196",
+   "query": "An internal-only variant similar to absl::StringResizeAndOverwrite() optimized for repeated appends to a string that uses exponential growth so that the amortized complexity of increasing the string size by a small amount is O(1), in contrast to O(str.size()) in the case",
+   "identifier": "StringAppendAndOverwrite",
+   "definedIn": [
+    "absl/strings/internal/append_and_overwrite.h"
+   ],
+   "line": 46,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL197",
+   "query": "Resizes empty non-allocated table to the capacity to fit new_size elements",
+   "identifier": "ReserveEmptyNonAllocatedTableToFitNewSize",
+   "definedIn": [
+    "absl/container/internal/raw_hash_set.cc"
+   ],
+   "line": 2243,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL198",
+   "query": "allocates and returns a block of size bytes, to be freed with Free() L mu",
+   "identifier": "DoAllocWithArena",
+   "definedIn": [
+    "absl/base/internal/low_level_alloc.cc"
+   ],
+   "line": 559,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DABSEIL199",
+   "query": "The printed value not including the '-' sign",
+   "identifier": "without_neg_or_zero",
+   "definedIn": [
+    "absl/strings/internal/str_format/arg.cc"
+   ],
+   "line": 179,
+   "nameWordsInQuery": false
+  }
+ ]
+}

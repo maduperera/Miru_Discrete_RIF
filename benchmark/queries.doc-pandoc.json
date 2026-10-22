@@ -1,0 +1,2010 @@
+{
+ "repo": "doc-pandoc",
+ "source": "id-pandoc",
+ "commit": "e5a6ab5cfb4247689090b3395cacd0defe902936",
+ "lang": "haskell",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "200 docstring-style queries (first sentence of the doc comment of one definition), drawn by gen_queries_doc.py (seed 0xa11ce); corpus is the pinned repo with all definition doc comments removed (scripts/extract_docqueries.ts --strip). Documented definitions available: 1482 (of 6666 definitions).",
+ "queries": [
+  {
+   "id": "DPANDOC0",
+   "query": "Convert list item (list of blocks) to RTF",
+   "identifier": "listItemToRTF",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/RTF.hs"
+   ],
+   "line": 437,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC1",
+   "query": "Convert list of Pandoc inline elements to markdown",
+   "identifier": "inlineListToMarkdown",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Markdown/Inline.hs"
+   ],
+   "line": 269,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC2",
+   "query": "Generate infinite lazy list of markers for an ordered list, depending on list attributes",
+   "identifier": "orderedListMarkers",
+   "definedIn": [
+    "src/Text/Pandoc/Shared.hs"
+   ],
+   "line": 318,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC3",
+   "query": "Parses a known URI scheme, case-insensitively, preferring the longest matching scheme",
+   "identifier": "uriScheme",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/General.hs"
+   ],
+   "line": 507,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC4",
+   "query": "Find the MathML of a formula embedded in a @draw:object@",
+   "identifier": "findMathML",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/ODT/ContentReader.hs"
+   ],
+   "line": 992,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC5",
+   "query": "Run a 'Get' parser at the given offset in a strict ByteString, returning Nothing if it fails (e.g. by running out of input)",
+   "identifier": "getAt",
+   "definedIn": [
+    "src/Text/Pandoc/ImageSize.hs"
+   ],
+   "line": 549,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC6",
+   "query": "A ruby annotation glosses a base text",
+   "identifier": "read_ruby",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/ODT/ContentReader.hs"
+   ],
+   "line": 582,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC7",
+   "query": "Succeed only if the extension is enabled",
+   "identifier": "guardEnabled",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Capabilities.hs"
+   ],
+   "line": 111,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC8",
+   "query": "Split text by groups of one or more separator",
+   "identifier": "splitTextBy",
+   "definedIn": [
+    "src/Text/Pandoc/Shared.hs"
+   ],
+   "line": 137,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC9",
+   "query": "Group element: nesting, glued prefix text, document, glued suffix",
+   "identifier": "Elt",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Native.hs"
+   ],
+   "line": 59,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC10",
+   "query": "Association list of formats and writers",
+   "identifier": "writers",
+   "definedIn": [
+    "src/Text/Pandoc/Writers.hs"
+   ],
+   "line": 159,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC11",
+   "query": "Fill the mediabag with all images in the document that aren't present yet",
+   "identifier": "fill",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Module/MediaBag.hs"
+   ],
+   "line": 86,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC12",
+   "query": "Pushes the 'Sources' as a list of lazy Lua objects",
+   "identifier": "pushSources",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Marshal/Sources.hs"
+   ],
+   "line": 25,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC13",
+   "query": "Like 'matchContent', but ignores non-matching content",
+   "identifier": "matchContent'",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/ODT/Generic/XMLConverter.hs"
+   ],
+   "line": 442,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC14",
+   "query": "Pushes a WriterOptions value as userdata object",
+   "identifier": "pushWriterOptions",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Marshal/WriterOptions.hs"
+   ],
+   "line": 46,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC15",
+   "query": "Check if shape is title placeholder (also used in Slides module)",
+   "identifier": "isTitlePlaceholder",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Pptx/Shapes.hs"
+   ],
+   "line": 321,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC16",
+   "query": "Convert a list of inline elements to DocBook",
+   "identifier": "inlinesToDocBook",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/DocBook.hs"
+   ],
+   "line": 361,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC17",
+   "query": "Parse raw line block up to and including blank lines",
+   "identifier": "lineClump",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/General.hs"
+   ],
+   "line": 440,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC18",
+   "query": "Add chunkNext, chunkPrev, chunkUp",
+   "identifier": "addNav",
+   "definedIn": [
+    "src/Text/Pandoc/Chunks.hs"
+   ],
+   "line": 86,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC19",
+   "query": "Cleanup and canonicalize a string describing a link",
+   "identifier": "cleanLinkText",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Org/Shared.hs"
+   ],
+   "line": 41,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC20",
+   "query": "Handle PandocError by exiting with an error message",
+   "identifier": "handleError",
+   "definedIn": [
+    "src/Text/Pandoc/Error.hs"
+   ],
+   "line": 159,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC21",
+   "query": "Read a :PROPERTIES: drawer and return the key/value pairs contained within",
+   "identifier": "propertiesDrawer",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Org/DocumentTree.hs"
+   ],
+   "line": 403,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC22",
+   "query": "Handle a LaTeX3 expandable evaluator (@\\inteval@, @\\fpeval@, ...): grab the braced argument (macros in it are expanded as it is consumed), evaluate it, and substitute the result",
+   "identifier": "handleEval",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/LaTeX/Parsing.hs"
+   ],
+   "line": 1045,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC23",
+   "query": "Convert an ODT archive into the equivalent flat OpenDocument file",
+   "identifier": "flattenODT",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/ODT.hs"
+   ],
+   "line": 141,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC24",
+   "query": "Method to provide code highlighting",
+   "identifier": "HighlightMethod",
+   "definedIn": [
+    "src/Text/Pandoc/Options.hs"
+   ],
+   "line": 197,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC25",
+   "query": "Decompress gzipped data, catching decompression errors instead of throwing an imprecise exception from pure code",
+   "identifier": "decompressGzip",
+   "definedIn": [
+    "src/Text/Pandoc/SelfContained.hs"
+   ],
+   "line": 398,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC26",
+   "query": "Parse a multi-line heading",
+   "identifier": "amuseHeadingUntil",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Muse.hs"
+   ],
+   "line": 363,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC27",
+   "query": "Create footnotes XML entry",
+   "identifier": "mkFootnotesEntry",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Docx.hs"
+   ],
+   "line": 612,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC28",
+   "query": "Parse a table header row",
+   "identifier": "tableParseHeader",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Muse.hs"
+   ],
+   "line": 753,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC29",
+   "query": "Pushes an individual 'Extension' to the Lua stack",
+   "identifier": "pushExtension",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Marshal/Format.hs"
+   ],
+   "line": 43,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC30",
+   "query": "Run the Lua interpreter, using pandoc's default way of environment initialization",
+   "identifier": "runLua",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Run.hs"
+   ],
+   "line": 29,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC31",
+   "query": "Convert list of Pandoc block elements to Textile",
+   "identifier": "blockListToTextile",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Textile.hs"
+   ],
+   "line": 365,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC32",
+   "query": "Collection of common mime types",
+   "identifier": "mimeTypesList",
+   "definedIn": [
+    "src/Text/Pandoc/MIME.hs"
+   ],
+   "line": 87,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC33",
+   "query": "ODT internal links are evaluated relative to an imaginary folder structure that mirrors the zip structure",
+   "identifier": "fixInternalLinks",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/ODT.hs"
+   ],
+   "line": 86,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC34",
+   "query": "Row index in a table part",
+   "identifier": "RowIndex",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/GridTable.hs"
+   ],
+   "line": 52,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC35",
+   "query": "Html / CSS attributes",
+   "identifier": "attributes",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Textile.hs"
+   ],
+   "line": 810,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC36",
+   "query": "Parse styles (fonts only for MVP)",
+   "identifier": "parseStyles",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Xlsx/Parse.hs"
+   ],
+   "line": 165,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC37",
+   "query": "Data structure for command line options",
+   "identifier": "Opt",
+   "definedIn": [
+    "src/Text/Pandoc/App/Opt.hs"
+   ],
+   "line": 163,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC38",
+   "query": "For each string in the input list, convert all newlines to dokuwiki escaped newlines",
+   "identifier": "backSlashLineBreaks",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/DokuWiki.hs"
+   ],
+   "line": 311,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC39",
+   "query": "Parse PPTX archive to intermediate representation",
+   "identifier": "archiveToPptx",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Pptx/Parse.hs"
+   ],
+   "line": 59,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC40",
+   "query": "Pushes a 'Chunk' to the top of the Lua stack",
+   "identifier": "pushChunk",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Marshal/Chunks.hs"
+   ],
+   "line": 29,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC41",
+   "query": "Convert Pandoc block element to asciidoc",
+   "identifier": "blockToAsciiDoc",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/AsciiDoc.hs"
+   ],
+   "line": 194,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC42",
+   "query": "Escape special characters for Txt2Tags",
+   "identifier": "escapeString",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Txt2Tags.hs"
+   ],
+   "line": 73,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC43",
+   "query": "Convert Pandoc inline element to ms",
+   "identifier": "inlineToMs",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Ms.hs"
+   ],
+   "line": 416,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC44",
+   "query": "What kind of value an option expects, and hence how it should be completed in zsh/fish/bash",
+   "identifier": "CompletionKind",
+   "definedIn": [
+    "src/Text/Pandoc/App/Opt.hs"
+   ],
+   "line": 103,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC45",
+   "query": "Lists always start with a number of leading characters '#' or '' Ordered list start characters '#' can be followed by the start attribute number, but bullet list characters '' can not",
+   "identifier": "orderedListStartAtDepth",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Textile.hs"
+   ],
+   "line": 293,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC46",
+   "query": "Finds a pair of symbols that can be used as delimiters",
+   "identifier": "typeDelim",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/ConTeXt.hs"
+   ],
+   "line": 799,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC47",
+   "query": "Parse \"~~\" as nonbreaking space",
+   "identifier": "nbsp",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Muse.hs"
+   ],
+   "line": 923,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC48",
+   "query": "True for characters that terminate a run of plain text, i.e. the 'specialChars' plus tabs, newlines and spaces",
+   "identifier": "isStrEnd",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Creole.hs"
+   ],
+   "line": 70,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC49",
+   "query": "Produce an EPUB3 file from a Pandoc document",
+   "identifier": "writeEPUB3",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/EPUB.hs"
+   ],
+   "line": 438,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC50",
+   "query": "Set a field of a template context",
+   "identifier": "setField",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Shared.hs"
+   ],
+   "line": 182,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC51",
+   "query": "Parses a nonspace, nonnewline character",
+   "identifier": "nonspaceChar",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/General.hs"
+   ],
+   "line": 327,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC52",
+   "query": "Create tree of sections with titles, links, and numbers, in a form that can be turned into a table of contents",
+   "identifier": "toTOCTree",
+   "definedIn": [
+    "src/Text/Pandoc/Chunks.hs"
+   ],
+   "line": 358,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC53",
+   "query": "Make a link description safe: it must not contain @]]@ or end with @]@",
+   "identifier": "escapeLinkDescription",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Org.hs"
+   ],
+   "line": 635,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC54",
+   "query": "Fix internal references so they point to the path of the chunk",
+   "identifier": "fixInternalReferences",
+   "definedIn": [
+    "src/Text/Pandoc/Chunks.hs"
+   ],
+   "line": 111,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC55",
+   "query": "Converts a raw TeX math formula using a writer function, issuing a warning and producing a fallback (a raw string) on failure",
+   "identifier": "convertMath",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Math.hs"
+   ],
+   "line": 42,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC56",
+   "query": "A more general form of @notFollowedBy@",
+   "identifier": "notFollowedBy'",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/General.hs"
+   ],
+   "line": 274,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC57",
+   "query": "Parse the result of an evaluated babel code block",
+   "identifier": "babelResultsBlock",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Org/Blocks.hs"
+   ],
+   "line": 359,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC58",
+   "query": "Convert a Dimension to Text denoting its equivalent in inches, for example \"2.00000\"",
+   "identifier": "showInInch",
+   "definedIn": [
+    "src/Text/Pandoc/ImageSize.hs"
+   ],
+   "line": 250,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC59",
+   "query": "A grid cell contains either a real table cell, or is the continuation of a column or row-spanning cell",
+   "identifier": "GridCell",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/GridTable.hs"
+   ],
+   "line": 45,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC60",
+   "query": "Parses inline text in double quotes; assumes English quoting conventions",
+   "identifier": "doubleQuoted",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Smart.hs"
+   ],
+   "line": 84,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC61",
+   "query": "Process ipynb output cells",
+   "identifier": "filterIpynbOutput",
+   "definedIn": [
+    "src/Text/Pandoc/Transforms.hs"
+   ],
+   "line": 101,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC62",
+   "query": "Remove leading space (including newlines) from string",
+   "identifier": "triml",
+   "definedIn": [
+    "src/Text/Pandoc/Shared.hs"
+   ],
+   "line": 199,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC63",
+   "query": "The value assigned to a property",
+   "identifier": "PropertyValue",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Org/DocumentTree.hs"
+   ],
+   "line": 81,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC64",
+   "query": "Parse any line of text, returning the contents without the final newline",
+   "identifier": "anyLine",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/General.hs"
+   ],
+   "line": 169,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC65",
+   "query": "Shift header levels up or down",
+   "identifier": "headerShift",
+   "definedIn": [
+    "src/Text/Pandoc/Transforms.hs"
+   ],
+   "line": 152,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC66",
+   "query": "Convert diagram to Pandoc blocks",
+   "identifier": "diagramToBlocks",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Pptx/SmartArt.hs"
+   ],
+   "line": 188,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC67",
+   "query": "Read the key of a plist style key-value list",
+   "identifier": "orgArgKey",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Org/Parsing.hs"
+   ],
+   "line": 208,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC68",
+   "query": "Determime mime type appropriate for file path, defaulting to \u201capplication/octet-stream\u201d if nothing else fits",
+   "identifier": "getMimeTypeDef",
+   "definedIn": [
+    "src/Text/Pandoc/MIME.hs"
+   ],
+   "line": 44,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC69",
+   "query": "Parses a '@' and optional label and returns (DefaultStyle, [next example number])",
+   "identifier": "exampleNum",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Lists.hs"
+   ],
+   "line": 114,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC70",
+   "query": "Convert a Pandoc 'B.Table' to an annotated 'Table'",
+   "identifier": "toTable",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/AnnotatedTable.hs"
+   ],
+   "line": 125,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC71",
+   "query": "Like @manyUntil@, but also packs its result",
+   "identifier": "manyUntilChar",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/General.hs"
+   ],
+   "line": 257,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC72",
+   "query": "Find the left-most occurrence of an element matching given name",
+   "identifier": "findElement",
+   "definedIn": [
+    "xml-light/Text/Pandoc/XML/Light/Proc.hs"
+   ],
+   "line": 91,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC73",
+   "query": "Run a converter using the default state",
+   "identifier": "runDefaultConverter",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Jira.hs"
+   ],
+   "line": 57,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC74",
+   "query": "True if inlines include a LineBreak (possibly embedded), with the exception of line breaks in Notes",
+   "identifier": "hasLineBreaks",
+   "definedIn": [
+    "src/Text/Pandoc/Shared.hs"
+   ],
+   "line": 690,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC75",
+   "query": "Parses a table head",
+   "identifier": "pTableHead",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/HTML/Table.hs"
+   ],
+   "line": 161,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC76",
+   "query": "Escape string as needed for XML",
+   "identifier": "escapeStringForXML",
+   "definedIn": [
+    "src/Text/Pandoc/XML.hs"
+   ],
+   "line": 69,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC77",
+   "query": "Set text value in text context",
+   "identifier": "setVariable",
+   "definedIn": [
+    "src/Text/Pandoc/App/CommandLineOptions.hs"
+   ],
+   "line": 1403,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC78",
+   "query": "How to handle output blocks in ipynb",
+   "identifier": "IpynbOutput",
+   "definedIn": [
+    "src/Text/Pandoc/App/Opt.hs"
+   ],
+   "line": 88,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC79",
+   "query": "Gets all cells in a body row",
+   "identifier": "bodyRowCells",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/LaTeX/Table.hs"
+   ],
+   "line": 329,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC80",
+   "query": "Describes the properties of a format",
+   "identifier": "ExtensionsConfig",
+   "definedIn": [
+    "src/Text/Pandoc/Format.hs"
+   ],
+   "line": 78,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC81",
+   "query": "Read a single planning-related and timestamped line",
+   "identifier": "planningInfo",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Org/DocumentTree.hs"
+   ],
+   "line": 389,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC82",
+   "query": "Like ppCDataS, but without indentation before the text itself",
+   "identifier": "ppCDataS'",
+   "definedIn": [
+    "xml-light/Text/Pandoc/XML/Light/Output.hs"
+   ],
+   "line": 167,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC83",
+   "query": "A list of inputs labeled with source positions",
+   "identifier": "Sources",
+   "definedIn": [
+    "src/Text/Pandoc/Sources.hs"
+   ],
+   "line": 61,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC84",
+   "query": "Pushes a boolean, but uses @nil@ instead of @false@; table fields are not set unless the value is true",
+   "identifier": "pushBoolOrNil",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Marshal/Reference.hs"
+   ],
+   "line": 67,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC85",
+   "query": "Wrap a list of inline elements in an ICML Paragraph Style",
+   "identifier": "parStyle",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/ICML.hs"
+   ],
+   "line": 547,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC86",
+   "query": "Convert Pandoc to a string in rich text format",
+   "identifier": "writeRTF",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/RTF.hs"
+   ],
+   "line": 99,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC87",
+   "query": "Like 'metaToContext, but does not include variables and is not sensitive to 'writerTemplate'",
+   "identifier": "metaToContext'",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Shared.hs"
+   ],
+   "line": 136,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC88",
+   "query": "Make sure the bullet env gets turned off after the first para",
+   "identifier": "multiParList",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Powerpoint/Presentation.hs"
+   ],
+   "line": 552,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC89",
+   "query": "Insert an ersatz file into the 'FileTree'",
+   "identifier": "insertInFileTree",
+   "definedIn": [
+    "src/Text/Pandoc/Class/PandocPure.hs"
+   ],
+   "line": 171,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC90",
+   "query": "Parse paragraphs from text box",
+   "identifier": "parseParagraphs",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Pptx/Shapes.hs"
+   ],
+   "line": 226,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC91",
+   "query": "Fetch an image or other item from the local filesystem or the net",
+   "identifier": "fetchItem",
+   "definedIn": [
+    "src/Text/Pandoc/Class/PandocMonad.hs"
+   ],
+   "line": 368,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC92",
+   "query": "Create an automatic paragraph style with the given @style:style@ attributes and @style:paragraph-properties@, reusing an identical style if one has already been created",
+   "identifier": "mkParaStyle",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/OpenDocument.hs"
+   ],
+   "line": 985,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC93",
+   "query": "Parse section contents until EOF or next header",
+   "identifier": "parseBlocks",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Muse.hs"
+   ],
+   "line": 233,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC94",
+   "query": "Reads the inline content of a paragraph, heading or span",
+   "identifier": "matchInlineContent",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/ODT/ContentReader.hs"
+   ],
+   "line": 636,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC95",
+   "query": "Read Txt2Tags from an input string returning a Pandoc document",
+   "identifier": "readTxt2Tags",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Txt2Tags.hs"
+   ],
+   "line": 73,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC96",
+   "query": "Check whether a tag is for an element with inline content",
+   "identifier": "isInlineTag",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/XML.hs"
+   ],
+   "line": 117,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC97",
+   "query": "Applies a parser, returns tuple of its results and its horizontal displacement (the difference between the source column at the end and the source column at the beginning)",
+   "identifier": "withHorizDisplacement",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/General.hs"
+   ],
+   "line": 568,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC98",
+   "query": "Read BibTeX from an input string and return a Pandoc document",
+   "identifier": "readBibTeX",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/BibTeX.hs"
+   ],
+   "line": 40,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC99",
+   "query": "Parses material surrounded by a parser",
+   "identifier": "surrounded",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Textile.hs"
+   ],
+   "line": 858,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC100",
+   "query": "A line is an Integer",
+   "identifier": "Line",
+   "definedIn": [
+    "xml-light/Text/Pandoc/XML/Light/Types.hs"
+   ],
+   "line": 50,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC101",
+   "query": "Find the size of an image",
+   "identifier": "size",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Module/Image.hs"
+   ],
+   "line": 52,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC102",
+   "query": "Convert a Pandoc block element to JATS",
+   "identifier": "blockToJATS",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/JATS.hs"
+   ],
+   "line": 319,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC103",
+   "query": "Parse a grid table: starts with row of '-' on top, then header (which may be grid), then the rows, which may be grid, separated by blank lines, and ending with a footer (dashed line followed by blank line)",
+   "identifier": "gridTableWith",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/GridTable.hs"
+   ],
+   "line": 123,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC104",
+   "query": "Parse a definition list",
+   "identifier": "definitionListUntil",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Muse.hs"
+   ],
+   "line": 618,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC105",
+   "query": "Get the meta information required by Txt2Tags macros",
+   "identifier": "getT2TMeta",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Txt2Tags.hs"
+   ],
+   "line": 55,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC106",
+   "query": "State threaded through the tokenizer: whether @\\@@ is a letter (between @\\makeatletter@ and @\\makeatother@), and whether @:@ and",
+   "identifier": "TokenizerState",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/LaTeX/Parsing.hs"
+   ],
+   "line": 529,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC107",
+   "query": "Header of the form \"hN. content\" with N in 1..6",
+   "identifier": "header",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Textile.hs"
+   ],
+   "line": 210,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC108",
+   "query": "Parses a character reference and returns a Str element",
+   "identifier": "charRef",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/General.hs"
+   ],
+   "line": 619,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC109",
+   "query": "Render a document body, inserting it into 'writerTemplate' (with the given context) if there is a template, and wrapping lines according to 'wrapColumns'",
+   "identifier": "renderWithTemplate",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Shared.hs"
+   ],
+   "line": 127,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC110",
+   "query": "Determine whether all rows and their cells are empty",
+   "identifier": "allRowsEmpty",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Shared.hs"
+   ],
+   "line": 942,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC111",
+   "query": "Read a flat OpenDocument text file, i.e",
+   "identifier": "readFODT",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/ODT.hs"
+   ],
+   "line": 60,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC112",
+   "query": "Convert a text element to characters",
+   "identifier": "showCDataS",
+   "definedIn": [
+    "xml-light/Text/Pandoc/XML/Light/Output.hs"
+   ],
+   "line": 197,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC113",
+   "query": "Obfuscate character as entity",
+   "identifier": "obfuscateChar",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/HTML.hs"
+   ],
+   "line": 681,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC114",
+   "query": "A definition list item in textile begins with '- ', followed by the term defined, then spaces and \":=\"",
+   "identifier": "definitionListItem",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Textile.hs"
+   ],
+   "line": 351,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC115",
+   "query": "Gets all cells in a header row",
+   "identifier": "headerRowCells",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/LaTeX/Table.hs"
+   ],
+   "line": 325,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC116",
+   "query": "Skip one or more tab or space characters",
+   "identifier": "skipSpaces1",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Org/Parsing.hs"
+   ],
+   "line": 147,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC117",
+   "query": "Open Document allows several consecutive spaces if they are marked up",
+   "identifier": "read_plain_text",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/ODT/ContentReader.hs"
+   ],
+   "line": 536,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC118",
+   "query": "Add a log message",
+   "identifier": "logMessage",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Capabilities.hs"
+   ],
+   "line": 100,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC119",
+   "query": "Parse presentation.xml element to PresentationDoc",
+   "identifier": "elemToPresentation",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Pptx/Parse.hs"
+   ],
+   "line": 122,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC120",
+   "query": "Extracts namespace attributes from the current element and tries to update the current mapping accordingly",
+   "identifier": "readNSattributes",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/ODT/Generic/XMLConverter.hs"
+   ],
+   "line": 177,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC121",
+   "query": "Convert HTML into self-contained HTML, incorporating images, scripts, and CSS using data: URIs",
+   "identifier": "makeSelfContained",
+   "definedIn": [
+    "src/Text/Pandoc/SelfContained.hs"
+   ],
+   "line": 467,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC122",
+   "query": "Generate a table of contents of the given depth",
+   "identifier": "tocToList",
+   "definedIn": [
+    "src/Text/Pandoc/Chunks.hs"
+   ],
+   "line": 425,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC123",
+   "query": "Report all the accumulated log messages, according to verbosity level",
+   "identifier": "reportLogMessages",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Capabilities.hs"
+   ],
+   "line": 105,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC124",
+   "query": "Get the actual text stored in a CData block. 'showContent' returns the text still surrounded by the CDATA tags",
+   "identifier": "showVerbatimCData",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/DocBook.hs"
+   ],
+   "line": 1476,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC125",
+   "query": "An annotated table cell, wrapping a Pandoc 'B.Cell' with its 'ColNumber' and the 'B.ColSpec' data for the columns that the cell spans",
+   "identifier": "Cell",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/AnnotatedTable.hs"
+   ],
+   "line": 109,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC126",
+   "query": "Convert a term and a list of blocks into a DocBook varlistentry",
+   "identifier": "deflistItemToDocBook",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/DocBook.hs"
+   ],
+   "line": 134,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC127",
+   "query": "Ensure that all identifiers start with a letter, and modify internal links accordingly",
+   "identifier": "ensureValidXmlIdentifiers",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Shared.hs"
+   ],
+   "line": 844,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC128",
+   "query": "Render planning info as a block iff the respective export setting is enabled",
+   "identifier": "planningToBlock",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Org/DocumentTree.hs"
+   ],
+   "line": 348,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC129",
+   "query": "Like 'parseFromString' but specialized for 'ParserState'",
+   "identifier": "parseFromString'",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/General.hs"
+   ],
+   "line": 428,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC130",
+   "query": "Evaluate a 'PandocIO' operation",
+   "identifier": "runIO",
+   "definedIn": [
+    "src/Text/Pandoc/Class/PandocIO.hs"
+   ],
+   "line": 35,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC131",
+   "query": "Wrap double quotes around a Text",
+   "identifier": "inquotes",
+   "definedIn": [
+    "src/Text/Pandoc/Shared.hs"
+   ],
+   "line": 174,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC132",
+   "query": "Lookup style from a name",
+   "identifier": "lookupHighlightingStyle",
+   "definedIn": [
+    "src/Text/Pandoc/Highlighting.hs"
+   ],
+   "line": 280,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC133",
+   "query": "Convert a list of (identifier, url) pairs to the ICML listing of hyperlinks",
+   "identifier": "hyperlinksToDoc",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/ICML.hs"
+   ],
+   "line": 301,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC134",
+   "query": "Set translations based on the lang in metadata",
+   "identifier": "setupTranslations",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Shared.hs"
+   ],
+   "line": 894,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC135",
+   "query": "Certain macros do low-level tex manipulations that can't be represented in our Macro type, so we handle them here",
+   "identifier": "trySpecialMacro",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/LaTeX/Parsing.hs"
+   ],
+   "line": 824,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC136",
+   "query": "Write BibTeX based on the references metadata from a Pandoc document",
+   "identifier": "writeBibTeX",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/BibTeX.hs"
+   ],
+   "line": 35,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC137",
+   "query": "Parses a roman numeral (uppercase or lowercase), returns number",
+   "identifier": "romanNumeral",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Lists.hs"
+   ],
+   "line": 59,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC138",
+   "query": "Produce HTML for the given pandoc attributes, to be used in HTML tags",
+   "identifier": "htmlAttrs",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Shared.hs"
+   ],
+   "line": 223,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC139",
+   "query": "Convert bullet list item (list of blocks) to markdown",
+   "identifier": "bulletListItemToMarkdown",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Markdown.hs"
+   ],
+   "line": 822,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC140",
+   "query": "blah }} next list item which seems to be valid mediawiki",
+   "identifier": "listChunk",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/MediaWiki.hs"
+   ],
+   "line": 597,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC141",
+   "query": "Convert a Pandoc block element to OpenXML",
+   "identifier": "blockToOpenXML",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Docx/OpenXML.hs"
+   ],
+   "line": 435,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC142",
+   "query": "Read an format specific meta definition",
+   "identifier": "metaExportSnippet",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Org/Meta.hs"
+   ],
+   "line": 173,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC143",
+   "query": "Read Djot from an input string and return a Pandoc document",
+   "identifier": "readDjot",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Djot.hs"
+   ],
+   "line": 45,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC144",
+   "query": "Parses a list number (num) enclosed in parens, returns list attributes",
+   "identifier": "inTwoParens",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Lists.hs"
+   ],
+   "line": 211,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC145",
+   "query": "Replace references to other entries of the ODT archive by the entries' contents, which is the only way a flat file can carry them: images become base64 in an @office:binary-data@ child, formulas become MathML inside the @draw:object@",
+   "identifier": "embedArchiveRefs",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/ODT.hs"
+   ],
+   "line": 244,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC146",
+   "query": "The key (also called name or type) of a property",
+   "identifier": "PropertyKey",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Org/DocumentTree.hs"
+   ],
+   "line": 72,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC147",
+   "query": "Get references defined inline in the metadata and via an external bibliography",
+   "identifier": "getReferences",
+   "definedIn": [
+    "src/Text/Pandoc/Citeproc.hs"
+   ],
+   "line": 184,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC148",
+   "query": "Gets a list of rows of the table head, where a row is a simple list of cells",
+   "identifier": "headRows",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/LaTeX/Table.hs"
+   ],
+   "line": 340,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC149",
+   "query": "Parse all shapes from shape tree",
+   "identifier": "parseShapes",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Pptx/Shapes.hs"
+   ],
+   "line": 70,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC150",
+   "query": "Inline elements used to separate blocks when squashing blocks into inlines",
+   "identifier": "defaultBlocksSeparator",
+   "definedIn": [
+    "src/Text/Pandoc/Shared.hs"
+   ],
+   "line": 922,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC151",
+   "query": "Index to a cell in a table part",
+   "identifier": "CellIndex",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/GridTable.hs"
+   ],
+   "line": 57,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC152",
+   "query": "Obfuscate a \"mailto:\" link",
+   "identifier": "obfuscateLink",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/HTML.hs"
+   ],
+   "line": 631,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC153",
+   "query": "Gives the most suitable method to render a list of blocks with attributes",
+   "identifier": "divBlockType",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Org.hs"
+   ],
+   "line": 391,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC154",
+   "query": "True if the markup contains no content at all. 'mconcat' and '<>' on 'MarkupM' build 'Append' nodes without collapsing empty markup, so simply matching on 'Empty' is not enough",
+   "identifier": "isEmptyMarkup",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/HTML.hs"
+   ],
+   "line": 160,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC155",
+   "query": "Convert Pandoc to Commonmark",
+   "identifier": "writeCommonMark",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Markdown.hs"
+   ],
+   "line": 77,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC156",
+   "query": "Checks if a given element matches both a specified namespace id and a specified element name",
+   "identifier": "elemNameIs",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/ODT/Generic/XMLConverter.hs"
+   ],
+   "line": 224,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC157",
+   "query": "Check if text is a valid PDF version (after normalization)",
+   "identifier": "isPdfVersion",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/LaTeX.hs"
+   ],
+   "line": 1485,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC158",
+   "query": "Parses a braced xparse argument specification, e.g",
+   "identifier": "xparseArgSpecs",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/LaTeX/Macro.hs"
+   ],
+   "line": 382,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC159",
+   "query": "Parse a link or image",
+   "identifier": "linkOrImage",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Muse.hs"
+   ],
+   "line": 967,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC160",
+   "query": "Parse contents of 'str' using 'parser' and return result",
+   "identifier": "parseFromString",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/General.hs"
+   ],
+   "line": 412,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC161",
+   "query": "Pushes a 'Variable' as string",
+   "identifier": "pushVariable",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Marshal/Reference.hs"
+   ],
+   "line": 73,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC162",
+   "query": "Raises an error, reporting that the scripting engine is unavailable",
+   "identifier": "runLuaInterpreter",
+   "definedIn": [
+    "pandoc-cli/no-lua/PandocCLI/Lua.hs"
+   ],
+   "line": 17,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC163",
+   "query": "Ensure the office:styles element contains paragraph styles for list items used by the OpenDocument writer",
+   "identifier": "addListItemStyles",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/ODT.hs"
+   ],
+   "line": 461,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC164",
+   "query": "List of lists of ColsSpan of 1",
+   "identifier": "singleColumnSpans",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/GridTable.hs"
+   ],
+   "line": 298,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC165",
+   "query": "Retrieves a single 'Extension' from the Lua stack",
+   "identifier": "peekExtension",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Marshal/Format.hs"
+   ],
+   "line": 36,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC166",
+   "query": "Extract alt text from image attributes and inlines",
+   "identifier": "getAlt",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Typst.hs"
+   ],
+   "line": 614,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC167",
+   "query": "Check to see if Format matches with an EPUB variant",
+   "identifier": "isEpubFormat",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/HTML.hs"
+   ],
+   "line": 1860,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC168",
+   "query": "Parses a lowercase letter and returns (LowerAlpha, number)",
+   "identifier": "lowerAlpha",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Lists.hs"
+   ],
+   "line": 147,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC169",
+   "query": "Horizontal Line (five -- dashes or more)",
+   "identifier": "hline",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Org/BlockStarts.hs"
+   ],
+   "line": 38,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC170",
+   "query": "Convert all chars in a string to Unicode superscript",
+   "identifier": "superscript",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Module/Text.hs"
+   ],
+   "line": 68,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC171",
+   "query": "PHP Markdown Extra style abbreviation key",
+   "identifier": "abbrevKey",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Markdown.hs"
+   ],
+   "line": 424,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC172",
+   "query": "Read RTF from an input string and return a Pandoc document",
+   "identifier": "readRTF",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/RTF.hs"
+   ],
+   "line": 48,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC173",
+   "query": "Walk the document and tag every list with a unique id and its nesting level, returning the tagged blocks together with the information needed to build the list table",
+   "identifier": "prepareLists",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/RTF.hs"
+   ],
+   "line": 157,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC174",
+   "query": "Retrieves a 'WriterOptions' object from a table on the stack, using the default values for all missing fields",
+   "identifier": "peekWriterOptionsTable",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Marshal/WriterOptions.hs"
+   ],
+   "line": 266,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC175",
+   "query": "Like 'HsLua.Core.Trace.dofileTrace', but uses a local environment",
+   "identifier": "dofileTrace'",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Filter.hs"
+   ],
+   "line": 59,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC176",
+   "query": "Parses a switch's polarity",
+   "identifier": "switchPolarity",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Org/Blocks.hs"
+   ],
+   "line": 402,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC177",
+   "query": "Convert Pandoc to Jira",
+   "identifier": "writeJira",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Jira.hs"
+   ],
+   "line": 37,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC178",
+   "query": "Is this a list block tagged by 'prepareLists' (and hence already carrying its own @\\\\ls@/@\\\\ilvl@ reference)?",
+   "identifier": "isTaggedList",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/RTF.hs"
+   ],
+   "line": 492,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC179",
+   "query": "Put empty lines around content",
+   "identifier": "spaceBeforeAfter",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/FB2.hs"
+   ],
+   "line": 555,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC180",
+   "query": "Parse any inline element but soft breaks and do not consolidate spaces",
+   "identifier": "inlineUnconsolidatedWhitespace",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/DokuWiki.hs"
+   ],
+   "line": 120,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC181",
+   "query": "Process the document with a JSON filter",
+   "identifier": "run_json_filter",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Module/Utils.hs"
+   ],
+   "line": 313,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC182",
+   "query": "A value, i.e. a document plus an indication of whether it needs parentheses when used as a constructor argument",
+   "identifier": "V",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Native.hs"
+   ],
+   "line": 73,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC183",
+   "query": "Split a modifier stack (outermost first) after its innermost tracked-change span, if it has one",
+   "identifier": "breakAtTrackedChange",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Docx/Combine.hs"
+   ],
+   "line": 95,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC184",
+   "query": "Convert bullet or ordered list item (list of blocks) to Textile",
+   "identifier": "listItemToTextile",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Textile.hs"
+   ],
+   "line": 266,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC185",
+   "query": "Convert list of inline elements to ConTeXt",
+   "identifier": "inlineListToConTeXt",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/ConTeXt.hs"
+   ],
+   "line": 555,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC186",
+   "query": "Convert Pandoc to Markdown",
+   "identifier": "writeMarkdown",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Markdown.hs"
+   ],
+   "line": 62,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC187",
+   "query": "Parses a closing quote character",
+   "identifier": "doubleQuoteEnd",
+   "definedIn": [
+    "src/Text/Pandoc/Parsing/Smart.hs"
+   ],
+   "line": 141,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC188",
+   "query": "Convert Pandoc inline element to Textile",
+   "identifier": "inlineToTextile",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Textile.hs"
+   ],
+   "line": 379,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC189",
+   "query": "Convert ordered list item (a list of blocks) to markdown",
+   "identifier": "orderedListItemToMarkdown",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Markdown.hs"
+   ],
+   "line": 844,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC190",
+   "query": "Convert all chars in a string to Unicode subscript",
+   "identifier": "subscript",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Module/Text.hs"
+   ],
+   "line": 55,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC191",
+   "query": "In textile, paragraphs are separated by blank lines",
+   "identifier": "para",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Textile.hs"
+   ],
+   "line": 385,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC192",
+   "query": "Decrement all previously tracked trailing 'RowSpan' elements at or after a column position",
+   "identifier": "decrementTrailingRowSpans",
+   "definedIn": [
+    "src/Text/Pandoc/Writers/Shared.hs"
+   ],
+   "line": 996,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC193",
+   "query": "Lookup the value of an attribute",
+   "identifier": "findAttr",
+   "definedIn": [
+    "xml-light/Text/Pandoc/XML/Light/Proc.hs"
+   ],
+   "line": 123,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC194",
+   "query": "Convert string to plain text identifier",
+   "identifier": "textToIdentifier",
+   "definedIn": [
+    "src/Text/Pandoc/Shared.hs"
+   ],
+   "line": 551,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC195",
+   "query": "Split list by groups of one or more sep",
+   "identifier": "splitBy",
+   "definedIn": [
+    "src/Text/Pandoc/Shared.hs"
+   ],
+   "line": 130,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC196",
+   "query": "Retrieves an 'ExtensionsConfig' value from the Lua stack",
+   "identifier": "peekExtensionsConfig",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/Marshal/Format.hs"
+   ],
+   "line": 64,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC197",
+   "query": "Type providing access to both, pandoc and Lua operations",
+   "identifier": "PandocLua",
+   "definedIn": [
+    "pandoc-lua-engine/src/Text/Pandoc/Lua/PandocLua.hs"
+   ],
+   "line": 36,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPANDOC198",
+   "query": "literal text escaped btw tags",
+   "identifier": "escapedTag",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Textile.hs"
+   ],
+   "line": 770,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPANDOC199",
+   "query": "Shared strings table (Vector for O(1) lookup)",
+   "identifier": "SharedStrings",
+   "definedIn": [
+    "src/Text/Pandoc/Readers/Xlsx/Parse.hs"
+   ],
+   "line": 42,
+   "nameWordsInQuery": true
+  }
+ ]
+}

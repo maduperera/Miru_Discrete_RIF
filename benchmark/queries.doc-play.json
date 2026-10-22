@@ -1,0 +1,2010 @@
+{
+ "repo": "doc-play",
+ "source": "id-play",
+ "commit": "8c8390f31159de4c4433fe6d79063d20fc12ae74",
+ "lang": "scala",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "200 docstring-style queries (first sentence of the doc comment of one definition), drawn by gen_queries_doc.py (seed 0xa11ce); corpus is the pinned repo with all definition doc comments removed (scripts/extract_docqueries.ts --strip). Documented definitions available: 1089 (of 9778 definitions).",
+ "queries": [
+  {
+   "id": "DPLAY0",
+   "query": "The URI for this request",
+   "identifier": "uri",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSRequest.scala"
+   ],
+   "line": 28,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY1",
+   "query": "First runs the parser, then invokes the given \"next\" action",
+   "identifier": "runParserThenInvokeAction",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Action.scala"
+   ],
+   "line": 248,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY2",
+   "query": "Reset the user's language by discarding the language cookie set by withLang",
+   "identifier": "withoutLang",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Results.scala"
+   ],
+   "line": 507,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY3",
+   "query": "Create a Lang value from a code (such as fr or en-US) or none if language is unrecognized",
+   "identifier": "get",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/i18n/Langs.scala"
+   ],
+   "line": 131,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY4",
+   "query": "Accepts a WebSocket using the given flow",
+   "identifier": "accept",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/WebSocket.scala"
+   ],
+   "line": 364,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY5",
+   "query": "Converts a byte array into an array of characters that denotes a hexadecimal representation",
+   "identifier": "toHex",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/libs/Codecs.scala"
+   ],
+   "line": 55,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY6",
+   "query": "The response body as Xml",
+   "identifier": "xml",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSResponse.scala"
+   ],
+   "line": 86,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY7",
+   "query": "Does a map and contramap on the processor",
+   "identifier": "transform",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/SynchronousMappedStreams.scala"
+   ],
+   "line": 66,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY8",
+   "query": "Run all tasks that have been scheduled in the ThreadLocal",
+   "identifier": "executeScheduled",
+   "definedIn": [
+    "core/play-streams/src/main/scala/play/api/libs/streams/Execution.scala"
+   ],
+   "line": 94,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY9",
+   "query": "Requires that Guice finds an exactly matching binding annotation",
+   "identifier": "requireExactBindingAnnotations",
+   "definedIn": [
+    "core/play-guice/src/main/scala/play/api/inject/guice/GuiceInjectorBuilder.scala"
+   ],
+   "line": 120,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY10",
+   "query": "The certificate was accepted from the RFC 9440 Client-Cert header fields",
+   "identifier": "Rfc9440",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/request/ClientCertificateInfo.scala"
+   ],
+   "line": 26,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY11",
+   "query": "Utility methods related to using Pekko's typed API",
+   "identifier": "TypedPekko",
+   "definedIn": [
+    "core/play-guice/src/main/scala/play/api/libs/concurrent/TypedPekko.scala"
+   ],
+   "line": 19,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY12",
+   "query": "Generate the reverse route context",
+   "identifier": "reverseRouteContext",
+   "definedIn": [
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/templates/package.scala"
+   ],
+   "line": 281,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY13",
+   "query": "Select certificate metadata for an error request without repeating selection that already failed during normal request conversion",
+   "identifier": "clientCertificatesForErrorRequest",
+   "definedIn": [
+    "transport/server/play-server/src/main/scala/play/core/server/common/ClientCertificateHeaderHandler.scala"
+   ],
+   "line": 56,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY14",
+   "query": "Helper to access the application defined Pekko Actor system",
+   "identifier": "Pekko",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/libs/concurrent/Pekko.scala"
+   ],
+   "line": 38,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY15",
+   "query": "Constructs a simple mapping for a date field (mapped as java.time.LocalTime type)",
+   "identifier": "localTime",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/data/Forms.scala"
+   ],
+   "line": 700,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY16",
+   "query": "A modifier tag in the routes file",
+   "identifier": "Modifier",
+   "definedIn": [
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/RoutesModels.scala"
+   ],
+   "line": 118,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY17",
+   "query": "Invoked in prod mode when a server error occurs",
+   "identifier": "onProdServerError",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/HttpErrorHandler.scala"
+   ],
+   "line": 340,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY18",
+   "query": "Components for Jackson ObjectMapper and Play's Json",
+   "identifier": "ObjectMapperComponents",
+   "definedIn": [
+    "core/play/src/main/scala/play/core/ObjectMapperModule.scala"
+   ],
+   "line": 97,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY19",
+   "query": "Optionally returns the first header value associated with a key",
+   "identifier": "get",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Headers.scala"
+   ],
+   "line": 61,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY20",
+   "query": "Locates and loads modules from the Play environment",
+   "identifier": "Modules",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/inject/Module.scala"
+   ],
+   "line": 103,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY21",
+   "query": "A project that is only used when running in development",
+   "identifier": "PlayDevelopmentProject",
+   "definedIn": [
+    "project/BuildSettings.scala"
+   ],
+   "line": 742,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY22",
+   "query": "The effective X.509 client certificate selected for this request, if present",
+   "identifier": "clientCertificate",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/RequestHeader.scala"
+   ],
+   "line": 48,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY23",
+   "query": "Apply trusted X-Forwarded authority metadata to the effective request host",
+   "identifier": "xForwardedAuthority",
+   "definedIn": [
+    "transport/server/play-server/src/main/scala/play/core/server/common/ForwardedHeaderHandler.scala"
+   ],
+   "line": 470,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY24",
+   "query": "Discards cookies along this result",
+   "identifier": "discardingCookies",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Results.scala"
+   ],
+   "line": 215,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY25",
+   "query": "Configures the SLF4J logger factory",
+   "identifier": "configureLoggerFactory",
+   "definedIn": [
+    "core/play-guice/src/main/scala/play/api/inject/guice/GuiceApplicationBuilder.scala"
+   ],
+   "line": 148,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY26",
+   "query": "Represents an Option[DevContext] so that it can be used for dependency injection",
+   "identifier": "OptionalDevContext",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/ApplicationLoader.scala"
+   ],
+   "line": 259,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY27",
+   "query": "Eagerly instantiate this binding when Play starts up",
+   "identifier": "eagerly",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/inject/Binding.scala"
+   ],
+   "line": 58,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY28",
+   "query": "Certain response codes are forbidden by the HTTP spec to contain content, but a gzipped response always contains a minimum of 20 bytes, even for empty responses",
+   "identifier": "isAllowedContent",
+   "definedIn": [
+    "web/play-filters-helpers/src/main/scala/play/filters/gzip/GzipFilter.scala"
+   ],
+   "line": 180,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY29",
+   "query": "The JDBC connection URL this database, i.e. jdbc",
+   "identifier": "url",
+   "definedIn": [
+    "persistence/play-jdbc-api/src/main/scala/play/api/db/Database.scala"
+   ],
+   "line": 29,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY30",
+   "query": "Create a pooled database named \"default\" with the given driver and url",
+   "identifier": "apply",
+   "definedIn": [
+    "persistence/play-jdbc/src/main/scala/play/api/db/Databases.scala"
+   ],
+   "line": 35,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY31",
+   "query": "Fills this form with a existing value, used for edit forms",
+   "identifier": "fill",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/data/Form.scala"
+   ],
+   "line": 144,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY32",
+   "query": "A Connection: close header should be sent",
+   "identifier": "SendClose",
+   "definedIn": [
+    "transport/server/play-server/src/main/scala/play/core/server/common/ServerResultUtils.scala"
+   ],
+   "line": 266,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY33",
+   "query": "Twirl scala content type",
+   "identifier": "ScalaContent",
+   "definedIn": [
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/ScalaFormat.scala"
+   ],
+   "line": 15,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY34",
+   "query": "Get a value that may either not exist or be null",
+   "identifier": "getOptional",
+   "definedIn": [
+    "core/play-configuration/src/main/scala/play/api/Configuration.scala"
+   ],
+   "line": 250,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY35",
+   "query": "Provides an HTTP and HTTPS server for the dev environment",
+   "identifier": "mainDevHttpAndHttpsMode",
+   "definedIn": [
+    "transport/server/play-server/src/main/scala/play/core/server/DevServerStart.scala"
+   ],
+   "line": 78,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY36",
+   "query": "The constraints associated with this field",
+   "identifier": "constraints",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/data/Form.scala"
+   ],
+   "line": 594,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY37",
+   "query": "Resolve an inconsistent evolution",
+   "identifier": "resolve",
+   "definedIn": [
+    "persistence/play-jdbc-evolutions/src/main/scala/play/api/db/evolutions/Evolutions.scala"
+   ],
+   "line": 492,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY38",
+   "query": "Create a full URL out of a path",
+   "identifier": "pathUrl",
+   "definedIn": [
+    "transport/server/play-server/src/main/scala/play/core/server/ServerEndpoint.scala"
+   ],
+   "line": 30,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY39",
+   "query": "Metadata about the network connection directly terminating at Play",
+   "identifier": "transport",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/RequestHeader.scala"
+   ],
+   "line": 29,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY40",
+   "query": "A part that has not been properly parsed",
+   "identifier": "BadPart",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/BodyParsers.scala"
+   ],
+   "line": 226,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY41",
+   "query": "A compile time default filters components",
+   "identifier": "HttpFiltersComponents",
+   "definedIn": [
+    "web/play-filters-helpers/src/main/scala/play/filters/HttpFiltersComponents.scala"
+   ],
+   "line": 24,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY42",
+   "query": "Cryptographic utilities for generating and validating CSRF tokens",
+   "identifier": "CSRFTokenSigner",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/libs/crypto/CSRFTokenSigner.scala"
+   ],
+   "line": 22,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY43",
+   "query": "Defines an optional mapping",
+   "identifier": "optional",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/data/Forms.scala"
+   ],
+   "line": 473,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY44",
+   "query": "Constructs a simple mapping for a numeric field (using a Long type behind)",
+   "identifier": "longNumber",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/data/Forms.scala"
+   ],
+   "line": 359,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY45",
+   "query": "This class is used for generating random tokens for CSRF",
+   "identifier": "DefaultCSRFTokenSigner",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/libs/crypto/CSRFTokenSigner.scala"
+   ],
+   "line": 62,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY46",
+   "query": "A registered name, including the empty registered name allowed by RFC 3986",
+   "identifier": "RegName",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/request/RequestAuthority.scala"
+   ],
+   "line": 29,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY47",
+   "query": "Default implementation of the application lifecycle",
+   "identifier": "DefaultApplicationLifecycle",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/inject/ApplicationLifecycle.scala"
+   ],
+   "line": 102,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY48",
+   "query": "The gzip filter configuration provider",
+   "identifier": "GzipFilterConfigProvider",
+   "definedIn": [
+    "web/play-filters-helpers/src/main/scala/play/filters/gzip/GzipFilter.scala"
+   ],
+   "line": 303,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY49",
+   "query": "Convert a Scala Option to Javascript literal (use null for None)",
+   "identifier": "literalOption",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Binders.scala"
+   ],
+   "line": 298,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY50",
+   "query": "Create request target information from a Netty request",
+   "identifier": "createRequestTarget",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/NettyModelConversion.scala"
+   ],
+   "line": 94,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY51",
+   "query": "Adds a filter to the request that can transform the request for subsequent filters",
+   "identifier": "withRequestFilter",
+   "definedIn": [
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSRequest.scala"
+   ],
+   "line": 143,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY52",
+   "query": "A path part descriptor",
+   "identifier": "PathPart",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/routing/sird/PathExtractor.scala"
+   ],
+   "line": 87,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY53",
+   "query": "Creates temporary folders inside a single temporary folder. deleting all files on a successful application stop",
+   "identifier": "DefaultTemporaryFileCreator",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/libs/Files.scala"
+   ],
+   "line": 243,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY54",
+   "query": "Create a Netty streamed response",
+   "identifier": "createStreamedResponse",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/NettyModelConversion.scala"
+   ],
+   "line": 369,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY55",
+   "query": "The plugin that adds Play Filters as a default",
+   "identifier": "PlayFilters",
+   "definedIn": [
+    "dev-mode/sbt-plugin/src/main/scala/play/sbt/PlayFilters.scala"
+   ],
+   "line": 19,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY56",
+   "query": "Parse the given routes file content",
+   "identifier": "parseContent",
+   "definedIn": [
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/RoutesFileParser.scala"
+   ],
+   "line": 36,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY57",
+   "query": "A qualifier annotation class",
+   "identifier": "QualifierClass",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/inject/Binding.scala"
+   ],
+   "line": 344,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY58",
+   "query": "Convert a Scala Float to Javascript number",
+   "identifier": "literalFloat",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Binders.scala"
+   ],
+   "line": 258,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY59",
+   "query": "Conversions between Pekko's and Play's HTTP model objects",
+   "identifier": "PekkoModelConversion",
+   "definedIn": [
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/pekkohttp/PekkoModelConversion.scala"
+   ],
+   "line": 47,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY60",
+   "query": "Creates a provider whose actor system only gets terminated when its coordinated shutdown runs, e.g. when the application gets stopped, but not when only the application lifecycle stops",
+   "identifier": "this",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/libs/concurrent/Pekko.scala"
+   ],
+   "line": 144,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY61",
+   "query": "Base Plugin for a root project that doesn't get published",
+   "identifier": "PlayRootProjectBase",
+   "definedIn": [
+    "project/PlayRootProjectBase.scala"
+   ],
+   "line": 12,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY62",
+   "query": "A variation of BaseController that gets its components via method injection",
+   "identifier": "InjectedController",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Controller.scala"
+   ],
+   "line": 181,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY63",
+   "query": "Default implementation of AssetsMetadata",
+   "identifier": "DefaultAssetsMetadata",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/controllers/Assets.scala"
+   ],
+   "line": 410,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY64",
+   "query": "Retrieve the first error for this key",
+   "identifier": "error",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/data/Form.scala"
+   ],
+   "line": 242,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY65",
+   "query": "Given a list of acceptable media ranges, find the preferred media type in the list of available media types",
+   "identifier": "preferred",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/MediaRange.scala"
+   ],
+   "line": 109,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY66",
+   "query": "Provides source code to be displayed on error pages",
+   "identifier": "SourceMapper",
+   "definedIn": [
+    "core/play/src/main/scala/play/core/ApplicationProvider.scala"
+   ],
+   "line": 18,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY67",
+   "query": "Cake for building a simple Netty server",
+   "identifier": "NettyServerComponents",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/NettyServer.scala"
+   ],
+   "line": 703,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY68",
+   "query": "Add Guice modules, Play modules, or Play bindings",
+   "identifier": "bindings",
+   "definedIn": [
+    "core/play-guice/src/main/scala/play/api/inject/guice/GuiceInjectorBuilder.scala"
+   ],
+   "line": 145,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY69",
+   "query": "Invoked when a client makes a bad request",
+   "identifier": "onBadRequest",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/HttpErrorHandler.scala"
+   ],
+   "line": 212,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY70",
+   "query": "Generate a router object identifier",
+   "identifier": "routerIdentifier",
+   "definedIn": [
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/templates/package.scala"
+   ],
+   "line": 44,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY71",
+   "query": "Validation was a success",
+   "identifier": "Valid",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/data/validation/Validation.scala"
+   ],
+   "line": 210,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY72",
+   "query": "Attach a body to this header",
+   "identifier": "withBody",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/RequestHeader.scala"
+   ],
+   "line": 475,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY73",
+   "query": "A session cookie that reads in both signed and JWT cookies, and writes out JWT cookies",
+   "identifier": "DefaultSessionCookieBaker",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Session.scala"
+   ],
+   "line": 120,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY74",
+   "query": "Default module for evolutions API",
+   "identifier": "EvolutionsModule",
+   "definedIn": [
+    "persistence/play-jdbc-evolutions/src/main/scala/play/api/db/evolutions/EvolutionsModule.scala"
+   ],
+   "line": 17,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY75",
+   "query": "Augment or transform an existing request",
+   "identifier": "transform",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Action.scala"
+   ],
+   "line": 551,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY76",
+   "query": "AnyContent - Text body",
+   "identifier": "AnyContentAsText",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/BodyParsers.scala"
+   ],
+   "line": 122,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY77",
+   "query": "Exception thrown when the database is in an inconsistent state",
+   "identifier": "InconsistentDatabase",
+   "definedIn": [
+    "persistence/play-jdbc-evolutions/src/main/scala/play/api/db/evolutions/EvolutionsApi.scala"
+   ],
+   "line": 910,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY78",
+   "query": "A logback converter generating colored, lower-case level names",
+   "identifier": "ColoredLevel",
+   "definedIn": [
+    "core/play-logback/src/main/scala/play/api/libs/logback/ColoredLevel.scala"
+   ],
+   "line": 21,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY79",
+   "query": "QueryString binder for java.util.List",
+   "identifier": "bindableJavaList",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Binders.scala"
+   ],
+   "line": 608,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY80",
+   "query": "Derive authority for synthetic requests that do not enforce a wire protocol version",
+   "identifier": "initialAuthority",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/RequestHeader.scala"
+   ],
+   "line": 651,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY81",
+   "query": "Create a simple evolutions reader from the given data",
+   "identifier": "from",
+   "definedIn": [
+    "persistence/play-jdbc-evolutions/src/main/scala/play/api/db/evolutions/EvolutionsApi.scala"
+   ],
+   "line": 878,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY82",
+   "query": "Converts the given cookie object into a data map",
+   "identifier": "serialize",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Cookie.scala"
+   ],
+   "line": 529,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY83",
+   "query": "Defines Evolutions utilities functions",
+   "identifier": "Evolutions",
+   "definedIn": [
+    "persistence/play-jdbc-evolutions/src/main/scala/play/api/db/evolutions/Evolutions.scala"
+   ],
+   "line": 152,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY84",
+   "query": "Implicitly converts a TemporaryFile to a plain old java.io.File",
+   "identifier": "temporaryFileToFile",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/libs/Files.scala"
+   ],
+   "line": 518,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY85",
+   "query": "Logs a redirect warning for flashing (in dev mode) if the status code is not 3xx",
+   "identifier": "warnFlashingIfNotRedirect",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Results.scala"
+   ],
+   "line": 119,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY86",
+   "query": "A filter to allow or deny selected remote identities",
+   "identifier": "IPFilter",
+   "definedIn": [
+    "web/play-filters-helpers/src/main/scala/play/filters/ip/IPFilter.scala"
+   ],
+   "line": 34,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY87",
+   "query": "Convert configuration sections of key-boolean pairs to a set of enabled keys",
+   "identifier": "enabledKeys",
+   "definedIn": [
+    "persistence/play-jdbc-evolutions/src/main/scala/play/api/db/evolutions/ApplicationEvolutions.scala"
+   ],
+   "line": 532,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY88",
+   "query": "A comment from the routes file",
+   "identifier": "Comment",
+   "definedIn": [
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/RoutesModels.scala"
+   ],
+   "line": 113,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY89",
+   "query": "Information about an outbound WebSocket message for which Play is deciding whether to use compression",
+   "identifier": "CompressionContext",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/WebSocket.scala"
+   ],
+   "line": 104,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY90",
+   "query": "Converts a byte array into a String that denotes a hexadecimal representation",
+   "identifier": "toHexString",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/libs/Codecs.scala"
+   ],
+   "line": 60,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY91",
+   "query": "Generate a base identifier for the given route",
+   "identifier": "baseIdentifier",
+   "definedIn": [
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/templates/package.scala"
+   ],
+   "line": 27,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY92",
+   "query": "Derive direct effective client certificate information from Play's transport metadata",
+   "identifier": "fromTransport",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/request/ClientCertificateInfo.scala"
+   ],
+   "line": 86,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY93",
+   "query": "A project that is shared between the sbt runtime and the Play runtime",
+   "identifier": "PlayNonCrossBuiltProject",
+   "definedIn": [
+    "project/BuildSettings.scala"
+   ],
+   "line": 726,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY94",
+   "query": "Constructs a simple mapping for a date field (mapped as sql.Date type)",
+   "identifier": "sqlDate",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/data/Forms.scala"
+   ],
+   "line": 585,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY95",
+   "query": "Helper function to produce a Comet using Pekko Streams",
+   "identifier": "Comet",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/libs/Comet.scala"
+   ],
+   "line": 34,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY96",
+   "query": "Signal a max content size exceeded",
+   "identifier": "MaxSizeExceeded",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/BodyParsers.scala"
+   ],
+   "line": 1233,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY97",
+   "query": "Components for building a simple Pekko HTTP Server",
+   "identifier": "PekkoHttpServerComponents",
+   "definedIn": [
+    "transport/server/play-pekko-http-server/src/main/scala/play/core/server/PekkoHttpServer.scala"
+   ],
+   "line": 828,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY98",
+   "query": "Helper for getting properties",
+   "identifier": "prop",
+   "definedIn": [
+    "transport/server/play-server/src/main/scala/play/core/server/ServerProcess.scala"
+   ],
+   "line": 28,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY99",
+   "query": "Creates an ApplicationProvider that wraps an Application instance",
+   "identifier": "apply",
+   "definedIn": [
+    "core/play/src/main/scala/play/core/ApplicationProvider.scala"
+   ],
+   "line": 52,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY100",
+   "query": "An entry that binds a typed key and a value",
+   "identifier": "TypedEntry",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/libs/typedmap/TypedEntry.scala"
+   ],
+   "line": 16,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY101",
+   "query": "Formatter for the java.sql.Timestamp type",
+   "identifier": "sqlTimestampFormat",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/data/format/Format.scala"
+   ],
+   "line": 266,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY102",
+   "query": "Generates a WS Request",
+   "identifier": "url",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSClient.scala"
+   ],
+   "line": 37,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY103",
+   "query": "Injection helper for i18n components",
+   "identifier": "I18nComponents",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/i18n/I18nModule.scala"
+   ],
+   "line": 27,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY104",
+   "query": "This trait is an ActionBuilder that provides a MessagesRequest to the block",
+   "identifier": "MessagesActionBuilder",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/MessagesRequest.scala"
+   ],
+   "line": 71,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY105",
+   "query": "Creates a Server from the given router, using ServerComponents",
+   "identifier": "fromRouterWithComponents",
+   "definedIn": [
+    "transport/server/play-server/src/main/scala/play/core/server/Server.scala"
+   ],
+   "line": 437,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY106",
+   "query": "Convert a Java Long to Javascript number (or Javascript null if given Long value is null)",
+   "identifier": "literalJavaLong",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Binders.scala"
+   ],
+   "line": 253,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY107",
+   "query": "Direct request-target metadata selected before trusted forwarding is applied",
+   "identifier": "InitialRequestTarget",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/RequestHeader.scala"
+   ],
+   "line": 554,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY108",
+   "query": "Helper to calculate the ServerDebugInfo after a reload",
+   "identifier": "reloadDebugInfo",
+   "definedIn": [
+    "transport/server/play-server/src/main/scala/play/core/server/common/ReloadCache.scala"
+   ],
+   "line": 62,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY109",
+   "query": "Read the file as a String",
+   "identifier": "readFileAsString",
+   "definedIn": [
+    "core/play/src/main/scala/play/utils/PlayIO.scala"
+   ],
+   "line": 61,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY110",
+   "query": "Default max length allowed for disk based body",
+   "identifier": "DefaultMaxDiskLength",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/BodyParsers.scala"
+   ],
+   "line": 481,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY111",
+   "query": "Convert a Java Character to Javascript literal (or Javascript null if given Character value is null)",
+   "identifier": "literalJavaCharacter",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Binders.scala"
+   ],
+   "line": 293,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY112",
+   "query": "Extractors that bind types from paths using play.api.mvc.PathBindable",
+   "identifier": "PathBindableExtractors",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/routing/sird/PathBindableExtractor.scala"
+   ],
+   "line": 53,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY113",
+   "query": "Constructs a simple mapping for a Timestamp field (mapped as java.sql.Timestamp type)",
+   "identifier": "sqlTimestamp",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/data/Forms.scala"
+   ],
+   "line": 608,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY114",
+   "query": "Extract the local names out from the route, as tuple",
+   "identifier": "tupleNames",
+   "definedIn": [
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/templates/package.scala"
+   ],
+   "line": 105,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY115",
+   "query": "Plugins configuration for a Play sbt library",
+   "identifier": "PlaySbtLibrary",
+   "definedIn": [
+    "project/PlayBuildBase.scala"
+   ],
+   "line": 30,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY116",
+   "query": "A token provider, for generating and comparing tokens",
+   "identifier": "TokenProvider",
+   "definedIn": [
+    "web/play-filters-helpers/src/main/scala/play/filters/csrf/csrf.scala"
+   ],
+   "line": 237,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY117",
+   "query": "The IP filter components",
+   "identifier": "IPFilterComponents",
+   "definedIn": [
+    "web/play-filters-helpers/src/main/scala/play/filters/ip/IPFilter.scala"
+   ],
+   "line": 265,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY118",
+   "query": "A utility class for matching a host header with a pattern",
+   "identifier": "HostMatcher",
+   "definedIn": [
+    "web/play-filters-helpers/src/main/scala/play/filters/hosts/AllowedHostsFilter.scala"
+   ],
+   "line": 71,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY119",
+   "query": "Adds cookies to this WebSocket upgrade response",
+   "identifier": "withCookies",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/WebSocket.scala"
+   ],
+   "line": 158,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY120",
+   "query": "The value of the SameSite attribute of the cookie",
+   "identifier": "sameSite",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Cookie.scala"
+   ],
+   "line": 478,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY121",
+   "query": "The transient language will be taken into account when using play.api.i18n.MessagesApi.preferred() (It will take precedence over any other language)",
+   "identifier": "transientLang",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/RequestHeader.scala"
+   ],
+   "line": 534,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY122",
+   "query": "Uses an HMAC-SHA1 for signing cookies",
+   "identifier": "DefaultCookieSigner",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/libs/crypto/CookieSigner.scala"
+   ],
+   "line": 64,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY123",
+   "query": "Attempt to convert a module of unknown type to a GuiceableModule",
+   "identifier": "guiceable",
+   "definedIn": [
+    "core/play-guice/src/main/scala/play/api/inject/guice/GuiceInjectorBuilder.scala"
+   ],
+   "line": 311,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY124",
+   "query": "Retrieve a value from the cache, or set it from a default function",
+   "identifier": "getOrElseUpdate",
+   "definedIn": [
+    "cache/play-cache/src/main/scala/play/api/cache/AsyncCacheApi.scala"
+   ],
+   "line": 44,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY125",
+   "query": "QueryString binder for Java OptionalDouble",
+   "identifier": "bindableJavaOptionalDouble",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Binders.scala"
+   ],
+   "line": 573,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY126",
+   "query": "Override the router with a router that first tries to route to the passed in additional router, before falling back to the default router",
+   "identifier": "additionalRouter",
+   "definedIn": [
+    "core/play-guice/src/main/scala/play/api/inject/guice/GuiceApplicationBuilder.scala"
+   ],
+   "line": 97,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY127",
+   "query": "Parses out the AllowedHostsConfig from play.api.Configuration (usually this means application.conf)",
+   "identifier": "fromConfiguration",
+   "definedIn": [
+    "web/play-filters-helpers/src/main/scala/play/filters/hosts/AllowedHostsFilter.scala"
+   ],
+   "line": 111,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY128",
+   "query": "Convert a Java Double to Javascript number (or Javascript null if given Double value is null)",
+   "identifier": "literalJavaDouble",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Binders.scala"
+   ],
+   "line": 273,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY129",
+   "query": "Keys to request attributes",
+   "identifier": "RequestAttrKey",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/request/RequestAttrKey.scala"
+   ],
+   "line": 20,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY130",
+   "query": "Dev, Prod or Test",
+   "identifier": "mode",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/Application.scala"
+   ],
+   "line": 72,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY131",
+   "query": "Tries to render the most acceptable result according to the request\u2019s Accept header value. {{{ def myAction = Action { implicit req => val value = ... render { case Accepts.Html() => Ok(views.html.show(value)) case Accepts.Json() => Ok(Json.toJson(value)) } } }}}",
+   "identifier": "apply",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Render.scala"
+   ],
+   "line": 32,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY132",
+   "query": "DB API for managing application databases",
+   "identifier": "DBApi",
+   "definedIn": [
+    "persistence/play-jdbc-api/src/main/scala/play/api/db/DBApi.scala"
+   ],
+   "line": 10,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY133",
+   "query": "A singleton Provider of the typed ActorRef[T] resulting from spawning an actor with the Behavior[T] in dependency scope and the given name, in the ActorSystem in dependency scope",
+   "identifier": "TypedActorRefProvider",
+   "definedIn": [
+    "core/play-guice/src/main/scala/play/api/libs/concurrent/TypedActorRefProvider.scala"
+   ],
+   "line": 27,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY134",
+   "query": "EhCache components for compile time injection",
+   "identifier": "EhCacheComponents",
+   "definedIn": [
+    "cache/play-ehcache/src/main/scala/play/api/cache/ehcache/EhCacheApi.scala"
+   ],
+   "line": 37,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY135",
+   "query": "Check if the route for this request has the given modifier tag (case insensitive)",
+   "identifier": "hasRouteModifier",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/routing/Router.scala"
+   ],
+   "line": 113,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY136",
+   "query": "CSRF add token action",
+   "identifier": "CSRFAddToken",
+   "definedIn": [
+    "web/play-filters-helpers/src/main/scala/play/filters/csrf/CSRFActions.scala"
+   ],
+   "line": 690,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY137",
+   "query": "A body parser that flattens a future BodyParser",
+   "identifier": "flatten",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/BodyParsers.scala"
+   ],
+   "line": 353,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY138",
+   "query": "The router that's used to pass requests to the correct handler",
+   "identifier": "router",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/Application.scala"
+   ],
+   "line": 241,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY139",
+   "query": "Signal max size is not exceeded",
+   "identifier": "MaxSizeNotExceeded",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/BodyParsers.scala"
+   ],
+   "line": 1238,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY140",
+   "query": "Run a block of code with a server for the application containing routes",
+   "identifier": "withApplicationFromContext",
+   "definedIn": [
+    "transport/server/play-server/src/main/scala/play/core/server/Server.scala"
+   ],
+   "line": 372,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY141",
+   "query": "Convert a Scala Long to Javascript Long",
+   "identifier": "literalLong",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Binders.scala"
+   ],
+   "line": 248,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY142",
+   "query": "The default Materializer used by the application",
+   "identifier": "materializer",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/Application.scala"
+   ],
+   "line": 96,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY143",
+   "query": "Translates evolution scripts into something human-readable",
+   "identifier": "toHumanReadableScript",
+   "definedIn": [
+    "persistence/play-jdbc-evolutions/src/main/scala/play/api/db/evolutions/Evolutions.scala"
+   ],
+   "line": 243,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY144",
+   "query": "Sets the body for this request",
+   "identifier": "withBody",
+   "definedIn": [
+    "transport/client/play-ws/src/main/scala/play/api/libs/ws/WSRequest.scala"
+   ],
+   "line": 158,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY145",
+   "query": "Get the underlying response object, i.e. play.shaded.ahc.org.asynchttpclient.Response",
+   "identifier": "underlying",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSResponse.scala"
+   ],
+   "line": 39,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY146",
+   "query": "Create a new Play application Module for an Application using this configured builder",
+   "identifier": "applicationModule",
+   "definedIn": [
+    "core/play-guice/src/main/scala/play/api/inject/guice/GuiceApplicationBuilder.scala"
+   ],
+   "line": 103,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY147",
+   "query": "This helper class provides all the built-in component dependencies by trading them for a single dependency - the application loader context",
+   "identifier": "BuiltInComponentsFromContext",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/ApplicationLoader.scala"
+   ],
+   "line": 228,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY148",
+   "query": "Indicates if the process of applying evolutions scripts is finished or not",
+   "identifier": "upToDate",
+   "definedIn": [
+    "persistence/play-jdbc-evolutions/src/main/scala/play/api/db/evolutions/ApplicationEvolutions.scala"
+   ],
+   "line": 47,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY149",
+   "query": "Default implementation of the database API",
+   "identifier": "DefaultDatabase",
+   "definedIn": [
+    "persistence/play-jdbc/src/main/scala/play/api/db/Databases.scala"
+   ],
+   "line": 114,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY150",
+   "query": "The unique id of the JWT, if any",
+   "identifier": "uniqueId",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Cookie.scala"
+   ],
+   "line": 711,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY151",
+   "query": "An injector that simply creates a new instance of the passed in classes using the classes no-arg constructor",
+   "identifier": "NewInstanceInjector",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/inject/Injector.scala"
+   ],
+   "line": 47,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY152",
+   "query": "Like map but allows the map function to execute asynchronously",
+   "identifier": "mapM",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Action.scala"
+   ],
+   "line": 132,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY153",
+   "query": "AnyContent - Empty request body",
+   "identifier": "AnyContentAsEmpty",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/BodyParsers.scala"
+   ],
+   "line": 117,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY154",
+   "query": "The numeric projection of nodePort, when present",
+   "identifier": "port",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/request/RemoteInfo.scala"
+   ],
+   "line": 125,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY155",
+   "query": "Create request target information from a request uri String where there was a parsing failure",
+   "identifier": "createUnparsedRequestTarget",
+   "definedIn": [
+    "transport/server/play-server/src/main/scala/play/core/server/Server.scala"
+   ],
+   "line": 158,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY156",
+   "query": "AHC provider for WSClient instance",
+   "identifier": "AhcWSClientProvider",
+   "definedIn": [
+    "transport/client/play-ahc-ws/src/main/scala/play/api/libs/ws/ahc/AhcWSModule.scala"
+   ],
+   "line": 220,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY157",
+   "query": "Converts Netty frames to Play RawMessages",
+   "identifier": "frameToMessage",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/WebSocketHandler.scala"
+   ],
+   "line": 123,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY158",
+   "query": "An in memory JNDI implementation",
+   "identifier": "initialContext",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/libs/JNDI.scala"
+   ],
+   "line": 23,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY159",
+   "query": "Probes, for debugging reactive streams",
+   "identifier": "Probes",
+   "definedIn": [
+    "core/play-streams/src/main/scala/play/api/libs/streams/Probes.scala"
+   ],
+   "line": 18,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY160",
+   "query": "Calculate the parameters for the javascript reverse route call for the given routes",
+   "identifier": "reverseParametersJavascript",
+   "definedIn": [
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/templates/package.scala"
+   ],
+   "line": 218,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY161",
+   "query": "The HandlerDef representing the routes file entry (if any) on this request",
+   "identifier": "handlerDef",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/routing/Router.scala"
+   ],
+   "line": 106,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY162",
+   "query": "Convert a Java Optional to Javascript literal (use \"null\" for an empty Optional)",
+   "identifier": "literalJavaOption",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Binders.scala"
+   ],
+   "line": 304,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY163",
+   "query": "Discards the existing session for this result",
+   "identifier": "withNewSession",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Results.scala"
+   ],
+   "line": 255,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY164",
+   "query": "Retrieve all header values associated with the given key",
+   "identifier": "getAll",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Headers.scala"
+   ],
+   "line": 66,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY165",
+   "query": "Whether this response should be compressed",
+   "identifier": "shouldCompress",
+   "definedIn": [
+    "web/play-filters-helpers/src/main/scala/play/filters/gzip/GzipFilter.scala"
+   ],
+   "line": 170,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY166",
+   "query": "Utilities for Codecs operations",
+   "identifier": "Codecs",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/libs/Codecs.scala"
+   ],
+   "line": 15,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY167",
+   "query": "Invoked when a handler or resource is not found",
+   "identifier": "onNotFound",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/HttpErrorHandler.scala"
+   ],
+   "line": 232,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY168",
+   "query": "Transform this Mapping[T] to a Mapping[B]",
+   "identifier": "transform",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/data/Form.scala"
+   ],
+   "line": 686,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY169",
+   "query": "The default CSP processor",
+   "identifier": "DefaultCSPProcessor",
+   "definedIn": [
+    "web/play-filters-helpers/src/main/scala/play/filters/csp/CSPProcessor.scala"
+   ],
+   "line": 47,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY170",
+   "query": "Default content type for Xml values (application/xml)",
+   "identifier": "contentTypeOf_Xml",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/ContentTypeOf.scala"
+   ],
+   "line": 43,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY171",
+   "query": "A source for messages",
+   "identifier": "MessageSource",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/i18n/Messages.scala"
+   ],
+   "line": 100,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY172",
+   "query": "Convert this assertion to the Java API",
+   "identifier": "asJava",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/request/XForwardedClientCert.scala"
+   ],
+   "line": 46,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY173",
+   "query": "Helper utilities to manage the Session cookie",
+   "identifier": "SessionCookieBaker",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Session.scala"
+   ],
+   "line": 96,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY174",
+   "query": "Interpret trusted protocol metadata that has no forwarded identity",
+   "identifier": "forwardedSchemeWithoutFor",
+   "definedIn": [
+    "transport/server/play-server/src/main/scala/play/core/server/common/ForwardedHeaderHandler.scala"
+   ],
+   "line": 530,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY175",
+   "query": "Retrieves the first global error, if it exists, i.e. an error without any key",
+   "identifier": "globalError",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/data/Form.scala"
+   ],
+   "line": 207,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY176",
+   "query": "Create a Netty chunked response",
+   "identifier": "createChunkedResponse",
+   "definedIn": [
+    "transport/server/play-netty-server/src/main/scala/play/core/server/netty/NettyModelConversion.scala"
+   ],
+   "line": 379,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY177",
+   "query": "Java-friendly accessor for the RFC 7239 source",
+   "identifier": "rfc7239",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/request/RemoteInfo.scala"
+   ],
+   "line": 51,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY178",
+   "query": "Adapts the Scala router to the Java Router API",
+   "identifier": "JavaRouterAdapter",
+   "definedIn": [
+    "core/play/src/main/scala/play/core/j/JavaRouterAdapter.scala"
+   ],
+   "line": 17,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY179",
+   "query": "Get an AcceptEncoding for this request",
+   "identifier": "forRequest",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/AcceptEncoding.scala"
+   ],
+   "line": 148,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY180",
+   "query": "true if the logger instance is enabled for the INFO level",
+   "identifier": "isInfoEnabled",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/Logger.scala"
+   ],
+   "line": 50,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY181",
+   "query": "A complete path pattern, consisting of a sequence of path parts",
+   "identifier": "PathPattern",
+   "definedIn": [
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/RoutesModels.scala"
+   ],
+   "line": 147,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY182",
+   "query": "Convert a Java OptionalDouble to Javascript literal (use \"null\" for an empty OptionalDouble)",
+   "identifier": "literalJavaOptionalDouble",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Binders.scala"
+   ],
+   "line": 322,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY183",
+   "query": "Create a new Play Application using this configured builder",
+   "identifier": "build",
+   "definedIn": [
+    "core/play-guice/src/main/scala/play/api/inject/guice/GuiceApplicationBuilder.scala"
+   ],
+   "line": 169,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY184",
+   "query": "Create an AssetsFinder with a custom assets location (replacing the current assets base path)",
+   "identifier": "withAssetsPath",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/controllers/Assets.scala"
+   ],
+   "line": 397,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY185",
+   "query": "Default Writeable with lower priority",
+   "identifier": "LowPriorityWriteables",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/Writeable.scala"
+   ],
+   "line": 44,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY186",
+   "query": "The optional numeric or obfuscated port attached to this node",
+   "identifier": "port",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/request/RemoteNode.scala"
+   ],
+   "line": 15,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY187",
+   "query": "Components for default implementation of the evolutions API",
+   "identifier": "EvolutionsComponents",
+   "definedIn": [
+    "persistence/play-jdbc-evolutions/src/main/scala/play/api/db/evolutions/EvolutionsModule.scala"
+   ],
+   "line": 28,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY188",
+   "query": "A static part of the path, which is matched as is",
+   "identifier": "StaticPart",
+   "definedIn": [
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/RoutesModels.scala"
+   ],
+   "line": 140,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY189",
+   "query": "Parse an RFC 3986 scheme and normalize it to lower case",
+   "identifier": "parse",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/request/Scheme.scala"
+   ],
+   "line": 38,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY190",
+   "query": "A Java error handler that's provided when a Scala one is configured, so that Java code can still have the error handler injected",
+   "identifier": "JavaHttpErrorHandlerDelegate",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/HttpErrorHandler.scala"
+   ],
+   "line": 584,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY191",
+   "query": "Formatter for the java.util.Date type",
+   "identifier": "dateFormat",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/data/format/Format.scala"
+   ],
+   "line": 217,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY192",
+   "query": "Merges the cookies contained in a Set-Cookie header so that there's only one cookie for each name/path/domain triple",
+   "identifier": "mergeSetCookieHeaderCookies",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/Cookie.scala"
+   ],
+   "line": 414,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY193",
+   "query": "Contains typeclasses for ContentTypeOf",
+   "identifier": "DefaultContentTypeOfs",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/http/ContentTypeOf.scala"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY194",
+   "query": "Generate the reverse call",
+   "identifier": "reverseCall",
+   "definedIn": [
+    "dev-mode/play-routes-compiler/src/main/scala/play/routes/compiler/templates/package.scala"
+   ],
+   "line": 321,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DPLAY195",
+   "query": "Create and normalize an RFC 3986 registered name",
+   "identifier": "regName",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/mvc/request/RequestAuthority.scala"
+   ],
+   "line": 72,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY196",
+   "query": "Creates temporary folders using java.nio.file.Files.createTempFile",
+   "identifier": "SingletonTemporaryFileCreator",
+   "definedIn": [
+    "core/play/src/main/scala/play/api/libs/Files.scala"
+   ],
+   "line": 488,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY197",
+   "query": "A provider that creates an EvolutionsConfig from the play.api.Configuration",
+   "identifier": "DefaultEvolutionsConfigParser",
+   "definedIn": [
+    "persistence/play-jdbc-evolutions/src/main/scala/play/api/db/evolutions/ApplicationEvolutions.scala"
+   ],
+   "line": 400,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY198",
+   "query": "A helper to add caching to an Action",
+   "identifier": "Cached",
+   "definedIn": [
+    "cache/play-cache/src/main/scala/play/api/cache/Cached.scala"
+   ],
+   "line": 26,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DPLAY199",
+   "query": "Helper function to escape a single header parameter using the HTML5 strategy",
+   "identifier": "escapeParamWithHTML5Strategy",
+   "definedIn": [
+    "core/play/src/main/scala/play/core/formatters/Multipart.scala"
+   ],
+   "line": 74,
+   "nameWordsInQuery": false
+  }
+ ]
+}

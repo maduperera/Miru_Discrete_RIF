@@ -17,7 +17,7 @@
  */
 import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import { Language, Parser, type Node } from "web-tree-sitter";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -31,14 +31,14 @@ export const EXT_LANG: Record<string, string> = {
   ".ex": "elixir", ".exs": "elixir", ".hs": "haskell", ".ml": "ocaml", ".sol": "solidity",
 };
 
-const CLASS_TYPES = new Set([
+export const CLASS_TYPES = new Set([
   "class_declaration", "class_definition", "class", "module", "interface_declaration", "enum_declaration",
   "struct_item", "enum_item", "trait_item", "type_item", "union_item", "type_spec", "type_alias",
   "type_alias_declaration", "record_declaration", "struct_declaration", "struct_specifier", "class_specifier",
   "trait_declaration", "object_definition", "trait_definition", "abstract_class_declaration", "enum_specifier",
   "protocol_declaration", "contract_declaration",
 ]);
-const FUNC_TYPES = new Set([
+export const FUNC_TYPES = new Set([
   "function_declaration", "function_definition", "method_declaration", "method_definition", "function_item",
   "method", "singleton_method", "constructor_declaration", "generator_function_declaration",
   "local_function_statement", "function_signature_item", "method_signature",
@@ -77,7 +77,7 @@ function firstIdent(n: Node | null): string | null {
   return null;
 }
 
-function defName(n: Node): string | null {
+export function defName(n: Node): string | null {
   const nm = n.childForFieldName("name");
   if (nm) return lastIdent(nm);
   if (n.type === "struct_specifier" || n.type === "class_specifier" || n.type === "enum_specifier") return null;
@@ -140,8 +140,8 @@ export interface Extracted { roles: [string, string][]; defs: string[] }
 
 // Elixir: no declaration node types — `def foo(a, b) do`, `defmodule X do`, `Mod.fun(x)` are all `call`
 // nodes whose callee is the `target` field; `x = ...` is a binary_operator with operator "=".
-const EX_FUNC = new Set(["def", "defp", "defmacro", "defmacrop", "defguard", "defguardp", "defdelegate"]);
-const EX_CLASS = new Set(["defmodule", "defprotocol", "defimpl", "defstruct", "defexception"]);
+export const EX_FUNC = new Set(["def", "defp", "defmacro", "defmacrop", "defguard", "defguardp", "defdelegate"]);
+export const EX_CLASS = new Set(["defmodule", "defprotocol", "defimpl", "defstruct", "defexception"]);
 
 function elixirCall(n: Node, defsFunc: string[], defsClass: string[], args: string[], calls: string[]): boolean {
   const target = n.childForFieldName("target");
@@ -172,8 +172,8 @@ function elixirCall(n: Node, defsFunc: string[], defsClass: string[], args: stri
 // Haskell: bindings have no `name` field. A value binding is `function` (first named child = `variable`, then
 // `patterns`/`match`) directly under declarations/instance_declarations/class_declarations; the same node type
 // also encodes type arrows inside signatures and local `where` bindings, which we do not treat as definitions.
-const HS_DECL_PARENTS = new Set(["declarations", "instance_declarations", "class_declarations"]);
-const HS_TYPE_DECLS = new Set(["data_type", "newtype", "type_synomym", "type_synonym", "class"]);
+export const HS_DECL_PARENTS = new Set(["declarations", "instance_declarations", "class_declarations"]);
+export const HS_TYPE_DECLS = new Set(["data_type", "newtype", "type_synomym", "type_synonym", "class"]);
 
 function haskellNode(n: Node, defsFunc: string[], defsClass: string[], args: string[], calls: string[]): boolean {
   if (n.type === "function") {
@@ -251,7 +251,7 @@ export function extract(root: Node, language = ""): Extracted {
 let parser: Parser | null = null;
 const langCache = new Map<string, Language>();
 
-async function parserFor(language: string, filePath = ""): Promise<Parser | null> {
+export async function parserFor(language: string, filePath = ""): Promise<Parser | null> {
   const file = language === "typescript" && filePath.endsWith(".tsx") ? "tree-sitter-tsx.wasm" : manifest.languages[language];
   if (!file || !existsSync(path.join(GRAMMARS, file))) return null;
   if (!parser) {
@@ -325,7 +325,9 @@ async function modeRepo(repoDir: string, outPath: string, langs: Set<string> | n
   console.log(`parsed ${parsed} files, ${Object.keys(defs).length} defined identifiers -> ${outPath}`);
 }
 
-const [mode, a, b, ...rest] = process.argv.slice(2);
+// Only act as a CLI when run directly, so scripts/extract_docqueries.ts can import the helpers above.
+const isMain = !!process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href;
+const [mode, a, b, ...rest] = isMain ? process.argv.slice(2) : [];
 if (mode === "pool" && a && b) await modePool(a, b);
 else if (mode === "repo" && a && b) {
   const i = rest.indexOf("--lang");

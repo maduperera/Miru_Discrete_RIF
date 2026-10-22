@@ -1,0 +1,2010 @@
+{
+ "repo": "doc-newtonsoft",
+ "source": "id-newtonsoft",
+ "commit": "52fa3aef1f2cadcd3a3f874251eddc98d3efbbaa",
+ "lang": "csharp",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "200 docstring-style queries (first sentence of the doc comment of one definition), drawn by gen_queries_doc.py (seed 0xa11ce); corpus is the pinned repo with all definition doc comments removed (scripts/extract_docqueries.ts --strip). Documented definitions available: 228 (of 9425 definitions).",
+ "queries": [
+  {
+   "id": "DNEWTON0",
+   "query": "Provides methods to get and set values",
+   "identifier": "IValueProvider",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/IValueProvider.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON1",
+   "query": "Specifies what messages to output for the ITraceWriter class",
+   "identifier": "TraceLevel",
+   "definedIn": [
+    "Src/Newtonsoft.Json/TraceLevel.cs"
+   ],
+   "line": 10,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON2",
+   "query": "Creates a JsonLinqContract for the given type",
+   "identifier": "CreateLinqContract",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 1121,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON3",
+   "query": "Specifies null value handling options for the JsonSerializer",
+   "identifier": "NullValueHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/NullValueHandling.cs"
+   ],
+   "line": 35,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON4",
+   "query": "Gets the serialized key for a given dictionary key",
+   "identifier": "GetDictionaryKey",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/NamingStrategy.cs"
+   ],
+   "line": 88,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON5",
+   "query": "Raises the AddingNew event",
+   "identifier": "OnAddingNew",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JContainer.cs"
+   ],
+   "line": 149,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON6",
+   "query": "Rent an array from the pool",
+   "identifier": "Rent",
+   "definedIn": [
+    "Src/Newtonsoft.Json/IArrayPool.cs"
+   ],
+   "line": 14,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON7",
+   "query": "Reads the next JSON token from the underlying TextReader as a Byte[]",
+   "identifier": "ReadAsBytes",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonTextReader.cs"
+   ],
+   "line": 497,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON8",
+   "query": "Converts XML to and from JSON",
+   "identifier": "XmlNodeConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Converters/XmlNodeConverter.cs"
+   ],
+   "line": 942,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON9",
+   "query": "Reads the next JSON token from the underlying TextReader as a Nullable{T} of DateTime",
+   "identifier": "ReadAsDateTime",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonTextReader.cs"
+   ],
+   "line": 479,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON10",
+   "query": "Adds the specified string into name table",
+   "identifier": "Add",
+   "definedIn": [
+    "Src/Newtonsoft.Json/DefaultJsonNameTable.cs"
+   ],
+   "line": 107,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON11",
+   "query": "Raises the CollectionChanged event",
+   "identifier": "OnCollectionChanged",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JContainer.cs"
+   ],
+   "line": 181,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON12",
+   "query": "Indicating whether a property is required",
+   "identifier": "Required",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Required.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON13",
+   "query": "Represents a sorted sequence",
+   "identifier": "IOrderedEnumerable",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/LinqBridge.cs"
+   ],
+   "line": 2799,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON14",
+   "query": "Raises the PropertyChanging event with the provided arguments",
+   "identifier": "OnPropertyChanging",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JObject.cs"
+   ],
+   "line": 741,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON15",
+   "query": "This is an object that is contained in the interface object",
+   "identifier": "SomethingElse",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/SerializationErrorHandlingTests.cs"
+   ],
+   "line": 914,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON16",
+   "query": "Strongly typed Predicate factory, to be invoked only once for each type",
+   "identifier": "ShouldSerializeOptionalBuilder",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Issues/Issue3080.cs"
+   ],
+   "line": 336,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON17",
+   "query": "Reads the next JSON token from the underlying TextReader as a Nullable{T} of Double",
+   "identifier": "ReadAsDouble",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonTextReader.cs"
+   ],
+   "line": 1058,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON18",
+   "query": "Class implementing a strongly typed json converter",
+   "identifier": "TypedConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Issues/Issue3080.cs"
+   ],
+   "line": 522,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON19",
+   "query": "Writes the end of a JSON object",
+   "identifier": "WriteEndObject",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonWriter.cs"
+   ],
+   "line": 430,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON20",
+   "query": "Asynchronously creates an instance of JRaw with the content of the reader's current token",
+   "identifier": "CreateAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JRaw.Async.cs"
+   ],
+   "line": 44,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON21",
+   "query": "Specifies how floating point numbers, e.g. 1.0 and 9.9, are parsed when reading JSON text",
+   "identifier": "FloatParseHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/FloatParseHandling.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON22",
+   "query": "Converts a BsonObjectId to and from JSON and BSON",
+   "identifier": "BsonObjectIdConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Converters/BsonObjectIdConverter.cs"
+   ],
+   "line": 38,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON23",
+   "query": "Sets the state of the JsonWriter",
+   "identifier": "SetWriteState",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonWriter.cs"
+   ],
+   "line": 1733,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON24",
+   "query": "Converts a DateTime to and from a JavaScript Date constructor (e.g. new Date(52231943) )",
+   "identifier": "JavaScriptDateTimeConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Converters/JavaScriptDateTimeConverter.cs"
+   ],
+   "line": 35,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON25",
+   "query": "Reads the next JSON token from the underlying JsonReader as a Nullable{T} of DateTime",
+   "identifier": "ReadAsDateTime",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonValidatingReader.cs"
+   ],
+   "line": 457,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON26",
+   "query": "Reads the next JSON token from the source as a Nullable{T} of Double",
+   "identifier": "ReadAsDouble",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonReader.cs"
+   ],
+   "line": 631,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON27",
+   "query": "Generates a JsonSchema from a specified Type",
+   "identifier": "JsonSchemaGenerator",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Schema/JsonSchemaGenerator.cs"
+   ],
+   "line": 54,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON28",
+   "query": "Specifies how to treat the time value when converting between string and DateTime",
+   "identifier": "DateTimeZoneHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/DateTimeZoneHandling.cs"
+   ],
+   "line": 33,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON29",
+   "query": "Removes the JArray item at the specified index",
+   "identifier": "RemoveAt",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JArray.cs"
+   ],
+   "line": 350,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON30",
+   "query": "Skips the children of the current token",
+   "identifier": "Skip",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonReader.cs"
+   ],
+   "line": 979,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON31",
+   "query": "Adds the specified content immediately after this token",
+   "identifier": "AddAfterSelf",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JToken.cs"
+   ],
+   "line": 266,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON32",
+   "query": "Reads the next JSON token from the underlying TextReader as a Nullable{T} of Boolean",
+   "identifier": "ReadAsBoolean",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonTextReader.cs"
+   ],
+   "line": 770,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON33",
+   "query": "Simple interface implemented by strongly typed converters",
+   "identifier": "ITypedConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Issues/Issue3080.cs"
+   ],
+   "line": 391,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON34",
+   "query": "If no current user is specified, returns Nothing (0 from VB)",
+   "identifier": "GetCurrentUserId",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestObjects/Events/Event.cs"
+   ],
+   "line": 37,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON35",
+   "query": "Gets the resolved name of the property",
+   "identifier": "GetResolvedPropertyName",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 1760,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON36",
+   "query": "Specifies how date formatted strings, e.g. \"\\/Date(1198908717056)\\/\" and \"2012-03-21T05:40Z\" , are parsed when reading JSON text",
+   "identifier": "DateParseHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/DateParseHandling.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON37",
+   "query": "A base class for resolving how property names and dictionary keys are serialized",
+   "identifier": "NamingStrategy",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/NamingStrategy.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON38",
+   "query": "Gets the JToken with the specified key converted to the specified type",
+   "identifier": "Value",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JToken.cs"
+   ],
+   "line": 368,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON39",
+   "query": "Represents a collection of JToken objects",
+   "identifier": "IJEnumerable",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/IJEnumerable.cs"
+   ],
+   "line": 34,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON40",
+   "query": "Inserts an item to the JArray at the specified index",
+   "identifier": "Insert",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JArray.cs"
+   ],
+   "line": 338,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON41",
+   "query": "Specifies how constructors are used when initializing objects during deserialization by the JsonSerializer",
+   "identifier": "ConstructorHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/ConstructorHandling.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON42",
+   "query": "Adds the specified content immediately before this token",
+   "identifier": "AddBeforeSelf",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JToken.cs"
+   ],
+   "line": 281,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON43",
+   "query": "Writes the end of an array",
+   "identifier": "WriteEndArray",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonWriter.cs"
+   ],
+   "line": 446,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON44",
+   "query": "Indicates whether this instance and a specified object are equal",
+   "identifier": "Equals",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Issues/Issue3080.cs"
+   ],
+   "line": 246,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON45",
+   "query": "When overridden in a derived class, returns whether resetting an object changes its value",
+   "identifier": "CanResetValue",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JPropertyDescriptor.cs"
+   ],
+   "line": 58,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON46",
+   "query": "Resolves the default JsonConverter for the contract",
+   "identifier": "ResolveContractConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 794,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON47",
+   "query": "Specifies reference loop handling options for the JsonSerializer",
+   "identifier": "ReferenceLoopHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/ReferenceLoopHandling.cs"
+   ],
+   "line": 35,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON48",
+   "query": "Writes a BSON regex",
+   "identifier": "WriteRegex",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Bson/BsonWriter.cs"
+   ],
+   "line": 530,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON49",
+   "query": "Determines whether the JArray contains a specific value",
+   "identifier": "Contains",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JArray.cs"
+   ],
+   "line": 392,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON50",
+   "query": "When overridden in a derived class, sets the value of the component to a different value",
+   "identifier": "SetValue",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JPropertyDescriptor.cs"
+   ],
+   "line": 88,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON51",
+   "query": "Instructs the JsonSerializer to always serialize the member, and to require that the member has a value",
+   "identifier": "JsonRequiredAttribute",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonRequiredAttribute.cs"
+   ],
+   "line": 35,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON52",
+   "query": "Base class for a table of atomized string objects",
+   "identifier": "JsonNameTable",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonNameTable.cs"
+   ],
+   "line": 6,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON53",
+   "query": "Creates a JsonReader for this token",
+   "identifier": "CreateReader",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JToken.cs"
+   ],
+   "line": 1960,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON54",
+   "query": "Creates properties for the given JsonContract",
+   "identifier": "CreateProperties",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 1394,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON55",
+   "query": "Specifies formatting options for the JsonTextWriter",
+   "identifier": "Formatting",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Formatting.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON56",
+   "query": "Creates an object which will then be populated by the serializer",
+   "identifier": "Create",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Converters/CustomCreationConverter.cs"
+   ],
+   "line": 82,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON57",
+   "query": "Creates a JsonArrayContract for the given type",
+   "identifier": "CreateArrayContract",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 1070,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON58",
+   "query": "Determines whether the collection is null or empty",
+   "identifier": "IsNullOrEmpty",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/CollectionUtils.cs"
+   ],
+   "line": 56,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON59",
+   "query": "Specifies how object creation is handled by the JsonSerializer",
+   "identifier": "ObjectCreationHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/ObjectCreationHandling.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON60",
+   "query": "Creates a JsonProperty for the given ParameterInfo",
+   "identifier": "CreatePropertyFromConstructorParameter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 755,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON61",
+   "query": "Writes the specified end token",
+   "identifier": "WriteEnd",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonTextWriter.cs"
+   ],
+   "line": 246,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON62",
+   "query": "Specifies how dates are formatted when writing JSON text",
+   "identifier": "DateFormatHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/DateFormatHandling.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON63",
+   "query": "Represents a trace writer",
+   "identifier": "ITraceWriter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/ITraceWriter.cs"
+   ],
+   "line": 10,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON64",
+   "query": "Represents a collection of JsonConverter",
+   "identifier": "JsonConverterCollection",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonConverterCollection.cs"
+   ],
+   "line": 36,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON65",
+   "query": "Determines whether the JSON object has the specified property name",
+   "identifier": "ContainsKey",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JObject.cs"
+   ],
+   "line": 596,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON66",
+   "query": "Removes the child nodes from this token",
+   "identifier": "RemoveAll",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JContainer.cs"
+   ],
+   "line": 725,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON67",
+   "query": "Reads the next JSON token from the underlying JsonReader as a Byte[]",
+   "identifier": "ReadAsBytes",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonValidatingReader.cs"
+   ],
+   "line": 397,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON68",
+   "query": "Creates a JsonISerializableContract for the given type",
+   "identifier": "CreateISerializableContract",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 1135,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON69",
+   "query": "Specifies default value handling options for the JsonSerializer",
+   "identifier": "DefaultValueHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/DefaultValueHandling.cs"
+   ],
+   "line": 38,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON70",
+   "query": "Determines which contract type is created for the given type",
+   "identifier": "CreateContract",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 1201,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON71",
+   "query": "Specifies how JSON comments are handled when loading JSON",
+   "identifier": "CommentHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/CommentHandling.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON72",
+   "query": "Flushes whatever is in the buffer to the destination and also flushes the destination",
+   "identifier": "Flush",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonWriter.cs"
+   ],
+   "line": 404,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON73",
+   "query": "Maps a JSON property to a .NET member or constructor parameter",
+   "identifier": "JsonProperty",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/JsonProperty.cs"
+   ],
+   "line": 41,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON74",
+   "query": "Instructs the JsonSerializer to use the specified constructor when deserializing that object",
+   "identifier": "JsonConstructorAttribute",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonConstructorAttribute.cs"
+   ],
+   "line": 33,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON75",
+   "query": "Gets a JEnumerable{T} of JToken of this object's property values",
+   "identifier": "PropertyValues",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JObject.cs"
+   ],
+   "line": 322,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON76",
+   "query": "Creates the IValueProvider used by the serializer to get and set values from a member",
+   "identifier": "CreateMemberValueProvider",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 1436,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON77",
+   "query": "Specifies the settings used when selecting JSON",
+   "identifier": "JsonSelectSettings",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JsonSelectSettings.cs"
+   ],
+   "line": 33,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON78",
+   "query": "Creates a JsonWriter that can be used to add tokens to the JToken",
+   "identifier": "CreateWriter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JContainer.cs"
+   ],
+   "line": 707,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON79",
+   "query": "Reads the next JSON token from the source as a Nullable{T} of Boolean",
+   "identifier": "ReadAsBoolean",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonReader.cs"
+   ],
+   "line": 697,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON80",
+   "query": "Flushes whatever is in the buffer to the underlying Stream and also flushes the underlying stream",
+   "identifier": "Flush",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Bson/BsonWriter.cs"
+   ],
+   "line": 88,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON81",
+   "query": "Used to resolve references when serializing and deserializing JSON by the JsonSerializer",
+   "identifier": "IReferenceResolver",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/IReferenceResolver.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON82",
+   "query": "Converts types marked with System.Runtime.CompilerServices.UnionAttribute to and from their contained JSON values",
+   "identifier": "UnionConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Converters/UnionConverter.cs"
+   ],
+   "line": 16,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON83",
+   "query": "Specifies how strings are escaped when writing JSON text",
+   "identifier": "StringEscapeHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/StringEscapeHandling.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON84",
+   "query": "Creates the constructor parameters",
+   "identifier": "CreateConstructorParameters",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 691,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON85",
+   "query": "Represents a collection of objects that have a common key",
+   "identifier": "IGrouping",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/LinqBridge.cs"
+   ],
+   "line": 2775,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON86",
+   "query": "Creates a JValue string with the given value",
+   "identifier": "CreateString",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JValue.cs"
+   ],
+   "line": 596,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON87",
+   "query": "Determines whether the string is all white space",
+   "identifier": "IsWhiteSpace",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/StringUtils.cs"
+   ],
+   "line": 90,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON88",
+   "query": "Specifies how null value properties are merged",
+   "identifier": "MergeNullValueHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/MergeNullValueHandling.cs"
+   ],
+   "line": 33,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON89",
+   "query": "Writes raw JSON without changing the writer's state",
+   "identifier": "WriteRaw",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonWriter.cs"
+   ],
+   "line": 931,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON90",
+   "query": "Converts a DataTable to and from JSON",
+   "identifier": "DataTableConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Converters/DataTableConverter.cs"
+   ],
+   "line": 41,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON91",
+   "query": "Reads the next JSON token from the underlying TextReader",
+   "identifier": "Read",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonTextReader.cs"
+   ],
+   "line": 414,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON92",
+   "query": "Determines whether the specified MemberInfo can be set",
+   "identifier": "CanSetMemberValue",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/ReflectionUtils.cs"
+   ],
+   "line": 627,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON93",
+   "query": "Determines the index of a specific item in the JArray",
+   "identifier": "IndexOf",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JArray.cs"
+   ],
+   "line": 325,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON94",
+   "query": "Gets the type of the typed collection's items",
+   "identifier": "GetCollectionItemType",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/ReflectionUtils.cs"
+   ],
+   "line": 408,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON95",
+   "query": "Instructs the JsonSerializer not to serialize the public field or public read/write property value",
+   "identifier": "JsonIgnoreAttribute",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonIgnoreAttribute.cs"
+   ],
+   "line": 35,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON96",
+   "query": "Copies the elements of the JArray to an array, starting at a particular array index",
+   "identifier": "CopyTo",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JArray.cs"
+   ],
+   "line": 402,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON97",
+   "query": "Bind a new property into a type builder with getters and setters",
+   "identifier": "BindProperty",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/DynamicConcreteTests.cs"
+   ],
+   "line": 268,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON98",
+   "query": "Determines whether the specified objects are equal",
+   "identifier": "Equals",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JTokenEqualityComparer.cs"
+   ],
+   "line": 43,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON99",
+   "query": "Specifies the state of the reader",
+   "identifier": "State",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonReader.cs"
+   ],
+   "line": 46,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON100",
+   "query": "Compares tokens to determine whether they are equal",
+   "identifier": "JTokenEqualityComparer",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JTokenEqualityComparer.cs"
+   ],
+   "line": 33,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON101",
+   "query": "Converts an ExpandoObject to and from JSON",
+   "identifier": "ExpandoObjectConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Converters/ExpandoObjectConverter.cs"
+   ],
+   "line": 41,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON102",
+   "query": "When overridden in a derived class, resets the value for this property of the component to the default value",
+   "identifier": "ResetValue",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JPropertyDescriptor.cs"
+   ],
+   "line": 79,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON103",
+   "query": "Creates a JsonDynamicContract for the given type",
+   "identifier": "CreateDynamicContract",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 1161,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON104",
+   "query": "Converts a binary value to and from a base 64 string value",
+   "identifier": "BinaryConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Converters/BinaryConverter.cs"
+   ],
+   "line": 42,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON105",
+   "query": "Reads the next JSON token from the underlying JsonReader as a Nullable{T} of Int32",
+   "identifier": "ReadAsInt32",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonValidatingReader.cs"
+   ],
+   "line": 383,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON106",
+   "query": "Reads the next JSON token from the underlying JsonReader as a Nullable{T} of Double",
+   "identifier": "ReadAsDouble",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonValidatingReader.cs"
+   ],
+   "line": 421,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON107",
+   "query": "Specifies how JSON arrays are merged together",
+   "identifier": "MergeArrayHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/MergeArrayHandling.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON108",
+   "query": "Adds a reference to the specified object",
+   "identifier": "AddReference",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/IReferenceResolver.cs"
+   ],
+   "line": 65,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON109",
+   "query": "Gets a property by property name",
+   "identifier": "GetProperty",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/JsonPropertyCollection.cs"
+   ],
+   "line": 166,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON110",
+   "query": "Creates a JsonDictionaryContract for the given type",
+   "identifier": "CreateDictionaryContract",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 1021,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON111",
+   "query": "Reads the next JSON token from the underlying TextReader as a Nullable{T} of Int32",
+   "identifier": "ReadAsInt32",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonTextReader.cs"
+   ],
+   "line": 470,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON112",
+   "query": "Adds a JsonProperty object",
+   "identifier": "AddProperty",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/JsonPropertyCollection.cs"
+   ],
+   "line": 74,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON113",
+   "query": "Checks if the attributeName is a namespace attribute",
+   "identifier": "IsNamespaceAttribute",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Converters/XmlNodeConverter.cs"
+   ],
+   "line": 2159,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON114",
+   "query": "Creates a JValue null value",
+   "identifier": "CreateNull",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JValue.cs"
+   ],
+   "line": 605,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON115",
+   "query": "Helper method for generating a MetaObject which calls a specific method on Dynamic that returns a result",
+   "identifier": "CallMethodWithResult",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/DynamicProxyMetaObject.cs"
+   ],
+   "line": 212,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON116",
+   "query": "Raises the PropertyChanged event with the provided arguments",
+   "identifier": "OnPropertyChanged",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JObject.cs"
+   ],
+   "line": 731,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON117",
+   "query": "Gets the member's underlying type",
+   "identifier": "GetMemberUnderlyingType",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/ReflectionUtils.cs"
+   ],
+   "line": 471,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON118",
+   "query": "Specifies undefined schema Id handling options for the JsonSchemaGenerator",
+   "identifier": "UndefinedSchemaIdHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Schema/UndefinedSchemaIdHandling.cs"
+   ],
+   "line": 40,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON119",
+   "query": "Reads the next JSON token from the source",
+   "identifier": "Read",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonReader.cs"
+   ],
+   "line": 396,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON120",
+   "query": "A dictionary that ignores deserialization errors and excludes bad items",
+   "identifier": "TolerantDictionary",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Serialization/SerializationErrorHandlingTests.cs"
+   ],
+   "line": 1156,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON121",
+   "query": "Replaces the child nodes of this token with the specified content",
+   "identifier": "ReplaceAll",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JContainer.cs"
+   ],
+   "line": 716,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON122",
+   "query": "Contains the LINQ to JSON extension methods",
+   "identifier": "Extensions",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/Extensions.cs"
+   ],
+   "line": 44,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON123",
+   "query": "Resolves a reference to its object",
+   "identifier": "ResolveReference",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/IReferenceResolver.cs"
+   ],
+   "line": 39,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON124",
+   "query": "Flushes whatever is in the buffer to the underlying JContainer",
+   "identifier": "Flush",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JTokenWriter.cs"
+   ],
+   "line": 94,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON125",
+   "query": "Reads the next JSON token from the source as a Nullable{T} of Decimal",
+   "identifier": "ReadAsDecimal",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonReader.cs"
+   ],
+   "line": 760,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON126",
+   "query": "Reads the next JSON token from the source as a String",
+   "identifier": "ReadAsString",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonReader.cs"
+   ],
+   "line": 476,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON127",
+   "query": "Creates an instance of JRaw with the content of the reader's current token",
+   "identifier": "Create",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JRaw.cs"
+   ],
+   "line": 64,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON128",
+   "query": "Reads the next JSON token from the underlying Stream",
+   "identifier": "Read",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Bson/BsonReader.cs"
+   ],
+   "line": 186,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON129",
+   "query": "The value types allowed by the JsonSchema",
+   "identifier": "JsonSchemaType",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Schema/JsonSchemaType.cs"
+   ],
+   "line": 40,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON130",
+   "query": "Removes this token from its parent",
+   "identifier": "Remove",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JToken.cs"
+   ],
+   "line": 420,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON131",
+   "query": "Creates a JsonPrimitiveContract for the given type",
+   "identifier": "CreatePrimitiveContract",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 1108,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON132",
+   "query": "Gets either the application path or the current stack trace",
+   "identifier": "GetCurrentSubLocation",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/TestObjects/Events/Event.cs"
+   ],
+   "line": 49,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON133",
+   "query": "Specifies metadata property handling options for the JsonSerializer",
+   "identifier": "MetadataPropertyHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/MetadataPropertyHandling.cs"
+   ],
+   "line": 35,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON134",
+   "query": "Writes a Byte[] value that represents a BSON object id",
+   "identifier": "WriteObjectId",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Bson/BsonWriter.cs"
+   ],
+   "line": 511,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON135",
+   "query": "Specifies that an output will not be null even if the corresponding type allows it",
+   "identifier": "NotNullAttribute",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/NullableAttributes.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON136",
+   "query": "Resolves the key of the dictionary",
+   "identifier": "ResolveDictionaryKey",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 1745,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON137",
+   "query": "Creates a JValue undefined value",
+   "identifier": "CreateUndefined",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JValue.cs"
+   ],
+   "line": 614,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON138",
+   "query": "Reads the next JSON token from the source as a Nullable{T} of Int32",
+   "identifier": "ReadAsInt32",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonReader.cs"
+   ],
+   "line": 402,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON139",
+   "query": "Converts a DataSet to and from JSON",
+   "identifier": "DataSetConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Converters/DataSetConverter.cs"
+   ],
+   "line": 38,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON140",
+   "query": "Removes all items from the JArray",
+   "identifier": "Clear",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JArray.cs"
+   ],
+   "line": 380,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON141",
+   "query": "Reads the next JSON token from the underlying TextReader as a String",
+   "identifier": "ReadAsString",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonTextReader.cs"
+   ],
+   "line": 488,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON142",
+   "query": "Converts a KeyValuePair{TKey,TValue} to and from JSON",
+   "identifier": "KeyValuePairConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Converters/KeyValuePairConverter.cs"
+   ],
+   "line": 38,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON143",
+   "query": "Gets the member's value on the object",
+   "identifier": "GetMemberValue",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/ReflectionUtils.cs"
+   ],
+   "line": 530,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON144",
+   "query": "Specifies the state of the JsonWriter",
+   "identifier": "WriteState",
+   "definedIn": [
+    "Src/Newtonsoft.Json/WriteState.cs"
+   ],
+   "line": 33,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON145",
+   "query": "Creates a JsonObjectContract for the given type",
+   "identifier": "CreateObjectContract",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 344,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON146",
+   "query": "Adds an object to the annotation list of this JToken",
+   "identifier": "AddAnnotation",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JToken.cs"
+   ],
+   "line": 2558,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON147",
+   "query": "Asynchronously writes indent characters",
+   "identifier": "WriteIndentAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonWriter.Async.cs"
+   ],
+   "line": 186,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON148",
+   "query": "Reads the next JSON token from the underlying JsonReader",
+   "identifier": "Read",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonValidatingReader.cs"
+   ],
+   "line": 485,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON149",
+   "query": "Determines whether the specified object is referenced",
+   "identifier": "IsReferenced",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/IReferenceResolver.cs"
+   ],
+   "line": 57,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON150",
+   "query": "Adds the specified content as the first children of this JToken",
+   "identifier": "AddFirst",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JContainer.cs"
+   ],
+   "line": 665,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON151",
+   "query": "Checks if value of primitive type from can be assigned to parameter of primitive type to",
+   "identifier": "CanConvertPrimitive",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/MethodBinder.cs"
+   ],
+   "line": 73,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON152",
+   "query": "The default naming strategy",
+   "identifier": "DefaultNamingStrategy",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultNamingStrategy.cs"
+   ],
+   "line": 6,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON153",
+   "query": "Specifies missing member handling options for the JsonSerializer",
+   "identifier": "MissingMemberHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/MissingMemberHandling.cs"
+   ],
+   "line": 35,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON154",
+   "query": "Specifies the type of token",
+   "identifier": "JTokenType",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JTokenType.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON155",
+   "query": "Specifies reference handling options for the JsonSerializer",
+   "identifier": "PreserveReferencesHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/PreserveReferencesHandling.cs"
+   ],
+   "line": 39,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON156",
+   "query": "Sets the member's value on the target object",
+   "identifier": "SetMemberValue",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/ReflectionUtils.cs"
+   ],
+   "line": 559,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON157",
+   "query": "Determines whether the specified MemberInfo can be read",
+   "identifier": "CanReadMemberValue",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/ReflectionUtils.cs"
+   ],
+   "line": 585,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON158",
+   "query": "Lookup and create an instance of the JsonConverter type described by the argument",
+   "identifier": "CreateJsonConverterInstance",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/JsonTypeReflector.cs"
+   ],
+   "line": 228,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON159",
+   "query": "Converts a Regex to and from JSON and BSON",
+   "identifier": "RegexConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Converters/RegexConverter.cs"
+   ],
+   "line": 40,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON160",
+   "query": "Specifies how duplicate property names are handled when loading JSON",
+   "identifier": "DuplicatePropertyNameHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/DuplicatePropertyNameHandling.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON161",
+   "query": "Used by JsonSerializer to resolve a JsonContract for a given Type",
+   "identifier": "IContractResolver",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/IContractResolver.cs"
+   ],
+   "line": 37,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON162",
+   "query": "Create a new File object",
+   "identifier": "CreateFile",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/FileSystemEntityModel.Designer.cs"
+   ],
+   "line": 151,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON163",
+   "query": "Creates a custom object",
+   "identifier": "CustomCreationConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Converters/CustomCreationConverter.cs"
+   ],
+   "line": 37,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON164",
+   "query": "Here's where we test the sandbox for needles and broken glass",
+   "identifier": "Issue1837",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/Issues/Issue1837.cs"
+   ],
+   "line": 42,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON165",
+   "query": "Provides an interface for using pooled arrays",
+   "identifier": "IArrayPool",
+   "definedIn": [
+    "Src/Newtonsoft.Json/IArrayPool.cs"
+   ],
+   "line": 7,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON166",
+   "query": "Reads the next JSON token from the source as a Nullable{T} of DateTime",
+   "identifier": "ReadAsDateTime",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonReader.cs"
+   ],
+   "line": 840,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON167",
+   "query": "When overridden in a derived class, gets the current value of the property on a component",
+   "identifier": "GetValue",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JPropertyDescriptor.cs"
+   ],
+   "line": 70,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON168",
+   "query": "Reads the next JSON token from the underlying JsonReader as a Nullable{T} of Decimal",
+   "identifier": "ReadAsDecimal",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonValidatingReader.cs"
+   ],
+   "line": 409,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON169",
+   "query": "When applied to a method, specifies that the method is called when an error occurs serializing an object",
+   "identifier": "OnErrorAttribute",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/OnErrorAttribute.cs"
+   ],
+   "line": 33,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON170",
+   "query": "Gets the serialized name for a given extension data name",
+   "identifier": "GetExtensionDataName",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/NamingStrategy.cs"
+   ],
+   "line": 73,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON171",
+   "query": "Reads the next JSON token from the underlying TextReader as a Nullable{T} of Decimal",
+   "identifier": "ReadAsDecimal",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonTextReader.cs"
+   ],
+   "line": 1049,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON172",
+   "query": "Creates a JValue comment with the given value",
+   "identifier": "CreateComment",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JValue.cs"
+   ],
+   "line": 586,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON173",
+   "query": "Adds an item to the JArray",
+   "identifier": "Add",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JArray.cs"
+   ],
+   "line": 372,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON174",
+   "query": "Creates a JsonStringContract for the given type",
+   "identifier": "CreateStringContract",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 1188,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON175",
+   "query": "Specifies float format handling options when writing special floating point numbers, e.g",
+   "identifier": "FloatFormatHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/FloatFormatHandling.cs"
+   ],
+   "line": 34,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON176",
+   "query": "Packs val10^scale as 64-bit floating point value according to IEEE 754 standard",
+   "identifier": "PackDouble",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/ConvertUtils.cs"
+   ],
+   "line": 1108,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON177",
+   "query": "Contains the JSON schema extension methods",
+   "identifier": "Extensions",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Schema/Extensions.cs"
+   ],
+   "line": 44,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON178",
+   "query": "Defines an indexer, size property, and Boolean search method for data structures that map keys to IEnumerable{T} sequences of values",
+   "identifier": "ILookup",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/LinqBridge.cs"
+   ],
+   "line": 2789,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON179",
+   "query": "Asynchronously ets the state of the JsonWriter",
+   "identifier": "SetWriteStateAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonWriter.Async.cs"
+   ],
+   "line": 1662,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON180",
+   "query": "Represents a trace writer that writes to the application's TraceListener instances",
+   "identifier": "DiagnosticsTraceWriter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DiagnosticsTraceWriter.cs"
+   ],
+   "line": 11,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON181",
+   "query": "When overridden in a derived class, determines a value indicating whether the value of this property needs to be persisted",
+   "identifier": "ShouldSerializeValue",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JPropertyDescriptor.cs"
+   ],
+   "line": 105,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON182",
+   "query": "Specifies that null is allowed as an input even if the corresponding type disallows it",
+   "identifier": "AllowNullAttribute",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/NullableAttributes.cs"
+   ],
+   "line": 54,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON183",
+   "query": "Asynchronously skips the children of the current token",
+   "identifier": "SkipAsync",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonReader.Async.cs"
+   ],
+   "line": 76,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON184",
+   "query": "Reads the next JSON token from the underlying JToken",
+   "identifier": "Read",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JTokenReader.cs"
+   ],
+   "line": 74,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON185",
+   "query": "Gets the closest matching JsonProperty object",
+   "identifier": "GetClosestMatchProperty",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/JsonPropertyCollection.cs"
+   ],
+   "line": 138,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON186",
+   "query": "Resolves the name of the extension data",
+   "identifier": "ResolveExtensionDataName",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 1730,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON187",
+   "query": "Gets the serialized name for a given property name",
+   "identifier": "GetPropertyName",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/NamingStrategy.cs"
+   ],
+   "line": 58,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON188",
+   "query": "Replaces this token with the specified token",
+   "identifier": "Replace",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JToken.cs"
+   ],
+   "line": 434,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON189",
+   "query": "Specifies type name handling options for the JsonSerializer",
+   "identifier": "TypeNameHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/TypeNameHandling.cs"
+   ],
+   "line": 39,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON190",
+   "query": "Checks if a set of values with given types can be used to invoke a method with specified parameters",
+   "identifier": "FilterParameters",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/MethodBinder.cs"
+   ],
+   "line": 112,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON191",
+   "query": "Specifies that an output may be null even if the corresponding type disallows it",
+   "identifier": "MaybeNullAttribute",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/NullableAttributes.cs"
+   ],
+   "line": 49,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON192",
+   "query": "Sets the state based on current token type",
+   "identifier": "SetStateBasedOnCurrent",
+   "definedIn": [
+    "Src/Newtonsoft.Json/JsonReader.cs"
+   ],
+   "line": 1115,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON193",
+   "query": "Specifies how line information is handled when loading JSON",
+   "identifier": "LineInfoHandling",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/LineInfoHandling.cs"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON194",
+   "query": "Converts a F# discriminated union type to and from JSON",
+   "identifier": "DiscriminatedUnionConverter",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Converters/DiscriminatedUnionConverter.cs"
+   ],
+   "line": 47,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON195",
+   "query": "Gets the serializable members for the type",
+   "identifier": "GetSerializableMembers",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/DefaultContractResolver.cs"
+   ],
+   "line": 229,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON196",
+   "query": "Create a new Folder object",
+   "identifier": "CreateFolder",
+   "definedIn": [
+    "Src/Newtonsoft.Json.Tests/FileSystemEntityModel.Designer.cs"
+   ],
+   "line": 328,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DNEWTON197",
+   "query": "Provides methods to get attributes",
+   "identifier": "IAttributeProvider",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Serialization/IAttributeProvider.cs"
+   ],
+   "line": 34,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON198",
+   "query": "Raises the ListChanged event",
+   "identifier": "OnListChanged",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Linq/JContainer.cs"
+   ],
+   "line": 158,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DNEWTON199",
+   "query": "Converts the value to the specified type",
+   "identifier": "ConvertOrCast",
+   "definedIn": [
+    "Src/Newtonsoft.Json/Utilities/ConvertUtils.cs"
+   ],
+   "line": 740,
+   "nameWordsInQuery": false
+  }
+ ]
+}

@@ -1,0 +1,2010 @@
+{
+ "repo": "doc-ecto",
+ "source": "id-ecto",
+ "commit": "c0c99f51ef1dc71c265162c92623858027122a77",
+ "lang": "elixir",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "200 docstring-style queries (first sentence of the doc comment of one definition), drawn by gen_queries_doc.py (seed 0xa11ce); corpus is the pinned repo with all definition doc comments removed (scripts/extract_docqueries.ts --strip). Documented definitions available: 265 (of 3030 definitions).",
+ "queries": [
+  {
+   "id": "DECTO0",
+   "query": "Load structs from query",
+   "identifier": "struct_load!",
+   "definedIn": [
+    "lib/ecto/repo/queryable.ex"
+   ],
+   "line": 202,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO1",
+   "query": "Resets a previously set field or fields on a query",
+   "identifier": "exclude",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 989,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO2",
+   "query": "Allows a list argument to be spliced into a fragment",
+   "identifier": "splice",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 615,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO3",
+   "query": "Handles the changeset or struct when being replaced",
+   "identifier": "on_replace",
+   "definedIn": [
+    "lib/ecto/changeset/relation.ex"
+   ],
+   "line": 260,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO4",
+   "query": "Creates a values list/constant table",
+   "identifier": "values",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 683,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO5",
+   "query": "Adds an insert operation to the Multi",
+   "identifier": "insert",
+   "definedIn": [
+    "lib/ecto/multi.ex"
+   ],
+   "line": 312,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO6",
+   "query": "Retrieves the runtime configuration",
+   "identifier": "init_config",
+   "definedIn": [
+    "lib/ecto/repo/supervisor.ex"
+   ],
+   "line": 27,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO7",
+   "query": "Loads a struct to be used as a template in further operations",
+   "identifier": "load_struct",
+   "definedIn": [
+    "lib/ecto/schema/loader.ex"
+   ],
+   "line": 9,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO8",
+   "query": "Validates defaults for association named name",
+   "identifier": "validate_defaults!",
+   "definedIn": [
+    "lib/ecto/association.ex"
+   ],
+   "line": 472,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO9",
+   "query": "Build a join query with the given through associations starting at counter",
+   "identifier": "joins_query",
+   "definedIn": [
+    "lib/ecto/association.ex"
+   ],
+   "line": 425,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO10",
+   "query": "Runs a query and stores all results in the Multi",
+   "identifier": "all",
+   "definedIn": [
+    "lib/ecto/multi.ex"
+   ],
+   "line": 507,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO11",
+   "query": "Plans and prepares a query for the given repo, leveraging its query cache",
+   "identifier": "prepare_query",
+   "definedIn": [
+    "lib/ecto/adapter/queryable.ex"
+   ],
+   "line": 104,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO12",
+   "query": "Checks if the given type is parameterized by the given module",
+   "identifier": "parameterized?",
+   "definedIn": [
+    "lib/ecto/type.ex"
+   ],
+   "line": 358,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO13",
+   "query": "An AND having query expression",
+   "identifier": "having",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 2662,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO14",
+   "query": "Adds a given interval to a datetime",
+   "identifier": "datetime_add",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 335,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO15",
+   "query": "Gets the association entry or entries from changes or from the data",
+   "identifier": "get_assoc",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 1780,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO16",
+   "query": "Validates preload_order for association named name",
+   "identifier": "validate_preload_order!",
+   "definedIn": [
+    "lib/ecto/association.ex"
+   ],
+   "line": 491,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO17",
+   "query": "Asks if the user wants to open a file based on ECTO_EDITOR",
+   "identifier": "open?",
+   "definedIn": [
+    "lib/mix/ecto.ex"
+   ],
+   "line": 106,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO18",
+   "query": "Wraps the given data in a changeset or adds changes to a changeset",
+   "identifier": "change",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 491,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO19",
+   "query": "Inspects results from a Multi",
+   "identifier": "inspect",
+   "definedIn": [
+    "lib/ecto/multi.ex"
+   ],
+   "line": 846,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO20",
+   "query": "Validates a change has the given format",
+   "identifier": "validate_format",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 2926,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO21",
+   "query": "Finds the index value for the given var in vars or raises",
+   "identifier": "find_var!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1167,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO22",
+   "query": "Same as fetch_field/2 but returns the value or raises if the given key was not found",
+   "identifier": "fetch_field!",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 1684,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO23",
+   "query": "Enables or disables recursive mode for CTEs",
+   "identifier": "recursive_ctes",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 1642,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO24",
+   "query": "Gets how the type is treated inside embeds for the given format",
+   "identifier": "embed_as",
+   "definedIn": [
+    "lib/ecto/type.ex"
+   ],
+   "line": 392,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO25",
+   "query": "Validates that one or more fields are present in the changeset",
+   "identifier": "validate_required",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 2602,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO26",
+   "query": "Invoked for runtime windows",
+   "identifier": "runtime!",
+   "definedIn": [
+    "lib/ecto/query/builder/windows.ex"
+   ],
+   "line": 165,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO27",
+   "query": "Allows a field to be dynamically accessed",
+   "identifier": "field",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 739,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO28",
+   "query": "Wraps related structs in changesets",
+   "identifier": "change",
+   "definedIn": [
+    "lib/ecto/changeset/relation.ex"
+   ],
+   "line": 177,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO29",
+   "query": "Gets the metadata from the given struct",
+   "identifier": "get_meta",
+   "definedIn": [
+    "lib/ecto.ex"
+   ],
+   "line": 613,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO30",
+   "query": "Build an association query through the given associations from the specified owner table and through the given associations",
+   "identifier": "filter_through_chain",
+   "definedIn": [
+    "lib/ecto/association.ex"
+   ],
+   "line": 176,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO31",
+   "query": "Expands a dynamic expression as part of an existing expression",
+   "identifier": "partially_expand",
+   "definedIn": [
+    "lib/ecto/query/builder/dynamic.ex"
+   ],
+   "line": 64,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO32",
+   "query": "Fetches the given field from changes or from the data",
+   "identifier": "fetch_field",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 1657,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO33",
+   "query": "Checks the variable is a quoted direction at compilation time or delegate the check to runtime for interpolation",
+   "identifier": "quoted_dir!",
+   "definedIn": [
+    "lib/ecto/query/builder/order_by.ex"
+   ],
+   "line": 113,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO34",
+   "query": "Format type for error messaging and logs",
+   "identifier": "format",
+   "definedIn": [
+    "lib/ecto/type.ex"
+   ],
+   "line": 1401,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO35",
+   "query": "Searches for search in string",
+   "identifier": "like",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 224,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO36",
+   "query": "A lock query expression",
+   "identifier": "lock",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 2536,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO37",
+   "query": "An order by query expression that is prepended to existing ones",
+   "identifier": "prepend_order_by",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 2009,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO38",
+   "query": "Updates the prefix of a changeset based on the metadata",
+   "identifier": "update_parent_prefix",
+   "definedIn": [
+    "lib/ecto/association.ex"
+   ],
+   "line": 547,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO39",
+   "query": "Adds the given interval to the current time in UTC",
+   "identifier": "from_now",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 359,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO40",
+   "query": "Restricts the query to return the first result ordered by primary key",
+   "identifier": "first",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 2923,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO41",
+   "query": "Dumps the given struct defined by an embedded schema",
+   "identifier": "embedded_dump",
+   "definedIn": [
+    "lib/ecto.ex"
+   ],
+   "line": 750,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO42",
+   "query": "Tests whether one or more values returned from the provided subquery match in a comparison operation",
+   "identifier": "any",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 187,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO43",
+   "query": "The callback applied by build/2 to build the query",
+   "identifier": "apply",
+   "definedIn": [
+    "lib/ecto/query/builder/from.ex"
+   ],
+   "line": 188,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO44",
+   "query": "Escape the params entries list",
+   "identifier": "escape_params",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 963,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO45",
+   "query": "Retrieves related module from queryable",
+   "identifier": "related_from_query",
+   "definedIn": [
+    "lib/ecto/association.ex"
+   ],
+   "line": 447,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO46",
+   "query": "An OR where query expression",
+   "identifier": "or_where",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 1910,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO47",
+   "query": "Allows a dynamic string or number to be injected into a fragment",
+   "identifier": "constant",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 554,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO48",
+   "query": "Called at runtime to check dynamic preload keys",
+   "identifier": "key!",
+   "definedIn": [
+    "lib/ecto/query/builder/preload.ex"
+   ],
+   "line": 127,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO49",
+   "query": "Applies related changeset changes",
+   "identifier": "apply_changes",
+   "definedIn": [
+    "lib/ecto/changeset/relation.ex"
+   ],
+   "line": 55,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO50",
+   "query": "Puts the given embed entry or entries as a change in the changeset",
+   "identifier": "put_embed",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 2218,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO51",
+   "query": "Allows a dynamic identifier to be injected into a fragment",
+   "identifier": "identifier",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 538,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO52",
+   "query": "Escapes the CTE name",
+   "identifier": "escape",
+   "definedIn": [
+    "lib/ecto/query/builder/cte.ex"
+   ],
+   "line": 16,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO53",
+   "query": "Gets a change or returns a default value",
+   "identifier": "get_change",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 1900,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO54",
+   "query": "Adds an error to the changeset",
+   "identifier": "add_error",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 2466,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO55",
+   "query": "Called by escaper at runtime to verify that path is a list",
+   "identifier": "json_path!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1330,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO56",
+   "query": "Checks if we have a primitive type",
+   "identifier": "primitive?",
+   "definedIn": [
+    "lib/ecto/type.ex"
+   ],
+   "line": 342,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO57",
+   "query": "Smart escapes a query expression and extracts interpolated values in a map",
+   "identifier": "escape",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 88,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO58",
+   "query": "Prepare all sources, by traversing and expanding from, joins, subqueries",
+   "identifier": "plan_sources",
+   "definedIn": [
+    "lib/ecto/query/planner.ex"
+   ],
+   "line": 268,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO59",
+   "query": "Causes the Multi to fail with the given value",
+   "identifier": "error",
+   "definedIn": [
+    "lib/ecto/multi.ex"
+   ],
+   "line": 576,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO60",
+   "query": "Same as fetch_change/2 but returns the value or raises if the given key was not found",
+   "identifier": "fetch_change!",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 1874,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO61",
+   "query": "Indicates a many-to-many association with another schema",
+   "identifier": "many_to_many",
+   "definedIn": [
+    "lib/ecto/schema.ex"
+   ],
+   "line": 1591,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO62",
+   "query": "Puts the given association entry or entries as a change in the changeset",
+   "identifier": "put_assoc",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 2196,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO63",
+   "query": "Defines windows which can be used with Ecto.Query.WindowAPI",
+   "identifier": "windows",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 827,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO64",
+   "query": "An update query expression",
+   "identifier": "update",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 2597,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO65",
+   "query": "Inserts or updates a changeset depending on whether or not the changeset was persisted",
+   "identifier": "insert_or_update",
+   "definedIn": [
+    "lib/ecto/multi.ex"
+   ],
+   "line": 385,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO66",
+   "query": "Puts the prefix given via opts into the given query, if available",
+   "identifier": "attach_prefix",
+   "definedIn": [
+    "lib/ecto/query/planner.ex"
+   ],
+   "line": 2439,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO67",
+   "query": "Forces a change on the given key with value",
+   "identifier": "force_change",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 2254,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO68",
+   "query": "If there are interpolated updates at compile time, we need to handle them at runtime",
+   "identifier": "update!",
+   "definedIn": [
+    "lib/ecto/query/builder/update.ex"
+   ],
+   "line": 151,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO69",
+   "query": "A join query expression",
+   "identifier": "join",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 1454,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO70",
+   "query": "Builds a dynamic query expression",
+   "identifier": "dynamic",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 770,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO71",
+   "query": "Converts a binary UUID into a string",
+   "identifier": "load",
+   "definedIn": [
+    "lib/ecto/uuid.ex"
+   ],
+   "line": 203,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO72",
+   "query": "Applies optimistic locking to the changeset",
+   "identifier": "optimistic_lock",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 3644,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO73",
+   "query": "Evaluates whether all values returned from the provided subquery match in a comparison operation",
+   "identifier": "all",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 207,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO74",
+   "query": "Define the query cache table",
+   "identifier": "new_query_cache",
+   "definedIn": [
+    "lib/ecto/query/planner.ex"
+   ],
+   "line": 126,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO75",
+   "query": "Called at runtime to build aliases",
+   "identifier": "runtime_aliases",
+   "definedIn": [
+    "lib/ecto/query/builder/join.ex"
+   ],
+   "line": 347,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO76",
+   "query": "Called by escaper at runtime to verify that value is an atom or string",
+   "identifier": "atom_or_string!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1223,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO77",
+   "query": "A select query expression",
+   "identifier": "select",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 1724,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO78",
+   "query": "Checks for a unique constraint in the given field or list of fields",
+   "identifier": "unique_constraint",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 3923,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO79",
+   "query": "Applies the join expression to the query",
+   "identifier": "apply",
+   "definedIn": [
+    "lib/ecto/query/builder/join.ex"
+   ],
+   "line": 326,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO80",
+   "query": "Merges source from query into to the given schema",
+   "identifier": "merge_source",
+   "definedIn": [
+    "lib/ecto/association.ex"
+   ],
+   "line": 530,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO81",
+   "query": "Defines a field on the schema with given name and type",
+   "identifier": "field",
+   "definedIn": [
+    "lib/ecto/schema.ex"
+   ],
+   "line": 718,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO82",
+   "query": "Checks if the column names provided to a fragment is a list of atoms",
+   "identifier": "columns!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1250,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO83",
+   "query": "The default list of empty values used by Ecto",
+   "identifier": "empty_values",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 599,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO84",
+   "query": "Loads a value with the given type",
+   "identifier": "load",
+   "definedIn": [
+    "lib/ecto/type.ex"
+   ],
+   "line": 641,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO85",
+   "query": "Called at runtime for interpolated/dynamic selects",
+   "identifier": "select!",
+   "definedIn": [
+    "lib/ecto/query/builder/select.ex"
+   ],
+   "line": 227,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO86",
+   "query": "Plans a query using the given adapter",
+   "identifier": "plan_query",
+   "definedIn": [
+    "lib/ecto/adapter/queryable.ex"
+   ],
+   "line": 124,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO87",
+   "query": "Called by the select escaper at compile time and dynamic builder at runtime to track select aliases",
+   "identifier": "add_select_alias",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1592,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO88",
+   "query": "Checks if the field is a valid interval at compilation time or delegate the check to runtime for interpolation",
+   "identifier": "quoted_interval!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1353,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO89",
+   "query": "Plans the query for execution",
+   "identifier": "query",
+   "definedIn": [
+    "lib/ecto/query/planner.ex"
+   ],
+   "line": 155,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO90",
+   "query": "Negates the given number",
+   "identifier": "negate!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1425,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO91",
+   "query": "Checks if a given type matches with a primitive type that can be found in queries",
+   "identifier": "match?",
+   "definedIn": [
+    "lib/ecto/type.ex"
+   ],
+   "line": 483,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO92",
+   "query": "Called at runtime to assemble order_by",
+   "identifier": "order_by!",
+   "definedIn": [
+    "lib/ecto/query/builder/order_by.ex"
+   ],
+   "line": 185,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO93",
+   "query": "The same as has_named_binding?/2 but allowed in guards",
+   "identifier": "is_named_binding",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 3067,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO94",
+   "query": "Applies the changeset changes to the changeset data",
+   "identifier": "apply_changes",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 2299,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO95",
+   "query": "Called by escaper at runtime to verify identifier in fragments",
+   "identifier": "identifier!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1373,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO96",
+   "query": "Casts related according to the on_cast function",
+   "identifier": "cast",
+   "definedIn": [
+    "lib/ecto/changeset/relation.ex"
+   ],
+   "line": 93,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO97",
+   "query": "Checks if the container can be considered empty",
+   "identifier": "empty?",
+   "definedIn": [
+    "lib/ecto/changeset/relation.ex"
+   ],
+   "line": 36,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO98",
+   "query": "Preloads the associations into the result set",
+   "identifier": "preload",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 2907,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO99",
+   "query": "Gets a field from changes or from the data",
+   "identifier": "get_field",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 1719,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO100",
+   "query": "Puts a change on the given key with value",
+   "identifier": "put_change",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 1965,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO101",
+   "query": "An order by query expression",
+   "identifier": "order_by",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 1987,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO102",
+   "query": "Applies default values into the struct",
+   "identifier": "apply_defaults",
+   "definedIn": [
+    "lib/ecto/association.ex"
+   ],
+   "line": 461,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO103",
+   "query": "Applies a query at compilation time or at runtime",
+   "identifier": "apply_query",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1656,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO104",
+   "query": "Checks if the field is an atom at compilation time or delegates the check to runtime for interpolation",
+   "identifier": "quoted_atom!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1178,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO105",
+   "query": "Validates a change, of type enum, is a subset of the given enumerable",
+   "identifier": "validate_subset",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 2993,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO106",
+   "query": "Checks if the field is an atom or string at compilation time or delegate the check to runtime for interpolation",
+   "identifier": "quoted_atom_or_string!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1195,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO107",
+   "query": "Validates a change is not included in the given enumerable",
+   "identifier": "validate_exclusion",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 3034,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO108",
+   "query": "An OR having query expression",
+   "identifier": "or_having",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 2684,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO109",
+   "query": "The callback applied by build/5 to build the query",
+   "identifier": "apply",
+   "definedIn": [
+    "lib/ecto/query/builder/select.ex"
+   ],
+   "line": 350,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO110",
+   "query": "Casts a value to the given type or raises an error",
+   "identifier": "cast!",
+   "definedIn": [
+    "lib/ecto/type.ex"
+   ],
+   "line": 957,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO111",
+   "query": "Merges the map on the right over the map on the left",
+   "identifier": "merge",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 844,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO112",
+   "query": "An offset query expression",
+   "identifier": "offset",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 2508,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO113",
+   "query": "Called by escaper at runtime to verify constant in fragments",
+   "identifier": "constant!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1385,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO114",
+   "query": "Casts either a string in the canonical, human-readable UUID format or a 16-byte binary to a UUID in its canonical, human-readable UUID format",
+   "identifier": "cast",
+   "definedIn": [
+    "lib/ecto/uuid.ex"
+   ],
+   "line": 85,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO115",
+   "query": "Loads the relation with the given struct",
+   "identifier": "load!",
+   "definedIn": [
+    "lib/ecto/changeset/relation.ex"
+   ],
+   "line": 78,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO116",
+   "query": "Determines whether a field is missing in a changeset",
+   "identifier": "field_missing?",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 2660,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO117",
+   "query": "Indicates a one-to-one or many-to-one association with another schema",
+   "identifier": "belongs_to",
+   "definedIn": [
+    "lib/ecto/schema.ex"
+   ],
+   "line": 1287,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO118",
+   "query": "Appends the second Multi to the first",
+   "identifier": "append",
+   "definedIn": [
+    "lib/ecto/multi.ex"
+   ],
+   "line": 196,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO119",
+   "query": "Loads the value for type considering it was embedded in format",
+   "identifier": "embedded_load",
+   "definedIn": [
+    "lib/ecto/type.ex"
+   ],
+   "line": 422,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO120",
+   "query": "Prepare the parameters by merging and casting them according to sources",
+   "identifier": "plan_cache",
+   "definedIn": [
+    "lib/ecto/query/planner.ex"
+   ],
+   "line": 939,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO121",
+   "query": "Count the alias for the given query",
+   "identifier": "count_alias!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1104,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO122",
+   "query": "Rewrites the given query expression sources using the given mapping",
+   "identifier": "rewrite_sources",
+   "definedIn": [
+    "lib/ecto/query/planner.ex"
+   ],
+   "line": 86,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO123",
+   "query": "Subtracts the given interval from the current time in UTC",
+   "identifier": "ago",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 373,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO124",
+   "query": "Adds a given interval to a date",
+   "identifier": "date_add",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 344,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO125",
+   "query": "Expands a dynamic expression for insertion into the given query",
+   "identifier": "fully_expand",
+   "definedIn": [
+    "lib/ecto/query/builder/dynamic.ex"
+   ],
+   "line": 52,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO126",
+   "query": "Validates with_ties at runtime",
+   "identifier": "with_ties!",
+   "definedIn": [
+    "lib/ecto/query/builder/limit_offset.ex"
+   ],
+   "line": 12,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO127",
+   "query": "Builds a dynamic expression",
+   "identifier": "build",
+   "definedIn": [
+    "lib/ecto/query/builder/dynamic.ex"
+   ],
+   "line": 13,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO128",
+   "query": "Shared between order_by and distinct",
+   "identifier": "order_by_or_distinct!",
+   "definedIn": [
+    "lib/ecto/query/builder/order_by.ex"
+   ],
+   "line": 161,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO129",
+   "query": "Applies the changeset action if the changes are valid or raises an error",
+   "identifier": "apply_action!",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 2366,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO130",
+   "query": "Called at runtime to verify the direction",
+   "identifier": "dir!",
+   "definedIn": [
+    "lib/ecto/query/builder/order_by.ex"
+   ],
+   "line": 129,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO131",
+   "query": "Checks for an exclusion constraint in the given field",
+   "identifier": "exclusion_constraint",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 4145,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO132",
+   "query": "Validates a change is included in the given enumerable",
+   "identifier": "validate_inclusion",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 2958,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO133",
+   "query": "Takes the first value which is not null, or null if they both are",
+   "identifier": "coalesce",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 277,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO134",
+   "query": "Provides a function executed by the repository on insert/update/delete",
+   "identifier": "prepare_changes",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 3713,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO135",
+   "query": "Dumps the value for type considering it will be embedded in format",
+   "identifier": "embedded_dump",
+   "definedIn": [
+    "lib/ecto/type.ex"
+   ],
+   "line": 406,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO136",
+   "query": "Checks if the given atom can be used as composite type",
+   "identifier": "composite?",
+   "definedIn": [
+    "lib/ecto/type.ex"
+   ],
+   "line": 371,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO137",
+   "query": "Refer to a named atom binding in the parent query",
+   "identifier": "parent_as",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 985,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO138",
+   "query": "Gets a path relative to the application path",
+   "identifier": "no_umbrella!",
+   "definedIn": [
+    "lib/mix/ecto.ex"
+   ],
+   "line": 131,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO139",
+   "query": "Parses an Ecto URL allowed in configuration",
+   "identifier": "parse_url",
+   "definedIn": [
+    "lib/ecto/repo/supervisor.ex"
+   ],
+   "line": 107,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO140",
+   "query": "Escapes a where or having clause",
+   "identifier": "escape",
+   "definedIn": [
+    "lib/ecto/query/builder/filter.ex"
+   ],
+   "line": 20,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO141",
+   "query": "Send fragments directly to the database",
+   "identifier": "fragment",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 522,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO142",
+   "query": "Converts the timestamp in the UUID to a datetime",
+   "identifier": "to_datetime",
+   "definedIn": [
+    "lib/ecto/uuid.ex"
+   ],
+   "line": 384,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO143",
+   "query": "Evaluates to true if the provided subquery returns 1 or more rows",
+   "identifier": "exists",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 172,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO144",
+   "query": "A limit query expression",
+   "identifier": "limit",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 2458,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO145",
+   "query": "Escapes a variable according to the given binds",
+   "identifier": "escape_var!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 978,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO146",
+   "query": "Add the default assoc query where clauses a provided query",
+   "identifier": "combine_assoc_query",
+   "definedIn": [
+    "lib/ecto/association.ex"
+   ],
+   "line": 363,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO147",
+   "query": "Called at runtime to check dynamic qualifier",
+   "identifier": "qual!",
+   "definedIn": [
+    "lib/ecto/query/builder/join.ex"
+   ],
+   "line": 424,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO148",
+   "query": "Updates the order_bys value for a query",
+   "identifier": "update_order_bys",
+   "definedIn": [
+    "lib/ecto/query/builder/order_by.ex"
+   ],
+   "line": 280,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO149",
+   "query": "Traverses changeset validations and applies the given function to validations",
+   "identifier": "traverse_validations",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 4365,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO150",
+   "query": "Called by escaper at runtime to verify splice in fragments",
+   "identifier": "splice!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1397,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO151",
+   "query": "Escape the select alias map",
+   "identifier": "escape_select_aliases",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 969,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO152",
+   "query": "The callback applied by build/5 when merging",
+   "identifier": "merge",
+   "definedIn": [
+    "lib/ecto/query/builder/select.ex"
+   ],
+   "line": 363,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO153",
+   "query": "Called at runtime to assemble preload",
+   "identifier": "preload!",
+   "definedIn": [
+    "lib/ecto/query/builder/preload.ex"
+   ],
+   "line": 170,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO154",
+   "query": "Adds a delete operation to the Multi",
+   "identifier": "delete",
+   "definedIn": [
+    "lib/ecto/multi.ex"
+   ],
+   "line": 438,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO155",
+   "query": "Fetches a change from the given changeset",
+   "identifier": "fetch_change",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 1858,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO156",
+   "query": "Converts a string representing a UUID into a raw binary",
+   "identifier": "dump",
+   "definedIn": [
+    "lib/ecto/uuid.ex"
+   ],
+   "line": 144,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO157",
+   "query": "Casts the given embed with the changeset parameters",
+   "identifier": "cast_embed",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 1366,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO158",
+   "query": "Called at runtime to verify distinct",
+   "identifier": "distinct!",
+   "definedIn": [
+    "lib/ecto/query/builder/distinct.ex"
+   ],
+   "line": 32,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO159",
+   "query": "Deletes a change with the given key",
+   "identifier": "delete_change",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 2280,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO160",
+   "query": "Bump subqueries by the count of pre-existing subqueries",
+   "identifier": "bump_subqueries",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1578,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO161",
+   "query": "A union query expression",
+   "identifier": "union",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 2083,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO162",
+   "query": "Prepares the query for cache",
+   "identifier": "plan",
+   "definedIn": [
+    "lib/ecto/query/planner.ex"
+   ],
+   "line": 242,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO163",
+   "query": "Starts the repo supervisor",
+   "identifier": "start_link",
+   "definedIn": [
+    "lib/ecto/repo/supervisor.ex"
+   ],
+   "line": 18,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO164",
+   "query": "Builds a query for the association in the given struct or structs",
+   "identifier": "assoc",
+   "definedIn": [
+    "lib/ecto.ex"
+   ],
+   "line": 510,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO165",
+   "query": "Indicates a one-to-many association with another schema",
+   "identifier": "has_many",
+   "definedIn": [
+    "lib/ecto/schema.ex"
+   ],
+   "line": 988,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO166",
+   "query": "Escapes a list of bindings as a list of atoms",
+   "identifier": "escape_binding",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1004,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO167",
+   "query": "Transforms a result set based on query assocs, loading the associations onto their parent schema",
+   "identifier": "query",
+   "definedIn": [
+    "lib/ecto/repo/assoc.ex"
+   ],
+   "line": 11,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO168",
+   "query": "Applies the changeset action only if the changes are valid",
+   "identifier": "apply_action",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 2338,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO169",
+   "query": "Builds a struct from the given assoc in struct",
+   "identifier": "build_assoc",
+   "definedIn": [
+    "lib/ecto.ex"
+   ],
+   "line": 471,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO170",
+   "query": "A distinct query expression",
+   "identifier": "distinct",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 1829,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO171",
+   "query": "A union all query expression",
+   "identifier": "union_all",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 2151,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO172",
+   "query": "Validates hints at compile time and runtime",
+   "identifier": "hint!",
+   "definedIn": [
+    "lib/ecto/query/builder/from.ex"
+   ],
+   "line": 162,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO173",
+   "query": "Retrieves the underlying schema type for the given, possibly custom, type",
+   "identifier": "type",
+   "definedIn": [
+    "lib/ecto/type.ex"
+   ],
+   "line": 453,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO174",
+   "query": "Checks if two terms are equal",
+   "identifier": "equal?",
+   "definedIn": [
+    "lib/ecto/type.ex"
+   ],
+   "line": 1289,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO175",
+   "query": "Resets fields in a struct to their default values",
+   "identifier": "reset_fields",
+   "definedIn": [
+    "lib/ecto.ex"
+   ],
+   "line": 595,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO176",
+   "query": "Extracts the unix timestamp from the UUID",
+   "identifier": "to_unix",
+   "definedIn": [
+    "lib/ecto/uuid.ex"
+   ],
+   "line": 398,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO177",
+   "query": "Searches for search in string in a case insensitive fashion",
+   "identifier": "ilike",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 234,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO178",
+   "query": "Prepends the second Multi to the first",
+   "identifier": "prepend",
+   "definedIn": [
+    "lib/ecto/multi.ex"
+   ],
+   "line": 214,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO179",
+   "query": "Generates a uuid with the given options in binary format",
+   "identifier": "bingenerate",
+   "definedIn": [
+    "lib/ecto/uuid.ex"
+   ],
+   "line": 269,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO180",
+   "query": "Dumps the given data",
+   "identifier": "safe_dump",
+   "definedIn": [
+    "lib/ecto/schema/loader.ex"
+   ],
+   "line": 99,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO181",
+   "query": "Loads previously dumped data in the given format into a schema",
+   "identifier": "embedded_load",
+   "definedIn": [
+    "lib/ecto.ex"
+   ],
+   "line": 728,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO182",
+   "query": "Checks if an association is loaded",
+   "identifier": "assoc_loaded?",
+   "definedIn": [
+    "lib/ecto.ex"
+   ],
+   "line": 575,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO183",
+   "query": "Checks if the given value is nil",
+   "identifier": "is_nil",
+   "definedIn": [
+    "lib/ecto/query/api.ex"
+   ],
+   "line": 245,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO184",
+   "query": "Retrieves the compile time configuration",
+   "identifier": "compile_config",
+   "definedIn": [
+    "lib/ecto/repo/supervisor.ex"
+   ],
+   "line": 72,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO185",
+   "query": "Defines a value based on the function and the window",
+   "identifier": "over",
+   "definedIn": [
+    "lib/ecto/query/window_api.ex"
+   ],
+   "line": 77,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO186",
+   "query": "Checks the associated field exists",
+   "identifier": "assoc_constraint",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 4042,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO187",
+   "query": "Expands preloads at runtime",
+   "identifier": "expand",
+   "definedIn": [
+    "lib/ecto/query/builder/preload.ex"
+   ],
+   "line": 209,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO188",
+   "query": "Normalizes and validates the query",
+   "identifier": "normalize",
+   "definedIn": [
+    "lib/ecto/query/planner.ex"
+   ],
+   "line": 1340,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO189",
+   "query": "Validates a change is a string or list of the given length",
+   "identifier": "validate_length",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 3090,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO190",
+   "query": "A group by query expression",
+   "identifier": "group_by",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 2634,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DECTO191",
+   "query": "Checks if an entry matching the given query exists and stores a boolean in the Multi",
+   "identifier": "exists?",
+   "definedIn": [
+    "lib/ecto/multi.ex"
+   ],
+   "line": 540,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO192",
+   "query": "Called by escaper at runtime to verify that a value is not nil",
+   "identifier": "not_nil!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1339,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO193",
+   "query": "Validates that no existing record with a different primary key has the same values for these fields",
+   "identifier": "unsafe_validate_unique",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 2722,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO194",
+   "query": "Casts a value from the given schema and field",
+   "identifier": "cast_value",
+   "definedIn": [
+    "lib/ecto/enum.ex"
+   ],
+   "line": 321,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO195",
+   "query": "Converts the given data into an Ecto.Query",
+   "identifier": "to_query",
+   "definedIn": [
+    "lib/ecto/queryable.ex"
+   ],
+   "line": 106,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO196",
+   "query": "Called by escaper at runtime to verify that value is a string or an integer",
+   "identifier": "json_path_element!",
+   "definedIn": [
+    "lib/ecto/query/builder.ex"
+   ],
+   "line": 1318,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO197",
+   "query": "Escapes a window params",
+   "identifier": "escape",
+   "definedIn": [
+    "lib/ecto/query/builder/windows.ex"
+   ],
+   "line": 21,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO198",
+   "query": "Traverses changeset errors and applies the given function to error messages",
+   "identifier": "traverse_errors",
+   "definedIn": [
+    "lib/ecto/changeset.ex"
+   ],
+   "line": 4266,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DECTO199",
+   "query": "Reverses the ordering of the query",
+   "identifier": "reverse_order",
+   "definedIn": [
+    "lib/ecto/query.ex"
+   ],
+   "line": 3081,
+   "nameWordsInQuery": false
+  }
+ ]
+}

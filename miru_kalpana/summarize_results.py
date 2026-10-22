@@ -54,7 +54,7 @@ def load(tag: str, repo: str):
         fh = [in_defined(c["file_path"], q["definedIn"]) for c in top]
         nat_row = {"hit3": any(fh), "def3": any(h and _def(c, q["identifier"]) for h, c in zip(fh, top))}
         rows.append((nat_row, r["baseline"], r[f"lin{alpha_of[i]}"]))
-    return {"rows": rows, "lat": res["latencyMs"], "res": res}
+    return {"rows": rows, "lat": res["latencyMs"], "res": res, "ids": [r["id"] for r in pq], "spec": spec}
 
 
 def wl(pairs, key):
@@ -70,7 +70,7 @@ def row_for(d: dict, key: str = "def3") -> dict:
     return {
         "n": n, "nat": sum(x[key] for x in nat) / n, "kal": sum(x[key] for x in kal) / n,
         "w": w, "l": l, "p": sign_test(w, l), "hw": hw, "hl": hl, "hp": sign_test(hw, hl),
-        "ceiling": sum(r["rr_def"] > 0 for r in base) / n,
+        "ceiling": sum(r["rr_def" if key == "def3" else "rr"] > 0 for r in base) / n,
     }
 
 
@@ -106,6 +106,30 @@ def table(tag: str, repos: list, title: str, lines: list, key: str = "def3", lab
     return tot
 
 
+def strat_table(tag: str, repos: list, lines: list, labels: dict) -> None:
+    """Docstring suite only: split by whether the query already contains every word of the identifier name."""
+    lines += [f"### Split by name overlap, chunk level  (`{tag}`)", "",
+              "Queries whose words include every word of the identifier name (e.g. 'parse request' for parseRequest) are "
+              "easier by construction. The second block keeps only queries that do not.", "",
+              "| Subset | n | Native Chunk@3 | + Kalpana | Win / Loss | p |", "|---|---|---|---|---|---|"]
+    for title, want in (("query contains every word of the identifier", True),
+                        ("query does not (pure natural language)", False)):
+        sel = []
+        for repo in repos:
+            d = load(tag, repo)
+            if not d:
+                continue
+            sel += [row for row, i in zip(d["rows"], d["ids"]) if bool(d["spec"][i].get("nameWordsInQuery")) == want]
+        n = len(sel)
+        if not n:
+            continue
+        nat = [r[0] for r in sel]; kal = [r[2] for r in sel]
+        w, l = wl(list(zip(kal, nat)), "def3")
+        lines.append(f"| {title} | {n} | {sum(x['def3'] for x in nat)/n:.1%} | {sum(x['def3'] for x in kal)/n:.1%} "
+                     f"| {w} / {l} | {sign_test(w, l):.3f} |")
+    lines.append("")
+
+
 def latency(tag: str, repos: list, lines: list) -> None:
     lines += [f"### Latency per query, ms (p50 / p95)  (`{tag}`)", "",
               "| Repo | Miru query embedding (API) | Miru search | Kalpana query, cold | Kalpana query, warm | Kalpana pool scoring |",
@@ -123,13 +147,32 @@ def latency(tag: str, repos: list, lines: list) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--suite", choices=["std", "id"], default="std",
-                    help="std = CodeSearchNet + curated A/B; id = identifier-style set (benchmark/identifier_repos.json)")
+    ap.add_argument("--suite", choices=["std", "id", "doc"], default="std",
+                    help="std = CodeSearchNet + curated A/B; id = identifier-style set (benchmark/identifier_repos.json); "
+                         "doc = docstring-style queries on the same repos (scripts/run_doc_suite.sh)")
     ap.add_argument("--tags", nargs="+", default=None)
     ap.add_argument("--repos", nargs="+", default=None)
     ap.add_argument("--out", default=None)
     a = ap.parse_args()
-    if a.suite == "id":
+    if a.suite == "doc":
+        man = json.loads((ROOT / "benchmark" / "identifier_repos.json").read_text())
+        names = ["redis", "abseil", "newtonsoft", "play", "pandoc", "ecto", "tokio", "vite"]
+        langs = {r["name"]: r["lang"] for r in man["repos"]}
+        labels = {f"doc-{n}": f"{langs[n]} — {n}" for n in names}
+        repos = a.repos or list(labels)
+        tags = a.tags or ["ds1-miru-int8"]
+        out_name = a.out or "benchmark/summary.docstring.md"
+        lines = ["# Kalpana on Miru: docstring-style natural-language queries", "",
+                 "Query = first sentence of the doc comment of one definition (up to 200 per repo, seed from "
+                 "benchmark/identifier_repos.json). Corpus = the pinned repo with every definition doc comment removed. "
+                 "Correct = a chunk in the file holding that definition (File@3), and for Chunk@3 a chunk in that file "
+                 "that defines the identifier. Miru unmodified (top-5 pool); alpha by 5-fold CV, scored on held-out folds.", ""]
+        for tag in tags:
+            table(tag, repos, "Docstring-style queries, chunk level", lines, labels=labels)
+            table(tag, repos, "Docstring-style queries, file level", lines, key="hit3", labels=labels)
+            strat_table(tag, repos, lines, labels)
+            latency(tag, repos, lines)
+    elif a.suite == "id":
         man = json.loads((ROOT / "benchmark" / "identifier_repos.json").read_text())
         live = [r for r in man["repos"] if not r.get("skip")]
         labels = {f"id-{r['name']}": f"{r['lang']} — {r['name']}" for r in live}

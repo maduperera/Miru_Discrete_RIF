@@ -1,0 +1,2010 @@
+{
+ "repo": "doc-tokio",
+ "source": "tokio",
+ "commit": "ce685ee6916549ed7e52dbfd5430858bbdc734d3",
+ "lang": "rust",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "200 docstring-style queries (first sentence of the doc comment of one definition), drawn by gen_queries_doc.py (seed 0xa11ce); corpus is the pinned repo with all definition doc comments removed (scripts/extract_docqueries.ts --strip). Documented definitions available: 1268 (of 9117 definitions).",
+ "queries": [
+  {
+   "id": "DTOKIO0",
+   "query": "Resets the interval to complete one period after the current time",
+   "identifier": "reset",
+   "definedIn": [
+    "tokio/src/time/interval.rs"
+   ],
+   "line": 517,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO1",
+   "query": "Set the waker that is notified when the task completes",
+   "identifier": "set_join_waker",
+   "definedIn": [
+    "tokio/src/runtime/task/join.rs"
+   ],
+   "line": 264,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO2",
+   "query": "Reads a symbolic link, returning the file that the link points to",
+   "identifier": "read_link",
+   "definedIn": [
+    "tokio/src/fs/read_link.rs"
+   ],
+   "line": 9,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO3",
+   "query": "Tries to receive data from the socket without waiting",
+   "identifier": "try_recv_from",
+   "definedIn": [
+    "tokio/src/net/unix/datagram/socket.rs"
+   ],
+   "line": 1351,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO4",
+   "query": "Dropping the token indicates to the [TaskTracker] that the task has exited",
+   "identifier": "drop",
+   "definedIn": [
+    "tokio-util/src/task/task_tracker.rs"
+   ],
+   "line": 670,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO5",
+   "query": "Gets file descriptor's flags by fcntl",
+   "identifier": "get_file_flags",
+   "definedIn": [
+    "tokio/src/net/unix/pipe.rs"
+   ],
+   "line": 1500,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO6",
+   "query": "Push an item onto the stack",
+   "identifier": "push",
+   "definedIn": [
+    "tokio-util/src/time/wheel/stack.rs"
+   ],
+   "line": 20,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO7",
+   "query": "Task result sent back",
+   "identifier": "Result",
+   "definedIn": [
+    "tokio/src/runtime/task/mod.rs"
+   ],
+   "line": 298,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO8",
+   "query": "Removes the last element from a list and returns it, or None if it is empty",
+   "identifier": "pop_back",
+   "definedIn": [
+    "tokio/src/util/linked_list.rs"
+   ],
+   "line": 164,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO9",
+   "query": "This structure holds the current shared state of the timer - its scheduled time (if registered), or otherwise the result of the timer completing, as well as the registered waker",
+   "identifier": "StateCell",
+   "definedIn": [
+    "tokio/src/runtime/time/entry.rs"
+   ],
+   "line": 90,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO10",
+   "query": "Obtain a pinned reference to the inner Split",
+   "identifier": "as_pin_mut",
+   "definedIn": [
+    "tokio-stream/src/wrappers/split.rs"
+   ],
+   "line": 51,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO11",
+   "query": "Get back the inner Interval",
+   "identifier": "into_inner",
+   "definedIn": [
+    "tokio-stream/src/wrappers/interval.rs"
+   ],
+   "line": 44,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO12",
+   "query": "Creates a new Unix stream socket",
+   "identifier": "new_stream",
+   "definedIn": [
+    "tokio/src/net/unix/socket.rs"
+   ],
+   "line": 119,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO13",
+   "query": "A wrapper around [tokio::sync::mpsc::Receiver] that implements [Stream]",
+   "identifier": "ReceiverStream",
+   "definedIn": [
+    "tokio-stream/src/wrappers/mpsc_bounded.rs"
+   ],
+   "line": 35,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO14",
+   "query": "A local Tokio runtime",
+   "identifier": "LocalRuntime",
+   "definedIn": [
+    "tokio/src/runtime/local_runtime/runtime.rs"
+   ],
+   "line": 32,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO15",
+   "query": "Error returned from the [Semaphore::try_acquire] function",
+   "identifier": "TryAcquireError",
+   "definedIn": [
+    "tokio/src/sync/batch_semaphore.rs"
+   ],
+   "line": 52,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO16",
+   "query": "Changes the permissions on the underlying file",
+   "identifier": "set_permissions",
+   "definedIn": [
+    "tokio/src/fs/file.rs"
+   ],
+   "line": 564,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO17",
+   "query": "Read data from an AsyncRead into an Arc",
+   "identifier": "read_exact_arc",
+   "definedIn": [
+    "tokio-util/src/io/read_arc.rs"
+   ],
+   "line": 27,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO18",
+   "query": "Forces a reactor blocked in a call to turn to wakeup, or otherwise makes the next call to turn return immediately",
+   "identifier": "unpark",
+   "definedIn": [
+    "tokio/src/runtime/io/driver.rs"
+   ],
+   "line": 277,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO19",
+   "query": "Spawn the provided task and store it in this JoinMap with the provided key",
+   "identifier": "spawn",
+   "definedIn": [
+    "tokio-util/src/task/join_map.rs"
+   ],
+   "line": 264,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO20",
+   "query": "Orchestrates between registering interest for receiving signals when a child process has exited, and attempting to poll for process completion",
+   "identifier": "Reaper",
+   "definedIn": [
+    "tokio/src/process/unix/reap.rs"
+   ],
+   "line": 16,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO21",
+   "query": "Marker type indicating that the starting branch should rotate each poll",
+   "identifier": "SelectNormal",
+   "definedIn": [
+    "tokio/src/macros/join.rs"
+   ],
+   "line": 240,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO22",
+   "query": "Safety: This method may not be called recursively",
+   "identifier": "with_inner",
+   "definedIn": [
+    "tokio/src/util/rc_cell.rs"
+   ],
+   "line": 29,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO23",
+   "query": "Next key that will expire",
+   "identifier": "peek",
+   "definedIn": [
+    "tokio-util/src/time/wheel/mod.rs"
+   ],
+   "line": 143,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO24",
+   "query": "Crate public as this is also needed by the pool",
+   "identifier": "Header",
+   "definedIn": [
+    "tokio/src/runtime/task/core.rs"
+   ],
+   "line": 169,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO25",
+   "query": "Executes an operation of the IP_ADD_MEMBERSHIP type",
+   "identifier": "join_multicast_v4",
+   "definedIn": [
+    "tokio/src/net/udp.rs"
+   ],
+   "line": 2251,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO26",
+   "query": "List used in Shared::notify_rx",
+   "identifier": "WaitersList",
+   "definedIn": [
+    "tokio/src/sync/broadcast.rs"
+   ],
+   "line": 976,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO27",
+   "query": "Creates a new UnixDatagram bound to the specified path",
+   "identifier": "bind",
+   "definedIn": [
+    "tokio/src/net/unix/datagram/socket.rs"
+   ],
+   "line": 395,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO28",
+   "query": "Peek at the next item in the stream as a mutable reference",
+   "identifier": "peek_mut",
+   "definedIn": [
+    "tokio-stream/src/stream_ext/peekable.rs"
+   ],
+   "line": 39,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO29",
+   "query": "Polls the future until it is idle",
+   "identifier": "poll_until_idle",
+   "definedIn": [
+    "tokio-test/src/task.rs"
+   ],
+   "line": 155,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO30",
+   "query": "Attempts to pull out the next value of the delay queue, registering the current task for wakeup if the value is not yet available, and returning None if the queue is exhausted",
+   "identifier": "poll_expired",
+   "definedIn": [
+    "tokio-util/src/time/delay_queue.rs"
+   ],
+   "line": 582,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO31",
+   "query": "This is exactly like Cell >>, except that it provides a get method even though Rc is not Copy",
+   "identifier": "RcCell",
+   "definedIn": [
+    "tokio/src/util/rc_cell.rs"
+   ],
+   "line": 7,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO32",
+   "query": "Receive values from the associated UnboundedSender",
+   "identifier": "UnboundedReceiver",
+   "definedIn": [
+    "tokio/src/sync/mpsc/unbounded.rs"
+   ],
+   "line": 72,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO33",
+   "query": "Used to ensure we always place the Core value back into its slot in CurrentThread, even if the future panics",
+   "identifier": "CoreGuard",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/current_thread/mod.rs"
+   ],
+   "line": 811,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO34",
+   "query": "Shuts down the core",
+   "identifier": "shutdown",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/multi_thread/worker.rs"
+   ],
+   "line": 1324,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO35",
+   "query": "Updates the max frame setting",
+   "identifier": "set_max_frame_length",
+   "definedIn": [
+    "tokio-util/src/codec/length_delimited.rs"
+   ],
+   "line": 499,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO36",
+   "query": "Mark a slot as ready",
+   "identifier": "set_ready",
+   "definedIn": [
+    "tokio/src/sync/mpsc/block.rs"
+   ],
+   "line": 263,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO37",
+   "query": "Polls for events on the I/O resource's direction readiness stream",
+   "identifier": "poll_ready",
+   "definedIn": [
+    "tokio/src/runtime/io/registration.rs"
+   ],
+   "line": 155,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO38",
+   "query": "Combine two streams into one by interleaving the output of both as it is produced",
+   "identifier": "merge",
+   "definedIn": [
+    "tokio-stream/src/stream_ext.rs"
+   ],
+   "line": 398,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO39",
+   "query": "Manages and distributes event notifications to any registered listeners",
+   "identifier": "Registry",
+   "definedIn": [
+    "tokio/src/signal/registry.rs"
+   ],
+   "line": 53,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO40",
+   "query": "An entry in the list",
+   "identifier": "ListEntry",
+   "definedIn": [
+    "tokio/src/util/idle_notified_set.rs"
+   ],
+   "line": 88,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO41",
+   "query": "Create a configured length delimited Framed",
+   "identifier": "new_framed",
+   "definedIn": [
+    "tokio-util/src/codec/length_delimited.rs"
+   ],
+   "line": 1063,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO42",
+   "query": "If there are no workers actively searching, returns the index of a worker currently sleeping",
+   "identifier": "worker_to_notify",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/multi_thread/idle.rs"
+   ],
+   "line": 51,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO43",
+   "query": "Creates a new listener which receives \"ctrl-break\" notifications sent to the process",
+   "identifier": "ctrl_break",
+   "definedIn": [
+    "tokio/src/signal/windows.rs"
+   ],
+   "line": 231,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO44",
+   "query": "Sends data on the socket to the given address",
+   "identifier": "send_to",
+   "definedIn": [
+    "tokio/src/net/udp.rs"
+   ],
+   "line": 1185,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO45",
+   "query": "Sets the size of the filled region of the buffer",
+   "identifier": "set_filled",
+   "definedIn": [
+    "tokio/src/io/read_buf.rs"
+   ],
+   "line": 219,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO46",
+   "query": "Sends a value, waiting until there is capacity, but only for a limited time",
+   "identifier": "send_timeout",
+   "definedIn": [
+    "tokio/src/sync/mpsc/bounded.rs"
+   ],
+   "line": 988,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO47",
+   "query": "Sets the last access time",
+   "identifier": "set_accessed",
+   "definedIn": [
+    "tokio/src/fs/file_times.rs"
+   ],
+   "line": 46,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO48",
+   "query": "Receiver of the simplex channel",
+   "identifier": "Receiver",
+   "definedIn": [
+    "tokio-util/src/io/simplex.rs"
+   ],
+   "line": 101,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO49",
+   "query": "Read data from an AsyncRead into an implementer of the [BufMut] trait",
+   "identifier": "read_buf",
+   "definedIn": [
+    "tokio-util/src/io/read_buf.rs"
+   ],
+   "line": 43,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO50",
+   "query": "Completes when the next instant in the interval has been reached",
+   "identifier": "tick",
+   "definedIn": [
+    "tokio/src/time/interval.rs"
+   ],
+   "line": 428,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO51",
+   "query": "Sets the creation time",
+   "identifier": "set_created",
+   "definedIn": [
+    "tokio/src/fs/file_times.rs"
+   ],
+   "line": 60,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO52",
+   "query": "If the created pipe supports writing data",
+   "identifier": "write",
+   "definedIn": [
+    "tokio/src/net/windows/named_pipe.rs"
+   ],
+   "line": 2434,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO53",
+   "query": "Track the provided future",
+   "identifier": "track_future",
+   "definedIn": [
+    "tokio-util/src/task/task_tracker.rs"
+   ],
+   "line": 532,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO54",
+   "query": "Tries advancing the block pointer to the block referenced by self.index",
+   "identifier": "try_advancing_head",
+   "definedIn": [
+    "tokio/src/sync/mpsc/list.rs"
+   ],
+   "line": 370,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO55",
+   "query": "Remove Interest from self",
+   "identifier": "remove",
+   "definedIn": [
+    "tokio/src/io/interest.rs"
+   ],
+   "line": 195,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO56",
+   "query": "Produces true if the current task is being traced; otherwise false",
+   "identifier": "is_tracing",
+   "definedIn": [
+    "tokio/src/runtime/task/trace/mod.rs"
+   ],
+   "line": 147,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO57",
+   "query": "Compute the offset of the Trailer field in Cell using the",
+   "identifier": "get_trailer_offset",
+   "definedIn": [
+    "tokio/src/runtime/task/raw.rs"
+   ],
+   "line": 125,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO58",
+   "query": "Sets configuration for the child process's standard input (stdin) handle",
+   "identifier": "stdin",
+   "definedIn": [
+    "tokio/src/process/mod.rs"
+   ],
+   "line": 579,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO59",
+   "query": "A builder for creating directories in various manners",
+   "identifier": "DirBuilder",
+   "definedIn": [
+    "tokio/src/fs/dir_builder.rs"
+   ],
+   "line": 11,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO60",
+   "query": "The root of a trace",
+   "identifier": "root",
+   "definedIn": [
+    "tokio/src/runtime/task/trace/mod.rs"
+   ],
+   "line": 282,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO61",
+   "query": "Builds the log histogram, enforcing the max buckets requirement",
+   "identifier": "max_buckets",
+   "definedIn": [
+    "tokio/src/runtime/metrics/histogram/h2_histogram.rs"
+   ],
+   "line": 231,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO62",
+   "query": "Error returned by try_current when no Runtime has been started",
+   "identifier": "TryCurrentError",
+   "definedIn": [
+    "tokio/src/runtime/handle.rs"
+   ],
+   "line": 692,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO63",
+   "query": "Inserts value into the queue set to expire at a specific instant in time",
+   "identifier": "insert_at",
+   "definedIn": [
+    "tokio-util/src/time/delay_queue.rs"
+   ],
+   "line": 538,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO64",
+   "query": "Creates an AsyncFd backed by (and taking ownership of) an object implementing [AsRawFd], with a specific [Interest]",
+   "identifier": "register_with_interest",
+   "definedIn": [
+    "tokio/src/io/async_fd.rs"
+   ],
+   "line": 267,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO65",
+   "query": "Wake the entry if it is already in the pending queue of the timer wheel",
+   "identifier": "wake",
+   "definedIn": [
+    "tokio/src/runtime/time_alt/entry.rs"
+   ],
+   "line": 200,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO66",
+   "query": "Creates a new empty [FileTimes]",
+   "identifier": "new",
+   "definedIn": [
+    "tokio/src/fs/file_times.rs"
+   ],
+   "line": 41,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO67",
+   "query": "Extract the version from the state",
+   "identifier": "version",
+   "definedIn": [
+    "tokio/src/sync/watch.rs"
+   ],
+   "line": 473,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO68",
+   "query": "Typed raw task handle",
+   "identifier": "Harness",
+   "definedIn": [
+    "tokio/src/runtime/task/harness.rs"
+   ],
+   "line": 17,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO69",
+   "query": "Creates a new BufWriter with the specified buffer capacity",
+   "identifier": "with_capacity",
+   "definedIn": [
+    "tokio/src/io/util/buf_writer.rs"
+   ],
+   "line": 49,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO70",
+   "query": "Maps the encoder E to C, preserving the write buffer wrapped by Framed",
+   "identifier": "map_encoder",
+   "definedIn": [
+    "tokio-util/src/codec/framed_write.rs"
+   ],
+   "line": 116,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO71",
+   "query": "Create a configured length delimited FramedWrite",
+   "identifier": "new_write",
+   "definedIn": [
+    "tokio-util/src/codec/length_delimited.rs"
+   ],
+   "line": 1041,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO72",
+   "query": "Waits until one of the tasks in the set completes and returns its output",
+   "identifier": "join_next",
+   "definedIn": [
+    "tokio/src/task/join_set.rs"
+   ],
+   "line": 296,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO73",
+   "query": "Spawn the provided task on the [JoinQueue], returning an [AbortHandle] that can be used to remotely cancel the task",
+   "identifier": "spawn",
+   "definedIn": [
+    "tokio-util/src/task/join_queue.rs"
+   ],
+   "line": 64,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO74",
+   "query": "An interface for waiting on a process to exit",
+   "identifier": "Wait",
+   "definedIn": [
+    "tokio/src/process/unix/orphan.rs"
+   ],
+   "line": 9,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO75",
+   "query": "Transitions the task from Running -> Complete",
+   "identifier": "transition_to_complete",
+   "definedIn": [
+    "tokio/src/runtime/task/state.rs"
+   ],
+   "line": 184,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO76",
+   "query": "An iterator visiting all values in arbitrary order",
+   "identifier": "values",
+   "definedIn": [
+    "tokio-stream/src/stream_map.rs"
+   ],
+   "line": 333,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO77",
+   "query": "A permit from the semaphore",
+   "identifier": "SemaphorePermit",
+   "definedIn": [
+    "tokio/src/sync/semaphore.rs"
+   ],
+   "line": 442,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO78",
+   "query": "Creates a new empty JoinMap",
+   "identifier": "new",
+   "definedIn": [
+    "tokio-util/src/task/join_map.rs"
+   ],
+   "line": 131,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO79",
+   "query": "Spawns a task on the runtime",
+   "identifier": "spawn_local",
+   "definedIn": [
+    "tokio/src/runtime/local_runtime/runtime.rs"
+   ],
+   "line": 151,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO80",
+   "query": "Creates a [DropGuardRef] for this token",
+   "identifier": "drop_guard_ref",
+   "definedIn": [
+    "tokio-util/src/sync/cancellation_token.rs"
+   ],
+   "line": 283,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO81",
+   "query": "Sets the value of the IPV6_MULTICAST_LOOP option for this socket",
+   "identifier": "set_multicast_loop_v6",
+   "definedIn": [
+    "tokio/src/net/udp.rs"
+   ],
+   "line": 1971,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO82",
+   "query": "Creates new [UnixListener] from a [std::os::unix::net::UnixListener]",
+   "identifier": "from_std",
+   "definedIn": [
+    "tokio/src/net/unix/listener.rs"
+   ],
+   "line": 156,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO83",
+   "query": "Split the head value into the real head and the index a stealer is working on",
+   "identifier": "unpack",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/multi_thread/queue.rs"
+   ],
+   "line": 587,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO84",
+   "query": "Creates a future which will open a file for reading and read the entire contents into a string and return said string",
+   "identifier": "read_to_string",
+   "definedIn": [
+    "tokio/src/fs/read_to_string.rs"
+   ],
+   "line": 27,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO85",
+   "query": "Creates a new ReadBuf from a fully initialized buffer",
+   "identifier": "new",
+   "definedIn": [
+    "tokio/src/io/read_buf.rs"
+   ],
+   "line": 32,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO86",
+   "query": "An iterator that takes elements out of the run queue",
+   "identifier": "BatchTaskIter",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/multi_thread/queue.rs"
+   ],
+   "line": 319,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO87",
+   "query": "Create a new UnboundedReceiverStream",
+   "identifier": "new",
+   "definedIn": [
+    "tokio-stream/src/wrappers/mpsc_unbounded.rs"
+   ],
+   "line": 41,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO88",
+   "query": "Waits until the value is set",
+   "identifier": "wait",
+   "definedIn": [
+    "tokio/src/sync/set_once.rs"
+   ],
+   "line": 339,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO89",
+   "query": "Renames a file or directory to a new name, replacing the original file if to already exists",
+   "identifier": "rename",
+   "definedIn": [
+    "tokio/src/fs/rename.rs"
+   ],
+   "line": 12,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO90",
+   "query": "Gets the value of the IPV6_MULTICAST_LOOP option for this socket",
+   "identifier": "multicast_loop_v6",
+   "definedIn": [
+    "tokio/src/net/udp.rs"
+   ],
+   "line": 1960,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO91",
+   "query": "How many tasks can be pushed into the queue",
+   "identifier": "remaining_slots",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/multi_thread/queue.rs"
+   ],
+   "line": 113,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO92",
+   "query": "A barrier enables multiple threads to synchronize the beginning of some computation",
+   "identifier": "Barrier",
+   "definedIn": [
+    "tokio/src/loom/std/barrier.rs"
+   ],
+   "line": 38,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO93",
+   "query": "Pop a value from the queue",
+   "identifier": "pop",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/inject/shared.rs"
+   ],
+   "line": 97,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO94",
+   "query": "A reference to an open file on the filesystem",
+   "identifier": "File",
+   "definedIn": [
+    "tokio/src/fs/file.rs"
+   ],
+   "line": 95,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO95",
+   "query": "Attempts to send data to the specified address",
+   "identifier": "poll_send_to",
+   "definedIn": [
+    "tokio/src/net/unix/datagram/socket.rs"
+   ],
+   "line": 1223,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO96",
+   "query": "A helper type used when taking apart a OwnedMutexGuard without running its Drop implementation",
+   "identifier": "OwnedMutexGuardInner",
+   "definedIn": [
+    "tokio/src/sync/mutex.rs"
+   ],
+   "line": 229,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO97",
+   "query": "Spawn a task which isn't safe to send across thread boundaries onto the runtime",
+   "identifier": "spawn_local",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/current_thread/mod.rs"
+   ],
+   "line": 538,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO98",
+   "query": "A guard for LocalData::enter()",
+   "identifier": "LocalDataEnterGuard",
+   "definedIn": [
+    "tokio/src/task/local.rs"
+   ],
+   "line": 313,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO99",
+   "query": "Registers an I/O resource with the reactor for a given mio::Ready state",
+   "identifier": "add_source",
+   "definedIn": [
+    "tokio/src/runtime/io/driver.rs"
+   ],
+   "line": 285,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO100",
+   "query": "Writing end of a Unix pipe",
+   "identifier": "Sender",
+   "definedIn": [
+    "tokio/src/net/unix/pipe.rs"
+   ],
+   "line": 365,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO101",
+   "query": "A unified [Stream] and [Sink] interface to an underlying UdpSocket, using the Encoder and Decoder traits to encode and decode frames",
+   "identifier": "UdpFramed",
+   "definedIn": [
+    "tokio-util/src/udp/frame.rs"
+   ],
+   "line": 44,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO102",
+   "query": "Models deregistration racing with delivery of an event already returned by the poller",
+   "identifier": "deregister_races_with_prior_event_delivery",
+   "definedIn": [
+    "tokio/src/runtime/io/registration_set.rs"
+   ],
+   "line": 191,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO103",
+   "query": "Owned write half of a [UnixStream], created by [into_split]",
+   "identifier": "OwnedWriteHalf",
+   "definedIn": [
+    "tokio/src/net/unix/split_owned.rs"
+   ],
+   "line": 54,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO104",
+   "query": "Set and clear the task id in the context when the future is executed or dropped, or when the output produced by the future is dropped",
+   "identifier": "TaskIdGuard",
+   "definedIn": [
+    "tokio/src/runtime/task/core.rs"
+   ],
+   "line": 335,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO105",
+   "query": "Create a simplex channel",
+   "identifier": "new",
+   "definedIn": [
+    "tokio-util/src/io/simplex.rs"
+   ],
+   "line": 355,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO106",
+   "query": "Try to read data from an AsyncRead into an implementer of the [BufMut] trait",
+   "identifier": "poll_read_buf",
+   "definedIn": [
+    "tokio-util/src/util/poll_buf.rs"
+   ],
+   "line": 47,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO107",
+   "query": "Trait for buffers that can be used with io-uring read operations",
+   "identifier": "ReadBuffer",
+   "definedIn": [
+    "tokio/src/io/uring/read.rs"
+   ],
+   "line": 11,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO108",
+   "query": "Track that the driver is being unparked",
+   "identifier": "unpark",
+   "definedIn": [
+    "tokio/src/runtime/time/handle.rs"
+   ],
+   "line": 22,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO109",
+   "query": "A BarrierWaitResult is returned by wait when all tasks in the Barrier have rendezvoused",
+   "identifier": "BarrierWaitResult",
+   "definedIn": [
+    "tokio/src/sync/barrier.rs"
+   ],
+   "line": 203,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO110",
+   "query": "Attempts to reap every process in the queue, ignoring any errors and enqueueing any orphans which have not yet exited",
+   "identifier": "reap_orphans",
+   "definedIn": [
+    "tokio/src/process/unix/orphan.rs"
+   ],
+   "line": 79,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO111",
+   "query": "Given a path, queries the file system to get information about a file, directory, etc",
+   "identifier": "metadata",
+   "definedIn": [
+    "tokio/src/fs/metadata.rs"
+   ],
+   "line": 43,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO112",
+   "query": "Creates a [CancellationToken] which will get cancelled whenever the current token gets cancelled",
+   "identifier": "child_token",
+   "definedIn": [
+    "tokio-util/src/sync/cancellation_token.rs"
+   ],
+   "line": 204,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO113",
+   "query": "Polls the task and cancel it if necessary",
+   "identifier": "poll_inner",
+   "definedIn": [
+    "tokio/src/runtime/task/harness.rs"
+   ],
+   "line": 193,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO114",
+   "query": "Automatically decrements a worker's job count when a job finishes (when this gets dropped)",
+   "identifier": "JobCountGuard",
+   "definedIn": [
+    "tokio-util/src/task/spawn_pinned.rs"
+   ],
+   "line": 350,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO115",
+   "query": "Converts this OwnedRwLockWriteGuard into an OwnedRwLockMappedWriteGuard",
+   "identifier": "into_mapped",
+   "definedIn": [
+    "tokio/src/sync/rwlock/owned_write_guard.rs"
+   ],
+   "line": 320,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO116",
+   "query": "Gets the local address of this socket",
+   "identifier": "local_addr",
+   "definedIn": [
+    "tokio/src/net/tcp/socket.rs"
+   ],
+   "line": 768,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO117",
+   "query": "Receives the next signal notification event",
+   "identifier": "recv",
+   "definedIn": [
+    "tokio/src/signal/unix.rs"
+   ],
+   "line": 448,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO118",
+   "query": "Wraps the user's AioSource in order to implement mio::event::Source, which is what the rest of the crate wants",
+   "identifier": "MioSource",
+   "definedIn": [
+    "tokio/src/io/bsd/poll_aio.rs"
+   ],
+   "line": 49,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO119",
+   "query": "Errors encountered by the timer implementation",
+   "identifier": "Error",
+   "definedIn": [
+    "tokio/src/time/error.rs"
+   ],
+   "line": 26,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO120",
+   "query": "Try to write a buffer to the stream, returning how many bytes were written",
+   "identifier": "try_write",
+   "definedIn": [
+    "tokio/src/net/tcp/stream.rs"
+   ],
+   "line": 935,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO121",
+   "query": "Locks the next value if there is one",
+   "identifier": "recv_ref",
+   "definedIn": [
+    "tokio/src/sync/broadcast.rs"
+   ],
+   "line": 1256,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO122",
+   "query": "Guard tracking that a caller has entered a blocking region",
+   "identifier": "BlockingRegionGuard",
+   "definedIn": [
+    "tokio/src/runtime/context/blocking.rs"
+   ],
+   "line": 11,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO123",
+   "query": "Creates a Ready instance using the given usize representation",
+   "identifier": "from_usize",
+   "definedIn": [
+    "tokio/src/io/ready.rs"
+   ],
+   "line": 226,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO124",
+   "query": "T should not implement _both_ Read and Write",
+   "identifier": "Blocking",
+   "definedIn": [
+    "tokio/src/io/blocking.rs"
+   ],
+   "line": 14,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO125",
+   "query": "Generates a seed from the provided byte slice",
+   "identifier": "from_bytes",
+   "definedIn": [
+    "tokio/src/util/rand/rt_unstable.rs"
+   ],
+   "line": 15,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO126",
+   "query": "Sets configuration for the child process's standard error (stderr) handle",
+   "identifier": "stderr",
+   "definedIn": [
+    "tokio/src/process/mod.rs"
+   ],
+   "line": 633,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO127",
+   "query": "After returns [Poll::Ready], all the following call to [Sender::poll_write] and [Sender::poll_flush] will return error",
+   "identifier": "poll_shutdown",
+   "definedIn": [
+    "tokio-util/src/io/simplex.rs"
+   ],
+   "line": 265,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO128",
+   "query": "State available from the thread-local",
+   "identifier": "Context",
+   "definedIn": [
+    "tokio/src/task/local.rs"
+   ],
+   "line": 237,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO129",
+   "query": "Gate unsupported time metrics for wasm32-unknown-unknown",
+   "identifier": "now",
+   "definedIn": [
+    "tokio/src/runtime/metrics/batch.rs"
+   ],
+   "line": 391,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO130",
+   "query": "Stores the task output",
+   "identifier": "store_output",
+   "definedIn": [
+    "tokio/src/runtime/task/core.rs"
+   ],
+   "line": 408,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO131",
+   "query": "Pops the next value off the queue",
+   "identifier": "pop",
+   "definedIn": [
+    "tokio/src/sync/mpsc/list.rs"
+   ],
+   "line": 326,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO132",
+   "query": "Error returned from the [Mutex::try_lock], [RwLock::try_read] and [RwLock::try_write] functions",
+   "identifier": "TryLockError",
+   "definedIn": [
+    "tokio/src/sync/mutex.rs"
+   ],
+   "line": 293,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO133",
+   "query": "A handle to a held Mutex that has had a function applied to it via [MutexGuard::map]",
+   "identifier": "MappedMutexGuard",
+   "definedIn": [
+    "tokio/src/sync/mutex.rs"
+   ],
+   "line": 190,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO134",
+   "query": "Convert the value into a std::time::Instant",
+   "identifier": "into_std",
+   "definedIn": [
+    "tokio/src/time/instant.rs"
+   ],
+   "line": 58,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO135",
+   "query": "Tries to read data from the pipe into the provided buffer, returning how many bytes were read",
+   "identifier": "try_read",
+   "definedIn": [
+    "tokio/src/net/unix/pipe.rs"
+   ],
+   "line": 1222,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO136",
+   "query": "Spawn a task with this builder's settings on the provided [runtime handle]",
+   "identifier": "spawn_on",
+   "definedIn": [
+    "tokio/src/task/builder.rs"
+   ],
+   "line": 108,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO137",
+   "query": "Alias AtomicU64 to StaticAtomicU64",
+   "identifier": "StaticAtomicU64",
+   "definedIn": [
+    "tokio/src/loom/std/atomic_u64_native.rs"
+   ],
+   "line": 4,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO138",
+   "query": "Sends data on the socket to the remote address that the socket is connected to",
+   "identifier": "send",
+   "definedIn": [
+    "tokio/src/net/udp.rs"
+   ],
+   "line": 570,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO139",
+   "query": "Creates a new hard link on the filesystem",
+   "identifier": "hard_link",
+   "definedIn": [
+    "tokio/src/fs/hard_link.rs"
+   ],
+   "line": 39,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO140",
+   "query": "An error returned from the inner stream of a [BroadcastStream]",
+   "identifier": "BroadcastStreamRecvError",
+   "definedIn": [
+    "tokio-stream/src/wrappers/broadcast.rs"
+   ],
+   "line": 45,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO141",
+   "query": "Get the body of the function item in a manner so that it can be conveniently used with the quote! macro",
+   "identifier": "body",
+   "definedIn": [
+    "tokio-macros/src/entry.rs"
+   ],
+   "line": 675,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO142",
+   "query": "Directly creates a generator using the next seed",
+   "identifier": "next_generator",
+   "definedIn": [
+    "tokio/src/util/rand/rt.rs"
+   ],
+   "line": 42,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO143",
+   "query": "Creates a new symbolic link on the filesystem",
+   "identifier": "symlink",
+   "definedIn": [
+    "tokio/src/fs/symlink.rs"
+   ],
+   "line": 11,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO144",
+   "query": "Consumes and returns the next item in the stream",
+   "identifier": "try_next",
+   "definedIn": [
+    "tokio-stream/src/stream_ext.rs"
+   ],
+   "line": 186,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO145",
+   "query": "An asynchronous Mutex-like type",
+   "identifier": "Mutex",
+   "definedIn": [
+    "tokio/src/sync/mutex.rs"
+   ],
+   "line": 133,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO146",
+   "query": "Runs f on the blocking pool",
+   "identifier": "spawn",
+   "definedIn": [
+    "tokio/src/io/blocking.rs"
+   ],
+   "line": 80,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO147",
+   "query": "The number of bytes to reserve for the output buffer",
+   "identifier": "out_buffer_size",
+   "definedIn": [
+    "tokio/src/net/windows/named_pipe.rs"
+   ],
+   "line": 2241,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO148",
+   "query": "Set name of the mock IO object to include in panic messages and debug output",
+   "identifier": "name",
+   "definedIn": [
+    "tokio-test/src/io.rs"
+   ],
+   "line": 133,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO149",
+   "query": "Allows the socket to bind to an in-use address",
+   "identifier": "set_reuseaddr",
+   "definedIn": [
+    "tokio/src/net/tcp/socket.rs"
+   ],
+   "line": 229,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO150",
+   "query": "Responsible for cleaning up orphaned child processes on Unix platforms",
+   "identifier": "Driver",
+   "definedIn": [
+    "tokio/src/runtime/process.rs"
+   ],
+   "line": 13,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO151",
+   "query": "Create a new LinesStream",
+   "identifier": "new",
+   "definedIn": [
+    "tokio-stream/src/wrappers/lines.rs"
+   ],
+   "line": 41,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO152",
+   "query": "An extension trait for the [Stream] trait that provides a variety of convenient combinator functions",
+   "identifier": "StreamExt",
+   "definedIn": [
+    "tokio-stream/src/stream_ext.rs"
+   ],
+   "line": 106,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO153",
+   "query": "Executes the command as a child process, returning a handle to it",
+   "identifier": "spawn",
+   "definedIn": [
+    "tokio/src/process/mod.rs"
+   ],
+   "line": 863,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO154",
+   "query": "Spawns blocking code on the blocking threadpool",
+   "identifier": "spawn_blocking",
+   "definedIn": [
+    "tokio/src/task/builder.rs"
+   ],
+   "line": 186,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO155",
+   "query": "Error returned by Sender::try_send",
+   "identifier": "TrySendError",
+   "definedIn": [
+    "tokio/src/sync/mpsc/error.rs"
+   ],
+   "line": 28,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO156",
+   "query": "Consumes this BufReader, returning the underlying reader",
+   "identifier": "into_inner",
+   "definedIn": [
+    "tokio/src/io/util/buf_reader.rs"
+   ],
+   "line": 86,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO157",
+   "query": "Create a new empty [StreamMockBuilder]",
+   "identifier": "new",
+   "definedIn": [
+    "tokio-test/src/stream_mock.rs"
+   ],
+   "line": 60,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO158",
+   "query": "Removes the first element from a list and returns it, or None if it is empty",
+   "identifier": "pop_front",
+   "definedIn": [
+    "tokio/src/util/linked_list.rs"
+   ],
+   "line": 144,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO159",
+   "query": "Submit a read operation via io-uring",
+   "identifier": "read_at",
+   "definedIn": [
+    "tokio/src/io/uring/read.rs"
+   ],
+   "line": 109,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO160",
+   "query": "Represents a listener which receives \"ctrl-break\" notifications sent to the process via SetConsoleCtrlHandler",
+   "identifier": "CtrlBreak",
+   "definedIn": [
+    "tokio/src/signal/windows.rs"
+   ],
+   "line": 145,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO161",
+   "query": "Interval returned by [interval] and [interval_at]",
+   "identifier": "Interval",
+   "definedIn": [
+    "tokio/src/time/interval.rs"
+   ],
+   "line": 386,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO162",
+   "query": "Add together two Interest values",
+   "identifier": "add",
+   "definedIn": [
+    "tokio/src/io/interest.rs"
+   ],
+   "line": 167,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO163",
+   "query": "A measurement of a monotonically nondecreasing clock",
+   "identifier": "Instant",
+   "definedIn": [
+    "tokio/src/time/instant.rs"
+   ],
+   "line": 34,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO164",
+   "query": "Build a Mock value paired with a handle",
+   "identifier": "build_with_handle",
+   "definedIn": [
+    "tokio-test/src/io.rs"
+   ],
+   "line": 145,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO165",
+   "query": "Work-stealing based thread pool for executing futures",
+   "identifier": "MultiThread",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/multi_thread/mod.rs"
+   ],
+   "line": 50,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO166",
+   "query": "Compute the offset of the Core field in Cell using the",
+   "identifier": "get_core_offset",
+   "definedIn": [
+    "tokio/src/runtime/task/raw.rs"
+   ],
+   "line": 152,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO167",
+   "query": "A task was notified",
+   "identifier": "Notified",
+   "definedIn": [
+    "tokio/src/runtime/task/mod.rs"
+   ],
+   "line": 245,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO168",
+   "query": "Convert from a [Stream]",
+   "identifier": "FromStream",
+   "definedIn": [
+    "tokio-stream/src/stream_ext/collect.rs"
+   ],
+   "line": 39,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO169",
+   "query": "Future spawned on a mock task that can be used to poll the future or stream without needing pinning or context types",
+   "identifier": "Spawn",
+   "definedIn": [
+    "tokio-test/src/task.rs"
+   ],
+   "line": 53,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO170",
+   "query": "Growable, MPMC queue used to inject new tasks into the scheduler and as an overflow queue when the local, fixed-size, array queue overflows",
+   "identifier": "Inject",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/inject.rs"
+   ],
+   "line": 24,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO171",
+   "query": "Signals all tasks to shut down, and waits for them to complete",
+   "identifier": "pre_shutdown",
+   "definedIn": [
+    "tokio/src/runtime/scheduler/multi_thread/worker.rs"
+   ],
+   "line": 1307,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO172",
+   "query": "A BarrierWaitResult is returned by [Barrier::wait()] when all threads in the [Barrier] have rendezvoused",
+   "identifier": "BarrierWaitResult",
+   "definedIn": [
+    "tokio/src/loom/std/barrier.rs"
+   ],
+   "line": 61,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO173",
+   "query": "Attempts to remove the item associated with key from the queue",
+   "identifier": "try_remove",
+   "definedIn": [
+    "tokio-util/src/time/delay_queue.rs"
+   ],
+   "line": 809,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO174",
+   "query": "Reads the entries in a directory",
+   "identifier": "ReadDir",
+   "definedIn": [
+    "tokio/src/fs/read_dir.rs"
+   ],
+   "line": 64,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO175",
+   "query": "Re-register under new runtime with interest",
+   "identifier": "reregister",
+   "definedIn": [
+    "tokio/src/io/poll_evented.rs"
+   ],
+   "line": 143,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO176",
+   "query": "A builder structure for construct a named pipe with named pipe-specific options",
+   "identifier": "ServerOptions",
+   "definedIn": [
+    "tokio/src/net/windows/named_pipe.rs"
+   ],
+   "line": 1740,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO177",
+   "query": "Represents the SIGINT signal",
+   "identifier": "interrupt",
+   "definedIn": [
+    "tokio/src/signal/unix.rs"
+   ],
+   "line": 154,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO178",
+   "query": "Remotely aborts the task",
+   "identifier": "remote_abort",
+   "definedIn": [
+    "tokio/src/runtime/task/harness.rs"
+   ],
+   "line": 118,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO179",
+   "query": "An TimerHandle is the (non-enforced) \"unique\" pointer from the driver to the timer entry",
+   "identifier": "TimerHandle",
+   "definedIn": [
+    "tokio/src/runtime/time/entry.rs"
+   ],
+   "line": 311,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO180",
+   "query": "Opens a file in read-write mode",
+   "identifier": "create_new",
+   "definedIn": [
+    "tokio/src/fs/file.rs"
+   ],
+   "line": 232,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO181",
+   "query": "A wrapper around [TcpListener] that implements [Stream]",
+   "identifier": "TcpListenerStream",
+   "definedIn": [
+    "tokio-stream/src/wrappers/tcp_listener.rs"
+   ],
+   "line": 43,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO182",
+   "query": "Makes a new RwLockMappedWriteGuard for a component of the locked data",
+   "identifier": "map",
+   "definedIn": [
+    "tokio/src/sync/rwlock/write_guard_mapped.rs"
+   ],
+   "line": 85,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO183",
+   "query": "Resume the activation parked on slot, if any",
+   "identifier": "unpark",
+   "definedIn": [
+    "tokio/src/runtime/jspi.rs"
+   ],
+   "line": 253,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO184",
+   "query": "Schedules a closure to be run just before the exec function is invoked",
+   "identifier": "pre_exec",
+   "definedIn": [
+    "tokio/src/process/mod.rs"
+   ],
+   "line": 749,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO185",
+   "query": "Indicates to Tokio that the source is no longer ready",
+   "identifier": "clear_ready",
+   "definedIn": [
+    "tokio/src/io/bsd/poll_aio.rs"
+   ],
+   "line": 165,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO186",
+   "query": "Tries to receive a datagram from the peer without waiting",
+   "identifier": "try_recv",
+   "definedIn": [
+    "tokio/src/net/unix/datagram/socket.rs"
+   ],
+   "line": 830,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO187",
+   "query": "Converts or resolves without blocking to one or more SocketAddr values",
+   "identifier": "ToSocketAddrs",
+   "definedIn": [
+    "tokio/src/net/addr.rs"
+   ],
+   "line": 19,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO188",
+   "query": "Closes the receiving half of a channel, without dropping it",
+   "identifier": "close",
+   "definedIn": [
+    "tokio/src/sync/mpsc/unbounded.rs"
+   ],
+   "line": 354,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO189",
+   "query": "Peek at the item in the stack with the earliest deadline",
+   "identifier": "peek_earliest",
+   "definedIn": [
+    "tokio-util/src/time/wheel/stack.rs"
+   ],
+   "line": 33,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO190",
+   "query": "Makes a new OwnedRwLockReadGuard for a component of the locked data",
+   "identifier": "map",
+   "definedIn": [
+    "tokio/src/sync/rwlock/owned_read_guard.rs"
+   ],
+   "line": 76,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO191",
+   "query": "Tracks the LocalSet state that must only be accessed from the thread that created the LocalSet",
+   "identifier": "LocalState",
+   "definedIn": [
+    "tokio/src/task/local.rs"
+   ],
+   "line": 267,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO192",
+   "query": "This method is like with, but it just calls f without setting the thread-local if that fails",
+   "identifier": "with_if_possible",
+   "definedIn": [
+    "tokio/src/task/local.rs"
+   ],
+   "line": 829,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO193",
+   "query": "Shrinks the capacity of the map with a lower limit",
+   "identifier": "shrink_to",
+   "definedIn": [
+    "tokio-util/src/task/join_map.rs"
+   ],
+   "line": 797,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO194",
+   "query": "Get a reference to the Future, Stream, AsyncRead, or AsyncWrite object contained within",
+   "identifier": "get_ref",
+   "definedIn": [
+    "tokio-util/src/compat.rs"
+   ],
+   "line": 202,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO195",
+   "query": "Wake the receive half",
+   "identifier": "wake_rx",
+   "definedIn": [
+    "tokio/src/sync/mpsc/chan.rs"
+   ],
+   "line": 201,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO196",
+   "query": "A wrapper around [Semaphore] that provides a poll_acquire method",
+   "identifier": "PollSemaphore",
+   "definedIn": [
+    "tokio-util/src/sync/poll_semaphore.rs"
+   ],
+   "line": 13,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO197",
+   "query": "Spawn the provided future on the provided [LocalSet], and track it in this TaskTracker",
+   "identifier": "spawn_local_on",
+   "definedIn": [
+    "tokio-util/src/task/task_tracker.rs"
+   ],
+   "line": 436,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DTOKIO198",
+   "query": "An intrusive linked list",
+   "identifier": "LinkedList",
+   "definedIn": [
+    "tokio/src/util/linked_list.rs"
+   ],
+   "line": 26,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DTOKIO199",
+   "query": "Sets the working directory for the child process",
+   "identifier": "current_dir",
+   "definedIn": [
+    "tokio/src/process/mod.rs"
+   ],
+   "line": 554,
+   "nameWordsInQuery": false
+  }
+ ]
+}

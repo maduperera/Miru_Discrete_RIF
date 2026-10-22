@@ -1,0 +1,1380 @@
+{
+ "repo": "doc-vite",
+ "source": "vite",
+ "commit": "2601eed4d764f21809652dbba745d0f38b47146c",
+ "lang": "typescript",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "137 docstring-style queries (first sentence of the doc comment of one definition), drawn by gen_queries_doc.py (seed 0xa11ce); corpus is the pinned repo with all definition doc comments removed (scripts/extract_docqueries.ts --strip). Documented definitions available: 137 (of 2762 definitions).",
+ "queries": [
+  {
+   "id": "DVITE0",
+   "query": "pretty url for logging",
+   "identifier": "prettifyUrl",
+   "definedIn": [
+    "packages/vite/src/node/utils.ts"
+   ],
+   "line": 380,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE1",
+   "query": "Get cached resolvePackageData value based on basedir",
+   "identifier": "getRpdCache",
+   "definedIn": [
+    "packages/vite/src/node/packages.ts"
+   ],
+   "line": 318,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE2",
+   "query": "Dev-only plugin that lexes, resolves, rewrites and analyzes url imports",
+   "identifier": "importAnalysisPlugin",
+   "definedIn": [
+    "packages/vite/src/node/plugins/importAnalysis.ts"
+   ],
+   "line": 224,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE3",
+   "query": "Resolve like Node.js using Vite's resolution algorithm with preconfigured options",
+   "identifier": "nodeResolveWithVite",
+   "definedIn": [
+    "packages/vite/src/node/nodeResolve.ts"
+   ],
+   "line": 14,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE4",
+   "query": "Detect import statements to a known optimized CJS dependency and provide ES named imports interop",
+   "identifier": "transformCjsImport",
+   "definedIn": [
+    "packages/vite/src/node/plugins/importAnalysis.ts"
+   ],
+   "line": 1033,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE5",
+   "query": "Stringify metadata for deps cache",
+   "identifier": "stringifyDepsOptimizerMetadata",
+   "definedIn": [
+    "packages/vite/src/node/optimizer/index.ts"
+   ],
+   "line": 1070,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE6",
+   "query": "Sets up rollupOptions compat proxies for an environment",
+   "identifier": "setupRollupOptionCompatForEnvironment",
+   "definedIn": [
+    "packages/vite/src/node/utils.ts"
+   ],
+   "line": 1364,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE7",
+   "query": "\"send and connect\" or \"invoke\" must be implemented",
+   "identifier": "ModuleRunnerTransport",
+   "definedIn": [
+    "packages/vite/src/shared/moduleRunnerTransport.ts"
+   ],
+   "line": 18,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE8",
+   "query": "the subset of __rolldown_runtime__ the HMR client uses",
+   "identifier": "RolldownRuntimeLike",
+   "definedIn": [
+    "packages/vite/src/client/bundledDevHmrClient.ts"
+   ],
+   "line": 10,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE9",
+   "query": "Validate that chunk imports do not import dev deps",
+   "identifier": "validateChunkImports",
+   "definedIn": [
+    "packages/vite/rolldown.dts.config.ts"
+   ],
+   "line": 234,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE10",
+   "query": "Initial optimizeDeps at server start",
+   "identifier": "discoverProjectDependencies",
+   "definedIn": [
+    "packages/vite/src/node/optimizer/index.ts"
+   ],
+   "line": 463,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE11",
+   "query": "Remove @internal comments not handled by compilerOptions.stripInternal Reference: https://github.com/vuejs/core/blob/main/rollup.dts.config.js",
+   "identifier": "removeInternal",
+   "definedIn": [
+    "packages/vite/rolldown.dts.config.ts"
+   ],
+   "line": 384,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE12",
+   "query": "Constructs a new FSWatcher instance with optional WatchOptions parameter",
+   "identifier": "constructor",
+   "definedIn": [
+    "packages/vite/src/types/chokidar.d.ts"
+   ],
+   "line": 18,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE13",
+   "query": "Traverse between longerDir (inclusive) and shorterDir (exclusive) and call cb for each dir",
+   "identifier": "traverseBetweenDirs",
+   "definedIn": [
+    "packages/vite/src/node/packages.ts"
+   ],
+   "line": 402,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE14",
+   "query": "Compiles index.html into an entry js module",
+   "identifier": "buildHtmlPlugin",
+   "definedIn": [
+    "packages/vite/src/node/plugins/html.ts"
+   ],
+   "line": 438,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE15",
+   "query": "Build an App environment, or a App library (if libraryOptions is provided)",
+   "identifier": "buildEnvironment",
+   "definedIn": [
+    "packages/vite/src/node/build.ts"
+   ],
+   "line": 850,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE16",
+   "query": "CertMeta represents the accepted types for certificate & key data",
+   "identifier": "CertMeta",
+   "definedIn": [
+    "packages/vite/src/types/ws.d.ts"
+   ],
+   "line": 320,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE17",
+   "query": "provides types for names of built-in Vite events",
+   "identifier": "CustomEventName",
+   "definedIn": [
+    "packages/vite/types/customEvent.d.ts"
+   ],
+   "line": 83,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE18",
+   "query": "Clear all caches including HMR listeners",
+   "identifier": "clearCache",
+   "definedIn": [
+    "packages/vite/src/module-runner/runner.ts"
+   ],
+   "line": 98,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE19",
+   "query": "Expand the glob syntax in optimizeDeps.include to proper import paths",
+   "identifier": "expandGlobIds",
+   "definedIn": [
+    "packages/vite/src/node/optimizer/resolve.ts"
+   ],
+   "line": 46,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE20",
+   "query": "alias and preserveSymlinks are not per-environment options, but they are included in the resolved environment options for convenience",
+   "identifier": "resolveEnvironmentResolveOptions",
+   "definedIn": [
+    "packages/vite/src/node/config.ts"
+   ],
+   "line": 1160,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE21",
+   "query": "Starts the Vite server in preview mode, to simulate a production deployment",
+   "identifier": "preview",
+   "definedIn": [
+    "packages/vite/src/node/preview.ts"
+   ],
+   "line": 131,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE22",
+   "query": "Given a HTML node, find all attributes that references an asset to be processed",
+   "identifier": "getNodeAssetAttributes",
+   "definedIn": [
+    "packages/vite/src/node/assetSource.ts"
+   ],
+   "line": 123,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE23",
+   "query": "Register an asset to be emitted (if necessary) and return the structured result, cached per id so the emitted file is shared",
+   "identifier": "resolveBuiltAsset",
+   "definedIn": [
+    "packages/vite/src/node/plugins/asset.ts"
+   ],
+   "line": 640,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE24",
+   "query": "Load .env files within the envDir and merge them with the matching variables already present in process.env",
+   "identifier": "loadEnv",
+   "definedIn": [
+    "packages/vite/src/node/env.ts"
+   ],
+   "line": 33,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE25",
+   "query": "Delete every file and subdirectory",
+   "identifier": "emptyDir",
+   "definedIn": [
+    "packages/vite/src/node/utils.ts"
+   ],
+   "line": 637,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE26",
+   "query": "Format parse5 @type {ParserError} to @type {RollupError}",
+   "identifier": "formatParseError",
+   "definedIn": [
+    "packages/vite/src/node/plugins/html.ts"
+   ],
+   "line": 317,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE27",
+   "query": "Some projects like Astro were overriding config.createResolver to add a custom alias plugin",
+   "identifier": "createBackCompatIdResolver",
+   "definedIn": [
+    "packages/vite/src/node/idResolver.ts"
+   ],
+   "line": 23,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE28",
+   "query": "postcss-load-config declares its types with CommonJS export = syntax, which rolldown-plugin-dts cannot re-export named types from, and reaches Processor through the deep postcss/lib/processor import, whose export = declarations cannot be bundled either",
+   "identifier": "esmifyPostcssLoadConfigDts",
+   "definedIn": [
+    "packages/vite/rolldown.dts.config.ts"
+   ],
+   "line": 438,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE29",
+   "query": "While we already enable compilerOptions.stripInternal, some internal comments like internal parameters are still not stripped by TypeScript, so we run another pass here",
+   "identifier": "stripInternalTypes",
+   "definedIn": [
+    "packages/vite/rolldown.dts.config.ts"
+   ],
+   "line": 354,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE30",
+   "query": "Update the module graph based on a module's updated imports information If there are dependencies that no longer have any importers, they are returned as a Set",
+   "identifier": "updateModuleInfo",
+   "definedIn": [
+    "packages/vite/src/node/server/moduleGraph.ts"
+   ],
+   "line": 252,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE31",
+   "query": "Defines which attributes of an HTML element should be treated as asset sources",
+   "identifier": "HtmlAssetSource",
+   "definedIn": [
+    "packages/vite/src/node/assetSource.ts"
+   ],
+   "line": 7,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE32",
+   "query": "Import any file using the default Vite environment",
+   "identifier": "runnerImport",
+   "definedIn": [
+    "packages/vite/src/node/ssr/runnerImport.ts"
+   ],
+   "line": 15,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE33",
+   "query": "buffer multiple hot updates triggered by the same src change so that they are invoked in the same order they were sent",
+   "identifier": "queueUpdate",
+   "definedIn": [
+    "packages/vite/src/shared/hmr.ts"
+   ],
+   "line": 261,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE34",
+   "query": "Support %ENV_NAME% syntax in html files",
+   "identifier": "htmlEnvHook",
+   "definedIn": [
+    "packages/vite/src/node/plugins/html.ts"
+   ],
+   "line": 1331,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE35",
+   "query": "The resolved form of an asset request during build. - string: a URL usable as-is (an inlined data: URL, a __VITE_PUBLIC_ASSET__ token, or a bundled-dev output URL). - reference: an emitted file referenced by its referenceId, to be turned into",
+   "identifier": "FileToBuiltUrlResult",
+   "definedIn": [
+    "packages/vite/src/node/plugins/asset.ts"
+   ],
+   "line": 77,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE36",
+   "query": "Format a resolved asset as either a JS expression or a plain-text string",
+   "identifier": "formatBuiltAsset",
+   "definedIn": [
+    "packages/vite/src/node/plugins/asset.ts"
+   ],
+   "line": 617,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE37",
+   "query": "Generate a synthetic module graph with configurable size, density, and cycles",
+   "identifier": "generateGraph",
+   "definedIn": [
+    "packages/vite/scripts/benchCircularImport.ts"
+   ],
+   "line": 48,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE38",
+   "query": "Collects CSS files for a chunk by traversing its imports depth-first, using a cache to avoid re-analyzing chunks while still returning the correct files when the same chunk is reached via different entry points",
+   "identifier": "getCssFilesForChunk",
+   "definedIn": [
+    "packages/vite/src/node/plugins/html.ts"
+   ],
+   "line": 373,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE39",
+   "query": "Prepend /@id/ and replace null byte so the id is URL-safe",
+   "identifier": "wrapId",
+   "definedIn": [
+    "packages/vite/src/shared/utils.ts"
+   ],
+   "line": 11,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE40",
+   "query": "Guard the bundle size",
+   "identifier": "bundleSizeLimit",
+   "definedIn": [
+    "packages/vite/rolldown.config.ts"
+   ],
+   "line": 389,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE41",
+   "query": "relative url() inside \\@imported sass and less files must be rebased to use root file as base",
+   "identifier": "rebaseUrls",
+   "definedIn": [
+    "packages/vite/src/node/plugins/css.ts"
+   ],
+   "line": 2794,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE42",
+   "query": "Reads the BROWSER environment variable and decides what to do with it",
+   "identifier": "openBrowser",
+   "definedIn": [
+    "packages/vite/src/node/server/openBrowser.ts"
+   ],
+   "line": 24,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE43",
+   "query": "Emit the worker entry as an asset (once per build) and return the JS expression referencing it: import.meta.ROLLDOWN_FILE_URL_",
+   "identifier": "generateEntryUrlExpr",
+   "definedIn": [
+    "packages/vite/src/node/plugins/worker.ts"
+   ],
+   "line": 252,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE44",
+   "query": "Inlined to keep @rollup/pluginutils in devDependencies",
+   "identifier": "FilterPattern",
+   "definedIn": [
+    "packages/vite/src/node/utils.ts"
+   ],
+   "line": 56,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE45",
+   "query": "Also supports loading plain strings with import text from './foo.txt?raw'",
+   "identifier": "assetPlugin",
+   "definedIn": [
+    "packages/vite/src/node/plugins/asset.ts"
+   ],
+   "line": 194,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE46",
+   "query": "This plugin supports esbuild.banner and esbuild.footer options. esbuild supported these options and Vite exposed them",
+   "identifier": "esbuildBannerFooterCompatPlugin",
+   "definedIn": [
+    "packages/vite/src/node/plugins/esbuildBannerFooterCompatPlugin.ts"
+   ],
+   "line": 13,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE47",
+   "query": "Creates a function that hides the complexities of a WeakMap with an initial value to implement object metadata",
+   "identifier": "perEnvironmentState",
+   "definedIn": [
+    "packages/vite/src/node/environment.ts"
+   ],
+   "line": 20,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE48",
+   "query": "removing builder flags before passing as command specific sub-configs",
+   "identifier": "cleanBuilderCLIOptions",
+   "definedIn": [
+    "packages/vite/src/node/cli.ts"
+   ],
+   "line": 154,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE49",
+   "query": "Same logic from \\@vue/compiler-core & \\@vue/compiler-sfc Except this is using acorn AST",
+   "identifier": "walk",
+   "definedIn": [
+    "packages/vite/src/node/ssr/ssrTransform.ts"
+   ],
+   "line": 476,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE50",
+   "query": "disallows request that contains # in the URL",
+   "identifier": "rejectInvalidRequestMiddleware",
+   "definedIn": [
+    "packages/vite/src/node/server/middlewares/rejectInvalidRequest.ts"
+   ],
+   "line": 6,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE51",
+   "query": "Add files, directories, or glob patterns for tracking",
+   "identifier": "add",
+   "definedIn": [
+    "packages/vite/src/types/chokidar.d.ts"
+   ],
+   "line": 37,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE52",
+   "query": "urls here are dynamic import() urls that couldn't be statically analyzed",
+   "identifier": "injectQuery",
+   "definedIn": [
+    "packages/vite/src/client/client.ts"
+   ],
+   "line": 615,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE53",
+   "query": "The line appended to a lazy chunk or HMR patch so the client reports the payload as delivered once its factories are registered",
+   "identifier": "payloadDeliveredAck",
+   "definedIn": [
+    "packages/vite/src/node/server/bundledDev.ts"
+   ],
+   "line": 590,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE54",
+   "query": "Specifies an Object, or an Array of Object, which defines aliases used to replace values in import or require statements",
+   "identifier": "AliasOptions",
+   "definedIn": [
+    "packages/vite/src/types/alias.d.ts"
+   ],
+   "line": 62,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE55",
+   "query": "Emit the bundled worker files during load / transform",
+   "identifier": "emitWorkerAssetsForBundledDev",
+   "definedIn": [
+    "packages/vite/src/node/plugins/worker.ts"
+   ],
+   "line": 504,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE56",
+   "query": "A middleware that short-circuits the middleware chain to serve cached transformed modules",
+   "identifier": "cachedTransformMiddleware",
+   "definedIn": [
+    "packages/vite/src/node/server/middlewares/transform.ts"
+   ],
+   "line": 83,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE57",
+   "query": "Internally, Vite uses this function to prepare a optimizeDeps run",
+   "identifier": "runOptimizeDeps",
+   "definedIn": [
+    "packages/vite/src/node/optimizer/index.ts"
+   ],
+   "line": 523,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE58",
+   "query": "Check if 2 file name are identical",
+   "identifier": "isSameFilePath",
+   "definedIn": [
+    "packages/vite/src/node/utils.ts"
+   ],
+   "line": 275,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE59",
+   "query": "Encodes the URI path portion (ignores part after ? or #)",
+   "identifier": "encodeURIPath",
+   "definedIn": [
+    "packages/vite/src/node/utils.ts"
+   ],
+   "line": 1894,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE60",
+   "query": "Esbuild code frames have newlines at the start and end of the frame, rollup doesn't This function normalizes the frame to match the esbuild format which has more pleasing padding",
+   "identifier": "normalizeCodeFrame",
+   "definedIn": [
+    "packages/vite/src/node/build.ts"
+   ],
+   "line": 1015,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE61",
+   "query": "Plugin applied after user plugins",
+   "identifier": "cssPostPlugin",
+   "definedIn": [
+    "packages/vite/src/node/plugins/css.ts"
+   ],
+   "line": 483,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE62",
+   "query": "Plugin applied before user plugins",
+   "identifier": "cssPlugin",
+   "definedIn": [
+    "packages/vite/src/node/plugins/css.ts"
+   ],
+   "line": 315,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE63",
+   "query": "Percent-encodes whitespace, which terminates a //# sourceURL= value in V8",
+   "identifier": "encodeSourceURL",
+   "definedIn": [
+    "packages/vite/src/shared/utils.ts"
+   ],
+   "line": 91,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE64",
+   "query": "Whether the file's module format is explicitly determined as ESM or CJS by its extension or the nearest package.json \"type\" field, as opposed to being ambiguous",
+   "identifier": "isFilePathFormatExplicit",
+   "definedIn": [
+    "packages/vite/src/node/utils.ts"
+   ],
+   "line": 458,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE65",
+   "query": "This class discourages users from inversely checking the mode to determine the type of environment, e.g",
+   "identifier": "UnknownEnvironment",
+   "definedIn": [
+    "packages/vite/src/node/baseEnvironment.ts"
+   ],
+   "line": 135,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE66",
+   "query": "Called by the module runner to retrieve information about the specified module",
+   "identifier": "fetchModule",
+   "definedIn": [
+    "packages/vite/src/node/server/environment.ts"
+   ],
+   "line": 283,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE67",
+   "query": "There are two types of plugins in Vite",
+   "identifier": "Plugin",
+   "definedIn": [
+    "packages/vite/src/node/plugin.ts"
+   ],
+   "line": 101,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE68",
+   "query": "Get cached findNearestPackageData value based on basedir",
+   "identifier": "getFnpdCache",
+   "definedIn": [
+    "packages/vite/src/node/packages.ts"
+   ],
+   "line": 365,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE69",
+   "query": "given a relative path in pkg dir, return a relative path in pkg dir, mapped with the \"map\" object",
+   "identifier": "mapWithBrowserField",
+   "definedIn": [
+    "packages/vite/src/node/plugins/resolve.ts"
+   ],
+   "line": 1132,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE70",
+   "query": "The stack string usually contains a copy of the message at the start of the stack",
+   "identifier": "extractStack",
+   "definedIn": [
+    "packages/vite/src/node/build.ts"
+   ],
+   "line": 995,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE71",
+   "query": "Check if dir is a parent of file",
+   "identifier": "isParentDirectory",
+   "definedIn": [
+    "packages/vite/src/node/utils.ts"
+   ],
+   "line": 258,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE72",
+   "query": "Lex import.meta.hot.accept() for accepted deps",
+   "identifier": "lexAcceptedHmrDeps",
+   "definedIn": [
+    "packages/vite/src/node/server/hmr.ts"
+   ],
+   "line": 1009,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE73",
+   "query": "some values used by the client needs to be dynamically injected by the server",
+   "identifier": "clientInjectionsPlugin",
+   "definedIn": [
+    "packages/vite/src/node/plugins/clientInjections.ts"
+   ],
+   "line": 30,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE74",
+   "query": "Ensure that module is in the graph",
+   "identifier": "ensureModule",
+   "definedIn": [
+    "packages/vite/src/module-runner/evaluatedModules.ts"
+   ],
+   "line": 72,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE75",
+   "query": "Children that must not see parent as an enclosing scope: - \"else-if\"/\"else\" branches, as acorn nests the ast within \"if\" nodes instead of flattening them. - a switch discriminant, which is evaluated outside the case block: in switch (x) {",
+   "identifier": "isSkippedParent",
+   "definedIn": [
+    "packages/vite/src/node/ssr/ssrTransform.ts"
+   ],
+   "line": 758,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE76",
+   "query": "Combines multiple sourcemaps into a single sourcemap",
+   "identifier": "combineSourcemaps",
+   "definedIn": [
+    "packages/vite/src/node/utils.ts"
+   ],
+   "line": 903,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE77",
+   "query": "When called, the active fs.FSWatcher object will not require the Node.js event loop to remain active",
+   "identifier": "unref",
+   "definedIn": [
+    "packages/vite/src/types/chokidar.d.ts"
+   ],
+   "line": 31,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE78",
+   "query": "Watch options for the dev server",
+   "identifier": "ServerWatchOptions",
+   "definedIn": [
+    "packages/vite/src/node/watch.ts"
+   ],
+   "line": 58,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE79",
+   "query": "Data represents the raw message payload received over the WebSocket",
+   "identifier": "RawData",
+   "definedIn": [
+    "packages/vite/src/types/ws.d.ts"
+   ],
+   "line": 310,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE80",
+   "query": "Read and parse the chunk import map asset from the bundle",
+   "identifier": "getImportMap",
+   "definedIn": [
+    "packages/vite/src/node/plugins/html.ts"
+   ],
+   "line": 1735,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE81",
+   "query": "Stop watching files, directories, or glob patterns",
+   "identifier": "unwatch",
+   "definedIn": [
+    "packages/vite/src/types/chokidar.d.ts"
+   ],
+   "line": 43,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE82",
+   "query": "Search up for the nearest workspace root",
+   "identifier": "searchForWorkspaceRoot",
+   "definedIn": [
+    "packages/vite/src/node/server/searchRoot.ts"
+   ],
+   "line": 84,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE83",
+   "query": "Runner chunk should only import local dependencies to stay lightweight",
+   "identifier": "validateRunnerChunk",
+   "definedIn": [
+    "packages/vite/rolldown.dts.config.ts"
+   ],
+   "line": 209,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE84",
+   "query": "A plugin to avoid an aliased AND optimized dep from being aliased in src",
+   "identifier": "preAliasPlugin",
+   "definedIn": [
+    "packages/vite/src/node/plugins/preAlias.ts"
+   ],
+   "line": 24,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE85",
+   "query": "Search up for the nearest package.json",
+   "identifier": "searchForPackageRoot",
+   "definedIn": [
+    "packages/vite/src/node/server/searchRoot.ts"
+   ],
+   "line": 68,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE86",
+   "query": "Check and warn if path includes characters that don't work well in Vite, such as # and ? and",
+   "identifier": "checkBadCharactersInPath",
+   "definedIn": [
+    "packages/vite/src/node/config.ts"
+   ],
+   "line": 1113,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE87",
+   "query": "Create an instance of the Vite SSR runtime that support HMR",
+   "identifier": "createServerModuleRunner",
+   "definedIn": [
+    "packages/vite/src/node/ssr/runtime/serverModuleRunner.ts"
+   ],
+   "line": 143,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE88",
+   "query": "Pause the websocket causing it to stop emitting events",
+   "identifier": "pause",
+   "definedIn": [
+    "packages/vite/src/types/ws.d.ts"
+   ],
+   "line": 105,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE89",
+   "query": "Continuously resolve the basedir of packages separated by '>'",
+   "identifier": "nestedResolveBasedir",
+   "definedIn": [
+    "packages/vite/src/node/optimizer/resolve.ts"
+   ],
+   "line": 177,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE90",
+   "query": "when using TS + (Vue + ) or Svelte, imports may seem unused to esbuild and dropped in the build output, which prevents esbuild from crawling further. the solution is to add import 'x' for every source to force esbuild",
+   "identifier": "extractImportPaths",
+   "definedIn": [
+    "packages/vite/src/node/optimizer/scan.ts"
+   ],
+   "line": 766,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE91",
+   "query": "undefined identifies the main bundle",
+   "identifier": "BundleId",
+   "definedIn": [
+    "packages/vite/src/node/plugins/worker.ts"
+   ],
+   "line": 61,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE92",
+   "query": "Handle server requests, punting them down the middleware stack",
+   "identifier": "handle",
+   "definedIn": [
+    "packages/vite/src/types/connect.d.ts"
+   ],
+   "line": 73,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE93",
+   "query": "The input ID of a worker entry, which identifies its bundle",
+   "identifier": "WorkerBundleId",
+   "definedIn": [
+    "packages/vite/src/node/plugins/worker.ts"
+   ],
+   "line": 58,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE94",
+   "query": "Reference a bundled worker entry as import.meta.ROLLDOWN_FILE_URL_ from the given build",
+   "identifier": "generateWorkerEntryUrlExpr",
+   "definedIn": [
+    "packages/vite/src/node/plugins/worker.ts"
+   ],
+   "line": 320,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE95",
+   "query": "Similar to Date.now(), but strictly monotonically increasing",
+   "identifier": "monotonicDateNow",
+   "definedIn": [
+    "packages/vite/src/node/utils.ts"
+   ],
+   "line": 1978,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE96",
+   "query": "VerifyClientCallbackAsync is an asynchronous callback used to inspect the incoming message",
+   "identifier": "VerifyClientCallbackAsync",
+   "definedIn": [
+    "packages/vite/src/types/ws.d.ts"
+   ],
+   "line": 338,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE97",
+   "query": "Clears all caches, removes all HMR listeners, and resets source map support",
+   "identifier": "close",
+   "definedIn": [
+    "packages/vite/src/module-runner/runner.ts"
+   ],
+   "line": 107,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE98",
+   "query": "Run code that was transformed by Vite",
+   "identifier": "runInlinedModule",
+   "definedIn": [
+    "packages/vite/src/module-runner/types.ts"
+   ],
+   "line": 61,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE99",
+   "query": "Fetch module information for Vite module runner",
+   "identifier": "fetchModule",
+   "definedIn": [
+    "packages/vite/src/node/ssr/fetchModule.ts"
+   ],
+   "line": 24,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE100",
+   "query": "Internal function to restart the Vite server and print URLs if changed",
+   "identifier": "restartServerWithUrls",
+   "definedIn": [
+    "packages/vite/src/node/server/index.ts"
+   ],
+   "line": 1495,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE101",
+   "query": "Create import.meta object for Node.js",
+   "identifier": "createNodeImportMeta",
+   "definedIn": [
+    "packages/vite/src/module-runner/createImportMeta.ts"
+   ],
+   "line": 41,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE102",
+   "query": "Creates the initial dep optimization metadata, loading it from the deps cache if it exists and pre-bundling isn't forced",
+   "identifier": "loadCachedDepOptimizationMetadata",
+   "definedIn": [
+    "packages/vite/src/node/optimizer/index.ts"
+   ],
+   "line": 384,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE103",
+   "query": "Like encodeURIPath, but only replacing % as %25",
+   "identifier": "partialEncodeURIPath",
+   "definedIn": [
+    "packages/vite/src/node/utils.ts"
+   ],
+   "line": 1905,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE104",
+   "query": "The dev runtime must match the rolldown that generates the bundle, so it is read from the installed package at serve time instead of being bundled into the client",
+   "identifier": "getRolldownDevRuntimeFiles",
+   "definedIn": [
+    "packages/vite/src/node/plugins/clientInjections.ts"
+   ],
+   "line": 188,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE105",
+   "query": "Register an asset to be emitted as part of the bundle (if necessary) and return its resolved URL in the requested format",
+   "identifier": "fileToBuiltUrl",
+   "definedIn": [
+    "packages/vite/src/node/plugins/asset.ts"
+   ],
+   "line": 551,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE106",
+   "query": "When called, requests that the Node.js event loop not exit so long as the fs.FSWatcher is active",
+   "identifier": "ref",
+   "definedIn": [
+    "packages/vite/src/types/chokidar.d.ts"
+   ],
+   "line": 24,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE107",
+   "query": "How an asset URL should be embedded by the caller: - 'string': plain text (CSS/HTML and other text consumers) - 'js': a JavaScript expression (embedded in generated JS)",
+   "identifier": "AssetUrlFormat",
+   "definedIn": [
+    "packages/vite/src/node/plugins/asset.ts"
+   ],
+   "line": 86,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE108",
+   "query": "Make a paused socket resume emitting events",
+   "identifier": "resume",
+   "definedIn": [
+    "packages/vite/src/types/ws.d.ts"
+   ],
+   "line": 110,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE109",
+   "query": "Data represents the message payload received over the WebSocket",
+   "identifier": "Data",
+   "definedIn": [
+    "packages/vite/src/types/ws.d.ts"
+   ],
+   "line": 315,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE110",
+   "query": "Rollup deduplicate type names with a trailing $1 or $2, which can be confusing when showed in autocompletions",
+   "identifier": "replaceConfusingTypeNames",
+   "definedIn": [
+    "packages/vite/rolldown.dts.config.ts"
+   ],
+   "line": 267,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE111",
+   "query": "splitRE treats both LF and CRLF as a line terminator, so the terminator following a line is 2 characters long when the source uses CRLF",
+   "identifier": "lineTerminatorLengthAt",
+   "definedIn": [
+    "packages/vite/src/node/utils.ts"
+   ],
+   "line": 490,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE112",
+   "query": "Create an internal resolver to be used in special scenarios, e.g. optimizer and handling css @imports",
+   "identifier": "createIdResolver",
+   "definedIn": [
+    "packages/vite/src/node/idResolver.ts"
+   ],
+   "line": 42,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE113",
+   "query": "Create a replacer function that takes code and replaces given pure CSS chunk imports",
+   "identifier": "getEmptyChunkReplacer",
+   "definedIn": [
+    "packages/vite/src/node/plugins/css.ts"
+   ],
+   "line": 1326,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE114",
+   "query": "Creates a ViteBuilder to orchestrate building multiple environments",
+   "identifier": "createBuilder",
+   "definedIn": [
+    "packages/vite/src/node/build.ts"
+   ],
+   "line": 1844,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE115",
+   "query": "Transforms transpiled code result where line numbers aren't altered, so we can skip sourcemap generation during dev",
+   "identifier": "transformStableResult",
+   "definedIn": [
+    "packages/vite/src/node/utils.ts"
+   ],
+   "line": 1680,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE116",
+   "query": "spa: include SPA fallback middleware and configure sirv with single: true in preview",
+   "identifier": "AppType",
+   "definedIn": [
+    "packages/vite/src/node/config.ts"
+   ],
+   "line": 175,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE117",
+   "query": "Move importmap before the first module script and modulepreload link",
+   "identifier": "postImportMapHook",
+   "definedIn": [
+    "packages/vite/src/node/plugins/html.ts"
+   ],
+   "line": 1251,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE118",
+   "query": "Create a plugin container with a set of plugins",
+   "identifier": "createEnvironmentPluginContainer",
+   "definedIn": [
+    "packages/vite/src/node/server/pluginContainer.ts"
+   ],
+   "line": 142,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE119",
+   "query": "Warn about future deprecations",
+   "identifier": "warnFutureDeprecation",
+   "definedIn": [
+    "packages/vite/src/node/deprecations.ts"
+   ],
+   "line": 55,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE120",
+   "query": "Cache for package.json resolution and package.json contents",
+   "identifier": "PackageCache",
+   "definedIn": [
+    "packages/vite/src/node/packages.ts"
+   ],
+   "line": 23,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE121",
+   "query": "Chokidar's add() reopens a closed watcher",
+   "identifier": "makeWatcherCloseFinal",
+   "definedIn": [
+    "packages/vite/src/node/watch.ts"
+   ],
+   "line": 171,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE122",
+   "query": "Removes all listeners from watched files",
+   "identifier": "close",
+   "definedIn": [
+    "packages/vite/src/types/chokidar.d.ts"
+   ],
+   "line": 58,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE123",
+   "query": "When a module is soft-invalidated, we can preserve its previous transformResult and return similar code to before",
+   "identifier": "handleModuleSoftInvalidation",
+   "definedIn": [
+    "packages/vite/src/node/server/transformRequest.ts"
+   ],
+   "line": 453,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE124",
+   "query": "VerifyClientCallbackSync is a synchronous callback used to inspect the incoming message",
+   "identifier": "VerifyClientCallbackSync",
+   "definedIn": [
+    "packages/vite/src/types/ws.d.ts"
+   ],
+   "line": 327,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE125",
+   "query": "Determine if a file is being requested with the correct case, to ensure consistent behavior between dev and prod and across operating systems",
+   "identifier": "shouldServeFile",
+   "definedIn": [
+    "packages/vite/src/node/utils.ts"
+   ],
+   "line": 1720,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE126",
+   "query": "provides types for payloads of built-in Vite events",
+   "identifier": "InferCustomEventPayload",
+   "definedIn": [
+    "packages/vite/types/customEvent.d.ts"
+   ],
+   "line": 77,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE127",
+   "query": "Patch the types files before passing to dts plugin 1",
+   "identifier": "patchTypes",
+   "definedIn": [
+    "packages/vite/rolldown.dts.config.ts"
+   ],
+   "line": 133,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE128",
+   "query": "Pairs each dynamic import() with the __VITE_PRELOAD__ marker that belongs to it",
+   "identifier": "matchImportsToPreloadMarkers",
+   "definedIn": [
+    "packages/vite/src/node/plugins/importAnalysisBuild.ts"
+   ],
+   "line": 71,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE129",
+   "query": "Called when the client reports that it evaluated a payload (the line appended by payloadDeliveredAck)",
+   "identifier": "markPayloadDelivered",
+   "definedIn": [
+    "packages/vite/src/node/server/bundledDev.ts"
+   ],
+   "line": 375,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE130",
+   "query": "removing global flags before passing as command specific sub-configs",
+   "identifier": "cleanGlobalCLIOptions",
+   "definedIn": [
+    "packages/vite/src/node/cli.ts"
+   ],
+   "line": 111,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE131",
+   "query": "Minimal >= comparison for major.minor.patch(-prerelease)? version strings",
+   "identifier": "isVersionGte",
+   "definedIn": [
+    "packages/plugin-legacy/src/index.ts"
+   ],
+   "line": 155,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE132",
+   "query": "When the dev server is restarted, the methods are called in the following order: - new instance init - previous instance close - new instance listen",
+   "identifier": "listen",
+   "definedIn": [
+    "packages/vite/src/node/server/environment.ts"
+   ],
+   "line": 271,
+   "nameWordsInQuery": true
+  },
+  {
+   "id": "DVITE133",
+   "query": "Like JSON.stringify but keeps raw string values as a literal in the generated code",
+   "identifier": "serializeDefine",
+   "definedIn": [
+    "packages/vite/src/node/plugins/define.ts"
+   ],
+   "line": 205,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE134",
+   "query": "Given a file path inside node_modules, returns the package root directory",
+   "identifier": "getNodeModulesPackageRoot",
+   "definedIn": [
+    "packages/vite/src/node/server/sourcemap.ts"
+   ],
+   "line": 26,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE135",
+   "query": "Extracts the inlined source map from the module code and returns the decoded source map",
+   "identifier": "getModuleSourceMapById",
+   "definedIn": [
+    "packages/vite/src/module-runner/evaluatedModules.ts"
+   ],
+   "line": 107,
+   "nameWordsInQuery": false
+  },
+  {
+   "id": "DVITE136",
+   "query": "Undo wrapId's /@id/ and null byte replacements",
+   "identifier": "unwrapId",
+   "definedIn": [
+    "packages/vite/src/shared/utils.ts"
+   ],
+   "line": 20,
+   "nameWordsInQuery": false
+  }
+ ]
+}

@@ -262,6 +262,27 @@ The earlier "0.1–0.2 ms" figure only holds when the query phrase is already ca
 * **Native Chunk@3 is low (22–71%) by construction:** every query is an ambiguous symbol defined in several files. The top-5 ceiling is reported next to each result.
 * One repo per language, so language-level conclusions are per-repo.
 
+**Docstring-style natural-language queries on the other eight languages.** CodeSearchNet covers natural-language queries for six languages only, so the same eight repos that had only identifier queries (C, C++, C#, Scala, Haskell, Elixir, Rust, TypeScript) were also queried the CodeSearchNet way: the query is the first sentence of the doc comment of one definition (e.g. "Delete a range of entries from the ziplist"), the answer is that definition. Built by [scripts/extract_docqueries.ts](scripts/extract_docqueries.ts) on the same tree-sitter grammars and definition node types as the identifier suite, and drawn with the same seed (`0xA11CE`), up to 200 per repo, at the same pinned commits. To keep the answer out of the text, the indexed copy of each repo has **every definition doc comment removed** (in all files of the language; other comments untouched), as CodeSearchNet does. Correct = a top-3 chunk in the file holding that definition (File@3), and for Chunk@3 a chunk in that file that defines the identifier (so the other definitions of the same name elsewhere do not count). A name must be defined once in its file (Elixir: one documented clause) and the doc sentence must be unique in the repo, tests/vendored/generated code is excluded, and ≥ 4 words are required. Tables with latency: [benchmark/summary.docstring.md](benchmark/summary.docstring.md).
+
+| Language (repo) | n | Native Chunk@3 | + Kalpana | Win / Loss | p | Native File@3 | + Kalpana |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| C (redis) | 200 | 26.0% | 26.0% | 2 / 2 | 1.00 | 74.5% | 74.0% |
+| C++ (abseil) | 200 | 20.0% | 25.5% | 11 / 0 | 0.001 | 61.5% | 61.0% |
+| C# (Newtonsoft.Json) | 200 | 28.0% | 34.0% | 12 / 0 | < 0.001 | 52.0% | 56.0% |
+| Scala (Play) | 200 | 39.5% | 46.5% | 15 / 1 | 0.001 | 56.0% | 62.5% |
+| Haskell (pandoc) | 200 | 27.0% | 30.0% | 8 / 2 | 0.11 | 61.0% | 62.0% |
+| Elixir (ecto) | 200 | 29.0% | 37.0% | 18 / 2 | < 0.001 | 60.5% | 70.0% |
+| Rust (tokio) | 200 | 27.5% | 31.0% | 9 / 2 | 0.065 | 67.0% | 67.5% |
+| TypeScript (vite) | 137 | 25.5% | 28.5% | 5 / 1 | 0.22 | 56.2% | 57.7% |
+| **Pooled (1,537)** | | 27.9% | 32.5% | **80 / 10** | **< 0.001** | 61.3% | 64.1% (101 / 58, p = 0.001) |
+
+Against the same top-5 pool un-reranked, the pooled chunk-level result is 75 wins / 5 losses. These repos were already in the identifier suite (not used in development), but the queries are new.
+
+* **The gain is in choosing the right chunk, not the right file.** Miru usually finds the right *file* (File@3 52–75%) and much less often the right *chunk* inside it (Chunk@3 20–40%). In the one case checked by hand (redis `_intsetSet`) the top chunk was a caller of the function, not its definition, so the chunk label was right and the miss was real. File-level movement is mixed: no net change on redis, abseil, pandoc, tokio and vite, clear gains on Scala and Elixir.
+* **Name overlap does not drive it.** 351 of 1,537 queries already contain every word of the identifier name (the same easy case CodeSearchNet has). On those: 37.0% → 43.0%, 24 / 3. On the other 1,186, which are pure natural language: 25.2% → 29.3%, **56 / 7**, p < 0.001.
+* **Ceiling:** the defining chunk is in Miru's top-5 for only 26–48% of queries, so there is little headroom. Kalpana's top 3 holds 94–99% of what the 5-chunk pool holds per repo (97% pooled).
+* **Caveats:** the labels and Kalpana's role features share the tree-sitter parser (same as the identifier suite; the independent relabel was not run on this set). Stripped docs make the corpus unlike real code, where docs help retrieval; this tests retrieval from code alone. Native Chunk@3 is low in absolute terms. One repo per language. Newtonsoft (228 eligible, 200 drawn), ecto (265 eligible, 200 drawn) and vite (all 137 eligible) draw most of their pool, so those rows are less of a sample. A first indexing attempt of tokio and vite crashed inside the Bun indexer and succeeded on a plain re-run; nothing else was changed.
+
 ```bash
 # DS1 key: copy .env.example to .env and fill in TAKARA_API_KEY (never committed)
 python3 -m venv .venv && .venv/bin/pip install numpy       # DS1 runs need numpy only (MiniLM runs also need sentence-transformers + torch)
@@ -270,6 +291,8 @@ PY=.venv/bin/python sh scripts/run_identifier_suite.sh     # fetch pinned repos,
 .venv/bin/python miru_kalpana/summarize_results.py                 # -> benchmark/summary.md (DS1 vs MiniLM, CodeSearchNet + A/B)
 .venv/bin/python miru_kalpana/summarize_results.py --suite id      # -> benchmark/summary.identifier.md
 .venv/bin/pip install pygments && .venv/bin/python miru_kalpana/relabel_independent.py   # -> benchmark/summary.independent.md
+PY=.venv/bin/python sh scripts/run_doc_suite.sh                    # docstring-style queries on the 8 repos above (doc-stripped copies, DS1 index, rerank)
+.venv/bin/python miru_kalpana/summarize_results.py --suite doc     # -> benchmark/summary.docstring.md
 EMBEDDER=ds1 sh scripts/run_lang.sh <repo>                 # single repo, DS1 (default without EMBEDDER: MiniLM)
 ```
 
