@@ -1,6 +1,6 @@
 # Miru + Kalpana Discrete RIF: Sub-Millisecond Neuro-Symbolic Code Reranking
 
-📄 **Whitepaper:** [Kalpana-RIF Discrete: Sub-Millisecond Neuro-Symbolic Code Reranking for Agentic Retrieval Pipelines](paper/Miru_Kalpana_Discrete_RIF_Whitepaper.pdf) ([LaTeX source](paper/Miru_Kalpana_Discrete_RIF_Whitepaper.tex))
+📄 **Whitepaper:** [Kalpana-RIF Discrete: Neuro-Symbolic Reranking of Code-Search Candidates for Agentic Retrieval Pipelines](paper/Miru_Kalpana_Discrete_RIF_Whitepaper.pdf) ([LaTeX source](paper/Miru_Kalpana_Discrete_RIF_Whitepaper.tex))
 
 Kalpana Discrete RIF is a structural reranker that runs on top of [Miru](https://www.npmjs.com/package/@takara-ai/miru-code)'s hybrid (BM25 + dense) code search. Miru itself is not modified.
 
@@ -329,7 +329,7 @@ Per-query results are in `benchmark/results.kalpana.ds1-miru-int8.queries.*.json
 | K comparison | [miru_kalpana/baseline_k_compare.py](miru_kalpana/baseline_k_compare.py) | Miru baseline at K=3 / K=5, sliced vs native, on the frozen 150 |
 | Query generator | [miru_kalpana/gen_queries.py](miru_kalpana/gen_queries.py) | Draws new ambiguous-symbol queries from `client-go` with the documented rule |
 | Miru exporter | [scripts/miru_candidates.ts](scripts/miru_candidates.ts), [benchmark/dump_candidates.ts](benchmark/dump_candidates.ts) | Dumps Miru's unmodified top-K candidates (with chunk text) to JSON |
-| Whitepaper | [paper/Miru_Kalpana_Discrete_RIF_Whitepaper.pdf](paper/Miru_Kalpana_Discrete_RIF_Whitepaper.pdf) | Architecture and 500-query evaluation write-up (LaTeX source alongside) |
+| Whitepaper | [paper/Miru_Kalpana_Discrete_RIF_Whitepaper.pdf](paper/Miru_Kalpana_Discrete_RIF_Whitepaper.pdf) | Architecture, `client-go` 500-query evaluation, multi-language DS1 evaluation (CodeSearchNet, identifier, docstring-style), latency and limitations (LaTeX source alongside) |
 | Earlier paper | [paper/topk_anomaly.tex](paper/topk_anomaly.tex) | Contribution 1: Miru topK anomaly root-cause study |
 
 ## Reproduce the 500-query benchmark
